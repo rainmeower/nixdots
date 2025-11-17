@@ -300,7 +300,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((input-history real lctl 2)) (macro S-0) break
     ((key-history ' 1)) (macro S-0) break
 
-    ((key-history i 1)) x break
+    ((key-history i 1)) z break
     ((key-history g 1)) y break
     ((key-history c 1)) y break
     ((key-history p 1)) y break
@@ -317,11 +317,12 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
   magic_2 (switch ;; {{{
 
-    ;; iz
-    ((key-history i 1)) z break
 
     ;; ||
     ((key-history \ 1)) S-\ break
+
+    ;; ix
+    ((key-history i 1)) x break
     ;; ex
     ((key-history e 1)) x break
     ;; <_
