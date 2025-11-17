@@ -1,28 +1,28 @@
+# {{{
 # base:
-#      : b f d w p   / l o u . _
-#      = n s t c y   m h a e i 
-#      q , v k g -   j 󰣏 ( ) ; z
-#        alt 󱊷 r 󰣎   󰌑 󱁐 󰁮 󰌒
+#   : b f d w p   / l o u . _
+#   = n s t c y   m h a e i 
+#   q , v k g -   j 󰣏 ( ) ; z
+#     alt 󱊷 r 󰣎   󰌑 󱁐 󰁮 󰌒
 #
 # sym:
-#        , , , ,
-#        1 2 3 4       7 8 9 0
-#        0 9 8 5       6 3 2 1
-#              .       󱁐
+#     , , , ,
+#     1 2 3 4       7 8 9 0
+#     0 9 8 5       6 3 2 1
+#           .       󱁐
 #
 # mods:    
-#        󰾆 󰓅 󰳾 󰳽        󱕐 󱕑 
-#                      ← ↓ ↑ →
-#                      󰞗 󰞖 󰞙 󰞘
-#              .       󱁐
+#     󰾆 󰓅 󰳾 󰳽        󱕐 󱕑 
+#                   ← ↓ ↑ →
+#                   󰞗 󰞖 󰞙 󰞘
+#           .       󱁐
+# }}}
 {
   pkgs,
   lib,
   username,
   ...
 }: {
-
-
   nixpkgs.overlays = [# {{{
     (final: prev: {
 
@@ -61,10 +61,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       };
     })
   ];# }}}
-
-
-
-
 
   services.kanata = {
     enable = true;
@@ -290,19 +286,13 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
 
 
+    ((key-history a 2)) o break
 
 
 
 ;; sfb
-
-    ;; fix
-    ((and (key-history f 2) (key-history i 1))) (macro x) break
-    ;; six
-    ((and (key-history s 2) (key-history i 1))) (macro x) break
-    ;; mix
-    ((and (key-history m 2) (key-history i 1))) (macro x) break
-    ;; nix
-    ((and(key-history n 2) (key-history i 1))) (macro x) break
+    ;; ix
+    ((key-history i 1)) x break
 
 
 

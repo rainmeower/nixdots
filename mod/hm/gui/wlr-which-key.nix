@@ -39,7 +39,7 @@ menu:
 
   - key: [ "p", "Mod4+p" ]
     desc: pick colour
-    cmd: ${flake_dir}/stuff/scripts/hextoimg.sh
+    cmd: hyprpicker | wl-copy
 
   - key: [ "k", "Mod4+k" ]
     desc: restart kanata

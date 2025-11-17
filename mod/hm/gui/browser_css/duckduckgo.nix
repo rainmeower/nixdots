@@ -64,6 +64,10 @@ html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--car
 .HHJGgzrZRmw9obWw1QS1::after, .HHJGgzrZRmw9obWw1QS1::before {
   border-top: 1px solid ${col.button} !important;
 }
+/* "more images" button */
+.HHJGgzrZRmw9obWw1QS1 > :first-child {
+  border: none !important;
+}
 
   }
   '';
