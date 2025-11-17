@@ -87,14 +87,39 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 (defalias ;; {{{
 
   rp (switch
+    ;; vec
+    ((and
+      (key-history v 3)
+      (key-history e 2)
+      (key-history c 1)
+    )) S-1 break
+
+    ;; format
+    ((and
+      (key-history f 6)
+      (key-history o 5)
+      (key-history r 4)
+      (key-history m 3)
+      (key-history a 2)
+      (key-history t 1)
+    )) S-1 break
+
     ;; println
-    ((and (key-history p 7) (key-history r 6) (key-history i 5) (key-history n 4) (key-history t 3) (input-history real ; 3) (key-history n 1))) S-1 break
+    ((and
+      (key-history p 7)
+      (key-history r 6)
+      (key-history i 5)
+      (key-history n 4)
+      (key-history t 3)
+      (input-history real ; 3)
+      (key-history n 1)
+    )) S-1 break
+
     () S-0 break
   )
 
   ; (switch
-    ;; println
-    ((and (key-history p 5) (key-history r 4) (key-history i 3) (key-history n 2) (key-history t 1))) l break
+
     () (tap-hold-press 120 120 ; (layer-while-held syms)) break
   )
 
@@ -102,13 +127,25 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
   r (switch
     ;; key-timing to not interfere with vim
-    ((and (key-history lsft 2) (key-history 0 1) (key-timing 1 less-than 110))) (macro S-0) break
+    ((and
+      (key-history lsft 2)
+      (key-history 0 1)
+      (key-timing 1 less-than 110)
+    )) (macro S-0) break
+
     () r break
   )
 
   eqsft (switch
-    ((or (key-history + 1) (key-history 1 1))) (macro =) break
+    ;; !=
+    ;; +=
+    ((or
+      (key-history + 1)
+      (key-history 1 1)
+    )) (macro =) break
+
     ;; () (tap-hold-press 120 120 = lsft) break
+
     () = break
   )
 
@@ -144,13 +181,33 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
 
     ;; linux
-    ((and (key-history l 4) (key-history i 3) (key-history n 2) (key-history u 1))) x break
+    ((and
+      (key-history l 4)
+      (key-history i 3)
+      (key-history n 2)
+      (key-history u 1)
+    )) x break
+
     ;; yazi
-    ((and (key-history y 3) (key-history a 2) (key-history z 1))) i break
+    ((and
+      (key-history y 3)
+      (key-history a 2)
+      (key-history z 1)
+    )) i break
+
     ;; mkdir
-    ((and (key-history m 2) (key-history k 1))) d break
+    ((and
+      (key-history m 2)
+      (key-history k 1)
+    )) d break
+
     ;; ascii
-    ((and (key-history a 4) (key-history s 3) (key-history c 2) (key-history i 1))) (multi (release-key i) (macro i)) break
+    ((and
+      (key-history a 4)
+      (key-history s 3)
+      (key-history c 2)
+      (key-history i 1)
+    )) (multi (release-key i) (macro i)) break
 
 
     ;; monkeytype {{{
@@ -197,10 +254,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((and (key-history e 3) (key-history n 2) (key-history l 1))) (multi (release-key e) (release-key n) (release-key l) (macro bspc a b l e spc = spc t r u e ; esc)) break
     ;; let -> let mut
     ((and (key-history l 4) (key-history e 3) (key-history t 2) (key-history spc 1))) (multi (release-key t) (release-key spc) (macro m u t spc)) break
-    ;; println!("
-    ((and (key-history p 3) (key-history l 2) (key-history n 1))) (multi (release-key p) (release-key l) (release-key n) (macro bspc bspc r i n t l n S-1 S-9 S-')) break
-    ;; printf("
-    ((and (key-history p 2) (key-history f 1))) (multi (release-key p) (release-key f) (macro bspc r i n t f S-9 S-')) break
     ;; format!("
     ((and (key-history f 3) (key-history m 2) (key-history t 1))) (multi (release-key f) (release-key m) (release-key t)(macro bspc bspc o r m a t S-1 S-9 S-')) break
     ;; NULL
@@ -232,21 +285,10 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((key-history - 1)) (macro S-.) break
     ;; Vec<_>
     ((and (key-history v 3) (key-history e 2) (key-history c 1))) (macro C-w S-v e c S-, S-- S-.) break
-    ;; true;
-    ((and (key-history t 2) (key-history r 1))) (macro u e) break
-    ;; regex
-    ((and(key-history r 4) (key-history e 3) (key-history g 2) (key-history e 1))) x break
 
     ;; }}}
 
-
     ((input-history real lsft 2)) (macro lctl ent) break
-
-
-
-    ;; ((and (key-history f 2) (key-history l 1))) (multi (release-key f) (release-key l) (macro bspc a l s e)) break
-
-
 
     ;; sfs {{{
     ((key-history a 2)) o break
@@ -259,8 +301,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((and (key-history spc 4) (key-history t 3) (key-history h 2) (key-history e 1))) (macro spc) break
     ;; }}}
 
-
-
     ;; expand {{{ 
     ;; TODO add more
     ;; https://
@@ -269,9 +309,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((and (key-history h 3) (key-history t 2) (key-history w 1))) (multi (release-key h) (release-key t) (release-key w)(macro bspc t p s S-; / / w w w .)) break
 
     ;; }}}
-
-
-
 
     ;; sfb {{{
     ((input-history real f16 2)) (macro S-') break
@@ -302,6 +339,17 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
   magic_2 (switch ;; {{{
 
+    ;; println
+    ((and
+      (key-history p 5)
+      (key-history r 4)
+      (key-history i 3)
+      (key-history n 2)
+      (key-history t 1)
+    )) l break
+
+    ;; regex
+    ((and(key-history r 4) (key-history e 3) (key-history g 2) (key-history e 1))) x break
     ;; because
     ((and (key-history b 4) (key-history e 3) (key-history c 2) (key-history a 1))) (macro u) break
     ;; program  (bad lat stretch)
