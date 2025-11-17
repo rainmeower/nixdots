@@ -40,11 +40,11 @@ in {
 
 
       def hist [] {
-        # let selected = (history | reverse | get command | uniq | fzf)
-        # if ($selected | is-empty) == false {
-        #   do $selected
-        # }
-        echo "use <C-r>"
+        let selected = (history | reverse | get command | uniq | fzf)
+        if ($selected | is-empty) == false {
+          do $selected
+        }
+        # echo "use <C-r>"
       }
 
       def record [] { # simple screen record without obs

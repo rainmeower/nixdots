@@ -11,9 +11,9 @@ find ~/.cache/zen -iname "*.png" | xargs rm
 find ~/.cache/mozilla/firefox  -iname "*.png" | xargs rm
 
 # remove stuff from shell history
-grep -v "rm " ~/.config/nushell/history.txt > /tmp/nushell_history
+grep -v "^rm " ~/.config/nushell/history.txt > /tmp/nushell_history
 cat /tmp/nushell_history > ~/.config/nushell/history.txt
-grep -v " rm" ~/.config/nushell/history.txt > /tmp/nushell_history
+grep -v " rm$" ~/.config/nushell/history.txt > /tmp/nushell_history
 cat /tmp/nushell_history > ~/.config/nushell/history.txt
 grep -v "reboot" ~/.config/nushell/history.txt > /tmp/nushell_history
 cat /tmp/nushell_history > ~/.config/nushell/history.txt

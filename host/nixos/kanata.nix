@@ -317,16 +317,20 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
   magic_2 (switch ;; {{{
 
+    ;; program  (bad lat stretch)
+    ((and (key-history p 6) (key-history r 5) (key-history o 4) (key-history g 3) (key-history r 2) (key-history a 1))) m break
+    ;; <_  (sfb)
+    ((and (key-history lsft 2) (key-history , 1))) S-- break
+    ;; under  (sfs+1)
+    ((and (key-history u 4) (key-history n 3) (key-history d 2) (key-history e 1))) r break
 
-    ;; ||
+    ;; ||  (more comfortable than rpeat)
     ((key-history \ 1)) S-\ break
 
     ;; ix
     ((key-history i 1)) x break
     ;; ex
     ((key-history e 1)) x break
-    ;; <_
-    ((and (key-history lsft 2) (key-history , 1))) S-- break
 
     () @magic break ;; fallback to other magic
   ) ;; }}}
