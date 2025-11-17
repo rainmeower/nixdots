@@ -129,18 +129,16 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
 
     ;; linux
-    ((and (key-history l 4) (key-history i 3) (key-history n 2) (key-history u 1))) (macro x) break
+    ((and (key-history l 4) (key-history i 3) (key-history n 2) (key-history u 1))) x break
     ;; yazi
-    ((and (key-history y 3) (key-history a 2) (key-history z 1))) (macro i) break
+    ((and (key-history y 3) (key-history a 2) (key-history z 1))) i break
     ;; mkdir
-    ((and (key-history m 2) (key-history k 1))) (macro d i r) break
+    ((and (key-history m 2) (key-history k 1))) d break
     ;; ascii
     ((and (key-history a 4) (key-history s 3) (key-history c 2) (key-history i 1))) (multi (release-key i) (macro i)) break
-    ;; size
-    ((and (key-history s 2) (key-history z 1))) (multi (release-key s) (release-key z) (macro bspc i z e)) break
 
 
-    ;;; MONKEYTYPE
+    ;; monkeytype {{{
     ;; school FIXME
     ((and (key-history s 5) (key-history c 4) (key-history h 3) (key-history o 2))) l break
     ;; leave
@@ -163,11 +161,9 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; system
     ((and(key-history s 2) (key-history y 1))) (multi (release-key s) (macro s)) break
 
+    ;; }}}
 
-
-
-
-    ;;; CODE
+    ;; code {{{
     ;; Ok(())
     ((and (key-history o 2) (key-history k 1))) (multi (release-key o) (release-key k) (macro C-w bspc S-o k S-9 S-9 S-0 S-0)) break
     ;; Some(
@@ -226,14 +222,11 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; regex
     ((and(key-history r 4) (key-history e 3) (key-history g 2) (key-history e 1))) x break
 
+    ;; }}}
 
 
 
-    ;; ;; date  FIXME
-    ;; ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (cmd-output-keys bash -c "date +'%F %R' | sed 's/./& /g' | sed 's/:/S-;/g' | sed 's/\\(.\\{20\\}\\)\\(.*\\)/\\(\\1 spc \\2\\)/'") break
-    ;; insert current date
-    ;; ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (cmd-output-keys bash -c "date") break
-    ;; ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (macro bspc bspc bspc bspc (cmd-output-keys date)) break
+
 
 
 
@@ -243,24 +236,27 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
 
 
-    ((and (key-history f 2) (key-history l 1))) (multi (release-key f) (release-key l) (macro bspc a l s e)) break
+    ;; ((and (key-history f 2) (key-history l 1))) (multi (release-key f) (release-key l) (macro bspc a l s e)) break
 
 
-    ((key-history ' 1)) (macro S-0) break
 
     
+
+
+    
+
+
+
+    ;; sfs {{{
+    ((key-history a 2)) o break
+
     ;; faster space for shorter words
     ((and (key-history spc 2) (key-history n 1))) (macro spc) break
     ((and (key-history spc 2) (key-history u 1))) (macro spc) break
     ((and (key-history spc 2) (key-history a 1))) (macro spc) break
     ((and (key-history spc 2) (key-history i 1))) (macro spc) break
     ((and (key-history spc 4) (key-history t 3) (key-history h 2) (key-history e 1))) (macro spc) break
-
-
-    
-
-
-
+    ;; }}}
 
 
 
@@ -272,8 +268,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((key-history down 1)) (macro enter) break
 
 
-    ;; query
-    ((key-history q 1)) (macro u e r y) break
 
 
     ;; https://
@@ -286,13 +280,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
 
 
-    ((key-history a 2)) o break
-
-
-
-;; sfb
-    ;; ix
-    ((key-history i 1)) x break
 
 
 
@@ -302,14 +289,19 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
 
 
+
+
+
+
+
+    ;; sfb {{{
     ((input-history real f16 2)) (macro S-') break
     ((input-history real f17 2)) (macro S-0) break
     ((input-history real lctl 2)) (macro S-0) break
+    ((key-history ' 1)) (macro S-0) break
 
-
-;; sfb
+    ((key-history i 1)) x break
     ((key-history g 1)) y break
-    ((key-history i 1)) z break
     ((key-history c 1)) y break
     ((key-history p 1)) y break
     ((key-history y 1)) p break
@@ -317,12 +309,16 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((key-history o 1)) a break
     ((key-history a 1)) o break
     ((key-history u 1)) e break
+    ;; }}}
 
 
-    () rpt break
+    () rpt break ;; fallback to repeat
   ) ;; }}}
 
   magic_2 (switch ;; {{{
+
+    ;; iz
+    ((key-history i 1)) z break
 
     ;; ||
     ((key-history \ 1)) S-\ break
@@ -331,7 +327,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; <_
     ((and (key-history lsft 2) (key-history , 1))) S-- break
 
-    () @magic break
+    () @magic break ;; fallback to other magic
   ) ;; }}}
 
   ;; normal rpt with some exceptions
