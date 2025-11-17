@@ -344,6 +344,14 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history e 1)
     )) S-0 break
 
+    ;; true)
+    ((and
+      (key-history t 4)
+      (key-history r 3)
+      (key-history u 2)
+      (key-history e 1)
+    )) S-0 break
+
     ;; shift after ::
     ((and
       (key-history lsft 4)
