@@ -196,9 +196,9 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
   )
 
   cw (caps-word-custom
-    2000
-    (a b c d e f g h i j k l m n o p q r s t u v w x y z)
-    (bspc del up down left right - 0 1 2 3 4 5 6 7 8 9 lsft rsft)
+    2000 ;; time before it cancels after no keypresses
+    (a b c d e f g h i j k l m n o p q r s t u v w x y z) ;; words that get shifted
+    (bspc del up down left right - 0 1 2 3 4 5 6 7 8 9 lsft rsft) ;; words that stop the shifting
   )
 
   ;; TODO convert rust ints to c99 ints
@@ -334,6 +334,15 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history n 2)
       (key-history o 1)
     )) (multi (release-key n) (release-key o) (macro C-w bspc S-n o n e)) break
+
+    ;; false)
+    ((and
+      (key-history f 5)
+      (key-history a 4)
+      (key-history l 3)
+      (key-history s 2)
+      (key-history e 1)
+    )) S-0 break
 
     ;; shift after ::
     ((and
