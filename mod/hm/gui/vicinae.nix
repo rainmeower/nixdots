@@ -94,16 +94,17 @@ in {
 
     extensions = [ # {{{
       # https://github.com/nix-community/home-manager/commit/cc837038306d752355d21a4b4620ff589bcd1e71
-      (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
-        inherit pkgs;
-        name = "case-converter";
-        src = pkgs.fetchFromGitHub {
-        owner = "nyxmeowmeow";
-        repo = "vicinae-extensions";
-        rev = "12fefbb2f852c38ac1b418c5955ed6ab070bafe3";
-        sha256 = "sha256-6eDqc98qzg1y+O7pbfS69gEelTVPqi+7PK7X1a+S5qE=";
-      } + "/case-converter";
-      })
+# FIXME curl error suddenly??
+      # (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
+      #   inherit pkgs;
+      #   name = "case-converter";
+      #   src = pkgs.fetchFromGitHub {
+      #   owner = "nyxmeowmeow";
+      #   repo = "vicinae-extensions";
+      #   rev = "12fefbb2f852c38ac1b418c5955ed6ab070bafe3";
+      #   sha256 = "sha256-6eDqc98qzg1y+O7pbfS69gEelTVPqi+7PK7X1a+S5qE=";
+      # } + "/case-converter";
+      # })
 
       # FIXME
       # (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {

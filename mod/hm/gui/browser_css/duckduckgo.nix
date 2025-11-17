@@ -22,11 +22,16 @@ html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--car
   --theme-col-txt-title-visited: ${col.purple} !important;
   --theme-col-txt-title: ${col.blue} !important;
 
+  --sds-color-background-accent-01: ${col.accent} !important;
+
   --sds-color-text-accent-01: ${col.blue} !important;
   --sds-color-text-background-01: ${col.gray} !important;
   --sds-color-text-link-02-hover: ${col.gray} !important;
+  --sds-color-background-01: ${col.button} !important;
+  --sds-color-text-on-color: ${col.button} !important;
 
   --theme-col-txt-card-body: ${col.gray} !important;
+
 }
 
 .header--aside__item, .TccjmKV6RraCaCw5L9gd,
@@ -43,6 +48,21 @@ html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--car
 .header-wrap {
   background-color: transparent !important;
   box-shadow: none !important;
+}
+
+/* "protected" button */
+.c1GwqC__eRoEs0cLTIfL:first-child {
+  display: none !important;
+}
+
+/* "helpful search" panel */
+.ZvcE0ToM7Sfi6iwk7KiJ {
+  display: none !important;
+}
+
+/* "more images" line */
+.HHJGgzrZRmw9obWw1QS1::after, .HHJGgzrZRmw9obWw1QS1::before {
+  border-top: 1px solid ${col.button} !important;
 }
 
   }
