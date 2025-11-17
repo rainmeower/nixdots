@@ -85,6 +85,21 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 )
 
 (defalias ;; {{{
+
+  rp (switch
+    ;; println
+    ((and (key-history p 6) (key-history r 5) (key-history i 4) (key-history n 3) (input-history real ; 2))) l break
+    () S-0 break
+  )
+
+  ; (switch
+    ;; println
+    ((and (key-history p 5) (key-history r 4) (key-history i 3) (key-history n 2) (key-history t 1))) l break
+    () (tap-hold-press 120 120 ; (layer-while-held syms)) break
+  )
+
+
+
   r (switch
     ;; key-timing to not interfere with vim
     ((and (key-history lsft 2) (key-history 0 1) (key-timing 1 less-than 110))) (macro S-0) break
@@ -141,10 +156,10 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; monkeytype {{{
     ;; school FIXME
     ((and (key-history s 5) (key-history c 4) (key-history h 3) (key-history o 2))) l break
+    ;; play (sfs+1)
+    ((and (key-history p 3) (key-history l 2) (key-history a 1))) y break
     ;; leave
     ((and (key-history l 4) (key-history e 3) (key-history a 2) (key-history v 1))) (macro e) break
-    ;; because
-    ((and (key-history b 4) (key-history e 3) (key-history c 2) (key-history a 1))) (macro u) break
     ;; ease, increase  etc
     ((and (key-history e 3) (key-history a 2) (key-history s 1))) e break
     ;; problem
@@ -225,25 +240,11 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; }}}
 
 
-
-
-
-
-
-
-
     ((input-history real lsft 2)) (macro lctl ent) break
 
 
 
     ;; ((and (key-history f 2) (key-history l 1))) (multi (release-key f) (release-key l) (macro bspc a l s e)) break
-
-
-
-    
-
-
-    
 
 
 
@@ -260,36 +261,14 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
 
 
-
-
-    ;; enter sfb
-    ((key-history tab 1)) (macro enter) break
-    ((key-history up 1)) (macro enter) break
-    ((key-history down 1)) (macro enter) break
-
-
-
-
+    ;; expand {{{ 
+    ;; TODO add more
     ;; https://
     ((and (key-history h 2) (key-history t 1))) (multi (release-key h) (release-key t) (macro t p s S-; / /)) break
     ;; https://www.
     ((and (key-history h 3) (key-history t 2) (key-history w 1))) (multi (release-key h) (release-key t) (release-key w)(macro bspc t p s S-; / / w w w .)) break
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    ;; }}}
 
 
 
@@ -300,6 +279,11 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((input-history real lctl 2)) (macro S-0) break
     ((key-history ' 1)) (macro S-0) break
 
+
+    ((key-history tab 1)) (macro enter) break
+    ((key-history up 1)) (macro enter) break
+    ((key-history down 1)) (macro enter) break
+
     ((key-history i 1)) z break
     ((key-history g 1)) y break
     ((key-history c 1)) y break
@@ -309,6 +293,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((key-history o 1)) a break
     ((key-history a 1)) o break
     ((key-history u 1)) e break
+
     ;; }}}
 
 
@@ -317,6 +302,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
   magic_2 (switch ;; {{{
 
+    ;; because
+    ((and (key-history b 4) (key-history e 3) (key-history c 2) (key-history a 1))) (macro u) break
     ;; program  (bad lat stretch)
     ((and (key-history p 6) (key-history r 5) (key-history o 4) (key-history g 3) (key-history r 2) (key-history a 1))) m break
     ;; <_  (sfb)
@@ -385,7 +372,7 @@ h (tap-hold-release-tap-keys-release 120 120 h rctl (bspc f15 f16 f17 f18 ; spc)
 
 
 f16 S-9
-f17 S-0
+f17 @rp
 lmet (multi (tap-hold-press 120 120 esc lmet) (layer-while-held sup))
 f19 @magic
 ;; rsft (tap-hold-press 120 120 bspc rctl)
@@ -407,7 +394,7 @@ spc @space
 
 
 , (tap-hold-press 120 120 , (layer-while-held syms))
-; (tap-hold-press 120 120 ; (layer-while-held syms))
+; @;
 
 ) ;; }}}
 
