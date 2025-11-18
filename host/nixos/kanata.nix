@@ -270,12 +270,13 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history v 1)
     )) (macro e) break
 
-    ;; ease, increase  etc
+    ;; should
     ((and
-      (key-history e 3)
-      (key-history a 2)
-      (key-history s 1)
-    )) e break
+      (key-history s 4)
+      (key-history h 3)
+      (key-history o 2)
+      (key-history u 1)
+    )) l break
 
     ;; problem
     ((and
@@ -558,6 +559,13 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
   ) ;; }}}
 
   magic_2 (switch ;; {{{
+
+    ;; ease, increase  etc
+    ((and
+      (key-history e 3)
+      (key-history a 2)
+      (key-history s 1)
+    )) e break
 
     ;; println
     ((and
