@@ -39,8 +39,6 @@ in {
         "end=scroll_to_bottom"
       ];
 
-
-
       palette = lib.mkDefault [ # {{{
         "0=${col.black}"
         "1=${col.red}"
@@ -60,12 +58,9 @@ in {
         "15=${col.white}"
       ]; # }}}
 
-
-
-      # custom-shader = ../../../stuff/cursor_smear_fade.glsl;
-
-      # cursor smear
-          custom-shader = "cursor_smear.glsl";
+    # } ++ lib.mkIf (config.animations) {
+    #   # cursor smear
+    #   custom-shader = "cursor_smear.glsl";
     };
   };
   home.file.".config/ghostty/cursor_smear.glsl".source = ../../../../stuff/cursor_smear.glsl;

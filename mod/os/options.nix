@@ -24,6 +24,11 @@
       default = true;
     };
 
+    animations = lib.mkOption {
+      type = lib.types.bool;
+      default = true;
+    };
+
     wm = lib.mkOption {
       type = lib.types.enum [
         "hyprland"
