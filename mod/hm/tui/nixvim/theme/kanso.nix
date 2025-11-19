@@ -13,7 +13,7 @@
         require('kanso').setup({
             bold = true,                 -- enable bold fonts
             italics = false,             -- enable italics
-            compile = false,             -- enable compiling the colorscheme
+            compile = true,             -- enable compiling the colorscheme
             undercurl = false,            -- enable undercurls
             commentStyle = { italic = true },
             functionStyle = {},
