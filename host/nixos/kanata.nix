@@ -599,9 +599,9 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;; under (sfs+1)
     ((and
-      (key-history u 4)
-      (key-history n 3)
-      (key-history d 2)
+      (key-history u 3)
+      (key-history n 2)
+      (key-history d 1)
     )) e break
 
     ;; interest (sfs)
