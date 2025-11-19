@@ -6,7 +6,7 @@
 let
   # Firefox Nightly with https://github.com/MrOtherGuy/fx-autoconfig
   firefox-nightly = (
-    (inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin).override {
+    (inputs.firefox-nightly.packages.${pkgs.stdenv.hostPlatform.system}.firefox-nightly-bin).override {
       extraPrefsFiles = [
         (builtins.fetchurl {
           url = "https://raw.githubusercontent.com/MrOtherGuy/fx-autoconfig/master/program/config.js";

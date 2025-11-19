@@ -95,7 +95,7 @@ in {
     extensions = [ # {{{
       # https://github.com/nix-community/home-manager/commit/cc837038306d752355d21a4b4620ff589bcd1e71
 # FIXME curl error suddenly??
-      # (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
+      # (inputs.vicinae.mkVicinaeExtension.${pkgs.stdenv.hostPlatform.system} {
       #   inherit pkgs;
       #   name = "case-converter";
       #   src = pkgs.fetchFromGitHub {
@@ -107,7 +107,7 @@ in {
       # })
 
       # FIXME
-      # (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
+      # (inputs.vicinae.mkVicinaeExtension.${pkgs.stdenv.hostPlatform.system} {
       #   inherit pkgs;
       #   name = "nix";
       #   src = pkgs.fetchFromGitHub {
@@ -123,7 +123,7 @@ in {
 
 
 
-      # (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
+      # (inputs.vicinae.mkVicinaeExtension.${pkgs.stdenv.hostPlatform.system} {
       #   inherit pkgs;
       #   name = "firefox-symbols";
       #   src = pkgs.fetchFromGitHub {
@@ -134,7 +134,7 @@ in {
       #   } + "/unicode-symbols";
       # })
 
-      # (inputs.vicinae.mkRayCastExtension.${pkgs.system} {
+      # (inputs.vicinae.mkRayCastExtension.${pkgs.stdenv.hostPlatform.system} {
       #   inherit pkgs;
       #   name = "balatro-compendium";
       #   src = pkgs.fetchgit {

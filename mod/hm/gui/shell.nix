@@ -9,7 +9,7 @@
   #   enable = true;
   #   configDir = null;  # Don't symlink since we're using the bundled version
   #   extraPackages = with pkgs; [
-  #     inputs.meow-shell.packages.${pkgs.system}.default
+  #     inputs.meow-shell.packages.${pkgs.stdenv.hostPlatform.system}.default
   #   ];
   # };
   #

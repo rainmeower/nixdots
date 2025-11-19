@@ -101,7 +101,7 @@
 
     # (discord.override {
     #  withMoonlight = true;
-    #  moonlight = inputs.moonlight.packages.${pkgs.system}.moonlight-mod;
+    #  moonlight = inputs.moonlight.packages.${pkgs.stdenv.hostPlatform.system}.moonlight-mod;
     #  })
     vesktop
 

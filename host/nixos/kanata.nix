@@ -307,27 +307,27 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history b 3)
       (key-history l 2)
       (key-history e 1)
-    )) (macro m) break
+    )) m break
 
     ;; use
     ((and
       (key-history u 2)
-    (key-history s 1)
-    )) (macro e) break
+      (key-history s 1)
+    )) e break
 
     ;; also
     ((and
       (key-history a 3)
     (key-history l 2)
     (key-history s 1)
-    )) (macro o) break
+    )) o break
 
     ;; state
     ((and
       (key-history s 3)
       (key-history t 2)
       (key-history a 1)
-    )) (macro t) break
+    )) (multi (release-key t) (macro t)) break
 
     ;; ((and(key-history e 2) (key-history s 1))) (macro e) break
     ((and
@@ -450,7 +450,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((and
       (key-history s 2)
       (key-history t 1)
-    )) (macro d) break
+    )) d break
 
     ;; |&   closures with references
     ((key-history \ 1)) (macro S-7) break
@@ -595,6 +595,13 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history e 3)
       (key-history a 2)
       (key-history s 1)
+    )) (multi (release-key e) (macro e)) break
+
+    ;; under (sfs+1)
+    ((and
+      (key-history u 4)
+      (key-history n 3)
+      (key-history d 2)
     )) e break
 
     ;; interest (sfs)
@@ -604,7 +611,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history t 3)
       (key-history e 2)
       (key-history r 1)
-    )) e break
+    )) (multi (release-key e) (macro e)) break
 
     ;; increase (sfs+1)
     ((and
@@ -660,14 +667,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history lsft 2)
       (key-history , 1)
     )) S-- break
-
-    ;; under  (sfs+1)
-    ((and
-      (key-history u 4)
-      (key-history n 3)
-      (key-history d 2)
-      (key-history e 1)
-    )) r break
 
     ;; ||  (more comfortable than rpeat)
     ((key-history \ 1)) S-\ break
