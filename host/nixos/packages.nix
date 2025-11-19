@@ -4,6 +4,8 @@
   ...
 }: {
   environment.systemPackages = with pkgs; [
+    bmm
+
     # nirius
     zenity
     blender
