@@ -243,10 +243,17 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history s 3)
       (key-history c 2)
       (key-history i 1)
-    )) (multi (release-key i) (macro i)) break
+    )) rpt break
 
 
     ;; monkeytype {{{
+    ;; much
+    ((and
+      (key-history m 3)
+      (key-history u 2)
+      (key-history c 1)
+    )) h break
+
     ;; school FIXME
     ((and
       (key-history s 5)
@@ -304,8 +311,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; state
     ((and
       (key-history s 3)
-    (key-history t 2)
-    (key-history a 1)
+      (key-history t 2)
+      (key-history a 1)
     )) (macro t) break
 
     ;; ((and(key-history e 2) (key-history s 1))) (macro e) break
@@ -559,6 +566,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
   ) ;; }}}
 
   magic_2 (switch ;; {{{
+    ;;TODO order?
+    ;;TODO back? scissor redirect
 
     ;; ease, increase  etc
     ((and
@@ -566,6 +575,36 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history a 2)
       (key-history s 1)
     )) e break
+
+    ;; while (sfs)
+    ((and
+      (key-history w 3)
+      (key-history h 2)
+      (key-history i 1)
+    )) l break
+
+    ;; interest (sfs)
+    ((and
+      (key-history i 5)
+      (key-history n 4)
+      (key-history t 3)
+      (key-history e 2)
+      (key-history r 1)
+    )) e break
+
+    ;; increase (sfs+1)
+    ((and
+      (key-history i 4)
+      (key-history n 3)
+      (key-history c 2)
+      (key-history r 1)
+    )) e break
+
+    ;; take (sfs)
+    ((and
+      (key-history t 2)
+      (key-history a 1)
+    )) k break
 
     ;; println
     ((and
@@ -584,7 +623,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history e 1)
     )) x break
 
-    ;; because
+    ;; because (sfs)
     ((and
       (key-history b 4)
       (key-history e 3)
