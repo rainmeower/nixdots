@@ -246,6 +246,13 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     )) rpt break
 
 
+    ;; them
+    ((and
+      (key-history t 3)
+      (key-history h 2)
+      (key-history e 1)
+    )) m break
+
     ;; monkeytype {{{
     ;; much
     ((and
@@ -511,12 +518,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history i 1)
     )) (macro spc) break
 
-    ((and
-      (key-history spc 4)
-      (key-history t 3)
-      (key-history h 2)
-      (key-history e 1)
-    )) (macro spc) break
     ;; }}}
 
     ;; expand {{{ 
