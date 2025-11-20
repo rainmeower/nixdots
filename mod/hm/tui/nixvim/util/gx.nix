@@ -23,8 +23,6 @@ require('gx-extended').setup({
   -- Optional: GitHub file line permalinks
   enable_github_file_line = true,
 
-  -- Optional: Custom browser
-  open_fn = require('lazy.util').open,
 })
     '';
   };
