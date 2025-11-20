@@ -31,10 +31,17 @@
       # thumbfast
       # thumbnail
 
-      visualizer # audio file waveforms
+      # visualizer # audio file waveforms
     ];
 
     scriptOpts = {
+      visualizer = {
+        mode = "novideo"; # off, noalbumart, novideo, force
+        name = "showwaves";
+        quality = "veryhigh";
+        height = 10;
+
+      };
       uosc = {
 
         # Display style of current position. available: line, bar
@@ -241,5 +248,8 @@
 
   home.file.".config/mpv/scripts/auto-save-state.lua".source =
     ../../../../stuff/mpv/auto-save-state.lua;
+
+  home.file.".config/mpv/scripts/visualizer".source =
+    ../../../../stuff/mpv/visualizer.lua;
 
 }
