@@ -3,21 +3,24 @@
   pkgs,
   ...
 }: {
-  services = {
-    mpd = {
-      enable = true;
-      user = username;
-      musicDirectory = "/home/${username}/music/";
-      dataDir = "/home/${username}/.local/share/mpd"; # TODO .local/share?
+  services.mpd = {
+    enable = true;
+    user = username;
+    musicDirectory = "/home/${username}/music/";
+    # FIXME cant access home-manager config from nixos config
+    # musicDirectory = config.xdg.userDirs.music;
+
+    dataDir = "/home/${username}/.local/share/mpd";
       extraConfig = ''
-        port "6669"
-        audio_output {
-          type "pipewire"
-          name "meowwire"
-        }
-      '';
-    };
+      port "6669"
+      audio_output {
+        type "pipewire"
+        name "meowwire"
+      }
+    '';
   };
+
+	# services.mpd-mpris.enable = true;
 
   environment.systemPackages = with pkgs; [
     mpc

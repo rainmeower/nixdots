@@ -1,8 +1,7 @@
 {
   config,
   ...
-}:
-let
+}: let
   h = config.home.homeDirectory;
 in {
   xdg.userDirs = {

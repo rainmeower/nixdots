@@ -42,6 +42,7 @@
     ./util/lsp.nix
     ./util/hardtime.nix
     ./util/neotest.nix
+    ./util/gx.nix
     ./util/lspconfig.nix
     # ./util/pairs.nix
     ./util/splitjoin.nix

@@ -8,6 +8,8 @@
       };
     };
     settings = {
+      pull.rebase = true;
+      init.defaultBranch = "main";
       url = {
         "git@github.com:" = {
           insteadOf = "gh:";

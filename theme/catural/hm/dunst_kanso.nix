@@ -10,7 +10,7 @@ in {
   config = lib.mkIf (lib.hasPrefix "kanso" theme) {
 
     services.dunst.settings.urgency_normal = {
-      background = col.zen_bg0;
+      background = col.bg;
       foreground = col.fg;
       frame_color = col.blue;
     };
