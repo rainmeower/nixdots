@@ -21,26 +21,26 @@
 [filechooser]
 cmd=${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
 default_dir=$HOME
-env=TERMCMD=foot --hold --app-id="foot.yazi.filechooser"
+env=TERMCMD=foot --app-id="foot.yazi.filechooser"
   '';
 
 
-  # xdg.portal = {
-  #   enable = true;
-  #
-  #   config = {
-  #     common = {
-  #       default = ["termfilechooser"];
-  #       "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
-  #     };
-  #     niri = {
-  #       default = ["termfilechooser"];
-  #       "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
-  #     };
-  #   };
-  #
-  #   extraPortals = [
-  #     pkgs.xdg-desktop-portal-termfilechooser
-  #   ];
-  # };
+  xdg.portal = {
+    enable = true;
+
+    config = {
+      common = {
+        default = ["termfilechooser"];
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+      };
+      niri = {
+        default = ["termfilechooser"];
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+      };
+    };
+
+    extraPortals = [
+      pkgs.xdg-desktop-portal-termfilechooser
+    ];
+  };
 }
