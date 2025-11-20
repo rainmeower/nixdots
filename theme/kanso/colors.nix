@@ -2,6 +2,7 @@
 # compatibility colours
   accent = "#7FB4CA";
   bg = "#090E13";
+  background = "#090E13";
   bgtrans = "#090E13cc";
   gray   = "#5C6066";
   grey   = "#5C6066";
@@ -35,6 +36,8 @@
 
 # fg
   fg    = "#C5C9C7";
+  foreground    = "#C5C9C7";
+  text    = "#C5C9C7";
   fg2   = "#f2f1ef";
 
   gray1 = "#717C7C";

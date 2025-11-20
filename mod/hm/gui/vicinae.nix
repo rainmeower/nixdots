@@ -184,17 +184,36 @@ pkgs.vicinae-extension-nix
       name = "meow";
       description = "default nix theme";
     };
-    palette = {
-      background = col.bg;
-      foreground = col.fg;
-      blue = col.blue;
-      green = col.green;
-      magenta = col.pink;
-      orange = col.orange;
-      purple = col.purple;
-      red = col.red;
-      yellow = col.yellow;
-      cyan = col.cyan;
+    colors = {
+      core = {
+        inherit (col)
+          background
+          foreground
+          accent;
+      };
+
+      accents = {
+        inherit (col)
+          red
+          orange
+          yellow
+          green
+          cyan
+          blue
+          purple;
+        magenta = col.pink;
+      };
+
+			list.item = {
+				selection = {
+					background = col.button;
+					secondary_background = "#ff0000";
+				};
+
+				hover = {
+					background = col.button;
+				};
+			};
     };
   };
 }
