@@ -86,6 +86,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
 (defalias ;; {{{
 
+
   rp (switch
     ;; vec
     ((and
@@ -274,13 +275,12 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history c 4)
       (key-history h 3)
       (key-history o 2)
+      (key-history o 1)
     )) l break
 
     ;; play (sfs+1)
     ((and
-      (key-history p 3)
-    (key-history l 2)
-    (key-history a 1)
+      (key-history a 1)
     )) y break
 
     ;; leave
