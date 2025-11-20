@@ -249,7 +249,7 @@
   home.file.".config/mpv/scripts/auto-save-state.lua".source =
     ../../../../stuff/mpv/auto-save-state.lua;
 
-  home.file.".config/mpv/scripts/visualizer".source =
+  home.file.".config/mpv/scripts/visualizer.lua".source =
     ../../../../stuff/mpv/visualizer.lua;
 
 }
