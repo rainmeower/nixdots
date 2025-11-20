@@ -53,48 +53,51 @@ in {
     enable = true;
     autoStart = true;
     # FIXME
-    # settings = {
-    #   faviconService = "twenty"; # twenty | google | none
-    #   font = {
-    #     normal = config.stylix.fonts.monospace.name;
-    #     size = 12;
-    #   };
-    #   popToRootOnClose = false;
-    #   rootSearch.searchFiles = false;
-    #   theme.name = "meow";
-    #   themes = {
-    #     meow = {
-    #       version = "1.0.0";
-    #       appearance = "dark";
-    #       icon = nix-icon;
-    #       name = "meow";
-    #       description = "default nix theme";
-    #       palette = {
-    #         background = col.bg;
-    #         foreground = col.fg;
-    #         blue = col.blue;
-    #         green = col.green;
-    #         magenta = col.pink;
-    #         orange = col.orange;
-    #         purple = col.purple;
-    #         red = col.red;
-    #         yellow = col.yellow;
-    #         cyan = col.cyan;
-    #       };
-    #     };
-    #   };
-    #   window = {
-    #     csd = false;
-    #     opacity = 0.80;
-    #     rounding = radius;
-    #   };
-    # };
+    settings = {
+      faviconService = "twenty"; # twenty | google | none
+      font = {
+        normal = config.stylix.fonts.monospace.name;
+        size = 12;
+      };
+      popToRootOnClose = false;
+      rootSearch.searchFiles = false;
+      theme.name = "meow";
+      themes = {
+        meow = {
+          version = "1.0.0";
+          appearance = "dark";
+          icon = nix-icon;
+          name = "meow";
+          description = "default nix theme";
+          palette = {
+            background = col.bg;
+            foreground = col.fg;
+            blue = col.blue;
+            green = col.green;
+            magenta = col.pink;
+            orange = col.orange;
+            purple = col.purple;
+            red = col.red;
+            yellow = col.yellow;
+            cyan = col.cyan;
+          };
+        };
+      };
+      window = {
+        csd = false;
+        opacity = 0.80;
+        rounding = radius;
+      };
+    };
 
 
 
     extensions = [ # {{{
+      pkgs.vicinae-extension-nix 
+
+
       # https://github.com/nix-community/home-manager/commit/cc837038306d752355d21a4b4620ff589bcd1e71
-# FIXME curl error suddenly??
+      # FIXME curl error suddenly??
       # (inputs.vicinae.mkVicinaeExtension.${pkgs.stdenv.hostPlatform.system} {
       #   inherit pkgs;
       #   name = "case-converter";
@@ -186,6 +189,8 @@ in {
       })
 
 
-      ]; # }}}
-};
+    ]; # }}}
+  };
+
+	xdg.configFile."vicinae/vicinae.json".force = true;
 }

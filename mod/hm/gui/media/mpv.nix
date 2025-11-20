@@ -37,9 +37,9 @@
     scriptOpts = {
       visualizer = {
         mode = "novideo"; # off, noalbumart, novideo, force
-        name = "showwaves";
+        name = "showcqt";
         quality = "veryhigh";
-        height = 9;
+        height = 9; # 16:9
 
       };
       uosc = {
