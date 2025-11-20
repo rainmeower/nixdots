@@ -33,5 +33,6 @@
   # ];
 
   programs.niri.enable = true;
+  programs.niri.package = pkgs.niri;
     # lib.mkIf (config.wm == "niri") true;
 }
