@@ -17,6 +17,7 @@
     ../../mod/os/core/polkit.nix
     ../../mod/os/core/security.nix
     ../../mod/os/dev.nix
+    ../../mod/os/terraria.nix
     ../../mod/os/font.nix
     ../../mod/os/fontconfig.nix
     ../../mod/os/gamemode.nix
