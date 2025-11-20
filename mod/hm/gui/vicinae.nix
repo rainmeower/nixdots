@@ -176,7 +176,7 @@ pkgs.vicinae-extension-nix
 	xdg.configFile."vicinae/vicinae.json".force = true;
 
 
-  xdg.dataFile."vicinae/themes/mellow-edit.toml".source = (pkgs.formats.toml {}).generate "mellow-edit.toml" {
+  xdg.dataFile."vicinae/themes/meow.toml".source = (pkgs.formats.toml {}).generate "meow.toml" {
     meta = {
       version = 1;
       appearance = "dark";
