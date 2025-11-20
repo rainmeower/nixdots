@@ -30,6 +30,8 @@
       # sponsorblock-minimal
       # thumbfast
       # thumbnail
+
+      visualizer # audio file waveforms
     ];
 
     scriptOpts = {
