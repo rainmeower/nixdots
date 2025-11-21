@@ -1,8 +1,8 @@
-{
+rec {
 # compatibility colours
   accent = "#7FB4CA";
   bg = "#090E13";
-  background = "#090E13";
+  background = bg;
   bgtrans = "#090E13cc";
   gray   = "#5C6066";
   grey   = "#5C6066";
