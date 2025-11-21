@@ -590,6 +590,11 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;;TODO order?
     ;;TODO back? scissor redirect
 
+    ;; rust ? after function call
+    ((and
+      (key-history 0 1)
+    )) S-/ break
+
     ;; ease, increase  etc
     ((and
       (key-history e 3)
