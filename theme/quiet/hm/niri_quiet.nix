@@ -1,33 +1,31 @@
 {
   lib,
   theme,
+  wm,
   ...
 }:
 let
   col = import ../colors.nix;
 in {
-  config = lib.mkIf (theme == "quiet") {
-
+  config = lib.mkIf (theme == "quiet" && wm == "niri") {
     programs.niri.settings.layout = {
-
-
 
     # background-color = "#000000";
     background-color = "transparent";
       focus-ring = {
-        active.color = col.blue;
+        active.color = col.accent;
         # active.gradient = {
         #   angle = 45;
         #   # relative-to = "workspace-view";
-        #   from = col.blue;
+        #   from = col.accent;
         #   to = col.violet_sat;
         # };
-        # inactive.color = col.blue;
+        # inactive.color = col.accent;
         inactive.color = "#00000000";
       };
       tab-indicator = {
-        active.color = col.blue;
-        inactive.color = col.gray5;
+        active.color = col.accent;
+        inactive.color = col.grey;
       };
     };
   };

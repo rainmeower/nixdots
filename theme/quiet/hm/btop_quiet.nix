@@ -22,22 +22,22 @@ in {
     theme[title]="${col.blue}"
 
     # Highlight color for keyboard shortcuts
-    theme[hi_fg]="${col.green2}"
+    theme[hi_fg]="${col.green}"
 
     # Background color of selected item in processes box
     theme[selected_bg]="${col.blue}"
 
     # Foreground color of selected item in processes box
-    theme[selected_fg]="${col.zen_bg0}"
+    theme[selected_fg]="${col.bg}"
 
     # Color of inactive/disabled text
-    theme[inactive_fg]="${col.gray5}"
+    theme[inactive_fg]="${col.grey}"
 
     # Color of text appearing on top of graphs, i.e uptime and current network graph scaling
     theme[graph_text]="${col.fg}"
 
     # Background color of the percentage meters
-    theme[meter_bg]="${col.zen_bg2}"
+    theme[meter_bg]="${col.grey}"
 
     # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
     theme[proc_misc]="${col.blue}"
@@ -60,12 +60,12 @@ in {
     # Temperature graph colors
     theme[temp_start]="${col.violet}"
     theme[temp_mid]="#BC7990"
-    theme[temp_end]="${col.red2}"
+    theme[temp_end]="${col.red}"
 
     # CPU graph colors
     theme[cpu_start]="${col.blue}"
     theme[cpu_mid]="#859EBD"
-    theme[cpu_end]="${col.violet_sat}"
+    theme[cpu_end]="${col.violet_b}"
 
     # Mem/Disk free meter
     theme[free_start]="${col.violet}"
@@ -78,9 +78,9 @@ in {
     theme[cached_end]="${col.aqua}"
 
     # Mem/Disk available meter
-    theme[available_start]="${col.yellow2}"
-    theme[available_mid]="${col.yellow2}"
-    theme[available_end]="${col.yellow2}"
+    theme[available_start]="${col.yellow}"
+    theme[available_mid]="${col.yellow}"
+    theme[available_end]="${col.yellow}"
 
     # Mem/Disk used meter
     theme[used_start]="${col.green}"
@@ -90,17 +90,17 @@ in {
     # Download graph colors
     theme[download_start]="${col.blue}"
     theme[download_mid]="#859EBD"
-    theme[download_end]="${col.violet_sat}"
+    theme[download_end]="${col.violet_b}"
 
     # Upload graph colors
     theme[upload_start]="${col.blue}"
     theme[upload_mid]="#859EBD"
-    theme[upload_end]="${col.violet_sat}"
+    theme[upload_end]="${col.violet_b}"
 
     # Process box color gradient for threads, mem and cpu usage
     theme[process_start]="${col.blue}"
     theme[process_mid]="#6E8A98"
-    theme[process_end]="${col.gray5}"
+    theme[process_end]="${col.grey}"
 
   '';
   };

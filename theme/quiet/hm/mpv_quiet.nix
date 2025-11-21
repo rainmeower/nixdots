@@ -8,13 +8,13 @@ let
 in {
   config = lib.mkIf (theme == "quiet") {
     programs.mpv.config = {
-      background-color = col.zen_bg0;
-      osd-back-color = col.zen_bg0;
-      osd-border-color = col.zen_bg0;
+      background-color = col.bg;
+      osd-back-color = col.bg;
+      osd-border-color = col.bg;
       osd-color = col.fg;
-      osd-shadow-color = col.zen_bg0;
+      osd-shadow-color = col.bg;
 
-      script-opts-append = [ # TODO col without # symbol
+      script-opts-append = [ # TODO
         "stats-border_color=30201e"
         "stats-font_color=f5d3ca"
         "stats-plot_bg_border_color=f8bdb7"

@@ -2,7 +2,6 @@
   programs.starship = {
     enable = true;
     enableBashIntegration = true;
-
     enableFishIntegration = false;
     enableZshIntegration = false;
     enableNushellIntegration = true;
@@ -18,11 +17,11 @@
       directory = {
         read_only = " ";
         truncation_length = 10;
-        truncate_to_repo = true; # truncates directory to root folder if in github repo
+        truncate_to_repo = true; # truncates directory to root folder if in git repo
       };
 
       cmd_duration = {
-        min_time = 999999; # 5000
+        min_time = 60;
         format = "[$duration]($style) ";
       };
 
@@ -43,9 +42,6 @@
         behind = "\${count}";
         diverged = "\${ahead_count}\${behind_count}";
       };
-
     };
-
   };
-
 }

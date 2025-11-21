@@ -36,6 +36,7 @@ in {
         ../../theme/everforest/hm/default.nix
         ../../theme/lix/hm/default.nix
         ../../theme/macchiato/hm/default.nix
+        ../../theme/quiet/hm/default.nix
         ../../theme/kanso/hm/default.nix
         ../../theme/kantsi/hm/default.nix
         ../../mod/hm/desktop.nix
