@@ -15,6 +15,7 @@
         "kanso_ink"
         "kanso_zen"
         "kantsi"
+        "quiet"
       ];
       default = "blacchiato";
     };

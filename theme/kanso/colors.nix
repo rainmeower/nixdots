@@ -1,16 +1,16 @@
 rec {
 # compatibility colours
-  accent = "#7FB4CA";
-  bg = "#090E13";
+  accent = blue;
+  bg = zen_bg0;
   background = bg;
-  bgtrans = "#090E13cc";
-  gray   = "#5C6066";
+  bgtrans = bg ++ "cc"; # 80% opacity
   grey   = "#5C6066";
+  gray   = grey;
   purple = "#938AA9";
   black  = "#090E13";
-  white  = "#f2f1ef";
-  cyan   = "#8ea4a2";
-  button = "#22262D";
+  white  = fg2;
+  cyan   = aqua;
+  button = zen_bg2;
   button_hover = "#393B44";
 
 
