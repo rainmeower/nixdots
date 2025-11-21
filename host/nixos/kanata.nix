@@ -362,11 +362,11 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; }}}
 
     ;; code {{{
-    ;; Ok(())
+    ;; Ok
     ((and
-      (key-history o 2)
-      (key-history k 1)
-    )) (multi (release-key o) (release-key k) (macro C-w bspc S-o k S-9 S-9 S-0 S-0)) break
+      (key-history lsft 2)
+      (key-history o 1)
+    )) (unmod k) break
 
     ;; Some(
     ((and
