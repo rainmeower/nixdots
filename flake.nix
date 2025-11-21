@@ -54,6 +54,8 @@
 
     # ags.url = "github:aylur/ags";
     # meow-shell.url = "github:nyxmeowmeow/shell";
+
+    tmodloader.url = "github:andOrlando/nix-tmodloader";
   }; # }}}
 
   outputs = inputs @ {
@@ -81,7 +83,18 @@
           ./host/nixos/hm.nix
 
         {
-          nixpkgs.overlays = import ./over/default.nix;
+          nixpkgs.overlays = [
+# (import ./over/foot.nix)
+  (import ./over/nvim.nix)
+  (import ./over/vicinae-extension-nix.nix)
+  (import ./over/ncmpcpp.nix)
+  (import ./over/dunst.nix)
+  (import ./over/nushell.nix)
+# (import ./over/obs.nix)
+  (import ./over/yazi.nix)
+  (import ./over/luajit.nix)
+  inputs.tmodloader.overlay
+];
         }
         nur.modules.nixos.default
 

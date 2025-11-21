@@ -802,6 +802,22 @@
     },
     "nixpkgs_7": {
       "locked": {
+        "lastModified": 1763421233,
+        "narHash": "sha256-Stk9ZYRkGrnnpyJ4eqt9eQtdFWRRIvMxpNRf4sIegnw=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "89c2b2330e733d6cdb5eae7b899326930c2c0648",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_8": {
+      "locked": {
         "lastModified": 1762111121,
         "narHash": "sha256-4vhDuZ7OZaZmKKrnDpxLZZpGIJvAeMtK6FKLJYUtAdw=",
         "owner": "NixOS",
@@ -816,7 +832,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_8": {
+    "nixpkgs_9": {
       "locked": {
         "lastModified": 1762482733,
         "narHash": "sha256-g/da4FzvckvbiZT075Sb1/YDNDr+tGQgh4N8i5ceYMg=",
@@ -990,6 +1006,7 @@
         "pollymc": "pollymc",
         "slippi": "slippi",
         "stylix": "stylix",
+        "tmodloader": "tmodloader",
         "vicinae": "vicinae",
         "ytsub": "ytsub",
         "zen-browser": "zen-browser"
@@ -1260,10 +1277,28 @@
         "type": "github"
       }
     },
+    "tmodloader": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_7"
+      },
+      "locked": {
+        "lastModified": 1734377184,
+        "narHash": "sha256-1Nz10m5qTsSXedAAl08cN/ama6lCDsM/WgdV5lb/9cQ=",
+        "owner": "andOrlando",
+        "repo": "nix-tmodloader",
+        "rev": "e29ca685ed7e59ef67c592030932ef17dbd8539c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andOrlando",
+        "repo": "nix-tmodloader",
+        "type": "github"
+      }
+    },
     "vicinae": {
       "inputs": {
         "flake-utils": "flake-utils_3",
-        "nixpkgs": "nixpkgs_7"
+        "nixpkgs": "nixpkgs_8"
       },
       "locked": {
         "lastModified": 1763505293,
@@ -1316,7 +1351,7 @@
       "inputs": {
         "crane": "crane",
         "flake-utils": "flake-utils_4",
-        "nixpkgs": "nixpkgs_8",
+        "nixpkgs": "nixpkgs_9",
         "rust-overlay": "rust-overlay"
       },
       "locked": {
