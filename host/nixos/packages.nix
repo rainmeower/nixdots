@@ -24,7 +24,7 @@
     # reaper # borken
     # reaper-reapack-extension
     # reaper-sws-extension
-
+    zynaddsubfx
     # gtk3
     # zrythm # borken
     # lmms # borken
