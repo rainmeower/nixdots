@@ -7,8 +7,6 @@ let
   col = import ../colors.nix;
 in {
   config = lib.mkIf (theme == "quiet") {
-
-
     programs.starship = {
       settings = {
         character = {
