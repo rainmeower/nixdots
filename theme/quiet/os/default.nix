@@ -2,7 +2,7 @@
   imports = [
     # ../palette.nix
 
-    ./fzf_kanso.nix
+    ./fzf_quiet.nix
     ./tty.nix
   ];
 }

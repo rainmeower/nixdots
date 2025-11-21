@@ -9,9 +9,7 @@
     ./qt_quiet.nix
     ./dunst_quiet.nix
     ./fastfetch_quiet.nix
-    ./foot_quiet_ink.nix
-    ./foot_quiet_mist.nix
-    ./foot_quiet_zen.nix
+    ./foot_quiet.nix
     # ./hm/hyprpaper_quiet.nix
     ./niri_quiet.nix
     ./nushell_quiet.nix
