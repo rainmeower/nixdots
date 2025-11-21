@@ -4,7 +4,7 @@
   username,
   ...
 }: {
-  config = lib.mkIf (lib.hasPrefix "kan" theme) {
+  config = lib.mkIf (theme == "quiet") {
 
     programs.fastfetch = {
       enable = true;

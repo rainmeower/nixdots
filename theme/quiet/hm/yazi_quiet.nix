@@ -2,7 +2,7 @@
 let
 col = import ../colors.nix;
 in {
-  config = lib.mkIf (lib.hasPrefix "kan" theme) {
+  config = lib.mkIf (theme == "quiet") {
     programs.yazi.theme = {
       mgr = {
         cwd.fg = col.fg;

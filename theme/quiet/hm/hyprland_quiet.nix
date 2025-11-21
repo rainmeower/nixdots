@@ -1,9 +1,10 @@
 {
   lib,
   theme,
+  wm,
   ...
 }: {
-  config = lib.mkIf (lib.hasPrefix "kanso" theme) {
+  config = lib.mkIf (theme == "quiet" && wm == "hyprland") {
 
 
     wayland.windowManager.hyprland = {

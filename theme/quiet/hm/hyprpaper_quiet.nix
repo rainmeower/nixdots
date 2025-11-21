@@ -4,7 +4,7 @@
   theme,
   ...
 }: {
-  config = lib.mkIf (lib.hasPrefix "kanso" theme) {
+  config = lib.mkIf (theme == "quiet") {
     services.hyprpaper = {
       enable = true;
       settings = {

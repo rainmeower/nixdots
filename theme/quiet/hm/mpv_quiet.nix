@@ -6,7 +6,7 @@
 let
   col = import ../colors.nix;
 in {
-  config = lib.mkIf (lib.hasPrefix "kanso" theme) {
+  config = lib.mkIf (theme == "quiet") {
     programs.mpv.config = {
       background-color = col.zen_bg0;
       osd-back-color = col.zen_bg0;

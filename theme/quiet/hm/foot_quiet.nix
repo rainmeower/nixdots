@@ -3,7 +3,7 @@
   theme,
   ...
 }: {
-  config = lib.mkIf (theme == "kanso_zen") {
+  config = lib.mkIf (theme == "quiet") {
 
     programs.foot = {
       enable = true;

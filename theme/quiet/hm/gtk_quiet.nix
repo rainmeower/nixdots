@@ -5,7 +5,7 @@
   config,
   ...
 }: {
-  config = lib.mkIf (lib.hasPrefix "kanso" theme) {
+  config = lib.mkIf (theme == "quiet") {
 
     gtk = {
       enable = true;

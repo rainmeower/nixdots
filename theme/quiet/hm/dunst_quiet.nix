@@ -7,7 +7,7 @@
 let
   col = import ../colors.nix;
 in {
-  config = lib.mkIf (lib.hasPrefix "kanso" theme) {
+  config = lib.mkIf (theme == "quiet") {
 
     services.dunst.settings.urgency_normal = {
       background = col.zen_bg0;

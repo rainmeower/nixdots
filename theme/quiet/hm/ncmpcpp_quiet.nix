@@ -3,7 +3,7 @@
   theme,
   ...
 }: {
-  config = lib.mkIf (lib.hasPrefix "kan" theme) {
+  config = lib.mkIf (theme == "quiet") {
 
     programs.ncmpcpp.settings = {
       colors_enabled = "yes";

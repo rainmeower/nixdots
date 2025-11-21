@@ -2,19 +2,22 @@
   lib,
   theme,
   ...
-}: {
-  config = lib.mkIf (lib.hasPrefix "kan" theme) {
+}:
+let
+  col = import ../colors.nix;
+in {
+  config = lib.mkIf (theme == "quiet") {
 
 
     programs.starship = {
       settings = {
         character = {
-          success_symbol = "[󰘧](blue)";
+          success_symbol = "[󰘧](${col.accent})";
           error_symbol = "[󰘧](red)";
         };
 
         directory = {
-          style = "bold blue";
+          style = "bold ${col.accent}";
         };
         git_metrics.disabled = false;
         git_status = {
