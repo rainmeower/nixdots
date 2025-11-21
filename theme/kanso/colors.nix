@@ -3,7 +3,7 @@ rec {
   accent = blue;
   bg = zen_bg0;
   background = bg;
-  bgtrans = bg ++ "cc"; # 80% opacity
+  bgtrans = "${bg}cc"; # 80% opacity
   grey   = "#5C6066";
   gray   = grey;
   purple = "#938AA9";
