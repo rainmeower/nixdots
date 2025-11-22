@@ -14,13 +14,15 @@ html {
   --font: ${config.stylix.fonts.monospace.name} !important;
   --bg-color: transparent !important;
   --sub-alt-color: transparent !important;
-
   --correct-letter-color: ${col.grey} !important;
   --untyped-letter-color: ${col.fg} !important;
   --sub-color: ${col.grey} !important;
   --sub-alt-color: transparent !important;
   --error-color: ${col.red} !important;
   --error-extra-color: ${col.red} !important;
+}
+:root {
+  --untyped-letter-color: ${col.fg} !important;
 }
 
 body {
