@@ -153,116 +153,116 @@ in {
       };
       icon = {
         files = [
-          { name = ".bash_profile"; fg = col.fg; }
-          { name = ".bashrc"; fg = col.fg; }
-          { name = ".gtkrc-2.0"; fg = col.fg; }
-          { name = ".Xresources"; fg = col.fg; }
-          { name = "license"; fg = col.yellow; }
-          # { name = "LICENSE"; fg = col.yellow; }
-          { name = "license.md"; fg = col.yellow; }
-          # { name = "LICENSE.md"; fg = col.yellow; }
-          { name = "readme"; fg = col.fg; }
-          { name = "readme.md"; fg = col.fg; }
-          { name = "readme.txt"; fg = col.fg; }
-          # { name = "README"; fg = col.fg; }
-          # { name = "README.md"; fg = col.fg; }
-          { name = ".git-blame-ignore-revs"; fg = col.red; }
-          { name = ".gitattributes"; fg = col.red; }
-          { name = ".gitignore"; fg = col.red; }
-          { name = ".gitmodules"; fg = col.red; }
-          { name = "makefile"; fg = col.fg; }
-          { name = "config"; fg = col.fg; }
+          { name = ".bash_profile"; text = ""; fg = col.fg; }
+          { name = ".bashrc"; text = ""; fg = col.fg; }
+          { name = ".gtkrc-2.0"; text = ""; fg = col.fg; }
+          { name = ".Xresources"; text = ""; fg = col.fg; }
+          { name = "license"; text = ""; fg = col.yellow; }
+          # { name = "LICENSE"; text = ""; fg = col.yellow; }
+          { name = "license.md"; text = ""; fg = col.yellow; }
+          # { name = "LICENSE.md"; text = ""; fg = col.yellow; }
+          { name = "readme"; text = "󰂺"; fg = col.fg; }
+          { name = "readme.md"; text = "󰂺"; fg = col.fg; }
+          { name = "readme.txt"; text = "󰂺"; fg = col.fg; }
+          # { name = "README"; text = "󰂺"; fg = col.fg; }
+          # { name = "README.md"; text = "󰂺"; fg = col.fg; }
+          { name = ".git-blame-ignore-revs"; text = ""; fg = col.red; }
+          { name = ".gitattributes"; text = ""; fg = col.red; }
+          { name = ".gitignore"; text = ""; fg = col.red; }
+          { name = ".gitmodules"; text = ""; fg = col.red; }
+          { name = "makefile"; text = "󱌣"; fg = col.fg; }
+          { name = "config"; text = ""; fg = col.fg; }
         ];
 
         exts = [
-          { name = "nix"; fg = col.blue; }
-          { name = "css"; fg = col.blue; }
-          { name = "html"; fg = col.orange; }
-          { name = "yaml"; fg = col.fg; }
-          { name = "yml"; fg = col.fg; }
-          { name = "json"; fg = col.fg; }
-          { name = "toml"; fg = col.red; }
-          { name = "ini"; fg = col.fg; }
-          { name = "cfg"; fg = col.fg; }
-          { name = "csv"; fg = col.fg; }
-          { name = "jar"; fg = col.orange; }
-          { name = "ml"; fg = col.orange; }
-          { name = "mli"; fg = col.orange; }
-          { name = "swift"; fg = col.red; }
-          { name = "kt"; fg = col.violet; }
-          { name = "svelte"; fg = col.red; }
-          { name = "ino"; fg = col.blue; }
-          { name = "js"; fg = col.yellow; }
-          { name = "rs"; fg = col.red; }
-          { name = "py"; fg = col.yellow; }
-          { name = "c"; fg = col.blue; }
-          { name = "c++"; fg = col.violet; }
-          { name = "cpp"; fg = col.violet; }
-          { name = "cp"; fg = col.violet; }
-          { name = "lua"; fg = col.blue; }
-          { name = "zig"; fg = col.orange; }
-          { name = "hs"; fg = col.violet; }
-          { name = "git"; fg = col.red; }
-          { name = "lock"; fg = col.fg; }
-          { name = "dat"; fg = col.fg; }
-          { name = "txt"; fg = col.fg; }
-          { name = "png"; fg = col.yellow; }
-          { name = "webp"; fg = col.yellow; }
-          { name = "jpg"; fg = col.yellow; }
-          { name = "jpeg"; fg = col.yellow; }
-          { name = "gif"; fg = col.yellow; }
-          { name = "ico"; fg = col.yellow; }
-          { name = "svg"; fg = col.yellow; }
-          { name = "vtf"; fg = col.yellow; }
-          { name = "vmt"; fg = col.fg; }
-          { name = "mp4"; fg = col.violet; }
-          { name = "mkv"; fg = col.violet; }
-          { name = "mov"; fg = col.violet; }
-          { name = "mp3"; fg = col.violet; }
-          { name = "ogg"; fg = col.violet; }
-          { name = "opus"; fg = col.violet; }
-          { name = "flac"; fg = col.violet; }
-          { name = "wav"; fg = col.violet; }
-          { name = "nu"; fg = col.green; }
-          { name = "sh"; fg = col.green; }
-          { name = "bash"; fg = col.green; }
-          { name = "zsh"; fg = col.green; }
-          { name = "fish"; fg = col.green; }
-          { name = "bat"; fg = col.red; }
-          { name = "exe"; fg = col.red; }
-          { name = "dll"; fg = col.red; }
-          { name = "iso"; fg = col.fg; }
-          { name = "qcow2"; fg = col.fg; }
-          { name = "kra"; fg = col.pink; }
-          { name = "kra~"; fg = col.fg; }
-          { name = "xml"; fg = col.fg; }
-          { name = "md"; fg = col.fg; }
-          { name = "org"; fg = col.green; }
+          { name = "nix"; text = "󱄅"; fg = col.blue; }
+          { name = "css"; text = ""; fg = col.blue; }
+          { name = "html"; text = ""; fg = col.orange; }
+          { name = "yaml"; text = ""; fg = col.fg; }
+          { name = "yml"; text = ""; fg = col.fg; }
+          { name = "json"; text = ""; fg = col.fg; }
+          { name = "toml"; text = ""; fg = col.red; }
+          { name = "ini"; text = ""; fg = col.fg; }
+          { name = "cfg"; text = ""; fg = col.fg; }
+          { name = "csv"; text = ""; fg = col.fg; }
+          { name = "jar"; text = ""; fg = col.orange; }
+          { name = "ml"; text = ""; fg = col.orange; }
+          { name = "mli"; text = ""; fg = col.orange; }
+          { name = "swift"; text = ""; fg = col.red; }
+          { name = "kt"; text = "󱈙"; fg = col.violet; }
+          { name = "svelte"; text = ""; fg = col.red; }
+          { name = "ino"; text = ""; fg = col.blue; }
+          { name = "js"; text = ""; fg = col.yellow; }
+          { name = "rs"; text = ""; fg = col.red; }
+          { name = "py"; text = ""; fg = col.yellow; }
+          { name = "c"; text = ""; fg = col.blue; }
+          { name = "c++"; text = ""; fg = col.violet; }
+          { name = "cpp"; text = ""; fg = col.violet; }
+          { name = "cp"; text = ""; fg = col.violet; }
+          { name = "lua"; text = "󰢱"; fg = col.blue; }
+          { name = "zig"; text = ""; fg = col.orange; }
+          { name = "hs"; text = ""; fg = col.violet; }
+          { name = "git"; text = ""; fg = col.red; }
+          { name = "lock"; text = ""; fg = col.fg; }
+          { name = "dat"; text = ""; fg = col.fg; }
+          { name = "txt"; text = ""; fg = col.fg; }
+          { name = "png"; text = ""; fg = col.yellow; }
+          { name = "webp"; text = ""; fg = col.yellow; }
+          { name = "jpg"; text = ""; fg = col.yellow; }
+          { name = "jpeg"; text = ""; fg = col.yellow; }
+          { name = "gif"; text = ""; fg = col.yellow; }
+          { name = "ico"; text = ""; fg = col.yellow; }
+          { name = "svg"; text = "󰜡"; fg = col.yellow; }
+          { name = "vtf"; text = ""; fg = col.yellow; }
+          { name = "vmt"; text = ""; fg = col.fg; }
+          { name = "mp4"; text = ""; fg = col.violet; }
+          { name = "mkv"; text = ""; fg = col.violet; }
+          { name = "mov"; text = ""; fg = col.violet; }
+          { name = "mp3"; text = ""; fg = col.violet; }
+          { name = "ogg"; text = ""; fg = col.violet; }
+          { name = "opus"; text = ""; fg = col.violet; }
+          { name = "flac"; text = ""; fg = col.violet; }
+          { name = "wav"; text = "󱑽"; fg = col.violet; }
+          { name = "nu"; text = ""; fg = col.green; }
+          { name = "sh"; text = ""; fg = col.green; }
+          { name = "bash"; text = ""; fg = col.green; }
+          { name = "zsh"; text = ""; fg = col.green; }
+          { name = "fish"; text = ""; fg = col.green; }
+          { name = "bat"; text = ""; fg = col.red; }
+          { name = "exe"; text = ""; fg = col.red; }
+          { name = "dll"; text = "󱉟"; fg = col.red; }
+          { name = "iso"; text = ""; fg = col.fg; }
+          { name = "qcow2"; text = ""; fg = col.fg; }
+          { name = "kra"; text = ""; fg = col.pink; }
+          { name = "kra~"; text = ""; fg = col.fg; }
+          { name = "xml"; text = "󰗀"; fg = col.fg; }
+          { name = "md"; text = ""; fg = col.fg; }
+          { name = "org"; text = ""; fg = col.green; }
 
-          { name = "gz";  fg = col.yellow; }
-          { name = "xz";  fg = col.yellow; }
-          { name = "bz";  fg = col.yellow; }
-          { name = "bz2"; fg = col.yellow; }
-          { name = "zst"; fg = col.yellow; }
-          { name = "lz4"; fg = col.yellow; }
-          { name = "lha"; fg = col.yellow; }
-          { name = "zip"; fg = col.yellow; }
-          { name = "7z";  fg = col.yellow; }
-          { name = "rar"; fg = col.yellow; }
+          { name = "gz";  text = "󰗄"; fg = col.yellow; }
+          { name = "xz";  text = "󰗄"; fg = col.yellow; }
+          { name = "bz";  text = "󰗄"; fg = col.yellow; }
+          { name = "bz2"; text = "󰗄"; fg = col.yellow; }
+          { name = "zst"; text = "󰗄"; fg = col.yellow; }
+          { name = "lz4"; text = "󰗄"; fg = col.yellow; }
+          { name = "lha"; text = "󰗄"; fg = col.yellow; }
+          { name = "zip"; text = "󰗄"; fg = col.yellow; }
+          { name = "7z";  text = "󰗄"; fg = col.yellow; }
+          { name = "rar"; text = "󰗄"; fg = col.yellow; }
 
-          { name = "db"; fg = col.fg; }
-          { name = "sql"; fg = col.fg; }
-          { name = "sqlite"; fg = col.fg; }
-          { name = "sqlite3"; fg = col.fg; }
-          { name = "dump"; fg = col.fg; }
-          { name = "bsp"; fg = col.fg; }
-          { name = "vmf"; fg = col.fg; }
-          { name = "vmx"; fg = col.fg; }
-          { name = "el"; fg = col.violet; }
-          { name = "gpg"; fg = col.yellow; }
-          { name = "desktop"; fg = col.violet; }
+          { name = "db"; text = ""; fg = col.fg; }
+          { name = "sql"; text = ""; fg = col.fg; }
+          { name = "sqlite"; text = ""; fg = col.fg; }
+          { name = "sqlite3"; text = ""; fg = col.fg; }
+          { name = "dump"; text = ""; fg = col.fg; }
+          { name = "bsp"; text = ""; fg = col.fg; }
+          { name = "vmf"; text = ""; fg = col.fg; }
+          { name = "vmx"; text = ""; fg = col.fg; }
+          { name = "el"; text = ""; fg = col.violet; }
+          { name = "gpg"; text = "󱕴"; fg = col.yellow; }
+          { name = "desktop"; text = ""; fg = col.violet; }
 
-          { name = "celeste"; fg = col.violet; }
+          { name = "celeste"; text = ""; fg = col.violet; }
 
         ];
 
