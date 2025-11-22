@@ -8,8 +8,8 @@ rec {
   blue   = cyan;
   aqua   = cyan;
   purple = violet;
-  button = "#22262D";
-  button_hover = "#393B44";
+  button = "#22262D"; # TODO
+  button_hover = "#393B44"; # TODO
   fg2 = "#8182BA";
 
   bg = "#111228";
@@ -27,7 +27,7 @@ rec {
   white = "#c1c0d4";
   cyan = "#9EB6D0";
 
-  black_b = "#353539";
+  black_b = "#353539"; # TODO
   orange_b = "#ffae9f";
   green_b = "#9dc6ac";
   yellow_b = "#f0c5a9";

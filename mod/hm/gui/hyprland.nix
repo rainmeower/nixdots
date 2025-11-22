@@ -2,6 +2,8 @@
   pkgs,
   lib,
   wm,
+  config,
+  os_config,
   ...
 }: {
   config = lib.mkIf (wm == "hyprland") {
@@ -21,7 +23,7 @@
         };
 
         misc = {
-          font_family = "mononoki nerd font mono";
+          font_family = config.stylix.fonts.monospace.name;
           new_window_takes_over_fullscreen = 2; # un-fullscreen when opening a new window
 
         };
@@ -32,9 +34,6 @@
         };
 
         group = {
-
-
-
           groupbar = {
 # gradients = true;
 # font_size = 10;
@@ -72,7 +71,7 @@
 
         monitor = [
           "DP-1, 2560x1440@165.08, 0x0, 1"
-            "DP-3, 2560x1440@75, -2880x486, 1, transform, 3"
+          "DP-3, 2560x1440@75, -2880x486, 1, transform, 3"
         ];
 
         env = [
@@ -112,7 +111,7 @@
 
         cursor = {
           hide_on_key_press = "false"; # set to false to make tablet cursor stay visible
-            inactive_timeout = "1";
+          inactive_timeout = "1";
         };
 
         xwayland = {
@@ -134,18 +133,18 @@
         };
 
 
-        animations.enabled = "false";
+        animations.enabled = os_config.animations;
 
         workspace = [
           "1, monitor:DP-1"
-            "2, monitor:DP-1"
-            "3, monitor:DP-1"
-            "4, monitor:DP-1"
-            "5, monitor:DP-1"
-            "6, monitor:DP-1"
-            "7, monitor:DP-1"
-            "8, monitor:DP-1"
-            "9, monitor:DP-3"
+          "2, monitor:DP-1"
+          "3, monitor:DP-1"
+          "4, monitor:DP-1"
+          "5, monitor:DP-1"
+          "6, monitor:DP-1"
+          "7, monitor:DP-1"
+          "8, monitor:DP-1"
+          "9, monitor:DP-3"
         ];
 
         bind = [

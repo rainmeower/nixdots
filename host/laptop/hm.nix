@@ -9,12 +9,10 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     backupFileExtension = "bak";
-    extraSpecialArgs = { inherit username flake_dir inputs; };
     extraSpecialArgs = {
-      theme = config.theme;
+      inherit username flake_dir inputs;
+      inherit (config) theme wm;
       host = config.networking.hostName;
-      wm = config.wm;
-      zen-browser = inputs.zen-browser;
     };
 
     users.${username} = {
