@@ -8,6 +8,10 @@
     STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/${username}/.steam/root/compatibilitytools.d"; # protonup install path
   };
 
+  environment.systemPackages = with pkgs; [
+    steamcmd
+  ];
+
   programs = {
     steam = {
       enable = true;

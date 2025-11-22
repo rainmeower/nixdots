@@ -16,6 +16,7 @@ html {
   --sub-alt-color: transparent !important;
   --correct-letter-color: ${col.grey} !important;
   --untyped-letter-color: ${col.fg} !important;
+  --caret-color: ${col.fg} !important;
   --sub-color: ${col.grey} !important;
   --sub-alt-color: transparent !important;
   --error-color: ${col.red} !important;
