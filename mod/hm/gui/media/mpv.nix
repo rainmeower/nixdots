@@ -43,11 +43,8 @@
 
       };
       uosc = {
-
-        # Display style of current position. available: line, bar
-        timeline_style = "line";
-        # Line display style config
-        timeline_line_width = 2;
+        timeline_style = "line"; # line, bar
+        timeline_line_width = 2; # width in px
         # Timeline size when fully expanded, in pixels, 0 to disable
         timeline_size = 30;
         # Comma separated states when element should always be fully visible.

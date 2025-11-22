@@ -15,15 +15,8 @@ in {
       osd-color = col.fg;
       osd-shadow-color = col.bg;
 
-      script-opts-append = [ # TODO
-"uosc-color=\
-foreground=${n col.fg}\
-,foreground_text=${n col.fg}\
-,background=${n col.bg}\
-,background_text=${n col.fg}\
-,curtain=${n col.bg}\
-,success=${n col.green}\
-,error=${n col.red}"
+      script-opts-append = [
+        "uosc-color=foreground=${n col.fg},foreground_text=${n col.fg},background=${n col.bg},background_text=${n col.fg},curtain=${n col.bg},success=${n col.green},error=${n col.red}"
       ];
     };
   };
