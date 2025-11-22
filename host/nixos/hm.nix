@@ -6,8 +6,7 @@
   lib,
   theme,
   ...
-}:
-let
+}: let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
 in {
   home-manager = {
@@ -15,12 +14,10 @@ in {
     useUserPackages = true;
     backupFileExtension = "bak";
     extraSpecialArgs = {
-      inherit username flake_dir inputs ;
-      theme = config.theme;
-      host = config.networking.hostName;
-      rounding = config.rounding;
-      wm = config.wm;
+      inherit username flake_dir inputs;
+      inherit (config) theme rounding wm;
       zen-browser = inputs.zen-browser;
+      host = config.networking.hostName;
       os_config = config;
 
       # FIXME
