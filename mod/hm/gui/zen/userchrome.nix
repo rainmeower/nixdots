@@ -44,6 +44,8 @@ in {
 
 
 :root {
+  --toolbar-field-color: ${col.fg} !important;
+
   --zen-primary-color: transparent !important;
   /* --zen-border-radius: 8px; */
   /* --zen-element-separation: 8px; */
@@ -56,6 +58,10 @@ in {
   --zen-main-browser-background-toolbar-old: transparent !important;
 }
 
+
+.tab-content {
+  color: ${col.fg} !important;
+}
 
 .tab-content {
   &:is([selected], [multiselected]) {
