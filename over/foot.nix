@@ -1,7 +1,7 @@
-self: super: {
-  foot = super.foot.overrideAttrs (old: {
+(final: prev: {
+  foot = prev.foot.overrideAttrs (old: {
     mesonBuildFlags = [
       "-Dc_args=-O3 -march=native -pipe"
     ];
   });
-}
+})

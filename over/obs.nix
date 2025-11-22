@@ -1,4 +1,4 @@
-final: prev: {
+(final: prev: {
    obs-studio = prev.obs-studio.override {
     alsaSupport = false;
     pulseaudioSupport = false;
@@ -10,4 +10,4 @@ final: prev: {
       "-DCMAKE_CXX_FLAGS=-O3 -march=native -pipe"
     ];
   });
-}
+})
