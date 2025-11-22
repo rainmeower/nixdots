@@ -145,7 +145,7 @@ in {
         }
         {
           name = "*/";
-          fg = col.blue;
+          fg = col.accent;
         }
         ];
 
@@ -153,16 +153,6 @@ in {
 
       };
       icon = {
-        dirs = [
-          { name = ".config"; text = ""; }
-          { name = "Desktop"; text = ""; }
-          { name = "Documents"; text = ""; }
-          { name = "Downloads"; text = ""; }
-          { name = "Music"; text = ""; }
-          { name = "Pictures"; text = ""; }
-          { name = "Videos"; text = ""; }
-        ];
-
         files = [
           { name = ".bash_profile"; text = ""; fg = col.fg; }
           { name = ".bashrc"; text = ""; fg = col.fg; }

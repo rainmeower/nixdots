@@ -1,16 +1,18 @@
 {
   pkgs,
   username,
+  config,
   ...
 }: {
   imports = [
-    ./settings.nix
+    ./icons.nix
+    ./input.nix
     ./keymap.nix
-    ./theme.nix
     ./open.nix
     ./opener.nix
     ./plugin.nix
-    ./input.nix
+    ./settings.nix
+    ./theme.nix
 
     ../../service/termfilechooser.nix
   ];
@@ -36,6 +38,8 @@
       mount 
       dupes 
       jump-to-char;
+
+      # TODO packages
       compress = ./plugins/compress.yazi;
       gvfs = ./plugins/gvfs.yazi;
       file-actions = ./plugins/gvfs.yazi;
@@ -49,41 +53,31 @@
 require("no-status"):setup()
 -- require("mime-preview"):setup()
 require("simple-tag"):setup({
-  -- UI display mode (icon, text, hidden)
-  ui_mode = "icon",
+  ui_mode = "icon", -- icon, text, hidden
+  hints_disabled = false, -- key hint popup in bottom right
 
-  -- Disable tag key hints (popup in bottom right corner)
-  hints_disabled = false,
-
-  -- linemode order: adjusts icon/text position. For example, if you want icon to be on the most left of linemode then set linemode_order larger than 1000.
-  -- More info: https://github.com/sxyazi/yazi/blob/077faacc9a84bb5a06c5a8185a71405b0cb3dc8a/yazi-plugin/preset/components/linemode.lua#L4-L5
-  linemode_order = 500, -- (Optional)
+  -- https://github.com/sxyazi/yazi/blob/077faacc9a84bb5a06c5a8185a71405b0cb3dc8a/yazi-plugin/preset/components/linemode.lua#L4-L5
+  linemode_order = 500,
   -- save_path = "/home/${username}/.config/yazi/tags",
   colors = { -- (Optional)
-	  -- Set this same value with `theme.toml` > [mgr] > hovered > reversed
-	  -- Default theme use "reversed = true".
-	  -- More info: https://github.com/sxyazi/yazi/blob/077faacc9a84bb5a06c5a8185a71405b0cb3dc8a/yazi-config/preset/theme-dark.toml#L25
-	  reversed = true, -- (Optional)
+	  reversed = ${if config.programs.yazi.theme.mgr.hovered.reversed then "true" else "false"}, -- TODO find a better way to do this
 
-	  -- More colors: https://yazi-rs.github.io/docs/configuration/theme#types.color
-    -- format: [tag key] = "color"
-	  ["*"] = "magenta", -- (Optional)
+	  ["*"] = "magenta", -- xdg user dirs
 	  ["$"] = "green",
 	  ["!"] = "yellow",
 	  ["1"] = "cyan",
 	  ["p"] = "red",
-	  ["g"] = "cyan",
+	  ["g"] = "cyan", -- git repos
   },
 
-  -- ●   󱈤
   -- https://www.nerdfonts.com/cheat-sheet
   icons = {
 		default = "●",
-		["*"] = "*",
+		["*"] = "*", -- xdg user dirs
 		["$"] = "",
 		["!"] = "",
 		["p"] = "",
-		["g"] = "",
+		["g"] = "", -- git repos
   },
 
 })
