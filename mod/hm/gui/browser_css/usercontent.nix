@@ -19,6 +19,7 @@ in
 @import "/home/${username}/.config/usercontent/nixos.css";
 @import "/home/${username}/.config/usercontent/sourcehut.css";
 @import "/home/${username}/.config/usercontent/wikipedia.css";
+@import "/home/${username}/.config/usercontent/reddit.css";
 
 *{ scrollbar-width: none; }
 

@@ -1,6 +1,7 @@
 {
   imports = [
     ./duckduckgo.nix
+    ./reddit.nix
     ./git/codeberg.nix
     ./git/github.nix
     ./git/gitlab.nix

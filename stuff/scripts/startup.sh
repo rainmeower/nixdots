@@ -2,7 +2,7 @@
 
 # foot nu -e "walker --gapplication-service" &
 # foot ~/nix/stuff/scripts/hydrate.sh &
-foot ~/nix/stuff/scripts/retry.sh &
+# foot ~/nix/stuff/scripts/retry.sh &
 # foot foot --server &
 # foot kitty -1 &
 vicinae server &
