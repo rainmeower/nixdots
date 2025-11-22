@@ -3,9 +3,10 @@
   theme,
   username,
   ...
-}: {
+}: let
+  col = import ../colors.nix;
+in {
   config = lib.mkIf (theme == "quiet") {
-
     programs.fastfetch = {
       enable = true;
 
@@ -26,113 +27,76 @@
         {
           type = "command";
           key = "let ${username}: Host";
-          keyColor = "blue";
+          keyColor = "${col.accent}";
           text = "echo '= {'";
         }
         {
           type = "os";
           key = "  distro:";
           format = "\"{2}\",";
-          keyColor = "blue";
+          keyColor = "${col.accent}";
         }
         {
           type = "kernel";
           key = "  kernel:";
           format = "\"{2}\",";
-          keyColor = "blue";
+          keyColor = "${col.accent}";
         }
         {
           type = "packages";
           key = "  pkgs:";
           format = "{1},";
-          keyColor = "blue";
+          keyColor = "${col.accent}";
         }
-# {
-#   type = "display";
-#   key = "   ds:";
-#   keyColor = "green";
-# }
-# {
-#   type = "wm";
-#   key = "wm:";
-#   keyColor = "blue";
-# }
         {
           type = "command";
           key = "  wm:";
-          keyColor = "blue";
+          keyColor = "${col.accent}";
           # text = "echo ${config.wm}";
           text = "echo '\"niri\",";
         }
-# {
-#   type = "terminal";
-#   key = "tm:";
-#   keyColor = "blue";
-# }
         {
           type = "command";
           key = "  term:";
-          keyColor = "blue";
+          keyColor = "${col.accent}";
           text = "echo '\"ghostty\",'";
         }
-# {
-#   type = "shell";
-#   key = "sh:";
-#   keyColor = "blue";
-# }
         {
           type = "command";
           key = "  shell:";
-          keyColor = "blue";
+          keyColor = "${col.accent}";
           text = "echo '\"nushell\",'";
         }
         {
           type = "cpu";
           format = "\"{1}\",";
           key = "  cpu:";
-          keyColor = "blue";
+          keyColor = "${col.accent}";
         }
         {
           type = "gpu";
           format = "\"{2}\",";
           key = "  gpu:";
-          keyColor = "blue";
+          keyColor = "${col.accent}";
         }
-        # {
-        #   type = "gpu";
-        #   format = "{3}";
-        #   key = "drv";
-        #   keyColor = "blue";
-        # }
-        # {
-        #   type = "memory";
-        #   key = "  memory";
-        #   keyColor = "blue";
-        # }
         {
           type = "command";
           key = "  age:";
-          keyColor = "blue";
+          keyColor = "${col.accent}";
           text = "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo -n $days_difference; echo ','";
         }
         {
           type = "uptime";
           key = "  uptime:";
           format = "{3},";
-          keyColor = "blue";
+          keyColor = "${col.accent}";
         }
         {
           type = "command";
           key = "  theme:";
-          keyColor = "blue";
-          # text = "echo ${config.theme}";
-          text = "echo '\"kanso\"'";
+          keyColor = "${col.accent}";
+          text = "echo ${theme}";
         }
-        # {
-        #   type = "colors";
-        #   paddingLeft = 0;
-        #   symbol = "circle";
-        # }
         {
           type = "command";
           key = " ";

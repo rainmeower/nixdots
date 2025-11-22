@@ -3,8 +3,7 @@
   lib,
   theme,
   ...
-}:
-let
+}: let
   col = import ../colors.nix;
 in {
   config = lib.mkIf (theme == "quiet") {

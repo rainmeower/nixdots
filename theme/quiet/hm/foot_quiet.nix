@@ -2,19 +2,21 @@
   lib,
   theme,
   ...
-}: {
+}: let
+  col = import ../colors.nix;
+  n = lib.strings.removePrefix "#";
+in {
   config = lib.mkIf (theme == "quiet") {
-
     programs.foot = {
       enable = true;
       settings = {
         colors = {
-          alpha = "0.8";
+          alpha = 1;
 
-          cursor = "090E13 C5C9C7";
+          cursor = "${n col.bg} ${n col.fg}";
 
-          background = "090E13";
-          foreground = "C5C9C7";
+          background = n col.bg;
+          foreground = n col.fg;
 
           ## Normal/regular colors (color palette 0-7)
           regular0 = "393B44";  # black
