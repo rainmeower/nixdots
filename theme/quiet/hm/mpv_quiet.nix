@@ -5,6 +5,7 @@
 }:
 let
   col = import ../colors.nix;
+  n = lib.strings.removePrefix "#";
 in {
   config = lib.mkIf (theme == "quiet") {
     programs.mpv.config = {
@@ -15,12 +16,14 @@ in {
       osd-shadow-color = col.bg;
 
       script-opts-append = [ # TODO
-        "stats-border_color=30201e"
-        "stats-font_color=f5d3ca"
-        "stats-plot_bg_border_color=f8bdb7"
-        "stats-plot_bg_color=30201e"
-        "stats-plot_color=f8bdb7"
-        "uosc-color=foreground=c5c9c7,foreground_text=c5c9c7,background=090e13,background_text=c5c9c7,curtain=090e13,success=98bb6c,error=e46876"
+"uosc-color=\
+foreground=${n col.fg}\
+,foreground_text=${n col.fg}\
+,background=${n col.bg}\
+,background_text=${n col.fg}\
+,curtain=${n col.bg}\
+,success=${n col.green}\
+,error=${n col.red}"
       ];
     };
   };
