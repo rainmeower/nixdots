@@ -734,11 +734,11 @@ body {
     --message-hover: var(--hover); /* messages when hovered */
 
     /* accent colors */
-    --accent-1: #7FB4CA; /* links and other accent text */
-    --accent-2: #7FB4CA; /* small accent elements */
-    --accent-3: #7FB4CA; /* accent buttons */
-    --accent-4: #7FB4CA; /* accent buttons when hovered */
-    --accent-5: #7FB4CA; /* accent buttons when clicked */
+    --accent-1: ${col.accent}; /* links and other accent text */
+    --accent-2: ${col.accent}; /* small accent elements */
+    --accent-3: ${col.accent}; /* accent buttons */
+    --accent-4: ${col.accent}; /* accent buttons when hovered */
+    --accent-5: ${col.accent}; /* accent buttons when clicked */
     --accent-new: var(--red-2); /* stuff that's normally red like mute/deafen buttons */
     --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
     --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
@@ -759,17 +759,17 @@ body {
     --button-border: hsl(220, 0%, 100%, 0.1); /* neutral border color of buttons */
 
     /* base colors */
-    --red-1: #C34043;
-    --red-2: #C34043;
-    --red-3: #C34043;
-    --red-4: #C34043;
-    --red-5: #C34043;
+    --red-1: ${col.red};
+    --red-2: ${col.red};
+    --red-3: ${col.red};
+    --red-4: ${col.red};
+    --red-5: ${col.red};
 
-    --green-1: #98BB6C;
-    --green-2: #98BB6C;
-    --green-3: #98BB6C;
-    --green-4: #98BB6C;
-    --green-5: #98BB6C;
+    --green-1: ${col.green};
+    --green-2: ${col.green};
+    --green-3: ${col.green};
+    --green-4: ${col.green};
+    --green-5: ${col.green};
 
     --blue-1: oklch(75% 0.11 215);
     --blue-2: oklch(70% 0.11 215);
@@ -777,11 +777,11 @@ body {
     --blue-4: oklch(60% 0.11 215);
     --blue-5: oklch(55% 0.11 215);
 
-    --yellow-1: #DCA561;
-    --yellow-2: #DCA561;
-    --yellow-3: #DCA561;
-    --yellow-4: #DCA561;
-    --yellow-5: #DCA561;
+    --yellow-1: ${col.yellow};
+    --yellow-2: ${col.yellow};
+    --yellow-3: ${col.yellow};
+    --yellow-4: ${col.yellow};
+    --yellow-5: ${col.yellow};
 
     --purple-1: oklch(75% 0.12 310);
     --purple-2: oklch(70% 0.12 310);
