@@ -709,6 +709,10 @@ body {
 
 /* color options */
 :root {
+
+    --text-muted: ${col.grey};
+    --chat-text-muted: ${col.grey};
+
     --colors: on; /* off: discord default colors, on: midnight custom colors */
 
     /* text colors */
