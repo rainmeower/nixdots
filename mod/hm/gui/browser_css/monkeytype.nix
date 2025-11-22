@@ -28,8 +28,12 @@ html {
 body {
   background: transparent !important;
   font-family: ${config.stylix.fonts.monospace.name} !important;
+  --untyped-letter-color: ${col.fg} !important;
 }
 
+#words .word letter {
+  --untyped-letter-color: ${col.fg} !important;
+}
 
 #restartTestButton {
   opacity: 0 !important; /* needs to still exist */
