@@ -9,7 +9,7 @@
     vulkanSupport = true;
     waylandSupport = true;
     flashfetchSupport = false;
-    gnomeSupport = false;
+    gnomeSupport = true;
     rpmSupport = false;
     x11Support = false;
     xfceSupport = false;
