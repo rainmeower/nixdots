@@ -16,7 +16,6 @@ in {
     extraSpecialArgs = {
       inherit username flake_dir inputs;
       inherit (config) theme rounding wm;
-      zen-browser = inputs.zen-browser;
       host = config.networking.hostName;
       os_config = config;
 
