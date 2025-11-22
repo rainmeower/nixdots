@@ -14,9 +14,8 @@
     keymaps = [
     {
       key = "<cr>";
-      action = "function() require('flash').jump() end";
+      action.__raw = "function() require('flash').jump() end";
       mode = [ "n" "v" "x" ];
-      lua = true;
     }
     ];
   };

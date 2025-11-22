@@ -24,15 +24,13 @@
   #   keymaps = [
   #   {
   #     key = "<leader>r";
-  #     action = "Snacks.picker()";
+  #     action.__raw = "Snacks.picker()";
   #     mode = [ "n" "v" "x" ];
-  #     lua = true;
   #   }
   #   {
   #     key = "<leader><space>";
-  #     action = "Snacks.picker.buffers()";
+  #     action.__raw = "Snacks.picker.buffers()";
   #     mode = [ "n" "v" "x" ];
-  #     lua = true;
   #   }
   #   ];
   # };

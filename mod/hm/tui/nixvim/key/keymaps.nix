@@ -158,14 +158,12 @@
       key = "gd";
       action = "<cmd>lua vim.lsp.buf.definition()<cr>";
       mode = [ "n" "v" "x" ];
-      # lua = true;
     }
 
     {
       key = "gD";
       action = "<cmd>lua vim.lsp.buf.declaration()<cr>";
       mode = [ "n" "v" "x" ];
-      # lua = true;
     }
 
     # { # write & quit
