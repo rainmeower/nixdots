@@ -720,13 +720,13 @@ body {
     --text-1: ${col.fg}; /* other normally white text */
     --text-2: ${col.fg}; /* headings and important text */
     --text-3: ${col.fg}; /* normal text */
-    --text-4: #75797f; /* icon buttons and channels */
-    --text-5: #75797f; /* muted channels/chats and timestamps */
+    --text-4: ${col.grey}; /* icon buttons and channels */
+    --text-5: ${col.grey}; /* muted channels/chats and timestamps */
 
     /* background and dark colors */
     --bg-1: ${col.bgtrans}; /* dark buttons when clicked */
-    --bg-2: #22262D; /* dark buttons */
-    --bg-3: #22262D; /* spacing, secondary elements */
+    --bg-2: ${col.button}; /* dark buttons */
+    --bg-3: ${col.button}; /* spacing, secondary elements */
     --bg-4: ${col.bgtrans}; /* main background color */
     --hover: oklch(54% 0 0 / 0.1); /* channels and buttons when hovered */
     --active: oklch(54% 0 0 / 0.2); /* channels and buttons when clicked or selected */
