@@ -17,6 +17,10 @@ in {
 .left-sidebar, .mt-md, .mt-lg, .mb-0 {
   display: none !important;
 }
+.bg-neutral-background {
+  background-color: transparent !important;
+}
+
 
 :root {
 --color-button-secondary-background: ${col.button} !important;

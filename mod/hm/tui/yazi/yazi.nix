@@ -49,9 +49,7 @@
     };
 
     initLua = /* lua */ ''
--- require("folder-rules"):setup()
 require("no-status"):setup()
--- require("mime-preview"):setup()
 require("simple-tag"):setup({
   ui_mode = "icon", -- icon, text, hidden
   hints_disabled = false, -- key hint popup in bottom right
@@ -79,8 +77,8 @@ require("simple-tag"):setup({
 		["p"] = "",
 		["g"] = "", -- git repos
   },
-
 })
+
 require("git"):setup()
 require("starship"):setup()
 require("gvfs"):setup()
