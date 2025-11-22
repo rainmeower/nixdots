@@ -28,7 +28,7 @@
     # gtk3
     # zrythm # borken
     # lmms # borken
-    ardour
+    # ardour
 
     # walker
     rofi

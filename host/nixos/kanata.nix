@@ -368,18 +368,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history o 1)
     )) (unmod k) break
 
-    ;; Some(
-    ((and
-      (key-history s 2)
-      (key-history m 1)
-    )) (multi (release-key s) (release-key m) (macro C-w bspc S-s o m e S-9)) break
-
-    ;; None
-    ((and
-      (key-history n 2)
-      (key-history o 1)
-    )) (multi (release-key n) (release-key o) (macro C-w bspc S-n o n e)) break
-
     ;; false)
     ((and
       (key-history f 5)
@@ -591,6 +579,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;;TODO back? scissor redirect
 
     ;; rust ? after function call
+    ;; TODO . after this
     ((and
       (key-history 0 1)
     )) S-/ break

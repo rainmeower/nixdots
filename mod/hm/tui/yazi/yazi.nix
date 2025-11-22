@@ -11,6 +11,8 @@
     ./opener.nix
     ./plugin.nix
     ./input.nix
+
+    ../../service/termfilechooser.nix
   ];
 
   # home.packages = with pkgs; [
