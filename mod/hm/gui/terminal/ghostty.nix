@@ -58,9 +58,8 @@ in {
         "15=${col.white}"
       ]; # }}}
 
-    # } ++ lib.mkIf (config.animations) {
-    #   # cursor smear
-    #   custom-shader = "cursor_smear.glsl";
+      # cursor smear
+      custom-shader = if os_config.animations then "cursor_smear.glsl" else "";
     };
   };
   home.file.".config/ghostty/cursor_smear.glsl".source = ../../../../stuff/cursor_smear.glsl;
