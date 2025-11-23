@@ -14,3 +14,5 @@
 - `rg DP-3` when i get rid of second monitor
 
 - change keybinds for input vim mode in yazi
+
+- reduce use of `* {` in css

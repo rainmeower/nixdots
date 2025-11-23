@@ -10,6 +10,7 @@
     ./monkeytype.nix
     ./nixos.nix
     ./usercontent.nix
+    ./crates.nix
     ./wikipedia.nix
   ];
 }
