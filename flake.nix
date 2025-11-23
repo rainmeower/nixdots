@@ -75,7 +75,7 @@
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem { # {{{
         specialArgs = {
-          inherit inputs username flake_dir zen-browser nixvim niri;
+          inherit inputs username flake_dir;
         };
         modules = [
           ./host/nixos/default.nix
