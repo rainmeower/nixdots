@@ -37,12 +37,21 @@ in {
   .subtitle_e93d40046 {
     color: ${col.grey} !important;
   }
+
+  .docs_ea66d4641 {
+    --shadow: none !important;
+    background-color: transparent !important;
+    border-radius: var(--space-3xs);
+    box-shadow: var(--shadow);
+  }
 }
 
 :root {
-    --header-bg-color: transparent !important;
-    --yellow700: ${col.accent} !important;
-    --link-hover-color: ${col.accent} !important;
+  --header-bg-color: transparent !important;
+  --yellow700: ${col.accent} !important;
+  --yellow500: ${col.accent} !important;
+  --link-hover-color: ${col.accent} !important;
+  --link-color: ${col.accent} !important;
 }
 }
   '';

@@ -232,6 +232,12 @@
     #   mode = [ "n" "v" "x" ];
     # }
 
+    { # css important
+      key = "<leader>!";
+      action = "mzf;i important<esc>`z";
+      mode = [ "n" "v" "x" ];
+    }
+
     { # append semicolon
       key = "<leader>;";
       action = "mzA;<esc>`z";
