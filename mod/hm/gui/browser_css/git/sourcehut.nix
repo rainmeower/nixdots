@@ -14,7 +14,7 @@ in {
 
 * {
   font-family: ${config.stylix.fonts.monospace.name} !important;
-  ${if !os_config.rounding then "border-radius: none !important;" else ""}
+  ${if !os_config.rounding then "border-radius: 0px !important;" else ""}
 }
 
 body {
