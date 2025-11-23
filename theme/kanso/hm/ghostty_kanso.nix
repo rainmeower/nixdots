@@ -9,7 +9,7 @@ in {
     programs.ghostty.settings = {
       palette = lib.mkDefault [
         "0=${col.black}"
-        "1=${col.red2}"
+        "1=${col.red}"
         "2=${col.green3}"
         "3=${col.yellow3}"
         "4=${col.blue}"
@@ -18,7 +18,7 @@ in {
         "7=${col.white}"
 
         "8=${col.zen_bg1}"
-        "9=${col.red2_sat}"
+        "9=${col.red_sat}"
         "10=${col.green3_sat}"
         "11=${col.yellow3_sat}"
         "12=${col.blue_sat}"

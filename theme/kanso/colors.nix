@@ -55,20 +55,20 @@ rec {
 
 
 # main colors
-  red     = "#C34043";
+  red     = "#c4746e";
   red2    = "#E46876";
-  red3    = "#c4746e";
+  red3    = "#C34043";
   yellow  = "#DCA561";
   yellow2 = "#E6C384";
   yellow3 = "#c4b28a";
-  green   = "#98BB6C";
+  green   = "#8a9a7b";
   green2  = "#87a987";
-  green3  = "#8a9a7b";
+  green3  = "#98BB6C";
   green4  = "#6A9589";
   green5  = "#7AA89F";
-  blue3    = "#7FB4CA"; ######aaa
+  blue    = "#8ba4b0";
   blue2   = "#658594";
-  blue   = "#8ba4b0";
+  blue3   = "#7FB4CA";
   blue4   = "#8ea4a2";
   violet  = "#938AA9";
   violet2 = "#8992a7";
@@ -80,20 +80,20 @@ rec {
 
 
 # saturated variants (20% more saturation)
-  red_sat     = "#C93134";
+  red_sat     = "#CA675F";
   red2_sat    = "#ED5965";
-  red3_sat    = "#CA675F";
+  red3_sat    = "#C93134";
   yellow_sat  = "#E59F49";
   yellow2_sat = "#EDC272";
   yellow3_sat = "#CAAC7A";
-  green_sat   = "#8FC055";
+  green_sat   = "#7F9F6E";
   green2_sat  = "#7CAF7C";
-  green3_sat  = "#7F9F6E";
+  green3_sat  = "#8FC055";
   green4_sat  = "#5B9A82";
   green5_sat  = "#6BAE97";
-  blue_sat    = "#6EBBD4";
+  blue_sat    = "#7EAABA";
   blue2_sat   = "#568B8F";
-  blue3_sat   = "#7EAABA";
+  blue3_sat   = "#6EBBD4";
   blue4_sat   = "#81AAA9";
   violet_sat  = "#8A88B0";
   violet2_sat = "#7E91AF";
@@ -110,8 +110,8 @@ rec {
   method  = yellow3;
   var     = fg;
   arg     = gray3;
-  func    = blue3;
-  string  = green3;
+  func    = blue;
+  string  = green;
   num     = pink;
   bool    = orange;
   type    = blue4;
