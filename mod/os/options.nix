@@ -53,6 +53,10 @@ in {
       ];
     };
 
+    font_name = mkOption {
+      type = str;
+    };
+
     font_path = mkOption {
       type = str;
     };

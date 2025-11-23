@@ -62,9 +62,6 @@
     self,
     nixpkgs,
     home-manager,
-    zen-browser,
-    nixvim,
-    niri,
     nur,
     ...
   }: let
