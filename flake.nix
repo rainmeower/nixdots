@@ -13,7 +13,6 @@
     };
 
     nix-gaming.url = "github:fufexan/nix-gaming";
-    stylix.url = "github:danth/stylix";
 
 
     niri.url = "github:sodiboo/niri-flake";
@@ -37,16 +36,6 @@
     slippi.url = "github:lytedev/slippi-nix";
     # nuhxboard.url = "github:justDeeevin/NuhxBoard";
     pollymc.url = "github:fn2006/PollyMC";
-    # moonlight = {
-    #   url = "github:moonlight-mod/moonlight"; # Add `/develop` to the flake URL to use nightly.
-    #     inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
-    # elephant.url = "github:abenz1267/elephant";
-    # walker = {
-    #   url = "github:abenz1267/walker";
-    #   inputs.elephant.follows = "elephant";
-    # };
     vicinae.url = "github:vicinaehq/vicinae";
 
 
@@ -59,7 +48,7 @@
   }; # }}}
 
   outputs = inputs @ {
-    self,
+    self, # TODO wtf is this
     nixpkgs,
     home-manager,
     nur,
@@ -67,7 +56,7 @@
   }: let
     username = "meow";
     flake_dir = "/home/${username}/nix";
-    flake_ns_path = builtins.toString ./.; # flake nix store path
+    # flake_ns_path = builtins.toString ./.; # flake nix store path
   in {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem { # {{{
@@ -83,7 +72,6 @@
         }
         nur.modules.nixos.default
 
-        inputs.stylix.nixosModules.stylix
         ];
       }; # }}}
 
@@ -101,7 +89,6 @@
           # {
           #   nixpkgs.overlays = import ./over/default.nix;
           # }
-          inputs.stylix.nixosModules.stylix
 
 
         ];

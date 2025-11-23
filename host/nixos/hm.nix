@@ -63,6 +63,7 @@ in {
         ../../mod/hm/gui/firefox/firefox.nix
         ../../mod/hm/gui/mango/mango.nix
         ../../mod/hm/gui/media/mpv.nix
+        ../../mod/hm/gui/gtk.nix
         ../../mod/hm/gui/media/obs.nix
         ../../mod/hm/gui/media/swayimg.nix
         ../../mod/hm/gui/media/ytsub.nix
