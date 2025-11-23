@@ -1,7 +1,12 @@
 {
   inputs,
+  lib,
+  theme,
   ...
-}: {
+}: let
+  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
+  col = import ../../../../theme/${theme_trimmed}/colors.nix;
+in {
   imports = [
     inputs.mango.hmModules.mango
   ];
@@ -129,8 +134,8 @@ scratchpad_width_ratio=0.8
 scratchpad_height_ratio=0.9
 borderpx=3
 rootcolor=0x201b14ff
-bordercolor=0x7fb4ca00
-focuscolor=0x7fb4caff
+bordercolor=0x${col.accent}00
+focuscolor=0x${col.accent}00
 maximizescreencolor=0x89aa61ff
 urgentcolor=0xad401fff
 scratchpadcolor=0x516c93ff
