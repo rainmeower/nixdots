@@ -6,12 +6,10 @@
   theme,
   rounding,
   ...
-}:
-let
+}: let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../theme/${theme_trimmed}/colors.nix;
   radius = if rounding then 10 else 0;
-  nix-icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
   inherit (config.lib.vicinae) mkRayCastExtension;
 in {
 
@@ -46,13 +44,13 @@ in {
                                                          })
                                                          ); # }}}
 
-                                                         imports = [
-                                                         inputs.vicinae.homeManagerModules.default
-                                                         ];
+imports = [
+inputs.vicinae.homeManagerModules.default
+];
 
-                                                         services.vicinae = {
-                                                         enable = true;
-                                                         autoStart = true;
+services.vicinae = {
+enable = true;
+autoStart = true;
 # FIXME
 settings = {
 faviconService = "twenty"; # twenty | google | none

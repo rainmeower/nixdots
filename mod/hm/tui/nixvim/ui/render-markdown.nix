@@ -2,10 +2,10 @@
   programs.nixvim.plugins.render-markdown = {
     enable = true;
 
-    lazyLoad.enable = true;
+    lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [
       "DeferredUIEnter"
-    ];
+    ]; # }}}
 
     settings = {
       debounce = 50;
