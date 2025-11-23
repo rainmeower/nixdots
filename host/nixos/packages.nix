@@ -15,11 +15,7 @@
 
     nix-search-tv
 
-
-    # qutebrowser
-    # python313Packages.adblock
-    # python312Packages.adblock
-
+    xdg-utils
 
     # reaper # borken
     # reaper-reapack-extension
@@ -32,7 +28,6 @@
 
     cryptsetup
 
-    # nyaa
     rqbit
 
     /* image */
@@ -71,12 +66,9 @@
     /* audio */
     playerctl
 
-    /* file */
-    xdg-utils
 
     /* misc */
     wl-clipboard
-    dbus
     dconf
     libevdev
     # qemu_kvm
@@ -92,7 +84,6 @@
     #  })
     vesktop
 
-  ] ++ [
     inputs.pollymc.packages."x86_64-linux".default
   ];
 }

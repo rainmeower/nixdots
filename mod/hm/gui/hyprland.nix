@@ -9,8 +9,6 @@
   config = lib.mkIf (wm == "hyprland") {
     home.packages = with pkgs; [
       hyprprop
-      hyprland
-      hyprpicker
     ];
 
     wayland.windowManager.hyprland = {
