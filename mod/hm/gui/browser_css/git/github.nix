@@ -1,5 +1,6 @@
 {
   config,
+  os_config,
   lib,
   theme,
   ...
@@ -10,7 +11,10 @@ let
 in {
   home.file.".config/usercontent/github.css".text = /* css */ ''
 @-moz-document domain("github.com") {
-* { font-family: ${config.stylix.fonts.monospace.name} !important; }
+* {
+  font-family: ${config.stylix.fonts.monospace.name} !important;
+  ${if os_config.rounding then "border-radius: none !important;" else ""}
+}
 
 .markdown-body {
   font-family: ${config.stylix.fonts.monospace.name} !important;
