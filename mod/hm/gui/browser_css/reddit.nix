@@ -1,5 +1,6 @@
 {
   config,
+  os_config,
   lib,
   theme,
   ...
@@ -12,6 +13,8 @@ in {
 @-moz-document domain("www.reddit.com") {
 * {
   color: ${col.fg} !important;
+  font-family: ${config.stylix.fonts.monospace.name} !important;
+  ${if !os_config.rounding then "border-radius: 0px !important;" else ""}
 }
 
 .left-sidebar, .mt-md, /* .mt-lg, .mb-0 */ {

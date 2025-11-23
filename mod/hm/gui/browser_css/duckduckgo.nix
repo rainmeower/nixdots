@@ -1,5 +1,6 @@
 {
   config,
+  os_config,
   lib,
   theme,
   ...
@@ -10,7 +11,10 @@ let
 in {
   home.file.".config/usercontent/duckduckgo.css".text = /* css */ ''
 @-moz-document domain("duckduckgo.com") {
-* { font-family: ${config.stylix.fonts.monospace.name} !important; }
+* {
+  font-family: ${config.stylix.fonts.monospace.name} !important;
+  ${if !os_config.rounding then "border-radius: 0px !important;" else ""}
+}
 
 html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--carousel__image-wrapper, .result__image, .vertical--map__sidebar, .vertical--map__sidebar__header, .page-chrome_newtab, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded .metabar:not(.is-stuck), .is-link-style-exp .header-wrap  {
   background-color: transparent !important;

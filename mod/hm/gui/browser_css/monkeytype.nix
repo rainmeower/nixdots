@@ -1,5 +1,6 @@
 {
   config,
+  os_config,
   lib,
   theme,
   ...
@@ -10,6 +11,12 @@ let
 in {
   home.file.".config/usercontent/monkeytype.css".text = /* css */ ''
 @-moz-document domain("monkeytype.com") {
+* {
+  font-family: ${config.stylix.fonts.monospace.name} !important;
+  ${if !os_config.rounding then "border-radius: 0px !important;" else ""}
+}
+
+
 html {
   --font: ${config.stylix.fonts.monospace.name} !important;
   --bg-color: transparent !important;

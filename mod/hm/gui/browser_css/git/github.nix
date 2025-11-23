@@ -32,6 +32,7 @@ in {
   --button-primary-bgColor-hover: ${col.green} !important;
   --button-primary-borderColor-disabled: ${col.green} !important;
   --bgColor-open-emphasis: ${col.green} !important;
+  --button-primary-bgColor-rest: ${col.green} !important;
 }
 
 .search-suggestions {

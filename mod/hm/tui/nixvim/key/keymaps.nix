@@ -2,6 +2,7 @@
   programs.nixvim = {
     globals.mapleader = " ";
     keymaps = [
+# TODO yygccp
     {
       key = "x"; # tw
       action = "gc";
