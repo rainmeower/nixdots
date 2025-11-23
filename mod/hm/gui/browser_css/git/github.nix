@@ -33,6 +33,10 @@ in {
   --button-primary-borderColor-disabled: ${col.green} !important;
   --bgColor-open-emphasis: ${col.green} !important;
   --button-primary-bgColor-rest: ${col.green} !important;
+  --button-primary-fgColor-rest: ${col.bg} !important;
+
+  /* closed issue/pr */
+  --bgColor-done-emphasis: ${col.purple} !important;
 }
 
 .search-suggestions {
@@ -43,5 +47,15 @@ in {
 .AppHeader-CopilotChat {
   display: none !important;
 }
+
+
+/* @layer primer-react { */
+/*  :is(.prc-Button-ButtonBase-c50BI :where(.prc-Button-ButtonContent-HKbr-)):where([data-align="center"]), */
+/*   .prc-StateLabel-StateLabel-ukDwa:where([data-status="issueOpened"]), */
+/*   .prc-Button-ButtonBase-c50BI:where([data-variant="primary"]) { */
+/*     color: ${col.bg} !important; */
+/*   } */
+/* } */
+
 '';
 }
