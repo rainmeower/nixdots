@@ -67,8 +67,7 @@
     niri,
     nur,
     ...
-  }:
-  let
+  }: let
     username = "meow";
     flake_dir = "/home/${username}/nix";
     flake_ns_path = builtins.toString ./.; # flake nix store path
@@ -83,18 +82,7 @@
           ./host/nixos/hm.nix
 
         {
-          nixpkgs.overlays = [
-# (import ./over/foot.nix)
-  (import ./over/nvim.nix)
-  (import ./over/vicinae-extension-nix.nix)
-  (import ./over/ncmpcpp.nix)
-  (import ./over/dunst.nix)
-  (import ./over/nushell.nix)
-# (import ./over/obs.nix)
-  (import ./over/yazi.nix)
-  (import ./over/luajit.nix)
-  inputs.tmodloader.overlay
-];
+          nixpkgs.overlays = import ./over/default.nix;
         }
         nur.modules.nixos.default
 

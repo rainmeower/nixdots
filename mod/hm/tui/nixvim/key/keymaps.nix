@@ -2,7 +2,7 @@
   programs.nixvim = {
     globals.mapleader = " ";
     keymaps = [
-    { # toggle wrap
+    {
       key = "x"; # tw
       action = "gc";
       mode = [ "n" "x" "o" ];

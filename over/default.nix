@@ -3,9 +3,10 @@
   # (import ./obs.nix)
   # (import ./dbus.nix)
   # (import ./dunst.nix)
+  # (import ./gtk.nix)
+
   (import ./luajit.nix)
   (import ./fastfetch.nix)
-  # (import ./gtk.nix)
   (import ./ncmpcpp.nix)
   (import ./nushell.nix)
   (import ./nvim.nix)
