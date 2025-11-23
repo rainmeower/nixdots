@@ -31,7 +31,7 @@ html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--car
   --sds-color-text-accent-01: ${col.blue} !important;
   --sds-color-text-background-01: ${col.gray} !important;
   --sds-color-text-link-02-hover: ${col.gray} !important;
-  --sds-color-background-01: ${col.button}CC !important;
+  --sds-color-background-01: ${col.button}AA !important;
   --sds-color-text-on-color: ${col.button} !important;
 
   --theme-col-txt-card-body: ${col.gray} !important;

@@ -8,6 +8,7 @@
 let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../../theme/${theme_trimmed}/colors.nix;
+  def = lib.mkDefault;
 in {
   programs.ghostty = {
     enable = true;
@@ -23,14 +24,14 @@ in {
       adjust-cursor-thickness = 2;
       confirm-close-surface = false;
 
-      foreground = lib.mkDefault col.fg;
-      background = lib.mkDefault col.bg;
-      background-opacity = lib.mkDefault 0.8;
-      # cursor-color = lib.mkDefault col.fg;
-      cursor-color = lib.mkDefault col.fg2;
-      cursor-text = lib.mkDefault col.bg;
-      selection-background = lib.mkDefault col.blue;
-      selection-foreground = lib.mkDefault col.bg;
+      foreground = def col.fg;
+      background = def col.bg;
+      background-opacity = def 0.8;
+      # cursor-color = def col.fg;
+      cursor-color = def col.fg2;
+      cursor-text = def col.bg;
+      selection-background = def col.blue;
+      selection-foreground = def col.bg;
 
       keybind = [
         "page_up=scroll_page_up"

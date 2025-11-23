@@ -86,6 +86,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
 (defalias ;; {{{
 
+  ;; TODO check for spamming a/e and make it type out :stop
+  ;; more than 3 times?
 
   rp (switch
     ;; vec

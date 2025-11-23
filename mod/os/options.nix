@@ -1,10 +1,13 @@
 {
   lib,
   ...
-}: {
+}: let
+inherit (lib) mkOption;
+inherit (lib.types) enum bool str;
+in {
   options = {
-    theme = lib.mkOption {
-      type = lib.types.enum [
+    theme = mkOption {
+      type = enum [
         "macchiato"
         "blacchiato"
         "lix"
@@ -20,18 +23,18 @@
       default = "blacchiato";
     };
 
-    rounding = lib.mkOption {
-      type = lib.types.bool;
+    rounding = mkOption {
+      type = bool;
       default = true;
     };
 
-    animations = lib.mkOption {
-      type = lib.types.bool;
+    animations = mkOption {
+      type = bool;
       default = true;
     };
 
-    wm = lib.mkOption {
-      type = lib.types.enum [
+    wm = mkOption {
+      type = enum [
         "hyprland"
         "niri"
         # "mango" TODO
@@ -39,16 +42,16 @@
       default = "niri";
     };
 
-    font = lib.mkOption {
-      type = lib.types.enum [
+    font = mkOption {
+      type = enum [
         "mononoki"
         "iosevka"
       ];
       default = "mononoki";
     };
 
-    font_size = lib.mkOption {
-      type = lib.types.enum [
+    font_size = mkOption {
+      type = enum [
         "small"
         "medium"
         "large"
@@ -56,13 +59,13 @@
       default = "medium";
     };
 
-    font_path = lib.mkOption {
-      type = lib.types.str;
+    font_path = mkOption {
+      type = str;
       default = "";
     };
 
-    font_path_bold = lib.mkOption {
-      type = lib.types.str;
+    font_path_bold = mkOption {
+      type = str;
       default = "";
     };
   };

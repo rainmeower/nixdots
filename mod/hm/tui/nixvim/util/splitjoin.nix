@@ -1,7 +1,9 @@
 {
   lib,
   ...
-}: {
+}: let
+inherit (lib.nixvim) emptyTable;
+in {
   programs.nixvim.plugins.mini.modules.splitjoin.pairs = {
     enable = true;
 
@@ -12,8 +14,8 @@
 
     settings = {
       detect = {
-        brackets = lib.nixvim.mkRaw "nil";
-        exclude_regions = lib.nixvim.mkRaw "nil";
+        brackets.__raw = "nil";
+        exclude_regions.__raw = "nil";
         separator = ",";
       };
       mappings = {
@@ -21,12 +23,12 @@
         split = "gA";
       };
       join = {
-        hooks_post = lib.nixvim.emptyTable;
-        hooks_pre = lib.nixvim.emptyTable;
+        hooks_post = emptyTable;
+        hooks_pre = emptyTable;
       };
       split = {
-        hooks_post = lib.nixvim.emptyTable;
-        hooks_pre = lib.nixvim.emptyTable;
+        hooks_post = emptyTable;
+        hooks_pre = emptyTable;
       };
     };
   };

@@ -20,7 +20,7 @@ body {
     --black-600: ${col.fg} !important;
     --black: ${col.fg} !important;
     --white: transparent !important;
-    --highlight-bg: ${col.button}CC !important;
+    --highlight-bg: ${col.button}AA !important;
     --theme-link-color: ${col.blue} !important;
     --theme-secondary-400: ${col.blue} !important;
     --_an-a-fc: ${col.grey} !important;

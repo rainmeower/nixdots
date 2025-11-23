@@ -12,6 +12,7 @@ let
   col = import ../../../theme/${theme_trimmed}/colors.nix;
   radius = if rounding then 10 else 0;
   nix-icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+  inherit (config.lib.vicinae) mkRayCastExtension;
 in {
 
   # install extensions from raycast
@@ -136,7 +137,7 @@ pkgs.vicinae-extension-nix
 # rev = "f4b1ca09af17e754f02437a3f6145f45327892bf";
 # })
 
-       (config.lib.vicinae.mkRayCastExtension {
+       (mkRayCastExtension {
         name = "oklch-color-converter";
         sha256 = "sha256-wfRJTtMN+IMzGDWl4GaN3EB9v6GmlHdgEqZht8nUikE=";
         rev = "b8c8fcd7ebd441a5452b396923f2a40e879565ba";
@@ -150,20 +151,20 @@ pkgs.vicinae-extension-nix
 # })
 
 # FIXME /build/color-shades/node_modules/.bin/ray: line 30: curl: command not found
-# (config.lib.vicinae.mkRayCastExtension {
+# (mkRayCastExtension {
 # name = "color-shades";
 # sha256 = "sha256-IBbrcliA8sZg/H3GyEw4gs9Sf1NMwmarOVzzmFj8q/Q=";
 # rev = "da1acf4bd2e891fca44f74752d7291eea93d3895";
 # })
 
 
-# (config.lib.vicinae.mkRayCastExtension {
+# (mkRayCastExtension {
 #   name = "easydict";
 #   sha256 = "sha256-BDa7L4TAZhDSIvcYbuRcRhL/nVDxYAd2HQVVTUW1ItI=";
 #   rev = "709e3df645ea4c5748584a5019e8b647510e70f9";
 # })
 
-       (config.lib.vicinae.mkRayCastExtension {
+       (mkRayCastExtension {
         name = "unicode-symbols";
         sha256 = "sha256-N/PhRxaRu4voslRD5P8Kwn6uBC64lOtqh5ngHnHv9NM=";
         rev = "49b12149b739aab4b3d3a0d922947940b66c3f05";
