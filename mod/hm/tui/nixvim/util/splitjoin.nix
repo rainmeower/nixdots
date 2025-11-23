@@ -1,10 +1,8 @@
 {
   lib,
   ...
-}: let
-inherit (lib.nixvim) emptyTable;
-in {
-  programs.nixvim.plugins.mini.modules.splitjoin.pairs = {
+}: {
+  programs.nixvim.plugins.mini-splitjoin = {
     enable = true;
 
     lazyLoad.enable = true;
@@ -22,14 +20,14 @@ in {
         join = "ga";
         split = "gA";
       };
-      join = {
-        hooks_post = emptyTable;
-        hooks_pre = emptyTable;
-      };
-      split = {
-        hooks_post = emptyTable;
-        hooks_pre = emptyTable;
-      };
+      # join = {
+      #   hooks_post = lib.nixvim.emptyTable;
+      #   hooks_pre = lib.nixvim.emptyTable;
+      # };
+      # split = {
+      #   hooks_post = lib.nixvim.emptyTable;
+      #   hooks_pre = lib.nixvim.emptyTable;
+      # };
     };
   };
 }
