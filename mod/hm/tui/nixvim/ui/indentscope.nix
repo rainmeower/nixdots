@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.mini.modules.indentscope = {
+  programs.nixvim.plugins.mini-indentscope = {
     enable = true;
     settings = {
       draw.delay = 100;

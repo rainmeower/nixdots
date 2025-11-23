@@ -4,7 +4,7 @@
 }: let
   inherit (lib.nixvim) emptyTable;
 in {
-  programs.nixvim.plugins.mini.modules.bracketed = {
+  programs.nixvim.plugins.mini-bracketed = {
     enable = true;
 
     lazyLoad.enable = true;
@@ -14,59 +14,59 @@ in {
 
     settings = {
       buffer = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "r";
       };
       comment = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "w";
       };
       conflict = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "x";
       };
       diagnostic = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "t";
       };
       file = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "f";
       };
       indent = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "c";
       };
       jump = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "s";
       };
       location = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "p";
       };
       oldfile = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "h";
       };
       quickfix = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "q";
       };
       treesitter = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "b";
       };
       undo = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "u";
       };
       window = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "e";
       };
       yank = {
-        options = emptyTable;
+        # options = emptyTable;
         suffix = "y";
       };
     };
