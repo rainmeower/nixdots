@@ -60,7 +60,7 @@ in {
 .markdown-body pre {
   background: none !important;
 }
-.markdown-body code, .markdown-body tt {
+.markdown-body code:not(.markdown-body pre), .markdown-body tt:not(.markdown-body pre) {
   font-size: 85%;
   background-color: var(--bgColor-muted) !important;
 }
