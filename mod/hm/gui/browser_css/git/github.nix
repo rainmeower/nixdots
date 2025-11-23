@@ -13,7 +13,7 @@ in {
 @-moz-document domain("github.com") {
 * {
   font-family: ${config.stylix.fonts.monospace.name} !important;
-  ${if os_config.rounding then "border-radius: none !important;" else ""}
+  ${if !os_config.rounding then "border-radius: none !important;" else ""}
 }
 
 .markdown-body {
@@ -26,6 +26,11 @@ in {
   --bgColor-default: transparent !important;
   --bgColor-disabled: transparent !important;
   --bgColor-inset: transparent !important;
+
+  --button-primary-bgColor-active: ${col.green} !important;
+  --button-primary-bgColor-disabled: ${col.green} !important;
+  --button-primary-bgColor-hover: ${col.green} !important;
+  --button-primary-borderColor-disabled: ${col.green} !important;
 }
 
 .search-suggestions {

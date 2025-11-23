@@ -1,5 +1,6 @@
 {
   config,
+  os_config,
   lib,
   theme,
   ...
@@ -12,6 +13,7 @@ in {
 @-moz-document domain("gitlab.com") {
   * {
     font-family: ${config.stylix.fonts.monospace.name} !important; 
+    ${if !os_config.rounding then "border-radius: none !important;" else ""}
   }
 
   :root {
