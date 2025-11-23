@@ -3,6 +3,12 @@
     globals.mapleader = " ";
     keymaps = [
     { # toggle wrap
+      key = "x"; # tw
+      action = "gc";
+      mode = [ "n" "x" "o" ];
+    }
+
+    { # toggle wrap
       key = "<Leader>be"; # tw
       action = "<cmd>lua vim.o.wrap = not vim.o.wrap<cr>";
       mode = [ "n" "x" ];

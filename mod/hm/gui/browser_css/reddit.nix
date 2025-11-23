@@ -14,7 +14,7 @@ in {
   color: ${col.fg} !important;
 }
 
-.left-sidebar, .mt-md, .mt-lg, .mb-0 {
+.left-sidebar, .mt-md, /* .mt-lg, .mb-0 */ {
   display: none !important;
 }
 .bg-neutral-background {

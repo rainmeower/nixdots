@@ -20,7 +20,6 @@
       icon = "${flake_dir}/stuff/icons/wallpaper.svg";
     };
 
-
     hammer = {
       name = "hammer";
       comment = "hammer with bottles";
@@ -28,6 +27,7 @@
       icon = "${flake_dir}/stuff/icons/hammer.png";
     };
 
+    # hidden desktop entries {{{
     vitetris.noDisplay = true;
     yazi.noDisplay = true;
     nvim.noDisplay = true;
@@ -53,5 +53,6 @@
     btop.exec = "";
     rofi-theme-selector.exec = "";
     nixos-manual.exec = "";
+    # }}}
   };
 }
