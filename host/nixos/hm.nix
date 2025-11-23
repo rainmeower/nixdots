@@ -18,12 +18,9 @@ in {
       inherit (config) theme rounding wm;
       host = config.networking.hostName;
       os_config = config;
-
       # FIXME
       # col = import (builtins.toPath "${flake_dir}/theme/${theme_trimmed}/colors.nix");
-
     };
-
 
     users.${username} = {
       home.stateVersion = "24.11";
@@ -43,27 +40,27 @@ in {
 
         ../../mod/hm/gui/browser_css/default.nix
 
+        ../../mod/hm/env.nix
         ../../mod/hm/gui/dunst.nix
         ../../mod/hm/gui/emacs/emacs.nix
         ../../mod/hm/gui/firefox/firefox.nix
-        ../../mod/hm/gui/terminal/foot.nix
-        ../../mod/hm/xdg.nix
-        ../../mod/hm/gui/terminal/ghostty.nix
-        ../../mod/hm/gui/terminal/kitty.nix
         ../../mod/hm/gui/mango/mango.nix
         ../../mod/hm/gui/media/mpv.nix
+        ../../mod/hm/gui/media/obs.nix
+        ../../mod/hm/gui/media/swayimg.nix
         ../../mod/hm/gui/media/ytsub.nix
         ../../mod/hm/gui/niri/niri.nix
-        ../../mod/hm/gui/media/obs.nix
         ../../mod/hm/gui/rofi.nix
         ../../mod/hm/gui/shell.nix
-        ../../mod/hm/gui/media/swayimg.nix
+        ../../mod/hm/gui/slippi.nix
+        ../../mod/hm/gui/terminal/foot.nix
+        ../../mod/hm/gui/terminal/ghostty.nix
+        ../../mod/hm/gui/terminal/kitty.nix
         ../../mod/hm/gui/textfox.nix
         ../../mod/hm/gui/tofi.nix
         ../../mod/hm/gui/vesktop/vesktop.nix
-        ../../mod/hm/gui/walker.nix
-        ../../mod/hm/gui/slippi.nix
         ../../mod/hm/gui/vicinae.nix
+        ../../mod/hm/gui/walker.nix
         ../../mod/hm/gui/wlr-which-key.nix
         ../../mod/hm/gui/zen/zen.nix
         ../../mod/hm/service/easyeffects.nix
@@ -71,7 +68,6 @@ in {
         ../../mod/hm/service/swww.nix
         ../../mod/hm/tui/bash.nix
         ../../mod/hm/tui/btop.nix
-        ../../mod/hm/env.nix
         ../../mod/hm/tui/clipse.nix
         ../../mod/hm/tui/fzf.nix
         ../../mod/hm/tui/git.nix
@@ -84,6 +80,7 @@ in {
         ../../mod/hm/tui/starship.nix
         ../../mod/hm/tui/yazi/yazi.nix
         ../../mod/hm/tui/zoxide.nix
+        ../../mod/hm/xdg.nix
         ./niri.nix
         # ../../mod/hm/gui/hyprland.nix
       ];
