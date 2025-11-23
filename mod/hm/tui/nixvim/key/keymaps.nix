@@ -3,6 +3,13 @@
     globals.mapleader = " ";
     keymaps = [
 # TODO yygccp
+
+    {
+      key = "ga"; # tw
+      action.__raw = "require('treesj').toggle()";
+      mode = [ "n" "x" "o" ];
+    }
+
     {
       key = "x"; # tw
       action = "gc";
