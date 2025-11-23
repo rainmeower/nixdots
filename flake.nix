@@ -86,19 +86,7 @@
         }
         nur.modules.nixos.default
 
-
-        # inputs.mango.nixosModules.mango
-        # # ./modules/home-manager/gui/mango/mango.nix
-        # {
-        #   programs.mango.enable = true;
-        # }
-
         inputs.stylix.nixosModules.stylix
-
-        home-manager.nixosModules.home-manager
-        {
-          nixpkgs.overlays = import ./over/default.nix;
-        }
         ];
       }; # }}}
 
@@ -112,13 +100,11 @@
           ./host/laptop/hm.nix
 
 
-
-
-            home-manager.nixosModules.home-manager
-#        {
-#          nixpkgs.overlays = import ./over/default.nix;
-#        }
-            inputs.stylix.nixosModules.stylix
+          home-manager.nixosModules.home-manager
+          # {
+          #   nixpkgs.overlays = import ./over/default.nix;
+          # }
+          inputs.stylix.nixosModules.stylix
 
 
         ];

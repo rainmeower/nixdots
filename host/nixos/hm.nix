@@ -9,6 +9,12 @@
 }: let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
 in {
+  imports = [
+    inputs.home-manager.nixosModules.home-manager
+    {
+      nixpkgs.overlays = import ../../over/default.nix;
+    }
+  ];
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
@@ -21,6 +27,7 @@ in {
       # FIXME
       # col = import (builtins.toPath "${flake_dir}/theme/${theme_trimmed}/colors.nix");
     };
+
 
     users.${username} = {
       home.stateVersion = "24.11";
