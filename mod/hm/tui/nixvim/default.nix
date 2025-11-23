@@ -35,7 +35,8 @@
     ./ui/zen-mode.nix
     ./util/bracketed.nix
     ./util/godot.nix
-    ./util/treesj.nix
+    # ./util/treesj.nix
+    ./util/ts-node-action.nix
     ./util/completion.nix
     ./ui/diagnostic.nix
     ./util/flash.nix

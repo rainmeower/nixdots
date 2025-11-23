@@ -61,17 +61,20 @@
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem { # {{{
         specialArgs = {
-          inherit inputs username flake_dir;
+          inherit
+            inputs
+            username
+            flake_dir
+          ;
         };
         modules = [
           ./host/nixos/default.nix
           ./host/nixos/hm.nix
 
-        {
-          nixpkgs.overlays = import ./over/default.nix;
-        }
-        nur.modules.nixos.default
-
+          {
+            nixpkgs.overlays = import ./over/default.nix;
+          }
+          nur.modules.nixos.default
         ];
       }; # }}}
 

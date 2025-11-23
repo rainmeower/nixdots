@@ -17,3 +17,5 @@
 - change keybinds for input vim mode in yazi
 
 - reduce use of `* {` in css
+
+https://github.com/CKolkey/ts-node-action

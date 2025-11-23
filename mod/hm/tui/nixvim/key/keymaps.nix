@@ -5,8 +5,8 @@
 # TODO yygccp
 
     {
-      key = "ga"; # tw
-      action = ":lua require('treesj').toggle()<cr>";
+      key = "ga";
+      action = ":lua require('ts-node-action').node_action<cr>";
       mode = [ "n" "x" "o" ];
     }
 
@@ -27,12 +27,12 @@
       mode = [ "n" "x" ];
     }
     { # toggle breakindent
-      key = "<Leader>br"; # tw
+      key = "<Leader>br"; # tb
       action = "<cmd>lua vim.o.breakindent = not vim.o.breakindent<cr>";
       mode = [ "n" "x" ];
     }
     { # toggle breakindent for buffer
-      key = "<Leader>bR"; # tw
+      key = "<Leader>bR"; # tb
       action = "<cmd>lua vim.bo.breakindent = not vim.bo.breakindent<cr>";
       mode = [ "n" "x" ];
     }
