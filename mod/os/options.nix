@@ -30,7 +30,6 @@ in {
 
     animations = mkOption {
       type = bool;
-      default = true;
     };
 
     wm = mkOption {
