@@ -29,7 +29,7 @@
           };
           max_length = 1000000;
 
-          use_mode_colors = true;
+          use_mode_colors = false;
         }
         ];
         lualine_b = [ "none" ];
@@ -42,7 +42,6 @@
           sources = [ "nvim_diagnostic" "coc" ];
           sections = [ "error" ];
 
-
           diagnostics_color = {
             error = "DiagnosticError";
             warn = "DiagnosticWarn";
@@ -53,11 +52,6 @@
           colored = true;
           update_in_insert = false;
           always_visible = false;
-
-
-
-
-
         }
         ];
       };
