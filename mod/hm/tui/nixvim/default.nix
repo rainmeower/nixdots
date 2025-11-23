@@ -33,7 +33,6 @@
     ./ui/ccc.nix
     ./ui/lualine.nix
     ./ui/noice.nix
-    ./ui/zen-mode.nix
     ./util/bracketed.nix
     ./util/godot.nix
     # ./util/treesj.nix
@@ -44,7 +43,6 @@
     ./ui/indentscope.nix
     ./ui/yank_highlight.nix
     ./util/lsp.nix
-    ./util/hardtime.nix
     ./util/neotest.nix
     ./util/gx.nix
     ./util/lspconfig.nix

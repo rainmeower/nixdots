@@ -62,9 +62,6 @@ in {
           bg = col.blue;
         };
 
-# TODO
-# Highlighting
-# syntect_theme = ""
       };
       status = {
 

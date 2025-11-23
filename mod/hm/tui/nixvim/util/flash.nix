@@ -15,7 +15,7 @@
     {
       key = "<cr>";
       action.__raw = "function() require('flash').jump() end";
-      mode = [ "n" "v" "x" ];
+      mode = [ "n" "v" "x" "o" ];
     }
     ];
   };
