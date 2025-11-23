@@ -2,8 +2,8 @@
   lib,
   ...
 }: let
-inherit (lib) mkOption;
-inherit (lib.types) enum bool str;
+  inherit (lib) mkOption;
+  inherit (lib.types) enum bool str;
 in {
   options = {
     theme = mkOption {

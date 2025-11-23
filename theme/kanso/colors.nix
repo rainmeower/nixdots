@@ -1,17 +1,22 @@
 rec {
-# compatibility colours
   accent = blue;
-  bg = zen_bg0;
+
+  foreground = fg;
+  text       = fg;
+  bg         = zen_bg0;
   background = bg;
-  bgtrans = "${bg}cc"; # 80% opacity
+  bgtrans    = "${bg}CC"; # 80% opacity
+
   grey   = "#5C6066";
   gray   = grey;
   purple = "#938AA9";
   black  = "#090E13";
   white  = fg2;
-  cyan   = aqua;
+  cyan   = blue4;
+  aqua   = blue4;
+
   button = zen_bg2;
-  button_hover = "#393B44";
+  button_hover = zen_bg3;
 
 
 # zen bg shades
@@ -36,8 +41,6 @@ rec {
 
 # fg
   fg    = "#C5C9C7";
-  foreground    = "#C5C9C7";
-  text    = "#C5C9C7";
   fg2   = "#f2f1ef";
 
   gray1 = "#717C7C";
@@ -73,32 +76,43 @@ rec {
   pink    = "#a292a3";
   orange  = "#b6927b";
   orange2 = "#b98d7b";
-  aqua    = "#8ea4a2";
 
 
 
 # saturated variants (20% more saturation)
-  red_sat = "#C93134";
-  red2_sat = "#ED5965";
-  red3_sat = "#CA675F";
-  yellow_sat = "#E59F49";
+  red_sat     = "#C93134";
+  red2_sat    = "#ED5965";
+  red3_sat    = "#CA675F";
+  yellow_sat  = "#E59F49";
   yellow2_sat = "#EDC272";
   yellow3_sat = "#CAAC7A";
-  green_sat = "#8FC055";
-  green2_sat = "#7CAF7C";
-  green3_sat = "#7F9F6E";
-  green4_sat = "#5B9A82";
-  green5_sat = "#6BAE97";
-  blue_sat = "#6EBBD4";
-  blue2_sat = "#568B8F";
-  blue3_sat = "#7EAABA";
-  blue4_sat = "#81AAA9";
-  violet_sat = "#8A88B0";
+  green_sat   = "#8FC055";
+  green2_sat  = "#7CAF7C";
+  green3_sat  = "#7F9F6E";
+  green4_sat  = "#5B9A82";
+  green5_sat  = "#6BAE97";
+  blue_sat    = "#6EBBD4";
+  blue2_sat   = "#568B8F";
+  blue3_sat   = "#7EAABA";
+  blue4_sat   = "#81AAA9";
+  violet_sat  = "#8A88B0";
   violet2_sat = "#7E91AF";
   violet3_sat = "#8A9FBE";
-  pink_sat = "#A08AA2";
-  orange_sat = "#BC8A6C";
+  pink_sat    = "#A08AA2";
+  orange_sat  = "#BC8A6C";
   orange2_sat = "#BF856B";
-  aqua_sat = "#81AAA9";
+  aqua_sat    = "#81AAA9";
 
+
+
+# syntax highlighting
+  keyword = violet2;
+  method  = yellow3;
+  var     = fg;
+  arg     = gray3;
+  func    = blue3;
+  string  = green3;
+  num     = pink;
+  bool    = orange;
+  type    = blue4;
 }

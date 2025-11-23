@@ -1,3 +1,4 @@
+- remove stylix
 - fix ytsub audio
 
 - nord theme

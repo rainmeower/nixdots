@@ -2,10 +2,10 @@
   programs.nixvim.plugins.mini.modules.bracketed = {
     enable = true;
 
-    lazyLoad.enable = true;
-    lazyLoad.settings.event = [
-      "DeferredUIEnter"
-    ];
+    # lazyLoad.enable = true;
+    # lazyLoad.settings.event = [
+    #   "DeferredUIEnter"
+    # ];
 
     settings = {
       keymaps = [
@@ -13,16 +13,16 @@
       { comment = "w"; }
       { conflict = "x"; }
       { diagnostic = "t"; }
-      { file = "m"; }
+      { file = "f"; }
       { indent = "l"; }
-      { jump = "y"; }
+      { jump = "s"; }
       { location = "p"; }
-      { oldfile = "d"; }
+      { oldfile = "h"; }
       { quickfix = "q"; }
       { treesitter = "b"; }
       { undo = "u"; }
       { window = "v"; }
-      { yank = "f"; }
+      { yank = "y"; }
       ];
     };
   };

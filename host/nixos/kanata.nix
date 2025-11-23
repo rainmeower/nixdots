@@ -88,6 +88,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
   ;; TODO check for spamming a/e and make it type out :stop
   ;; more than 3 times?
+  ;; also use key-timing in case ur just in yazi previewing stuff
 
   rp (switch
     ;; vec
