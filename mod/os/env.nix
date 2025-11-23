@@ -15,6 +15,7 @@ in {
 
     XDG_CONFIG_HOME = "${h}/.config";
     XDG_DATA_HOME = "${h}/.local/share";
+
     XDG_CACHE_HOME = "${h}/.cache";
 
     CALCHISTFILE = "${cache}/calc_history";

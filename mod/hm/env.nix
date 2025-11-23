@@ -2,8 +2,7 @@
   username,
   config,
   ...
-}:
-let
+}: let
   h = "/home/${username}";
 
   cfg = "${h}/.config";
