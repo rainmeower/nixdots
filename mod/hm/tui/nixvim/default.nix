@@ -30,6 +30,7 @@
     ./nixvim.nix
     ./options.nix
     ./ui/colorizer.nix
+    ./ui/ccc.nix
     ./ui/lualine.nix
     ./ui/noice.nix
     ./ui/zen-mode.nix

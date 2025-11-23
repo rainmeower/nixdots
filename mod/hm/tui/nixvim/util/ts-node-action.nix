@@ -1,3 +1,4 @@
+# FIXME add padding to the right of &mut
 {
   pkgs,
   ...

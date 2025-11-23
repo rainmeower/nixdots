@@ -4,6 +4,7 @@
 }: let
   h = config.home.homeDirectory;
 in {
+  home.preferXdgDirectories = true;
   xdg.userDirs = {
     enable = true;
 
