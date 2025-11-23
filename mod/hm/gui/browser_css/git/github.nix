@@ -27,7 +27,7 @@ in {
   --bgColor-disabled: transparent !important;
   --bgColor-inset: transparent !important;
 
-  --bgColor-muted: ${col.button}cc !important;
+  --bgColor-muted: ${col.button}CC !important;
 
   --button-primary-bgColor-active: ${col.green} !important;
   --button-primary-bgColor-disabled: ${col.green} !important;
@@ -36,6 +36,7 @@ in {
   --bgColor-open-emphasis: ${col.green} !important;
   --fgColor-success: ${col.green} !important;
   --borderColor-success-emphasis: ${col.green} !important;
+  --borderColor-accent-emphasis: ${col.green} !important;
 
   /* links */
   --fgColor-accent: ${col.blue} !important;
