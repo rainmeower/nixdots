@@ -234,7 +234,7 @@
 
     { # css important
       key = "<leader>!";
-      action = "mzf;i important<esc>`z";
+      action = "mzf;i !important<esc>`z";
       mode = [ "n" "v" "x" ];
     }
 
