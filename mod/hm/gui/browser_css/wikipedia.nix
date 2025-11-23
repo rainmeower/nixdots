@@ -1,6 +1,6 @@
 {
-  config,
-  os_config,
+  font_name,
+  rounding,
   lib,
   theme,
   ...
@@ -12,12 +12,12 @@ in {
   home.file.".config/usercontent/wikipedia.css".text = /* css */ ''
 @-moz-document domain("wikipedia.org") {
 * {
-  font-family: ${config.stylix.fonts.monospace.name} !important;
-  ${if !os_config.rounding then "border-radius: 0px !important;" else ""}
+  font-family: ${font_name} !important;
+  ${if !rounding then "border-radius: 0px !important;" else ""}
 }
 
 root: {
-  --font: ${config.stylix.fonts.monospace.name} !important;
+  --font: ${font_name} !important;
   --bg-color: transparent !important;
   --background-color-base: transparent !important;
 }
@@ -25,7 +25,7 @@ root: {
 body {
   background: transparent !important;
   background-color: transparent !important;
-  font-family: ${config.stylix.fonts.monospace.name} !important;
+  font-family: ${font_name} !important;
 
 }
 

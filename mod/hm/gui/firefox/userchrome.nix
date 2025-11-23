@@ -1,7 +1,7 @@
 {
   lib,
   theme,
-  config,
+  font_name,
   ...
 }:
 let
@@ -12,7 +12,7 @@ in {
   programs.floorp.profiles."meow".userChrome = /* css */ ''
 * {
   font-size: 16px;
-  font-family: ${config.stylix.fonts.monospace.name} Bold;
+  font-family: ${font_name} Bold;
   scrollbar-width: none;
 }
 

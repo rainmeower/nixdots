@@ -1,10 +1,10 @@
 {
-  config,
+  font_name,
   ...
 }: {
   programs.kitty = {
     enable = true;
-    font.name = config.stylix.fonts.monospace.name;
+    font.name = font_name;
     font.size = 22;
     settings = {
       enable_audio_bell = false;

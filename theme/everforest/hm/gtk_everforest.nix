@@ -2,7 +2,7 @@
   lib,
   theme,
   pkgs,
-  config,
+  font_name,
   ...
 }: {
   config = lib.mkIf (lib.hasPrefix "everforest" theme) {
@@ -21,7 +21,7 @@
       };
 
       font = {
-        name = config.stylix.fonts.monospace.name;
+        name = font_name;
         size = 12;
       };
 

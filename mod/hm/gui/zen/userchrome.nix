@@ -1,7 +1,7 @@
 {
   lib,
   theme,
-  config,
+  font_name,
   rounding,
   ...
 }:
@@ -13,7 +13,7 @@ in {
   programs.zen-browser.profiles."meow".userChrome = /* css */ ''
 * {
   font-size: 16px !important;
-  font-family: ${config.stylix.fonts.monospace.name} !important;
+  font-family: ${font_name} !important;
 
   scrollbar-width: none !important;
   box-shadow: none !important;

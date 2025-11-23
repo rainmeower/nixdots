@@ -1,20 +1,13 @@
 {
-  config,
-  font_size,
+  font_name,
   ...
-}:
-let
-  fn = config.stylix.fonts.monospace.name;
-  # fs = if (font_size == "small")  then 22
-  # else if (font_size == "medium") then 26
-  #                              /*large*/ else 32;
-in {
+}: {
   programs.foot = {
     enable = true;
     settings = {
       main = {
         term = "foot";
-        font = "${fn}:size=22";
+        font = "${font_name}:size=22";
         dpi-aware = false;
         shell = "nu";
         pad = "12x6";

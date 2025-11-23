@@ -1,5 +1,5 @@
 {
-  config,
+  font_name,
   ...
 }: {
   # programs.tofi = {
@@ -7,7 +7,7 @@
   #   settings = {
   #     border-width = 2;
   #     corner-radius = 10;
-  #     font = "${config.stylix.fonts.monospace.name}";
+  #     font = "${font_name}";
   #     font-size = 26;
   #     height = "50%";
   #     num-results = 5;

@@ -1,5 +1,5 @@
 {
-  config,
+  font_name,
   lib,
   theme,
   ...
@@ -11,7 +11,7 @@ in {
   home.file.".config/usercontent/codeberg.css".text = /* css */ ''
 @-moz-document domain("codeberg.org") {
 * {
-  font-family: ${config.stylix.fonts.monospace.name} !important;
+  font-family: ${font_name} !important;
   border-color: transparent !important;
 }
 

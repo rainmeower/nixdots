@@ -1,8 +1,8 @@
 {
-  config,
-  os_config,
+  font_name,
   lib,
   theme,
+  rounding,
   ...
 }:
 let
@@ -12,8 +12,8 @@ in {
   home.file.".config/usercontent/gitlab.css".text = /* css */ ''
 @-moz-document domain("gitlab.com") {
   * {
-    font-family: ${config.stylix.fonts.monospace.name} !important; 
-    ${if !os_config.rounding then "border-radius: 0px !important;" else ""}
+    font-family: ${font_name} !important; 
+    ${if !rounding then "border-radius: 0px !important;" else ""}
   }
 
   :root {

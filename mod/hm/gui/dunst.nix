@@ -1,5 +1,6 @@
 {
   config,
+  font_name,
   pkgs,
   ...
 }: {
@@ -20,7 +21,7 @@
   #       scale = 0;
   #       notification_limit = 20;
   #
-  #       font = "${config.stylix.fonts.monospace.name} 8";
+  #       font = "${font_name} 8";
   #
   #       progress_bar = true;
   #

@@ -5,6 +5,7 @@
   lib,
   theme,
   rounding,
+  font_name,
   ...
 }: let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
@@ -55,7 +56,7 @@ autoStart = true;
 settings = {
 faviconService = "twenty"; # twenty | google | none
 font = {
-normal = config.stylix.fonts.monospace.name;
+normal = font_name;
 size = 12;
 };
 popToRootOnClose = false;

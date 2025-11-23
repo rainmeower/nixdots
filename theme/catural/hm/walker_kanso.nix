@@ -1,7 +1,7 @@
 {
   lib,
   theme,
-  config,
+  font_name,
   ...
 }: let
   col = import ../colors.nix;
@@ -83,7 +83,7 @@ in {
 #
 # #input {
 #   background: none;
-#   font-family: "${config.stylix.fonts.monospace.name}";
+#   font-family: "${font_name}";
 # }
 #
 # #password {
@@ -132,7 +132,7 @@ in {
 #
 # #label {
 #   /* font-weight: 400; */
-#   font-family: "${config.stylix.fonts.monospace.name}";
+#   font-family: "${font_name}";
 # }
 #
 # #sub {

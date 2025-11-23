@@ -16,7 +16,7 @@
     steam = {
       enable = true;
       extraCompatPackages = [ pkgs.proton-ge-bin ];
-      fontPackages = [ config.stylix.fonts.monospace.package ];
+      fontPackages = [ config.font_package ];
       gamescopeSession.enable = true;
       remotePlay.openFirewall = false; # Open ports in the firewall for Steam Remote Play
       dedicatedServer.openFirewall = false; # Open ports in the firewall for Source Dedicated Server

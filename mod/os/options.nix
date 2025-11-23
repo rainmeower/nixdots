@@ -3,7 +3,7 @@
   ...
 }: let
   inherit (lib) mkOption;
-  inherit (lib.types) enum bool str;
+  inherit (lib.types) enum bool str anything;
 in {
   options = {
     theme = mkOption {
@@ -63,6 +63,10 @@ in {
 
     font_path_bold = mkOption {
       type = str;
+    };
+
+    font_package = mkOption {
+      type = anything;
     };
   };
 }

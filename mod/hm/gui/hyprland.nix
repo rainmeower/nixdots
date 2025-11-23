@@ -2,7 +2,7 @@
   pkgs,
   lib,
   wm,
-  config,
+  font_name,
   os_config,
   ...
 }: {
@@ -21,7 +21,7 @@
         };
 
         misc = {
-          font_family = config.stylix.fonts.monospace.name;
+          font_family = font_name;
           new_window_takes_over_fullscreen = 2; # un-fullscreen when opening a new window
 
         };

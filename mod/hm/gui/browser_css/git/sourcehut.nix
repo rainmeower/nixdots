@@ -1,5 +1,5 @@
 {
-  config,
+  font_name,
   os_config,
   lib,
   theme,
@@ -13,12 +13,12 @@ in {
 @-moz-document domain("sr.ht") {
 
 * {
-  font-family: ${config.stylix.fonts.monospace.name} !important;
+  font-family: ${font_name} !important;
   ${if !os_config.rounding then "border-radius: 0px !important;" else ""}
 }
 
 body {
-  font-family: ${config.stylix.fonts.monospace.name} !important;
+  font-family: ${font_name} !important;
   font-size: 20px !important;
 }
 

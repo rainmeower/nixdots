@@ -1,6 +1,6 @@
 {
-  config,
-  os_config,
+  font_name,
+  rounding,
   lib,
   theme,
   ...
@@ -13,8 +13,8 @@ in {
 @-moz-document domain("www.reddit.com") {
 * {
   color: ${col.fg} !important;
-  font-family: ${config.stylix.fonts.monospace.name} !important;
-  ${if !os_config.rounding then "border-radius: 0px !important;" else ""}
+  font-family: ${font_name} !important;
+  ${if !rounding then "border-radius: 0px !important;" else ""}
 }
 
 .left-sidebar, .mt-md, /* .mt-lg, .mb-0 */ {

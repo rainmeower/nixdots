@@ -1,5 +1,5 @@
 {
-  config,
+  font_name,
   lib,
   theme,
   username,
@@ -53,7 +53,7 @@ in
 }
 
 #completions {
-  font-family: ${config.stylix.fonts.monospace.name} !important;
+  font-family: ${font_name} !important;
   font-size: 22px !important;
 
 }
@@ -76,7 +76,7 @@ input {
 
 
 span.TridactylHint {
-  font-family: ${config.stylix.fonts.monospace.name} !important;
+  font-family: ${font_name} !important;
   font-weight: bold !important;
   color: var(--tridactyl-bg) !important;
   background-color: ${col.accent} !important;

@@ -1,7 +1,7 @@
 {
   lib,
   theme,
-  config,
+  font_name,
   rounding,
   ...
 }:
@@ -641,7 +641,7 @@ body {
 /* @import url('https://refact0r.github.io/system24/build/system24.css'); */
 
 body {
-    --font: '${config.stylix.fonts.monospace.name}'; /* change to for default discord font */
+    --font: '${font_name}'; /* change to for default discord font */
     --code-font: 'Iosevka Nerd Font Mono'; /* change to for default discord font */
     /* font-weight: 300; /* text font weight. 300 is light, 400 is normal. DOES NOT AFFECT BOLD TEXT */ */
     letter-spacing: -0.05ch; /* decreases letter spacing for better readability. recommended on monospace fonts.*/

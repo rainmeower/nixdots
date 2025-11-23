@@ -1,5 +1,5 @@
 {
-  config,
+  font_name,
   os_config,
   lib,
   theme,
@@ -12,7 +12,7 @@ in {
   home.file.".config/usercontent/duckduckgo.css".text = /* css */ ''
 @-moz-document domain("duckduckgo.com") {
 * {
-  font-family: ${config.stylix.fonts.monospace.name} !important;
+  font-family: ${font_name} !important;
   ${if !os_config.rounding then "border-radius: 0px !important;" else ""}
 }
 
@@ -21,7 +21,7 @@ html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--car
 }
 
 :root {
-  --font: ${config.stylix.fonts.monospace.name} !important;
+  --font: ${font_name} !important;
   --theme-col-txt-snippet: ${col.fg} !important;
   --theme-col-txt-title-visited: ${col.purple} !important;
   --theme-col-txt-title: ${col.blue} !important;
