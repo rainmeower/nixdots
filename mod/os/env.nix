@@ -1,8 +1,7 @@
 {
   username,
   ...
-}:
-let
+}: let
   h = "/home/${username}";
 
   cfg = "${h}/.config";
@@ -10,14 +9,9 @@ let
   cache = "${h}/.cache";
 in {
   environment.sessionVariables = {
-    # DESKTOP = "/tmp/desktop";
-    # DOCUMENTS = "${h}/doc";
-    # DOWNLOAD = "${h}/dl";
-    # MUSIC = "${h}/music";
-    # PICTURES = "${h}/pic";
-    # VIDEOS = "${h}/vid";
-
     ELECTRON_OZONE_PLATFORM_HINT = "auto";
+    NIXOS_OZONE_WL = "1"; # tell things to use wayland
+    NIXPKGS_ALLOW_UNFREE = "1";
 
     XDG_CONFIG_HOME = "${h}/.config";
     XDG_DATA_HOME = "${h}/.local/share";
@@ -43,9 +37,5 @@ in {
     GOPATH = "${data}/go";
     GOMODCACHE = "${data}/go/mod";
     PARALLEL_HOME = "${cfg}/parallel";
-
-
   };
-
-
 }

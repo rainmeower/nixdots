@@ -1,11 +1,14 @@
 {
   pkgs,
   inputs,
-  config,
-  lib,
   ...
 }:
-{
+let
+  portals = with pkgs; [
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-gnome
+  ];
+in {
   imports = [
     inputs.niri.homeModules.niri 
     ./settings.nix 
@@ -21,18 +24,12 @@
 
   home.packages = with pkgs; [
     xwayland-satellite
-
-    # xdg-desktop-portal-gtk
-    # xdg-desktop-portal-gnome
     # gnome-keyring
   ];
 
-  # xdg.portal.configPackages = [
-  #   pkgs.xdg-desktop-portal-gtk
-  #   pkgs.xdg-desktop-portal-gnome
-  # ];
+  xdg.portal.configPackages = portals;
+  xdg.portal.extraPortals = portals;
 
   programs.niri.enable = true;
   programs.niri.package = pkgs.niri;
-    # lib.mkIf (config.wm == "niri") true;
 }
