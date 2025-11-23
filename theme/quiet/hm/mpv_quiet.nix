@@ -2,8 +2,7 @@
   lib,
   theme,
   ...
-}:
-let
+}: let
   col = import ../colors.nix;
   n = lib.strings.removePrefix "#";
 in {

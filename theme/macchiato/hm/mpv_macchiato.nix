@@ -1,4 +1,8 @@
-{ lib, theme, ... }: {
+{
+  lib,
+  theme,
+  ...
+}: {
   config = lib.mkIf (theme == "macchiato") {
     programs.mpv.config = {
       background-color = "#24273a";

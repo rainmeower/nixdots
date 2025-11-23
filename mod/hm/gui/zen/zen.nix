@@ -2,8 +2,7 @@
   inputs,
   pkgs,
   ...
-}:
-let
+}: let
   settings = {
     "widget.use-xdg-desktop-portal.file-picker" = 1; # termfilechooser
     "gfx.webrender.all" = true;

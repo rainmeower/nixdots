@@ -1,5 +1,9 @@
-{ config, lib, theme, ... }:
-let
+{
+  config,
+  lib,
+  theme,
+  ...
+}: let
   col = import ../colors.nix;
 in {
   config = lib.mkIf (theme == "blacchiato") {

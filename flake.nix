@@ -99,12 +99,6 @@
         {
           nixpkgs.overlays = import ./over/default.nix;
         }
-
-        # inputs.walker.nixosModules.walker
-        # {
-        # programs.walker.enable = true;
-        # }
-
         ];
       }; # }}}
 

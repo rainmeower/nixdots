@@ -1,6 +1,9 @@
-{ lib, theme, ... }: {
+{
+  lib,
+  theme,
+  ...
+}: {
   config = lib.mkIf (theme == "lix") {
-
     programs.starship = {
       settings = {
         character = {

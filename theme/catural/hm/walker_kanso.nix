@@ -1,5 +1,9 @@
-{ lib, theme, config, ... }:
-let
+{
+  lib,
+  theme,
+  config,
+  ...
+}: let
   col = import ../colors.nix;
 in {
   config = lib.mkIf (lib.hasPrefix "kanso" theme) {

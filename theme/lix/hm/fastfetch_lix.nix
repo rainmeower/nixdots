@@ -1,6 +1,10 @@
-{ lib, theme, username, ... }: {
+{
+  lib,
+  theme,
+  username,
+  ...
+}: {
   config = lib.mkIf (theme == "lix") {
-
     programs.fastfetch = {
       enable = true;
 

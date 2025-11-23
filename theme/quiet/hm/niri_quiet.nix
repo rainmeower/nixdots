@@ -3,8 +3,7 @@
   theme,
   wm,
   ...
-}:
-let
+}: let
   col = import ../colors.nix;
 in {
   config = lib.mkIf (theme == "quiet" && wm == "niri") {
