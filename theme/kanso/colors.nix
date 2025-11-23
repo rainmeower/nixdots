@@ -58,9 +58,9 @@ rec {
   red     = "#c4746e";
   red2    = "#E46876";
   red3    = "#C34043";
-  yellow  = "#DCA561";
+  yellow  = "#c4b28a";
   yellow2 = "#E6C384";
-  yellow3 = "#c4b28a";
+  yellow3 = "#DCA561";
   green   = "#8a9a7b";
   green2  = "#87a987";
   green3  = "#98BB6C";
