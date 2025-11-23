@@ -27,7 +27,7 @@ in {
   --bgColor-disabled: transparent !important;
   --bgColor-inset: transparent !important;
 
-  --bgColor-muted: ${col.button}CC !important;
+  --bgColor-muted: ${col.button}AA !important;
 
   --button-primary-bgColor-active: ${col.green} !important;
   --button-primary-bgColor-disabled: ${col.green} !important;
@@ -57,7 +57,12 @@ in {
   display: none !important;
 }
 
-
-
+.markdown-body pre {
+  background: none !important;
+}
+.markdown-body code, .markdown-body tt {
+  font-size: 85%;
+  background-color: var(--bgColor-muted) !important;
+}
 '';
 }
