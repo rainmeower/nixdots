@@ -16,6 +16,8 @@
         vulkan-tools
         mesa.opencl  # Enables Rusticl (OpenCL) support
         rocmPackages.clr.icd
+        libGL
+        libdrm
       ];
     };
 

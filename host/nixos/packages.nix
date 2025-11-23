@@ -10,8 +10,6 @@
 
     bmm
 
-    # nirius
-    zenity
     blender
 
 
@@ -27,18 +25,10 @@
     # reaper-reapack-extension
     # reaper-sws-extension
     zynaddsubfx
-    # gtk3
-    # zrythm # borken
-    # lmms # borken
-    # ardour
 
-    # walker
     rofi
-    # tridactyl-native
 
     zoom-us
-
-    fuzzel
 
     cryptsetup
 
@@ -59,11 +49,6 @@
     # davinci-resolve
     obs-studio
     wf-recorder
-
-    /* graphics */
-    mesa
-    libGL
-    libdrm
 
     /* games */
     olympus
@@ -87,8 +72,6 @@
     playerctl
 
     /* file */
-    zenity
-    xdg-desktop-portal-termfilechooser
     xdg-utils
 
     /* misc */
