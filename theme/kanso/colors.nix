@@ -7,10 +7,10 @@ rec {
   background = bg;
   bgtrans    = "${bg}CC"; # 80% opacity
 
-  grey   = "#5C6066";
+  grey   = gray5;
   gray   = grey;
-  purple = "#938AA9";
-  black  = "#090E13";
+  purple = violet;
+  black  = zen_bg0;
   white  = fg2;
   cyan   = blue4;
   aqua   = blue4;
@@ -66,9 +66,9 @@ rec {
   green3  = "#8a9a7b";
   green4  = "#6A9589";
   green5  = "#7AA89F";
-  blue    = "#7FB4CA";
+  blue3    = "#7FB4CA"; ######aaa
   blue2   = "#658594";
-  blue3   = "#8ba4b0";
+  blue   = "#8ba4b0";
   blue4   = "#8ea4a2";
   violet  = "#938AA9";
   violet2 = "#8992a7";

@@ -22,7 +22,7 @@ in {
     theme[title]="${col.blue}"
 
     # Highlight color for keyboard shortcuts
-    theme[hi_fg]="${col.green2}"
+    theme[hi_fg]="${col.green3}"
 
     # Background color of selected item in processes box
     theme[selected_bg]="${col.blue}"
@@ -83,9 +83,9 @@ in {
     theme[available_end]="${col.yellow2}"
 
     # Mem/Disk used meter
-    theme[used_start]="${col.green}"
-    theme[used_mid]="${col.green}"
-    theme[used_end]="${col.green}"
+    theme[used_start]="${col.green3}"
+    theme[used_mid]="${col.green3}"
+    theme[used_end]="${col.green3}"
 
     # Download graph colors
     theme[download_start]="${col.blue}"

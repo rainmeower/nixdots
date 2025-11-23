@@ -7,7 +7,7 @@ col = import ../colors.nix;
 in {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
     programs.yazi.theme.mgr = {
-# TODO
+# FIXME
 
       syntect_theme = ".config/tmthemes/kanso.tmTheme";
       home.file.".config/tmthemes/kanso.tmTheme".text = /* xml */ ''
