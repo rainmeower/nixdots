@@ -20,6 +20,7 @@ in
 @import "/home/${username}/.config/usercontent/sourcehut.css";
 @import "/home/${username}/.config/usercontent/wikipedia.css";
 @import "/home/${username}/.config/usercontent/reddit.css";
+@import "/home/${username}/.config/usercontent/stackoverflow.css";
 
 *{ scrollbar-width: none; }
 

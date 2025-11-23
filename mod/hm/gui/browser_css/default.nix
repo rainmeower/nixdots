@@ -2,6 +2,7 @@
   imports = [
     ./duckduckgo.nix
     ./reddit.nix
+    ./stackoverflow.nix
     ./git/codeberg.nix
     ./git/github.nix
     ./git/gitlab.nix

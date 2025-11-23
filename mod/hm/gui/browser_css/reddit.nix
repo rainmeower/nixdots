@@ -8,7 +8,7 @@ let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../../theme/${theme_trimmed}/colors.nix;
 in {
-  home.file.".config/usercontent/nixos.css".text = /* css */ ''
+  home.file.".config/usercontent/reddit.css".text = /* css */ ''
 @-moz-document domain("www.reddit.com") {
 * {
   color: ${col.fg} !important;
