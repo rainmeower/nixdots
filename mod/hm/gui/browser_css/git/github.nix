@@ -27,11 +27,19 @@ in {
   --bgColor-disabled: transparent !important;
   --bgColor-inset: transparent !important;
 
+  --bgColor-muted: ${col.button}cc !important;
+
   --button-primary-bgColor-active: ${col.green} !important;
   --button-primary-bgColor-disabled: ${col.green} !important;
   --button-primary-bgColor-hover: ${col.green} !important;
   --button-primary-borderColor-disabled: ${col.green} !important;
   --bgColor-open-emphasis: ${col.green} !important;
+  --fgColor-success: ${col.green} !important;
+  --borderColor-success-emphasis: ${col.green} !important;
+
+  /* links */
+  --fgColor-accent: ${col.blue} !important;
+
   --button-primary-bgColor-rest: ${col.green} !important;
   --button-primary-fgColor-rest: ${col.bg} !important;
 
@@ -49,13 +57,6 @@ in {
 }
 
 
-/* @layer primer-react { */
-/*  :is(.prc-Button-ButtonBase-c50BI :where(.prc-Button-ButtonContent-HKbr-)):where([data-align="center"]), */
-/*   .prc-StateLabel-StateLabel-ukDwa:where([data-status="issueOpened"]), */
-/*   .prc-Button-ButtonBase-c50BI:where([data-variant="primary"]) { */
-/*     color: ${col.bg} !important; */
-/*   } */
-/* } */
 
 '';
 }
