@@ -31,6 +31,7 @@
     ../../mod/os/stylix.nix
     ../../mod/os/wine.nix
     ../../mod/os/ydotool.nix
+    ../../mod/os/slippi.nix
 
     ../../theme/blacchiato/os/default.nix
     ../../theme/everforest/os/default.nix

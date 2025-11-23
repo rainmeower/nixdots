@@ -86,11 +86,6 @@
         }
         nur.modules.nixos.default
 
-        inputs.slippi.nixosModules.default
-          ./mod/os/slippi.nix
-        # {
-        #   home-manager = import ./modules/nixos/slippi.nix;
-        # }
 
         # inputs.mango.nixosModules.mango
         # # ./modules/home-manager/gui/mango/mango.nix
