@@ -64,5 +64,28 @@ in {
   font-size: 85%;
   background-color: var(--bgColor-muted) !important;
 }
+
+
+/* file icons */
+.medium-red::before {
+  color: ${col.red} !important;
+}
+.medium-cyan::before {
+  color: ${col.cyan} !important;
+}
+.medium-purple::before {
+  color: ${col.purple} !important;
+}
+.medium-blue::before {
+  color: ${col.blue} !important;
+}
+.medium-yellow::before {
+  color: ${col.yellow} !important;
+}
+.config-icon::before,
+.react-directory-filename-column .icon-directory {
+  color: ${col.fg} !important;
+}
+
 '';
 }
