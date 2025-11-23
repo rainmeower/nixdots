@@ -1,15 +1,20 @@
 {
   config,
+  os_config,
   lib,
   theme,
   ...
-}:
-let
+}: let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../../theme/${theme_trimmed}/colors.nix;
 in {
   home.file.".config/usercontent/crates.css".text = /* css */ ''
 @-moz-document domain("crates.io") {
+* {
+  font-family: ${config.stylix.fonts.monospace.name} !important;
+  ${if !os_config.rounding then "border-radius: 0px !important;" else ""}
+}
+
 @layer components {
   .hero-buttons_ea965244a,
   .hero-title_eb1a88f63,
@@ -17,6 +22,12 @@ in {
     display: none !important;
   }
 
+  .wrapper_efa71a50b pre {
+    background-color: ${col.button}CC !important;
+  }
+ :is(.wrapper_efa71a50b p, .wrapper_efa71a50b li) code {
+    background-color: ${col.button}CC !important;
+ }
 
   .main_e79536261 {
     background-color: transparent !important;
@@ -40,8 +51,6 @@ in {
 
   .docs_ea66d4641 {
     --shadow: none !important;
-    background-color: transparent !important;
-    border-radius: var(--space-3xs);
     box-shadow: var(--shadow);
   }
 }
@@ -52,6 +61,7 @@ in {
   --yellow500: ${col.accent} !important;
   --link-hover-color: ${col.accent} !important;
   --link-color: ${col.accent} !important;
+  --main-bg-dark: transparent !important;
 }
 }
   '';

@@ -36,6 +36,9 @@ in
   --tridactyl-of-fg: ${col.bg} !important;
   --tridactyl-hintspan-fg: transparent !important;
   --tridactyl-photon-colours-cm-cursor: transparent !important;
+
+  --ShinigamiEyesTFriendly: ${col.green} !important;
+  --ShinigamiEyesTransphobic:${col.red} !important;
 }
 
 :root #cmdline_iframe {
