@@ -4,11 +4,11 @@
     keymaps = [
 # TODO yygccp
 
-    # {
-    #   key = "ga"; # tw
-    #   action.__raw = "require('treesj').toggle()";
-    #   mode = [ "n" "x" "o" ];
-    # }
+    {
+      key = "ga"; # tw
+      action = ":lua require('treesj').toggle()<cr>";
+      mode = [ "n" "x" "o" ];
+    }
 
     {
       key = "x"; # tw
