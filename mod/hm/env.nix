@@ -1,12 +1,14 @@
 {
   username,
+  config,
   ...
 }:
 let
   h = "/home/${username}";
 
   cfg = "${h}/.config";
-  data = "${h}/.local/share";
+  # data = "${h}/.local/share";
+  data = config.xdg.userDirs.extraConfig.XDG_DATA_HOME;
   cache = "${h}/.cache";
 in {
   home.file."${cfg}/npm/npmrc".text = ''

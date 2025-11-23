@@ -62,6 +62,7 @@ in {
         ../../mod/hm/gui/tofi.nix
         ../../mod/hm/gui/vesktop/vesktop.nix
         ../../mod/hm/gui/walker.nix
+        ../../mod/hm/gui/slippi.nix
         ../../mod/hm/gui/vicinae.nix
         ../../mod/hm/gui/wlr-which-key.nix
         ../../mod/hm/gui/zen/zen.nix

@@ -21,6 +21,7 @@
     ../../mod/os/font.nix
     ../../mod/os/fontconfig.nix
     ../../mod/os/gamemode.nix
+    ../../mod/os/appimage.nix
     ../../mod/os/misc.nix
     ../../mod/os/mpd.nix
     ../../mod/os/nix-gaming.nix
@@ -31,7 +32,7 @@
     ../../mod/os/stylix.nix
     ../../mod/os/wine.nix
     ../../mod/os/ydotool.nix
-    ../../mod/os/slippi.nix
+    ../../mod/os/appimage.nix
 
     ../../theme/blacchiato/os/default.nix
     ../../theme/everforest/os/default.nix

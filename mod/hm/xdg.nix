@@ -17,6 +17,8 @@ in {
     extraConfig = {
       XDG_GAMES_DIR = h + "/games";
       XDG_MISC_DIR = h + "/misc";
+
+      XDG_DATA_HOME = h + "${h}/.local/share";
     };
   };
 }
