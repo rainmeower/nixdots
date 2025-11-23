@@ -20,12 +20,10 @@ in {
         "kantsi"
         "quiet"
       ];
-      default = "blacchiato";
     };
 
     rounding = mkOption {
       type = bool;
-      default = true;
     };
 
     animations = mkOption {
@@ -38,7 +36,6 @@ in {
         "niri"
         # "mango" TODO
       ];
-      default = "niri";
     };
 
     font = mkOption {
@@ -46,7 +43,6 @@ in {
         "mononoki"
         "iosevka"
       ];
-      default = "mononoki";
     };
 
     font_size = mkOption {
@@ -55,17 +51,14 @@ in {
         "medium"
         "large"
       ];
-      default = "medium";
     };
 
     font_path = mkOption {
       type = str;
-      default = "";
     };
 
     font_path_bold = mkOption {
       type = str;
-      default = "";
     };
   };
 }
