@@ -21,7 +21,7 @@ in {
     backupFileExtension = "bak";
     extraSpecialArgs = {
       inherit username flake_dir inputs;
-      inherit (config) theme rounding wm;
+      inherit (config) theme rounding wm font_name font_path;
       host = config.networking.hostName;
       os_config = config;
       # FIXME
