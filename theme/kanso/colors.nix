@@ -1,4 +1,6 @@
 rec {
+  bg_opacity = 0.8;
+
   accent = blue;
 
   foreground = fg;
@@ -10,6 +12,7 @@ rec {
   grey   = gray5;
   gray   = grey;
   purple = violet;
+  magenta = violet;
   black  = zen_bg0;
   white  = fg2;
   cyan   = blue4;

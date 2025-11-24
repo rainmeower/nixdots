@@ -52,8 +52,8 @@
 
     foldcolumn = "auto";
     foldmethod = "marker";
-foldtext =
-''v:folddashes.substitute(getline(v:foldstart),'\ #\\?\ \\?{{{',''','g')'';
+# foldtext =
+# ''v:folddashes.substitute(getline(v:foldstart),'\ #\\?\ \\?{{{',''','g')'';
 
   };
 }
