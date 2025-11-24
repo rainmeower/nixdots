@@ -1,3 +1,4 @@
+# NOTE run :KansoCompile when changing anything
 {
   pkgs,
   lib,
@@ -30,23 +31,10 @@ in {
             },
             overrides = function(colors)
             return {
-            -- Assign a static color to strings
-            CursorLineNr = { fg = "${col.accent}" },
-            CursorLine   = { bg = "NONE" },
-            TelescopeBorder = { fg = "${col.accent}" },
-            TelescopeTitle  = { fg = "${col.accent}" },
-            TelescopeSelection      = { fg = "${col.accent}" },
-            TelescopeSelectionCaret = { fg = "${col.accent}" },
-            TelescopePromptPrefix   = { fg = "${col.accent}" },
-            TelescopePreviewBorder  = { fg = "${col.accent}" },
-            TelescopeResultsBorder  = { fg = "${col.accent}" },
 
-            -- LineNrBelow = { fg = "#393B44" },
-            -- LineNrAbove = { fg = "#393B44" },
-            LineNr = { fg = "#393B44" },
             RenderMarkdownH1Bg = { fg = "#090E13", bg = "#f2f1ef" },
             RenderMarkdownH2Bg = { fg = "#090E13", bg = "#C5C9C7" },
-            MiniIndentscopeSymbol = { fg = "${col.accent}" }
+
             }
             end,
             theme = ${lib.strings.removePrefix "kanso_" theme},              -- Load "zen" theme

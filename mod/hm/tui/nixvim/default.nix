@@ -18,6 +18,7 @@
     # ./theme/lix/smear-cursor_lix.nix
     ./theme/macchiato.nix
     ./theme/kanso.nix
+    ./theme/highlight.nix
 
     # ./util/picker.nix
     # ./util/firenvim.nix
