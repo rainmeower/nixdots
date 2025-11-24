@@ -10,6 +10,7 @@ in {
   programs.nixvim.highlightOverride = {
     CursorLine.bg = null;
     CursorLineNr.fg = col.accent;
+
     TelescopeBorder.fg = col.accent;
     TelescopeTitle.fg = col.accent;
     TelescopeSelection.fg = col.accent;
@@ -17,6 +18,35 @@ in {
     TelescopePromptPrefix.fg = col.accent;
     TelescopePreviewBorder.fg = col.accent;
     TelescopeResultsBorder.fg = col.accent;
+
+    # noice {{{
+    NoiceCmdlinePopupTitle.fg = col.accent;
+    NoiceCmdlinePopupTitleCalculator.fg = col.accent;
+    NoiceCmdlinePopupTitleCmdline.fg = col.accent;
+    NoiceCmdlinePopupTitleFilter.fg = col.accent;
+    NoiceCmdlinePopupTitleHelp.fg = col.accent;
+    NoiceCmdlinePopupTitleInput.fg = col.accent;
+    NoiceCmdlinePopupTitleLua.fg = col.accent;
+
+    NoiceCmdlinePopupBorder.fg = col.accent;
+    NoiceCmdlinePopupBorderCalculator.fg = col.accent;
+    NoiceCmdlinePopupBorderCmdline.fg = col.accent;
+    NoiceCmdlinePopupBorderFilter.fg = col.accent;
+    NoiceCmdlinePopupBorderHelp.fg = col.accent;
+    NoiceCmdlinePopupBorderInput.fg = col.accent;
+    NoiceCmdlinePopupBorderLua.fg = col.accent;
+
+    NoiceCmdlineIcon.fg = col.accent;
+    NoiceCmdlineIconCalculator.fg = col.accent;
+    NoiceCmdlineIconCmdline.fg = col.accent;
+    NoiceCmdlineIconFilter.fg = col.accent;
+    NoiceCmdlineIconHelp.fg = col.accent;
+    NoiceCmdlineIconInput.fg = col.accent;
+    NoiceCmdlineIconLua.fg = col.accent;
+
+    NoiceConfirmBorder.fg = col.accent;
+    Noice.fg = col.accent;
+    # }}}
 
     LineNr.fg = col.selection;
     MiniIndentscopeSymbol.fg = col.accent;
