@@ -1,7 +1,6 @@
 {
   inputs,
   config,
-  username,
   ...
 }: {
   imports = [
@@ -9,8 +8,9 @@
     {
       slippi-launcher = let
         data = config.xdg.userDirs.extraConfig.XDG_DATA_HOME;
+        h = config.home.homeDirectory;
       in {
-        isoPath = "/home/${username}/melee/meow.iso";
+        isoPath = h + "/melee/meow.iso";
         rootSlpPath = data + "/Slippi";
         spectateSlpPath = data + "/Slippi/Spectate";
         launchMeleeOnPlay = false;
