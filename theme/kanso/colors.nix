@@ -114,8 +114,9 @@ rec {
   string  = green;
   num     = pink;
   bool    = orange;
-  const    = orange;
+  const   = orange;
   type    = blue4;
   comment = gray4;
   punc    = gray3;
+  selection = zen_bg3;
 }

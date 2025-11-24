@@ -40,15 +40,15 @@ in {
           <key>misspelling</key>
           <string>${col.red}</string>
           <key>accent</key>
-          <string>${col.violet}</string>
+          <string>${col.accent}</string>
           <key>selection</key>
-          <string>#939ab740</string>
+          <string>${col.selection}</string>
           <key>activeGuide</key>
           <string>#494d64</string>
           <key>findHighlight</key>
           <string>#455c6d</string>
           <key>gutterForeground</key>
-          <string>#8087a2</string>
+          <string>${col.comment}</string>
         </dict>
       </dict>
       <dict>
@@ -70,9 +70,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#939ab7</string>
-          <key>fontStyle</key>
-          <string/>
+          <string>${col.punc}</string>
         </dict>
       </dict>
       <dict>
@@ -1402,7 +1400,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${col.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -1666,9 +1664,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
-          <key>fontStyle</key>
-          <string/>
+          <string>${col.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -1679,7 +1675,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${col.yellow}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -1868,7 +1864,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet2}</string>
+          <string>${col.keyword}</string>
         </dict>
       </dict>
       <dict>

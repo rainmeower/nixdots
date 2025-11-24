@@ -14,13 +14,13 @@
       vim_keys = false; # TODO fork and change keybinds?
       rounded_corners = rounding;
 
-      # "default", "braille", "block", "tty"
+      # default braille block tty
       graph_symbol = "braille";
-      graph_symbol_cpu = "default";
-      graph_symbol_gpu = "default";
-      graph_symbol_mem = "default";
-      graph_symbol_net = "default";
-      graph_symbol_proc = "default";
+      # graph_symbol_cpu = "default";
+      # graph_symbol_gpu = "default";
+      # graph_symbol_mem = "default";
+      # graph_symbol_net = "default";
+      # graph_symbol_proc = "default";
 
       # cpu mem net proc gpu0 .. gpu5
       shown_boxes = "cpu mem net proc";
@@ -28,8 +28,6 @@
       update_ms = 500;
 
       proc_sorting = "cpu lazy";
-
-
       proc_reversed = false;
       proc_tree = false;
       proc_colors = true;
@@ -174,23 +172,17 @@
 #* Starts with the Network Interface specified here.
       net_iface = "";
 
-#* Show battery stats in top right if battery is present.
       show_battery = true;
-
-#* Which battery to use if multiple are present. "Auto" for auto detection.
+      show_battery_watts = true;
       selected_battery = "Auto";
 
-#* Show power stats of battery next to charge indicator.
-      show_battery_watts = true;
-
-#* Set loglevel for "~/.config/btop/btop.log" levels are: "ERROR" "WARNING" "INFO" "DEBUG".
-#* The level set includes all lower levels, i.e. "DEBUG" will show all logging info.
+      # ERROR WARNING INFO DEBUG
       log_level = "WARNING";
 
-#* Measure PCIe throughput on NVIDIA cards, may impact performance on certain cards.
+      # nvidia
       nvml_measure_pcie_speeds = false;
 
-# Horizontally mirror the GPU graph
+      # horizontally mirror the gpu graph
       gpu_mirror_graph = true;
 
 # Custom gpu model name, empty string to disable
