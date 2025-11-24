@@ -25,7 +25,7 @@
       tab_size = 2;
       max_width = os_config.monitor.DP-1.width;
       max_height = os_config.monitor.DP-1.width;
-      cache_dir = "/dev/null";
+      cache_dir = "";
       image_delay = 0;
       image_filter = "triangle";
       image_quality = 85;
