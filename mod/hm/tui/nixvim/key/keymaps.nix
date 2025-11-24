@@ -5,6 +5,12 @@
 # TODO yygccp
 
     {
+      key = "<Leader>t"; # space d
+      action = "mzyygccp`zj";
+      mode = "n";
+    }
+
+    {
       key = "ga";
       action = ":lua require('ts-node-action').node_action<cr>";
       mode = [ "n" "x" "o" ];
