@@ -4,8 +4,8 @@
     keymaps = [
 # TODO yygccp
 
-    {
-      key = "<Leader>t"; # space d
+    { # duplicate and comment out line
+      key = "<C-d>";
       action = "mzyygccp`zj";
       mode = "n";
     }
