@@ -53,7 +53,7 @@
     foldcolumn = "auto";
     foldmethod = "marker";
 foldtext =
-''substitute(getline(v:foldstart),'\ #\\?\ \\?{{{',''','g')'';
+''v.substitute(getline(v:foldstart),'\ #\\?\ \\?{{{',''','g')'';
 
   };
 }
