@@ -10,14 +10,18 @@ in {
   programs.nixvim.highlightOverride = {
     CursorLine.bg = null;
     CursorLineNr.fg = col.accent;
+    LineNr.fg = col.selection;
 
+    # telescope {{{
     TelescopeBorder.fg = col.accent;
     TelescopeTitle.fg = col.accent;
     TelescopeSelection.fg = col.accent;
     TelescopeSelectionCaret.fg = col.accent;
     TelescopePromptPrefix.fg = col.accent;
+    TelescopePromptCounter.fg = null;
     TelescopePreviewBorder.fg = col.accent;
     TelescopeResultsBorder.fg = col.accent;
+    # }}}
 
     # noice {{{
     NoiceCmdlinePopupTitle.fg = col.accent;
@@ -45,10 +49,9 @@ in {
     NoiceCmdlineIconLua.fg = col.accent;
 
     NoiceConfirmBorder.fg = col.accent;
-    Noice.fg = col.accent;
     # }}}
 
-    LineNr.fg = col.selection;
     MiniIndentscopeSymbol.fg = col.accent;
+    IndentLine.fg = col.accent;
   };
 }

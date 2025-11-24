@@ -1,5 +1,6 @@
 {
   rounding,
+  flake_dir,
   ...
 }: {
   programs.nixvim.opts = {
@@ -51,7 +52,9 @@
 
     foldcolumn = "auto";
     foldmethod = "marker";
+    foldtext = builtins.readFile ../../../../stuff/foldtext;
+
 # todo remove the triple brace
-    foldtext = "substitute(getline(v:foldstart),'/\\\*\\\\\|\\\*/\\\\\|{{{\\\d\\\=','','g')"; # }}}
+    # foldtext = "substitute(getline(v:foldstart),'/\\\*\\\\\|\\\*/\\\\\|{{{\\\d\\\=','','g')"; # }}}
   };
 }
