@@ -1,4 +1,7 @@
 {
+  rounding,
+  ...
+}: {
   programs.nixvim.plugins.telescope = {
     enable = true;
 
@@ -27,6 +30,16 @@
       layout_config = {
         preview_width = 0.5;
       };
+      borderchars = [
+        "─"
+        "│"
+        "─"
+        "│"
+        (if rounding then "╭" else "┌")
+        (if rounding then "╮" else "┐")
+        (if rounding then "╯" else "┘")
+        (if rounding then "╰" else "└")
+      ];
     };
 
     keymaps = {
