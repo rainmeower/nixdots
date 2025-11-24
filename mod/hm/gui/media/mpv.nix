@@ -34,7 +34,7 @@
       # visualizer # audio file waveforms
     ];
 
-    scriptOpts = {
+    scriptOpts = { # {{{
       visualizer = {
         mode = "novideo"; # off, noalbumart, novideo, force
         name = "showcqt";
@@ -236,7 +236,7 @@
         # List of mpv.conf properties respected by uosc:
         # osd-font, osd-playlist-entry, slang
       };
-    };
+    }; # }}}
   };
 
   # cant customise keybinds without changing the .lua file

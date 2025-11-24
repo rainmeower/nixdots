@@ -52,7 +52,7 @@
 
     foldcolumn = "auto";
     foldmethod = "marker";
-    foldtext = builtins.readFile ../../../../stuff/foldtext;
+    foldtext = ''substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|\ {{{\\d\\=','\','g')'';
 
 # todo remove the triple brace
     # foldtext = "substitute(getline(v:foldstart),'/\\\*\\\\\|\\\*/\\\\\|{{{\\\d\\\=','','g')"; # }}}
