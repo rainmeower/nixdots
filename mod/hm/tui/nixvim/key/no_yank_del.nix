@@ -2,19 +2,6 @@
   programs.nixvim = {
     globals.mapleader = " ";
     keymaps = [
-
-    { # vanilla d behaviour
-      key = "<C-o>";
-      action = "d";
-      mode = [ "n" "v" "x" ];
-    }
-
-    { # vanilla d behaviour
-      key = "<C-d>";
-      action = "D";
-      mode = [ "n" "v" "x" "o" ];
-    }
-
     {
       key = "d";
       action = "\"_d";
@@ -38,8 +25,6 @@
       action = "\"_C";
       mode = [ "n" "v" "x" "o" ];
     }
-
     ];
   };
-
 }
