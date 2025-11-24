@@ -25,12 +25,12 @@ in {
     NIXOS_OZONE_WL = "1"; # tell things to use wayland
     NIXPKGS_ALLOW_UNFREE = "1";
 
-    inherit
-      XDG_CONFIG_HOME
-      XDG_DATA_HOME
-      XDG_CACHE_HOME
-    ;
-
+    # inherit
+    #   XDG_CONFIG_HOME
+    #   XDG_DATA_HOME
+    #   XDG_CACHE_HOME
+    # ;
+    #
 
     CALCHISTFILE = cache + "/calc_history";
     CARGO_HOME = data + "/cargo";
