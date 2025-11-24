@@ -14,7 +14,7 @@
           width
           height
         ;
-        refresh = monitor.DP-1.refresh - 0.029; # TODO better way to do this?
+        refresh = monitor.DP-1.refresh_f; # TODO better way to do this?
       };
     };
 
@@ -31,7 +31,7 @@
           width
           height
         ;
-        refresh = monitor.DP-3.refresh + 0.08; # TODO better way to do this?
+        refresh = monitor.DP-3.refresh_f; # TODO better way to do this?
       };
 
 # dont move the mouse to the other monitor
