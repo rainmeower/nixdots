@@ -4,8 +4,7 @@
   font_name,
   rounding,
   ...
-}:
-let
+}: let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../../theme/${theme_trimmed}/colors.nix;
   unrounding = if rounding then "off" else "on";
@@ -130,7 +129,7 @@ body {
     --dnd: var(--red-2); /* change to #d83a41 for default */
     --idle: var(--yellow-2); /* change to #cc954c for default */
     --streaming: var(--purple-2); /* change to ##9147ff for default */
-    --offline: var(--text-4); /* change to #82838b for default offline color */
+    --offline: transparent; /* change to #82838b for default offline color */
 
     /* border colors */
     --border-light: var(--hover); /* general light border color */
