@@ -9,11 +9,11 @@ in {
     enable = true;
     createDirectories = true;
 
-    # download  = h + "/dl";
-    # documents = h + "/doc";
-    # music     = h + "/music";
-    # pictures  = h + "/pic";
-    # videos    = h + "/vid";
+    download  = h + "/dl";
+    documents = h + "/doc";
+    music     = h + "/music";
+    pictures  = h + "/pic";
+    videos    = h + "/vid";
 
     publicShare = null;
     templates = null;
