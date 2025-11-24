@@ -18,9 +18,7 @@
       s = toString;
     in [
       "video=DP-1:${s DP-1.width}x${s DP-1.height}@${s DP-1.refresh}"
-      # "video=DP-1:2560x1440@165"
       "video=DP-3:${s DP-3.width}x${s DP-3.height}@${s DP-3.refresh}"
-      # "video=DP-3:2560x1440@75"
     ];
 
     # initrd.kernelModules = [];

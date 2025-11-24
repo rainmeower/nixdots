@@ -21,3 +21,5 @@
 https://github.com/CKolkey/ts-node-action
 
 - dot repeat nvim plugin
+
+- clean up themes/ with universal color names

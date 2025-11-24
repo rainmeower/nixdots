@@ -1,6 +1,7 @@
 {
   lib,
   wm,
+  config,
   ...
 }:
 {
@@ -27,6 +28,10 @@
 # zoom = 0.70;
         workspace-shadow.enable = false;
       };
+      # cursor = {
+      #   xcursor-theme = config.gtk.cursorTheme.name;
+      #   xcursor-size = config.gtk.cursorTheme.size;
+      # };
 
       workspaces = { # {{{
         "1" = {

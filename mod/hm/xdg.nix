@@ -7,6 +7,7 @@ in {
   home.preferXdgDirectories = true;
   xdg.userDirs = {
     enable = true;
+    createDirectories = true;
 
     download = h + "/dl";
     documents = h + "/doc";

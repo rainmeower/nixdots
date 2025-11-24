@@ -1,6 +1,7 @@
 {
   xdg.mimeApps = {
     enable = true;
+
     associations.added = {
       "image/jpeg" = ["swayimg" "krita" "aseprite"];
       "image/jpg" = ["swayimg" "krita" "aseprite"];
@@ -12,6 +13,7 @@
       "video/quicktime" = ["mpv"];
       "video/webm" = ["mpv"];
     };
+
     defaultApplications = {
       "application/json" = ["nvim"];
       "application/toml" = ["nvim"];
@@ -24,9 +26,5 @@
       "video/*" = ["mpv"];
       "video/mp4" = ["mpv"];
     };
-  };
-  userDirs = {
-    enable = true;
-    createDirectories = true;
   };
 }

@@ -59,6 +59,7 @@ in {
         ../../mod/hm/gui/browser_css/default.nix
 
         ../../mod/hm/env.nix
+        ../../mod/hm/mimetypes.nix
         ../../mod/hm/gui/dunst.nix
         ../../mod/hm/gui/emacs/emacs.nix
         ../../mod/hm/gui/firefox/firefox.nix
