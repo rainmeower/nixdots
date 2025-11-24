@@ -63,6 +63,7 @@
         specialArgs = {
           inherit
             inputs
+            home-manager
             username
             flake_dir
           ;

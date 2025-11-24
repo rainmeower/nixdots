@@ -1,22 +1,30 @@
 {
   username,
+  config,
   ...
 }: let
-  h = "/home/${username}";
+    inherit (config.home-manager.users.${username}.xdg.userDirs.extraConfig)
+      XDG_CONFIG_HOME
+      XDG_DATA_HOME
+      XDG_CACHE_HOME
+    ;
 
-  cfg = "${h}/.config";
-  data = "${h}/.local/share";
-  cache = "${h}/.cache";
+  cfg = XDG_CONFIG_HOME;
+  data = XDG_DATA_HOME;
+  cache = XDG_CACHE_HOME;
+
 in {
   environment.sessionVariables = {
     ELECTRON_OZONE_PLATFORM_HINT = "auto";
     NIXOS_OZONE_WL = "1"; # tell things to use wayland
     NIXPKGS_ALLOW_UNFREE = "1";
 
-    XDG_CONFIG_HOME = "${h}/.config";
-    XDG_DATA_HOME = "${h}/.local/share";
+    inherit
+      XDG_CONFIG_HOME
+      XDG_DATA_HOME
+      XDG_CACHE_HOME
+    ;
 
-    XDG_CACHE_HOME = "${h}/.cache";
 
     CALCHISTFILE = "${cache}/calc_history";
     CARGO_HOME = "${data}/cargo";
