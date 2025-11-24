@@ -52,7 +52,8 @@
 
     foldcolumn = "auto";
     foldmethod = "marker";
-    foldtext = "substitute(getline(v:foldstart),' \#\| \/\/\| {{{','','g')";
+foldtext =
+''substitute(getline(v:foldstart),'\ #\\?\ \\?{{{',''','g')'';
 
   };
 }
