@@ -17,12 +17,12 @@
     }
 
     { # toggle wrap
-      key = "<Leader>be"; # tw
+      key = "<Leader>bs"; # tw
       action = "<cmd>lua vim.o.wrap = not vim.o.wrap<cr>";
       mode = [ "n" "x" ];
     }
     { # toggle wrap for buffer
-      key = "<Leader>bE"; # tw
+      key = "<Leader>bS"; # tw
       action = "<cmd>lua vim.bo.wrap = not vim.bo.wrap<cr>";
       mode = [ "n" "x" ];
     }
@@ -78,46 +78,46 @@
       mode = [ "n" "x" ];
     }
 
-    { # angle brackets
-      key = "cij";
-      action = "ci<";
-      mode = "n";
-    }
-    { # angle brackets
-      key = "dij";
-      action = "di<";
-      mode = "n";
-    }
-    { # angle brackets
-      key = "vij";
-      action = "vi<";
-      mode = "n";
-    }
-    { # angle brackets
-      key = "yij";
-      action = "yi<";
-      mode = "n";
-    }
-    { # angle brackets
-      key = "caj";
-      action = "ca<";
-      mode = "n";
-    }
-    { # angle brackets
-      key = "daj";
-      action = "da<";
-      mode = "n";
-    }
-    { # angle brackets
-      key = "vaj";
-      action = "va<";
-      mode = "n";
-    }
-    { # angle brackets
-      key = "yaj";
-      action = "ya<";
-      mode = "n";
-    }
+    # { # angle brackets
+    #   key = "cij";
+    #   action = "ci<";
+    #   mode = "n";
+    # }
+    # { # angle brackets
+    #   key = "dij";
+    #   action = "di<";
+    #   mode = "n";
+    # }
+    # { # angle brackets
+    #   key = "vij";
+    #   action = "vi<";
+    #   mode = "n";
+    # }
+    # { # angle brackets
+    #   key = "yij";
+    #   action = "yi<";
+    #   mode = "n";
+    # }
+    # { # angle brackets
+    #   key = "caj";
+    #   action = "ca<";
+    #   mode = "n";
+    # }
+    # { # angle brackets
+    #   key = "daj";
+    #   action = "da<";
+    #   mode = "n";
+    # }
+    # { # angle brackets
+    #   key = "vaj";
+    #   action = "va<";
+    #   mode = "n";
+    # }
+    # { # angle brackets
+    #   key = "yaj";
+    #   action = "ya<";
+    #   mode = "n";
+    # }
 
 
 

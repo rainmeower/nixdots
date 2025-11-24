@@ -1,16 +1,17 @@
 {
   lib,
   theme,
+  username,
   ...
 }: let
-col = import ../colors.nix;
+  col = import ../colors.nix;
 in {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
     programs.yazi.theme.mgr = {
 # FIXME
 
-      syntect_theme = ".config/tmthemes/kanso.tmTheme";
-      home.file.".config/tmthemes/kanso.tmTheme".text = /* xml */ ''
+      syntect_theme = "/home/${username}/.config/tmthemes/kanso.tmTheme";
+      xdg.configFile."tmthemes/kanso.tmTheme".text = /* xml */ ''
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
