@@ -30,10 +30,13 @@
 
     gamescope = {
       enable = true;
-      args = [
-        "-w 2560"
-        "-h 1440"
-        "-r 165"
+      args = let
+        inherit (config.monitor.DP-1) width height refresh;
+        s = toString;
+      in [
+        "-w ${s width}"
+        "-h ${s height}"
+        "-r ${s refresh}"
         "--expose-wayland"
       ];
     };

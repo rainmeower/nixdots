@@ -31,6 +31,7 @@ in {
         font_name
         font_path
         font_package
+        monitor
       ;
       host = config.networking.hostName;
       os_config = config;

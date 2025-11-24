@@ -3,7 +3,7 @@
   ...
 }: let
   inherit (lib) mkOption;
-  inherit (lib.types) enum bool str anything int;
+  inherit (lib.types) enum bool str anything int float;
 in {
   options = {
     monitor.DP-1 = {
@@ -13,8 +13,11 @@ in {
       width = mkOption {
         type = int;
       };
-      refresh_rate = mkOption {
+      refresh = mkOption {
         type = int;
+      };
+      refresh_f = mkOption {
+        type = float;
       };
     };
 
@@ -25,8 +28,11 @@ in {
       width = mkOption {
         type = int;
       };
-      refresh_rate = mkOption {
+      refresh = mkOption {
         type = int;
+      };
+      refresh_f = mkOption {
+        type = float;
       };
     };
   };
