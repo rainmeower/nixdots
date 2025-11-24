@@ -52,10 +52,7 @@
 
     foldcolumn = "auto";
     foldmethod = "marker";
-    # foldtext = ''substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|\ {{{\\d\\=',''','g')'';
-foldtext = "substitute(getline(v:foldstart),'/\\\\*\\\\\\|\\\\*/\\\\\\|\\ {{{\\\\d\\\\=','','g')\n";
+    foldtext = "substitute(getline(v:foldstart),' #| //| {{{','','g')";
 
-# todo remove the triple brace
-    # foldtext = "substitute(getline(v:foldstart),'/\\\*\\\\\|\\\*/\\\\\|{{{\\\d\\\=','','g')"; # }}}
   };
 }

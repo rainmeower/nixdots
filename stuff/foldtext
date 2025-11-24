@@ -1,1 +1,3 @@
 substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|\ {{{\\d\\=','','g')
+
+substitute(getline(v:foldstart),' #| //| {{{','','g')
