@@ -152,7 +152,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -291,7 +291,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -489,7 +489,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -522,7 +522,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -614,7 +614,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -647,7 +647,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -669,7 +669,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -779,7 +779,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -979,7 +979,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1125,7 +1125,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1178,7 +1178,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1266,7 +1266,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1437,7 +1437,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1635,7 +1635,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1657,7 +1657,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.green3}</string>
+          <string>${col.green}</string>
         </dict>
       </dict>
       <dict>
@@ -1771,7 +1771,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1782,7 +1782,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1815,7 +1815,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1967,7 +1967,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1996,7 +1996,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue3}</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
