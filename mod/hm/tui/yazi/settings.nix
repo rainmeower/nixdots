@@ -23,8 +23,8 @@
 
     preview = {
       tab_size = 2;
-      max_width = os_config.monitor.DP-1.width; # TODO resolution variable?
-      max_height = 1440;
+      max_width = os_config.monitor.DP-1.width;
+      max_height = os_config.monitor.DP-1.width;
       cache_dir = "";
       image_delay = 0;
       image_filter = "triangle";

@@ -19,3 +19,5 @@
 - reduce use of `* {` in css
 
 https://github.com/CKolkey/ts-node-action
+
+- dot repeat nvim plugin
