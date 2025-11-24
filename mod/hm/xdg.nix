@@ -5,6 +5,7 @@
   h = config.home.homeDirectory;
 in {
   home.preferXdgDirectories = true;
+  xdg.enable = true;
   xdg.userDirs = {
     enable = true;
     createDirectories = true;
