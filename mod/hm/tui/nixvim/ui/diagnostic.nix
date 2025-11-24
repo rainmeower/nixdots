@@ -15,11 +15,11 @@
       transparent_bg = false;
 
       signs = {
-        left         = "";
-        right        = "";
+        left         = null;
+        right        = null;
+        arrow        = null;
+        up_arrow     = null;
         diag         = "";
-        arrow        = "     ";
-        up_arrow     = "     ";
         vertical     = " │";
         vertical_end = " └";
       };

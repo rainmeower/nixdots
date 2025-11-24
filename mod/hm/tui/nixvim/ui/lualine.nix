@@ -14,18 +14,18 @@
 
       options = {
         theme = null;
-        component_separators = "";
-        section_separators = "";
+        component_separators = null;
+        section_separators = null;
       };
       sections = {
         lualine_a = [
 
         {
           __unkeyed-1 = "buffers";
-          separator = "";
+          separator = null;
           symbols = {
             modified = " ";
-            alternate_file = "";
+            alternate_file = null;
           };
           max_length = 1000000;
 
@@ -48,7 +48,7 @@
             info = "DiagnosticInfo";
             hint = "DiagnosticHint";
           };
-          symbols = { error = ""; warn = ""; info = ""; hint = ""; };
+          symbols = { error = null; warn = null; info = null; hint = null; };
           colored = true;
           update_in_insert = false;
           always_visible = false;

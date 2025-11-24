@@ -13,7 +13,7 @@ in {
 @-moz-document domain("duckduckgo.com") {
 * {
   font-family: ${font_name} !important;
-  ${if !os_config.rounding then "border-radius: 0px !important;" else ""}
+  ${if !os_config.rounding then "border-radius: 0px !important;" else null}
 }
 
 html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--carousel__image-wrapper, .result__image, .vertical--map__sidebar, .vertical--map__sidebar__header, .page-chrome_newtab, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded .metabar:not(.is-stuck), .is-link-style-exp .header-wrap  {

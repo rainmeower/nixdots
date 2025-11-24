@@ -14,7 +14,7 @@ in {
 
 * {
   font-family: ${font_name} !important;
-  ${if !os_config.rounding then "border-radius: 0px !important;" else ""}
+  ${if !os_config.rounding then "border-radius: 0px !important;" else null}
 }
 
 body {

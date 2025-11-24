@@ -60,7 +60,7 @@ in {
       ]; # }}}
 
       # cursor smear
-      custom-shader = if os_config.animations then "cursor_smear.glsl" else "";
+      custom-shader = if os_config.animations then "cursor_smear.glsl" else null;
     };
   };
   home.file.".config/ghostty/cursor_smear.glsl".source = ../../../../stuff/cursor_smear.glsl;

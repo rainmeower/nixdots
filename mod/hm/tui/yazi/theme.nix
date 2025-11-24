@@ -38,6 +38,5 @@ in {
         bg = col.accent;
       };
     };
-
   };
 }

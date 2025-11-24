@@ -13,7 +13,7 @@ in {
 @-moz-document domain("wikipedia.org") {
 * {
   font-family: ${font_name} !important;
-  ${if !rounding then "border-radius: 0px !important;" else ""}
+  ${if !rounding then "border-radius: 0px !important;" else null}
 }
 
 root: {

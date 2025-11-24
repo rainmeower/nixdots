@@ -13,6 +13,9 @@
     signcolumn = "number";
 
 
+    updatetime = 1000; # ms before swap file is written to disk
+    # foldlevelstart = 99;
+
     scrolloff = 10;
 
     cursorline = true;

@@ -14,7 +14,7 @@ in {
 * {
   color: ${col.fg} !important;
   font-family: ${font_name} !important;
-  ${if !rounding then "border-radius: 0px !important;" else ""}
+  ${if !rounding then "border-radius: 0px !important;" else null}
 }
 
 .left-sidebar, .mt-md, /* .mt-lg, .mb-0 */ {
