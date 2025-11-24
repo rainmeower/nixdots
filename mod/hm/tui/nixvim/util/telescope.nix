@@ -1,7 +1,25 @@
 {
   rounding,
+  lib,
   ...
-}: {
+}: let
+borderchars = [ # {{{
+  "─"
+  "│"
+  "─"
+  "│"
+] ++ (if rounding then [
+  "╭"
+  "╮"
+  "╯"
+  "╰"
+] else [
+  "┌"
+  "┐"
+  "┘"
+  "└"
+]); # }}}
+in {
   programs.nixvim.plugins.telescope = {
     enable = true;
 
@@ -14,6 +32,8 @@
       defaults = {
         selection_caret = "  ";
         entry_prefix = "  ";
+
+        inherit borderchars;
       };
 
       pickers = {
@@ -30,16 +50,6 @@
       layout_config = {
         preview_width = 0.5;
       };
-      borderchars = [
-        "─"
-        "│"
-        "─"
-        "│"
-        (if rounding then "╭" else "┌")
-        (if rounding then "╮" else "┐")
-        (if rounding then "╯" else "┘")
-        (if rounding then "╰" else "└")
-      ];
     };
 
     keymaps = {
