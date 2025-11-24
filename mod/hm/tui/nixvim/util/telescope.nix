@@ -37,6 +37,7 @@ in {
         file_ignore_patterns = [
           "^/nix/store/" # nix store
           "^/tmp/.*nu$" # <C-o> in nushell
+          "^/tmp/tmp_.*txt$" # tridactyl
         ];
       };
 
