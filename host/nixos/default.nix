@@ -1,6 +1,8 @@
 {
   imports = [
     ./boot.nix
+    ./options.nix
+    ./config.nix
     ./configuration.nix
     ./hardware-configuration.nix
     ./kanata.nix
