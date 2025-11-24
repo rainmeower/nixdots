@@ -3,7 +3,9 @@
   lib,
   theme,
   ...
-}: {
+}: let
+  col = import ../../../../../theme/kanso/colors.nix;
+in {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
 
     programs.nixvim = {
@@ -30,15 +32,22 @@
             overrides = function(colors)
             return {
             -- Assign a static color to strings
-            CursorLineNr = { fg = "#7FB4CA" },
+            CursorLineNr = { fg = "${col.accent}" },
             CursorLine = { bg = "NONE" },
-            TelescopeSelection = { fg = "#7FB4CA" },
+            TelescopeSelection = { fg = "${col.accent}" },
+            TelescopeSelectionCaret = { fg = "${col.accent}" },
+            TelescopePromptPrefix = { fg = "${col.accent}" },
+            TelescopeBorder = { fg = "${col.accent}" },
+            TelescopePreviewBorder = { fg = "${col.accent}" },
+            TelescopeResultsBorder = { fg = "${col.accent}" },
+            TelescopeTitle = { fg = "${col.accent}" },
+
             -- LineNrBelow = { fg = "#393B44" },
             -- LineNrAbove = { fg = "#393B44" },
             LineNr = { fg = "#393B44" },
             RenderMarkdownH1Bg = { fg = "#090E13", bg = "#f2f1ef" },
             RenderMarkdownH2Bg = { fg = "#090E13", bg = "#C5C9C7" },
-            MiniIndentscopeSymbol = { fg = "#7FB4CA" }
+            MiniIndentscopeSymbol = { fg = "${col.accent}" }
             }
             end,
             theme = ${lib.strings.removePrefix "kanso_" theme},              -- Load "zen" theme

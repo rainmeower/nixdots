@@ -30,10 +30,14 @@ in {
 
     settings = {
       defaults = {
-        selection_caret = "  ";
-        entry_prefix = "  ";
+        selection_caret = "";
+        entry_prefix = "";
+        prompt_prefix = " 󰘧 ";
 
         inherit borderchars;
+        file_ignore_patterns = [
+          "^/nix/store/"
+        ];
       };
 
       pickers = {
