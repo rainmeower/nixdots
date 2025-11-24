@@ -83,7 +83,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#6e738d</string>
+          <string>${col.comment}</string>
         </dict>
       </dict>
       <dict>
@@ -92,7 +92,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a6da95</string>
+          <string>${col.string}</string>
         </dict>
       </dict>
       <dict>
@@ -143,7 +143,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8bd5ca</string>
+          <string>${col.punc}</string>
         </dict>
       </dict>
       <dict>
@@ -163,7 +163,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -174,7 +174,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -185,7 +185,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8bd5ca</string>
+          <string>${col.const}</string>
         </dict>
       </dict>
       <dict>
@@ -207,7 +207,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -258,7 +258,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -280,7 +280,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -291,7 +291,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${col.keyword}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -359,7 +359,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -414,7 +414,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -425,7 +425,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8bd5ca</string>
+          <string>${col.punc}</string>
         </dict>
       </dict>
       <dict>
@@ -454,7 +454,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a6da95</string>
+          <string>${col.string}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -511,7 +511,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a6da95</string>
+          <string>${col.string}</string>
         </dict>
       </dict>
       <dict>
@@ -522,7 +522,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${col.keyword}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -535,7 +535,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#f5a97f</string>
+          <string>${col.const}</string>
         </dict>
       </dict>
       <dict>
@@ -546,7 +546,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -559,7 +559,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -603,7 +603,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#f5a97f</string>
+          <string>${col.yellow}</string>
         </dict>
       </dict>
       <dict>
@@ -625,7 +625,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a6da95</string>
+          <string>${col.green}</string>
         </dict>
       </dict>
       <dict>
@@ -669,7 +669,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${col.func}</string>
         </dict>
       </dict>
       <dict>
@@ -680,7 +680,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#f5a97f</string>
+          <string>${col.const}</string>
         </dict>
       </dict>
       <dict>
@@ -713,7 +713,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#f5a97f</string>
+          <string>${col.const}</string>
         </dict>
       </dict>
       <dict>
@@ -768,7 +768,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${col.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -803,7 +803,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -838,7 +838,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8bd5ca</string>
+          <string>${col.const}</string>
         </dict>
       </dict>
       <dict>
@@ -937,7 +937,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${col.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -948,7 +948,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -957,7 +957,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -968,7 +968,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8bd5ca</string>
+          <string>${col.punc}</string>
         </dict>
       </dict>
       <dict>
@@ -1088,8 +1088,10 @@ in {
         <string>heading.1.markdown punctuation.definition.heading.markdown, heading.1.markdown, markup.heading.atx.1.mdx, markup.heading.atx.1.mdx punctuation.definition.heading.mdx, markup.heading.setext.1.markdown, markup.heading.heading-0.asciidoc</string>
         <key>settings</key>
         <dict>
+          <key>background</key>
+          <string>${col.fg}</string>
           <key>foreground</key>
-          <string>${col.red}</string>
+          <string>${col.bg}</string>
         </dict>
       </dict>
       <dict>
@@ -1107,7 +1109,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1116,7 +1118,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a6da95</string>
+          <string>${col.string}</string>
         </dict>
       </dict>
       <dict>
@@ -1142,8 +1144,6 @@ in {
         <string>markup.bold</string>
         <key>settings</key>
         <dict>
-          <key>foreground</key>
-          <string>${col.red}</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -1153,8 +1153,6 @@ in {
         <string>markup.italic</string>
         <key>settings</key>
         <dict>
-          <key>foreground</key>
-          <string>${col.red}</string>
           <key>fontStyle</key>
           <string>italic</string>
         </dict>
@@ -1164,8 +1162,6 @@ in {
         <string>markup.strikethrough</string>
         <key>settings</key>
         <dict>
-          <key>foreground</key>
-          <string>#a5adcb</string>
           <key>fontStyle</key>
           <string>strikethrough</string>
         </dict>
@@ -1189,7 +1185,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#b7bdf8</string>
+          <string>${col.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1200,7 +1196,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a6da95</string>
+          <string>${col.string}</string>
         </dict>
       </dict>
       <dict>
@@ -1210,8 +1206,10 @@ in {
         <string>fenced_code.block.language</string>
         <key>settings</key>
         <dict>
+          <key>background</key>
+          <string>${col.button}</string>
           <key>foreground</key>
-          <string>#91d7e3</string>
+          <string>${col.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -1222,7 +1220,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#939ab7</string>
+          <string>${col.comment}</string>
         </dict>
       </dict>
       <dict>
@@ -1244,7 +1242,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8bd5ca</string>
+          <string>${col.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -1255,7 +1253,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8bd5ca</string>
+          <string>${col.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -1303,7 +1301,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${col.yellow}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -1316,7 +1314,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1492,7 +1490,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${col.bool}</string>
         </dict>
       </dict>
       <dict>
@@ -1514,7 +1512,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a6da95</string>
+          <string>${col.string}</string>
         </dict>
       </dict>
       <dict>
@@ -1569,7 +1567,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a6da95</string>
+          <string>${col.string}</string>
         </dict>
       </dict>
       <dict>
@@ -1580,7 +1578,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1646,7 +1644,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1694,7 +1692,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1705,7 +1703,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1727,7 +1725,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1738,7 +1736,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1749,7 +1747,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1760,7 +1758,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8bd5ca</string>
+          <string>${col.const}</string>
         </dict>
       </dict>
       <dict>
@@ -1826,7 +1824,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.gray3}</string>
+          <string>${col.punc}</string>
         </dict>
       </dict>
       <dict>
@@ -1837,7 +1835,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.orange}</string>
+          <string>${col.const}</string>
         </dict>
       </dict>
       <dict>
@@ -1934,7 +1932,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8bd5ca</string>
+          <string>${col.punc}</string>
         </dict>
       </dict>
       <dict>
@@ -1967,7 +1965,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${col.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -1978,7 +1976,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#939ab7</string>
+          <string>${col.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -2043,7 +2041,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue4}</string>
+          <string>${col.type}</string>
         </dict>
       </dict>
     </array>

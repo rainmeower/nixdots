@@ -83,9 +83,9 @@ rec {
   red_sat     = "#CA675F";
   red2_sat    = "#ED5965";
   red3_sat    = "#C93134";
-  yellow_sat  = "#E59F49";
+  yellow_sat  = "#CAAC7A";
   yellow2_sat = "#EDC272";
-  yellow3_sat = "#CAAC7A";
+  yellow3_sat = "#E59F49";
   green_sat   = "#7F9F6E";
   green2_sat  = "#7CAF7C";
   green3_sat  = "#8FC055";
@@ -107,12 +107,15 @@ rec {
 
 # syntax highlighting
   keyword = violet2;
-  method  = yellow3;
+  method  = yellow;
   var     = fg;
   arg     = gray3;
   func    = blue;
   string  = green;
   num     = pink;
   bool    = orange;
+  const    = orange;
   type    = blue4;
+  comment = gray4;
+  punc    = gray3;
 }
