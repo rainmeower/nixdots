@@ -10,6 +10,7 @@
   unrounding = if rounding then "off" else "on";
 in
 {
+# {{{
   home.file.".config/vesktop/themes/system24_1.css".text = /* css */ ''
 /* main.css */
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
@@ -574,7 +575,7 @@ body {
     }
 }
 
-'';
+''; # }}}
 
 
 
