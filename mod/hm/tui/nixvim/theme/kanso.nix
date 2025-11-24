@@ -7,7 +7,6 @@
   col = import ../../../../../theme/kanso/colors.nix;
 in {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
-
     programs.nixvim = {
       extraPlugins = [ pkgs.vimPlugins.kanso-nvim ];
       extraConfigLua = ''
@@ -33,14 +32,14 @@ in {
             return {
             -- Assign a static color to strings
             CursorLineNr = { fg = "${col.accent}" },
-            CursorLine = { bg = "NONE" },
-            TelescopeSelection = { fg = "${col.accent}" },
-            TelescopeSelectionCaret = { fg = "${col.accent}" },
-            TelescopePromptPrefix = { fg = "${col.accent}" },
+            CursorLine   = { bg = "NONE" },
             TelescopeBorder = { fg = "${col.accent}" },
-            TelescopePreviewBorder = { fg = "${col.accent}" },
-            TelescopeResultsBorder = { fg = "${col.accent}" },
-            TelescopeTitle = { fg = "${col.accent}" },
+            TelescopeTitle  = { fg = "${col.accent}" },
+            TelescopeSelection      = { fg = "${col.accent}" },
+            TelescopeSelectionCaret = { fg = "${col.accent}" },
+            TelescopePromptPrefix   = { fg = "${col.accent}" },
+            TelescopePreviewBorder  = { fg = "${col.accent}" },
+            TelescopeResultsBorder  = { fg = "${col.accent}" },
 
             -- LineNrBelow = { fg = "#393B44" },
             -- LineNrAbove = { fg = "#393B44" },
