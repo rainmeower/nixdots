@@ -7,6 +7,12 @@
       XDG_CONFIG_HOME
       XDG_DATA_HOME
       XDG_CACHE_HOME
+
+      download
+      documents
+      music
+      pictures
+      videos 
     ;
 
   cfg = XDG_CONFIG_HOME;
