@@ -62,7 +62,7 @@
     wl-clipboard
     dconf
     libevdev
-    # qemu_kvm
+    qemu_kvm
     hyprpicker
     quickshell
 
