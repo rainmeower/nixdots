@@ -5,7 +5,7 @@
   hardware = {
     graphics = {
       enable = true;
-      enable32Bit = true;
+      enable32Bit = true; # TODO is it just steam that needs this?
       extraPackages = with pkgs; [
         mesa
         libva
