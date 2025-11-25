@@ -94,7 +94,12 @@
 
       laptop = nixpkgs.lib.nixosSystem { # {{{
         specialArgs = {
-          inherit username flake_dir inputs;
+          inherit
+            self
+            inputs
+            username
+            flake_dir 
+          ;
         };
         modules = [
 
@@ -102,11 +107,11 @@
           ./host/laptop/hm.nix
 
 
-          home-manager.nixosModules.home-manager
+          lix-module.nixosModules.default
+
           # {
           #   nixpkgs.overlays = import ./over/default.nix;
           # }
-
 
         ];
       }; # }}}

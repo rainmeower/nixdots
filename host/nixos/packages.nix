@@ -46,7 +46,6 @@
     wf-recorder
 
     /* games */
-    olympus
     osu-lazer
     # tt
     # ttyper
