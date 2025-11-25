@@ -57,7 +57,7 @@
   }; # }}}
 
   outputs = inputs @ {
-    self, # TODO wtf is this
+    self,
     nixpkgs,
     home-manager,
     lix-module,

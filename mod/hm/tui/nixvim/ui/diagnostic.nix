@@ -15,10 +15,10 @@
       transparent_bg = false;
 
       signs = {
-        left         = null;
-        right        = null;
-        arrow        = null;
-        up_arrow     = null;
+        left         = "";
+        right        = "";
+        arrow        = "";
+        up_arrow     = "";
         diag         = "";
         vertical     = " │";
         vertical_end = " └";

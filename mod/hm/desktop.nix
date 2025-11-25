@@ -27,6 +27,13 @@
       icon = "${flake_dir}/stuff/icons/hammer.png";
     };
 
+    Celeste = {
+      name = "celeste";
+      comment = "celeste with everest";
+      exec = "gamemoderun Celeste";
+      icon = "Celeste";
+    };
+
     # hidden desktop entries {{{
     vitetris.noDisplay = true;
     yazi.noDisplay = true;

@@ -744,7 +744,13 @@
         run = "cd ~/silly";
         desc = "silly";
       }
-    
+
+      {
+        on = [ "<Space>" "s" "h" ];
+        run = "cd ~/.local/share";
+        desc = "local share";
+      }
+
       {
         on = [ "<Space>" "t" "r" ];
         run = "cd ~/.local/share/Trash/files";
@@ -758,13 +764,19 @@
       }
     
       {
+        on = [ "<Space>" "t" "m" ];
+        run = "cd /tmp";
+        desc = "/tmp";
+      }
+    
+      {
         on = [ "<Space>" "v" ];
         run = "cd ~/vid";
         desc = "videos";
       }
     
       {
-        on = [ "<Space>" "w" ];
+        on = [ "<Space>" "w" "p" ];
         run = "cd ~/pic/wallpapers";
         desc = "wallpapers";
       }
