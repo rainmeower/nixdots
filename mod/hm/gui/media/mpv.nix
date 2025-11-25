@@ -50,6 +50,7 @@
         # Comma separated states when element should always be fully visible.
         # Available: paused, audio, image, video, idle, windowed, fullscreen
         # timeline_persistency = 
+
         # Top border of background color to help visually separate timeline from video
         timeline_border = 1;
         # When scrolling above timeline, wheel will seek by this amount of seconds.
@@ -59,7 +60,7 @@
         timeline_cache = true;
 
 
-        progress = "always";
+        progress = "always"; # always show squished progress pill at the bottom
         progress_size = 2;
         progress_line_width = 20;
 
@@ -190,12 +191,9 @@
         # Available: video,audio,image,playlist,same. `same` means the same type pool (not just extension) as currently open file.
         load_types = "video,audio,image";
         # Default open-file menu directory. Use `{drives}` to open drives menu on windows (defaults to `/` on unix).
-        default_directory = "~/";
-        # List hidden files when reading directories. Due to environment limitations, this currently only hides
-        # files starting with a dot. Doesn't hide hidden files on windows (we have no way to tell they're hidden).show_hidden_files = no
-        # Move files to trash (recycle bin) when deleting files. Dependencies:
-        # - Linux: `sudo apt install trash-cli`
-        # - MacOS: `brew install trash`
+        default_directory = config.home.homeDirectory;
+        show_hidden_files = true;
+        # pkgs.trash-cli
         use_trash = true;
         # Adjusted osd margins based on the visibility of UI elements
         adjust_osd_margins = true;

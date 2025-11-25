@@ -38,6 +38,7 @@ in {
           "^/nix/store/" # nix store
           "^/tmp/.*nu$" # <C-o> in nushell
           "^/tmp/tmp_.*txt$" # tridactyl
+          "^/tmp/yazi-1000/bulk" # yazi bulk rename
         ];
       };
 
