@@ -8,7 +8,7 @@
   # theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   theme_trimmed = builtins.split "_" theme;
   # theme_trimmed2 = lib.lists.flatten theme_trimmed;
-  col = import ../../../../theme/${builtins.elemAt theme_trimmed 0}/colors.nix;
+  col = import ../../../../theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix;
 in {
   home.file.".config/usercontent/crates.css".text = /* css */ ''
 @-moz-document domain("crates.io") {
