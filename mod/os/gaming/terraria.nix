@@ -1,5 +1,7 @@
 {
   inputs,
+  username,
+  home-manager,
   ...
 }: {
   # services.terraria = {
@@ -8,11 +10,13 @@
   #   autoCreatedWorldSize = "large";
   # };
 
-  imports = [
-    inputs.tmodloader.nixosModules.tmodloader
-  ];
-
-  # https://github.com/andOrlando/nix-tmodloader
+  # imports = [
+  #   inputs.tmodloader.nixosModules.tmodloader
+  # ];
+  #
+  # home-manager.users.users.${username}.extraGroups = [ "terraria" ];
+  #
+  # # https://github.com/andOrlando/nix-tmodloader
   # services.tmodloader = {
   #   enable = true;
   #   servers.meow = {

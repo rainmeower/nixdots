@@ -18,7 +18,6 @@
       "audio"
       "input"
       "uinput"
-      "terraria"
     ];
     shell = pkgs.nushell;
   };

@@ -13,6 +13,7 @@
     { command = [ "udiskie" "-a" ]; }
     # { command = [ "dunst" ]; }
     { command = [ "~/misc/niriusd" ]; }
+    { command = [ "foot --server" ]; }
     # { command = [ "hyprpaper" ]; }
     { command = [ "vesktop" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland" ]; }
     # { command = [ "steam" "-silent" ]; }
