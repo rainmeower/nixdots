@@ -183,7 +183,7 @@ menu:
 
           - key: [ "b", "Mod4+b" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'glass beach - glass beach'
+            cmd: ~/nix/stuff/scripts/mpc.sh 'glass beach'
 
 
       - key: [ "h", "Mod4+h" ]

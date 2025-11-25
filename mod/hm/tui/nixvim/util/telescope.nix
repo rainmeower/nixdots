@@ -2,22 +2,22 @@
   rounding,
   ...
 }: let
-borderchars = [ # {{{
-  "─"
-  "│"
-  "─"
-  "│"
-] ++ (if rounding then [
-  "╭"
-  "╮"
-  "╯"
-  "╰"
-] else [
-  "┌"
-  "┐"
-  "┘"
-  "└"
-]); # }}}
+  borderchars = [ # {{{
+    "─"
+    "│"
+    "─"
+    "│"
+  ] ++ (if rounding then [
+    "╭"
+    "╮"
+    "╯"
+    "╰"
+  ] else [
+    "┌"
+    "┐"
+    "┘"
+    "└"
+  ]); # }}}
 in {
   programs.nixvim.plugins.telescope = {
     enable = true;
