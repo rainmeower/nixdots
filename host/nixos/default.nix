@@ -9,7 +9,7 @@
     ./packages.nix
     ./services.nix
 
-    ../../mod/os/audio.nix
+    ../../mod/os/services/audio.nix
     ../../mod/os/cleanup.nix
     ../../mod/os/clipse.nix
     ../../mod/os/config.nix
@@ -19,20 +19,21 @@
     ../../mod/os/core/polkit.nix
     ../../mod/os/core/security.nix
     ../../mod/os/dev.nix
-    ../../mod/os/terraria.nix
-    ../../mod/os/celeste.nix
+    ../../mod/os/gaming/terraria.nix
+    ../../mod/os/gaming/celeste.nix
+    ../../mod/os/gaming/games.nix
     ../../mod/os/font.nix
     ../../mod/os/fontconfig.nix
-    ../../mod/os/gamemode.nix
+    ../../mod/os/services/gamemode.nix
+    ../../mod/os/services/preload.nix
     ../../mod/os/appimage.nix
     ../../mod/os/misc.nix
-    ../../mod/os/mpd.nix
-    ../../mod/os/nix-gaming.nix
+    ../../mod/os/services/mpd.nix
+    ../../mod/os/gaming/nix-gaming.nix
     ../../mod/os/options.nix
     ../../mod/os/shared.nix
     ../../mod/os/steam.nix
-    ../../mod/os/disk.nix
-    ../../mod/os/stylix.nix
+    ../../mod/os/services/disk.nix
     ../../mod/os/wine.nix
     ../../mod/os/ydotool.nix
     ../../mod/os/appimage.nix

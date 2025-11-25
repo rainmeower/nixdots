@@ -45,14 +45,6 @@
     obs-studio
     wf-recorder
 
-    /* games */
-    osu-lazer
-    # tt
-    # ttyper
-    vitetris
-    cl-wordle
-    # luanti
-
     /* misc terminal stuff */
     termdown
     # tty-clock
