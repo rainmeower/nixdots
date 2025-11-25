@@ -5,6 +5,7 @@
   config,
   lib,
   theme,
+  self,
   ...
 }: let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
@@ -21,9 +22,11 @@ in {
     backupFileExtension = "bak";
     extraSpecialArgs = {
       inherit 
+        inputs
+        self 
         username 
         flake_dir 
-        inputs;
+      ;
       inherit (config)
         theme
         rounding

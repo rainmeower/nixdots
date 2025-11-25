@@ -72,6 +72,7 @@
       nixos = nixpkgs.lib.nixosSystem { # {{{
         specialArgs = {
           inherit
+            self
             inputs
             home-manager
             username
