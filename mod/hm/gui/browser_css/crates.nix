@@ -6,7 +6,7 @@
   self,
   ...
 }: let
-  col = import (self + "/theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix");
+  col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
 in {
   home.file.".config/usercontent/crates.css".text = /* css */ ''
 @-moz-document domain("crates.io") {
