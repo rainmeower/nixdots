@@ -65,10 +65,9 @@
     qemu_kvm
     hyprpicker
     quickshell
-
-
     xwayland
 
+    moonlight
     # (discord.override {
     #  withMoonlight = true;
     #  moonlight = inputs.moonlight.packages.${pkgs.stdenv.hostPlatform.system}.moonlight-mod;
