@@ -47,6 +47,7 @@
     pollymc.url = "github:fn2006/PollyMC";
     vicinae.url = "github:vicinaehq/vicinae";
 
+    moonlight.url = "github:moonlight-mod/moonlight";
 
     ytsub.url = "github:/sarowish/ytsub";
 

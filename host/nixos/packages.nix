@@ -68,10 +68,10 @@
     xwayland
 
     # moonlight
-    # (discord.override {
-    #  withMoonlight = true;
-    #  moonlight = inputs.moonlight.packages.${pkgs.stdenv.hostPlatform.system}.moonlight-mod;
-    #  })
+    (discord.override {
+     withMoonlight = true;
+     moonlight = inputs.moonlight.packages.${pkgs.stdenv.hostPlatform.system}.moonlight;
+     })
     vesktop
 
     inputs.pollymc.packages."x86_64-linux".default
