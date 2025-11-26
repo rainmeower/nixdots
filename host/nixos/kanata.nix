@@ -281,10 +281,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history o 1)
     )) l break
 
-    ;; play (sfs+1)
-    ((and
-      (key-history a 1)
-    )) y break
 
     ;; leave
     ((and
@@ -491,6 +487,32 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ((input-history real lsft 2)) (macro lctl ent) break
 
+    ;; expand {{{ 
+    ;; TODO add more
+    ;; https://
+    ((and
+      (key-history h 2)
+      (key-history t 1)
+    )) (multi
+      (release-key h)
+      (release-key t)
+      (macro t p s S-; / /)
+    ) break
+    ;; https://www.
+    ((and
+      (key-history h 3)
+      (key-history t 2)
+      (key-history w 1)
+    )) (multi
+      (release-key h)
+      (release-key t)
+      (release-key w)
+      (macro bspc t p s S-; / / w w w .)
+    ) break
+
+    ;; }}}
+
+
     ;; sfs {{{
     ((key-history a 2)) o break
 
@@ -517,30 +539,11 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;; }}}
 
-    ;; expand {{{ 
-    ;; TODO add more
-    ;; https://
-    ((and
-      (key-history h 2)
-      (key-history t 1)
-    )) (multi
-      (release-key h)
-      (release-key t)
-      (macro t p s S-; / /)
-    ) break
-    ;; https://www.
-    ((and
-      (key-history h 3)
-      (key-history t 2)
-      (key-history w 1)
-    )) (multi
-      (release-key h)
-      (release-key t)
-      (release-key w)
-      (macro bspc t p s S-; / / w w w .)
-    ) break
 
-    ;; }}}
+    ;; play (sfs+1)
+    ((and
+      (key-history a 1)
+    )) y break
 
     ;; sfb {{{
     ((input-history real f16 2))
