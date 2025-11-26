@@ -41,10 +41,10 @@
       key = "K";
       lspBufAction = "hover";
     }
-    {
-      action = ":Telescope lsp_definitions<cr>"; # TODO
-      key = "<Leader>t";
-    }
+    # {
+    #   action = ":Telescope lsp_definitions<cr>"; # TODO
+    #   key = "<Leader>t";
+    # }
     # {
     #   action = "<CMD>Lspsaga hover_doc<Enter>";
     #   key = "K";

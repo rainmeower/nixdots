@@ -16,7 +16,7 @@ local opts = {
     -- showwaves
     -- showvolume
 
-    quality = "medium",
+    quality = "veryhigh",
     -- verylow
     -- low
     -- medium
