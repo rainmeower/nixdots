@@ -1,7 +1,6 @@
 {
   font_name,
   os_config,
-  lib,
   theme,
   self,
   ...
