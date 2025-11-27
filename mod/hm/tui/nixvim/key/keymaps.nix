@@ -203,9 +203,15 @@
     #   mode = [ "n" "v" "x" ];
     # }
 
-    { # write & quit
-      key = "ZZ";
-      action = ":echo \"use :x\"<cr>";
+    {
+      key = ":x";
+      action = ":echo \"use lou chord\"<cr>";
+      mode = [ "n" "v" "x" ];
+    }
+
+    {
+      key = ":wq";
+      action = ":echo \"use lou chord\"<cr>";
       mode = [ "n" "v" "x" ];
     }
 

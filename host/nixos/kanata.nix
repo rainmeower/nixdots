@@ -1021,6 +1021,7 @@ i end
 (defchordsv2 ;; {{{
   ;; (r spc) rsft 18 first-release (over sup melee)
 
+  (l o u) (macro S-z S-z) 16 all-released (over sup melee) ;; vim save and quit
   (f15 a) @cw 16 all-released (over sup melee)
   (t g) caps 16 all-released (over sup melee)
   (u i) (macro S-[ S-; S-/ S-]) 16 all-released (over sup melee)
