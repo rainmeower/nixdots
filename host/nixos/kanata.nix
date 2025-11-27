@@ -842,6 +842,9 @@ f19 lsft
 ) ;; }}}
 
 (deflayermap melee ;; {{{
+u spc ;; test
+spc u ;; test
+
 . j
 f18 tab
 f15 8
