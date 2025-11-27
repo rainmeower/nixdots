@@ -13,7 +13,8 @@ in {
   programs.nushell = {
     enable = true;
 
-    configFile.text = /* nu */ ''
+    configFile.text =  # {{{
+      /* nu */ ''
       # FIXME
       # def po [] {
       #   niri msg action switch-preset-window-width
@@ -162,6 +163,7 @@ in {
       # $env.path ++= ["/xyz/meow"]
 
       $env.config = {
+          edit_mode = 'vi'
           cursor_shape: {
               emacs: line
               vi_insert: line
@@ -182,7 +184,7 @@ in {
               # }
           ]
       }
-    '';
+    '';# }}}
 
    #  envFile.text = /* nu */ ''
    #  '';
@@ -194,7 +196,7 @@ in {
     '';
 
 
-    shellAliases = {
+    shellAliases = { # {{{
       ".." = "cd ..";
       "..." = "cd ../..";
       "...." = "cd ../../..";
@@ -271,10 +273,9 @@ in {
       # h = "!! --help";
       np = "${flake_dir}/stuff/scripts/nixpkgs.sh";
 
-    };
+    }; # }}}
 
-
-    environmentVariables = {
+    environmentVariables = { # {{{
       MANPAGER = "nvim +Man!"; # use nvim for man
       SUDO_TIMESTAMP_TIMEOUT = 0;
       EDITOR = "nvim";
@@ -282,6 +283,6 @@ in {
       BROWSER = "zen";
       NIXOS_OZONE_WL = "1"; # tell things to use wayland
       NIXPKGS_ALLOW_UNFREE = "1";
-    };
+    }; # }}}
   };
 }
