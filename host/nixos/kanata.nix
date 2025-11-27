@@ -84,6 +84,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 (defsrc
 )
 
+
 (defalias ;; {{{
 
   ;; TODO check for spamming a/e and make it type out :stop

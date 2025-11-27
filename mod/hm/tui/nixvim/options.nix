@@ -50,11 +50,6 @@
     splitright = true;
     undofile = true;
 
-    #"vim.diagnostic.severity.ERROR".icon = " ";
-    #"vim.diagnostic.severity.HINT".icon = " ";
-    #"vim.diagnostic.severity.INFO".icon = " ";
-    #"vim.diagnostic.severity.WARN".icon = " ";
-
     foldcolumn = "auto";
     foldmethod = "marker";
 # foldtext =
