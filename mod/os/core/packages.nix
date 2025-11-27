@@ -14,6 +14,7 @@
     moreutils
     trash-cli
     file
+
     zip
     unzip
     rar
@@ -23,20 +24,21 @@
     nushell
 
     libqalculate
+
     gh
     git
+
     jq
     yq
+
     ripgrep
     wget
+
     fd
     eza
     fzf
     zoxide
-    wget
-    dbus
 
-    yazi
-    kanata
+    dbus
   ];
 }
