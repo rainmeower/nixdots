@@ -162,8 +162,8 @@ in {
 
       # $env.path ++= ["/xyz/meow"]
 
+      $env.config.edit_mode = 'vi'
       $env.config = {
-          edit_mode = 'vi'
           cursor_shape: {
               emacs: line
               vi_insert: line
