@@ -264,13 +264,13 @@
 
     { # insert line below
       key = "<C-k>";
-      action = "] ";
+      action = "o<esc>k";
       mode = "n";
     }
 
     { # insert line above
       key = "<C-S-k>";
-      action = "[ ";
+      action = "O<esc>j";
       mode = "n";
     }
 
