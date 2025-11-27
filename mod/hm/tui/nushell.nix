@@ -184,7 +184,7 @@ in {
               modifier: control
               keycode: char_u
               mode: vi_insert
-              event: { send: edits name: CutFromLineStart }
+              event: { edit: CutFromLineStart }
           }
           ]
       }
