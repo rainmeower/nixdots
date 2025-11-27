@@ -6,6 +6,9 @@
       key = "<C-l>";
       action = ":norm mzyygccp`zj<cr>";
       mode = "n";
+      options = {
+        silent = true;
+      };
     }
 
     {
