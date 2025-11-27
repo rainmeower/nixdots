@@ -178,9 +178,9 @@ in {
               index_mode: never
           }
 
-          keybindings = [
+          keybindings: [
               # {
-              #     name = "fzf)"]))
+              #     name: "fzf)"]))
               # }
           ]
       }
