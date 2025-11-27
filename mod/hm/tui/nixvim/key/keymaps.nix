@@ -203,6 +203,18 @@
     #   mode = [ "n" "v" "x" ];
     # }
 
+    { # goto prev fold
+      key = "zb";
+      action = "zk";
+      mode = [ "n" "v" "x" ];
+    }
+
+    { # goto next fold
+      key = "zw";
+      action = "zj";
+      mode = [ "n" "v" "x" ];
+    }
+
     {
       key = ":x";
       action = ":echo \"use lou chord\"<cr>";
