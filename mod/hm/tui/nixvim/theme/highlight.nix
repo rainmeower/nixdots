@@ -15,7 +15,7 @@ in {
     MatchParen = {
       fg = col.bg;
       bg = col.accent;
-      bold = true;
+      # bold = true;
     };
 
     # telescope {{{
