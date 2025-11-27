@@ -1,3 +1,4 @@
+# TODO ]z for jum to fold?
 {
   programs.nixvim.plugins.mini-bracketed = {
     enable = true;

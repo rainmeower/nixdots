@@ -751,6 +751,9 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; easier j
     ((key-history spc 1)) j break
 
+    ;; vim fFtT repeat
+    ((key-history ; 1)) . break
+
     () @magic break ;; fallback to other magic
   ) ;; }}}
 

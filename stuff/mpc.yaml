@@ -136,6 +136,10 @@ menu:
 
           - key: [ "a", "Mod4+a" ]
             desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'dallas'
+
+          - key: [ "d", "Mod4+d" ]
+            desc: 
             cmd: ~/nix/stuff/scripts/mpc.sh 'daydreamer'
 
           - key: [ "o", "Mod4+o" ]
@@ -252,6 +256,10 @@ menu:
 
           - key: [ "e", "Mod4+e" ]
             desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'neon glow'
+
+          - key: [ "l", "Mod4+l" ]
+            desc: 
             cmd: ~/nix/stuff/scripts/mpc.sh 'newlove'
 
           - key: [ "o", "Mod4+o" ]
@@ -280,6 +288,10 @@ menu:
             desc: 
             cmd: ~/nix/stuff/scripts/mpc.sh 'phoenix'
 
+          - key: [ "u", "Mod4+u" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'puppy'
+
           - key: [ "r", "Mod4+r" ]
             desc: 
             cmd: ~/nix/stuff/scripts/mpc.sh 'premier inn'
@@ -288,6 +300,10 @@ menu:
       - key: [ "r", "Mod4+r" ]
         desc: 
         submenu:
+
+          - key: [ "a", "Mod4+a" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'rat castle'
 
           - key: [ "i", "Mod4+i" ]
             desc: 
