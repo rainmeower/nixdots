@@ -186,6 +186,13 @@ in {
               mode: vi_insert
               event: { edit: CutFromLineStart }
           }
+          {
+              name: copyline
+              modifier: control
+              keycode: char_y
+              mode: vi_insert
+              event: { edit: CopyCurrentLine }
+          }
           ]
       }
       $env.PROMPT_INDICATOR = ""
