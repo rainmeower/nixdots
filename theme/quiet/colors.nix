@@ -3,6 +3,7 @@ rec {
   accent = violet;
   foreground = fg;
   background = bg;
+  selection = button_hover;
   bgtrans = bg;
   gray   = grey;
   blue   = cyan;
