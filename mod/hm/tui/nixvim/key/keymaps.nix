@@ -2,9 +2,7 @@
   programs.nixvim = {
     globals.mapleader = " ";
     keymaps = [
-# TODO yygccp
-
-    { # duplicate and comment out line
+    { # FIXME duplicate and comment out line
       key = "<C-d>";
       action = "mzyygccp`zj";
       mode = "n";
@@ -174,17 +172,17 @@
       mode = "n";
     }
 
-    {
-      key = "gd";
-      action = "<cmd>lua vim.lsp.buf.definition()<cr>";
-      mode = [ "n" "v" "x" ];
-    }
-
-    {
-      key = "gD";
-      action = "<cmd>lua vim.lsp.buf.declaration()<cr>";
-      mode = [ "n" "v" "x" ];
-    }
+    # {
+    #   key = "gd";
+    #   action = "<cmd>lua vim.lsp.buf.definition()<cr>";
+    #   mode = [ "n" "v" "x" ];
+    # }
+    #
+    # {
+    #   key = "gD";
+    #   action = "<cmd>lua vim.lsp.buf.declaration()<cr>";
+    #   mode = [ "n" "v" "x" ];
+    # }
 
     # { # write & quit
     #   key = "Zz";

@@ -4,7 +4,7 @@
     pulseaudioSupport = false;
     pipewireSupport = true;
     # browserSupport = true;
-  } ++ prev.neovim.overrideAttrs (old: {
+  } ++ prev.obs-studio.overrideAttrs (old: {
     cmakeFlags = [
       "-DCMAKE_C_FLAGS=-O3 -march=native -pipe"
       "-DCMAKE_CXX_FLAGS=-O3 -march=native -pipe"
