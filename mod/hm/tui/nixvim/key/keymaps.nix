@@ -81,6 +81,7 @@
       key = "<Leader>r";
       action = "mz:s/\\v(true|false)/\\={'true':'false','false':'true'}[submatch(0)]/g<cr>`z<cmd>nohlsearch<cr>";
       mode = [ "n" "x" ];
+      options.silent = true;
     }
 
     # { # angle brackets
@@ -201,11 +202,13 @@
       key = "i(";
       action = ":echo \"use b instead of ( or )\"<cr>";
       mode = [ "o" "x" ];
+      options.silent = true;
     }
     {
       key = "i)";
       action = ":echo \"use b instead of ( or )\"<cr>";
       mode = [ "o" "x" ];
+      options.silent = true;
     }
 
     # { # put cursor at top of screen
@@ -398,22 +401,26 @@
       key = "<C-S-a>";
       action = ":m .+1<CR>==";
       mode = "n";
+      options.silent = true;
     }
     {
       key = "<C-S-e>";
       action = ":m .-2<CR>==";
       mode = "n";
+      options.silent = true;
     }
 
     {
       key = "<C-S-a>";
       action = ":'<,'>m .+1<CR>==";
       mode = "v";
+      options.silent = true;
     }
     {
       key = "<C-S-e>";
       action = ":'<,'>m .-2<CR>==";
       mode = "v";
+      options.silent = true;
     }
 
     # { key = "<left>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
