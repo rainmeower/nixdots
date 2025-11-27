@@ -12,18 +12,18 @@ in {
     CursorLineNr.fg = col.accent;
     LineNr.fg = col.selection;
 
-    # MatchParen.reverse = true;
+    MatchParen.reverse = true;
     # FIXME doesnt do anything
-    MatchParen = {
-      fg = col.bg;
-      bg = col.accent;
-      bold = true;
-    };
-    MatchParenCur = {
-      fg = col.bg;
-      bg = col.accent;
-      bold = true;
-    };
+    # MatchParen = {
+    #   fg = col.bg;
+    #   bg = col.accent;
+    #   bold = true;
+    # };
+    # MatchParenCur = {
+    #   fg = col.bg;
+    #   bg = col.accent;
+    #   bold = true;
+    # };
 
 
 
