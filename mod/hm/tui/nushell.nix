@@ -193,7 +193,7 @@ in {
               mode: vi_insert
               event: [
               { edit: SelectAll }
-              { edit: CopySelection { system_clipboard: true }
+              { edit: CopySelection { system_clipboard: true } }
               ]
           }
           ]
