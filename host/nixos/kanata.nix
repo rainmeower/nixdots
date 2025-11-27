@@ -235,6 +235,13 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history z 1)
     )) i break
 
+    ;; make
+    ((and
+      (key-history m 3)
+      (key-history a 2)
+      (key-history k 1)
+    )) e break
+
     ;; mkdir
     ((and
       (key-history m 2)
@@ -740,6 +747,9 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((key-history i 1)) x break
     ;; ex
     ((key-history e 1)) x break
+
+    ;; easier j
+    ((key-history spc 1)) j break
 
     () @magic break ;; fallback to other magic
   ) ;; }}}
