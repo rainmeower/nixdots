@@ -33,6 +33,7 @@ in {
             return {
 
             RenderMarkdownH1Bg = { fg = "#090E13", bg = "#f2f1ef" },
+            MatchParen = { fg = "${col.bg}", bg = "${col.accent}", bold = true},
             RenderMarkdownH2Bg = { fg = "#090E13", bg = "#C5C9C7" },
 
             }
