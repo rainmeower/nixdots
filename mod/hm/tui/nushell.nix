@@ -180,13 +180,11 @@ in {
 
           keybindings: [
           {
-              name: eol
-              modifier: shift
-              keycode: char_-
-              mode: vi_normal
-              event: {
-                edit: movetolineend
-              }
+              name: ctrlu
+              modifier: control
+              keycode: char_u
+              mode: vi_insert
+              event: { send: edits name: CutFromLineStart }
           }
           ]
       }
