@@ -462,6 +462,22 @@
         "type": "github"
       }
     },
+    "mellow-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1756790858,
+        "narHash": "sha256-A+2yTvhrug7hZBcoqfwIuuxz41xUPKZ7zqAwujeHTkI=",
+        "owner": "mellow-theme",
+        "repo": "mellow.nvim",
+        "rev": "5cd188489bcc7eb512f0a30581ad972070f8e5cd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mellow-theme",
+        "repo": "mellow.nvim",
+        "type": "github"
+      }
+    },
     "niri": {
       "inputs": {
         "niri-stable": "niri-stable",
@@ -871,6 +887,7 @@
         "lix": "lix",
         "lix-module": "lix-module",
         "mango": "mango",
+        "mellow-nvim": "mellow-nvim",
         "niri": "niri",
         "nix-gaming": "nix-gaming",
         "nixpkgs": "nixpkgs_3",

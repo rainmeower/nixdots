@@ -11,10 +11,10 @@ rec {
   purple = violet;
   button = "#22262D"; # TODO
   button_hover = "#393B44"; # TODO
-  fg2 = "#8182BA";
 
   bg = "#111228";
   fg = "#7374A7";
+  fg2 = "#8182BA";
   fg_sat = "#6567B5";
   grey   = "#404167";
 
