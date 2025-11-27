@@ -29,7 +29,6 @@
 
     ripgrep
     wget
-
     fd
     eza
     fzf

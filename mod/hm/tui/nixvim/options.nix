@@ -33,6 +33,8 @@
     smartindent = true;
     smarttab = true;
 
+    hlsearch = false;
+
     # guifont = "mononoki:h25";
 
     wrap = true;
