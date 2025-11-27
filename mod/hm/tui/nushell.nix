@@ -179,9 +179,13 @@ in {
           }
 
           keybindings: [
-              # {
-              #     name: "fzf)"]))
-              # }
+          {
+              name: completion_menu
+              # modifier: shift
+              keycode: char__
+              mode: vi_normal
+              event: { send: edits name: MoveToLineEnd }
+          }
           ]
       }
       $env.PROMPT_INDICATOR = ""
