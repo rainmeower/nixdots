@@ -281,10 +281,9 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;; home
     ((and
-      (key-history h 3)
-      (key-history o 2)
-      (key-history m 1)
-    )) e break
+      (key-history h 2)
+      (key-history o 1)
+    )) m break
 
     ;; school FIXME
     ((and
