@@ -10,7 +10,6 @@
 
     dash
 
-    coreutils
     moreutils
     trash-cli
     file
@@ -19,9 +18,6 @@
     unzip
     rar
     unrar
-
-    btop
-    nushell
 
     libqalculate
 
@@ -40,5 +36,6 @@
     zoxide
 
     dbus
+    kanata
   ];
 }
