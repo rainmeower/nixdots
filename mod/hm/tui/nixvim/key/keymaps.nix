@@ -4,7 +4,7 @@
     keymaps = [
     { # FIXME duplicate and comment out line
       key = "<C-l>";
-      action = "mzyygccp`zj";
+      action = ":norm mzyygccp`zj<cr>";
       mode = "n";
     }
 
