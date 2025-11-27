@@ -191,7 +191,10 @@ in {
               modifier: control
               keycode: char_y
               mode: vi_insert
-              event: { edit: CopyCurrentLine }
+              event: [
+              { edit: SelectAll }
+              { edit: CopySelection { system_clipboard: true }
+              ]
           }
           ]
       }
