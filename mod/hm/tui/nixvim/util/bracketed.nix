@@ -20,7 +20,7 @@
       oldfile.suffix = "h";
       quickfix.suffix = "q";
       treesitter.suffix = "b";
-      undo.enable = false;
+      undo.suffix = ""; # disables visual block mode
       window.suffix = "e";
       yank.suffix = "y";
     };
