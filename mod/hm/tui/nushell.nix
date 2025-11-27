@@ -186,7 +186,7 @@ in {
               mode: vi_insert
               event: { edit: CutFromLineStart }
           }
-          {
+          { # FIXME
               name: copycommand
               modifier: control
               keycode: char_y

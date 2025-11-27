@@ -588,6 +588,20 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;;TODO back? scissor redirect
 
 
+    ;; unwrap(  (sfs)
+    ((and
+      (key-history u 4)
+      (key-history n 3)
+      (key-history w 2)
+      (key-history r 1)
+    )) a break
+
+    ;; .i
+    ((and
+      (not (key-history lsft 2))
+      (not (key-history rsft 2))
+      (key-history . 1)
+    )) i break
 
 
     ;; ease, increase  etc
