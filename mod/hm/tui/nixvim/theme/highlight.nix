@@ -12,6 +12,12 @@ in {
     CursorLineNr.fg = col.accent;
     LineNr.fg = col.selection;
 
+    MatchParen = {
+      fg = col.bg;
+      bg = col.accent;
+      bold = true;
+    };
+
     # telescope {{{
     TelescopeBorder.fg = col.accent;
     TelescopeTitle.fg = col.accent;
