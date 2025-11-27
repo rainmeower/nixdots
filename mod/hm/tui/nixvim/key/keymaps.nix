@@ -3,7 +3,7 @@
     globals.mapleader = " ";
     keymaps = [
     { # FIXME duplicate and comment out line
-      key = "<C-d>";
+      key = "<C-l>";
       action = "mzyygccp`zj";
       mode = "n";
     }
