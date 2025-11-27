@@ -843,7 +843,8 @@ f19 lsft
 
 (deflayermap melee ;; {{{
 u spc ;; test
-spc u ;; test
+spc l ;; test
+l u
 
 . j
 f18 tab
@@ -851,7 +852,7 @@ f15 8
 f16 9
 f17 0
 f19 lsft
-n `
+h `
 
 ) ;; }}}
 
