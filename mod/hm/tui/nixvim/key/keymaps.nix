@@ -284,6 +284,7 @@
       key = "<esc>";
       action = ":nohlsearch<cr>";
       mode = "n";
+      options.silent = true;
     }
 
     {

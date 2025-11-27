@@ -28,7 +28,7 @@
     extraConfigVim = ''
       function! RunMacroWithLangremap(registerLetter, count)
       set langremap
-      execute "silent normal " .. a:count .. "@" .. a:registerLetter
+      execute "normal " .. a:count .. "@" .. a:registerLetter
       set langnoremap
       endfunction
 
