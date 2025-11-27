@@ -187,13 +187,16 @@ in {
               event: { edit: CutFromLineStart }
           }
           {
-              name: copyline
+              name: copycommand
               modifier: control
               keycode: char_y
               mode: vi_insert
               event: [
               { edit: SelectAll }
-              { edit: CopySelection { system_clipboard: true } }
+              {
+                edit: CopySelection
+                system_clipboard: true
+              }
               ]
           }
           ]
