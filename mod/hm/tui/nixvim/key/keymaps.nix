@@ -2,13 +2,11 @@
   programs.nixvim = {
     globals.mapleader = " ";
     keymaps = [
-    { # FIXME duplicate and comment out line
+    { # duplicate and comment out line FIXME: doesnt work without :norm?
       key = "<C-l>";
       action = ":norm mzyygccp`zj<cr>";
       mode = "n";
-      options = {
-        silent = true;
-      };
+      options.silent = true;
     }
 
     {
@@ -25,63 +23,63 @@
 
     { # toggle wrap
       key = "<Leader>bs"; # tw
-      action = "<cmd>lua vim.o.wrap = not vim.o.wrap<cr>";
+      action = ":lua vim.o.wrap = not vim.o.wrap<cr>";
       mode = [ "n" "x" ];
     }
     { # toggle wrap for buffer
       key = "<Leader>bS"; # tw
-      action = "<cmd>lua vim.bo.wrap = not vim.bo.wrap<cr>";
+      action = ":lua vim.bo.wrap = not vim.bo.wrap<cr>";
       mode = [ "n" "x" ];
     }
     { # toggle breakindent
       key = "<Leader>br"; # tb
-      action = "<cmd>lua vim.o.breakindent = not vim.o.breakindent<cr>";
+      action = ":lua vim.o.breakindent = not vim.o.breakindent<cr>";
       mode = [ "n" "x" ];
     }
     { # toggle breakindent for buffer
       key = "<Leader>bR"; # tb
-      action = "<cmd>lua vim.bo.breakindent = not vim.bo.breakindent<cr>";
+      action = ":lua vim.bo.breakindent = not vim.bo.breakindent<cr>";
       mode = [ "n" "x" ];
     }
 
 
     { # toggle rnu
       key = "<Leader>bv"; # tr
-      action = "<cmd>lua vim.o.relativenumber = not vim.o.relativenumber<cr>";
+      action = ":lua vim.o.relativenumber = not vim.o.relativenumber<cr>";
       mode = [ "n" "x" ];
     }
     { # toggle rnu for buffer
       key = "<Leader>bV"; # tr
-      action = "<cmd>lua vim.bo.relativenumber = not vim.bo.relativenumber<cr>";
+      action = ":lua vim.bo.relativenumber = not vim.bo.relativenumber<cr>";
       mode = [ "n" "x" ];
     }
 
     { # toggle num
       key = "<Leader>bi"; # tn
-      action = "<cmd>lua vim.o.number = not vim.o.number<cr>";
+      action = ":lua vim.o.number = not vim.o.number<cr>";
       mode = [ "n" "x" ];
     }
     { # toggle num for buffer
       key = "<Leader>bI"; # tn
-      action = "<cmd>lua vim.bo.number = not vim.bo.number<cr>";
+      action = ":lua vim.bo.number = not vim.bo.number<cr>";
       mode = [ "n" "x" ];
     }
 
     # FIXME
     { # toggle inlay hints
       key = "<Leader>bh"; # th
-      action = "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<cr>";
+      action = ":lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<cr>";
       mode = [ "n" "x" ];
     }
     # { # toggle inlay hints for buffer
     #   key = "<Leader>bH"; # th
-    #   action = "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<cr>";
+    #   action = ":lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<cr>";
     #   mode = [ "n" "x" ];
     # }
 
     {
       key = "<Leader>r";
-      action = "mz<cmd>s/\\v(true|false)/\\={'true':'false','false':'true'}[submatch(0)]/g<cr>`z<cmd>nohlsearch<cr>";
+      action = "mz:s/\\v(true|false)/\\={'true':'false','false':'true'}[submatch(0)]/g<cr>`z<cmd>nohlsearch<cr>";
       mode = [ "n" "x" ];
     }
 
@@ -177,13 +175,13 @@
 
     # {
     #   key = "gd";
-    #   action = "<cmd>lua vim.lsp.buf.definition()<cr>";
+    #   action = ":lua vim.lsp.buf.definition()<cr>";
     #   mode = [ "n" "v" "x" ];
     # }
     #
     # {
     #   key = "gD";
-    #   action = "<cmd>lua vim.lsp.buf.declaration()<cr>";
+    #   action = ":lua vim.lsp.buf.declaration()<cr>";
     #   mode = [ "n" "v" "x" ];
     # }
 
@@ -284,7 +282,7 @@
 
     {
       key = "<esc>";
-      action = "<cmd>nohlsearch<cr>";
+      action = ":nohlsearch<cr>";
       mode = "n";
     }
 
@@ -379,13 +377,13 @@
 
     {
       key = "<leader>d";
-      action = "<cmd>bp<cr>";
+      action = ":bp<cr>";
       mode = [ "n" "v" "x" ];
     }
 
     {
       key = "<leader>c";
-      action = "<cmd>bn<cr>";
+      action = ":bn<cr>";
       mode = [ "n" "v" "x" ];
     }
 
