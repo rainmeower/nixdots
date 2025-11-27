@@ -180,11 +180,13 @@ in {
 
           keybindings: [
           {
-              name: completion_menu
+              name: eol
               modifier: shift
               keycode: char_-
               mode: vi_normal
-              event: { send: edits name: MoveToLineEnd }
+              event: {
+                edit: movetolineend
+              }
           }
           ]
       }
