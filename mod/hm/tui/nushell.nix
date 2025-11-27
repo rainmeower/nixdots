@@ -181,8 +181,8 @@ in {
           keybindings: [
           {
               name: completion_menu
-              # modifier: shift
-              keycode: char__
+              modifier: shift
+              keycode: char_-
               mode: vi_normal
               event: { send: edits name: MoveToLineEnd }
           }
