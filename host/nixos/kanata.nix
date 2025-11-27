@@ -279,6 +279,13 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history a 1)
     )) l break
 
+    ;; home
+    ((and
+      (key-history h 3)
+      (key-history o 2)
+      (key-history m 1)
+    )) e break
+
     ;; school FIXME
     ((and
       (key-history s 5)
@@ -390,6 +397,14 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history u 2)
       (key-history e 1)
     )) S-0 break
+
+    ;; match
+    ((and
+      (key-history m 4)
+      (key-history a 3)
+      (key-history t 2)
+      (key-history c 1)
+    )) h break
 
     ;; shift after ::
     ((and
@@ -596,12 +611,34 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history r 1)
     )) a break
 
-    ;; .i
+    ;; .i  (sfb)
     ((and
       (not (key-history lsft 2))
       (not (key-history rsft 2))
       (key-history . 1)
     )) i break
+
+    ;; swap  (sfs)
+    ((and
+      (key-history s 3)
+      (key-history w 2)
+      (key-history a 1)
+    )) p break
+
+    ;; pop  (sfs)
+    ((and
+      (key-history p 2)
+      (key-history o 1)
+    )) p break
+
+    ;; stack  (sfs +1)
+    ((and
+      (key-history s 4)
+      (key-history t 3)
+      (key-history a 2)
+      (key-history c 1)
+    )) k break
+
 
 
     ;; ease, increase  etc
