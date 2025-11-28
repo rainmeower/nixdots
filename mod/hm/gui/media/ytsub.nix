@@ -4,6 +4,7 @@
   theme,
   username,
   flake_dir,
+  userDirs,
   ...
 }:
 let
@@ -17,8 +18,8 @@ in {
   home.file.".config/ytsub/config.toml".text = /* toml */ ''
 # Options
 
-database = "/home/${username}/.local/share/ytsub/videos.db"
-instances = "/home/${username}/.config/ytsub/instances"
+database = "${userDirs.extraConfig.XDG_CONFIG_HOME}/ytsub/videos.db"
+instances = "${userDirs.extraConfig.XDG_DATA_HOME}/ytsub/instances"
 tabs = ["videos"] # videos, shorts, streams
 hide_disabled_tabs = true
 api = "local" # invidious, local

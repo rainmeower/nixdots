@@ -1,16 +1,10 @@
 {
-  username,
-  config,
+  userDirs,
   ...
 }: let
-  h = "/home/${username}";
-
-  cfg = "${h}/.config";
-  # data = "${h}/.local/share";
-  data = config.xdg.userDirs.extraConfig.XDG_DATA_HOME;
-  cache = "${h}/.cache";
+  cfg = userDirs.extraConfig.XDG_CONFIG_HOME;
 in {
-  home.file."${cfg}/npm/npmrc".text = ''
+  xdg.configFile."npm/npmrc".text = /* ini */ ''
 prefix=${cfg}/npm
 cache=${cfg}/npm
 init-module=${cfg}/npm/config/npm-init.js

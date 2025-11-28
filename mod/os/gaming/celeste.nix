@@ -1,13 +1,16 @@
 {
   pkgs,
+  config,
   username,
   ...
-}: {
+}: let
+  celeste_dir = config.home-manager.users.${username}.xdg.userDirs.extraConfig.XDG_GAMES_DIR + "/celeste";
+in {
   environment.systemPackages = with pkgs; [
     (celestegame.override {
-      gameDir = "/home/${username}/games/celeste/game"; 
+      gameDir = celeste_dir + "/game"; 
       withEverest = true;
-      writableDir = "/home/${username}/games/celeste/everest"; 
+      writableDir = celeste_dir + "/everest"; 
       overrideSrc = requireFile {
         name = "celeste-linux.zip";
         hash = "sha256-UOzlNrMlJBfXczTChFyk98EANjZmi67Yl9lsJxzbbI8=";
@@ -27,7 +30,7 @@
       })
 
     (olympus.override {
-      finderHints = "/home/${username}/games/celeste/game";
+      finderHints = celeste_dir + "/game";
     })
   ];
 }

@@ -3,9 +3,11 @@
   config,
   username,
   ...
-}: {
+}: let
+  home = config.home-manager.users.${username}.home.homeDirectory;
+in {
   environment.sessionVariables = {
-    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/${username}/.steam/root/compatibilitytools.d"; # protonup install path
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = home + "/.steam/root/compatibilitytools.d"; # protonup install path
   };
 
   environment.systemPackages = with pkgs; [

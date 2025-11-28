@@ -1,13 +1,13 @@
 {
   lib,
   theme,
-  username,
+  userDirs,
   ...
 }: let
   col = import ../colors.nix;
 in {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
-    programs.yazi.theme.mgr.syntect_theme = "/home/${username}/.config/tmthemes/kanso.tmTheme";
+    programs.yazi.theme.mgr.syntect_theme = userDirs.extraConfig.XDG_CONFIG_HOME + "/tmthemes/kanso.tmTheme";
 
     xdg.configFile."tmthemes/kanso.tmTheme".text = /* xml */ ''
 <?xml version="1.0" encoding="UTF-8"?>

@@ -2,7 +2,7 @@
   config,
   lib,
   wm,
-  username,
+  userDirs,
   ...
 }:
 {
@@ -110,7 +110,7 @@
         "Mod+Shift+M".action = fullscreen-window;
         "Mod+Ctrl+M".action = fullscreen-window;
         # "Mod+minus".action = toggle-column-tabbed-display;
-        "Mod+minus".action = sh "wlr-which-key -k l /home/${username}/.config/wlr-which-key/mpc.yaml";
+        "Mod+minus".action = sh "wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml";
 
 
 

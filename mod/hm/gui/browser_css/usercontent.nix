@@ -3,25 +3,25 @@
   lib,
   theme,
   username,
+  userDirs,
   ...
-}:
-let
+}: let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../../theme/${theme_trimmed}/colors.nix;
-in
-{
+  dir = userDirs.extraConfig.XDG_CONFIG_HOME + "/usercontent";
+in {
   home.file.".zen/meow/chrome/userContent.css".text = /* css */ ''
-@import "/home/${username}/.config/usercontent/codeberg.css";
-@import "/home/${username}/.config/usercontent/duckduckgo.css";
-@import "/home/${username}/.config/usercontent/github.css";
-@import "/home/${username}/.config/usercontent/gitlab.css";
-@import "/home/${username}/.config/usercontent/monkeytype.css";
-@import "/home/${username}/.config/usercontent/nixos.css";
-@import "/home/${username}/.config/usercontent/sourcehut.css";
-@import "/home/${username}/.config/usercontent/wikipedia.css";
-@import "/home/${username}/.config/usercontent/reddit.css";
-@import "/home/${username}/.config/usercontent/stackoverflow.css";
-@import "/home/${username}/.config/usercontent/crates.css";
+@import "${dir}/codeberg.css";
+@import "${dir}/duckduckgo.css";
+@import "${dir}/github.css";
+@import "${dir}/gitlab.css";
+@import "${dir}/monkeytype.css";
+@import "${dir}/nixos.css";
+@import "${dir}/sourcehut.css";
+@import "${dir}/wikipedia.css";
+@import "${dir}/reddit.css";
+@import "${dir}/stackoverflow.css";
+@import "${dir}/crates.css";
 
 *{ scrollbar-width: none; }
 
