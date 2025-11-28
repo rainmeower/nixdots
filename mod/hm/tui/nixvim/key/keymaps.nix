@@ -226,16 +226,18 @@
     }
 
     # habits {{{
-    {
-      key = ":x";
-      action = ":echo \"use lou chord\"<cr>";
-      mode = [ "n" "v" "x" ];
-    }
-    {
-      key = ":wq";
-      action = ":echo \"use lou chord\"<cr>";
-      mode = [ "n" "v" "x" ];
-    }
+
+    # # FIXME delays the cmdline opening
+    # {
+    #   key = ":x";
+    #   action = ":echo \"use lou chord\"<cr>";
+    #   mode = [ "n" "v" "x" ];
+    # }
+    # {
+    #   key = ":wq";
+    #   action = ":echo \"use lou chord\"<cr>";
+    #   mode = [ "n" "v" "x" ];
+    # }
 
     {
       key = "i(";
