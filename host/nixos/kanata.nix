@@ -395,6 +395,12 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; }}}
 
     ;; code {{{
+    ;; Box
+    ((and
+      (key-history lsft 2)
+      (key-history b 1)
+    )) (unmod o) break
+
     ;; Ok
     ((and
       (key-history lsft 2)
@@ -619,6 +625,12 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;;TODO order?
     ;;TODO back? scissor redirect
 
+    ;; Box
+    ((and
+      (key-history lsft 3)
+      (key-history b 2)
+      (input-history real lsft 2)
+    )) (unmod x) break
 
     ;; unwrap(  (sfs)
     ((and
@@ -1059,8 +1071,8 @@ i end
   (c w) [ 15 all-released (over sup melee)
   (h l) ] 15 all-released (over sup melee)
 
-  (t d) S-. 15 all-released (over sup melee)
-  (a o) S-, 15 all-released (over sup melee)
+  (t d) S-, 15 all-released (over sup melee)
+  (a o) S-. 15 all-released (over sup melee)
 
   (, ;) (macro S-; q) 20 all-released (over sup melee)
   (q z) (macro q S-;) 20 all-released (over sup melee)
