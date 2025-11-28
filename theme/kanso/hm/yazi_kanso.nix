@@ -154,16 +154,18 @@ in {
       };
       icon = {
         dirs = [
-          { name = ".config"; text = ""; }
-          { name = "Desktop"; text = ""; }
-          { name = "Documents"; text = ""; }
-          { name = "Downloads"; text = ""; }
-          { name = "Music"; text = ""; }
-          { name = "Pictures"; text = ""; }
-          { name = "Videos"; text = ""; }
+          { name = "*"; text = ""; }
         ];
 
         files = [
+
+
+(builtins.map (
+    k: {
+      name = k; text = "";
+    }
+    ) [ "license" "license.md" ])
+
           { name = ".bash_profile"; text = ""; fg = col.fg; }
           { name = ".bashrc"; text = ""; fg = col.fg; }
           { name = ".gtkrc-2.0"; text = ""; fg = col.fg; }

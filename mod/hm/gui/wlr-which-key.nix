@@ -4,125 +4,125 @@
   lib,
   ...
 }: let
-keys = {
-  f = "foot";
-};
-
-key = builtins.mapAttrs (
-    k: v: {
-      key = [ k "Mod4+${k}" ];
-      desc = "";
-      cmd = v;
-    }
-    );
+# keys = {
+#   f = "foot";
+# };
+#
+# key = builtins.mapAttrs (
+#     k: v: {
+#       key = [ k "Mod4+${k}" ];
+#       desc = "";
+#       cmd = v;
+#     }
+#     );
 in {
-  xdg.configFile."wlr-which-key/config.yaml".text = lib.generators.toYAML { } {
-    font = null;
-    background = "#00000000";
-    color = "#00000000";
-    border = "#00000000";
-    menu = [
-
-(builtins.mapAttrs (
-    k: v: {
-      key = [ k "Mod4+${k}" ];
-      desc = "";
-      cmd = v;
-    }
-    ) keys)
-
-    {
-      key = "w";
-      desc = "";
-      cmd = "foot";
-    }
-    ];
-  };
+#   xdg.configFile."wlr-which-key/config.yaml".text = lib.generators.toYAML { } {
+#     font = null;
+#     background = "#00000000";
+#     color = "#00000000";
+#     border = "#00000000";
+#     menu = [
+#
+# (builtins.mapAttrs (
+#     k: v: {
+#       key = [ k "Mod4+${k}" ];
+#       desc = "";
+#       cmd = v;
+#     }
+#     ) keys)
+#
+#     {
+#       key = "w";
+#       desc = "";
+#       cmd = "foot";
+#     }
+#     ];
+#   };
 
 
   
-#   home.file.".config/wlr-which-key/config.yaml".text = /* yaml */ ''
-# font: none
-# background: "#00000000"
-# color: "#cad3f500"
-# border: "#b7bdf800"
-#
-# # Permits key bindings that conflict with compositor key bindings.
-# # Default is `false`.
-# inhibit_compositor_keyboard_shortcuts: true
-#
-# menu:
-#   - key: [ "q", "Mod4+q" ]
-#     desc: float active
-#     cmd: niri msg action quit
-#
-#   - key: [ "s", "Mod4+s" ]
-#     desc: screenshot
-#     cmd: niri msg action screenshot -p false
-#
-#   - key: [ "o", "Mod4+o" ]
-#     desc: kill window
-#     cmd: niri msg --json pick-window | jq '.pid' | xargs kill
-#
-#   # - key: [ "p", "Mod4+p" ]
-#   #   desc: float active
-#   #   cmd: hex=$(niri msg pick-color | grep -o '#.*') && echo -n "$hex" | wl-copy && notify-send "$hex"
-#
-#   - key: [ "p", "Mod4+p" ]
-#     desc: pick colour
-#     cmd: hyprpicker | wl-copy
-#
-#   - key: [ "k", "Mod4+k" ]
-#     desc: restart kanata
-#     cmd: systemctl restart kanata-lily-58
-#
-#   - key: [ "f", "Mod4+f" ]
-#     desc: float active
-#     cmd: niri msg action toggle-window-floating
-#
-#   - key: [ "c", "Mod4+c" ]
-#     desc: center column
-#     cmd: niri msg action center-column
-#
-#   - key: [ "w", "Mod4+w" ]
-#     desc: switch wallpaper
-#     cmd: ${flake_dir}/stuff/scripts/bgselector
-#
-#   - key: [ "x", "Mod4+x" ]
-#     desc: clear
-#     cmd: ${flake_dir}/stuff/scripts/clear.sh
-#
-#   - key: [ "m", "Mod4+m" ]
-#     desc: maximise column
-#     cmd: niri msg action maximize-column
-#
-#   - key: [ "h", "Mod4+h" ]
-#     desc: first col
-#     cmd: niri msg action move-column-left
-#
-#   - key: [ "i", "Mod4+i" ]
-#     desc: first col
-#     cmd: niri msg action move-column-right
-#
-#   - key: [ "a", "Mod4+a" ]
-#     desc: first col
-#     cmd: niri msg action focus-column-first
-#
-#   - key: [ "e", "Mod4+e" ]
-#     desc: last col
-#     cmd: niri msg action focus-column-last
-#
-#   - key: [ "t", "Mod4+t" ]
-#     desc: last col
-#     cmd: niri msg action toggle-column-tabbed-display
-#
-#   - key: [ "z", "Mod4+z" ]
-#     desc: eep
-#     cmd: ${flake_dir}/stuff/scripts/eep.sh
-#
-#   # - key: [ "<enter>", "Mod4+<enter>" ]
-#   #   desc: float active
-#   #   cmd: ${flake_dir}/stuff/scripts/projectopen.nu
-#   #
-#   '';
+  home.file.".config/wlr-which-key/config.yaml".text = /* yaml */ ''
+font: none
+background: "#00000000"
+color: "#cad3f500"
+border: "#b7bdf800"
+
+# Permits key bindings that conflict with compositor key bindings.
+# Default is `false`.
+inhibit_compositor_keyboard_shortcuts: true
+
+menu:
+  - key: [ "q", "Mod4+q" ]
+    desc: float active
+    cmd: niri msg action quit
+
+  - key: [ "s", "Mod4+s" ]
+    desc: screenshot
+    cmd: niri msg action screenshot -p false
+
+  - key: [ "o", "Mod4+o" ]
+    desc: kill window
+    cmd: niri msg --json pick-window | jq '.pid' | xargs kill
+
+  # - key: [ "p", "Mod4+p" ]
+  #   desc: float active
+  #   cmd: hex=$(niri msg pick-color | grep -o '#.*') && echo -n "$hex" | wl-copy && notify-send "$hex"
+
+  - key: [ "p", "Mod4+p" ]
+    desc: pick colour
+    cmd: hyprpicker | wl-copy
+
+  - key: [ "k", "Mod4+k" ]
+    desc: restart kanata
+    cmd: systemctl restart kanata-lily-58
+
+  - key: [ "f", "Mod4+f" ]
+    desc: float active
+    cmd: niri msg action toggle-window-floating
+
+  - key: [ "c", "Mod4+c" ]
+    desc: center column
+    cmd: niri msg action center-column
+
+  - key: [ "w", "Mod4+w" ]
+    desc: switch wallpaper
+    cmd: ${flake_dir}/stuff/scripts/bgselector
+
+  - key: [ "x", "Mod4+x" ]
+    desc: clear
+    cmd: ${flake_dir}/stuff/scripts/clear.sh
+
+  - key: [ "m", "Mod4+m" ]
+    desc: maximise column
+    cmd: niri msg action maximize-column
+
+  - key: [ "h", "Mod4+h" ]
+    desc: first col
+    cmd: niri msg action move-column-left
+
+  - key: [ "i", "Mod4+i" ]
+    desc: first col
+    cmd: niri msg action move-column-right
+
+  - key: [ "a", "Mod4+a" ]
+    desc: first col
+    cmd: niri msg action focus-column-first
+
+  - key: [ "e", "Mod4+e" ]
+    desc: last col
+    cmd: niri msg action focus-column-last
+
+  - key: [ "t", "Mod4+t" ]
+    desc: last col
+    cmd: niri msg action toggle-column-tabbed-display
+
+  - key: [ "z", "Mod4+z" ]
+    desc: eep
+    cmd: ${flake_dir}/stuff/scripts/eep.sh
+
+  # - key: [ "<enter>", "Mod4+<enter>" ]
+  #   desc: float active
+  #   cmd: ${flake_dir}/stuff/scripts/projectopen.nu
+  #
+  '';
 }
