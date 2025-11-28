@@ -69,7 +69,7 @@
   in {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem { # {{{
-        specialArgs = {
+        specialArgs = { # TODO can i modify this inside modules
           inherit
             self
             inputs

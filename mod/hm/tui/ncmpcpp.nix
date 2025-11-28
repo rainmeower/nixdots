@@ -1,6 +1,7 @@
 {
   config,
   rounding,
+  userDirs,
   ...
 }: {
   programs.ncmpcpp = {
@@ -21,11 +22,11 @@
     ];
     settings = {
       ncmpcpp_directory =
-        config.xdg.userDirs.extraConfig.XDG_CONFIG_HOME + "/ncmpcpp";
+        userDirs.extraConfig.XDG_CONFIG_HOME + "/ncmpcpp";
       lyrics_directory =
-        config.xdg.userDirs.extraConfig.XDG_DATA_HOME + "/mpd/lyrics";
+        userDirs.extraConfig.XDG_DATA_HOME + "/mpd/lyrics";
       mpd_music_dir =
-        config.xdg.userDirs.music;
+        userDirs.music;
 
       mpd_host = "localhost";
       mpd_port = "6669";

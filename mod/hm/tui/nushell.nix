@@ -2,7 +2,7 @@
   flake_dir,
   host,
   wm,
-  config,
+  userDirs,
   ...
 }:
 let
@@ -50,7 +50,7 @@ in {
       }
 
       def record [] { # simple screen record without obs
-        cd ${config.xdg.userDirs.music}
+        cd ${userDirs.music}
         let date = date now | format date "%Y-%m-%d %H:%M:%S"
         wf-recorder -r 60 -o DP-1 -f $"(date now | format date '%Y-%m-%d %H:%M:%S').mkv"
       }

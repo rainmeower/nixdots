@@ -1,6 +1,6 @@
 {
   flake_dir,
-  config,
+  userDirs,
   ...
 }: {
   programs.yazi = {
@@ -604,19 +604,19 @@
     
       {
         on = [ "<Space>" "c" ];
-        run = "cd ${config.xdg.userDirs.extraConfig.XDG_CONFIG_HOME}";
+        run = "cd ${userDirs.extraConfig.XDG_CONFIG_HOME}";
         desc = ".config";
       }
     
       {
         on = [ "<Space>" "d" "o" ];
-        run = "cd ${config.xdg.userDirs.documents}";
+        run = "cd ${userDirs.documents}";
         desc = "documents";
       }
     
       {
         on = [ "<Space>" "d" "l" ];
-        run = "cd ${config.xdg.userDirs.download}";
+        run = "cd ${userDirs.download}";
         desc = "downloads";
       }
     
@@ -675,7 +675,7 @@
     
       {
         on = [ "<Space>" "m" "u" ];
-        run = "cd ${config.xdg.userDirs.music}";
+        run = "cd ${userDirs.music}";
         desc = "music";
       }
     
@@ -723,7 +723,7 @@
     
       {
         on = [ "<Space>" "p" "i" ];
-        run = "cd ${config.xdg.userDirs.pictures}";
+        run = "cd ${userDirs.pictures}";
         desc = "pictures";
       }
     
@@ -777,7 +777,7 @@
     
       {
         on = [ "<Space>" "v" ];
-        run = "cd ${config.xdg.userDirs.videos}";
+        run = "cd ${userDirs.videos}";
         desc = "videos";
       }
     

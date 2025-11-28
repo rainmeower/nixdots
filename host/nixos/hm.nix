@@ -40,6 +40,7 @@ in {
       os_config = config;
 
       inherit (config.home-manager.users.${username}.xdg) userDirs;
+      home = config.home-manager.users.${username}.home.homeDirectory;
 
       # FIXME
       # col = import (builtins.toPath "${flake_dir}/theme/${theme_trimmed}/colors.nix");

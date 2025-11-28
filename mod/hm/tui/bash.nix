@@ -1,13 +1,11 @@
 {
   pkgs,
-  username,
   userDirs,
   ...
 }: {
   programs.bash = {
     enable = true;
     enableCompletion = true;
-    # historyFile = "/home/${username}/.config/.bash_history";
     historyFile = userDirs.extraConfig.XDG_CONFIG_HOME + "/.bash_history";
     historyIgnore = [
       "ls"
