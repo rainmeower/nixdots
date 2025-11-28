@@ -11,16 +11,16 @@
 #   # TODO: float, screenshot, kill window, center
 # in
 {
-
   xdg.configFile."wlr-which-key/config.yaml".text = lib.generators.toYAML { } {
     menu = [
     {
       key = "q";
+      desc = "";
       cmd = "meow";
-
     }
     {
       key = "f";
+      desc = "";
       cmd = "foot";
     }
     ];
