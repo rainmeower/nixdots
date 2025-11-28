@@ -39,7 +39,8 @@ in {
       host = config.networking.hostName;
       os_config = config;
 
-      inherit (config.home-manager.users.${username}.xdg) userDirs;
+      inherit (config.home-manager.users.${username}.xdg)
+        userDirs;
       home = config.home-manager.users.${username}.home.homeDirectory;
 
       # FIXME

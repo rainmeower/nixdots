@@ -3,7 +3,13 @@
   inputs,
   os_config,
   ...
-}: {
+}: let
+hidden = [
+"yazi"
+"cups"
+
+];
+in {
   xdg.desktopEntries = {
     melee = {
       name = "melee";
@@ -35,6 +41,7 @@
     };
 
     # hidden desktop entries {{{
+
     btop.exec = "";
     btop.name = "";
     btop.noDisplay = true;
@@ -56,6 +63,13 @@
     yazi.exec = "";
     yazi.name = "";
     yazi.noDisplay = true;
+
     # }}}
-  };
+
+  # hidden_entries = builtins.map (
+  #   meow: {
+  #     meow.exec = ""; meow.name = ""; meow.noDisplay = true;
+  #   }
+  #   ) hidden;
+};
 }

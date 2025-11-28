@@ -68,7 +68,7 @@
     # flake_ns_path = builtins.toString ./.; # flake nix store path
   in {
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem { # {{{
+      nixos = nixpkgs.lib.nixosSystem rec { # {{{
         specialArgs = { # TODO can i modify this inside modules
           inherit
             self
@@ -76,6 +76,7 @@
             home-manager
             username
             flake_dir
+            specialArgs
           ;
         };
         modules = [
