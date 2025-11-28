@@ -158,14 +158,6 @@ in {
         ];
 
         files = [
-
-
-(builtins.map (
-    k: {
-      name = k; text = "";
-    }
-    ) [ "license" "license.md" ])
-
           { name = ".bash_profile"; text = ""; fg = col.fg; }
           { name = ".bashrc"; text = ""; fg = col.fg; }
           { name = ".gtkrc-2.0"; text = ""; fg = col.fg; }
