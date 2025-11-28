@@ -21,13 +21,9 @@
     }
     {
       key = "f";
-      cmd = "woof";
+      cmd = "foot";
     }
-
-
-
     ];
-
   };
 
 
