@@ -9,6 +9,7 @@
       "image/gif" = [ "mpv" "swayimg" "krita" "aseprite" ];
       "image/svg+xml" = [ "inkscape" "swayimg" ];
       "audio/mpeg" = [ "mpv" ];
+      "audio/ogg" = [ "mpv" ];
       "video/mp3" = [ "mpv" ];
       "video/mp4" = [ "mpv" ];
       "video/webm" = [ "mpv" ];
@@ -21,6 +22,7 @@
       "text/plain" = [ "nvim" ];
       "audio/*"   = [ "mpv" ];
       "audio/mp3" = [ "mpv" ];
+      "audio/ogg" = [ "mpv" ];
       "image/*"   = [ "swayimg" "krita" "aseprite" "inkscape" ];
       "image/jpg" = [ "swayimg" "krita" "aseprite" ];
       "image/png" = [ "swayimg" "krita" "aseprite" ];

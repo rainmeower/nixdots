@@ -2,6 +2,7 @@
   flake_dir,
   host,
   wm,
+  config,
   ...
 }:
 let
@@ -49,7 +50,7 @@ in {
       }
 
       def record [] { # simple screen record without obs
-        cd ~/vid 
+        cd ${config.xdg.userDirs.music}
         let date = date now | format date "%Y-%m-%d %H:%M:%S"
         wf-recorder -r 60 -o DP-1 -f $"(date now | format date '%Y-%m-%d %H:%M:%S').mkv"
       }
@@ -73,9 +74,9 @@ in {
 
       def nr [...msg: string] {
         # sudo nixos-rebuild switch --flake ${flake_dir}#nixos
-        cd ~/nix
+        cd ${flake_dir}
         git add -A
-        sudo nh os switch -R ~/nix -H ${host}
+        sudo nh os switch -R ${flake_dir} -H ${host}
         let timestamp = (date now | format date '%d/%m %H:%M:%S')
         let full_msg = if ($msg | is-empty) {
           $timestamp
@@ -88,7 +89,7 @@ in {
 
       # nix flake git commit
       def ngc [...msg: string] {
-        cd ~/nix
+        cd ${flake_dir}
         git add .
         let timestamp = (date now | format date '%d/%m %H:%M:%S')
         let full_msg = if ($msg | is-empty) {
@@ -101,7 +102,7 @@ in {
 
       # nix flake git commit amend
       def nga [...msg: string] {
-        cd ~/nix
+        cd ${flake_dir}
         git add .
         let timestamp = (date now | format date '%d/%m %H:%M:%S')
         let full_msg = if ($msg | is-empty) {
@@ -274,7 +275,6 @@ in {
 
       # meow = "echo :3"; # so silly
 
-      # na = "nvim ~/nix/packages.nix -c '/systemPackages'";
       ns = "nix-shell -p";
 
       n = "nvim";

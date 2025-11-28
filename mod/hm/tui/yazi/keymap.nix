@@ -1,5 +1,6 @@
 {
   flake_dir,
+  config,
   ...
 }: {
   programs.yazi = {
@@ -99,6 +100,12 @@
         desc = "Suspend the process";
       }
 
+      { # quit chord
+        on =[ "Z" "Z" ];
+        run = "quit";
+        desc = "Suspend the process";
+      }
+
       {
         on = "<C-c>";
         run = "quit";
@@ -139,7 +146,6 @@
         on = [ "g" "g" ];
         run = "arrow top";
       }
-
       {
         on = "G";
         run = "arrow bot";
@@ -598,19 +604,19 @@
     
       {
         on = [ "<Space>" "c" ];
-        run = "cd ~/.config";
+        run = "cd ${config.xdg.userDirs.extraConfig.XDG_CONFIG_HOME}";
         desc = ".config";
       }
     
       {
         on = [ "<Space>" "d" "o" ];
-        run = "cd ~/doc";
+        run = "cd ${config.xdg.userDirs.documents}";
         desc = "documents";
       }
     
       {
         on = [ "<Space>" "d" "l" ];
-        run = "cd ~/dl";
+        run = "cd ${config.xdg.userDirs.download}";
         desc = "downloads";
       }
     
@@ -669,7 +675,7 @@
     
       {
         on = [ "<Space>" "m" "u" ];
-        run = "cd ~/music";
+        run = "cd ${config.xdg.userDirs.music}";
         desc = "music";
       }
     
@@ -717,7 +723,7 @@
     
       {
         on = [ "<Space>" "p" "i" ];
-        run = "cd ~/pic";
+        run = "cd ${config.xdg.userDirs.pictures}";
         desc = "pictures";
       }
     
@@ -771,7 +777,7 @@
     
       {
         on = [ "<Space>" "v" ];
-        run = "cd ~/vid";
+        run = "cd ${config.xdg.userDirs.videos}";
         desc = "videos";
       }
     

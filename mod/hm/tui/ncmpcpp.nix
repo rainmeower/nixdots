@@ -20,11 +20,15 @@
       { key = " "; command = "pause"; }
     ];
     settings = {
-      ncmpcpp_directory = "~/.config/ncmpcpp";
-      lyrics_directory = "~/.local/share/mpd/lyrics";
+      ncmpcpp_directory =
+        config.xdg.userDirs.extraConfig.XDG_CONFIG_HOME + "/ncmpcpp";
+      lyrics_directory =
+        config.xdg.userDirs.extraConfig.XDG_DATA_HOME + "/mpd/lyrics";
+      mpd_music_dir =
+        config.xdg.userDirs.music;
+
       mpd_host = "localhost";
       mpd_port = "6669";
-      mpd_music_dir = config.xdg.userDirs.music;
 
 
       song_list_format = "{%t - }{%a}|{$5%f$9}$R{$5%l$9}";

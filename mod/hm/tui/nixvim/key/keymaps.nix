@@ -2,12 +2,19 @@
   programs.nixvim = {
     globals.mapleader = " ";
     keymaps = [
-    { # duplicate and comment out line FIXME: doesnt work without :norm?
+    { # duplicate and comment out line  NOTE: doesnt work without :norm?
       key = "<C-l>";
       action = ":norm mzyygccp`zj<cr>";
       mode = "n";
       options.silent = true;
     }
+
+  /*{ # go to start of line in :
+      key = "<C-a>";
+      action = "<C-b>";
+      mode = "c";
+      options.silent = true;
+    }*/
 
     {
       key = "ga";
@@ -22,6 +29,7 @@
       mode = [ "n" "x" "o" ];
     }
 
+    # toggles {{{
     { # toggle wrap
       key = "<Leader>bs"; # tw
       action = ":lua vim.o.wrap = not vim.o.wrap<cr>";
@@ -87,54 +95,57 @@
     #   mode = [ "n" "x" ];
       # options.silent = true;
     # }
+    # }}}
 
     {
       key = "<Leader>r";
-      action = "mz:s/\\v(true|false)/\\={'true':'false','false':'true'}[submatch(0)]/g<cr>`z<cmd>nohlsearch<cr>";
+      action = "mz:s/\\v(true|false)/\\={'true':'false','false':'true'}[submatch(0)]/g<cr>`z:nohlsearch<cr>";
       mode = [ "n" "x" ];
       options.silent = true;
     }
 
-    # { # angle brackets
+    # angle brackets {{{
+    # {
     #   key = "cij";
     #   action = "ci<";
     #   mode = "n";
     # }
-    # { # angle brackets
+    # {
     #   key = "dij";
     #   action = "di<";
     #   mode = "n";
     # }
-    # { # angle brackets
+    # {
     #   key = "vij";
     #   action = "vi<";
     #   mode = "n";
     # }
-    # { # angle brackets
+    # {
     #   key = "yij";
     #   action = "yi<";
     #   mode = "n";
     # }
-    # { # angle brackets
+    # {
     #   key = "caj";
     #   action = "ca<";
     #   mode = "n";
     # }
-    # { # angle brackets
+    # {
     #   key = "daj";
     #   action = "da<";
     #   mode = "n";
     # }
-    # { # angle brackets
+    # {
     #   key = "vaj";
     #   action = "va<";
     #   mode = "n";
     # }
-    # { # angle brackets
+    # {
     #   key = "yaj";
     #   action = "ya<";
     #   mode = "n";
     # }
+    # }}}
 
 
 
@@ -190,7 +201,6 @@
     #   action = ":lua vim.lsp.buf.definition()<cr>";
     #   mode = [ "n" "v" "x" ];
     # }
-    #
     # {
     #   key = "gD";
     #   action = ":lua vim.lsp.buf.declaration()<cr>";
@@ -215,12 +225,12 @@
       mode = [ "n" "v" "x" ];
     }
 
+    # habits {{{
     {
       key = ":x";
       action = ":echo \"use lou chord\"<cr>";
       mode = [ "n" "v" "x" ];
     }
-
     {
       key = ":wq";
       action = ":echo \"use lou chord\"<cr>";
@@ -240,6 +250,19 @@
       options.silent = true;
     }
 
+    {
+      key = "i{";
+      action = ":echo \"use B instead of { or }\"<cr>";
+      mode = [ "o" "x" ];
+      options.silent = true;
+    }
+    {
+      key = "i}";
+      action = ":echo \"use B instead of { or }\"<cr>";
+      mode = [ "o" "x" ];
+      options.silent = true;
+    } # }}}
+    # cursor {{{
     # { # put cursor at top of screen
     #   key = "zh";
     #   action = "zo";
@@ -274,8 +297,9 @@
     #   key = "zk";
     #   action = "zb";
     #   mode = [ "n" "v" "x" ];
-    # }
+    # }}}}
 
+    # appending {{{
     { # css important
       key = "<leader>!";
       action = "mzf;i !important<esc>`z";
@@ -292,7 +316,7 @@
       key = "<leader>,";
       action = "mzA,<esc>`z";
       mode = [ "n" "v" "x" ];
-    }
+    } # }}}
 
     { # insert line below
       key = "<C-k>";
@@ -408,6 +432,7 @@
       mode = [ "n" "v" "x" ];
     }
 
+    # buffers {{{
     {
       key = "<leader>d";
       action = ":bp<cr>";
@@ -426,8 +451,9 @@
       key = "<leader>a";
       action = "<C-6>";
       mode = "n";
-    }
+    } # }}}
 
+    # moving lines {{{
     {
       key = "<C-S-a>";
       action = ":m .+1<CR>==";
@@ -452,7 +478,7 @@
       action = ":'<,'>m .-2<CR>==";
       mode = "v";
       options.silent = true;
-    }
+    } # }}}
 
     # { key = "<left>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
     # { key = "<down>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
