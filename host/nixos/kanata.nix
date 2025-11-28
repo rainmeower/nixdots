@@ -743,6 +743,22 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history t 1)
     )) l break
 
+    ;; .nix
+    ((and
+      (not (key-history rsft 3) (key-history lsft 3))
+      (key-history . 2)
+      (key-history n 1)
+    )) i break
+
+    ;; flake.nix
+    ((and
+      (key-history f 5)
+      (key-history l 4)
+      (key-history a 3)
+      (key-history k 2)
+      (key-history e 1)
+    )) . break
+
     ;; regex
     ((and
       (key-history r 4)
@@ -805,7 +821,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;; --
     ((and
-      (not (key-history rsft 1) (key-history lsft 1))
+      (not (key-history rsft 2) (key-history lsft 2))
       (key-history - 1)
     )) rpt break
 
