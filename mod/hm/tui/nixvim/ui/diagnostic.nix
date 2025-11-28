@@ -25,11 +25,11 @@
       };
 
       hi = {
-        error        = "DiagnosticError";
-        warn         = "DiagnosticWarn";
-        info         = "DiagnosticInfo";
-        hint         = "DiagnosticHint";
-        arrow        = "None";
+        error = "DiagnosticError";
+        warn  = "DiagnosticWarn";
+        info  = "DiagnosticInfo";
+        hint  = "DiagnosticHint";
+        arrow = "None";
         background   = "None";
         mixing_color = "None";
       };

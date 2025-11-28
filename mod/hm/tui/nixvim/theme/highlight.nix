@@ -66,6 +66,7 @@ in {
     NoiceConfirmBorder.fg = col.accent;
     # }}}
 
+
     MiniIndentscopeSymbol.fg = col.accent;
     IndentLine.fg = col.accent;
   };

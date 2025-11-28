@@ -9,12 +9,12 @@
       options.silent = true;
     }
 
-  /*{ # go to start of line in :
+    { # go to start of line in :
       key = "<C-a>";
       action = "<C-b>";
       mode = "c";
       options.silent = true;
-    }*/
+    }
 
     {
       key = "ga";
