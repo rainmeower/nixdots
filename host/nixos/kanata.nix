@@ -403,6 +403,12 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history b 1)
     )) (unmod o) break
 
+    ;; enum
+    ((and
+      (key-history e 2)
+      (key-history n 1)
+    )) u break
+
     ;; Ok
     ((and
       (key-history lsft 2)
@@ -798,6 +804,9 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; vim fFtT repeat
     ((key-history ; 1)) . break
 
+    ;; n
+    ((key-history n 1)) rpt break
+
     () @magic break ;; fallback to other magic
   ) ;; }}}
 
@@ -1071,11 +1080,11 @@ i end
   (u i) (macro S-[ S-; S-/ S-]) 16 all-released (over sup melee)
   (a f17) S-5 15 all-released (over sup melee)
 
-  (c w) [ 15 all-released (over sup melee)
-  (h l) ] 15 all-released (over sup melee)
+  (t d) [ 15 all-released (over sup melee)
+  (a o) ] 15 all-released (over sup melee)
 
-  (t d) S-, 15 all-released (over sup melee)
-  (a o) S-. 15 all-released (over sup melee)
+  (c w) S-, 15 all-released (over sup melee)
+  (h l) S-. 15 all-released (over sup melee)
 
   (, ;) (macro S-; q) 20 all-released (over sup melee)
   (q z) (macro q S-;) 20 all-released (over sup melee)
