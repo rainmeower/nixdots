@@ -38,6 +38,9 @@ in {
       ;
       host = config.networking.hostName;
       os_config = config;
+
+      inherit (config.home-manager.users.${username}.xdg) userDirs;
+
       # FIXME
       # col = import (builtins.toPath "${flake_dir}/theme/${theme_trimmed}/colors.nix");
     };

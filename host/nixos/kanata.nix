@@ -395,6 +395,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; }}}
 
     ;; code {{{
+
+    ;; FIXME
     ;; Box
     ((and
       (or (key-history lsft 2) (key-history rsft 2))
@@ -625,6 +627,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;;TODO order?
     ;;TODO back? scissor redirect
 
+    ;; FIXME
     ;; Box
     ((and
       (or (key-history lsft 3) (key-history rsft 3))

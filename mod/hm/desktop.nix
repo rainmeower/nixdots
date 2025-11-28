@@ -1,7 +1,7 @@
 {
   flake_dir,
   inputs,
-  config,
+  os_config,
   ...
 }: {
   xdg.desktopEntries = {
@@ -35,31 +35,27 @@
     };
 
     # hidden desktop entries {{{
-    vitetris.noDisplay = true;
-    yazi.noDisplay = true;
-    nvim.noDisplay = true;
-    # cups.noDisplay = !(config.programs.cups.enable); # FIXME cant access this from home manager?
-    btop.noDisplay = true;
-    rofi-theme-selector.noDisplay = true;
-    nixos-manual.noDisplay = true;
-
-    # needs to be set
-    vitetris.name = "";
-    yazi.name = "";
-    nvim.name = "";
-    # cups.name = "";
-    btop.name = "";
-    rofi-theme-selector.name = "";
-    nixos-manual.name = "";
-
-    # needs to be set
-    vitetris.exec = "";
-    yazi.exec = "";
-    nvim.exec = "";
-    # cups.exec = "";
     btop.exec = "";
-    rofi-theme-selector.exec = "";
+    btop.name = "";
+    btop.noDisplay = true;
+    cups.exec = "";
+    cups.name = "";
+    cups.noDisplay = !os_config.services.printing.enable;
     nixos-manual.exec = "";
+    nixos-manual.name = "";
+    nixos-manual.noDisplay = true;
+    nvim.exec = "";
+    nvim.name = "";
+    nvim.noDisplay = true;
+    rofi-theme-selector.exec = "";
+    rofi-theme-selector.name = "";
+    rofi-theme-selector.noDisplay = true;
+    vitetris.exec = "";
+    vitetris.name = "";
+    vitetris.noDisplay = true;
+    yazi.exec = "";
+    yazi.name = "";
+    yazi.noDisplay = true;
     # }}}
   };
 }

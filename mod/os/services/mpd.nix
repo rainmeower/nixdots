@@ -1,17 +1,18 @@
 {
   username,
   pkgs,
+  config,
   ...
-}: {
+}: let
+  inherit (config.home-manager.users.${username}.xdg) userDirs;
+in {
   services.mpd = {
     enable = true;
     user = username;
-    musicDirectory = "/home/${username}/music/";
-    # FIXME cant access home-manager config from nixos config
-    # musicDirectory = config.xdg.userDirs.music;
+    musicDirectory = userDirs.music;
 
-    dataDir = "/home/${username}/.local/share/mpd";
-      extraConfig = ''
+    dataDir = userDirs.extraConfig.XDG_DATA_HOME + "/mpd";
+    extraConfig = ''
       port "6669"
       audio_output {
         type "pipewire"
@@ -19,8 +20,6 @@
       }
     '';
   };
-
-	# services.mpd-mpris.enable = true;
 
   environment.systemPackages = with pkgs; [
     mpc
