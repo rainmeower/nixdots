@@ -219,6 +219,14 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
   ;; TODO ; -> . (for vim)
   magic (switch ;; {{{
 
+    ;; flake.nix
+    ((and
+      (key-history f 5)
+      (key-history l 4)
+      (key-history a 3)
+      (key-history k 2)
+      (key-history e 1)
+    )) . break
 
     ;; linux
     ((and
@@ -749,15 +757,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history . 2)
       (key-history n 1)
     )) i break
-
-    ;; flake.nix
-    ((and
-      (key-history f 5)
-      (key-history l 4)
-      (key-history a 3)
-      (key-history k 2)
-      (key-history e 1)
-    )) . break
 
     ;; regex
     ((and
