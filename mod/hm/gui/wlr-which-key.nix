@@ -3,23 +3,32 @@
   flake_dir,
   lib,
   ...
-}:
-# let
-#   quit = if (config.wm == "niri") then "niri msg action quit"
-#   else if (config.wm == "hyprland") then "hyprctl dispatch exit"
-#     else "error";
-#   # TODO: float, screenshot, kill window, center
-# in
-{
-  xdg.configFile."wlr-which-key/config.yaml".text = lib.generators.toYAML { } {
-    menu = [
-    {
-      key = "q";
+}: let
+key = builtins.mapAttrs (
+    k: v: {
+      key = [ k "Mod4+${k}" ];
       desc = "";
-      cmd = "meow";
+      cmd = v;
     }
+    );
+in {
+  xdg.configFile."wlr-which-key/config.yaml".text = lib.generators.toYAML { } {
+    font = null;
+    background = "#00000000";
+    color = "#00000000";
+    border = "#00000000";
+    menu = [
+
+(builtins.mapAttrs (
+    k: v: {
+      key = [ k "Mod4+${k}" ];
+      desc = "";
+      cmd = v;
+    }
+    ) {"f" = "foot";})
+
     {
-      key = "f";
+      key = "w";
       desc = "";
       cmd = "foot";
     }

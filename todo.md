@@ -1,3 +1,4 @@
+- make yazi `which` bg transparent
 - remove stylix
 - fix ytsub audio
 
