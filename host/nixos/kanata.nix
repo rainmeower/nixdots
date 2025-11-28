@@ -1080,11 +1080,11 @@ i end
   (u i) (macro S-[ S-; S-/ S-]) 16 all-released (over sup melee)
   (a f17) S-5 15 all-released (over sup melee)
 
-  (t d) [ 15 all-released (over sup melee)
-  (a o) ] 15 all-released (over sup melee)
 
-  (c w) S-, 15 all-released (over sup melee)
-  (h l) S-. 15 all-released (over sup melee)
+  (t d) [ 20 all-released (over sup melee)
+  (a o) ] 20 all-released (over sup melee)
+  (c w) S-, 20 all-released (over sup melee)
+  (h l) S-. 20 all-released (over sup melee)
 
   (, ;) (macro S-; q) 20 all-released (over sup melee)
   (q z) (macro q S-;) 20 all-released (over sup melee)
