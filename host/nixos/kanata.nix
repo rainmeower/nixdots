@@ -309,7 +309,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history o 1)
     )) l break
 
-
     ;; leave
     ((and
       (key-history l 4)
@@ -342,11 +341,18 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history s 1)
     )) e break
 
+    ;; child
+    ((and
+      (key-history c 3)
+      (key-history h 2)
+      (key-history i 1)
+    )) l break
+
     ;; also
     ((and
       (key-history a 3)
-    (key-history l 2)
-    (key-history s 1)
+      (key-history l 2)
+      (key-history s 1)
     )) o break
 
     ;; state
@@ -624,6 +630,13 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history w 2)
       (key-history r 1)
     )) a break
+
+    ;; never
+    ((and
+      (key-history n 3)
+      (key-history e 2)
+      (key-history v 1)
+    )) e break
 
     ;; .i  (sfb)
     ((and
