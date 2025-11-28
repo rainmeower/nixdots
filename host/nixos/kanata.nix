@@ -395,7 +395,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; }}}
 
     ;; code {{{
-
     ;; FIXME
     ;; Box
     ((and
@@ -534,7 +533,13 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history v 3)
       (key-history e 2)
       (key-history c 1)
-    )) (macro C-w S-v e c S-, S-- S-.) break
+    )) S-, break
+
+    ;; <_  (sfb)
+    ((and
+      (key-history lsft 2)
+      (key-history , 1)
+    )) S-- break
 
     ;; }}}
 
@@ -764,12 +769,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history a 1)
     )) m break
 
-    ;; <_  (sfb)
-    ((and
-      (key-history lsft 2)
-      (key-history , 1)
-    )) S-- break
-
     ;; ||  (more comfortable than rpeat)
     ((key-history \ 1)) S-\ break
 
@@ -803,6 +802,12 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;; vim fFtT repeat
     ((key-history ; 1)) . break
+
+    ;; --
+    ((and
+      (not (key-history rsft 1) (key-history lsft 1))
+      (key-history - 1)
+    )) rpt break
 
     ;; n
     ((key-history n 1)) rpt break
