@@ -397,7 +397,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; code {{{
     ;; Box
     ((and
-      (key-history lsft 2)
+      (or (key-history lsft 2) (key-history rsft 2))
       (key-history b 1)
     )) (unmod o) break
 
@@ -627,7 +627,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;; Box
     ((and
-      (key-history lsft 3)
+      (or (key-history lsft 3) (key-history rsft 3))
       (key-history b 2)
       (input-history real lsft 2)
     )) (unmod x) break
