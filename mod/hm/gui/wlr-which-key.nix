@@ -4,6 +4,10 @@
   lib,
   ...
 }: let
+keys = {
+  f = "foot";
+};
+
 key = builtins.mapAttrs (
     k: v: {
       key = [ k "Mod4+${k}" ];
@@ -25,7 +29,7 @@ in {
       desc = "";
       cmd = v;
     }
-    ) {"f" = "foot";})
+    ) keys)
 
     {
       key = "w";
