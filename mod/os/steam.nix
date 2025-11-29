@@ -18,7 +18,7 @@ in {
     enable = true;
     extraCompatPackages = [ pkgs.proton-ge-bin ];
     fontPackages = [ config.font_package ];
-    gamescopeSession.enable = true;
+    gamescopeSession.enable = false;
     remotePlay.openFirewall = false; # Open ports in the firewall for Steam Remote Play
       dedicatedServer.openFirewall = false; # Open ports in the firewall for Source Dedicated Server
       localNetworkGameTransfers.openFirewall = false; # Open ports in the firewall for Steam Local Network Game Transfers
@@ -27,16 +27,16 @@ in {
       platformOptimizations.enable = true;
   };
 
-  programs.gamescope = {
-    enable = true;
-    args = let
-      inherit (config.monitor.DP-1) width height refresh;
-    s = toString;
-    in [
-      "-w ${s width}"
-        "-h ${s height}"
-        "-r ${s refresh}"
-        "--expose-wayland"
-    ];
-  };
+  # programs.gamescope = {
+  #   enable = true;
+  #   args = let
+  #     inherit (config.monitor.DP-1) width height refresh;
+  #   s = toString;
+  #   in [
+  #     "-w ${s width}"
+  #       "-h ${s height}"
+  #       "-r ${s refresh}"
+  #       "--expose-wayland"
+  #   ];
+  # };
 }

@@ -6,8 +6,6 @@
   environment.systemPackages = with pkgs; [
     godot
 
-    # steamcmd
-
     bmm
 
     blender

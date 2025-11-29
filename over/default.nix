@@ -10,6 +10,8 @@
   (import ./ncmpcpp.nix)
   (import ./nushell.nix)
   (import ./nvim.nix)
-  (import ./vicinae-extension-nix.nix)
   (import ./yazi.nix)
+
+  (import ./vicinae-extension-nix.nix)
+  (import ./keyb0xx.nix)
 ]
