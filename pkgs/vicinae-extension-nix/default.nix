@@ -8,7 +8,7 @@ pkgs.stdenvNoCC.mkDerivation {
 
 	src = pkgs.fetchurl {
 		url = "https://api.vicinae.com/v1/store/knoopx/nix/download";
-		hash = "sha256-1j7OKB72FGY6PB4SgAsbHvPoBhfGtPTP5jZUToSdSaU=";
+		hash = "sha256-V4eBLHuZy0wCL62zvvwin83y5aK9txwjp+mA7pc4WiA=";
 	};
 
 	sourceRoot = ".";
