@@ -46,7 +46,12 @@ pkgs.stdenv.mkDerivation {
 	installPhase = ''
 		runHook preInstall
 
-    make
+  install -Dm 644 * -t $out/libexec
+  chmod 755 $out/libexec/keyb0xx
+  install -dm 755 $out/bin
+  ln -s $out/libexec/keyb0xx $out/bin/keyb0xx
+
+    # make
 
     chmod +x keyb0xx
 
