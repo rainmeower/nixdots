@@ -48,6 +48,8 @@ pkgs.stdenv.mkDerivation {
 
     make
 
+    chmod +x keyb0xx
+
 		mkdir -p $out/
 		cp * $out/
 
