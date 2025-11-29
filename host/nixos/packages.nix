@@ -48,7 +48,7 @@
     # tty-clock
     fastfetch
     # zellij
-    # expect
+    expect
     yt-dlp
     tldr
 
