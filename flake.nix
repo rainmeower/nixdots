@@ -42,7 +42,7 @@
 
     slippi.url = "github:lytedev/slippi-nix";
     # nuhxboard.url = "github:justDeeevin/NuhxBoard";
-    pollymc.url = "github:fn2006/PollyMC";
+    # pollymc.url = "github:fn2006/PollyMC";
     vicinae.url = "github:vicinaehq/vicinae";
 
     # moonlight.url = "github:moonlight-mod/moonlight";

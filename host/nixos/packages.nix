@@ -74,6 +74,6 @@
     #  })
     vesktop
 
-    inputs.pollymc.packages."x86_64-linux".default
+    # inputs.pollymc.packages."x86_64-linux".default
   ];
 }
