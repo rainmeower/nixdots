@@ -27,9 +27,9 @@ pkgs.stdenv.mkDerivation {
     '/usr/include/libevdev-1.0' \
     "$(pkg-config --cflags libevdev | cut -c 3-)"
 
-    substituteInPlace keyboard_device.c --replace-fail \
-    'kb_device_name_tag = "Keyboard";' \
-    'kb_device_name_tag = "liliums Lily58";'
+    # substituteInPlace keyboard_device.c --replace-fail \
+    # 'kb_device_name_tag = "Keyboard";' \
+    # 'kb_device_name_tag = "liliums Lily58";'
 
 	  cp -f ${config} config.h
   '';
