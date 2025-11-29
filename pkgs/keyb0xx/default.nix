@@ -31,40 +31,7 @@ pkgs.stdenv.mkDerivation {
     'kb_device_name_tag = "Keyboard";' \
     'kb_device_name_tag = "liliums Lily58";'
 
-
-    # key remaps
-    substituteInPlace config.c --replace-fail \
-    'kb_device_name_tag = "KEY_BACKSPACE";' \
-    'kb_device_name_tag = "KEY_DOT";'
-
-    substituteInPlace config.c --replace-fail \
-    'kb_device_name_tag = "KEY_2";' \
-    'kb_device_name_tag = "KEY_D";'
-
-    substituteInPlace config.c --replace-fail \
-    'kb_device_name_tag = "KEY_1";' \
-    'kb_device_name_tag = "KEY_D";'
-
-    substituteInPlace config.c --replace-fail \
-    'kb_device_name_tag = "KEY_3";' \
-    'kb_device_name_tag = "KEY_D";'
-
-    substituteInPlace config.c --replace-fail \
-    'kb_device_name_tag = "KEY_L";' \
-    'kb_device_name_tag = "KEY_D";'
-
-    substituteInPlace config.c --replace-fail \
-    'kb_device_name_tag = "KEY_RIGHTALT";' \
-    'kb_device_name_tag = "KEY_D";'
-
-    substituteInPlace config.c --replace-fail \
-    'kb_device_name_tag = "KEY_COMMA";' \
-    'kb_device_name_tag = "KEY_D";'
-
-    substituteInPlace config.c --replace-fail \
-    'kb_device_name_tag = "KEY_SLASH";' \
-    'kb_device_name_tag = "KEY_D";'
-
+	  cp -f ${config} config.h
   '';
 
 	# buildPhase = let
