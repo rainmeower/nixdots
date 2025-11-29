@@ -50,8 +50,8 @@ pkgs.stdenv.mkDerivation {
 
     chmod +x keyb0xx
 
-		mkdir -p $out/
-		cp -a * $out/
+		mkdir -p $out/bin
+		cp -a * $out/bin
 
 		runHook postInstall
 	'';
