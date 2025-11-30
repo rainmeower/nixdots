@@ -27,6 +27,12 @@ in {
       #   niri msg action consume-or-expel-window-left
       # }
 
+      # git add commit push
+      def gacp [] {
+        git add --all
+        git commit -m "meow"
+        git push
+      }
       # git log
       def gl [] {
         let selection = (git log --oneline | lines | fzf)
