@@ -273,6 +273,12 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     )) m break
 
     ;; monkeytype {{{
+    ;; box
+    ((and
+      (key-history b 2)
+      (key-history o 1)
+    )) x break
+
     ;; much
     ((and
       (key-history m 3)
@@ -823,6 +829,12 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (not (key-history rsft 2) (key-history lsft 2))
       (key-history - 1)
     )) rpt break
+
+    ;; override the "box"
+    ((and
+      (key-history b 2)
+      (key-history o 1)
+    )) a break
 
     ;; n
     ((key-history n 1)) rpt break

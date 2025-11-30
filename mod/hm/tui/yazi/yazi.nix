@@ -17,27 +17,23 @@
     ../../service/termfilechooser.nix
   ];
 
-  # home.packages = with pkgs; [
-  #   xdg-desktop-portal-termfilechooser
-  # ];
-
   programs.yazi = {
     enable = true;
-    # enableFishIntegration = true;
     enableNushellIntegration = true;
 
     plugins = {
       inherit (pkgs.yaziPlugins)
-      git
-      sudo 
-      no-status 
-      starship 
-      restore 
-      chmod 
-      piper 
-      mount 
-      dupes 
-      jump-to-char;
+        git
+        sudo 
+        no-status 
+        starship 
+        restore 
+        chmod 
+        piper 
+        mount 
+        dupes 
+        jump-to-char
+      ;
 
       # TODO packages
       compress = ./plugins/compress.yazi;
@@ -65,14 +61,16 @@ require("simple-tag"):setup({
 	  ["!"] = "yellow",
 	  ["1"] = "cyan",
 	  ["p"] = "red",
+	  ["o"] = "blue",
 	  ["g"] = "cyan", -- git repos
   },
 
   -- https://www.nerdfonts.com/cheat-sheet
   icons = {
-		default = "●",
+		default = "",
 		["*"] = "*", -- xdg user dirs
 		["$"] = "",
+		["o"] = "",
 		["!"] = "",
 		["p"] = "",
 		["g"] = "", -- git repos
