@@ -627,11 +627,16 @@
       }
     
       {
-        on = [ "<Space>" "g" "d" ];
+        on = [ "<Space>" "g" "d" "s" ];
         run = "cd ~/.local/share/Steam/steamapps/compatdata/322170/pfx/drive_c/users/steamuser/AppData/Local/GeometryDash/";
         desc = "GD songs";
       }
-    
+      {
+        on = [ "<Space>" "g" "d" "<Space>" ];
+        run = "cd ~/.local/share/wineprefixes/default/drive_c/users/meow/AppData/Local/GeometryDash";
+        desc = "GD songs";
+      }
+
       {
         on = [ "<Space>" "g" "a" ];
         run = "cd ~/game";
