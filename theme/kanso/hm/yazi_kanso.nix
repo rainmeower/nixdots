@@ -11,8 +11,8 @@
 in {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
     programs.yazi.theme = {
-      which.mask = {
-        hidden = true;
+      which = {
+      mask.hidden = true;
         rest = col.comment;
         description = col.fg;
         candidate = col.accent;
