@@ -14,9 +14,9 @@ in {
       which = {
         mask.hidden = true;
         rest.fg = col.comment;
-        description.fg = col.fg;
-        candidate.fg = col.accent;
-        separator = "";
+        desc.fg = col.fg;
+        cand.fg = col.accent;
+        separator = " ";
       };
       mgr = {
         cwd.fg = col.fg;
