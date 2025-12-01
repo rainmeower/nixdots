@@ -1,5 +1,6 @@
 {
-  config,
+  self,
+  theme,
   font_name,
   pkgs,
   ...
@@ -11,6 +12,7 @@
   # services.dunst = {
   #   enable = true;
   #   settings = {
+  #
   #
   #     global = {
   #       monitor = 0;
@@ -120,6 +122,17 @@
   #
   #       history_length = 20;
   #     };
+  #
+  #     urgency_normal = let
+  #       col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
+  #     in {
+  #       frame_color = col.accent;
+  #       inherit (col)
+  #         background
+  #         foreground
+  #       ;
+  #     };
+  #
   #   };
   # };
 }

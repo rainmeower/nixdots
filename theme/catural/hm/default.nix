@@ -7,7 +7,6 @@
     ./gtk_kanso.nix
     ./kitty_kanso.nix
     ./qt_kanso.nix
-    ./dunst_kanso.nix
     ./fastfetch_kanso.nix
     ./foot_kanso_ink.nix
     ./foot_kanso_mist.nix
