@@ -12,7 +12,9 @@ in {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
     programs.yazi.theme = {
       which = {
-        mask.bg = "";
+        mask = {
+          bg = "";
+        };
       };
       mgr = {
         cwd.fg = col.fg;
