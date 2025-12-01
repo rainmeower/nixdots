@@ -12,10 +12,10 @@ in {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
     programs.yazi.theme = {
       which = {
-      mask.hidden = true;
-        rest = col.comment;
-        description = col.fg;
-        candidate = col.accent;
+        mask.hidden = true;
+        rest.fg = col.comment;
+        description.fg = col.fg;
+        candidate.fg = col.accent;
         separator = "";
       };
       mgr = {
