@@ -14,6 +14,9 @@ in {
       which.mask = {
         hidden = true;
         rest = col.comment;
+        description = col.fg;
+        candidate = col.accent;
+        separator = "";
       };
       mgr = {
         cwd.fg = col.fg;
