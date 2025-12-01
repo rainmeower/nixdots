@@ -33,6 +33,7 @@ in {
       };
     };
     spot = {
+      title.fg = col.accent;
       tbl_cell = {
         fg = col.bg;
         bg = col.accent;
