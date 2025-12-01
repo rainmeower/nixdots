@@ -947,7 +947,15 @@
       # spot {{{
       spot.keymap = [
       {
-        on = "<Escape>";
+        on = "<Esc>";
+        run = "close";
+      }
+      {
+        on = "<C-c>";
+        run = "close";
+      }
+      {
+        on = "<Tab>";
         run = "close";
       }
       {
