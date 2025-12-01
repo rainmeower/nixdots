@@ -11,7 +11,7 @@ col = import ../colors.nix;
 in {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
     programs.yazi.theme = {
-      which.mask.bg = "none";
+      which.mask.hidden = true;
       mgr = {
         cwd.fg = col.fg;
 
