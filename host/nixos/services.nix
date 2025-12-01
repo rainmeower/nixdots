@@ -6,7 +6,7 @@
   virtualisation.docker.enable = true;
 
   services = {
-    flatpak.enable = false;
+    flatpak.enable = true;
 
     xserver = {
       videoDrivers = [

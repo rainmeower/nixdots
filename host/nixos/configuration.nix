@@ -1,7 +1,8 @@
 {
   pkgs,
   username,
-  specialArgs,
+  lib,
+  config,
   ...
 }: {
   networking.hostName = "nixos";
@@ -19,11 +20,16 @@
       "audio"
       "input"
       "uinput"
+      "terraria"
     ];
     shell = pkgs.nushell;
   };
 
-  environment.pathsToLink = [ "/share/applications" "/share/xdg-desktop-portal" ];
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = lib.mkIf (config.wm == "niri") [
+    pkgs.xdg-desktop-portal-gtk
+    pkgs.xdg-desktop-portal-gnome
+  ];
 
   system.stateVersion = "24.11";
 }
