@@ -7,11 +7,14 @@
   theme,
   ...
 }: let
-col = import ../colors.nix;
+  col = import ../colors.nix;
 in {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
     programs.yazi.theme = {
-      which.mask.hidden = true;
+      which.mask = {
+        hidden = true;
+        rest = col.comment;
+      };
       mgr = {
         cwd.fg = col.fg;
 

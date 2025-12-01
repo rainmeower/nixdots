@@ -237,6 +237,7 @@ in {
 
       woman = "man";
 
+      cel = "Celeste"; # goated game
 
       q = "exit";
       ":q" = "exit";
