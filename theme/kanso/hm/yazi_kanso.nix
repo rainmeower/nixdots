@@ -183,13 +183,7 @@ in {
           { name = "nix"; text = "󱄅"; fg = col.blue; }
           { name = "css"; text = ""; fg = col.blue; }
           { name = "html"; text = ""; fg = col.orange; }
-          { name = "yaml"; text = ""; fg = col.fg; }
-          { name = "yml"; text = ""; fg = col.fg; }
-          { name = "json"; text = ""; fg = col.fg; }
           { name = "toml"; text = ""; fg = col.red; }
-          { name = "ini"; text = ""; fg = col.fg; }
-          { name = "cfg"; text = ""; fg = col.fg; }
-          { name = "csv"; text = ""; fg = col.fg; }
           { name = "jar"; text = ""; fg = col.orange; }
           { name = "ml"; text = ""; fg = col.yellow_sat; }
           { name = "mli"; text = ""; fg = col.yellow_sat; }
@@ -255,14 +249,6 @@ in {
           { name = "7z";  text = "󰗄"; fg = col.yellow2; }
           { name = "rar"; text = "󰗄"; fg = col.yellow2; }
 
-          { name = "db"; text = ""; fg = col.fg; }
-          { name = "sql"; text = ""; fg = col.fg; }
-          { name = "sqlite"; text = ""; fg = col.fg; }
-          { name = "sqlite3"; text = ""; fg = col.fg; }
-          { name = "dump"; text = ""; fg = col.fg; }
-          { name = "bsp"; text = ""; fg = col.fg; }
-          { name = "vmf"; text = ""; fg = col.fg; }
-          { name = "vmx"; text = ""; fg = col.fg; }
           { name = "el"; text = ""; fg = col.violet; }
           { name = "gpg"; text = "󱕴"; fg = col.yellow2; }
           { name = "desktop"; text = ""; fg = col.violet; }
