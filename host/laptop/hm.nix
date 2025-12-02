@@ -35,7 +35,7 @@
         # ./hyprland.nix
         ../../modules/home-manager/gui/dunst.nix
         ../../modules/home-manager/gui/terminal/foot.nix
-        ../../modules/home-manager/gui/niri/niri.nix
+        ../../modules/home-manager/gui/niri
         ../../modules/home-manager/gui/tofi.nix
         ../../modules/home-manager/gui/vesktop.nix
         ../../modules/home-manager/gui/zen/zen.nix

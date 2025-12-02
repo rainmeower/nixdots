@@ -58,6 +58,7 @@ in {
         ../../theme/quiet/hm
         ../../theme/kanso/hm
         ../../theme/kantsi/hm
+
         ../../mod/hm/desktop.nix
         ../../mod/hm/home.nix
 
@@ -77,7 +78,7 @@ in {
         ../../mod/hm/gui/media/obs.nix
         ../../mod/hm/gui/media/swayimg.nix
         ../../mod/hm/gui/media/ytsub.nix
-        ../../mod/hm/gui/niri/niri.nix
+        ../../mod/hm/gui/niri
         ../../mod/hm/gui/rofi.nix
         ../../mod/hm/gui/shell.nix
         ../../mod/hm/gui/slippi.nix
