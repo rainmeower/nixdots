@@ -28,6 +28,7 @@ in {
       name = "valheim";
       comment = name;
       exec = "steam-run ${games_dir}/${name}/${name}.x86_64";
+      icon = "${games_dir}/${name}/${name}_Data/Resources/UnityPlayer.png";
     };
 
     terraria = rec {
@@ -40,8 +41,8 @@ in {
     silksong = rec {
       name = "silksong";
       comment = name;
-      exec = "steam-run ${games_dir}/hollow-knight-silksong/Hollow\\ Knight\\ Silksong";
-      icon = lib.removePrefix "steam-run " exec + "_Data/Resources/UnityPlayer.png";
+      exec = ''"steam-run ${games_dir}/hollow-knight-silksong/Hollow Knight Silksong"'';
+      icon = "${games_dir}/hollow-knight-silksong/Hollow\\ Knight\\ Silksong_Data/Resources/UnityPlayer.png";
     };
     # }}}
 
