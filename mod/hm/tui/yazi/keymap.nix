@@ -993,7 +993,7 @@
       }
     
       {
-        on = "j";
+        on = "y";
         run = "copy cell";
       }
       {

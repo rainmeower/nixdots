@@ -9,6 +9,13 @@ let
   col = import ../../../../theme/${theme_trimmed}/colors.nix;
 in {
   programs.yazi.theme = {
+    which = {
+      mask.hidden = true;
+      cand.fg = col.accent;
+      rest.fg = col.accent;
+      desc.fg = col.comment;
+      separator = " ";
+    };
     mgr = {
       border_symbol = " ";
       hovered.reversed = true;
