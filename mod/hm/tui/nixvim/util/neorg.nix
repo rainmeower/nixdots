@@ -1,4 +1,7 @@
 {
+  rounding,
+  ...
+}: {
   programs.nixvim.plugins.neorg = {
     enable = true;
 
@@ -13,8 +16,9 @@
       load = {
         "core.concealer" = {
           config = {
-            icon_preset = "basic";
+            icon_preset = if rounding then "basic" else "diamond";
             folds = true;
+            quote.icons = ["▍"];
           };
         };
         "core.dirman" = {
