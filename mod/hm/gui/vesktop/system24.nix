@@ -604,13 +604,13 @@ body {
 /* @import url('https://refact0r.github.io/system24/build/system24.css'); */
 
 body {
-    --font: '/home/meow/dl/Itim-Regular.ttf';
+    --font: '${font_name}'; /* change to for default discord font */
     --code-font: '${font_name}'; /* change to for default discord font */
     /* font-weight: 300; /* text font weight. 300 is light, 400 is normal. DOES NOT AFFECT BOLD TEXT */ */
     letter-spacing: -0.05ch; /* decreases letter spacing for better readability. recommended on monospace fonts.*/
 
     /* sizes */
-    --gap: 10px; /* spacing between panels */
+    --gap: 0px; /* spacing between panels */
     --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
     --border-thickness: 2px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
     --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
@@ -716,10 +716,10 @@ body {
     --offline: var(--text-4); /* change to #82838b for default offline color */
 
     /* border colors */
-    --border-light: var(--hover); /* general light border color */
-    --border: var(--active); /* general normal border color */
-    --border-hover: var(--accent-2); /* border color of panels when hovered */
-    --button-border: hsl(220, 0%, 100%, 0.1); /* neutral border color of buttons */
+    --border-light: transparent; /* general light border color */
+    --border: transparent; /* general normal border color */
+    --border-hover: transparent; /* border color of panels when hovered */
+    --button-border: transparent; /* neutral border color of buttons */
 
     /* base colors */
     --red-1: ${col.red};
