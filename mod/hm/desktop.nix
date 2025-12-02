@@ -49,8 +49,8 @@ in {
     balatro = rec {
       name = "balatro";
       comment = name;
-      exec = "umu-run ${games_dir}/${name}/Balatro.exe";
-      icon = icon_dir + "/wallpaper.svg";
+      exec = "umu-run ${games_dir}/${name}/game/Balatro.exe";
+      icon = icon_dir + "/balatro.png";
     };
     # }}}
 
