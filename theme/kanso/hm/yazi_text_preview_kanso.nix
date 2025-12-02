@@ -19,7 +19,7 @@ in {
     <key>semanticClass</key>
     <string>theme.dark.kanso</string>
     <key>uuid</key>
-    <string>02b2bdf3-9eb7-4396-bf04-f17f1468f99f</string>
+    <string>762cd970-79d6-4ea2-9d3f-04c028812d99</string>
     <key>author</key>
     <string>woofwoofmeow</string>
     <key>colorSpaceName</key>

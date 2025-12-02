@@ -35,6 +35,7 @@
     ./ui/lualine.nix
     ./ui/noice.nix
     ./util/bracketed.nix
+    ./util/repeat.nix
     ./util/godot.nix
     # ./util/treesj.nix
     ./util/ts-node-action.nix
