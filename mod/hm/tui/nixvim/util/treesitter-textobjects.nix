@@ -2,11 +2,6 @@
   programs.nixvim.plugins.treesitter-textobjects = {
     enable = true;
 
-    lazyLoad.enable = true;
-    lazyLoad.settings.event = [
-      "BufRead"
-    ];
-
     settings = {
       lookahead = true;
 
@@ -28,8 +23,8 @@
           il   = "@loop.inner";
           af   = "@call.outer";
           "if" = "@call.inner";
-          at   = "@function.outer"; # d for definition
-          it   = "@function.inner";
+          ah   = "@function.outer"; # d for definition
+          ih   = "@function.inner";
           ap   = "@class.outer";
           ip   = "@class.inner";
           ar   = "@block.outer";
