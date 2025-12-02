@@ -1,3 +1,4 @@
+# FIXME stopped working for no reason
 {
   pkgs,
   ...

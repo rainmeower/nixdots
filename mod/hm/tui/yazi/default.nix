@@ -13,8 +13,6 @@
     ./plugin.nix
     ./settings.nix
     ./theme.nix
-
-    ../../service/termfilechooser.nix
   ];
 
   programs.yazi = {

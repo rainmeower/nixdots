@@ -46,7 +46,7 @@
         ../../modules/home-manager/tui/nh.nix
         ../../modules/home-manager/tui/nushell.nix
         ../../modules/home-manager/tui/starship.nix
-        ../../modules/home-manager/tui/yazi/yazi.nix
+        ../../modules/home-manager/tui/yazi
         ../../modules/home-manager/tui/zoxide.nix
         ../../mod/hm/env.nix
         ./niri.nix

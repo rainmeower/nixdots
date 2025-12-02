@@ -104,7 +104,7 @@ in {
         ../../mod/hm/tui/nushell.nix
         ../../mod/hm/tui/rust-fmt.nix
         ../../mod/hm/tui/starship.nix
-        ../../mod/hm/tui/yazi/yazi.nix
+        ../../mod/hm/tui/yazi
         ../../mod/hm/tui/zoxide.nix
         ../../mod/hm/xdg.nix
         ./niri.nix
