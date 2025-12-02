@@ -39,12 +39,12 @@
     ../../mod/os/ydotool.nix
     ../../mod/os/appimage.nix
 
-    ../../theme/blacchiato/os/default.nix
-    ../../theme/everforest/os/default.nix
-    ../../theme/quiet/os/default.nix
-    ../../theme/lix/os/default.nix
-    ../../theme/macchiato/os/default.nix
-    ../../theme/kanso/os/default.nix
-    ../../theme/kantsi/os/default.nix
+    ../../theme/blacchiato/os
+    ../../theme/everforest/os
+    ../../theme/quiet/os
+    ../../theme/lix/os
+    ../../theme/macchiato/os
+    ../../theme/kanso/os
+    ../../theme/kantsi/os
   ];
 }
