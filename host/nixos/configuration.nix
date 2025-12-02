@@ -32,5 +32,19 @@
     xdg-desktop-portal-gnome
   ];
 
+  xdg.portal = {
+    config = {
+      common = {
+        default = ["termfilechooser"];
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+      };
+      niri = {
+        default = ["termfilechooser"];
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+      };
+    };
+  };
+
+
   system.stateVersion = "24.11";
 }
