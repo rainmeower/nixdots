@@ -12,8 +12,8 @@ in {
     melee = {
       name = "melee";
       comment = "melee bash script";
-      exec = "${flake_dir}/stuff/scripts/melee.sh";
-      icon = "${flake_dir}/stuff/icons/slippi.svg";
+      exec = flake_dir + "/stuff/scripts/melee.sh";
+      icon = flake_dir + "/stuff/icons/slippi.svg";
       terminal = true;
     };
 
@@ -50,8 +50,8 @@ in {
     wallpapers = {
       name = "wallpapers";
       comment = "rofi wallpaper switcher";
-      exec = "${flake_dir}/stuff/scripts/bgselector";
-      icon = "${flake_dir}/stuff/icons/wallpaper.svg";
+      exec = flake_dir + "/stuff/scripts/bgselector";
+      icon = flake_dir + "/stuff/icons/wallpaper.svg";
     };
 
     hammer = {
