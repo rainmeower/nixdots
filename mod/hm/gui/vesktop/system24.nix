@@ -1,12 +1,11 @@
 {
-  lib,
+  self,
   theme,
   font_name,
   rounding,
   ...
 }: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../theme/${theme_trimmed}/colors.nix;
+  col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
   unrounding = if rounding then "off" else "on";
 in
 {
@@ -14,7 +13,6 @@ in
   home.file.".config/vesktop/themes/system24_1.css".text = /* css */ ''
 /* main.css */
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 @font-face {
     font-family: 'asciid';
@@ -25,8 +23,8 @@ in
 
 body {
     /* font, change to  for default discord font */
-    --font: 'DM Mono'; /* change to  for default discord font */
-    --code-font: 'DM Mono'; /* change to  for default discord font */
+    --font: ' '; /* change to  for default discord font */
+    --code-font: ' '; /* change to  for default discord font */
     font-weight: 300; /* text font weight. 300 is light, 400 is normal. DOES NOT AFFECT BOLD TEXT */
     letter-spacing: -0.05ch; /* decreases letter spacing for better readability. recommended on monospace fonts.*/
 
@@ -577,14 +575,6 @@ body {
 
 ''; # }}}
 
-
-
-
-
-
-
-
-
   home.file.".config/vesktop/themes/system24_2.css".text = # {{{
 # css
   ''
@@ -695,12 +685,12 @@ body {
 
     /* background and dark colors */
     --bg-1: ${col.bgtrans}; /* dark buttons when clicked */
-    --bg-2: ${col.button}; /* dark buttons */
-    --bg-3: ${col.button}; /* spacing, secondary elements */
+    --bg-2: ${col.button_trans}; /* dark buttons */
+    --bg-3: ${col.button_trans}; /* spacing, secondary elements */
     --bg-4: ${col.bgtrans}; /* main background color */
-    --hover: oklch(54% 0 0 / 0.1); /* channels and buttons when hovered */
-    --active: oklch(54% 0 0 / 0.2); /* channels and buttons when clicked or selected */
-    --active-2: oklch(54% 0 0 / 0.3); /* extra state for transparent buttons */
+    --hover: transparent; /* channels and buttons when hovered */
+    --active: ${col.fg_bright}; /* channels and buttons when clicked or selected */
+    --active-2: ${col.button_trans}; /* extra state for transparent buttons */
     --message-hover: var(--hover); /* messages when hovered */
 
     /* accent colors */
@@ -709,7 +699,7 @@ body {
     --accent-3: ${col.accent}; /* accent buttons */
     --accent-4: ${col.accent}; /* accent buttons when hovered */
     --accent-5: ${col.accent}; /* accent buttons when clicked */
-    --accent-new: var(--red-2); /* stuff that's normally red like mute/deafen buttons */
+    --accent-new: ${col.red}; /* stuff that's normally red like mute/deafen buttons */
     --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
     --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
     --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */

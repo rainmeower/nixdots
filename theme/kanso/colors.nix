@@ -7,7 +7,10 @@ rec {
   text       = fg;
   bg         = zen_bg0;
   background = bg;
-  bgtrans    = "${bg}CC"; # 80% opacity
+  bg_trans   = bg + "CC"; # 80% opacity
+  bgtrans    = bg_trans;
+
+  fg_bright = fg2;
 
   grey   = gray5;
   gray   = grey;
@@ -19,6 +22,7 @@ rec {
   aqua   = blue4;
 
   button = zen_bg2;
+  button_trans = button + "AA";
   button_hover = zen_bg3;
 
 

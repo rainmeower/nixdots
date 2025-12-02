@@ -22,10 +22,10 @@ in {
   }
 
   .wrapper_efa71a50b pre {
-    background-color: ${col.button}AA !important;
+    background-color: ${col.button_trans} !important;
   }
  :is(.wrapper_efa71a50b p, .wrapper_efa71a50b li) code {
-    background-color: ${col.button}AA !important;
+    background-color: ${col.button_trans} !important;
  }
 
   .main_e79536261 {
@@ -35,12 +35,12 @@ in {
 
   .box_e93d40046 {
     --shadow: none !important;
-    background-color: ${col.button}AA !important;
+    background-color: ${col.button_trans} !important;
     color: ${col.fg} !important;
   }
 
   .input-lg_e39186c09, .input-sm_e39186c09 {
-    background-color: ${col.button}AA !important;
+    background-color: ${col.button_trans} !important;
     color: ${col.fg} !important;
   }
 
