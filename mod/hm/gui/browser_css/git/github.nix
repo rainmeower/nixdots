@@ -26,7 +26,7 @@ in {
   --bgColor-disabled: transparent !important;
   --bgColor-inset: transparent !important;
 
-  --bgColor-muted: ${col.button}AA !important;
+  --bgColor-muted: ${col.button_trans} !important;
 
   --button-primary-bgColor-active: ${col.green} !important;
   --button-primary-bgColor-disabled: ${col.green} !important;

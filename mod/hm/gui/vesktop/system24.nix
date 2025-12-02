@@ -689,7 +689,7 @@ body {
     --bg-3: ${col.button_trans}; /* spacing, secondary elements */
     --bg-4: ${col.bgtrans}; /* main background color */
     --hover: transparent; /* channels and buttons when hovered */
-    --active: ${col.fg_bright}; /* channels and buttons when clicked or selected */
+    --active: transparent; /* channels and buttons when clicked or selected */
     --active-2: ${col.button_trans}; /* extra state for transparent buttons */
     --message-hover: var(--hover); /* messages when hovered */
 
