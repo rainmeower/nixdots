@@ -15,10 +15,6 @@
 
     xdg-utils
 
-    # reaper # borken
-    # reaper-reapack-extension
-    # reaper-sws-extension
-    zynaddsubfx
 
     rofi
 
