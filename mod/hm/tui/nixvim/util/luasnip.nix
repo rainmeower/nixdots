@@ -6,6 +6,5 @@
     lazyLoad.settings.event = [
       "DeferredUIEnter"
     ];
-
   };
 }

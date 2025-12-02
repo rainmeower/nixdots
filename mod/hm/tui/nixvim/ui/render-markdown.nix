@@ -19,7 +19,6 @@
         language_border = " ";
         language_left = "|";
       };
-
     };
   };
 }

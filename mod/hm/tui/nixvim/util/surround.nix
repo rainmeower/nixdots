@@ -1,12 +1,10 @@
 {
-  programs.nixvim = {
-    # extraPlugins = [ pkgs.vimPlugins.mini-surround ];
-    #  extraConfigLua = ''
-    #    require('mini.surround').setup()
-    #    '';
-    #    };
-    plugins.mini-surround = {
-      enable = true;
-    };
+  programs.nixvim.plugins.mini-surround = {
+    enable = true;
+
+    lazyLoad.enable = true;
+    lazyLoad.settings.event = [
+      "DeferredUIEnter"
+    ];
   };
 }
