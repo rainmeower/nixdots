@@ -1,16 +1,14 @@
 {
   flake_dir,
-  inputs,
+  config,
   os_config,
+  lib,
   ...
 }: let
-hidden = [
-"yazi"
-"cups"
-
-];
+  games_dir = config.xdg.userDirs.extraConfig.XDG_GAMES_DIR;
 in {
   xdg.desktopEntries = {
+    # games {{{
     melee = {
       name = "melee";
       comment = "melee bash script";
@@ -18,6 +16,35 @@ in {
       icon = "${flake_dir}/stuff/icons/slippi.svg";
       terminal = true;
     };
+
+    Celeste = {
+      name = "celeste";
+      comment = "celeste with everest";
+      exec = "gamemoderun Celeste";
+      icon = "Celeste";
+    };
+
+    valheim = rec {
+      name = "valheim";
+      comment = name;
+      exec = "steam-run ${games_dir}/${name}/${name}.x86_64";
+    };
+
+    terraria = rec {
+      name = "terraria";
+      comment = name;
+      exec = "${games_dir}/${name}/${name}/Terraria";
+      icon = exec + ".png";
+    };
+
+    silksong = rec {
+      name = "silksong";
+      comment = name;
+      exec = "steam-run ${games_dir}/hollow-knight-silksong/Hollow\\ Knight\\ Silksong";
+      icon = lib.removePrefix "steam-run " exec + "_Data/Resources/UnityPlayer.png";
+    };
+    # }}}
+
 
     wallpapers = {
       name = "wallpapers";
@@ -31,13 +58,6 @@ in {
       comment = "hammer with bottles";
       exec = "bottles-cli run -p hammer -b \"hammer\" -- %u";
       icon = "${flake_dir}/stuff/icons/hammer.png";
-    };
-
-    Celeste = {
-      name = "celeste";
-      comment = "celeste with everest";
-      exec = "gamemoderun Celeste";
-      icon = "Celeste";
     };
 
     # hidden desktop entries {{{
