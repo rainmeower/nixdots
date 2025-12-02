@@ -13,7 +13,7 @@ in {
   imports = [
     inputs.home-manager.nixosModules.home-manager
     {
-      nixpkgs.overlays = import ../../over/default.nix;
+      nixpkgs.overlays = import ../../over;
     }
   ];
   home-manager = {
@@ -51,20 +51,20 @@ in {
     users.${username} = {
       home.stateVersion = "24.11";
       imports = [
-        ../../theme/blacchiato/hm/default.nix
-        ../../theme/everforest/hm/default.nix
-        ../../theme/lix/hm/default.nix
-        ../../theme/macchiato/hm/default.nix
-        ../../theme/quiet/hm/default.nix
-        ../../theme/kanso/hm/default.nix
-        ../../theme/kantsi/hm/default.nix
+        ../../theme/blacchiato/hm
+        ../../theme/everforest/hm
+        ../../theme/lix/hm
+        ../../theme/macchiato/hm
+        ../../theme/quiet/hm
+        ../../theme/kanso/hm
+        ../../theme/kantsi/hm
         ../../mod/hm/desktop.nix
         ../../mod/hm/home.nix
 
-        ../../mod/hm/tui/nixvim/default.nix
+        ../../mod/hm/tui/nixvim
 
 
-        ../../mod/hm/gui/browser_css/default.nix
+        ../../mod/hm/gui/browser_css
 
         ../../mod/hm/env.nix
         ../../mod/hm/mimetypes.nix
