@@ -428,7 +428,7 @@
 
       # yank {{{
       {
-        on = [ "Y" "c" ];
+        on = [ "Y" "f" ];
         run = "copy path";
         desc = "Copy the file path";
       }

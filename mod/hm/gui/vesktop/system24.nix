@@ -585,46 +585,9 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  home.file.".config/vesktop/themes/system24_2.css".text = ''
+  home.file.".config/vesktop/themes/system24_2.css".text = # {{{
+# css
+  ''
 /**
  * @name system24
  * @description a tui-style discord theme.
@@ -641,8 +604,8 @@ body {
 /* @import url('https://refact0r.github.io/system24/build/system24.css'); */
 
 body {
-    --font: '${font_name}'; /* change to for default discord font */
-    --code-font: 'Iosevka Nerd Font Mono'; /* change to for default discord font */
+    --font: '/home/meow/dl/Itim-Regular.ttf';
+    --code-font: '${font_name}'; /* change to for default discord font */
     /* font-weight: 300; /* text font weight. 300 is light, 400 is normal. DOES NOT AFFECT BOLD TEXT */ */
     letter-spacing: -0.05ch; /* decreases letter spacing for better readability. recommended on monospace fonts.*/
 
@@ -1040,4 +1003,5 @@ body {
 
 
 '';
+# }}}
 }
