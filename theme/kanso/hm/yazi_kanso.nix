@@ -216,6 +216,7 @@ in {
           { name = "vtf"; text = ""; fg = col.yellow; }
           { name = "vmt"; text = ""; fg = col.fg; }
           { name = "mp4"; text = ""; fg = col.violet; }
+          { name = "webm"; text = ""; fg = col.violet; }
           { name = "mkv"; text = ""; fg = col.violet; }
           { name = "mov"; text = ""; fg = col.violet; }
           { name = "mp3"; text = ""; fg = col.violet; }
