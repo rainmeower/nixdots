@@ -24,7 +24,6 @@ default_dir=$HOME
 env=TERMCMD=foot --app-id="foot.yazi.filechooser"
   '';
 
-
   xdg.portal = {
     enable = true;
 
