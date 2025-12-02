@@ -6,6 +6,7 @@
     ./configuration.nix
     ./hardware-configuration.nix
     ./kanata.nix
+    ./hm.nix
     ./packages.nix
     ./services.nix
 

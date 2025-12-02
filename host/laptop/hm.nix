@@ -43,7 +43,6 @@
         ../../modules/home-manager/tui/btop.nix
         ../../modules/home-manager/tui/fzf.nix
         ../../modules/home-manager/tui/git.nix
-        ../../modules/home-manager/tui/git.nix
         ../../modules/home-manager/tui/nh.nix
         ../../modules/home-manager/tui/nushell.nix
         ../../modules/home-manager/tui/starship.nix

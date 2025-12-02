@@ -47,7 +47,6 @@ in {
       # col = import (builtins.toPath "${flake_dir}/theme/${theme_trimmed}/colors.nix");
     };
 
-
     users.${username} = {
       home.stateVersion = "24.11";
       imports = [
@@ -59,22 +58,16 @@ in {
         ../../theme/kanso/hm
         ../../theme/kantsi/hm
 
+
         ../../mod/hm/desktop.nix
-        ../../mod/hm/home.nix
-
-        ../../mod/hm/tui/nixvim
-
-
-        ../../mod/hm/gui/browser_css
-
         ../../mod/hm/env.nix
-        ../../mod/hm/mimetypes.nix
+        ../../mod/hm/gui/browser_css
+        ../../mod/hm/gui/cursor.nix
         ../../mod/hm/gui/dunst.nix
         ../../mod/hm/gui/emacs/emacs.nix
         ../../mod/hm/gui/firefox/firefox.nix
         ../../mod/hm/gui/mango/mango.nix
         ../../mod/hm/gui/media/mpv.nix
-        ../../mod/hm/gui/cursor.nix
         ../../mod/hm/gui/media/obs.nix
         ../../mod/hm/gui/media/swayimg.nix
         ../../mod/hm/gui/media/ytsub.nix
@@ -92,6 +85,8 @@ in {
         ../../mod/hm/gui/walker.nix
         ../../mod/hm/gui/wlr-which-key.nix
         ../../mod/hm/gui/zen/zen.nix
+        ../../mod/hm/home.nix
+        ../../mod/hm/mimetypes.nix
         ../../mod/hm/service/easyeffects.nix
         ../../mod/hm/service/hyprkan.nix
         ../../mod/hm/service/swww.nix
@@ -104,6 +99,7 @@ in {
         ../../mod/hm/tui/navi.nix
         ../../mod/hm/tui/ncmpcpp.nix
         ../../mod/hm/tui/nh.nix
+        ../../mod/hm/tui/nixvim
         ../../mod/hm/tui/nushell.nix
         ../../mod/hm/tui/rust-fmt.nix
         ../../mod/hm/tui/starship.nix

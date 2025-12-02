@@ -80,15 +80,13 @@
           ;
         };
         modules = [
-          ./host/nixos/default.nix
-          ./host/nixos/hm.nix
+          ./host/nixos
 
           lix-module.nixosModules.default
-
-          {
-            nixpkgs.overlays = import ./over/default.nix;
-          }
           nur.modules.nixos.default
+          {
+            nixpkgs.overlays = import ./over;
+          }
         ];
       }; # }}}
 
@@ -102,17 +100,11 @@
           ;
         };
         modules = [
-
-          ./host/laptop/default.nix
-          ./host/laptop/hm.nix
-
-
+          ./host/laptop
           lix-module.nixosModules.default
-
           # {
-          #   nixpkgs.overlays = import ./over/default.nix;
+          #   nixpkgs.overlays = import ./over;
           # }
-
         ];
       }; # }}}
     };
