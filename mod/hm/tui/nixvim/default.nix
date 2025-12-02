@@ -49,7 +49,8 @@
     # ./util/treesitter-context.nix
     # ./util/treesj.nix
     ./util/bracketed.nix
-    ./util/orgmode.nix
+    # ./util/orgmode.nix
+    ./util/neorg.nix
     ./util/completion.nix
     ./util/flash.nix
     ./util/godot.nix
