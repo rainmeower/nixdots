@@ -6,6 +6,7 @@
   ...
 }: let
   games_dir = config.xdg.userDirs.extraConfig.XDG_GAMES_DIR;
+  icon_dir = flake_dir + "/stuff/icons";
 in {
   xdg.desktopEntries = {
     # games {{{
@@ -13,7 +14,7 @@ in {
       name = "melee";
       comment = "melee bash script";
       exec = flake_dir + "/stuff/scripts/melee.sh";
-      icon = flake_dir + "/stuff/icons/slippi.svg";
+      icon = icon_dir + "/slippi.svg";
       terminal = true;
     };
 
@@ -44,21 +45,27 @@ in {
       exec = ''"steam-run ${games_dir}/hollow-knight-silksong/Hollow Knight Silksong"'';
       icon = "${games_dir}/hollow-knight-silksong/Hollow\\ Knight\\ Silksong_Data/Resources/UnityPlayer.png";
     };
-    # }}}
 
+    balatro = rec {
+      name = "balatro";
+      comment = name;
+      exec = "umu-run ${games_dir}/${name}/Balatro.exe";
+      icon = icon_dir + "/wallpaper.svg";
+    };
+    # }}}
 
     wallpapers = {
       name = "wallpapers";
       comment = "rofi wallpaper switcher";
       exec = flake_dir + "/stuff/scripts/bgselector";
-      icon = flake_dir + "/stuff/icons/wallpaper.svg";
+      icon = icon_dir + "/wallpaper.svg";
     };
 
     hammer = {
       name = "hammer";
       comment = "hammer with bottles";
       exec = "bottles-cli run -p hammer -b \"hammer\" -- %u";
-      icon = "${flake_dir}/stuff/icons/hammer.png";
+      icon = icon_dir + "/hammer.png";
     };
 
     # hidden desktop entries {{{
