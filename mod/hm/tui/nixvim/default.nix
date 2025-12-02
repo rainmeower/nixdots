@@ -5,6 +5,12 @@
   imports = [
     inputs.nixvim.homeModules.nixvim
 
+    ./autocommands.nix
+    ./lazy.nix
+    ./misc.nix
+    ./nixvim.nix
+    ./options.nix
+
     ./theme/everforest/hard/hard.nix
     ./theme/everforest/medium/medium.nix
     ./theme/everforest/soft/soft.nix
@@ -14,52 +20,49 @@
     ./theme/everforest/hard/hard.nix
     ./theme/everforest/hard/lualine.nix
     ./theme/blacchiato.nix
-    ./theme/lix/lix.nix
-    # ./theme/lix/smear-cursor_lix.nix
+    ./theme/lix.nix
     ./theme/macchiato.nix
     ./theme/kanso.nix
     ./theme/highlight.nix
 
-    # ./util/picker.nix
-    # ./util/firenvim.nix
     ./key/keymaps.nix
     ./key/langmap.nix
     ./key/no_yank_del.nix
-    ./lazy.nix
-    ./autocommands.nix
-    ./misc.nix
-    ./nixvim.nix
-    ./options.nix
-    ./ui/colorizer.nix
+
+    # ./ui/colorizer.nix
+    # ./ui/indentscope.nix
+    # ./ui/smear-cursor.nix
+    # ./ui/tiny-glimmer.nix
+    # ./ui/yank_highlight.nix
     ./ui/ccc.nix
+    ./ui/diagnostic.nix
     ./ui/lualine.nix
     ./ui/noice.nix
-    ./util/bracketed.nix
-    ./util/repeat.nix
-    ./util/godot.nix
-    # ./util/treesj.nix
-    ./util/ts-node-action.nix
-    ./util/completion.nix
-    ./ui/diagnostic.nix
-    ./util/flash.nix
-    ./ui/indentscope.nix
-    ./ui/yank_highlight.nix
-    ./util/lsp.nix
-    ./util/neotest.nix
-    ./util/gx.nix
-    ./util/lspconfig.nix
+    ./ui/render-markdown.nix
+    ./ui/yazi.nix
+
+    # ./util/firenvim.nix
+    # ./util/luasnip.nix
     # ./util/pairs.nix
-    ./util/splitjoin.nix
+    # ./util/picker.nix
+    # ./util/splitjoin.nix
+    # ./util/treesitter-context.nix
+    # ./util/treesj.nix
+    ./util/bracketed.nix
+    ./util/orgmode.nix
+    ./util/completion.nix
+    ./util/flash.nix
+    ./util/godot.nix
+    ./util/gx.nix
+    ./util/lsp.nix
+    ./util/lspconfig.nix
     ./util/matchup.nix
+    ./util/neotest.nix
+    ./util/repeat.nix
     ./util/surround.nix
     ./util/telescope.nix
     ./util/treesitter-textobjects.nix
-    ./util/treesitter-context.nix
     ./util/treesitter.nix
-    ./ui/yazi.nix
-    # ./ui/tiny-glimmer.nix
-    ./ui/render-markdown.nix
-    # ./ui/smear-cursor.nix
-    ./util/luasnip.nix
+    ./util/ts-node-action.nix
   ];
 }

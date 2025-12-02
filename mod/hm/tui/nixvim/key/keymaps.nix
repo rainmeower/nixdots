@@ -264,6 +264,7 @@
       mode = [ "o" "x" ];
       options.silent = true;
     } # }}}
+
     # cursor {{{
     # { # put cursor at top of screen
     #   key = "zh";
@@ -322,13 +323,13 @@
 
     { # insert line below
       key = "<C-k>";
-      action = "o<esc>k";
+      action = "mzo<esc>k`z";
       mode = "n";
     }
 
     { # insert line above
       key = "<C-S-k>";
-      action = "O<esc>j";
+      action = "mzO<esc>j`z";
       mode = "n";
     }
 

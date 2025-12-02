@@ -2,6 +2,12 @@
   programs.nixvim = {
   plugins.flash = {
     enable = true;
+
+    lazyLoad.enable = true;
+    lazyLoad.settings.event = [
+      "DeferredUIEnter"
+    ];
+
     settings = {
       label.uppercase = false;
       labels = "nisetachr";

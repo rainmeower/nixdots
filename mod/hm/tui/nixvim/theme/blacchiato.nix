@@ -2,8 +2,7 @@
   lib,
   theme,
   ...
-}:
-let
+}: let
   col = import ../../../../../theme/blacchiato/colors.nix;
 in {
   config = lib.mkIf (theme == "blacchiato") {
