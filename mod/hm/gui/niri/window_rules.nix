@@ -24,6 +24,12 @@ in {
 
 
     {
+      matches = [ { app-id = "^steam_app_default$"; } ];
+      open-on-workspace = "one";
+      open-fullscreen = true;
+    }
+
+    {
       matches = [ { title = "^ghostty_nvim$"; } ];
       open-on-workspace = "ghostty_nvim";
       open-focused = false;
