@@ -642,7 +642,13 @@
         run = "cd ~/game";
         desc = "game repo";
       }
-    
+
+      {
+        on = [ "<Space>" "g" "s" ];
+        run = "cd ~/games";
+        desc = "games";
+      }
+
       {
         on = [ "<Space>" "h" "o" ];
         run = "cd ~";

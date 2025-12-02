@@ -13,9 +13,9 @@
     ./hm.nix
     ./packages.nix
     ./services.nix
-#    ../../theme/blacchiato/os/default.nix
-#    ../../theme/everforest/os/default.nix
-#    ../../theme/lix/os/default.nix
-#    ../../theme/macchiato/os/default.nix
+#    ../../theme/blacchiato/os
+#    ../../theme/everforest/os
+#    ../../theme/lix/os
+#    ../../theme/macchiato/os
   ];
 }

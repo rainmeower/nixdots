@@ -17,11 +17,11 @@
 
     users.${username} = {
       imports = [
-        ../../theme/blacchiato/home-manager/default.nix
-        ../../theme/everforest/home-manager/default.nix
-        ../../theme/lix/home-manager/default.nix
-        ../../theme/macchiato/home-manager/default.nix
-        ../../theme/kanso/home-manager/default.nix
+        ../../theme/blacchiato/home-manager
+        ../../theme/everforest/home-manager
+        ../../theme/lix/home-manager
+        ../../theme/macchiato/home-manager
+        ../../theme/kanso/home-manager
         ../../modules/home-manager/desktop.nix
         ../../modules/home-manager/home.nix
 
