@@ -13,7 +13,7 @@ in {
     melee = {
       name = "melee";
       comment = "melee bash script";
-      exec = flake_dir + "/stuff/scripts/melee.sh";
+      exec = "gamemoderun ${flake_dir}/stuff/scripts/melee.sh";
       icon = icon_dir + "/slippi.svg";
       terminal = true;
     };
@@ -28,28 +28,28 @@ in {
     valheim = rec {
       name = "valheim";
       comment = name;
-      exec = "steam-run ${games_dir}/${name}/${name}.x86_64";
+      exec = "gamemoderun steam-run ${games_dir}/${name}/${name}.x86_64";
       icon = "${games_dir}/${name}/${name}_Data/Resources/UnityPlayer.png";
     };
 
     terraria = rec {
       name = "terraria";
       comment = name;
-      exec = "${games_dir}/${name}/${name}/Terraria";
-      icon = exec + ".png";
+      exec = "gamemoderun ${games_dir}/${name}/${name}/Terraria";
+      icon = (lib.removePrefix "gamemoderun " exec) + ".png";
     };
 
     silksong = rec {
       name = "silksong";
       comment = name;
-      exec = ''"steam-run ${games_dir}/hollow-knight-silksong/Hollow Knight Silksong"'';
+      exec = ''"gamemoderun steam-run ${games_dir}/hollow-knight-silksong/Hollow Knight Silksong"'';
       icon = "${games_dir}/hollow-knight-silksong/Hollow\\ Knight\\ Silksong_Data/Resources/UnityPlayer.png";
     };
 
     balatro = rec {
       name = "balatro";
       comment = name;
-      exec = "umu-run ${games_dir}/${name}/game/Balatro.exe";
+      exec = "gamemoderun umu-run ${games_dir}/${name}/game/Balatro.exe";
       icon = icon_dir + "/balatro.png";
     };
     # }}}
