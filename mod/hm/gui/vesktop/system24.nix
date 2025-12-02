@@ -603,6 +603,13 @@ body {
 /* import theme modules */
 /* @import url('https://refact0r.github.io/system24/build/system24.css'); */
 
+.visual-refresh {
+    .sidebarList__5e434 {
+        background: none !important;
+    }
+}
+
+
 body {
     --font: '${font_name}'; /* change to for default discord font */
     --code-font: '${font_name}'; /* change to for default discord font */
