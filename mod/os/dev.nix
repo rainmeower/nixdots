@@ -14,8 +14,8 @@
     # kotlin-language-server
     # kotlin-interactive-shell
     # gradle
-    zulu # java 21
-    zulu8 # java 8
+    # zulu # java 21
+    # zulu8 # java 8
 
     # zig
 

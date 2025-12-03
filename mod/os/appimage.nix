@@ -1,8 +1,5 @@
 {
-  inputs,
-  username,
   pkgs,
-  config,
   ...
 }: {
   programs.appimage = {
