@@ -60,6 +60,8 @@
     hyprpicker
     quickshell
     xwayland
+    meow
+    libqalculate
 
     # moonlight
     # (discord.override {

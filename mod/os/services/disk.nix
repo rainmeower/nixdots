@@ -11,4 +11,8 @@
     udisks2
     gvfs
   ];
+
+  # systemd.tmpfiles.rules = [
+  #   "L /media - - - - run/media" # link /media to /run/media
+  # ];
 }

@@ -1,16 +1,14 @@
 {
   pkgs,
   username,
-  lib,
-  config,
   ...
 }: {
   networking.hostName = "nixos";
-  networking.networkmanager.enable = true;
 
   users.users.${username} = {
     isNormalUser = true;
     description = "colon three";
+    shell = pkgs.nushell;
     extraGroups = [
       "networkmanager"
       "wheel"
@@ -20,9 +18,9 @@
       "audio"
       "input"
       "uinput"
+      "ssh"
       "terraria"
     ];
-    shell = pkgs.nushell;
   };
 
   xdg.portal.enable = true;

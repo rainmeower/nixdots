@@ -2,7 +2,7 @@
   pkgs,
   ...
 }: {
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
     reaper
     reaper-reapack-extension
     reaper-sws-extension

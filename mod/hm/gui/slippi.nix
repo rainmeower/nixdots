@@ -6,6 +6,7 @@
 }: {
   imports = [
     inputs.slippi.homeManagerModules.default
+
     {
       slippi-launcher = let
         data = userDirs.extraConfig.XDG_DATA_HOME;

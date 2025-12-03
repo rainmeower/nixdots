@@ -4,13 +4,22 @@
   ...
 }: {
   networking.hostName = "laptop";
-  networking.networkmanager.enable = true;
 
   users.users.${username} = {
     isNormalUser = true;
     description = "colon three";
-    extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" "video" "audio" "input" "uinput" ];
     shell = pkgs.nushell;
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "storage"
+      "plugdev"
+      "video"
+      "audio"
+      "input"
+      "uinput"
+      "ssh"
+    ];
   };
 
   environment.sessionVariables = {
