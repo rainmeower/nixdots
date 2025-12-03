@@ -6,7 +6,6 @@
     ../../mod/os/font.nix
     ../../mod/os/options.nix
     ../../mod/os/shared.nix
-    ../../mod/os/stylix.nix
     ./boot.nix
     ./configuration.nix
     ./hardware-configuration.nix

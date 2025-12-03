@@ -2,9 +2,10 @@
   programs.nixvim.plugins.cmp = {
     enable = true;
 
-    #lazyLoad.settings.event = [
-    #  "DeferredUIEnter"
-    #];
+    # lazyLoad.enable = true; # {{{
+    # lazyLoad.settings.event = [
+    #   "DeferredUIEnter"
+    # ]; # }}}
 
     settings = {
       sources = [

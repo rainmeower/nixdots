@@ -52,7 +52,9 @@
     # ./util/orgmode.nix
     ./util/neorg.nix
     ./util/completion.nix
+    ./util/comment.nix
     ./util/flash.nix
+    ./util/rustaceanvim.nix
     ./util/godot.nix
     ./util/gx.nix
     ./util/lsp.nix

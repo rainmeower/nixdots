@@ -4,10 +4,10 @@
     noice = {
       enable = true;
 
-      lazyLoad.enable = true;
+      lazyLoad.enable = true; # {{{
       lazyLoad.settings.event = [
         "DeferredUIEnter"
-      ];
+      ]; # }}}
 
       settings = {
         cmdline = {

@@ -515,7 +515,11 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((key-history 1 1)) (macro S-9) break
 
     ;; >>
-    ((key-history . 1)) (macro S-.) break
+    ((and
+      (not (key-history lsft 2))
+      (not (key-history rsft 2))
+      (key-history . 1)
+    )) (macro S-.) break
 
     ;; <=
     ;; ((key-history , 1)) (macro =) break
@@ -759,7 +763,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;; .nix
     ((and
-      (not (key-history rsft 3) (key-history lsft 3))
+      (not (key-history lsft 2))
+      (not (key-history rsft 2))
       (key-history . 2)
       (key-history n 1)
     )) i break
@@ -826,7 +831,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;; --
     ((and
-      (not (key-history rsft 2) (key-history lsft 2))
+      (not (key-history lsft 2))
+      (not (key-history rsft 2))
       (key-history - 1)
     )) rpt break
 

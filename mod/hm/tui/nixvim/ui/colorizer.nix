@@ -1,6 +1,12 @@
 {
   programs.nixvim.plugins.colorizer = {
     enable = true;
+
+    lazyLoad.enable = true; # {{{
+    lazyLoad.settings.event = [
+      "DeferredUIEnter"
+    ]; # }}}
+
     settings = {
       RGB      = true;
       RRGGBB   = true;

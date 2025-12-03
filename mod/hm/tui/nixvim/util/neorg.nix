@@ -5,10 +5,10 @@
   programs.nixvim.plugins.neorg = {
     enable = true;
 
-    lazyLoad.enable = true;
+    lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [
       "DeferredUIEnter"
-    ];
+    ]; # }}}
 
     telescopeIntegration.enable = true;
 

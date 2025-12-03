@@ -68,7 +68,7 @@ in {
       icon = icon_dir + "/hammer.png";
     };
 
-    # hidden desktop entries {{{
+    # hidden {{{
 
     btop.exec = "";
     btop.name = "";

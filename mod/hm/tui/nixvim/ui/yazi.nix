@@ -6,10 +6,10 @@
     plugins.yazi = {
       enable = true;
 
-      lazyLoad.enable = true;
+      lazyLoad.enable = true; # {{{
       lazyLoad.settings.event = [
         "DeferredUIEnter"
-      ];
+      ]; # }}}
 
       settings = {
         yazi_floating_window_border = 

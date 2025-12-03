@@ -387,19 +387,20 @@
     { key = "("; action = "}"; mode = [ "n" "v" "x" "o" ]; }
     { key = ")"; action = "{"; mode = [ "n" "v" "x" "o" ]; }
 
+    # jump list {{{
     {
       key = "<C-t>";
       action = "<C-o>";
       mode = [ "n" "v" "x" ];
     }
-
     {
       key = "<C-c>";
       action = "<C-i>";
       mode = [ "n" "v" "x" ];
     }
+    # }}}
 
-    # {
+    # { # frees up a key
     #   key = "<tab>";
     #   action = "%";
     #   mode = [ "n" "v" "x" ];
@@ -411,17 +412,24 @@
       mode = "n" ;
     }
 
-    {
+    { # redo with uppercase undo
       key = "U";
       action = "<C-r>";
       mode = ["n" "v" "x" ];
     }
 
+    # half pages {{{
     {
       key = "<C-a>";
       action = "<C-d>";
       mode = [ "n" "v" "x" ];
     }
+    {
+      key = "<C-e>";
+      action = "<C-u>";
+      mode = [ "n" "v" "x" ];
+    }
+    # }}}
 
     {
       key = "<C-j>";
@@ -429,23 +437,19 @@
       mode = [ "n" "v" "x" ];
     }
 
-    {
-      key = "<C-e>";
-      action = "<C-u>";
-      mode = [ "n" "v" "x" ];
-    }
-
     # buffers {{{
-    {
+    { # TODO
       key = "<leader>d";
-      action = ":bp<cr>";
+      # action = ":bp<cr>";
+      action = ":echo use <space><magic>";
       mode = [ "n" "v" "x" ];
       options.silent = true;
     }
 
-    {
+    { # TODO
       key = "<leader>c";
-      action = ":bn<cr>";
+      # action = ":bn<cr>";
+      action = ":echo use <space><magic>";
       mode = [ "n" "v" "x" ];
       options.silent = true;
     }

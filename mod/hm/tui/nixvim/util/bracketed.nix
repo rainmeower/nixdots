@@ -3,10 +3,10 @@
   programs.nixvim.plugins.mini-bracketed = {
     enable = true;
 
-    lazyLoad.enable = true;
+    lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [
       "DeferredUIEnter"
-    ];
+    ]; # }}}
 
     settings = {
       buffer.suffix = "r";

@@ -6,10 +6,10 @@
     plugins.tiny-inline-diagnostic = {
     enable = true;
 
-    lazyLoad.enable = true;
+    lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [
       "DeferredUIEnter"
-    ];
+    ]; # }}}
 
     settings = {
       preset = "modern";
