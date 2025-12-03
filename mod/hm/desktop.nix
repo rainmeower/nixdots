@@ -42,7 +42,7 @@ in {
     silksong = rec {
       name = "silksong";
       comment = name;
-      exec = ''gamescope steam-run ${games_dir}/hollow-knight-silksong/Hollow\ Knight\ Silksong'';
+      exec = ''gamemoderun steam-run ${games_dir}/hollow-knight-silksong/Hollow\ Knight\ Silksong'';
       icon = ''${games_dir}/hollow-knight-silksong/Hollow\ Knight\ Silksong_Data/Resources/UnityPlayer.png'';
     };
 
