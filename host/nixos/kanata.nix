@@ -553,13 +553,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history c 1)
     )) S-, break
 
-    ;; <_  (sfb)
-    ((and
-      (key-history lsft 3)
-      (key-history , 2)
-      (key-history lsft 1)
-    )) S-- break
-
     ;; }}}
 
     ((input-history real lsft 2)) (macro lctl ent) break
@@ -826,6 +819,14 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history lsft 2)
       (key-history ; 1)
     )) S-; break
+
+
+    ;; <_  (sfb)
+    ((and
+      (key-history lsft 2)
+      (key-history , 1)
+    )) S-- break
+
 
     ;; vim fFtT repeat
     ((key-history ; 1)) . break
