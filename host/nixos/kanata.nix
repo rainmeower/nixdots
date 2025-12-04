@@ -136,7 +136,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;; Ok(
     ((and
-      (key-history o 2)
+      (key-history o 3)
+      (or (key-history lsft 2) (key-history rsft 2))
       (key-history k 1)
     )) S-9 break
 
