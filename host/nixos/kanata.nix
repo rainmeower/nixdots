@@ -90,7 +90,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
   ;; more than 3 times?
   ;; also use key-timing in case ur just in yazi previewing stuff
 
-  rp (switch
+  rp (switch ;; {{{
     ;; vec
     ((and
       (key-history v 3)
@@ -130,9 +130,16 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
 
     () S-0 break
-  )
+  ) ;; }}}
 
   ; (switch
+
+    ;; Ok(
+    ((and
+      (or (key-history lsft 3) (key-history rsft 3))
+      (key-history o 2)
+      (key-history k 1)
+    )) S-9 break
 
     () (tap-hold-press 120 120 ; (layer-while-held syms)) break
   )
@@ -658,6 +665,13 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (input-history real lsft 2)
     )) (unmod x) break
 
+    ;; Ok(
+    ((and
+      (or (key-history lsft 3) (key-history rsft 3))
+      (key-history o 2)
+      (key-history k 1)
+    )) S-9 break
+
     ;; unwrap(  (sfs)
     ((and
       (key-history u 4)
@@ -700,8 +714,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history a 2)
       (key-history c 1)
     )) k break
-
-
 
     ;; ease, increase  etc
     ((and

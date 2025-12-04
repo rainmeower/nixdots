@@ -31,7 +31,7 @@
         run = "plugin simple-tag -- toggle-ui";
         desc = "Toggle tag indicator (icon > tag key > hidden)";
       }
-      
+  
       # }}}
 
       {
@@ -508,124 +508,124 @@
         run = [ "sort mtime --reverse=no" "linemode mtime" ];
         desc = "mtime";
       }
-    
+
       {
         on = [ ";" "M" ];
         run = [ "sort mtime --reverse" "linemode mtime" ];
         desc = "mtime (rev)";
       }
-    
+
       {
         on = [ ";" "b" ];
         run = [ "sort btime --reverse=no" "linemode btime" ];
         desc = "btime";
       }
-    
+
       {
         on = [ ";" "B" ];
         run = [ "sort btime --reverse" "linemode btime" ];
         desc = "btime (rev)";
       }
-    
+
       {
         on = [ ";" "v" ];
         run = "sort extension --reverse=no";
         desc = "extension";
       }
-    
+
       {
         on = [ ";" "V" ];
         run = "sort extension --reverse";
         desc = "extension (rev)";
       }
-    
+
       {
         on = [ ";" "j" ];
         run = "sort alphabetical --reverse=no";
         desc = "alphabetical";
       }
-    
+
       {
         on = [ ";" "J" ];
         run = "sort alphabetical --reverse";
         desc = "alphabetical (rev)";
       }
-    
+
       {
         on = [ ";" "n" ];
         run = "sort natural --reverse=no";
         desc = "natural/none";
       }
-    
+
       {
         on = [ ";" "N" ];
         run = "sort natural --reverse";
         desc = "natural (rev)";
       }
-    
+
       {
         on = [ ";" "s" ];
         run = [ "sort size --reverse=no" "linemode size" ];
         desc = "size";
       }
-    
+
       {
         on = [ ";" "S" ];
         run = [ "sort size --reverse" "linemode size" ];
         desc = "size (rev)";
       }
-    
+
       {
         on = [ ";" "r" ];
         run = "sort random --reverse=no";
         desc = "random";
       }
-    
+
     # }}}
-    
+
       # boobkmarks {{{
       {
         on = [ "~" ];
         run = "cd ~";
         desc = "home";
       }
-    
+
       {
         on = [ "<Space>" "<Space>" ];
         run = "cd --interactive";
         desc = "cd";
       }
-    
+
       {
         on = [ "<Space>" "a" ];
         run = "cd ~/art";
         desc = "art";
       }
-    
+
       {
         on = [ "<Space>" "c" ];
         run = "cd ${userDirs.extraConfig.XDG_CONFIG_HOME}";
         desc = ".config";
       }
-    
+
       {
         on = [ "<Space>" "d" "o" ];
         run = "cd ${userDirs.documents}";
         desc = "documents";
       }
-    
+
       {
         on = [ "<Space>" "d" "l" ];
         run = "cd ${userDirs.download}";
         desc = "downloads";
       }
-    
+
       {
         on = [ "<Space>" "f" ];
         run = "cd ~/.config";
         desc = "~/.config";
       }
-    
+
       {
         on = [ "<Space>" "g" "d" "s" ];
         run = "cd ~/.local/share/Steam/steamapps/compatdata/322170/pfx/drive_c/users/steamuser/AppData/Local/GeometryDash/";
@@ -659,103 +659,109 @@
         run = "cd ~";
         desc = "home";
       }
-    
+
       {
         on = [ "<Space>" "h" "a" ];
         run = "cd ~/hammer";
         desc = "hammer repo";
       }
-    
+
       {
         on = [ "<Space>" "l" ];
         run = "cd ~/.local";
         desc = "~/.local";
       }
-    
+
       {
         on = [ "<Space>" "m" "e" ];
         run = "cd ~/melee";
         desc = "melee";
       }
-    
+
       {
         on = [ "<Space>" "m" "i" ];
         run = "cd ~/misc";
         desc = "misc";
       }
-    
+
+      {
+        on = [ "<Space>" "m" "p" ];
+        run = "cd ${userDirs.documents}/REAPER_projects";
+        desc = "music projects";
+      }
+
       {
         on = [ "<Space>" "m" "u" ];
         run = "cd ${userDirs.music}";
         desc = "music";
       }
-    
+
       {
         on = [ "<Space>" "n" "i" ];
         run = "cd ${flake_dir}";
         desc = "nix";
       }
-    
+
       {
         on = [ "<Space>" "n" "v" ];
         run = "cd ${flake_dir}/mod/hm/tui/nixvim";
         desc = "nixvim";
       }
-    
+
       {
         on = [ "<Space>" "n" "z" ];
         run = "cd ${flake_dir}/mod/hm/gui/zen";
         desc = "zen";
       }
-    
+
       {
         on = [ "<Space>" "n" "y" ];
         run = "cd ${flake_dir}/mod/hm/tui/yazi";
         desc = "yazi";
       }
-    
+
       {
         on = [ "<Space>" "n" "h" "n" ];
         run = "cd ${flake_dir}/host/nixos";
         desc = "hosts/nixos";
       }
-    
+
       {
         on = [ "<Space>" "n" "h" "l" ];
         run = "cd ${flake_dir}/host/laptop";
         desc = "hosts/laptop";
       }
-    
+
       {
         on = [ "<Space>" "n" "o" ];
         run = "cd ~/notes";
         desc = "nix";
       }
-    
+
       {
         on = [ "<Space>" "p" "i" ];
         run = "cd ${userDirs.pictures}";
         desc = "pictures";
       }
-    
+
       {
         on = [ "<Space>" "p" "r" ];
         run = "cd ~/dev/projects";
         desc = "projects";
       }
-    
+
       {
         on = [ "<Space>" "r" ];
         run = "cd /";
         desc = "root";
       }
-    
+
       {
         on = [ "<Space>" "s" "t" ];
         run = "cd ~/.local/share/Steam/steamapps/common";
         desc = "steamapps";
       }
-    
+
       {
         on = [ "<Space>" "s" "i" ];
         run = "cd ~/silly";
@@ -773,118 +779,118 @@
         run = "cd ~/.local/share/Trash/files";
         desc = "trash";
       }
-    
+
       {
         on = [ "<Space>" "t" "e" ];
         run = "cd ~/textures";
         desc = "textures repo";
       }
-    
+
       {
         on = [ "<Space>" "t" "m" ];
         run = "cd /tmp";
         desc = "/tmp";
       }
-    
+
       {
         on = [ "<Space>" "v" ];
         run = "cd ${userDirs.videos}";
         desc = "videos";
       }
-    
+
       {
         on = [ "<Space>" "w" "p" ];
         run = "cd ~/pic/wallpapers";
         desc = "wallpapers";
       }
-    
+
       {
         on = [ "<Space>" "1" ];
         run = "cd /run/media/meow/";
         desc = "drive #1";
       }
     # }}}
-    
-    
+
+
       # tabs {{{
       {
         on = ",";
         run = "tab_create --current";
         desc = "Create a new tab with CWD";
       }
-    
+
       {
         on = "1";
         run = "tab_switch 0";
         desc = "Switch to the first tab";
       }
-    
+
       {
         on = "2";
         run = "tab_switch 1";
         desc = "Switch to the second tab";
       }
-    
+
       {
         on = "3";
         run = "tab_switch 2";
         desc = "Switch to the third tab";
       }
-    
+
       {
         on = "4";
         run = "tab_switch 3";
         desc = "Switch to the fourth tab";
       }
-    
+
       {
         on = "5";
         run = "tab_switch 4";
         desc = "Switch to the fifth tab";
       }
-    
+
       {
         on = "6";
         run = "tab_switch 5";
         desc = "Switch to the sixth tab";
       }
-    
+
       {
         on = "7";
         run = "tab_switch 6";
         desc = "Switch to the seventh tab";
       }
-    
+
       {
         on = "8";
         run = "tab_switch 7";
         desc = "Switch to the eighth tab";
       }
-    
+
       {
         on = "9";
         run = "tab_switch 8";
         desc = "Switch to the ninth tab";
       }
-    
+
       {
         on = "[";
         run = "tab_switch -1 --relative";
         desc = "Switch to the previous tab";
       }
-    
+
       {
         on = "]";
         run = "tab_switch 1 --relative";
         desc = "Switch to the next tab";
       }
-    
+
       {
         on = "{";
         run = "tab_swap -1";
         desc = "Swap current tab with previous tab";
       }
-    
+
       {
         on = "}";
         run = "tab_swap 1";
@@ -892,53 +898,53 @@
       }
 
       # }}}
-    
+
     # {
     #   on = [];
     #   run = "tasks_show";
     #   desc = "Show task manager";
     # }
-    
-    
+
+
       # sudo {{{
       {
         on = ["S" "l" ];
         run = "plugin sudo -- paste";
         desc = "sudo paste";
       }
-    
+
     # { on = ["S" "P"]; run = "plugin sudo -- paste --force"; desc = "sudo paste"; }
-    
+
       { # sudo mv
         on = ["S" "s"];
         run = "plugin sudo -- rename";
         desc = "sudo rename";
       }
-    
+
       { # sudo ln -s (absolute-path)
         on = ["S" "n" "l"];
         run = "plugin sudo -- link";
         esc = "sudo link";
       }
-    
+
       { # sudo ln -s (relative-path)
         on = ["S" "n" "r"];
         run = "plugin sudo -- link --relative";
         desc = "sudo link relative path";
       }
-    
+
       { # sudo ln
         on = ["S" "n" "h"];
         run = "plugin sudo -- hardlink";
         desc = "sudo hardlink";
       }
-    
+
       { # sudo touch/mkdir
         on = ["S" "t"];
         run = "plugin sudo -- create";
         desc = "sudo create";
       }
-    
+
       { # sudo trash
         on = ["S" "o"];
         run = "plugin sudo -- remove";
@@ -946,7 +952,7 @@
       }
 
       # }}}
-    
+
       ];
       # }}}
 
@@ -968,7 +974,7 @@
         on = "q";
         run = "quit";
       }
-    
+
       {
         on = "a";
         run = "arrow next";
@@ -977,7 +983,7 @@
         on = "e";
         run = "arrow prev";
       }
-    
+
       {
         on = "<C-e>";
         run = "arrow -10";
@@ -988,7 +994,7 @@
         run = "arrow 10";
         desc = "Move cursor down half page";
       }
-    
+
       {
         on = [ "g" "g" ];
         run = "arrow top";
@@ -997,7 +1003,7 @@
         on = "G";
         run = "arrow bot";
       }
-    
+
       {
         on = "y";
         run = "copy cell";
@@ -1008,7 +1014,7 @@
       }
       ];
       # }}}
-    
+
       # input {{{
       input.keymap = [
       {
@@ -1036,7 +1042,7 @@
         on = "H";
         run = "kill eol";
       }
-    
+
       {
         on = "t";
         run = "backward";
@@ -1049,7 +1055,7 @@
         on = "w";
         run = "forward --end-of-word";
       }
-    
+
       {
         on = "n";
         run = "insert";
@@ -1058,12 +1064,12 @@
         on = "s";
         run = "insert --append";
       }
-    
+
       {
         on = "r";
         run = "visual";
       }
-    
+
       {
         on = "h";
         run = "delete";
@@ -1080,7 +1086,7 @@
         on = "y";
         run = "yank";
       }
-    
+
       {
         on = "l";
         run = "paste";
@@ -1089,7 +1095,7 @@
         on = "L";
         run = "paste --before";
       }
-    
+
       {
         on = "p";
         run = "undo";
