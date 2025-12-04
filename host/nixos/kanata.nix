@@ -555,8 +555,9 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;; <_  (sfb)
     ((and
-      (key-history lsft 2)
-      (key-history , 1)
+      (key-history lsft 3)
+      (key-history , 2)
+      (key-history lsft 1)
     )) S-- break
 
     ;; }}}
@@ -1132,16 +1133,15 @@ i end
   (  o u  ) S-1 13 all-released (over sup melee mods)
   (    u .) S-6 15 all-released (over sup melee mods)
 
-  (n s    ) S-, 14 all-released (over sup melee)
+  ;; (n s    ) S-, 14 all-released (over sup melee)
   (  s t  ) '   13 all-released (over sup melee)
   (  s   c) S-` 16 all-released (over sup melee)
-  (    t c) [   14 all-released (over sup melee)
+  ;; (    t c) [   14 all-released (over sup melee)
 
   ;; (h a    ) ]   14 all-released (over sup melee)
-  (h a    ) ]   14 all-released (over sup melee)
   (h   e  ) del 15 all-released (over sup melee)
   (  a e  ) +   14 all-released (over sup melee)
-  (    e i) S-. 14 all-released (over sup melee)
+  ;; (    e i) S-. 14 all-released (over sup melee)
 
   (, v    ) \   20 all-released (over sup melee)
   (  v k  ) S-\ 20 all-released (over sup melee)

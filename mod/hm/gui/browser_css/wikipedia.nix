@@ -28,6 +28,7 @@ body {
 }
 
 @media screen {
+  .mw-footer-container,
   .vector-body-before-content,
   .vector-page-titlebar > .mw-portlet-lang:last-child {
     display: none !important;
@@ -50,6 +51,7 @@ body {
   .mw-parser-output a.external {
     background-image: none !important;
   }
+
 }
 }
   '';
