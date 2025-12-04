@@ -1090,7 +1090,14 @@ r .
 
 spc @space2
 ent @enter
-lmet esc
+lmet (switch
+  ((and
+    (input-history real ; 3)
+  )) (macro ; esc) break
+
+  () esc break
+)
+
 
 ) ;; }}}
 

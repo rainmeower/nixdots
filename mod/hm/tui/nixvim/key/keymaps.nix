@@ -454,6 +454,93 @@
       options.silent = true;
     }
 
+    # buffer jump by number {{{
+    {
+      key = "<F1>";
+      action = ":LualineBuffersJump 1";
+      mode = [ "n" "v" "x" "i" ];
+      options.silent = true;
+    }
+
+    {
+      key = "<F2>";
+      action = ":LualineBuffersJump 2";
+      mode = [ "n" "v" "x" "i" ];
+      options.silent = true;
+    }
+
+    {
+      key = "<F3>";
+      action = ":LualineBuffersJump 3";
+      mode = [ "n" "v" "x" "i" ];
+      options.silent = true;
+    }
+
+    {
+      key = "<F4>";
+      action = ":LualineBuffersJump 4";
+      mode = [ "n" "v" "x" "i" ];
+      options.silent = true;
+    }
+
+    {
+      key = "<F5>";
+      action = ":LualineBuffersJump 5";
+      mode = [ "n" "v" "x" "i" ];
+      options.silent = true;
+    }
+
+    {
+      key = "<F6>";
+      action = ":LualineBuffersJump 6";
+      mode = [ "n" "v" "x" "i" ];
+      options.silent = true;
+    }
+
+    {
+      key = "<F7>";
+      action = ":LualineBuffersJump 7";
+      mode = [ "n" "v" "x" "i" ];
+      options.silent = true;
+    }
+
+    {
+      key = "<F8>";
+      action = ":LualineBuffersJump 8";
+      mode = [ "n" "v" "x" "i" ];
+      options.silent = true;
+    }
+
+    {
+      key = "<F9>";
+      action = ":LualineBuffersJump 9";
+      mode = [ "n" "v" "x" "i" ];
+      options.silent = true;
+    }
+
+    {
+      key = "<F10>";
+      action = ":LualineBuffersJump 10";
+      mode = [ "n" "v" "x" "i" ];
+      options.silent = true;
+    }
+
+    {
+      key = "<F11>";
+      action = ":LualineBuffersJump 11";
+      mode = [ "n" "v" "x" "i" ];
+      options.silent = true;
+    }
+
+    {
+      key = "<F12>";
+      action = ":LualineBuffersJump 12";
+      mode = [ "n" "v" "x" "i" ];
+      options.silent = true;
+    }
+
+    # }}}
+
     {
       key = "<leader>a";
       action = "<C-6>";
