@@ -1128,7 +1128,7 @@ i end
   ;; (r spc) rsft 18 first-release (over sup melee)
 
   (l o u) (macro S-z S-z) 18 all-released (over sup melee) ;; vim save and quit
-  (h a e) (macro S-; w ent) 18 all-released (over sup melee) ;; vim save and quit
+  (h a e) (macro C-S-x) 18 all-released (over sup melee) ;; vim save
   (f15 a) @cw 16 all-released (over sup melee)
   (t g) caps 16 all-released (over sup melee)
   (u i) (macro S-[ S-; S-/ S-]) 16 all-released (over sup melee)

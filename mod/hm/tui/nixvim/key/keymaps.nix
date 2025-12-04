@@ -240,6 +240,14 @@
     # }
 
     {
+      key = "<C-S-x>";
+      action = ":w<cr>";
+      mode = [ "n" "v" "x" ];
+      options.silent = true;
+    }
+
+
+    {
       key = "i(";
       action = ":echo \"use b instead of ( or )\"<cr>";
       mode = [ "o" "x" ];
