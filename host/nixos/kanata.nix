@@ -137,7 +137,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; Ok(
     ((and
       (key-history o 2)
-      (input-history real lsft 2)
+      (key-history k 1)
     )) S-9 break
 
     () (tap-hold-press 120 120 ; (layer-while-held syms)) break
