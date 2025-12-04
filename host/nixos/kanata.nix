@@ -1091,10 +1091,10 @@ r .
 spc @space2
 ent @enter
 lmet (switch
-  ((and
-    (input-history real ; 2)
-  )) (macro ; esc) break
-
+  ((input-history real ; 2))
+    (macro ; esc) break
+  ((input-history real , 2))
+    (macro , esc) break
   () esc break
 )
 
