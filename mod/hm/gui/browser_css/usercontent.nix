@@ -37,8 +37,11 @@ in {
   --tridactyl-hintspan-fg: transparent !important;
   --tridactyl-photon-colours-cm-cursor: transparent !important;
 
+}
+
+body {
   --ShinigamiEyesTFriendly: ${col.green} !important;
-  --ShinigamiEyesTransphobic:${col.red} !important;
+  --ShinigamiEyesTransphobic: ${col.red} !important;
 }
 
 :root #cmdline_iframe {
