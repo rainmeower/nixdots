@@ -136,9 +136,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;; Ok(
     ((and
-      (or (key-history lsft 3) (key-history rsft 3))
       (key-history o 2)
-      (key-history k 1)
+      (input-history real lsft 2)
     )) S-9 break
 
     () (tap-hold-press 120 120 ; (layer-while-held syms)) break
@@ -151,7 +150,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((and
       (key-history lsft 2)
       (key-history 0 1)
-      (key-timing 1 less-than 110)
+      (key-timing 1 less-than 80)
     )) (macro S-0) break
 
     () r break
@@ -665,11 +664,12 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (input-history real lsft 2)
     )) (unmod x) break
 
+;; FIXME
     ;; Ok(
-    ((and
-      (or (key-history o 3) (key-history o 2))
-      (or (key-history k 1) (input-history real lsft 2))
-    )) S-9 break
+    ;;((and
+    ;;  (or (key-history o 3) (key-history o 2))
+    ;;  (or (key-history k 1) (input-history real lsft 2))
+    ;;)) S-9 break
 
     ;; unwrap(  (sfs)
     ((and
