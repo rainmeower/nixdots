@@ -20,7 +20,6 @@ root: {
   --font: ${font_name} !important;
   --bg-color: transparent !important;
   --background-color-base: transparent !important;
-  --background-color-interactive-subtle: ${col.button_trans} !important;
 }
 
 body {
@@ -45,6 +44,11 @@ body {
     --color-base--hover:${col.fg} !important;
     --color-emphasized:${col.fg} !important;
     --color-inverted: transparent !important;
+    --background-color-interactive-subtle: ${col.button_trans} !important;
+  }
+
+  .mw-parser-output a.external {
+    background-image: none !important;
   }
 }
 }
