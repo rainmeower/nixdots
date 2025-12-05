@@ -75,6 +75,8 @@ in {
       { name = "h"; text = ""; fg = col.blue; }
       { name = "hpp"; text = ""; fg = col.purple; }
 
+      { name = "glsl"; text = "󰓠"; fg = col.blue; } # sunglasses because they shade ur eyes like shaders lmao
+
 
       { name = "nix"; text = "󱄅"; fg = col.blue; }
       { name = "css"; text = ""; fg = col.blue; }
@@ -87,8 +89,9 @@ in {
       { name = "kt"; text = "󱈙"; fg = col.purple; }
       { name = "svelte"; text = ""; fg = col.red; }
       { name = "ino"; text = ""; fg = col.blue; }
-      { name = "js"; text = ""; fg = col.yellow; }
-      { name = "rs"; text = ""; fg = col.red; }
+      { name = "js"; text = ""; fg = col.yellow; } # gross
+      { name = "ts"; text = ""; fg = col.blue; }
+      { name = "rs"; text = ""; fg = col.red; } # meoaw :3
       { name = "py"; text = ""; fg = col.yellow; }
       { name = "lua"; text = "󰢱"; fg = col.blue; }
       { name = "zig"; text = ""; fg = col.yellow; }

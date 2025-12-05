@@ -19,7 +19,7 @@ in {
     mgr = {
       border_symbol = " ";
       hovered.reversed = true;
-      preview_hovered.underline = true;
+      preview_hovered.reversed = true;
 
       cwd.fg = col.fg;
 
@@ -37,25 +37,30 @@ in {
         italic = true;
       };
 
+      # TODO can i use ▌ for the symbol
       marker_copied = {
         fg = col.green;
+        bold = true;
         # bg = col.green;
       };
 
       marker_cut = {
         fg = col.red;
+        bold = true;
         # bg = col.red;
       };
 
       # visual mode
       marker_marked = {
         fg = col.purple;
+        bold = true;
         # bg = col.purple;
       };
 
       # individual select
       marker_selected = {
         fg = col.blue;
+        bold = true;
         # bg = col.blue;
       };
 
