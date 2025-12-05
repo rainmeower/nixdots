@@ -9,7 +9,6 @@
     ../../kanso/hm/ncmpcpp_kanso.nix
     ../../kanso/hm/starship_kanso.nix
     ../../kanso/hm/nushell_kanso.nix
-    ../../kanso/hm/yazi_kanso.nix
     ../../kanso/hm/niri_kanso.nix
   ];
 }

@@ -13,7 +13,6 @@
     ./nushell_kanso.nix
     ./starship_kanso.nix
     ./walker_kanso.nix
-    ./yazi_kanso.nix
     ./yazi_text_preview_kanso.nix
   ];
 }
