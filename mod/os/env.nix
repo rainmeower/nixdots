@@ -3,7 +3,7 @@
   config,
   ...
 }: let
-    inherit (config.home-manager.users.${username}.xdg.userDirs.extraConfig)
+    inherit (config.hm.xdg.userDirs.extraConfig)
       XDG_CONFIG_HOME
       XDG_DATA_HOME
       XDG_CACHE_HOME

@@ -14,7 +14,7 @@
     ./services.nix
 
     ./hm.nix
-    (lib.mkAliasOptionModule  [ "hm" ] [ "home-manager" "users" username ])
+    (lib.mkAliasOptionModule [ "hm" ] [ "home-manager" "users" username ])
 
     ../../mod/os/services/audio.nix
     ../../mod/os/cleanup.nix

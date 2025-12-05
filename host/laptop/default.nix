@@ -14,7 +14,7 @@
     ./hardware-configuration.nix
 
     ./hm.nix
-    (lib.mkAliasOptionModule [ "home-manager" "users" username ] [ "hm" ])
+    (lib.mkAliasOptionModule [ "hm" ] [ "home-manager" "users" username ])
 
     ./packages.nix
     ./services.nix
