@@ -1,4 +1,5 @@
-
+- rofi-systemd
+https://github.com/DreamMaoMao/fg.yazi
 - fix ytsub audio
 
 - nord theme

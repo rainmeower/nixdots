@@ -237,14 +237,16 @@ in {
 
       woman = "man";
 
-      cel = "Celeste"; # goated game
+      fuck = "sudo !!";
+
+      celeste = "Celeste"; # goated game
 
       q = "exit";
       ":q" = "exit";
       ":x" = "exit";
 
       # k = "pkill";
-      "-" = "cd -";
+      # "-" = "cd -"; # FIXME
       fg = "job unfreeze";
 
       sudo = "sudo -k"; # prompt every time
