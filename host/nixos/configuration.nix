@@ -2,7 +2,7 @@
   pkgs,
   username,
   ...
-}: {
+}:{
   networking.hostName = "nixos";
 
   users.users.${username} = {

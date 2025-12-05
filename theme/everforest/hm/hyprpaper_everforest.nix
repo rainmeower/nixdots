@@ -3,7 +3,7 @@
   lib,
   theme,
   ...
-}: {
+}:{
   config = lib.mkIf (theme == "everforest_hard" || theme == "everforest_medium" || theme == "everforest_soft") {
 
     services.hyprpaper = {

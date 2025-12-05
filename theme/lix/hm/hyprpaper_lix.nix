@@ -3,7 +3,7 @@
   lib,
   theme,
   ...
-}: {
+}:{
   config = lib.mkIf (theme == "lix") {
 
     services.hyprpaper = {

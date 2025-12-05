@@ -2,7 +2,7 @@
   lib,
   theme,
   ...
-}: {
+}:{
   config = lib.mkIf (theme == "everforest_medium") {
 
     programs.nixvim.colorschemes.everforest = {

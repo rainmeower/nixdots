@@ -1,7 +1,7 @@
 {
   username,
   ...
-}: {
+}:{
   systemd.user.tmpfiles.rules = [
     # trash
     "d /home/${username}/.local/share/Trash - - - 14d"

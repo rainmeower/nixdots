@@ -1,7 +1,7 @@
 {
   pkgs,
   ...
-}: {
+}:{
   services.kanata = {
     enable = true;
     package = pkgs.kanata-with-cmd;

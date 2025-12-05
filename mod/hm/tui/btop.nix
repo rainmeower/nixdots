@@ -2,7 +2,7 @@
   pkgs,
   rounding,
   ...
-}: {
+}:{
   programs.btop = {
     enable = true;
     package = pkgs.btop-rocm; # btop with gpu support

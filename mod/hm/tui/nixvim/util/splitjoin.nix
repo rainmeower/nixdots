@@ -1,7 +1,7 @@
 {
   lib,
   ...
-}: {
+}:{
   programs.nixvim.plugins.mini-splitjoin = {
     enable = true;
 

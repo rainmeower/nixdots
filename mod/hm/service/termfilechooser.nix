@@ -2,7 +2,7 @@
 {
   pkgs,
   ...
-}: {
+}:{
   systemd.user.services.xdg-desktop-portal-termfilechooser = {
     Unit = {
       Description = "Portal service (terminal file chooser implementation)";

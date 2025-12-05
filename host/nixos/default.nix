@@ -2,7 +2,7 @@
   lib,
   username,
   ...
-}: {
+}:{
   imports = [
     ./boot.nix
     ./options.nix

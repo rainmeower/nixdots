@@ -4,7 +4,7 @@
   font_name,
   pkgs,
   ...
-}: {
+}:{
   # home.packages = with pkgs; [
   #   libnotify
   # ];

@@ -2,7 +2,7 @@
   config,
   os_config,
   ...
-}: {
+}:{
   programs.yazi.settings = {
     mgr = {
       ratio   = [ 0 3 4 ];

@@ -2,7 +2,7 @@
   lib,
   config,
   ...
-}: {
+}:{
   config = lib.mkIf (lib.hasPrefix "kanso" config.theme) {
     config.palette = {
       accent = "#7fb4ca";

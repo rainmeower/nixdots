@@ -3,7 +3,7 @@
   config,
   pkgs,
   ...
-}: {
+}:{
   config = lib.mkMerge [
     (lib.mkIf (config.font == "mononoki") {
       font_name = "Mononoki Nerd Font Mono";

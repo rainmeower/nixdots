@@ -3,7 +3,7 @@
   userDirs,
   home,
   ...
-}: {
+}:{
   imports = [
     inputs.slippi.homeManagerModules.default
 

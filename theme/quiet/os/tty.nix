@@ -2,7 +2,7 @@
   lib,
   config,
   ...
-}: {
+}:{
   config = lib.mkIf (config.theme == "quiet") {
     console.colors = [
       "090E13" # bg

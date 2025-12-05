@@ -1,7 +1,7 @@
 {
   lib,
   username,
-}: {
+}:{
   imports = [
     # ./kanata.nix
     ../../mod/os/cleanup.nix

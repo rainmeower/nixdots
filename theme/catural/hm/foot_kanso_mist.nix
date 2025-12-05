@@ -2,7 +2,7 @@
   lib,
   theme,
   ...
-}: {
+}:{
   config = lib.mkIf (theme == "kanso_mist") {
 
     programs.foot = {

@@ -1,7 +1,7 @@
 {
   pkgs,
   ...
-}: {
+}:{
 # FIXME
 #   programs.nixvim = {
 #     extraPlugins = with pkgs.vimPlugins; [

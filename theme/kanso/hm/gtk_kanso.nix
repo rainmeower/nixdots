@@ -3,7 +3,7 @@
   theme,
   pkgs,
   ...
-}: {
+}:{
   config = lib.mkIf (lib.hasPrefix "kanso" theme) {
 
     gtk = {

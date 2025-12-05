@@ -1,7 +1,7 @@
 {
   font_name,
   ...
-}: {
+}:{
   # programs.tofi = {
   #   enable = true;
   #   settings = {

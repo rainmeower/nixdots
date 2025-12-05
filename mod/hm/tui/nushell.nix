@@ -244,7 +244,7 @@ in {
       ":x" = "exit";
 
       # k = "pkill";
-      back = "cd -";
+      "-" = "cd -";
       fg = "job unfreeze";
 
       sudo = "sudo -k"; # prompt every time

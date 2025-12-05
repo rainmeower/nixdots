@@ -1,7 +1,7 @@
 {
   monitor,
   ...
-}: {
+}:{
   programs.niri.settings.outputs = {
     "DP-1" = {
       enable = true;

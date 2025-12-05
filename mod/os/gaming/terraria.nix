@@ -3,7 +3,7 @@
   username,
   home-manager,
   ...
-}: {
+}:{
   # services.terraria = {
   #   enable = true;
   #   port = 7777;

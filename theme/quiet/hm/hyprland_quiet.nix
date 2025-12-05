@@ -3,7 +3,7 @@
   theme,
   wm,
   ...
-}: {
+}:{
   config = lib.mkIf (theme == "quiet" && wm == "hyprland") {
 
 

@@ -3,7 +3,7 @@
   rounding,
   userDirs,
   ...
-}: {
+}:{
   programs.ncmpcpp = {
     enable = true;
     bindings = [

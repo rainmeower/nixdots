@@ -2,7 +2,7 @@
   lib,
   config,
   ...
-}: {
+}:{
   config = lib.mkIf (lib.hasPrefix "kanso" config.theme) {
     console.colors = [
       "090E13" # bg

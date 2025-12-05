@@ -3,7 +3,7 @@
   username,
   config,
   ...
-}: {
+}:{
   imports = [
     ./icons.nix
     ./input.nix
@@ -34,8 +34,7 @@
         sudo 
       ;
 
-      # TODO packages
-      # compress = ./plugins/compress.yazi;
+      # TODO check nixpkgs for these later
       gvfs = ./plugins/gvfs.yazi;
       file-actions = ./plugins/gvfs.yazi;
       pref-by-location = ./plugins/pref-by-location.yazi;

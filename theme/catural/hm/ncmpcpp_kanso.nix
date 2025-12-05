@@ -2,7 +2,7 @@
   lib,
   theme,
   ...
-}: {
+}:{
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
 
     programs.ncmpcpp.settings = {

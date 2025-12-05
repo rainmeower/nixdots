@@ -2,7 +2,7 @@
   lib,
   theme,
   ...
-}: {
+}:{
   config = lib.mkIf (theme == "lix") {
     programs.foot = {
       enable = true;

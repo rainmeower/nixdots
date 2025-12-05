@@ -2,7 +2,7 @@
   flake_dir,
   userDirs,
   ...
-}: {
+}:{
   programs.yazi = {
     keymap = {
       # mgr {{{

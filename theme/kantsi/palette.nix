@@ -2,7 +2,7 @@
   lib,
   config,
   ...
-}: {
+}:{
   config = lib.mkIf (config.theme == "kantsi") {
     config.palette = {
       accent = "#7fb4ca";

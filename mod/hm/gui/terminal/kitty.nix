@@ -1,7 +1,7 @@
 {
   font_name,
   ...
-}: {
+}:{
   programs.kitty = {
     enable = true;
     font.name = font_name;

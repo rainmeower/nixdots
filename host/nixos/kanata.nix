@@ -23,7 +23,7 @@
   lib,
   username,
   ...
-}: {
+}:{
   nixpkgs.overlays = [# {{{
     (final: prev: {
 

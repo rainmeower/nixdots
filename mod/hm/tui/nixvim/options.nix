@@ -2,7 +2,7 @@
   rounding,
   flake_dir,
   ...
-}: {
+}:{
   programs.nixvim.opts = {
     termguicolors = true;
 

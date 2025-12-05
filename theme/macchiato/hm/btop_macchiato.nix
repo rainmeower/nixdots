@@ -2,7 +2,7 @@
   lib,
   theme,
   ...
-}: {
+}:{
   config = lib.mkIf (theme == "macchiato" || theme == "blacchiato") {
 
   home.file.".config/btop/themes/btop.theme".text = /* ini */ ''

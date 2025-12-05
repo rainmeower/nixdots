@@ -1,7 +1,7 @@
 {
   pkgs,
   ...
-}: {
+}:{
   boot = {
     loader = {
       timeout = 2;

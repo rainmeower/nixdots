@@ -2,7 +2,7 @@
   lib,
   theme,
   ...
-}: {
+}:{
   config = lib.mkIf (theme == "blacchiato") {
 
     wayland.windowManager.hyprland = {

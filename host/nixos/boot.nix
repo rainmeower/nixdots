@@ -2,7 +2,7 @@
   pkgs,
   config,
   ...
-}: {
+}:{
 # TODO limine
   boot = {
     loader = {
