@@ -17,6 +17,7 @@
 #                   󰞗 󰞖 󰞙 󰞘
 #           .       󱁐
 # }}}
+
 {
   pkgs,
   lib,
@@ -225,6 +226,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
   ;; TODO convert rust ints to c99 ints
   ;; TODO ; -> . (for vim)
   magic (switch ;; {{{
+
 
     ;; flake.nix
     ((and
@@ -531,13 +533,19 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; <=
     ;; ((key-history , 1)) (macro =) break
     ;; ];
-    ((key-history ] 1)) (macro ;) break
+    ((key-history ] 1)) ; break
 
     ;; auto ; for {}
     ((key-history { 1)) (macro S-] ; left left) break
 
     ;; ).
-    ((key-history 0 1)) (macro .) break
+    ((key-history 0 1)) . break
+
+    ;; ).  (after enter)
+    ((and
+      (key-history 0 2)
+      (input-history real ent 2)
+    )) (macro ent .) break
 
     ((and
       (key-history 0 2)
@@ -1127,7 +1135,7 @@ i end
 (defchordsv2 ;; {{{
   ;; (r spc) rsft 18 first-release (over sup melee)
 
-  (l o u) (macro S-z S-z) 18 all-released (over sup melee) ;; vim save and quit
+  (l o u) (macro S-z S-z) 18 all-released (over sup melee mods) ;; vim save and quit
   (h a e) (macro C-S-x) 18 all-released (over sup melee) ;; vim save
   (f15 a) @cw 16 all-released (over sup melee)
   (t g) caps 16 all-released (over sup melee)
@@ -1149,7 +1157,7 @@ i end
   (  f   w) `   20 all-released (over sup melee)
   (    d w) S-8 15 all-released (over sup melee)
   
-  (l o    ) S-' 14 all-released (over sup melee mods)
+  ;; (l o    ) S-' 14 all-released (over sup melee mods)
   (  o u  ) S-1 13 all-released (over sup melee mods)
   (    u .) S-6 15 all-released (over sup melee mods)
 
@@ -1158,7 +1166,7 @@ i end
   (  s   c) S-` 16 all-released (over sup melee)
   ;; (    t c) [   14 all-released (over sup melee)
 
-  ;; (h a    ) ]   14 all-released (over sup melee)
+  (h a    ) S-' 14 all-released (over sup melee)
   (h   e  ) del 15 all-released (over sup melee)
   (  a e  ) +   14 all-released (over sup melee)
   ;; (    e i) S-. 14 all-released (over sup melee)
