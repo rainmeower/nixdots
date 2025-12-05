@@ -19,7 +19,6 @@
       "input"
       "uinput"
       "ssh"
-      "terraria"
     ];
   };
 

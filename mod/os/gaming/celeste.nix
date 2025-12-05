@@ -4,7 +4,7 @@
   username,
   ...
 }: let
-  celeste_dir = config.home-manager.users.${username}.xdg.userDirs.extraConfig.XDG_GAMES_DIR + "/celeste";
+  celeste_dir = config.hm.xdg.userDirs.extraConfig.XDG_GAMES_DIR + "/celeste";
 in {
   environment.systemPackages = with pkgs; [
     (celestegame.override {

@@ -14,7 +14,7 @@
   #   inputs.tmodloader.nixosModules.tmodloader
   # ];
   #
-  # home-manager.users.users.${username}.extraGroups = [ "terraria" ];
+  # users.users.${username}.extraGroups = [ "terraria" ];
   #
   # # https://github.com/andOrlando/nix-tmodloader
   # services.tmodloader = {

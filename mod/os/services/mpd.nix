@@ -4,7 +4,7 @@
   config,
   ...
 }: let
-  inherit (config.home-manager.users.${username}.xdg) userDirs;
+  inherit (config.hm.xdg) userDirs;
 in {
   services.mpd = {
     enable = true;
