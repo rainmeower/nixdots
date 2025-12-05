@@ -21,20 +21,21 @@
 
     plugins = {
       inherit (pkgs.yaziPlugins)
-        git
-        sudo 
-        no-status 
-        starship 
-        restore 
         chmod 
-        piper 
-        mount 
+        compress
         dupes 
+        git
         jump-to-char
+        mount 
+        no-status 
+        piper 
+        restore 
+        starship 
+        sudo 
       ;
 
       # TODO packages
-      compress = ./plugins/compress.yazi;
+      # compress = ./plugins/compress.yazi;
       gvfs = ./plugins/gvfs.yazi;
       file-actions = ./plugins/gvfs.yazi;
       pref-by-location = ./plugins/pref-by-location.yazi;

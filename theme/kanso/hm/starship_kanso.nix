@@ -4,8 +4,6 @@
   ...
 }: {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
-
-
     programs.starship = {
       settings = {
         character = {

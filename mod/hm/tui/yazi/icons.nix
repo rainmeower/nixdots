@@ -78,12 +78,11 @@ in {
       { name = "glsl"; text = "󰓠"; fg = col.blue; } # sunglasses because they shade ur eyes like shaders lmao
 
 
-      { name = "nix"; text = "󱄅"; fg = col.blue; }
+      { name = "nix"; text = "󱄅"; fg = col.blue; } # this file !!!
       { name = "css"; text = ""; fg = col.blue; }
       { name = "html"; text = ""; fg = col.orange; }
-      { name = "toml"; text = ""; fg = col.red; }
       { name = "jar"; text = ""; fg = col.orange; }
-      { name = "ml"; text = ""; fg = col.orange; }
+      { name = "ml";  text = ""; fg = col.orange; }
       { name = "mli"; text = ""; fg = col.orange; }
       { name = "swift"; text = ""; fg = col.red; }
       { name = "kt"; text = "󱈙"; fg = col.purple; }
@@ -93,10 +92,10 @@ in {
       { name = "ts"; text = ""; fg = col.blue; }
       { name = "rs"; text = ""; fg = col.red; } # meoaw :3
       { name = "py"; text = ""; fg = col.yellow; }
-      { name = "lua"; text = "󰢱"; fg = col.blue; }
-      { name = "zig"; text = ""; fg = col.yellow; }
       { name = "hs"; text = ""; fg = col.purple; }
       { name = "git"; text = ""; fg = col.orange; }
+      { name = "lua"; text = "󰢱"; fg = col.blue; }
+      { name = "zig"; text = ""; fg = col.yellow; }
       { name = "el"; text = ""; fg = col.purple; }
 
       # }}}
@@ -141,26 +140,30 @@ in {
       { name = "yaml"; text = ""; }
       { name = "yml";  text = ""; }
       { name = "json"; text = ""; }
+      { name = "toml"; text = ""; }
       { name = "xml";  text = "󰗀"; }
 
+      { name = "dump"; text = ""; }
       { name = "db";  text = ""; }
       { name = "sql"; text = ""; }
       { name = "sqlite";  text = ""; }
       { name = "sqlite3"; text = ""; }
-      { name = "dump"; text = ""; }
 
       # valve {{{
-      { name = "bsp";  text = ""; }
-      { name = "vmf";  text = ""; }
-      { name = "vmx";  text = ""; }
+      { name = "bsp"; text = ""; }
+      { name = "vmf"; text = ""; }
+      { name = "vmx"; text = ""; }
       # }}}
 
       { name = "lock"; text = ""; }
       { name = "dat";  text = ""; }
       { name = "txt";  text = ""; } # override default
+
       { name = "md";   text = ""; }
+      { name = "mdx";  text = ""; }
       { name = "org";  text = ""; fg = col.green; }
       { name = "norg"; text = ""; fg = col.blue; }
+
       { name = "iso";  text = ""; }
       { name = "qcow2"; text = ""; }
 
