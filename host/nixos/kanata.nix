@@ -228,6 +228,12 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
   magic (switch ;; {{{
 
 
+    ;; ).  (after enter)
+    ((and
+      ;; (key-history 0 2)
+      (input-history real ent 2)
+    )) (macro ent .) break
+
     ;; flake.nix
     ((and
       (key-history f 5)
@@ -540,12 +546,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;; ).
     ((key-history 0 1)) . break
-
-    ;; ).  (after enter)
-    ((and
-      (key-history 0 2)
-      (input-history real ent 2)
-    )) (macro ent .) break
 
     ((and
       (key-history 0 2)
