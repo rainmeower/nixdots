@@ -9,10 +9,14 @@
     bindings = {
       h = "seek -5";
       i = "seek 5";
+      a = "add volume 5";
+      e = "add volume -5";
+
       __unkeyed-1 = "sponsorblock/set_segment";
       __unkeyed-2 = "sponsorblock/submit_segment";
       __unkeyed-3 = "sponsorblock/upvote_segment";
       __unkeyed-4 = "sponsorblock/downvote_segment";
+      s = "ignore";
     };
 
     config = {
@@ -42,16 +46,12 @@
         name = "showcqt";
         quality = "veryhigh";
         height = 9; # 16:9
-
       };
+
       uosc = {
         timeline_style = "line"; # line, bar
         timeline_line_width = 2; # width in px
-        # Timeline size when fully expanded, in pixels, 0 to disable
         timeline_size = 30;
-        # Comma separated states when element should always be fully visible.
-        # Available: paused, audio, image, video, idle, windowed, fullscreen
-        # timeline_persistency = 
 
         # Top border of background color to help visually separate timeline from video
         timeline_border = 1;
