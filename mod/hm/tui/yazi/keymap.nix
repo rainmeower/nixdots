@@ -172,13 +172,13 @@
       }
 
       {
-        on = "H";
+        on = "<C-c>";
         run = "back";
         desc = "Go back to the previous directory";
       }
 
       {
-        on = "I";
+        on = "<C-t>";
         run = "forward";
         desc = "Go forward to the next directory";
       }
@@ -240,7 +240,6 @@
         desc = "up in preview";
       }
 
-# Spotting
       {
         on = "<Tab>";
         run = "spot";
@@ -248,35 +247,33 @@
       }
 
 
-# Operation
       {
         on = "<Enter>";
         run = "open";
-        desc = "Open selected files";
+        desc = "open";
       }
-
       {
         on = "<S-Enter>";
         run = "open --interactive";
-        desc = "Open selected files interactively";
+        desc = "open interactively";
       }
 
       {
         on = "y";
         run = [ "shell -- for path in \"$@\"; do echo \"file://$path\"; done | wl-copy -t text/uri-list" "yank" ];
-        desc = "Yank";
+        desc = "yank";
       }
 
       {
         on = "u";
         run = "yank --cut";
-        desc = "Cut";
+        desc = "cut";
       }
 
       {
         on = "l";
         run = "paste";
-        desc = "Paste";
+        desc = "paste";
       }
 
 # { on = "f"         run = "paste --force";               desc = "Paste yanked files (overwrite if the destination exists)"; }
@@ -284,61 +281,61 @@
       {
         on = [ "g" "c" ];
         run = "plugin chmod";
-        desc = "Change mode";
+        desc = "chmod";
       }
 
       {
         on = [ "g" "m" ];
         run = "plugin mount";
-        desc = "Mount";
+        desc = "mount";
       }
 
       {
         on = [ "g" "l" "l" ];
         run = "link";
-        desc = "Symlink absolute";
+        desc = "symlink absolute";
       }
 
       {
         on = [ "g" "l" "r" ];
         run = "link --relative";
-        desc = "Symlink relative";
+        desc = "symlink relative";
       }
 
       {
         on = [ "g" "l" "h" ];
         run = "hardlink";
-        desc = "Hardlink";
+        desc = "hardlink";
       }
 
       {
         on = "X";
         run = "unyank";
-        desc = "Cancel the yank status";
+        desc = "cancel the yank status";
       }
 
       {
         on = "o";
         run = "remove";
-        desc = "Trash selected files";
+        desc = "trash selected files";
       }
 
       {
         on = "t";
         run = "create";
-        desc = "Create a file (ends with / for directories)";
+        desc = "create file";
       }
 
       {
         on = "s";
         run = "rename --cursor=before_ext";
-        desc = "Rename selected file(s)";
+        desc = "rename";
       }
 
       {
         on = ":";
         run = "shell --interactive";
-        desc = "Run a shell command";
+        desc = "run shell command";
       }
 
 # { on = ";";         run = "shell --block --interactive"; desc = "Run a shell command (block until finishes)"; }
@@ -346,39 +343,38 @@
       {
         on = ".";
         run = "hidden toggle";
-        desc = "Toggle the visibility of hidden files";
+        desc = "toggle hidden visibility";
       }
 
       {
         on = "k";
         run = "search --via=fd";
-        desc = "Search files by name via fd";
+        desc = "fd";
       }
 
       {
         on = "K";
         run = "search --via=rg";
-        desc = "Search files by content via ripgrep";
+        desc = "ripgrep";
       }
 
       {
         on = "<C-s>";
         run = "escape --search";
-        desc = "Cancel the ongoing search";
+        desc = "cancel search";
       }
 
       {
         on = "c";
         run = "plugin zoxide";
-        desc = "jump to a directory via zoxide";
+        desc = "zoxide";
       }
 
       {
         on = "C";
         run = "plugin fzf";
-        desc = "jump to a file/directory via fzf";
+        desc = "fzf";
       }
-
 
       {
         on   = ["g" "s"];
@@ -905,13 +901,6 @@
 
       # }}}
 
-    {
-      on = "<S-7>";
-      run = "tasks_show";
-      desc = "task manager";
-    }
-
-
       # sudo {{{
       {
         on = ["S" "l" ];
@@ -966,10 +955,6 @@
       spot.keymap = [
       {
         on = "<Esc>";
-        run = "close";
-      }
-      {
-        on = "<C-c>";
         run = "close";
       }
       {

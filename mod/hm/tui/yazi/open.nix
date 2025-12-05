@@ -32,37 +32,35 @@
         use = [ "krita" "reveal" ];
       }
 
-      # Folder
+      # directory
       {
         name = "*/";
         use = [ "edit" "open" "reveal" ];
       }
 
-      # Text
       {
         mime = "text/*";
         use = [ "edit" "reveal" ];
       }
 
-      # Image
       {
         mime = "image/*";
         use = [ "open" "reveal" ];
       }
 
-      # Media
+      # media
       {
         mime = "{audio; ideo}/*";
         use = [ "play" "reveal" ];
       }
 
-      # Archive
+      # archive
       {
         mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}";
         use = [ "extract" "reveal" ];
       }
 
-      # JSON
+      # json
       {
         mime = "application/{json, djson}";
         use = [ "edit" "reveal" ];
@@ -73,13 +71,13 @@
         use = [ "edit" "reveal" ];
       }
 
-      # Empty file
+      # empty file
       {
         mime = "inode/empty";
         use = [ "edit" "reveal" ];
       }
 
-      # Fallback
+      # fallback
       {
         name = "*";
         use = [ "open" "reveal" ];

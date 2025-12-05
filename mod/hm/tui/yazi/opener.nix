@@ -40,11 +40,12 @@
 
     play = [
     { # FIXME
-      run = "mpv --force-window --resume-playback=no \"$@\"";
+      run = ''mpv --force-window --resume-playback=no "$@"'';
       orphan = true;
       for = "unix";
     }
-    { run = "mediainfo \"$1\"; echo 'Press enter to exit'; read _";
+    {
+      run = ''mediainfo "$1"; echo 'Press enter to exit'; read _'';
       block = true;
       desc = "Show media info";
       for = "unix";
@@ -58,6 +59,7 @@
       for = "unix";
     }
     ];
+
     krita = [
     {
       run = "krita \"$@\"";
@@ -65,6 +67,7 @@
       for = "unix";
     }
     ];
+
     inkscape = [
     {
       run = "inkscape \"$@\"";
