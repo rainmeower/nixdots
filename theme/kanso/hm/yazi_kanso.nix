@@ -176,10 +176,6 @@ in {
           { name = "readme.txt"; text = "󰂺"; fg = col.fg; }
           # { name = "README"; text = "󰂺"; fg = col.fg; }
           # { name = "README.md"; text = "󰂺"; fg = col.fg; }
-          { name = ".git-blame-ignore-revs"; text = ""; fg = col.orange2_sat; }
-          { name = ".gitattributes"; text = ""; fg = col.orange2_sat; }
-          { name = ".gitignore"; text = ""; fg = col.orange2_sat; }
-          { name = ".gitmodules"; text = ""; fg = col.orange2_sat; }
           { name = "makefile"; text = "󱌣"; fg = col.fg; }
           { name = "config"; text = ""; fg = col.fg; }
         ];
@@ -216,7 +212,6 @@ in {
           { name = "bat"; text = ""; fg = col.red2; }
           { name = "exe"; text = ""; fg = col.red2; }
           { name = "dll"; text = "󱉟"; fg = col.red2; }
-          { name = "kra"; text = ""; fg = col.pink; }
           { name = "org"; text = ""; fg = col.green; }
 
           { name = "el"; text = ""; fg = col.violet; }

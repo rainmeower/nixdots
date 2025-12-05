@@ -1,3 +1,4 @@
+# TODO better way to format this stuff
 {
   self,
   theme,
@@ -14,6 +15,18 @@ in {
     files = [
       { name = "config"; text = ""; }
       { name = "settings"; text = ""; }
+
+      # git {{{
+      { name = ".git-blame-ignore-revs"; text = ""; fg = col.orange; }
+      { name = ".gitattributes"; text = ""; fg = col.orange; }
+      { name = ".gitignore"; text = ""; fg = col.orange; }
+      { name = ".gitmodules"; text = ""; fg = col.orange; }
+      { name = "COMMIT_EDITMSG"; text = ""; fg = col.orange; }
+      { name = "HEAD"; text = ""; fg = col.orange; }
+      { name = "description"; text = ""; fg = col.orange; }
+      { name = "index"; text = ""; fg = col.orange; }
+      { name = "packed-refs"; text = ""; fg = col.orange; }
+      # }}}
     ];
 
 
@@ -44,6 +57,7 @@ in {
       # }}}
 
 
+
       { name = "ttf"; text = ""; }
       { name = "otf"; text = ""; }
 
@@ -63,9 +77,13 @@ in {
       { name = "sqlite";  text = ""; }
       { name = "sqlite3"; text = ""; }
       { name = "dump"; text = ""; }
+
+      # valve {{{
       { name = "bsp";  text = ""; }
       { name = "vmf";  text = ""; }
       { name = "vmx";  text = ""; }
+      # }}}
+
       { name = "lock"; text = ""; }
       { name = "dat";  text = ""; }
       { name = "txt";  text = ""; }
@@ -77,7 +95,7 @@ in {
       { name = "kra"; text = ""; fg = col.pink; }
       { name = "kra~"; text = ""; } # krita autosave
 
-      { name = ["theme" "themes"]; text = "󰏘"; fg = col.accent; }
+      { name = "theme"; text = "󰏘"; fg = col.accent; }
 
       # archive {{{
       { name = "7z";  text = "󰗄"; fg = col.yellow; }
