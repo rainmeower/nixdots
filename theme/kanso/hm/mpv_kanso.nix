@@ -8,11 +8,16 @@ let
 in {
   config = lib.mkIf (lib.hasPrefix "kanso" theme) {
     programs.mpv.config = {
-      background-color = col.bg_trans;
-      osd-back-color = col.bg;
-      osd-border-color = col.bg;
-      osd-color = col.fg;
-      osd-shadow-color = col.bg;
+      # background-color = col.bg;
+      # osd-back-color = col.bg;
+      # osd-border-color = col.bg;
+      # osd-color = col.fg;
+      # osd-shadow-color = col.bg;
+
+      background-color = "#00000000";
+      osd-back-color = "#00000000";
+      osd-border-color = "#00000000";
+      osd-shadow-color = "#00000000";
 
       script-opts-append = [ # TODO col without # symbol
         "stats-border_color=30201e"
@@ -20,7 +25,7 @@ in {
         "stats-plot_bg_border_color=f8bdb7"
         "stats-plot_bg_color=30201e"
         "stats-plot_color=f8bdb7"
-        "uosc-color=foreground=c5c9c7,foreground_text=c5c9c7,background=090e1300,background_text=c5c9c7,curtain=090e13,success=98bb6c,error=e46876"
+        "uosc-color=foreground=c5c9c7,foreground_text=c5c9c7,background=090e13,background_text=c5c9c7,curtain=090e13,success=98bb6c,error=e46876"
       ];
     };
   };
