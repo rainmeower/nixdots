@@ -63,6 +63,7 @@
     ./util/neotest.nix
     ./util/repeat.nix
     ./util/surround.nix
+    ./util/code-action.nix
     ./util/telescope.nix
     ./util/treesitter-textobjects.nix
     ./util/treesitter.nix

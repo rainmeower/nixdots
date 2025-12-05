@@ -23,6 +23,7 @@
     ../../mod/os/gaming/celeste.nix
     ../../mod/os/gaming/games.nix
     ../../mod/os/font.nix
+    ../../mod/os/nix-ld.nix
     ../../mod/os/fontconfig.nix
     ../../mod/os/services/gamemode.nix
     ../../mod/os/services/preload.nix

@@ -544,12 +544,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; ).  (after enter)
     ((and
       ;; (key-history 0 2)
-      (key-history ent 1)
-    )) . break
-
-    ;; ).  (after enter)
-    ((and
-      ;; (key-history 0 2)
       (input-history real ent 2)
     )) (macro ent .) break
 
