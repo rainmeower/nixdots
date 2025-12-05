@@ -1,4 +1,8 @@
 {
+  lib,
+  username,
+  ...
+}: {
   imports = [
     ./boot.nix
     ./options.nix
@@ -6,9 +10,11 @@
     ./configuration.nix
     ./hardware-configuration.nix
     ./kanata.nix
-    ./hm.nix
     ./packages.nix
     ./services.nix
+
+    ./hm.nix
+    (lib.mkAliasOptionModule  [ "hm" ] [ "home-manager" "users" username ])
 
     ../../mod/os/services/audio.nix
     ../../mod/os/cleanup.nix

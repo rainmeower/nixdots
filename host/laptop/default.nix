@@ -1,4 +1,7 @@
 {
+  lib,
+  username,
+}: {
   imports = [
     # ./kanata.nix
     ../../mod/os/cleanup.nix
@@ -9,7 +12,10 @@
     ./boot.nix
     ./configuration.nix
     ./hardware-configuration.nix
+
     ./hm.nix
+    (lib.mkAliasOptionModule [ "home-manager" "users" username ] [ "hm" ])
+
     ./packages.nix
     ./services.nix
 #    ../../theme/blacchiato/os
