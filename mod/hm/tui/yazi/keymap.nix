@@ -806,7 +806,13 @@
 
       {
         on = [ "<Space>" "1" ];
-        run = "cd /run/media/meow/";
+        run = "cd /mnt/meow";
+        desc = "drive #1";
+      }
+
+      {
+        on = [ "<Space>" "2" ];
+        run = "cd /mnt/small";
         desc = "drive #1";
       }
     # }}}
@@ -899,11 +905,11 @@
 
       # }}}
 
-    # {
-    #   on = [];
-    #   run = "tasks_show";
-    #   desc = "Show task manager";
-    # }
+    {
+      on = "<S-7>";
+      run = "tasks_show";
+      desc = "task manager";
+    }
 
 
       # sudo {{{
