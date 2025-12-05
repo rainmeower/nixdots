@@ -465,84 +465,84 @@
     # buffer jump by number {{{
     {
       key = "<F1>";
-      action = ":LualineBuffersJump 1";
+      action = ":LualineBuffersJump 1<cr>";
       mode = [ "n" "v" "x" "i" ];
       options.silent = true;
     }
 
     {
       key = "<F2>";
-      action = ":LualineBuffersJump 2";
+      action = ":LualineBuffersJump 2<cr>";
       mode = [ "n" "v" "x" "i" ];
       options.silent = true;
     }
 
     {
       key = "<F3>";
-      action = ":LualineBuffersJump 3";
+      action = ":LualineBuffersJump 3<cr>";
       mode = [ "n" "v" "x" "i" ];
       options.silent = true;
     }
 
     {
       key = "<F4>";
-      action = ":LualineBuffersJump 4";
+      action = ":LualineBuffersJump 4<cr>";
       mode = [ "n" "v" "x" "i" ];
       options.silent = true;
     }
 
     {
       key = "<F5>";
-      action = ":LualineBuffersJump 5";
+      action = ":LualineBuffersJump 5<cr>";
       mode = [ "n" "v" "x" "i" ];
       options.silent = true;
     }
 
     {
       key = "<F6>";
-      action = ":LualineBuffersJump 6";
+      action = ":LualineBuffersJump 6<cr>";
       mode = [ "n" "v" "x" "i" ];
       options.silent = true;
     }
 
     {
       key = "<F7>";
-      action = ":LualineBuffersJump 7";
+      action = ":LualineBuffersJump 7<cr>";
       mode = [ "n" "v" "x" "i" ];
       options.silent = true;
     }
 
     {
       key = "<F8>";
-      action = ":LualineBuffersJump 8";
+      action = ":LualineBuffersJump 8<cr>";
       mode = [ "n" "v" "x" "i" ];
       options.silent = true;
     }
 
     {
       key = "<F9>";
-      action = ":LualineBuffersJump 9";
+      action = ":LualineBuffersJump 9<cr>";
       mode = [ "n" "v" "x" "i" ];
       options.silent = true;
     }
 
     {
       key = "<F10>";
-      action = ":LualineBuffersJump 10";
+      action = ":LualineBuffersJump 10<cr>";
       mode = [ "n" "v" "x" "i" ];
       options.silent = true;
     }
 
     {
       key = "<F11>";
-      action = ":LualineBuffersJump 11";
+      action = ":LualineBuffersJump 11<cr>";
       mode = [ "n" "v" "x" "i" ];
       options.silent = true;
     }
 
     {
       key = "<F12>";
-      action = ":LualineBuffersJump 12";
+      action = ":LualineBuffersJump 12<cr>";
       mode = [ "n" "v" "x" "i" ];
       options.silent = true;
     }
