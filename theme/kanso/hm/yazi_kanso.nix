@@ -2,6 +2,11 @@
 # .appimage
 # .deb
 # .torrent
+# godot files
+# .glsl
+# .h
+# .log
+
 {
   lib,
   theme,
@@ -157,10 +162,6 @@ in {
 
       };
       icon = {
-        dirs = [
-          { name = "*"; text = ""; }
-        ];
-
         files = [
           { name = ".bash_profile"; text = ""; fg = col.fg; }
           { name = ".bashrc"; text = ""; fg = col.fg; }
@@ -206,24 +207,7 @@ in {
           { name = "zig"; text = ""; fg = col.yellow_sat; }
           { name = "hs"; text = ""; fg = col.violet; }
           { name = "git"; text = ""; fg = col.orange2_sat; }
-          { name = "png"; text = ""; fg = col.yellow; }
-          { name = "webp"; text = ""; fg = col.yellow; }
-          { name = "jpg"; text = ""; fg = col.yellow; }
-          { name = "jpeg"; text = ""; fg = col.yellow; }
-          { name = "gif"; text = ""; fg = col.yellow; }
-          { name = "ico"; text = ""; fg = col.yellow; }
-          { name = "svg"; text = "󰜡"; fg = col.yellow; }
-          { name = "vtf"; text = ""; fg = col.yellow; }
-          { name = "vmt"; text = ""; fg = col.fg; }
-          { name = "mp4"; text = ""; fg = col.violet; }
-          { name = "webm"; text = ""; fg = col.violet; }
-          { name = "mkv"; text = ""; fg = col.violet; }
-          { name = "mov"; text = ""; fg = col.violet; }
-          { name = "mp3"; text = ""; fg = col.violet; }
-          { name = "ogg"; text = ""; fg = col.violet; }
-          { name = "opus"; text = ""; fg = col.violet; }
-          { name = "flac"; text = ""; fg = col.violet; }
-          { name = "wav"; text = "󱑽"; fg = col.violet; }
+
           { name = "nu"; text = ""; fg = col.green; }
           { name = "sh"; text = ""; fg = col.green; }
           { name = "bash"; text = ""; fg = col.green; }

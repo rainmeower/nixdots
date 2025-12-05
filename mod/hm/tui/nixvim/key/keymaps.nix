@@ -246,6 +246,13 @@
       options.silent = true;
     }
 
+    {
+      key = "<C-S-x>";
+      action = "<esc>:w<cr>";
+      mode = "i";
+      options.silent = true;
+    }
+
 
     {
       key = "i(";

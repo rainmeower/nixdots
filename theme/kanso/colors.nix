@@ -12,6 +12,7 @@ rec {
 
   fg_bright = fg2;
 
+  muted  = gray5;
   grey   = gray5;
   gray   = grey;
   purple = violet;

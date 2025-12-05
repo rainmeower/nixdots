@@ -25,8 +25,8 @@
           "if" = "@call.inner";
           ah   = "@function.outer"; # d for definition
           ih   = "@function.inner";
-          ap   = "@class.outer";
-          ip   = "@class.inner";
+          ax   = "@class.outer";
+          ix   = "@class.inner";
           ar   = "@block.outer";
           ir   = "@block.inner";
         };
