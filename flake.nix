@@ -35,10 +35,7 @@
     };
     # textfox.url = "github:adriankarlen/textfox";
 
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nixvim.url = "github:nix-community/nixvim";
 
     slippi.url = "github:lytedev/slippi-nix";
     # nuhxboard.url = "github:justDeeevin/NuhxBoard";

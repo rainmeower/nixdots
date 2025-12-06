@@ -605,6 +605,12 @@
       }
 
       {
+        on = [ "<Space>" "d" "a" ];
+        run = "cd ~/data";
+        desc = "data repo";
+      }
+
+      {
         on = [ "<Space>" "d" "o" ];
         run = "cd ${userDirs.documents}";
         desc = "documents";

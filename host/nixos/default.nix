@@ -32,7 +32,6 @@
     ../../mod/os/nix-ld.nix
     ../../mod/os/fontconfig.nix
     ../../mod/os/services/gamemode.nix
-    ../../mod/os/services/preload.nix
     ../../mod/os/appimage.nix
     ../../mod/os/services/mpd.nix
     ../../mod/os/services/ssh.nix
