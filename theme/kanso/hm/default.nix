@@ -8,6 +8,7 @@
     ./kitty_kanso.nix
     ./qt_kanso.nix
     ./fastfetch_kanso.nix
+    ./fzf_kanso.nix
     # ./hm/hyprpaper_kanso.nix
     ./niri_kanso.nix
     ./nushell_kanso.nix
