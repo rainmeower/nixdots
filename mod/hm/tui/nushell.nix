@@ -325,7 +325,7 @@ in {
       NIXOS_OZONE_WL = "1"; # tell things to use wayland
       NIXPKGS_ALLOW_UNFREE = "1";
 
-      FZF_DEFAULT_OPTS = "--color=fg:${col.fg},hl:${col.blue},fg+:${col.bg},bg+:${col.blue},hl+:${col.const},info:#ffff00,prompt:${col.blue},spinner:-1,pointer:${col.blue},gutter:-1,info:${col.comment},border:-1 --border=none --info=hidden --header='' --prompt='󰘧 ' --no-bold -i --pointer=''";
+      FZF_DEFAULT_OPTS = "--color=fg:${col.fg},hl:${col.accent},fg+:${col.bg},bg+:${col.accent},hl+:${col.accent},info:#ffff00,prompt:${col.accent},spinner:-1,pointer:-1,gutter:-1,info:${col.comment},border:-1 --border='none' --info='hidden' --header='' --prompt='󰘧 ' --no-bold -i --pointer=''";
     }; # }}}
   };
 }
