@@ -295,6 +295,13 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
       (key-history c 1)
     )) h break
 
+    ;; might
+    ((and
+      (key-history m 3)
+      (key-history i 2)
+      (key-history g 1)
+    )) h break
+
     ;; these
     ((and
       (key-history t 4)

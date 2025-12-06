@@ -39,6 +39,7 @@
 
     slippi = {
       url = "github:lytedev/slippi-nix";
+      # https://github.com/lytedev/slippi-nix/issues/10
       inputs.nixpkgs.follows = "nixpkgs";
     };
     # nuhxboard.url = "github:justDeeevin/NuhxBoard";
