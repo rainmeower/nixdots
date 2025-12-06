@@ -1,3 +1,5 @@
+# TODO
+# .blend .mtl .obj .stl
 # TODO better way to format this stuff
 {
   self,

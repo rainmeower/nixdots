@@ -10,6 +10,7 @@ in {
     enable = true;
     createDirectories = true;
 
+    # default names are too long and have yucky capitalism
     download  = h + "/dl";
     documents = h + "/doc";
     music     = h + "/music";
@@ -17,8 +18,8 @@ in {
     videos    = h + "/vid";
 
     publicShare = null;
-    templates = null;
-    desktop   = null;
+    templates   = null;
+    desktop     = null;
 
     extraConfig = {
       XDG_GAMES_DIR = h + "/games";
