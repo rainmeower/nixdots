@@ -74,11 +74,7 @@
         "Mod+C".action = sh "footclient nu -e yazi";
 
         # goto most recent download
-        # FIXME
-        # "Mod+Shift+C".action = sh "footclient --hold nu -e yazi ${userDirs.download}/$(ls ${userDirs.download} -At | head -n 1)";
-
-
-        "Mod+Shift+C".action = sh ''footclient --hold nu -e "let f = ^ls ~/dl -At | head -n 1; yazi ${userDirs.download}/($f)'';
+        "Mod+Shift+C".action = sh ''footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/($f)"'';
 
 
 
