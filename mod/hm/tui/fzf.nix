@@ -17,7 +17,7 @@ in {
       hl = col.accent;
       "fg+" = col.bg;
       "bg+" = col.accent;
-      "hl+" = col.accent;
+      "hl+" = col.bg;
       info = "#ff0000";
       prompt = col.accent;
       spinner = "-1";

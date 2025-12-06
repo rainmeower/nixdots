@@ -12,6 +12,7 @@
       quantum = 64;
       rate = 48000;
     };
+    extraConfig.pipewire-pulse = { "min.quantum" = "256/48000 # 2.7ms"; };
   };
 
   # make pipewire realtime-capable
