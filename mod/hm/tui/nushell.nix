@@ -81,7 +81,7 @@ in {
       # bookmark open
       def bo [...msg: string] {
         # TODO auto open if only one line
-        bmm search $msg | fzf | xargs xdg-open
+        bmm search ...$msg | fzf | xargs xdg-open
       }
 
 
