@@ -1,7 +1,7 @@
 {
   pkgs,
   config,
-  username,
+  pkgs_stable,
   ...
 }: let
   home = config.hm.home.homeDirectory;
@@ -16,6 +16,7 @@ in {
 
   programs.steam = {
     enable = true;
+    package = pkgs_stable.steam;
     extraCompatPackages = [ pkgs.proton-ge-bin ];
     fontPackages = [ config.font_package ];
     gamescopeSession.enable = false;
