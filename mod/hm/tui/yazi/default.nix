@@ -38,6 +38,7 @@
       ;
 
       # TODO check nixpkgs for these later
+      krita-preview = ./plugins/krita-preview.yazi;
       gvfs = ./plugins/gvfs.yazi;
       file-actions = ./plugins/gvfs.yazi;
       pref-by-location = ./plugins/pref-by-location.yazi;

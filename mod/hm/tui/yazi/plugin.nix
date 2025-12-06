@@ -84,6 +84,15 @@
     }
 
     {
+      name = "*.kra";
+      run = "krita-preview";
+    }
+    {
+      name = "*.kra~";
+      run = "krita-preview";
+    }
+
+    {
       mime = "image/*";
       run = "image";
     }
@@ -118,6 +127,16 @@
       run = "folder";
       sync = true;
     }
+
+    {
+      name = "*.kra";
+      run = "krita-preview";
+    }
+    {
+      name = "*.kra~";
+      run = "krita-preview";
+    }
+
 
     # # FIXME opens up ripgrep with weird shit??
     # {

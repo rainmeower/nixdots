@@ -66,7 +66,7 @@
   }: let
     username = "meow";
     # flake_dir = "/home/${username}/nix";
-    flake_dir = self.outPath;
+    flake_dir = "/home/${username}/nix";
     # flake_ns_path = builtins.toString ./.; # flake nix store path
   in {
     nixosConfigurations = {
