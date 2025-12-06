@@ -2,8 +2,7 @@
   lib,
   wm,
   ...
-}:
-{
+}:{
   config = lib.mkIf (wm == "niri") {
     programs.niri.settings.layout = {
       gaps = 10;

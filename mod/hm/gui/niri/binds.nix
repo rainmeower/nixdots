@@ -4,13 +4,13 @@
   wm,
   userDirs,
   ...
-}: {
+}:{
   config = lib.mkIf (wm == "niri") {
     programs.niri.settings.binds = with config.lib.niri.actions; 
     let
       sh = spawn "dash" "-c"; # TODO change back to sh if something breaks
       nu = spawn "nu" "-c";
-      move = "niri msg action move-window-to-workspace --focus=false ";
+      move = "niri msg action move-window-to-workspace --focus=false "; # NOTE space at the end
     in {
         "Mod+G".action = spawn "wlr-which-key";
         "Mod+L".action = sh "wlr-which-key ~/.config/wlr-which-key/mpc.yaml";
@@ -51,7 +51,6 @@
         "Mod+Z".action = sh "zen -p meow";
         "Mod+Shift+Z".action = sh "zen -p media";
 
-
         "Mod+comma".action = focus-workspace "left";
         "Mod+period".action = focus-workspace "right";
         "Mod+Tab".action = focus-workspace "media";
@@ -60,7 +59,6 @@
         "Mod+D".action = focus-workspace "two";
         "Mod+W".action = focus-workspace "three";
         "Mod+P".action = focus-workspace "four";
-
 
         "Mod+2".action = focus-workspace "ghostty_nvim";
         "Mod+1".action = focus-workspace "ghostty_term";
@@ -77,8 +75,7 @@
         # goto most recent download
         "Mod+Shift+C".action = nu ''footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/($f)"'';
 
-
-
+        # idk why these need parens
         "Mod+Shift+comma".action  = sh (move + "left");
         "Mod+Shift+period".action = sh (move + "right");
         "Mod+Shift+Tab".action    = sh (move + "media");
@@ -88,8 +85,6 @@
         "Mod+Shift+W".action = sh (move + "three");
         "Mod+Shift+P".action = sh (move + "four");
         "Mod+Shift+N".action = sh (move + "alt");
-
-
 
         "Mod+H".action = focus-column-left;
         "Mod+I".action = focus-column-right;
@@ -116,8 +111,6 @@
         "Mod+Ctrl+M".action = fullscreen-window;
         # "Mod+minus".action = toggle-column-tabbed-display;
         "Mod+minus".action = sh "wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml";
-
-
 
 
 

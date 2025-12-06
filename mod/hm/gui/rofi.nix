@@ -3,13 +3,11 @@
   lib,
   rounding,
   ...
-}:
-let
+}: let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../theme/${theme_trimmed}/colors.nix;
   radius = if rounding then "10px" else "0px";
-in
-{
+in {
   home.file.".config/rofi/bgselector.rasi".text = /* rasi */ ''
 configuration {
     show-icons: true;

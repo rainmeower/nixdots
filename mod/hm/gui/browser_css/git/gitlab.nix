@@ -4,8 +4,7 @@
   theme,
   rounding,
   ...
-}:
-let
+}: let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../../../theme/${theme_trimmed}/colors.nix;
 in {

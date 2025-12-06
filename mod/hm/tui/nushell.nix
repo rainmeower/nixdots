@@ -6,8 +6,7 @@
   self,
   theme,
   ...
-}:
-let
+}: let
   col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
   wm_launch_command =
     if (wm == "hyprland") then "Hyprland"

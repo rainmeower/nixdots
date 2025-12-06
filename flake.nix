@@ -1,6 +1,7 @@
 {
   inputs = { # {{{
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs_stable.url = "github:nixos/nixpkgs/nixos-25.11";
     lix = {
       url = "https://git.lix.systems/lix-project/lix/archive/main.tar.gz";
       flake = false;
@@ -87,7 +88,12 @@
           lix-module.nixosModules.default
           nur.modules.nixos.default
           {
-            nixpkgs.overlays = import ./over;
+            nixpkgs.overlays = [
+              (final: prev: {
+               old_steam = inputs.nixpkgs_stable.pkgs.by-name.st.steam;
+               })
+            ] ++ import ./over;
+
           }
         ];
       }; # }}}

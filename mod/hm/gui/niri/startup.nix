@@ -3,8 +3,7 @@
   lib,
   wm,
   ...
-}:
-{
+}:{
   config = lib.mkIf (wm == "niri") {
   programs.niri.settings.spawn-at-startup = [
     { command = [ "${flake_dir}/stuff/scripts/startup.sh" ]; }
