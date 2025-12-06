@@ -25,6 +25,7 @@ let
     # containerise
     i-dont-care-about-cookies
     decentraleyes
+    noscript
   ];
 
   meow_extensions = with pkgs.nur.repos.rycee.firefox-addons; [
