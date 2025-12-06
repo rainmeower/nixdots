@@ -4,8 +4,7 @@
   wm,
   userDirs,
   ...
-}:
-{
+}: {
   config = lib.mkIf (wm == "niri") {
     programs.niri.settings.binds = with config.lib.niri.actions; 
     let
@@ -72,7 +71,7 @@
         # "Mod+C".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty_yazi && ghostty --title=\"ghostty_yazi\" -e yazi";
         "Mod+S".action = sh "footclient nvim";
         "Mod+T".action = sh "footclient";
-        "Mod+C".action = sh "footclient yazi";
+        "Mod+C".action = sh "footclient nu -e yazi";
 
         "Mod+Shift+comma".action = sh "niri msg action move-window-to-workspace --focus=false left";
         "Mod+Shift+period".action = sh "niri msg action move-window-to-workspace --focus=false right";
