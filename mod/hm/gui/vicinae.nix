@@ -183,6 +183,7 @@ pkgs.vicinae-extension-nix
       icon = "";
       name = "meow";
       description = "default nix theme";
+      variant = "dark";
     };
     colors = {
       core = {

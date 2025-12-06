@@ -78,6 +78,13 @@ in {
       }
 
 
+      # bookmark open
+      def bo [...msg: string] {
+        # TODO auto open if only one line
+        bmm search $msg | fzf | xargs xdg-open
+      }
+
+
       def nr [...msg: string] {
         # sudo nixos-rebuild switch --flake ${flake_dir}#nixos
         cd ${flake_dir}
