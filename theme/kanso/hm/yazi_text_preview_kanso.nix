@@ -55,7 +55,7 @@ in {
         <key>name</key>
         <string>Basic text &amp; variable names (incl. leading punctuation)</string>
         <key>scope</key>
-        <string>text, source, variable.other.readwrite, punctuation.definition.variable</string>
+        <string>text, source, variable.other.readwrite, punctuation.definition.variable, variable.object.property, string.template variable, string variable</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -110,7 +110,7 @@ in {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#f5a97f</string>
+          <string>${col.const}</string>
         </dict>
       </dict>
       <dict>
@@ -290,8 +290,6 @@ in {
         <dict>
           <key>foreground</key>
           <string>${col.keyword}</string>
-          <key>fontStyle</key>
-          <string/>
         </dict>
       </dict>
       <dict>
@@ -303,28 +301,6 @@ in {
         <dict>
           <key>foreground</key>
           <string>${col.red}</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>Object properties</string>
-        <key>scope</key>
-        <string>variable.object.property</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>${col.fg}</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>String template interpolation</string>
-        <key>scope</key>
-        <string>string.template variable, string variable</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>${col.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -521,8 +497,6 @@ in {
         <dict>
           <key>foreground</key>
           <string>${col.keyword}</string>
-          <key>fontStyle</key>
-          <string/>
         </dict>
       </dict>
       <dict>
@@ -1300,8 +1274,6 @@ in {
         <dict>
           <key>foreground</key>
           <string>${col.yellow}</string>
-          <key>fontStyle</key>
-          <string/>
         </dict>
       </dict>
       <dict>
