@@ -74,7 +74,7 @@
         "Mod+C".action = sh "footclient nu -e yazi";
 
         # goto most recent download
-        "Mod+Shift+C".action = sh "footclient nu -e yazi ${userDirs.download}/$(ls ${userDirs.download} -At | head -n 1)";
+        "Mod+Shift+C".action = sh "footclient --hold nu -e yazi ${userDirs.download}/$(ls ${userDirs.download} -At | head -n 1)";
 
 
 

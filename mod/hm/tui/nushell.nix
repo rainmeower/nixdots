@@ -52,7 +52,7 @@ in {
       # recently downloaded
       def rd [] {
         let f = ^ls ~/dl -At | head -n 1
-        yazi ${userDirs.download} ($f)
+        yazi ${userDirs.download}/($f)
       }
 
 
