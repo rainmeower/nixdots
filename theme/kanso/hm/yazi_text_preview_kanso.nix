@@ -120,8 +120,6 @@ in {
         <dict>
           <key>foreground</key>
           <string>${col.violet}</string>
-          <key>fontStyle</key>
-          <string/>
         </dict>
       </dict>
       <dict>

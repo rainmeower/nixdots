@@ -17,7 +17,7 @@ in {
       separator = " ";
     };
     mgr = {
-      border_symbol = " ";
+      border_symbol = "j";
       hovered.reversed = true;
       preview_hovered.reversed = true;
 

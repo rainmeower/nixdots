@@ -117,14 +117,15 @@ rec {
   keyword = violet2;
   method  = yellow;
   var     = fg;
-  arg     = gray3;
+  arg     = punc;
   func    = blue;
   string  = green;
   num     = pink;
-  bool    = orange;
+  bool    = const;
   const   = orange;
   type    = blue4;
   comment = gray4;
   punc    = gray3;
-  selection = zen_bg3;
+  sel     = zen_bg3;
+  selection = sel;
 }
