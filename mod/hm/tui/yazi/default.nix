@@ -29,6 +29,7 @@
         dupes 
         git
         jump-to-char
+        mime-ext
         mount 
         no-status 
         piper 
@@ -38,7 +39,6 @@
       ;
 
       # TODO check nixpkgs for these later
-      mime-preview = ./plugins/mime-preview.yazi;
       krita-preview = ./plugins/krita-preview.yazi;
       gvfs = ./plugins/gvfs.yazi;
       file-actions = ./plugins/gvfs.yazi;
@@ -48,7 +48,7 @@
     };
 
     initLua = /* lua */ ''
-require("mime-preview"):setup()
+require("mime-ext"):setup()
 require("no-status"):setup()
 require("simple-tag"):setup({
   ui_mode = "icon", -- icon, text, hidden
@@ -58,7 +58,7 @@ require("simple-tag"):setup({
   linemode_order = 500,
   -- save_path = "/home/${username}/.config/yazi/tags",
   colors = { -- (Optional)
-	  reversed = ${if config.programs.yazi.theme.mgr.hovered.reversed then "true" else "false"}, -- TODO find a better way to do this
+	  reversed = ${if config.programs.yazi.theme.mgr.hovered.reversed then "true" else "false"},
 
 	  ["*"] = "magenta", -- xdg user dirs
 	  ["$"] = "green",
