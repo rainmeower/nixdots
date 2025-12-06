@@ -37,7 +37,10 @@
 
     nixvim.url = "github:nix-community/nixvim";
 
-    slippi.url = "github:lytedev/slippi-nix";
+    slippi = {
+      url = "github:lytedev/slippi-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     # nuhxboard.url = "github:justDeeevin/NuhxBoard";
     # pollymc.url = "github:fn2006/PollyMC";
     vicinae.url = "github:vicinaehq/vicinae";
