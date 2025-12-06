@@ -38,6 +38,7 @@
       ;
 
       # TODO check nixpkgs for these later
+      mime-preview = ./plugins/mime-preview.yazi;
       krita-preview = ./plugins/krita-preview.yazi;
       gvfs = ./plugins/gvfs.yazi;
       file-actions = ./plugins/gvfs.yazi;
@@ -47,6 +48,7 @@
     };
 
     initLua = /* lua */ ''
+require("mime-preview"):setup()
 require("no-status"):setup()
 require("simple-tag"):setup({
   ui_mode = "icon", -- icon, text, hidden
