@@ -9,6 +9,8 @@
     programs.niri.settings.binds = with config.lib.niri.actions; 
     let
       sh = spawn "dash" "-c"; # TODO change back to sh if something breaks
+      nu = spawn "nu" "-c";
+      move = "niri msg action move-window-to-workspace --focus=false ";
     in {
         "Mod+G".action = spawn "wlr-which-key";
         "Mod+L".action = sh "wlr-which-key ~/.config/wlr-which-key/mpc.yaml";
@@ -30,7 +32,7 @@
 
         # "Mod+J".action = sh "pkill tty-clock || footclient tty-clock -cC 4 -f \"%a,\ %d\ %b\ %Y\""; # TODO per-theme colour
         "Mod+U".action = sh "pkill btop || foot btop"; # TODO window rule for size
-        "Mod+K".action = sh "pkill ncmpcpp || foot ncmpcpp"; # TODO window rule for size
+        "Mod+K".action = sh "pkill ncmpcpp || foot ncmpcpp";
 
 
         "XF86AudioRaiseVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+";
@@ -45,7 +47,6 @@
 # "Mod+Space".action = sh "walker --theme min";
         # "Mod+Space".action = spawn "fuzzel";
         "Mod+Space".action = sh "vicinae vicinae://toggle";
-        "Mod+Slash".action = sh "rofi -show window";
 
         "Mod+Z".action = sh "zen -p meow";
         "Mod+Shift+Z".action = sh "zen -p media";
@@ -74,19 +75,19 @@
         "Mod+C".action = sh "footclient nu -e yazi";
 
         # goto most recent download
-        "Mod+Shift+C".action = sh ''footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/($f)"'';
+        "Mod+Shift+C".action = nu ''footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/($f)"'';
 
 
 
-        "Mod+Shift+comma".action = sh "niri msg action move-window-to-workspace --focus=false left";
-        "Mod+Shift+period".action = sh "niri msg action move-window-to-workspace --focus=false right";
-        "Mod+Shift+Tab".action = sh "niri msg action move-window-to-workspace --focus=false media";
-        "Mod+Shift+B".action = sh "niri msg action move-window-to-workspace --focus=false discord";
-        "Mod+Shift+F".action = sh "niri msg action move-window-to-workspace --focus=false one";
-        "Mod+Shift+D".action = sh "niri msg action move-window-to-workspace --focus=false two";
-        "Mod+Shift+W".action = sh "niri msg action move-window-to-workspace --focus=false three";
-        "Mod+Shift+P".action = sh "niri msg action move-window-to-workspace --focus=false four";
-        "Mod+Shift+N".action = sh "niri msg action move-window-to-workspace --focus=false alt";
+        "Mod+Shift+comma".action  = sh (move + "left");
+        "Mod+Shift+period".action = sh (move + "right");
+        "Mod+Shift+Tab".action    = sh (move + "media");
+        "Mod+Shift+B".action = sh (move + "discord");
+        "Mod+Shift+F".action = sh (move + "one");
+        "Mod+Shift+D".action = sh (move + "two");
+        "Mod+Shift+W".action = sh (move + "three");
+        "Mod+Shift+P".action = sh (move + "four");
+        "Mod+Shift+N".action = sh (move + "alt");
 
 
 
