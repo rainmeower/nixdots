@@ -1,9 +1,11 @@
 {
   config,
   flake_dir,
+  wm,
   lib,
   ...
 }: let
+err = "notify-send error with config.wm value";
 # keys = {
 #   f = "foot";
 # };
@@ -53,8 +55,12 @@ inhibit_compositor_keyboard_shortcuts: true
 
 menu:
   - key: [ "q", "Mod4+q" ]
-    desc: float active
-    cmd: niri msg action quit
+    desc: quit
+    cmd: ${if (wm == "hyprland") then "hyprctl dispatch exit"
+           else if (wm == "niri") then "niri msg action quit"
+           else if (wm == "mango") then "mmsg -q"
+           else err
+          }
 
   - key: [ "s", "Mod4+s" ]
     desc: screenshot
@@ -78,11 +84,19 @@ menu:
 
   - key: [ "f", "Mod4+f" ]
     desc: float active
-    cmd: niri msg action toggle-window-floating
+    cmd: ${if (wm == "hyprland") then "notify-send TODO"
+           else if (wm == "niri") then "niri msg action toggle-window-floating"
+           else if (wm == "mango") then "mmsg -d togglefloating"
+           else err
+          }
 
   - key: [ "c", "Mod4+c" ]
-    desc: center column
-    cmd: niri msg action center-column
+    desc: center window
+    cmd: ${if (wm == "hyprland") then "notify-send TODO"
+           else if (wm == "niri") then "niri msg action center-column"
+           else if (wm == "mango") then "mmsg -d centerwin"
+           else err
+          }
 
   - key: [ "w", "Mod4+w" ]
     desc: switch wallpaper
@@ -93,8 +107,12 @@ menu:
     cmd: ${flake_dir}/stuff/scripts/clear.sh
 
   - key: [ "m", "Mod4+m" ]
-    desc: maximise column
-    cmd: niri msg action maximize-column
+    desc: fullscreen-like action
+    cmd: ${if (wm == "hyprland") then "notify-send TODO"
+           else if (wm == "niri") then "niri msg action maximize-column"
+           else if (wm == "mango") then "mmsg -d togglefakefullscreen"
+           else err
+          }
 
   - key: [ "h", "Mod4+h" ]
     desc: first col
