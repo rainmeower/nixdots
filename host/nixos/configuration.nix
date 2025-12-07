@@ -27,8 +27,7 @@
     xdg-desktop-portal
     xdg-desktop-portal-wlr
     xdg-desktop-portal-termfilechooser
-    # xdg-desktop-portal-gtk
-    # xdg-desktop-portal-gnome
+    xdg-desktop-portal-gtk
   ];
 
   xdg.portal = {
@@ -42,6 +41,10 @@
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
       };
       mango = {
+        default = ["termfilechooser"];
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+      };
+      mangowc = {
         default = ["termfilechooser"];
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
       };

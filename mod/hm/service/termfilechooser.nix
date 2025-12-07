@@ -37,6 +37,10 @@ env=TERMCMD=foot --app-id="foot.yazi.filechooser"
         default = ["termfilechooser"];
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
       };
+      mango = {
+        default = ["termfilechooser"];
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+      };
       mangowc = {
         default = ["termfilechooser"];
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
