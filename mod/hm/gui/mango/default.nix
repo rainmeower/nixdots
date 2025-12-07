@@ -329,6 +329,7 @@ in {
           "appid:foot.ncmpcpp,foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1"
           "appid:*vesktop*,isopensilent:1"
           "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1"
+          "appid:isterm,isterm:1"
           # TODO `isterm` + emacs/yazi?
         ];
 
