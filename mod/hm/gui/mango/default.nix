@@ -194,8 +194,8 @@ in {
 # mod keys name: super,ctrl,alt,shift,none
         bind = [
 
-          "xf86audioraisevolume,spawn,${scripts}/audio_raise.sh"
-          "xf86audiolowervolume,spawn,${scripts}/audio_lower.sh"
+          "xf86audioraisevolume,spawn_shell,${scripts}/audio_raise.sh"
+          "xf86audiolowervolume,spawn_shell,${scripts}/audio_lower.sh"
 
           "SUPER,G,spawn,wlr-which-key"
             "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
