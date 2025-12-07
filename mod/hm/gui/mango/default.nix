@@ -171,7 +171,7 @@
 			bind = [
 
         "SUPER,G,spawn,wlr-which-key"
-        "SUPER,L,spawn,wlr-which-key~/.config/wlr-which-key/mpc.yaml"
+        "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
 
 
 				# reload config
