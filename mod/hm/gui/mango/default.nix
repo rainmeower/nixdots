@@ -31,8 +31,8 @@ in {
     wayland.windowManager.mango = {
       enable = true;
 
-      # exec-once = "~/.config/mango/autostart.sh";
-      autostart_sh = /* bash */ ''
+      autostart_sh = # {{{
+      /* bash */ ''
         set +e
 
         wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
@@ -40,7 +40,7 @@ in {
         ${flake_dir}/stuff/scripts/swww.sh &
         foot --server &
         vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland &
-        '';
+      ''; # }}}
 
 # https://codeberg.org/worldspawn/nix/src/branch/main/modules/home-manager/wm/mangowc.nix
       settings = lib.generators.toINIWithGlobalSection {
@@ -53,6 +53,7 @@ in {
             toString value;
           in "${key}=${value'}";
       } {globalSection = {
+      exec-once = "~/.config/mango/autostart.sh";
         blur = true;
         blur_layer = true;
         blur_optimized = true;
