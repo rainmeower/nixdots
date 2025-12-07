@@ -64,7 +64,7 @@ rootSearch.searchFiles = false;
 
 window = {
 csd = false;
-opacity = 0.80;
+# opacity = 0.80;
 rounding = radius;
 };
 
@@ -187,7 +187,7 @@ pkgs.vicinae-extension-nix
     };
     colors = {
       core = {
-        background = col.bg_trans;
+        background = "#cc" + col.bg; # opacity at the start for some reason
         inherit (col)
           foreground
           accent;
