@@ -13,7 +13,8 @@
   h = lib.removePrefix "#";
   portals = with pkgs; [
     xdg-desktop-portal
-    # xdg-desktop-portal-wlr
+    xdg-desktop-portal-wlr
+    xdg-desktop-portal-termfilechooser
   ];
 in {
   imports = [
@@ -85,7 +86,7 @@ in {
         fadein_begin_opacity = 1.0;
         fadeout_begin_opacity = 0.3;
         animation_duration_move = 250;
-        animation_duration_open = 400;
+        animation_duration_open = 350;
         animation_duration_tag = 0;
         animation_duration_close = 1200;
         animation_duration_focus = 0;
