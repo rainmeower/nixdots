@@ -2,6 +2,7 @@
   pkgs,
   ...
 }:{
+  # TODO do i actually need these
   services.gvfs.enable = true;
   services.udisks2.enable = true;
   systemd.services.udiskie.enable = true;

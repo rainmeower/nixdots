@@ -15,18 +15,17 @@
 
 			# dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
 
-			# wlr-randr --output Virtual-1 --mode 2560x1080 &
+      wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
 
 			# swaybg -m fill -i "$HOME/Pictures/Wallpapers/mbRtfWLicq_4816x2016.png" &
 			# quickshell &
 
-    # ${flake_dir}/stuff/scripts/startup.sh
-    ${flake_dir}/stuff/scripts/swww.sh
-    # udiskie -a
-    # ~/misc/niriusd
-    # foot --server
-    # vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland
-    # swww-daemon
+    # ${flake_dir}/stuff/scripts/startup.sh &
+    ${flake_dir}/stuff/scripts/swww.sh &
+    swww-daemon &
+    # udiskie -a &
+    foot --server &
+    vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland &
 
 
 		'';
@@ -170,6 +169,11 @@
 			# key name refer to `xev` or `wev` command output,
 			# mod keys name: super,ctrl,alt,shift,none
 			bind = [
+
+        "SUPER,G,spawn,wlr-which-key"
+        "SUPER,L,spawn,wlr-which-key~/.config/wlr-which-key/mpc.yaml"
+
+
 				# reload config
 				"SUPER+ALT,r,reload_config"
 

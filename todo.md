@@ -1,3 +1,5 @@
+./mod/os/services/disk.nix 5
+
 - custom iosevka
 
 - rofi-systemd
