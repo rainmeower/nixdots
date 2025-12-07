@@ -21,8 +21,8 @@ in {
   ];
   config = lib.mkIf (wm == "mango") {
 
-  xdg.portal.configPackages = portals;
-  xdg.portal.extraPortals = portals;
+    xdg.portal.configPackages = portals;
+    xdg.portal.extraPortals = portals;
 
 
     wayland.windowManager.mango = {

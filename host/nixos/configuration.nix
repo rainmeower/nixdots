@@ -25,8 +25,8 @@
   xdg.portal.enable = true;
   xdg.portal.extraPortals = with pkgs; [
     xdg-desktop-portal-termfilechooser
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-gnome
+    # xdg-desktop-portal-gtk
+    # xdg-desktop-portal-gnome
   ];
 
   xdg.portal = {
@@ -36,6 +36,10 @@
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
       };
       niri = {
+        default = ["termfilechooser"];
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+      };
+      mango = {
         default = ["termfilechooser"];
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
       };
