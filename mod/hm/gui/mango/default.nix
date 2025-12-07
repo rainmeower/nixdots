@@ -11,7 +11,6 @@
   col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
   gaps = 10;
   h = lib.removePrefix "#";
-  scripts = flake_dir + "/stuff/scripts/keys";
   portals = with pkgs; [
     xdg-desktop-portal
     xdg-desktop-portal-wlr
@@ -194,8 +193,8 @@ in {
 # mod keys name: super,ctrl,alt,shift,none
         bind = [
 
-          "xf86audioraisevolume,spawn_shell,${scripts}/audio_raise.sh"
-          "xf86audiolowervolume,spawn_shell,${scripts}/audio_lower.sh"
+          "NONE,xf86audioraisevolume,spawn,wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
+          "NONE,xf86audiolowervolume,spawn,wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"
 
           "SUPER,G,spawn,wlr-which-key"
             "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
@@ -210,7 +209,7 @@ in {
             "SUPER,t,spawn,foot"
             "SUPER,c,spawn,foot -a 'foot.yazi.isterm' yazi"
 
-            "SUPER,k,spawn,${scripts}/ncmpcpp.sh"
+            "SUPER,k,spawn,${flake_dir}/stuff/scripts/ncmpcpp.sh"
 
             "SUPER,z,spawn,zen -p meow"
             "SUPER+SHIFT,z,spawn,zen -p media"
