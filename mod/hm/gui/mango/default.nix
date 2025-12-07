@@ -72,10 +72,10 @@ in {
         animation_fade_out = 1;
         tag_animation_direction = 0;
         zoom_initial_ratio = 0.3;
-        zoom_end_ratio = 0.0;
+        zoom_end_ratio = 0.3;
         fadein_begin_opacity = 1.0;
         fadeout_begin_opacity = 0.3;
-        animation_duration_move = 0;
+        animation_duration_move = 200;
         animation_duration_open = 400;
         animation_duration_tag = 0;
         animation_duration_close = 800;
