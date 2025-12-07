@@ -34,15 +34,6 @@ pkgs.stdenv.mkDerivation {
 	  cp -f ${config} config.h
   '';
 
-	# buildPhase = let
-	#   config = ../../stuff/keyb0xx/config.h;
-	#  in ''
-	#    make
-	#    # rm Makefile
-	#
-	#    # gcc ${pkgs.libevdev}/include/libevdev-1.0 $^ -levdev -o keyb0xx.c keyboard_device.c config.h values.h
-	#  '';
-
 	installPhase = ''
 		runHook preInstall
 

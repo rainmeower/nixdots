@@ -1,6 +1,9 @@
 [
   # (import ./foot.nix)
-  # (import ./obs.nix)
+
+  (import ./obs.nix)
+  # (import ./rofi.nix)
+
   # (import ./dbus.nix)
   # (import ./dunst.nix)
   # (import ./gtk.nix)
