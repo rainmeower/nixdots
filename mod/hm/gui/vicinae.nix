@@ -64,7 +64,7 @@ rootSearch.searchFiles = false;
 
 window = {
 csd = false;
-# opacity = 0.80;
+opacity = 0.80;
 rounding = radius;
 };
 
