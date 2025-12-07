@@ -174,8 +174,8 @@ in {
         tagrule = [
           "id:1,layout_name:tile"
           "id:2,layout_name:grid"
-          "id:3,layout_name:scroller"
-          "id:4,layout_name:deck"
+          "id:3,layout_name:scroller" # vertical scroller?
+          "id:4,layout_name:tile" # deck maybe?
           "id:5,layout_name:monocle"
           "id:6,layout_name:center_tile"
           "id:7,layout_name:vertical_tile"
