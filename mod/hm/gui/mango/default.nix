@@ -66,12 +66,12 @@
         animation_fade_out = 1;
         tag_animation_direction = 0;
         zoom_initial_ratio = 0.3;
-        zoom_end_ratio = 0.3;
-        fadein_begin_opacity = 0.5;
-        fadeout_begin_opacity = 0.8;
+        zoom_end_ratio = 0.0;
+        fadein_begin_opacity = 1.0;
+        fadeout_begin_opacity = 0.3;
         animation_duration_move = 500;
         animation_duration_open = 400;
-        animation_duration_tag = 350;
+        animation_duration_tag = 0;
         animation_duration_close = 800;
         animation_duration_focus = 0;
         animation_curve_open = "0.46,1.0,0.29,1";
@@ -81,19 +81,19 @@
         animation_curve_focus = "0.46,1.0,0.29,1";
 
 # Scroller Layout Setting
-        scroller_structs = 20;
+        scroller_structs = 0;
         scroller_default_proportion = 0.5;
-        scroller_focus_center = false;
-        scroller_prefer_center = false;
-        edge_scroller_pointer_focus = true;
-        scroller_default_proportion_single = 1.0;
-        scroller_proportion_preset = "0.25,0.5,0.75,1.0";
+        scroller_default_proportion_single = 0.5;
+        scroller_proportion_preset = "0.333,0.5,0.667";
+        scroller_focus_center = false; # TODO
+        scroller_prefer_center = true;
+        edge_scroller_pointer_focus = true; # TODO
 
 # Master-Stack Layout Setting
         new_is_master = true;
         default_mfact = 0.55;
         default_nmaster = 1;
-        smartgaps = false;
+        smartgaps = false; # TODO
 
 # Overview Setting
         hotarea_size = 10;
