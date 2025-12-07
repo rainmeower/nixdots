@@ -1,0 +1,305 @@
+{
+	inputs,
+	lib,
+  flake_dir,
+	...
+}: {
+	imports = [
+		inputs.mango.hmModules.mango
+	];
+
+	wayland.windowManager.mango = {
+		enable = true;
+		autostart_sh = /* bash */ ''
+			set +e
+
+			# dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
+
+			# wlr-randr --output Virtual-1 --mode 2560x1080 &
+
+			# swaybg -m fill -i "$HOME/Pictures/Wallpapers/mbRtfWLicq_4816x2016.png" &
+			# quickshell &
+
+    # ${flake_dir}/stuff/scripts/startup.sh
+    ${flake_dir}/stuff/scripts/swww.sh
+    # udiskie -a
+    # ~/misc/niriusd
+    # foot --server
+    # vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland
+    # swww-daemon
+
+
+		'';
+
+    # https://codeberg.org/worldspawn/nix/src/branch/main/modules/home-manager/wm/mangowc.nix
+		settings = lib.generators.toINIWithGlobalSection {
+			listsAsDuplicateKeys = true;
+			mkKeyValue = key: value:
+				let
+					value' = if builtins.isBool value then
+						(if value then "1" else "0")
+					else
+						toString value;
+				in "${key}=${value'}";
+		} {globalSection = {
+			blur = true;
+			blur_layer = true;
+			blur_optimized = true;
+			blur_params_num_passes = 2;
+			blur_params_radius = 4;
+			blur_params_noise = 0;
+			blur_params_brightness = 1;
+			blur_params_contrast = 0.8;
+			blur_params_saturation = 0.8;
+
+			shadows = false;
+
+			border_radius = 0;
+			no_radius_when_single = false;
+			focused_opacity = 1.0;
+			unfocused_opacity = 1.0;
+
+			# Animation Configuration(support type:zoom,slide)
+			# tag_animation_direction: 0-horizontal,1-vertical
+			animations = true;
+			layer_animations = true;
+			animation_type_open = "zoom";
+			animation_type_close = "zoom";
+			animation_fade_in = 1;
+			animation_fade_out = 1;
+			tag_animation_direction = 0;
+			zoom_initial_ratio = 0.3;
+			zoom_end_ratio = 0.3;
+			fadein_begin_opacity = 0.5;
+			fadeout_begin_opacity = 0.8;
+			animation_duration_move = 500;
+			animation_duration_open = 400;
+			animation_duration_tag = 350;
+			animation_duration_close = 800;
+			animation_duration_focus = 0;
+			animation_curve_open = "0.46,1.0,0.29,1";
+			animation_curve_move = "0.46,1.0,0.29,1";
+			animation_curve_tag = "0.46,1.0,0.29,1";
+			animation_curve_close = "0.08,0.92,0,1";
+			animation_curve_focus = "0.46,1.0,0.29,1";
+
+			# Scroller Layout Setting
+			scroller_structs = 20;
+			scroller_default_proportion = 0.5;
+			scroller_focus_center = false;
+			scroller_prefer_center = false;
+			edge_scroller_pointer_focus = true;
+			scroller_default_proportion_single = 1.0;
+			scroller_proportion_preset = "0.25,0.5,0.75,1.0";
+
+			# Master-Stack Layout Setting
+			new_is_master = true;
+			default_mfact = 0.55;
+			default_nmaster = 1;
+			smartgaps = false;
+
+			# Overview Setting
+			hotarea_size = 10;
+			enable_hotarea = false;
+			ov_tab_mode = 0;
+			overviewgappi = 5;
+			overviewgappo = 30;
+
+			# Misc
+			no_border_when_single = false;
+			axis_bind_apply_timeout = 100;
+			focus_on_activate = true;
+			inhibit_regardless_of_visibility = false;
+			sloppyfocus = false;
+			warpcursor = false;
+			focus_cross_monitor = false;
+			focus_cross_tag = false;
+			enable_floating_snap = false;
+			snap_distance = 30;
+			drag_tile_to_tile = true;
+			adaptive_sync = true;
+			cursor_size = 32;
+			cursor_theme = "serenity";
+
+			# keyboard
+			repeat_rate = 25;
+			repeat_delay = 300;
+			numlockon = false;
+			xkb_rules_layout = "us";
+
+			# Trackpad
+			# need relogin to make it apply
+			disable_trackpad = true;
+
+			# mouse
+			# need relogin to make it apply
+			mouse_natural_scrolling = false;
+
+			# Appearance
+			gappih = 10;
+			gappiv = 10;
+			gappoh = 10;
+			gappov = 10;
+			scratchpad_width_ratio = 0.67; # i swear its just rounding 0.66...
+			scratchpad_height_ratio = 0.9;
+			borderpx = 3;
+			rootcolor = "0x141212ff";
+			bordercolor = "0x5f5757ff";
+			focuscolor = "0x6a8cbcff";
+			maximizescreencolor = "0xe29ecaff";
+			urgentcolor = "0xf5a091ff";
+			scratchpadcolor = "0x85b5baff";
+			globalcolor = "0xaca1cfff";
+			overlaycolor = "0x90b99fff";
+
+			# layout support:
+			# tile,scroller,grid,deck,monocle,center_tile,vertical_tile,vertical_scroller
+			tagrule = [
+				"id:1,layout_name:tile"
+				"id:2,layout_name:scroller"
+				"id:3,layout_name:grid"
+				"id:4,layout_name:deck"
+				"id:5,layout_name:monocle"
+				"id:6,layout_name:center_tile"
+				"id:7,layout_name:vertical_tile"
+				"id:8,layout_name:vertical_scroller"
+				"id:9,layout_name:vertical_scroller"
+			];
+
+			# Key Bindings
+			# key name refer to `xev` or `wev` command output,
+			# mod keys name: super,ctrl,alt,shift,none
+			bind = [
+				# reload config
+				"SUPER+ALT,r,reload_config"
+
+				# menu and terminal
+				"CTRL+ALT,p,spawn,vicinae toggle"
+				"SUPER,s,spawn,foot nvim"
+				"SUPER,t,spawn,foot"
+				"SUPER,c,spawn,foot yazi"
+
+				# exit
+				"SUPER+ALT,q,quit"
+				"SUPER,o,killclient,"
+
+				# switch window focus
+				"ALT,Tab,focusstack,next"
+				"SUPER,h,focusdir,left"
+				"SUPER,i,focusdir,right"
+				"SUPER,e,focusdir,up"
+				"SUPER,a,focusdir,down"
+
+				# swap window
+				"SUPER+SHIFT,h,exchange_client,left"
+				"SUPER+SHIFT,i,exchange_client,right"
+				"SUPER+SHIFT,h,exchange_client,up"
+				"SUPER+SHIFT,a,exchange_client,down"
+
+				# switch window status
+				"SUPER,Period,toggleglobal,"
+				"SUPER,Return,toggleoverview,"
+				# "SUPER,f,togglefloating,"
+				"SUPER,m,togglemaximizescreen,"
+				"SUPER+SHIFT,m,togglefullscreen,"
+				# "SUPER+CTRL,m,togglefakefullscreen,"
+				"SUPER+SHIFT,Return,toggleoverlay,"
+				#"SUPER,i,minimized,"
+				#"SUPER+SHIFT,I,restore_minimized"
+				#"ALT,z,toggle_scratchpad"
+
+				# scroller layout
+				# "SUPER,m,set_proportion,1.0"
+				"SUPER,9,switch_proportion_preset,"
+
+				# switch layout
+				"SUPER,Semicolon,switch_layout"
+
+				# tag switch
+				#"SUPER,Left,viewtoleft,0"
+				#"CTRL,Left,viewtoleft_have_client,0"
+				#"SUPER,Right,viewtoright,0"
+				#"CTRL,Right,viewtoright_have_client,0"
+				#"CTRL+SUPER,Left,tagtoleft,0"
+				#"CTRL+SUPER,Right,tagtoright,0"
+
+				"SUPER,Tab,view,1,0"
+				"SUPER,b,view,2,0"
+				"SUPER,f,view,3,0"
+				"SUPER,d,view,4,0"
+				"SUPER,w,view,5,0"
+				"SUPER,p,view,6,0"
+				"SUPER,y,view,7,0"
+				"SUPER,Comma,view,8,0"
+				"SUPER,v,view,9,0"
+
+				# tag: move client to the tag and focus it
+				# tagsilent: move client to the tag and not focus it
+				# Alt,1,tagsilent,1
+				"SUPER+SHIFT,Tab,tagsilent,1,0"
+				"SUPER+SHIFT,b,tagsilent,2,0"
+				"SUPER+SHIFT,f,tagsilent,3,0"
+				"SUPER+SHIFT,d,tagsilent,4,0"
+				"SUPER+SHIFT,w,tagsilent,5,0"
+				"SUPER+SHIFT,p,tagsilent,6,0"
+				"SUPER+SHIFT,y,tagsilent,7,0"
+				"SUPER+SHIFT,Comma,tagsilent,8,0"
+				"SUPER+SHIFT,v,tagsilent,9,0"
+
+				# monitor switch
+				#"alt+shift,Left,focusmon,left"
+				#"alt+shift,Right,focusmon,right"
+				#"SUPER+Alt,Left,tagmon,left"
+				#"SUPER+Alt,Right,tagmon,right"
+
+				# gaps
+				#"ALT+SHIFT,X,incgaps,1"
+				#"ALT+SHIFT,Z,incgaps,-1"
+				#"ALT+SHIFT,R,togglegaps"
+
+				# movewin
+				#"CTRL+SHIFT,Up,movewin,+0,-50"
+				#"CTRL+SHIFT,Down,movewin,+0,+50"
+				#"CTRL+SHIFT,Left,movewin,-50,+0"
+				#"CTRL+SHIFT,Right,movewin,+50,+0"
+
+				# resizewin
+				#"CTRL+ALT,Up,resizewin,+0,-50"
+				#"CTRL+ALT,Down,resizewin,+0,+50"
+				#"CTRL+ALT,Left,resizewin,-50,+0"
+				#"CTRL+ALT,Right,resizewin,+50,+0"
+			];
+
+			# Mouse Button Bindings
+			# NONE mode key only work in ov mode
+			mousebind = [
+				"SUPER,btn_left,moveresize,curmove"
+				#"NONE,btn_middle,togglemaximizescreen,0"
+				"SUPER,btn_right,moveresize,curresize"
+				#"NONE,btn_left,toggleoverview,-1"
+				#"NONE,btn_right,killclient,0"
+			];
+
+			# Axis Bindings
+			axisbind = [
+				"SUPER,UP,viewtoleft_have_client"
+				"SUPER,DOWN,viewtoright_have_client"
+			];
+
+			# layer rules
+			layerrule = [
+				"animation_type_open:zoom,layer_name:vicinae"
+				"animation_type_close:zoom,layer_name:vicinae"
+			];
+
+			windowrule = [
+				"appid:foot.yazi.filechooser,isfloating:1"
+			];
+
+			# env
+			env = [
+				"LIBGL_ALWAYS_SOFTWARE,1"
+			];
+		};};
+	};
+}

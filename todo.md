@@ -25,5 +25,4 @@ https://github.com/ruudjhuu/f3d-preview.yazi
 ## nvim
 - disable flash fFtT when recording a macro?
 - debugger plugin
-- dot repeat plugin
 https://github.com/CKolkey/ts-node-action

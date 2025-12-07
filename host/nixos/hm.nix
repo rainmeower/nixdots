@@ -67,7 +67,7 @@ in {
         ../../mod/hm/gui/dunst.nix
         ../../mod/hm/gui/emacs/emacs.nix
         ../../mod/hm/gui/firefox/firefox.nix
-        ../../mod/hm/gui/mango/mango.nix
+        ../../mod/hm/gui/mango
         ../../mod/hm/gui/media/mpv.nix
         ../../mod/hm/gui/media/obs.nix
         ../../mod/hm/gui/media/swayimg.nix

@@ -72,9 +72,9 @@ in {
     # hidden {{{
 
 
-    # btop.exec = "";
-    # btop.name = "";
-    # btop.noDisplay = true;
+    btop.exec = "";
+    btop.name = "";
+    btop.noDisplay = true;
     cups.exec = "";
     cups.name = "";
     cups.noDisplay = !os_config.services.printing.enable;
