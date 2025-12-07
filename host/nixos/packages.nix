@@ -4,23 +4,16 @@
   ...
 }:{
   environment.systemPackages = with pkgs; [
+    rofi
+
     godot
 
     bmm
-
-    blender
-
 
     nix-search-tv
 
     xdg-utils
 
-
-    rofi
-
-    zoom-us
-
-    cryptsetup
 
     rqbit
 
@@ -44,7 +37,7 @@
     # tty-clock
     fastfetch
     # zellij
-    expect
+    # expect
     yt-dlp
     tldr
 
@@ -58,7 +51,7 @@
     libevdev
     qemu_kvm
     hyprpicker
-    quickshell
+    # quickshell
     xwayland
     meow
     libqalculate

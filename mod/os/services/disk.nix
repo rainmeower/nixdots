@@ -10,6 +10,7 @@
     udiskie
     udisks2
     gvfs
+    cryptsetup
   ];
 
   # systemd.tmpfiles.rules = [
