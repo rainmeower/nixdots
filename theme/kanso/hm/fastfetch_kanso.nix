@@ -63,7 +63,7 @@
           keyColor = "blue";
           # text = "echo ${config.wm}";
           # text = "echo '\"niri\",";
-          text = if (wm == "mango") then wm + "wc" else wm;
+          text = "echo " + (if (wm == "mango") then wm + "wc" else wm);
         }
 # {
 #   type = "terminal";
