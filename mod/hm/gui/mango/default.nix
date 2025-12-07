@@ -55,7 +55,6 @@ in {
           in "${key}=${value'}";
       } {globalSection = {
         allow_tearing = true;
-        # force_tearing = true;
 
         exec-once = "~/.config/mango/autostart.sh";
         blur = true;
@@ -150,6 +149,8 @@ in {
 # mouse
 # need relogin to make it apply
         mouse_natural_scrolling = false;
+        accel_profile = 0;
+        accel_speed = 0.0;
 
 # Appearance
         gappih = gaps;
