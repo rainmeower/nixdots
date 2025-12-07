@@ -28,7 +28,6 @@
         compress
         dupes 
         git
-        jump-to-char
         mime-ext
         mount 
         no-status 
@@ -39,6 +38,7 @@
       ;
 
       # TODO check nixpkgs for these later
+      fchar = ./plugins/fchar.yazi;
       krita-preview = ./plugins/krita-preview.yazi;
       gvfs = ./plugins/gvfs.yazi;
       file-actions = ./plugins/gvfs.yazi;
@@ -48,6 +48,11 @@
     };
 
     initLua = /* lua */ ''
+require('fchar'):setup {
+  insensitive = true,
+  keep_searching = { enable = false, limit = 10 },
+  aliases = {},
+}
 require("mime-ext"):setup()
 require("no-status"):setup()
 require("simple-tag"):setup({

@@ -120,8 +120,8 @@
 
       {
         on = "f";
-        run = "plugin jump-to-char";
-        desc = "Jump to char";
+        run = "plugin fchar";
+        desc = "jump to char";
       }
 
       {
