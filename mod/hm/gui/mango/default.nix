@@ -110,14 +110,14 @@
 			axis_bind_apply_timeout = 100;
 			focus_on_activate = true;
 			inhibit_regardless_of_visibility = false;
-			sloppyfocus = false;
-			warpcursor = false;
+			sloppyfocus = false; # TODO
+			warpcursor = false; # TODO
 			focus_cross_monitor = false;
 			focus_cross_tag = false;
-			enable_floating_snap = false;
+			enable_floating_snap = false; # TODO
 			snap_distance = 30;
-			drag_tile_to_tile = true;
-			adaptive_sync = true;
+			drag_tile_to_tile = true; # TODO
+			adaptive_sync = false; # TODO
 			cursor_size = 32;
 			cursor_theme = "serenity";
 
@@ -156,8 +156,8 @@
 			# tile,scroller,grid,deck,monocle,center_tile,vertical_tile,vertical_scroller
 			tagrule = [
 				"id:1,layout_name:tile"
-				"id:2,layout_name:scroller"
-				"id:3,layout_name:grid"
+				"id:2,layout_name:grid"
+				"id:3,layout_name:scroller"
 				"id:4,layout_name:deck"
 				"id:5,layout_name:monocle"
 				"id:6,layout_name:center_tile"
@@ -174,7 +174,7 @@
 				"SUPER+ALT,r,reload_config"
 
 				# menu and terminal
-				"CTRL+ALT,p,spawn,vicinae toggle"
+				"SUPER,Space,spawn,vicinae toggle"
 				"SUPER,s,spawn,foot nvim"
 				"SUPER,t,spawn,foot"
 				"SUPER,c,spawn,foot yazi"
@@ -184,7 +184,7 @@
 				"SUPER,o,killclient,"
 
 				# switch window focus
-				"ALT,Tab,focusstack,next"
+				# "ALT,Tab,focusstack,next"
 				"SUPER,h,focusdir,left"
 				"SUPER,i,focusdir,right"
 				"SUPER,e,focusdir,up"
