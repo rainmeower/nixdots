@@ -5,7 +5,7 @@
 }:{
   programs.yazi.settings = {
     mgr = {
-      ratio   = [ 0 3 4 ];
+      ratio   = [ 0 1 1 ];
       sort_by = "natural";
       sort_sensitive = false;
       sort_reverse 	 = false;
