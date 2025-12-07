@@ -20,6 +20,9 @@ in {
     inputs.mango.hmModules.mango
   ];
   config = lib.mkIf (wm == "mango") {
+    home.packages = with pkgs; [
+      wlr-randr
+    ];
 
     xdg.portal.configPackages = portals;
     xdg.portal.extraPortals = portals;
@@ -32,17 +35,11 @@ in {
       autostart_sh = /* bash */ ''
         set +e
 
-# dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
-
         wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
-
         swww-daemon &
         ${flake_dir}/stuff/scripts/swww.sh &
-# udiskie -a &
         foot --server &
         vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland &
-
-
         '';
 
 # https://codeberg.org/worldspawn/nix/src/branch/main/modules/home-manager/wm/mangowc.nix
