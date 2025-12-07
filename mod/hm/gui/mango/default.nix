@@ -5,19 +5,30 @@
   wm,
   self,
   theme,
+  pkgs,
 	...
 }: let
   col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
   gaps = 10;
   h = lib.removePrefix "#";
+  portals = with pkgs; [
+    xdg-desktop-portal
+    # xdg-desktop-portal-wlr
+  ];
 in {
   imports = [
     inputs.mango.hmModules.mango
   ];
   config = lib.mkIf (wm == "mango") {
 
+  xdg.portal.configPackages = portals;
+  xdg.portal.extraPortals = portals;
+
+
     wayland.windowManager.mango = {
       enable = true;
+
+      # exec-once = "~/.config/mango/autostart.sh";
       autostart_sh = /* bash */ ''
         set +e
 
