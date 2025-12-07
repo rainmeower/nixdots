@@ -34,7 +34,7 @@ in {
       type = enum [
         "hyprland"
         "niri"
-        # "mango" TODO
+        "mango"
       ];
     };
 
