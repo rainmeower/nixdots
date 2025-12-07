@@ -75,7 +75,7 @@ in {
         zoom_end_ratio = 0.0;
         fadein_begin_opacity = 1.0;
         fadeout_begin_opacity = 0.3;
-        animation_duration_move = 500;
+        animation_duration_move = 0;
         animation_duration_open = 400;
         animation_duration_tag = 0;
         animation_duration_close = 800;
@@ -187,6 +187,8 @@ in {
             "SUPER,s,spawn,foot nvim"
             "SUPER,t,spawn,foot"
             "SUPER,c,spawn,foot yazi"
+
+            "SUPER,k,spawn,foot -a 'ncmpcpp' ncmpcpp"
 
 # exit
             "SUPER+ALT,q,quit"
@@ -303,6 +305,7 @@ in {
 
         windowrule = [
           "appid:foot.yazi.filechooser,isfloating:1"
+          "appid:foot.ncmpcpp,isfloating:1"
         ];
 
 # env
