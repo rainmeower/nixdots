@@ -24,6 +24,7 @@ in {
     ELECTRON_OZONE_PLATFORM_HINT = "auto";
     NIXOS_OZONE_WL = "1"; # tell things to use wayland
     NIXPKGS_ALLOW_UNFREE = "1";
+    WLR_DRM_NO_ATOMIC = "1"; # mango
 
     inherit
       XDG_CONFIG_HOME
