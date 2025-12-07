@@ -54,8 +54,8 @@ in {
             toString value;
           in "${key}=${value'}";
       } {globalSection = {
-        # allow_tearing = true;
-        force_tearing = true;
+        allow_tearing = true;
+        # force_tearing = true;
 
         exec-once = "~/.config/mango/autostart.sh";
         blur = true;
