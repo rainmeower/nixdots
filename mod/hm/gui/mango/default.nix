@@ -193,6 +193,9 @@ in {
 # mod keys name: super,ctrl,alt,shift,none
         bind = [
 
+        "XF86AudioRaiseVolume,spawn,wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
+        "XF86AudioLowerVolume,spawn,wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"
+
           "SUPER,G,spawn,wlr-which-key"
             "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
 

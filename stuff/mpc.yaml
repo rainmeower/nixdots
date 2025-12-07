@@ -74,7 +74,6 @@ menu:
     desc: play song
     submenu:
 
-
       - key: [ "a", "Mod4+a" ]
         desc: 
         submenu:
