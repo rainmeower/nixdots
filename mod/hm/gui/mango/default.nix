@@ -53,7 +53,7 @@ in {
         blur_params_noise = 0;
         blur_params_brightness = 1;
         blur_params_contrast = 0.8;
-        blur_params_saturation = 0.8;
+        blur_params_saturation = 0.7;
 
         shadows = false;
 
