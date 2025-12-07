@@ -174,7 +174,7 @@
 				"SUPER+ALT,r,reload_config"
 
 				# menu and terminal
-				"SUPER,Space,spawn,vicinae toggle"
+				"SUPER,space,spawn,vicinae toggle"
 				"SUPER,s,spawn,foot nvim"
 				"SUPER,t,spawn,foot"
 				"SUPER,c,spawn,foot yazi"
