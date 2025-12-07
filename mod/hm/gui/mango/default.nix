@@ -115,30 +115,31 @@ in {
         new_is_master = false;
         default_mfact = 0.5;
         default_nmaster = 1;
-        smartgaps = true; # TODO
+        smartgaps = false;
 
 # Overview Setting
         hotarea_size = 10;
         enable_hotarea = false;
         ov_tab_mode = 0; # TODO
-          overviewgappi = 5; # inner gaps
-          overviewgappo = 30; # outer gaps
+        overviewgappi = 5; # inner gaps
+        overviewgappo = 30; # outer gaps
 
 # Misc
+        allow_shortcuts_inhibit = true;
         no_border_when_single = true;
-        axis_bind_apply_timeout = 100;
+        axis_bind_apply_timeout = 10;
         focus_on_activate = true;
         inhibit_regardless_of_visibility = false;
-        sloppyfocus = false; # TODO
-          warpcursor = false; # TODO
-          focus_cross_monitor = false;
+        sloppyfocus = false;
+        warpcursor = true;
+        focus_cross_monitor = false;
         focus_cross_tag = false;
-        enable_floating_snap = false; # TODO
-          snap_distance = 30;
-        drag_tile_to_tile = true; # TODO
-          adaptive_sync = false; # TODO
-          cursor_size = 32;
-        cursor_theme = "serenity";
+        enable_floating_snap = false;
+        snap_distance = 30;
+        drag_tile_to_tile = true;
+        adaptive_sync = false;
+        cursor_size = 20;
+        cursor_theme = "Bibata Modern Classic";
 
 # keyboard
         repeat_rate = 25;
