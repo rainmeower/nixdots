@@ -205,6 +205,7 @@ in {
             "SUPER,s,spawn,foot nvim"
             "SUPER,t,spawn,foot"
             "SUPER,c,spawn,foot yazi"
+            "SUPER,c,spawn,foot -a 'foot.yazi.isterm' yazi"
 
             "SUPER,k,spawn,${flake_dir}/stuff/scripts/ncmpcpp.sh"
 
@@ -329,7 +330,8 @@ in {
           "appid:foot.ncmpcpp,foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1"
           "appid:*vesktop*,isopensilent:1"
           "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1"
-          "appid:isterm,isterm:1"
+          "appid:foot.yazi.isterm,isterm:1"
+          "appid:swayimg,isnoanimation:1"
           # TODO `isterm` + emacs/yazi?
         ];
 
