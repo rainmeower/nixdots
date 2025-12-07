@@ -25,6 +25,8 @@ in {
   config = lib.mkIf (wm == "mango") {
     home.packages = with pkgs; [
       wlr-randr
+      slurp
+      grim
     ];
 
     xdg.portal.configPackages = portals;
@@ -321,7 +323,6 @@ in {
 
         windowrule = [
           "appid:foot.ncmpcpp,appid:foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1"
-          ",isfloating:1"
           "appid:*vesktop*,isopensilent:1"
           "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1"
           # TODO `isterm` + emacs/yazi?
