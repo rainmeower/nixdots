@@ -15,15 +15,16 @@
     xdg-desktop-portal
     xdg-desktop-portal-wlr
     xdg-desktop-portal-termfilechooser
+    xdg-desktop-portal-gtk
   ];
 in {
   imports = [
     inputs.mango.hmModules.mango
   ];
   config = lib.mkIf (wm == "mango") {
-    # home.packages = with pkgs; [
-    #   wlr-randr
-    # ];
+    home.packages = with pkgs; [
+      wlr-randr
+    ];
 
     xdg.portal.configPackages = portals;
     xdg.portal.extraPortals = portals;
@@ -36,7 +37,7 @@ in {
       /* bash */ ''
         set +e
 
-        # wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
+        wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
         swww-daemon &
         ${flake_dir}/stuff/scripts/swww.sh &
         foot --server &
@@ -325,10 +326,10 @@ in {
           # TODO `isterm` + emacs/yazi?
         ];
 
-        monitorrule = [
-          "DP-1,0.55,1,scroller,0,1,2560,1440,165.080002"
-          "DP-3,0.55,1,vertical_scroller,90,1,2560,1440,74.971001"
-        ];
+        # monitorrule = [
+        #   "DP-1,0.55,1,scroller,0,1,2560,1440,165.080002"
+        #   "DP-3,0.55,1,vertical_scroller,90,1,2560,1440,74.971001"
+        # ];
 # env
         env = [
         ];
