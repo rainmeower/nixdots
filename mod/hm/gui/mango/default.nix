@@ -207,7 +207,7 @@ in {
             "SUPER,t,spawn,foot"
             "SUPER,c,spawn,foot yazi"
 
-            "SUPER,k,spawn_sh,pkill ncmpcpp || foot -a 'foot.ncmpcpp' ncmpcpp"
+            "SUPER,k,spawn_sh,'pkill ncmpcpp || foot -a 'foot.ncmpcpp' ncmpcpp'"
 
 # exit
             "SUPER+ALT,q,quit"
