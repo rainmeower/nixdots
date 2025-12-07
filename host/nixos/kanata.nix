@@ -581,6 +581,21 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;; expand {{{ 
     ;; TODO add more
+
+    ;; https://github.com/
+    ((and
+      (key-history g 4)
+      (key-history h 3)
+      (or (key-history lsft 2) (key-history rsft 2))
+      (key-history ; 1)
+    )) (multi
+      (release-key g)
+      (release-key h)
+      (release-key lsft)
+      (release-key rsft)
+      (macro bspc bspc bspc h t t p s S-; / / g i t h u b . c o m /)
+    ) break
+
     ;; https://
     ((and
       (key-history h 2)

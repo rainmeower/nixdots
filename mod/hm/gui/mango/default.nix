@@ -140,6 +140,7 @@ in {
         adaptive_sync = false;
         cursor_size = 20;
         cursor_theme = "Bibata Modern Classic";
+        cursor_hide_timeout = 1;
 
 # keyboard
         repeat_rate = 25;
