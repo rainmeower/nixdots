@@ -187,7 +187,7 @@ pkgs.vicinae-extension-nix
     };
     colors = {
       core = {
-        background = "#cc" + (lib.removePrefix "#" col.bg); # opacity at the start for some reason
+        background = "#00" + (lib.removePrefix "#" col.bg); # opacity at the start for some reason
         inherit (col)
           foreground
           accent;
