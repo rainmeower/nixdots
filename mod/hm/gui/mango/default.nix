@@ -39,6 +39,7 @@ in {
       autostart_sh = # {{{
       /* bash */ ''
         set +e
+        dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
 
         wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
         swww-daemon &
@@ -322,7 +323,8 @@ in {
         ];
 
         windowrule = [
-          "appid:foot.ncmpcpp,appid:foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1"
+          "appid:foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1"
+          "appid:foot.ncmpcpp,width:720,height:1080,isnoborder:1,isfloating:1"
           "appid:*vesktop*,isopensilent:1"
           "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1"
           # TODO `isterm` + emacs/yazi?
