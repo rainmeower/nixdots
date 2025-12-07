@@ -4,7 +4,9 @@
   flake_dir,
   wm,
 	...
-}: {
+}: let
+  gaps = 10;
+in {
   imports = [
     inputs.mango.hmModules.mango
   ];
@@ -81,7 +83,7 @@
         animation_curve_focus = "0.46,1.0,0.29,1";
 
 # Scroller Layout Setting
-        scroller_structs = 0;
+        scroller_structs = gaps;
         scroller_default_proportion = 0.5;
         scroller_default_proportion_single = 0.5;
         scroller_proportion_preset = "0.333,0.5,0.667";
@@ -133,10 +135,10 @@
         mouse_natural_scrolling = false;
 
 # Appearance
-        gappih = 10;
-        gappiv = 10;
-        gappoh = 10;
-        gappov = 10;
+        gappih = gaps;
+        gappiv = gaps;
+        gappoh = gaps;
+        gappov = gaps;
         scratchpad_width_ratio = 0.67; # i swear its just rounding 0.66...
           scratchpad_height_ratio = 0.9;
         borderpx = 3;
