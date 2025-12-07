@@ -2,6 +2,7 @@
   lib,
   theme,
   username,
+  wm,
   ...
 }:{
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
@@ -58,10 +59,11 @@
 # }
         {
           type = "command";
-          key = "  wm:";
+          key = "  gui:";
           keyColor = "blue";
           # text = "echo ${config.wm}";
-          text = "echo '\"niri\",";
+          # text = "echo '\"niri\",";
+          text = if (wm == "mango") then wm + "wc" else wm;
         }
 # {
 #   type = "terminal";
@@ -97,17 +99,17 @@
           key = "  gpu:";
           keyColor = "blue";
         }
-        # {
-        #   type = "gpu";
-        #   format = "{3}";
-        #   key = "drv";
-        #   keyColor = "blue";
-        # }
-        # {
-        #   type = "memory";
-        #   key = "  memory";
-        #   keyColor = "blue";
-        # }
+# {
+#   type = "gpu";
+#   format = "{3}";
+#   key = "drv";
+#   keyColor = "blue";
+# }
+# {
+#   type = "memory";
+#   key = "  memory";
+#   keyColor = "blue";
+# }
         {
           type = "command";
           key = "  age:";
@@ -124,14 +126,14 @@
           type = "command";
           key = "  theme:";
           keyColor = "blue";
-          # text = "echo ${config.theme}";
+# text = "echo ${config.theme}";
           text = "echo '\"kanso\"'";
         }
-        # {
-        #   type = "colors";
-        #   paddingLeft = 0;
-        #   symbol = "circle";
-        # }
+# {
+#   type = "colors";
+#   paddingLeft = 0;
+#   symbol = "circle";
+# }
         {
           type = "command";
           key = " ";

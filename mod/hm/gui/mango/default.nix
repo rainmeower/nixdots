@@ -100,9 +100,9 @@
 			# Overview Setting
 			hotarea_size = 10;
 			enable_hotarea = false;
-			ov_tab_mode = 0;
-			overviewgappi = 5;
-			overviewgappo = 30;
+			ov_tab_mode = 0; # TODO
+			overviewgappi = 5; # inner gaps
+			overviewgappo = 30; # outer gaps
 
 			# Misc
 			no_border_when_single = false;
