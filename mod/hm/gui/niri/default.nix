@@ -1,6 +1,8 @@
 {
   pkgs,
   inputs,
+  lib,
+  wm,
   ...
 }:
 let
@@ -22,14 +24,17 @@ in {
     ./layer_rules.nix
   ];
 
-  home.packages = with pkgs; [
-    xwayland-satellite
-    # gnome-keyring
-  ];
+  config = lib.mkIf (wm == "niri") {
 
-  xdg.portal.configPackages = portals;
-  xdg.portal.extraPortals = portals;
+    home.packages = with pkgs; [
+      xwayland-satellite
+      # gnome-keyring
+    ];
 
-  programs.niri.enable = true;
-  programs.niri.package = pkgs.niri;
+    xdg.portal.configPackages = portals;
+    xdg.portal.extraPortals = portals;
+
+    programs.niri.enable = if wm == "niri" then true else false;
+    programs.niri.package = pkgs.niri;
+  };
 }

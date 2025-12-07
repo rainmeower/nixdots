@@ -10,7 +10,6 @@
     ./fastfetch_kanso.nix
     ./fzf_kanso.nix
     # ./hm/hyprpaper_kanso.nix
-    ./niri_kanso.nix
     ./nushell_kanso.nix
     ./starship_kanso.nix
     ./walker_kanso.nix

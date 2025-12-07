@@ -5,7 +5,6 @@
     ../../macchiato/hm/ncmpcpp_macchiato.nix
     ../../macchiato/hm/starship_macchiato.nix
     ../../macchiato/hm/nushell_macchiato.nix
-    ../../macchiato/hm/niri_macchiato.nix
     ./foot_blacchiato.nix
     ./gtk_blacchiato.nix
     ./walker_blacchiato.nix
