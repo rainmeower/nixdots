@@ -16,16 +16,15 @@ in {
 
   programs.steam = {
     enable = true;
-    package = pkgs_stable.steam;
+    package = pkgs_stable.steam; # why did this install fucking systemd and wayland and gtk4 and 597 other packages and two gigabytes wtf
     extraCompatPackages = [ pkgs.proton-ge-bin ];
     fontPackages = [ config.font_pkg ];
     gamescopeSession.enable = false;
-    remotePlay.openFirewall = false; # Open ports in the firewall for Steam Remote Play
-      dedicatedServer.openFirewall = false; # Open ports in the firewall for Source Dedicated Server
-      localNetworkGameTransfers.openFirewall = false; # Open ports in the firewall for Steam Local Network Game Transfers
+    remotePlay.openFirewall = false; # remote play port
+    dedicatedServer.openFirewall = false; # source dedicated server port
+    localNetworkGameTransfers.openFirewall = false; # steam local network game transfers
 
-      # nix-gaming
-      platformOptimizations.enable = true;
+    platformOptimizations.enable = true; # nix-gaming
   };
 
   # programs.gamescope = {

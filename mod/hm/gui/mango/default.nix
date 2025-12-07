@@ -112,10 +112,10 @@ in {
         edge_scroller_pointer_focus = true; # TODO
 
 # Master-Stack Layout Setting
-        new_is_master = true;
-        default_mfact = 0.55;
+        new_is_master = false;
+        default_mfact = 0.5;
         default_nmaster = 1;
-        smartgaps = false; # TODO
+        smartgaps = true; # TODO
 
 # Overview Setting
         hotarea_size = 10;
