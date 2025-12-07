@@ -187,8 +187,8 @@ pkgs.vicinae-extension-nix
     };
     colors = {
       core = {
+        background = col.bg_trans;
         inherit (col)
-          background
           foreground
           accent;
       };
