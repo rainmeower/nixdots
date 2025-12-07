@@ -207,7 +207,7 @@ in {
             "SUPER,t,spawn,foot"
             "SUPER,c,spawn,foot yazi"
 
-            "SUPER,k,spawn_sh,${flake_dir}/stuff/scripts/ncmpcpp.sh"
+            "SUPER,k,spawn,${flake_dir}/stuff/scripts/ncmpcpp.sh"
 
             "SUPER,z,spawn,zen -p meow"
             "SUPER+SHIFT,z,spawn,zen -p media"
