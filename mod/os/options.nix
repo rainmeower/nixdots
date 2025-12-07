@@ -65,7 +65,7 @@ in {
       type = str;
     };
 
-    font_package = mkOption {
+    font_pkg = mkOption {
       type = anything;
     };
   };

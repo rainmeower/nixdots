@@ -18,7 +18,7 @@ in {
     enable = true;
     package = pkgs_stable.steam;
     extraCompatPackages = [ pkgs.proton-ge-bin ];
-    fontPackages = [ config.font_package ];
+    fontPackages = [ config.font_pkg ];
     gamescopeSession.enable = false;
     remotePlay.openFirewall = false; # Open ports in the firewall for Steam Remote Play
       dedicatedServer.openFirewall = false; # Open ports in the firewall for Source Dedicated Server

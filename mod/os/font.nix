@@ -9,14 +9,14 @@
       font_name = "Mononoki Nerd Font Mono";
       font_path = "${pkgs.nerd-fonts.mononoki}/share/fonts/truetype/NerdFonts/Mononoki/MononokiNerdFontMono-Regular.ttf";
       font_path_bold = "${pkgs.nerd-fonts.mononoki}/share/fonts/truetype/NerdFonts/Mononoki/MononokiNerdFontMono-Bold.ttf";
-      font_package = pkgs.nerd-fonts.mononoki;
+      font_pkg = pkgs.nerd-fonts.mononoki;
     })
 
     (lib.mkIf (config.font == "iosevka") {
       font_name = "Iosevka Nerd Font Mono";
       font_path = "${pkgs.nerd-fonts.iosevka}/share/fonts/truetype/NerdFonts/Iosevka/IosevkaNerdFontMono-Regular.ttf";
       font_path_bold = "${pkgs.nerd-fonts.iosevka}/share/fonts/truetype/NerdFonts/Iosevka/IosevkaNerdFontMono-Bold.ttf";
-      font_package = pkgs.nerd-fonts.iosevka;
+      font_pkg = pkgs.nerd-fonts.iosevka;
     })
   ];
 }

@@ -8,6 +8,7 @@
   games_dir = config.xdg.userDirs.extraConfig.XDG_GAMES_DIR;
   icon_dir = flake_dir + "/stuff/icons";
 in {
+
   xdg.desktopEntries = {
     # games {{{
     melee = {
@@ -70,9 +71,10 @@ in {
 
     # hidden {{{
 
-    btop.exec = "";
-    btop.name = "";
-    btop.noDisplay = true;
+
+    # btop.exec = "";
+    # btop.name = "";
+    # btop.noDisplay = true;
     cups.exec = "";
     cups.name = "";
     cups.noDisplay = !os_config.services.printing.enable;

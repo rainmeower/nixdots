@@ -33,7 +33,7 @@ in {
         wm
         font_name
         font_path
-        font_package
+        font_pkg
         monitor
       ;
       host = config.networking.hostName;

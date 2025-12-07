@@ -1,4 +1,3 @@
-# FIXME
 (final: prev: {
   gtk4 = prev.gtk4.override {
     x11Support = false;
