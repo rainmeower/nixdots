@@ -176,15 +176,19 @@ in {
 
 # layout support:
 # tile,scroller,grid,deck,monocle,center_tile,vertical_tile,vertical_scroller
+# center_tile deck grid monocle right_tile scroller tile vertical_deck vertical_grid vertical_scroller vertical_spiral vertical_tile
+
+
+
         tagrule = [
           "id:1,layout_name:tile"
           "id:2,layout_name:grid"
           "id:3,layout_name:scroller" # vertical scroller?
           "id:4,layout_name:tile" # deck maybe?
-          "id:5,layout_name:monocle"
+          "id:5,layout_name:vertical_spiral"
           "id:6,layout_name:center_tile"
           "id:7,layout_name:vertical_tile"
-          "id:8,layout_name:vertical_scroller"
+          "id:8,layout_name:monocle"
           "id:9,layout_name:vertical_scroller"
         ];
 
