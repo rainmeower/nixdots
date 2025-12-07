@@ -20,7 +20,7 @@
     /* image */
     # gimp
     krita
-    inkscape
+    # inkscape
     # aseprite
     # qview
     # pastel
@@ -29,7 +29,6 @@
     /* video */
     ffmpeg
     # davinci-resolve
-    obs-studio
     wf-recorder
 
     /* misc terminal stuff */
@@ -49,7 +48,7 @@
     wl-clipboard
     dconf
     libevdev
-    qemu_kvm
+    # qemu_kvm
     hyprpicker
     # quickshell
     xwayland
