@@ -326,8 +326,8 @@ in {
         ];
 
         monitorrule = [
-          "DP-1,0.55,1,scroller,0,1,2560,1440,165"
-          "DP-3,0.55,1,vertical_scroller,90,1,2560,1440,75"
+          "DP-1,0.55,1,scroller,0,1,2560,1440,165.080002"
+          "DP-3,0.55,1,vertical_scroller,90,1,2560,1440,74.971001"
         ];
 # env
         env = [
