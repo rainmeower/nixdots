@@ -209,7 +209,7 @@ in {
             "SUPER,t,spawn,foot"
             "SUPER,c,spawn,foot -a 'foot.yazi.isterm' yazi"
 
-            "SUPER,k,spawn,${flake_dir}/stuff/scripts/ncmpcpp.sh"
+            "SUPER,k,spawn,${flake_dir}/stuff/scripts/keys/ncmpcpp.sh"
 
             "SUPER,z,spawn,zen -p meow"
             "SUPER+SHIFT,z,spawn,zen -p media"
