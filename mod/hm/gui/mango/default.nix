@@ -103,7 +103,7 @@
           overviewgappo = 30; # outer gaps
 
 # Misc
-          no_border_when_single = false;
+        no_border_when_single = true;
         axis_bind_apply_timeout = 100;
         focus_on_activate = true;
         inhibit_regardless_of_visibility = false;
@@ -215,7 +215,7 @@
             "SUPER,9,switch_proportion_preset,"
 
 # switch layout
-            "SUPER,Semicolon,switch_layout"
+            "SUPER,semicolon,switch_layout"
 
 # tag switch
 #"SUPER,Left,viewtoleft,0"
@@ -232,7 +232,7 @@
             "SUPER,w,view,5,0"
             "SUPER,p,view,6,0"
             "SUPER,y,view,7,0"
-            "SUPER,Comma,view,8,0"
+            "SUPER,comma,view,8,0"
             "SUPER,v,view,9,0"
 
 # tag: move client to the tag and focus it
