@@ -75,10 +75,10 @@ in {
         zoom_end_ratio = 0.3;
         fadein_begin_opacity = 1.0;
         fadeout_begin_opacity = 0.3;
-        animation_duration_move = 200;
+        animation_duration_move = 250;
         animation_duration_open = 400;
         animation_duration_tag = 0;
-        animation_duration_close = 800;
+        animation_duration_close = 1200;
         animation_duration_focus = 0;
         animation_curve_open = "0.46,1.0,0.29,1";
         animation_curve_move = "0.46,1.0,0.29,1";
