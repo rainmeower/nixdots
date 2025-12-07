@@ -21,9 +21,9 @@ in {
     inputs.mango.hmModules.mango
   ];
   config = lib.mkIf (wm == "mango") {
-    home.packages = with pkgs; [
-      wlr-randr
-    ];
+    # home.packages = with pkgs; [
+    #   wlr-randr
+    # ];
 
     xdg.portal.configPackages = portals;
     xdg.portal.extraPortals = portals;
@@ -36,7 +36,7 @@ in {
       /* bash */ ''
         set +e
 
-        wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
+        # wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
         swww-daemon &
         ${flake_dir}/stuff/scripts/swww.sh &
         foot --server &
@@ -318,10 +318,17 @@ in {
         ];
 
         windowrule = [
-          "appid:foot.yazi.filechooser,isfloating:1"
-          "appid:foot.ncmpcpp,isfloating:1"
+          "appid:foot.ncmpcpp,appid:foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1"
+          ",isfloating:1"
+          "appid:*vesktop*,isopensilent:1"
+          "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1"
+          # TODO `isterm` + emacs/yazi?
         ];
 
+        monitorrule = [
+          "DP-1,0.55,1,scroller,0,1,2560,1440,165"
+          "DP-3,0.55,1,vertical_scroller,90,1,2560,1440,75"
+        ];
 # env
         env = [
         ];
