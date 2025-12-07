@@ -160,14 +160,14 @@ in {
 # tile,scroller,grid,deck,monocle,center_tile,vertical_tile,vertical_scroller
         tagrule = [
           "id:1,layout_name:tile"
-            "id:2,layout_name:grid"
-            "id:3,layout_name:scroller"
-            "id:4,layout_name:deck"
-            "id:5,layout_name:monocle"
-            "id:6,layout_name:center_tile"
-            "id:7,layout_name:vertical_tile"
-            "id:8,layout_name:vertical_scroller"
-            "id:9,layout_name:vertical_scroller"
+          "id:2,layout_name:grid"
+          "id:3,layout_name:scroller"
+          "id:4,layout_name:deck"
+          "id:5,layout_name:monocle"
+          "id:6,layout_name:center_tile"
+          "id:7,layout_name:vertical_tile"
+          "id:8,layout_name:vertical_scroller"
+          "id:9,layout_name:vertical_scroller"
         ];
 
 # Key Bindings
@@ -188,7 +188,7 @@ in {
             "SUPER,t,spawn,foot"
             "SUPER,c,spawn,foot yazi"
 
-            "SUPER,k,spawn,foot -a 'ncmpcpp' ncmpcpp"
+            "SUPER,k,spawn,foot -a 'foot.ncmpcpp' ncmpcpp"
 
 # exit
             "SUPER+ALT,q,quit"
@@ -300,7 +300,7 @@ in {
 # layer rules
         layerrule = [
           "animation_type_open:zoom,layer_name:vicinae"
-            "animation_type_close:zoom,layer_name:vicinae"
+          "animation_type_close:zoom,layer_name:vicinae"
         ];
 
         windowrule = [
