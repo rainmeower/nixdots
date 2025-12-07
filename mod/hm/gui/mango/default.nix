@@ -3,9 +3,13 @@
 	lib,
   flake_dir,
   wm,
+  self,
+  theme,
 	...
 }: let
+  col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
   gaps = 10;
+  h = lib.removePrefix "#";
 in {
   imports = [
     inputs.mango.hmModules.mango
@@ -88,7 +92,7 @@ in {
         scroller_default_proportion_single = 0.5;
         scroller_proportion_preset = "0.333,0.5,0.667";
         scroller_focus_center = false; # TODO
-        scroller_prefer_center = true;
+        scroller_prefer_center = false;
         edge_scroller_pointer_focus = true; # TODO
 
 # Master-Stack Layout Setting
@@ -142,11 +146,12 @@ in {
         scratchpad_width_ratio = 0.67; # i swear its just rounding 0.66...
           scratchpad_height_ratio = 0.9;
         borderpx = 3;
-        rootcolor = "0x141212ff";
-        bordercolor = "0x5f5757ff";
-        focuscolor = "0x6a8cbcff";
-        maximizescreencolor = "0xe29ecaff";
-        urgentcolor = "0xf5a091ff";
+        # TODO function for these
+        rootcolor = "0xff0000ff";
+        bordercolor = "0x00000000";
+        focuscolor = "0x" + h col.accent + "ff";
+        maximizescreencolor = "0x" + h col.pink + "ff";
+        urgentcolor = "0x" + h col.red + "ff";
         scratchpadcolor = "0x85b5baff";
         globalcolor = "0xaca1cfff";
         overlaycolor = "0x90b99fff";
