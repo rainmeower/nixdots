@@ -207,7 +207,10 @@ in {
             "SUPER,t,spawn,foot"
             "SUPER,c,spawn,foot yazi"
 
-            "SUPER,k,spawn_sh,'pkill ncmpcpp || foot -a 'foot.ncmpcpp' ncmpcpp'"
+            "SUPER,k,spawn_sh,${flake_dir}/stuff/scripts/ncmpcpp.sh"
+
+            "SUPER,z,spawn,zen -p meow"
+            "SUPER+SHIFT,z,spawn,zen -p media"
 
 # exit
             "SUPER+ALT,q,quit"
