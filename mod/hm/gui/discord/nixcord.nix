@@ -30,7 +30,7 @@
       # minimizeToTray = false;
       # staticTitle = true;
       # # customTrayIcons = TODO
-      # minimumWindowSize = false;
+      disableMinSize = false;
       # smoothScrolling = false;
       # # notificationBadge = false;
       # richPresence = false;

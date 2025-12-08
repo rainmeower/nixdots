@@ -54,6 +54,87 @@
       allowNewlinesInCommands = true;
     };
 
+    betterPlusReacts.enable = true;
+    betterUploadButton.enable = true;
+
+    channelTabs = {
+      enable = true;
+      # onStartup = "Remember tabs from last session";
+      # showStatusIndicators = true;
+      # showBookmarkBar = true;
+      # bookmarkNotificationDot = true;
+    };
+
+    cleanChannelName.enable = true;
+    clearURLs.enable = true;
+
+    commandPalette = {
+      enable = true;
+      visualStyle = "classic";
+      showTags = true;
+      enableTagFilter = true;
+      # TODO custom commands
+    };
+
+    copyFileContents.enable = true;
+
+    crashHandler = {
+      enable = true;
+      attemptToPreventCrashes = true;
+    };
+
+    # CustomFolderIcons = {
+
+    disableCallIdle.enable = true;
+    disableCameras.enable = true;
+
+    equicordToolbox.enable = true;
+
+    fakeNitro = {
+      enable = true;
+      enableEmojiBypass = true;
+      emojiSize = 48.0;
+      transformEmojis = true;
+
+      enableStickerBypass = true;
+      stickerSize = 160.0;
+      transformStickers = true;
+
+      useStickerHyperLinks = true;
+      useEmojiHyperLinks = true;
+
+      hyperLinkText = "{{NAME}}";
+    };
+
+    # fakeProfileThemes = 
+
+    findReply.enable = true;
+
+    favoriteGifSearch.enable = true;
+
+    favoriteEmojiFirst.enable = true;
+
+    fixCodeblockGap.enable = true;
+
+    fixImagesQuality.enable = true;
+
+    frequentQuickSwitcher.enable = true;
+
+    friendsSince.enable = true;
+
+    # gifCollections TODO
+
+    # githubRepos = {
+    #   enable = true;
+    #   showStars = true;
+    #   showLanguage = true;
+    #   showInMiniProfile = true;
+    # };
+
+
+
+
+
 
   };
 }
