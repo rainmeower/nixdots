@@ -187,9 +187,9 @@ in {
           "id:4,layout_name:tile" # deck maybe?
           "id:5,layout_name:vertical_spiral"
           "id:6,layout_name:center_tile"
-          "id:7,layout_name:vertical_tile"
+          "id:7,layout_name:vertical_scroller,monitor_name:DP-3"
           "id:8,layout_name:monocle"
-          "id:9,layout_name:vertical_scroller"
+          "id:9,layout_name:vertical_tile"
         ];
 
 # Key Bindings
@@ -319,7 +319,7 @@ in {
         layerrule = [
           "animation_type_open:zoom,layer_name:vicinae"
           "animation_type_close:zoom,layer_name:vicinae"
-          "noblur:1,layer_name:slurp"
+          # "noblur:1,layer_name:slurp"
         ];
 
         windowrule = [
@@ -329,8 +329,10 @@ in {
           "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1"
           "appid:foot.yazi.isterm,isterm:1"
           "appid:swayimg,isnoanimation:1"
+          "appid:vesktop,tags:2"
           # TODO `isterm` + emacs/yazi?
         ];
+
 
         monitorrule = [
           "DP-1,0.5,1,scroller,0,1,2560,1440,165.080002"
