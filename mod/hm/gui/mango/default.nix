@@ -27,7 +27,8 @@ in {
     home.packages = with pkgs; [
       wlr-randr
       slurp
-      grim
+      # grim
+      wayshot
     ];
 
     xdg.portal.configPackages = portals;
