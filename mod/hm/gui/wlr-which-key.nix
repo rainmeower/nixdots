@@ -50,7 +50,7 @@ menu:
 
   - key: [ "f", "Mod4+f" ]
     desc: float active
-    cmd: {if (wm == "hyprland") then "notify-send TODO"
+    cmd: ${if (wm == "hyprland") then "notify-send TODO"
            else if (wm == "niri") then "niri msg action toggle-window-floating"
            else if (wm == "mango") then "mmsg -d togglefloating"
            else err
