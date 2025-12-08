@@ -1,10 +1,12 @@
 {
   inputs,
+  config,
   ...
 }:{
   imports = [
     inputs.nixcord.homeModules.nixcord
     ./plugins.nix
+        ./system24.nix
   ];
 
   programs.nixcord = {
@@ -19,26 +21,23 @@
     # quickCss = "some CSS";  # quickCSS file
     config = {
       useQuickCss = false;
-      # themeLinks = [
-      #   "https://raw.githubusercontent.com/link/to/some/theme.css"
-      # ];
-      frameless = true;                   # Set some Vencord/Equicord options
+      themeLinks = [
+        (config.home.homeDirectory + ".config/vesktop/themes/system24_2.css")
+      ];
+
+      frameless = true;
+      # startWithSystem = false;
+      # minimizeToTray = false;
+      # staticTitle = true;
+      # # customTrayIcons = TODO
+      # minimumWindowSize = false;
+      # smoothScrolling = false;
+      # # notificationBadge = false;
+      # richPresence = false;
+      # openLinksInApp = false;
+      #
+      # splashScreen = false;
     };
-    # dorion = {
-    #   theme = "dark";
-    #   zoom = "1.1";
-    #   blur = "none";       # "none", "blur", or "acrylic"
-    #   sysTray = true;
-    #   openOnStartup = true;
-    #   autoClearCache = true;
-    #   disableHardwareAccel = false;
-    #   rpcServer = true;
-    #   rpcProcessScanner = true;
-    #   pushToTalk = true;
-    #   pushToTalkKeys = ["RControl"];
-    #   desktopNotifications = true;
-    #   unreadBadge = true;
-    # };
     extraConfig = {
       # Some extra JSON config here
       # ...
