@@ -48,7 +48,7 @@ in {
         foot --server &
         vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland &
         dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
-        ${flake_dir}/stuff/nata/nata.sh -c ${flake_dir}/stuff/nata/config.json
+        ${flake_dir}/stuff/nata/nata.sh -c ${flake_dir}/stuff/nata/config.json >/dev/null 2>/dev/null &
 
       ''; # }}}
 
