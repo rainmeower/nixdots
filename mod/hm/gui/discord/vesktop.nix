@@ -1,15 +1,15 @@
 {
-  imports = [ ./system24.nix ];
-
-  programs.vesktop = {
-    enable = true;
-    settings = {
-      discordBranch = "stable";
-      minimizeToTray = false;
-      arRPC = false;
-      splashBackground = "#00000000";
-      splashColor = "#00000000";
-    };
+  # imports = [ ./system24.nix ];
+  #
+  # programs.vesktop = {
+  #   enable = true;
+  #   settings = {
+  #     discordBranch = "stable";
+  #     minimizeToTray = false;
+  #     arRPC = false;
+  #     splashBackground = "#00000000";
+  #     splashColor = "#00000000";
+  #   };
 
     # vencord.settings = {
     #   enabledThemes = [
@@ -239,5 +239,5 @@
     #     WebContextMenus.enabled = true;
     #   };
     # };
-  };
+  # };
 }

@@ -81,7 +81,8 @@ in {
         ../../mod/hm/gui/terminal/kitty.nix
         ../../mod/hm/gui/textfox.nix
         ../../mod/hm/gui/tofi.nix
-        ../../mod/hm/gui/vesktop/vesktop.nix
+        # ../../mod/hm/gui/discord/vesktop.nix
+        ../../mod/hm/gui/discord/nixcord.nix
         ../../mod/hm/gui/vicinae.nix
         ../../mod/hm/gui/walker.nix
         ../../mod/hm/gui/wlr-which-key.nix
