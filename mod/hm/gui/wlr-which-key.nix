@@ -1,47 +1,10 @@
 {
-  config,
   flake_dir,
   wm,
-  lib,
   ...
 }: let
-err = "notify-send error with config.wm value";
-# keys = {
-#   f = "foot";
-# };
-#
-# key = builtins.mapAttrs (
-#     k: v: {
-#       key = [ k "Mod4+${k}" ];
-#       desc = "";
-#       cmd = v;
-#     }
-#     );
+  err = "notify-send error with config.wm value";
 in {
-#   xdg.configFile."wlr-which-key/config.yaml".text = lib.generators.toYAML { } {
-#     font = null;
-#     background = "#00000000";
-#     color = "#00000000";
-#     border = "#00000000";
-#     menu = [
-#
-# (builtins.mapAttrs (
-#     k: v: {
-#       key = [ k "Mod4+${k}" ];
-#       desc = "";
-#       cmd = v;
-#     }
-#     ) keys)
-#
-#     {
-#       key = "w";
-#       desc = "";
-#       cmd = "foot";
-#     }
-#     ];
-#   };
-
-
   
   home.file.".config/wlr-which-key/config.yaml".text = /* yaml */ ''
 font: none
@@ -64,7 +27,10 @@ menu:
 
   - key: [ "s", "Mod4+s" ]
     desc: screenshot
-    cmd: niri msg action screenshot -p false
+    cmd: ${if (wm == "hyprland" || wm == "mango") then "${flake_dir}/stuff/scripts/keys/screenshot.sh"
+           else if (wm == "niri") then "niri msg action screenshot -p false"
+           else err
+          }
 
   - key: [ "o", "Mod4+o" ]
     desc: kill window
