@@ -21,7 +21,7 @@
       noDeleteSafety = false;
       confirmModal = true;
     };
-    amITyping.enable = true;
+    # amITyping.enable = true; # jumpscared me
     # animalese.enable = true;
 
     anammox = {
@@ -124,17 +124,156 @@
 
     # gifCollections TODO
 
-    # githubRepos = {
+    gitHubRepos = {
+      enable = true;
+      showStars = true;
+      showLanguage = true;
+      showInMiniProfile = true;
+    };
+
+    greetStickerPicker.enable = true;
+    guildPickerDumper.enable = true; # download servers emojis and stickers
+    holyNotes.enable = true;
+    ignoreTerms.enable = true;
+    imageFilename.enable = true;
+
+    imageZoom = {
+      enable = true;
+      saveZoomValues = false;
+      invertScroll = false;
+      nearestNeighbour = true;
+      square = false; # handled by unrounding
+
+      zoom = 2.0;
+      size = 100.0;
+      zoomSpeed = 0.5;
+    };
+
+    # ircColors.enable = true;
+    # ingtonator.enable = true; # funny  TODO probably disable this
+    jumpTo.enable = true;
+
+    limitMiddleClickPaste.enable = true;
+
+    # keywordNotify.enable = true;
+
+    # keyboardNavigation = {
+
+    loadingQuotes = {
+      enable = true;
+      enablePluginPresetQuotes = false;
+      enableDiscordPresetQuotes = false;
+    };
+
+    messageColors = {
+      enable = true;
+      # renderType = "background color";
+      # enableShortHexCodes = true;
+    };
+
+    messageLinkEmbeds.enable = true;
+    messageLoggerEnhanced = {
+      enable = true;
+      # saveImages = true;
+    };
+
+    # moreCommands = {
     #   enable = true;
-    #   showStars = true;
-    #   showLanguage = true;
-    #   showInMiniProfile = true;
+    #   uwuEveryMessage = true;
     # };
 
+    mutualGroupDMs.enable = true;
+    neverPausePreviews.enable = true;
+    noBulletPoints.enable = true;
+    noDevtoolsWarning.enable = true;
+    noF1.enable = true;
+    noMaskedUrlPaste.enable = true;
+    noModalAnimation.enable = true;
+    noNitroUpsell.enable = true;
+    noOnboardingDelay.enable = true;
+    noProfileThemes.enable = true;
 
+    # notificationVolume = {
+    #   enable = true;
+    #   notificationVolume = 50.0; # percent
+    # };
 
+    noTypingAnimation.enable = true;
+    onePingPerDM.enable = true;
+    plainFolderIcon.enable = true;
 
+    platformIndicators = {
+      enable = true;
+      list = false;
+      profiles = true;
+      messages = false;
+      colorMobileIndicator = true;
+      showBots = false;
+    };
 
+    replyPingControl = {
+      enable = true;
+      alwaysPingOnReply = true;
+    };
+
+    saveFavoriteGiFs.enable = true; # why is the i lowercase?
+    serverSearch.enable = true;
+    showHiddenChannels = {
+      enable = true;
+      channelStyle = 1; # muted
+    };
+
+    sidebarChat.enable = true;
+
+    silentTyping = {
+      enable = true;
+      chatIcon = false;
+    };
+
+    spotifyCrack.enable = true;
+
+    splitLargeMessages.enable = true;
+
+    themeAttributes.enable = true;
+
+    tidalEmbeds.enable = true;
+
+    timezones = {
+      enable = true;
+      showOwnTimezone = false;
+      _24hTime = true;
+      showTimezoneInfo = false;
+      showMessageHeaderTime = false;
+      showProfileTime = true;
+    };
+
+    typingIndicator.enable = true;
+    unitConverter = {
+      enable = true;
+      myUnits = "metric";
+    };
+    typingTweaks.enable = true;
+
+    unlockedAvatarZoom.enable = true;
+
+    userMessagesPronouns = {
+      enable = true;
+      showSelf = false;
+      pronounsFormat = "LOWERCASE";
+    };
+
+    userVoiceShow.enable = true;
+    userPfp.enable = true;
+    USRBG.enable = true;
+    validReply.enable = true;
+    validUser.enable = true;
+    viewIcons.enable = true;
+    viewRawVariant.enable = true;
+
+    volumeBooster.enable = true;
+    whosWatching.enable = true;
+    # wigglyText.enable = true;
+    youtubeAdblock.enable = true;
 
   };
 }
