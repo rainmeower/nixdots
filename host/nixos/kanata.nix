@@ -1053,10 +1053,9 @@ f19 lsft
 (deflayermap sup ;; {{{
 lctl lctl
 rsft rsft
-;; spc
 
 
-
+;; FIXME
 ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held fn) (esc) ())
 
 f18 tab

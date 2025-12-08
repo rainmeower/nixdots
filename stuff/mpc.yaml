@@ -23,9 +23,6 @@ margin_top: 0
 # Default is `false`.
 inhibit_compositor_keyboard_shortcuts: true
 
-
-# TODO p for show quickshell playlist
-
 menu:
 
   - key: [ "s", "Mod4+s" ]
@@ -38,7 +35,7 @@ menu:
 
   - key: [ "c", "Mod4+c" ]
     desc: toggle music
-    cmd: mpc -p 6669 seek -1 && mpc -p 6669 toggle
+    cmd: mpc -p 6669 seek -1 && sleep 0.01 && mpc -p 6669 toggle
 
   - key: [ "h", "Mod4+h" ]
     desc: prev song

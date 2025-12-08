@@ -255,37 +255,16 @@ in {
 # switch layout
             "SUPER,semicolon,switch_layout"
 
-# tag switch
-#"SUPER,Left,viewtoleft,0"
-#"CTRL,Left,viewtoleft_have_client,0"
-#"SUPER,Right,viewtoright,0"
-#"CTRL,Right,viewtoright_have_client,0"
-#"CTRL+SUPER,Left,tagtoleft,0"
-#"CTRL+SUPER,Right,tagtoright,0"
-
-            "SUPER,Tab,view,1,0"
-            "SUPER,b,view,2,0"
-            "SUPER,f,view,3,0"
-            "SUPER,d,view,4,0"
-            "SUPER,w,view,5,0"
-            "SUPER,p,view,6,0"
-            "SUPER,y,view,7,0"
+            "SUPER,Tab,  view,1,0"
+            "SUPER,b,    view,2,0"
+            "SUPER,f,    view,3,0"
+            "SUPER,d,    view,4,0"
+            "SUPER,w,    view,5,0"
+            "SUPER,p,    view,6,0"
+            "SUPER,y,    view,7,0"
             "SUPER,comma,view,8,0"
-            "SUPER,v,view,9,0"
+            "SUPER,v,    view,9,0"
 
-            "SUPER,bracketleft,spawn,mmsg -s -t 1^"
-            "SUPER,f1,spawn,mmsg -s -t 2^"
-            "SUPER,f2,spawn,mmsg -s -t 3^"
-            "SUPER,f3,spawn,mmsg -s -t 4^"
-            "SUPER,f4,spawn,mmsg -s -t 5^"
-            "SUPER,bracketright,spawn,mmsg -s -t 6^"
-            # "SUPER,f6,view,7,0"
-            "SUPER,f9,spawn,mmsg -s -t 8^"
-            "SUPER,f10,spawn,mmsg -s -t 9^"
-
-# tag: move client to the tag and focus it
-# tagsilent: move client to the tag and not focus it
-# Alt,1,tagsilent,1
             "SUPER+SHIFT,Tab,tagsilent,1,0"
             "SUPER+SHIFT,b,tagsilent,2,0"
             "SUPER+SHIFT,f,tagsilent,3,0"
@@ -293,14 +272,19 @@ in {
             "SUPER+SHIFT,w,tagsilent,5,0"
             "SUPER+SHIFT,p,tagsilent,6,0"
             "SUPER+SHIFT,y,tagsilent,7,0"
-            "SUPER+SHIFT,Comma,tagsilent,8,0"
+            "SUPER,less,   tagsilent,8,0"
             "SUPER+SHIFT,v,tagsilent,9,0"
 
-# monitor switch
-#"alt+shift,Left,focusmon,left"
-#"alt+shift,Right,focusmon,right"
-#"SUPER+Alt,Left,tagmon,left"
-#"SUPER+Alt,Right,tagmon,right"
+            # toggle windows from tag
+            "SUPER,bracketleft,spawn,mmsg -s -t 1^"
+            "SUPER,f1,          spawn,mmsg -s -t 2^"
+            "SUPER,f2,          spawn,mmsg -s -t 3^"
+            "SUPER,f3,          spawn,mmsg -s -t 4^"
+            "SUPER,f4,          spawn,mmsg -s -t 5^"
+            "SUPER,bracketright,spawn,mmsg -s -t 6^"
+            # "SUPER,f6,view,7,0"
+            "SUPER,f9,          spawn,mmsg -s -t 8^"
+            "SUPER,f10,         spawn,mmsg -s -t 9^"
 
 # gaps
 #"ALT+SHIFT,X,incgaps,1"
@@ -320,23 +304,16 @@ in {
 #"CTRL+ALT,Right,resizewin,+50,+0"
             ];
 
-# Mouse Button Bindings
-# NONE mode key only work in ov mode
         mousebind = [
           "SUPER,btn_left,moveresize,curmove"
-#"NONE,btn_middle,togglemaximizescreen,0"
             "SUPER,btn_right,moveresize,curresize"
-#"NONE,btn_left,toggleoverview,-1"
-#"NONE,btn_right,killclient,0"
         ];
 
-# Axis Bindings
         axisbind = [
           "SUPER,UP,viewtoleft_have_client"
             "SUPER,DOWN,viewtoright_have_client"
         ];
 
-# layer rules
         layerrule = [
           "animation_type_open:zoom,layer_name:vicinae"
           "animation_type_close:zoom,layer_name:vicinae"
@@ -352,10 +329,10 @@ in {
           # TODO `isterm` + emacs/yazi?
         ];
 
-        # monitorrule = [
-        #   "DP-1,0.55,1,scroller,0,1,2560,1440,165.080002"
-        #   "DP-3,0.55,1,vertical_scroller,90,1,2560,1440,74.971001"
-        # ];
+        monitorrule = [
+          "DP-1,0.5,1,scroller,0,1,2560,1440,165.080002"
+          "DP-3,0.5,1,vertical_scroller,90,1,2560,1440,74.971001"
+        ];
 # env
         env = [
           "ELECTRON_OZONE_PLATFORM_HINT=auto"
