@@ -46,7 +46,7 @@ in {
 
         # wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
         foot --server &
-        vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland &
+        vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland >/dev/null 2>/dev/null &
         dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
         ${flake_dir}/stuff/nata/nata.sh -c ${flake_dir}/stuff/nata/config.json >/dev/null 2>/dev/null &
 
