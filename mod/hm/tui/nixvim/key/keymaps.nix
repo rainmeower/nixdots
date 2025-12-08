@@ -9,11 +9,16 @@
       options.silent = true;
     }
 
-    { # go to start of line in :
+    { # down in lists
       key = "<C-a>";
-      action = "<C-b>";
+      action = "<C-n>";
       mode = "c";
-      options.silent = true;
+    }
+
+    { # up in lists
+      key = "<C-e>";
+      action = "<C-p>";
+      mode = "c";
     }
 
     {
