@@ -41,11 +41,11 @@ in {
       autostart_sh = # {{{
       /* bash */ ''
         set +e
-        dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
-
-        wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
         swww-daemon &
         ${flake_dir}/stuff/scripts/swww.sh &
+        dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
+
+        # wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
         foot --server &
         vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland &
       ''; # }}}
