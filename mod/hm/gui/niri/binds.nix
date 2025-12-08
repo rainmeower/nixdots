@@ -14,6 +14,7 @@
     in {
         "Mod+G".action = spawn "wlr-which-key";
         "Mod+L".action = sh "wlr-which-key ~/.config/wlr-which-key/mpc.yaml";
+        "Mod+minus".action = sh "wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml";
 
 # "Mod+T".action = spawn "kitty" "-1";
 # "Mod+C".action = spawn "kitty" "-1" "yazi";
@@ -110,7 +111,6 @@
         "Mod+Shift+M".action = fullscreen-window;
         "Mod+Ctrl+M".action = fullscreen-window;
         # "Mod+minus".action = toggle-column-tabbed-display;
-        "Mod+minus".action = sh "wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml";
 
 
 

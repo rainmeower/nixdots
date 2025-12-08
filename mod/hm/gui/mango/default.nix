@@ -6,6 +6,7 @@
   self,
   theme,
   pkgs,
+  userDirs,
 	...
 }: let
   col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
@@ -176,12 +177,7 @@ in {
         globalcolor = "0xaca1cfff";
         overlaycolor = "0x90b99fff";
 
-# layout support:
-# tile,scroller,grid,deck,monocle,center_tile,vertical_tile,vertical_scroller
 # center_tile deck grid monocle right_tile scroller tile vertical_deck vertical_grid vertical_scroller vertical_spiral vertical_tile
-
-
-
         tagrule = [
           "id:1,layout_name:tile"
           "id:2,layout_name:grid"
@@ -203,8 +199,8 @@ in {
           "NONE,XF86AudioLowerVolume,spawn_shell,wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"
 
           "SUPER,G,spawn,wlr-which-key"
-            "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
-
+          "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
+          "SUPER+SHIFT,L,spawn,wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml"
 
 # reload config
             "SUPER+ALT,r,reload_config"
