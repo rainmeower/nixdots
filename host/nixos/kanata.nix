@@ -583,6 +583,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; TODO add more
 
     ;; https://github.com/
+    ;; TODO gitlab, codeberg, ...
     ((and
       (key-history g 4)
       (key-history h 3)

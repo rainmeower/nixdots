@@ -61,7 +61,7 @@
           type = "command";
           key = "  gui:";
           keyColor = "blue";
-          text = "echo \"" + (if (wm == "mango") then wm + "wc" else wm) + "\",";
+          text = ''echo "'' + (if (wm == "mango") then wm + "wc" else wm) + ''",'';
         }
 # {
 #   type = "terminal";
