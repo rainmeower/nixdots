@@ -62,6 +62,8 @@ in {
           in "${key}=${value'}";
       } {globalSection = {
         allow_tearing = true;
+        xwayland_persistence = false;
+        exchange_cross_monitor = true;
 
         exec-once = "~/.config/mango/autostart.sh";
         blur = true;
@@ -336,7 +338,7 @@ in {
 
         monitorrule = [
           "DP-1, 0.5, 1, scroller, 0, 1, 0, 0, 2560, 1440, 165.080002"
-          "DP-3, 0.5, 1, vertical_scroller, 1, 1, 3000, 0, 2560, 1440, 74.971001"
+          "DP-3, 0.5, 1, vertical_scroller, 3, 1, 3000, 0, 2560, 1440, 74.971001"
         ];
 
         # env = [
