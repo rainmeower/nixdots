@@ -960,7 +960,7 @@ lctrl @eqsft
 bspc @rpeat
 
 ;; ent (tap-hold-press 120 120 ent (layer-while-held mods))
-ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held fn) (esc) ())
+ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held mods) (esc) ())
 
 
 spc @space
@@ -1055,6 +1055,9 @@ lctl lctl
 rsft rsft
 ;; spc
 
+
+
+ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held fn) (esc) ())
 
 f18 tab
 f15 -
