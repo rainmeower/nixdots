@@ -950,7 +950,7 @@ h (tap-hold-release-tap-keys-release 120 120 h rctl (bspc f15 f16 f17 f18 ; spc)
 
 f16 S-9
 f17 @rp
-lmet (multi (tap-hold-press 120 120 esc lmet) (layer-while-held sup))
+lmet (multi (tap-hold-release-tap-keys-release 120 120 esc lmet () ()) (layer-while-held sup))
 f19 @magic
 ;; rsft (tap-hold-press 120 120 bspc rctl)
 rsft bspc

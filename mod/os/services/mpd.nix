@@ -2,6 +2,7 @@
   username,
   pkgs,
   config,
+  userDirs,
   ...
 }: let
   inherit (config.hm.xdg) userDirs;
