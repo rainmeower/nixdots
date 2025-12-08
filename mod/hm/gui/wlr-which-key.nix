@@ -48,13 +48,13 @@ menu:
     desc: restart kanata
     cmd: systemctl restart kanata-lily-58
 
-  # - key: [ "f", "Mod4+f" ]
-  #   desc: float active
-  #   cmd: {if (wm == "hyprland") then "notify-send TODO"
-  #          else if (wm == "niri") then "niri msg action toggle-window-floating"
-  #          else if (wm == "mango") then "mmsg -d togglefloating"
-  #          else err
-  #         }
+  - key: [ "f", "Mod4+f" ]
+    desc: float active
+    cmd: {if (wm == "hyprland") then "notify-send TODO"
+           else if (wm == "niri") then "niri msg action toggle-window-floating"
+           else if (wm == "mango") then "mmsg -d togglefloating"
+           else err
+          }
 
   - key: [ "c", "Mod4+c" ]
     desc: center window

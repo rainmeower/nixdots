@@ -9,18 +9,18 @@
       options.silent = true;
     }
 
-    { # down in lists
-      key = "<C-a>";
-      action = "<C-n>";
-      mode = [ "c" "i" ];
-    }
-    { # up in lists
-      key = "<C-e>";
-      action = "<C-p>";
-      mode = [ "c" "i" ];
-    }
-    { key = "up"; action = ""; mode = "i"; }
-    { key = "down"; action = ""; mode = "i"; }
+    # { # down in lists
+    #   key = "<C-a>";
+    #   action = "<C-n>";
+    #   mode = [ "c" "i" ];
+    # }
+    # { # up in lists
+    #   key = "<C-e>";
+    #   action = "<C-p>";
+    #   mode = [ "c" "i" ];
+    # }
+    # { key = "up"; action = ""; mode = "i"; }
+    # { key = "down"; action = ""; mode = "i"; }
 
     {
       key = "ga";
