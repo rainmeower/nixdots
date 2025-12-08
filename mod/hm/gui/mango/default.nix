@@ -211,7 +211,7 @@ in {
             "SUPER,t,spawn,foot"
             "SUPER,c,spawn,foot -a 'foot.yazi.isterm' yazi"
             # goto most recent download
-            ''SUPER+SHIFT,c,spawn_shell, footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/(\$f)"''
+            "SUPER+SHIFT,c,spawn,${flake_dir}/stuff/scripts/keys/recent_dl.sh"
 
 
             "SUPER,k,spawn,${flake_dir}/stuff/scripts/keys/ncmpcpp.sh"
