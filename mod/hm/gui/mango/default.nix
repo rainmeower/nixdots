@@ -43,11 +43,12 @@ in {
         set +e
         swww-daemon &
         ${flake_dir}/stuff/scripts/swww.sh &
-        dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
 
         # wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
         foot --server &
         vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland &
+        dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
+
       ''; # }}}
 
 # https://codeberg.org/worldspawn/nix/src/branch/main/modules/home-manager/wm/mangowc.nix
@@ -327,11 +328,10 @@ in {
         windowrule = [
           "appid:foot.yazi.filechooser,width:1080,height:1080,isnoborder:1,isfloating:1"
           "appid:foot.ncmpcpp,foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1"
-          "appid:*vesktop*,isopensilent:1"
           "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1"
           "appid:foot.yazi.isterm,isterm:1"
           "appid:swayimg,isnoanimation:1"
-          "appid:vesktop,tags:2"
+          "appid:vesktop,tags:2,isopensilent:1"
           # TODO `isterm` + emacs/yazi?
         ];
 

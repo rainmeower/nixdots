@@ -9,8 +9,9 @@
 }: let
   col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
   wm_launch_command =
-    if (wm == "hyprland") then "Hyprland"
-    else if (wm == "niri") then "niri-session"
+    if wm == "hyprland" then "Hyprland"
+    else if wm == "niri" then "niri-session"
+    else if wm == "mango" then wm
     else "echo 'cannot launch wm: config.wm is set incorrectly'";
 in {
   programs.nushell = {
