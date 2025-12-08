@@ -273,6 +273,16 @@ in {
             "SUPER,comma,view,8,0"
             "SUPER,v,view,9,0"
 
+            "SUPER,bracketleft,spawn,mmsg -s -t 1^"
+            "SUPER,f1,spawn,mmsg -s -t 2^"
+            "SUPER,f2,spawn,mmsg -s -t 3^"
+            "SUPER,f3,spawn,mmsg -s -t 4^"
+            "SUPER,f4,spawn,mmsg -s -t 5^"
+            "SUPER,bracketright,spawn,mmsg -s -t 6^"
+            # "SUPER,f6,view,7,0"
+            "SUPER,f9,spawn,mmsg -s -t 8^"
+            "SUPER,f10,spawn,mmsg -s -t 9^"
+
 # tag: move client to the tag and focus it
 # tagsilent: move client to the tag and not focus it
 # Alt,1,tagsilent,1

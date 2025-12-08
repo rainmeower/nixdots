@@ -960,7 +960,7 @@ lctrl @eqsft
 bspc @rpeat
 
 ;; ent (tap-hold-press 120 120 ent (layer-while-held mods))
-ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held mods) (esc) ())
+ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held fn) (esc) ())
 
 
 spc @space
@@ -1135,77 +1135,75 @@ lmet (switch
 ) ;; }}}
 
 (deflayermap fn ;; {{{
+tab [
+p ]
+
 b f1
 f f2
 d f3
 w f4
+
 n f5
 s f6
 t f7
 c f8
+
 , f9
 . f10
 k f11
 g f12
-
-h home
-a pgdn
-e pgup
-i end
-
-
 
 ) ;; }}}
 
 (defchordsv2 ;; {{{
   ;; (r spc) rsft 18 first-release (over sup melee)
 
-  (l o u) (macro S-z S-z) 18 all-released (over sup melee mods) ;; vim save and quit
-  (h a e) (macro C-S-x) 18 all-released (over sup melee) ;; vim save
-  (f15 a) @cw 16 all-released (over sup melee)
-  (t g) caps 16 all-released (over sup melee)
-  (u i) (macro S-[ S-; S-/ S-]) 16 all-released (over sup melee)
-  (a f17) S-5 15 all-released (over sup melee)
+  (l o u) (macro S-z S-z) 18 all-released (over sup melee fn mods) ;; vim save and quit
+  (h a e) (macro C-S-x) 18 all-released (over sup melee fn) ;; vim save
+  (f15 a) @cw 16 all-released (over sup melee fn)
+  (t g) caps 16 all-released (over sup melee fn)
+  (u i) (macro S-[ S-; S-/ S-]) 16 all-released (over sup melee fn)
+  (a f17) S-5 15 all-released (over sup melee fn)
 
 
-  (t d) [ 20 all-released (over sup melee)
-  (a o) ] 20 all-released (over sup melee)
-  (c w) S-, 20 all-released (over sup melee)
-  (h l) S-. 20 all-released (over sup melee)
+  (t d) [ 20 all-released (over sup melee fn)
+  (a o) ] 20 all-released (over sup melee fn)
+  (c w) S-, 20 all-released (over sup melee fn)
+  (h l) S-. 20 all-released (over sup melee fn)
 
-  (, ;) (macro S-; q) 20 all-released (over sup melee)
-  (q z) (macro q S-;) 20 all-released (over sup melee)
+  (, ;) (macro S-; q) 20 all-released (over sup melee fn)
+  (q z) (macro q S-;) 20 all-released (over sup melee fn)
 
 
-  (b f    ) S-/ 20 all-released (over sup melee)
-  (  f d  ) S-7 15 all-released (over sup melee)
-  (  f   w) `   20 all-released (over sup melee)
-  (    d w) S-8 15 all-released (over sup melee)
+  (b f    ) S-/ 20 all-released (over sup melee fn)
+  (  f d  ) S-7 15 all-released (over sup melee fn)
+  (  f   w) `   20 all-released (over sup melee fn)
+  (    d w) S-8 15 all-released (over sup melee fn)
   
-  ;; (l o    ) S-' 14 all-released (over sup melee mods)
-  (  o u  ) S-1 13 all-released (over sup melee mods)
-  (    u .) S-6 15 all-released (over sup melee mods)
+  ;; (l o    ) S-' 14 all-released (over sup melee fn mods)
+  (  o u  ) S-1 13 all-released (over sup melee fn mods)
+  (    u .) S-6 15 all-released (over sup melee fn mods)
 
-  ;; (n s    ) S-, 14 all-released (over sup melee)
-  (  s t  ) '   13 all-released (over sup melee)
-  (  s   c) S-` 16 all-released (over sup melee)
-  ;; (    t c) [   14 all-released (over sup melee)
+  ;; (n s    ) S-, 14 all-released (over sup melee fn)
+  (  s t  ) '   13 all-released (over sup melee fn)
+  (  s   c) S-` 16 all-released (over sup melee fn)
+  ;; (    t c) [   14 all-released (over sup melee fn)
 
-  (h a    ) S-' 14 all-released (over sup melee)
-  (h   e  ) del 15 all-released (over sup melee)
-  (  a e  ) +   14 all-released (over sup melee)
-  ;; (    e i) S-. 14 all-released (over sup melee)
+  (h a    ) S-' 14 all-released (over sup melee fn)
+  (h   e  ) del 15 all-released (over sup melee fn)
+  (  a e  ) +   14 all-released (over sup melee fn)
+  ;; (    e i) S-. 14 all-released (over sup melee fn)
 
-  (, v    ) \   20 all-released (over sup melee)
-  (  v k  ) S-\ 20 all-released (over sup melee)
-  (    k g) S-4 20 all-released (over sup melee)
+  (, v    ) \   20 all-released (over sup melee fn)
+  (  v k  ) S-\ 20 all-released (over sup melee fn)
+  (    k g) S-4 20 all-released (over sup melee fn)
 
-  (f15 f16      ) S-3 20 all-released (over sup melee)
-  ;; (f15     f17  ) S-5 20 all-released (over sup melee)
-  (    f16 f17  ) x 15 all-released (over sup melee)
-  (        f17 ;) S-2 15 all-released (over sup melee)
+  (f15 f16      ) S-3 20 all-released (over sup melee fn)
+  ;; (f15     f17  ) S-5 20 all-released (over sup melee fn)
+  (    f16 f17  ) x 15 all-released (over sup melee fn)
+  (        f17 ;) S-2 15 all-released (over sup melee fn)
 
-  ;; (h spc) \ 15 all-released (over sup melee)
+  ;; (h spc) \ 15 all-released (over sup melee fn)
 
 ) ;; }}}
 
