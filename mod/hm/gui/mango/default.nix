@@ -27,7 +27,7 @@ in {
     home.packages = with pkgs; [
       wlr-randr
       slurp
-      # grim
+      # grim # broken?
       wayshot
     ];
 
@@ -319,6 +319,7 @@ in {
         layerrule = [
           "animation_type_open:zoom,layer_name:vicinae"
           "animation_type_close:zoom,layer_name:vicinae"
+          "noblur:1,layer_name:slurp"
         ];
 
         windowrule = [
