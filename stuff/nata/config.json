@@ -1,0 +1,136 @@
+{
+  "ip": "127.0.0.1",
+  "port": 10000,
+  "interval": 300,
+  "base_layer": "base",
+  "recipes": "~/.config/kanata/recipes.sh",
+  "window_rules": [
+    { "class": "steam_app_*", "title": "*", "layer": "over" },
+
+    {
+      "title": "^Hammer*",
+      "layer": "over"
+    },
+
+    {
+      "title": "^Hollow Knight Silksong*",
+      "layer": "over"
+    },
+
+    {
+      "class": "Terraria.bin.x86_64",
+      "layer": "over"
+    },
+
+    {
+      "class": "AtniaMania",
+      "layer": "over"
+    },
+
+    {
+      "class": "steam_app_*",
+      "layer": "over"
+    },
+
+    {
+      "class": "Minecraft* 1.20.10",
+      "layer": "over"
+    },
+
+    {
+      "class": "factorio",
+      "layer": "over"
+    },
+
+    {
+      "class": "dotnet",
+      "layer": "over"
+    },
+
+    {
+      "class": "valheim.x86_64",
+      "layer": "over"
+    },
+
+    {
+      "class": "steam_app_default",
+      "layer": "over"
+    },
+
+    {
+      "class": "Quaver",
+      "layer": "over"
+    },
+
+    {
+      "class": "luanti",
+      "layer": "over"
+    },
+
+    {
+      "class": "Aged",
+      "layer": "over"
+    },
+
+    {
+      "title": "^RLCraft$",
+      "layer": "over"
+    },
+
+    {
+      "class": "Minecraft",
+      "layer": "over"
+    },
+
+    {
+      "class": "Apprun",
+      "title": "Dolphin",
+      "layer": "melee"
+    },
+
+    {
+      "class": "Apprun",
+      "title": "*",
+      "layer": "melee"
+    },
+
+    {
+      "class": "osu!",
+      "title": "osu!",
+      "layer": "over"
+    },
+
+    {
+      "class": "gamescope",
+      "title": "*",
+      "layer": "over"
+    },
+
+    {
+      "class": "krita",
+      "title": "*",
+      "layer": "krita"
+    },
+
+    {
+      "class": "chaos",
+      "title": "*",
+      "layer": "over"
+    },
+
+    {
+      "class": "Celeste",
+      "title": "Celeste",
+      "layer": "over"
+    },
+
+    {
+      "fake_key": ["to-base", "tap"],
+      "layer": "base"
+    },
+
+
+    { "class": "*", "title": "*", "layer": true }
+
+  ]
+}
