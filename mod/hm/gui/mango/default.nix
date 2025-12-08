@@ -46,7 +46,7 @@ in {
 
         # wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
         foot --server &
-        vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland >/dev/null 2>/dev/null &
+        equibop >/dev/null 2>/dev/null &
         dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
 
         ps -ef | rg "nata.sh" | sed -e "s/$(whoami)      //" | sed -e "s/ .*//" | xargs kill # clean up previous nata processes
@@ -334,7 +334,7 @@ in {
           "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1"
           "appid:foot.yazi.isterm,isterm:1"
           "appid:swayimg,isnoanimation:1"
-          "appid:vesktop,tags:2,isopensilent:1"
+          "appid:equibop,appid:vesktop,tags:2,isopensilent:1"
           # TODO `isterm` + emacs/yazi?
         ];
 

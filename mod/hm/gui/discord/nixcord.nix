@@ -10,10 +10,11 @@
   ];
 
   programs.nixcord = {
-    enable = true;          # Enable Nixcord (It also installs Discord)
+    enable = true;
     discord = {
-      vencord.enable = false;  # Use Vencord (default)
-      equicord.enable = true;  # Or use Equicord instead (cannot enable both)
+      # NOTE mutually exclusive
+      vencord.enable = false;
+      equicord.enable = true;
     };
     vesktop.enable = false;  # Vesktop
     equibop.enable = true;  # Equibop

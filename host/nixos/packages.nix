@@ -60,7 +60,8 @@
     #  withMoonlight = true;
     #  moonlight = inputs.moonlight.packages.${pkgs.stdenv.hostPlatform.system}.moonlight;
     #  })
-    vesktop
+    # vesktop
+    discordo
 
     # inputs.pollymc.packages."x86_64-linux".default
   ];

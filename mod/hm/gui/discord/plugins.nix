@@ -274,6 +274,5 @@
     whosWatching.enable = true;
     # wigglyText.enable = true;
     youtubeAdblock.enable = true;
-
   };
 }
