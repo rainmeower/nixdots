@@ -85,6 +85,9 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 (defsrc
 )
 
+;; (defseq float (f))
+;; (defvirtualkeys float (cmd mmsg -d togglefloating))
+
 (defalias ;; {{{
 
   ;; TODO check for spamming a/e and make it type out :stop
@@ -1051,6 +1054,8 @@ f19 lsft
 ) ;; }}}
 
 (deflayermap sup ;; {{{
+;; g sldr
+
 lctl lctl
 rsft rsft
 

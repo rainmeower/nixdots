@@ -142,7 +142,7 @@ in {
         inhibit_regardless_of_visibility = false;
         sloppyfocus = false;
         warpcursor = true;
-        focus_cross_monitor = false;
+        focus_cross_monitor = true;
         focus_cross_tag = false;
         enable_floating_snap = false;
         snap_distance = 30;

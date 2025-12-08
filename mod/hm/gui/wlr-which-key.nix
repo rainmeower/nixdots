@@ -37,7 +37,7 @@ menu:
     cmd: niri msg --json pick-window | jq '.pid' | xargs kill
 
   # - key: [ "p", "Mod4+p" ]
-  #   desc: float active
+  #   desc: pick colour
   #   cmd: hex=$(niri msg pick-color | grep -o '#.*') && echo -n "$hex" | wl-copy && notify-send "$hex"
 
   - key: [ "p", "Mod4+p" ]
@@ -48,13 +48,13 @@ menu:
     desc: restart kanata
     cmd: systemctl restart kanata-lily-58
 
-  - key: [ "f", "Mod4+f" ]
-    desc: float active
-    cmd: ${if (wm == "hyprland") then "notify-send TODO"
-           else if (wm == "niri") then "niri msg action toggle-window-floating"
-           else if (wm == "mango") then "mmsg -d togglefloating"
-           else err
-          }
+  # - key: [ "f", "Mod4+f" ]
+  #   desc: float active
+  #   cmd: {if (wm == "hyprland") then "notify-send TODO"
+  #          else if (wm == "niri") then "niri msg action toggle-window-floating"
+  #          else if (wm == "mango") then "mmsg -d togglefloating"
+  #          else err
+  #         }
 
   - key: [ "c", "Mod4+c" ]
     desc: center window
