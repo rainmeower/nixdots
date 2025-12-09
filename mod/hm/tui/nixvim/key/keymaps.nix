@@ -461,16 +461,16 @@
     # buffers {{{
     { # TODO
       key = "<leader>d";
-      # action = ":bp<cr>";
-      action = '':echo "use <spc><@>"<cr>'';
+      action = ":bp<cr>";
+      # action = '':echo "use <spc><@>"<cr>'';
       mode = [ "n" "v" "x" ];
       options.silent = true;
     }
 
     { # TODO
       key = "<leader>c";
-      # action = ":bn<cr>";
-      action = '':echo "use <spc><@>"<cr>'';
+      action = ":bn<cr>";
+      # action = '':echo "use <spc><@>"<cr>'';
       mode = [ "n" "v" "x" ];
       options.silent = true;
     }
