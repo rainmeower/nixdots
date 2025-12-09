@@ -5,7 +5,7 @@
 
       lazyLoad.enable = true; # {{{
       lazyLoad.settings.event = [
-        "DeferredUIEnter"
+        "BufRead"
       ]; # }}}
 
       settings = {

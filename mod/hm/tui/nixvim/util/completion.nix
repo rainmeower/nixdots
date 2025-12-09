@@ -2,12 +2,6 @@
   nv.plugins.cmp = {
     enable = true;
 
-    lazyLoad.enable = true; # {{{
-    lazyLoad.settings.event = [
-      # "DeferredUIEnter"
-      "VimEnter"
-    ]; # }}}
-
     settings = {
       sources = [
       { name = "nvim_lsp"; }

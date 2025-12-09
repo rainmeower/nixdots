@@ -7,7 +7,7 @@
 
     lazyLoad.enable = true;
     lazyLoad.settings.event = [
-      "DeferredUIEnter"
+      "UIEnter"
     ];
 
     settings = {
