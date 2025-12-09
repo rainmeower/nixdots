@@ -7,7 +7,7 @@
 
     lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [
-      "BufEnter" # TODO only on markdown files
+      "UIEnter" # TODO only on markdown files
     ]; # }}}
 
     telescopeIntegration.enable = true;
