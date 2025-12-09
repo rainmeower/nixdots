@@ -78,12 +78,8 @@
         specialArgs = let  # TODO can i modify this inside modules
           system = "x86_64-linux";
         in {
-          # To use packages from nixpkgs-stable,
-          # we configure some parameters for it first
           pkgs_stable = import nixpkgs_stable {
             inherit system;
-            # To use Chrome, we need to allow the
-            # installation of non-free software.
             config.allowUnfree = true;
           };
           inherit

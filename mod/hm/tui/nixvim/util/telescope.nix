@@ -35,6 +35,7 @@ in {
 
         inherit borderchars;
         file_ignore_patterns = [
+          "secret"
           "^/nix/store/" # nix store
           "^/tmp/.*nu$" # <C-o> in nushell
           "^/tmp/tmp_.*txt$" # tridactyl
