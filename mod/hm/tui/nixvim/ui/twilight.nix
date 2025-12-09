@@ -10,6 +10,7 @@
           __unkeyed-1 = "<leader>bb"; # tt toggle twilight
           __unkeyed-3 = ":Twilight<CR>";
           desc = "toggle color highlighting";
+          options.silent = true;
         }
       ];
     }; # }}}
@@ -17,7 +18,7 @@
     settings = {
       dimming = {
         alpha = 1;
-        color = [ "Normal" "#ffffff" ];
+        color = [ "Comment" "#ffffff" ];
         term_bg = "#000000";
         inactive = false;
       };
