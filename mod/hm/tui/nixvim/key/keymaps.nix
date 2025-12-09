@@ -29,16 +29,16 @@
       options.silent = true;
     }
 
-    {
-      key = "<bs>";
-      action = "\"_x";
-      mode = "n";
-    }
-    {
-      key = "<bs>";
-      action = "x";
-      mode = "o";
-    }
+    # {
+    #   key = "<bs>";
+    #   action = "\"_x";
+    #   mode = "n";
+    # }
+    # {
+    #   key = "<bs>";
+    #   action = "x";
+    #   mode = "o";
+    # }
 
     # toggles {{{
     { # toggle wrap
