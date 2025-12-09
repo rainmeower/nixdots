@@ -29,6 +29,7 @@
     ../../mod/os/gaming/celeste.nix
     ../../mod/os/gaming/games.nix
     ../../mod/os/font.nix
+    ../../mod/os/mango.nix
     ../../mod/os/nix-ld.nix
     ../../mod/os/fontconfig.nix
     ../../mod/os/services/gamemode.nix
