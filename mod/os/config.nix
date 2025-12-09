@@ -6,5 +6,7 @@
     font_size = "small";
     rounding = false;
     animations = false;
+
+    prompt_sym = "󰘧";
   };
 }

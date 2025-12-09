@@ -68,5 +68,9 @@ in {
     font_pkg = mkOption {
       type = anything;
     };
+
+    prompt_sym = mkOption {
+      type = str;
+    };
   };
 }

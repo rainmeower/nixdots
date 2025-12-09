@@ -1,5 +1,6 @@
 {
   rounding,
+  prompt_sym,
   ...
 }: let
   borderchars = [ # {{{
@@ -31,7 +32,7 @@ in {
       defaults = {
         selection_caret = " ";
         entry_prefix = " ";
-        prompt_prefix = " 󰘧 ";
+        prompt_prefix = " ${prompt_sym} ";
 
         inherit borderchars;
         file_ignore_patterns = [
