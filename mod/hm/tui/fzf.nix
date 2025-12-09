@@ -4,9 +4,10 @@
   theme,
   self,
   prompt_sym,
+  col,
   ...
 }: let
-  col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
+  # col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
 in {
   programs.fzf = {
     enable = true;

@@ -7,7 +7,7 @@
       "image/jpg" = [ "swayimg" "krita" "aseprite" ];
       "image/png" = [ "swayimg" "krita" "aseprite" ];
       "image/gif" = [ "mpv" "swayimg" "krita" "aseprite" ];
-      "image/svg+xml" = [ "inkscape" "swayimg" ];
+      "image/svg+xml" = [ "inkscape" "swayimg" "nvim" ];
       "audio/mpeg" = [ "mpv" ];
       "audio/ogg" = [ "mpv" ];
       "video/mp3" = [ "mpv" ];

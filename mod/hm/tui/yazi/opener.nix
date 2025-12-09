@@ -3,7 +3,7 @@
     edit = [
     {
       run = "nvim \"$@\"";
-      desc = "$EDITOR";
+      desc = "nvim";
       block = true;
       for = "unix";
     }

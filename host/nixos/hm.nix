@@ -47,8 +47,12 @@ in {
 
       if_theme = t: lib.mkIf (t == (builtins.elemAt (builtins.split "_" config.theme) 0));
 
+
+
       # FIXME
       # col = import (builtins.toPath "${flake_dir}/theme/${theme_trimmed}/colors.nix");
+
+      col = import (self + /theme/${builtins.elemAt (builtins.split "_" config.theme) 0}/colors.nix);
     };
 
     users.${username} = {
