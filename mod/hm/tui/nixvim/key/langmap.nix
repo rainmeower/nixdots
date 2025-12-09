@@ -11,8 +11,8 @@
       end
 
       -- Recommended to use lua template string
-      local en       = [[qwfrtuiopahgdjkczlebnvyxsm<bs>]]
-      local ru       = [[qcfbdpnklsoghaeizuvtmryjw-x]]
+      local en       = [[qwfrtuiopahgdjkczlebnvyxsm]]
+      local ru       = [[qcfbdpnklsoghaeizuvtmryjw-]]
       local en_shift = [[QWFRTUIOPAHGDJKCZLEBNVYXS]]
       local ru_shift = [[QCFBDPNKLSOGHAEIZUVTMRYJW]]
 

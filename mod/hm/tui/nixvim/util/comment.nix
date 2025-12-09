@@ -13,10 +13,10 @@
       };
 
       keymaps = {
-        comment = "x";
-        comment_line = "gx";
-        comment_visual = "x";
-        textobject = "x";
+        comment = "<bs>";
+        comment_line = "g<bs>";
+        comment_visual = "<bs>";
+        textobject = "<bs>";
       };
     };
   };
