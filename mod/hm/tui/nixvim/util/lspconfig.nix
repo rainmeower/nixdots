@@ -1,3 +1,3 @@
 {
-  programs.nixvim.plugins.lspconfig.enable = true;
+  nv.plugins.lspconfig.enable = true;
 }

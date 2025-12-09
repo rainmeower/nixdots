@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.treesitter = {
+  nv.plugins.treesitter = {
     enable = true;
     autoLoad = false;
 

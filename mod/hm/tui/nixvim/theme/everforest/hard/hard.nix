@@ -5,7 +5,7 @@
 }:{
   config = lib.mkIf (theme == "everforest_hard") {
 
-    programs.nixvim.colorschemes.everforest = {
+    nv.colorschemes.everforest = {
       enable = true;
       settings = {
         background = "hard";

@@ -8,7 +8,7 @@ let
 in {
   config = lib.mkIf (theme == "everforest_medium") {
 
-    programs.nixvim.plugins.lualine.settings.options = {
+    nv.plugins.lualine.settings.options = {
       theme = {
       # FIXME
         normal.a = { 

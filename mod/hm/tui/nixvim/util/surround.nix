@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.mini-surround = {
+  nv.plugins.mini-surround = {
     enable = true;
 
     lazyLoad.enable = true;

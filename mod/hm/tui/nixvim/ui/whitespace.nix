@@ -1,3 +1,3 @@
 {
-  programs.nixvim.plugins.mini-trailspace.enable = true;
+  nv.plugins.mini-trailspace.enable = true;
 }

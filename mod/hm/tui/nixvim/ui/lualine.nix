@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.lualine = {
+  nv.plugins.lualine = {
     enable = true;
 
     # starts one row up for a sec when not lazy loaded

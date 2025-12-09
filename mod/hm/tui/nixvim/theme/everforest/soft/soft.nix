@@ -9,7 +9,7 @@ in {
   config = lib.mkIf (theme == "everforest_soft") {
   # TODO change visual bg to gray1 or something
 
-    programs.nixvim = {
+    nv = {
     colorschemes.everforest = {
       enable = true;
       settings = {

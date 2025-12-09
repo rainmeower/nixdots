@@ -1,5 +1,5 @@
 {
-  # programs.nixvim.plugins.treesj = {
+  # nv.plugins.treesj = {
   #   enable = true;
   #
   #   lazyLoad.enable = true;

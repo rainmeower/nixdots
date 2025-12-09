@@ -2,7 +2,7 @@
   lib,
   ...
 }:{
-  programs.nixvim.plugins.mini-splitjoin = {
+  nv.plugins.mini-splitjoin = {
     enable = true;
 
     lazyLoad.enable = true;

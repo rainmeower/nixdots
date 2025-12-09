@@ -1,5 +1,5 @@
 {
-  programs.nixvim = {
+  nv = {
     globals.mapleader = " ";
     keymaps = [
     { # duplicate and comment out line  NOTE: doesnt work without :norm?

@@ -3,7 +3,7 @@
   ...
 }:{
 # FIXME
-#   programs.nixvim = {
+#   nv = {
 #     extraPlugins = with pkgs.vimPlugins; [
 #       (pkgs.vimUtils.buildVimPlugin {
 #         pname = "tiny-code-action.nvim";

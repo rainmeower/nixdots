@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.treesitter-textobjects = {
+  nv.plugins.treesitter-textobjects = {
     enable = true;
 
     settings = {

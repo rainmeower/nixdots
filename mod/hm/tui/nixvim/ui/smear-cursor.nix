@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.smear-cursor = {
+  nv.plugins.smear-cursor = {
     enable = true;
 
     lazyLoad.enable = true; # {{{

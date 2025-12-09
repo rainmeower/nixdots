@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.ccc = {
+  nv.plugins.ccc = {
     enable = true;
 
     lazyLoad.enable = true; # {{{

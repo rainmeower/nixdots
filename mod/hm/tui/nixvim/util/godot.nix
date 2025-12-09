@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.godot = {
+  nv.plugins.godot = {
     enable = true;
   };
 }

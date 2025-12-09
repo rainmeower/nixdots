@@ -1,5 +1,5 @@
 {
-  programs.nixvim = {
+  nv = {
     extraConfigLua = /* lua */ ''
 
       vim.opt.shortmess:append("I")

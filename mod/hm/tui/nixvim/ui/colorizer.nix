@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.colorizer = {
+  nv.plugins.colorizer = {
     enable = true;
 
     lazyLoad.enable = true; # {{{

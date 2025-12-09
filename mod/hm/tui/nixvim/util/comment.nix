@@ -1,5 +1,5 @@
 {
-  programs.nixvim = {
+  nv = {
     plugins.mini.modules.comment = {
       enable = true;
 

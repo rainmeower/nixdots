@@ -2,7 +2,7 @@
   rounding,
   ...
 }:{
-  programs.nixvim.plugins.neorg = {
+  nv.plugins.neorg = {
     enable = true;
 
     lazyLoad.enable = true; # {{{

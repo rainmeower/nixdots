@@ -1,5 +1,5 @@
 {
-  programs.nixvim.lsp = {
+  nv.lsp = {
     inlayHints.enable = false;
     servers = {
       nixd.enable = true;

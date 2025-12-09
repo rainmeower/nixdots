@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.cmp = {
+  nv.plugins.cmp = {
     enable = true;
 
     # lazyLoad.enable = true; # {{{
@@ -39,7 +39,7 @@
 
     };
   };
-# programs.nixvim.plugins.mini.modules.completion = {
+# nv.plugins.mini.modules.completion = {
 #   enable = true;
 #
 #   settings = {

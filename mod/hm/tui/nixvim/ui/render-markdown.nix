@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.render-markdown = {
+  nv.plugins.render-markdown = {
     enable = true;
 
     lazyLoad.enable = true; # {{{

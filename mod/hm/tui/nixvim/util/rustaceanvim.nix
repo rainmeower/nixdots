@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.rustaceanvim = {
+  nv.plugins.rustaceanvim = {
     enable = true;
 
     # NOTE lazy loading not needed

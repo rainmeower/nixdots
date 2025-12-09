@@ -3,7 +3,7 @@
   prompt_sym,
   ...
 }:{
-  programs.nixvim.plugins = {
+  nv.plugins = {
     noice = {
       enable = true;
 

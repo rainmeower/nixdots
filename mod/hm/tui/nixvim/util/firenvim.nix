@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.firenvim = {
+  nv.plugins.firenvim = {
     enable = true;
   };
 }

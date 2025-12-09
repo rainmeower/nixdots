@@ -7,7 +7,7 @@
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../../../theme/${theme_trimmed}/colors.nix;
 in {
-  programs.nixvim.highlightOverride = {
+  nv.highlightOverride = {
     CursorLine.bg = null;
     CursorLineNr.fg = col.accent;
     LineNr.fg = col.selection;

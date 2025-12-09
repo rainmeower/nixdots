@@ -2,7 +2,7 @@
   prompt_sym,
   ...
 }:{
-  # programs.nixvim = {
+  # nv = {
   #   plugins.snacks.settings.picker = {
   #     enable = true;
   #     settings = {

@@ -1,5 +1,5 @@
 {
-  programs.nixvim = {
+  nv = {
     globals.mapleader = " ";
     keymaps = [
     {

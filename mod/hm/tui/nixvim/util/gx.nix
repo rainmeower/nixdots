@@ -2,7 +2,7 @@
   pkgs,
   ...
 }:{
-  programs.nixvim = {
+  nv = {
     extraPlugins = with pkgs.vimPlugins; [
       (pkgs.vimUtils.buildVimPlugin {
         pname = "gx-extended.nvim";

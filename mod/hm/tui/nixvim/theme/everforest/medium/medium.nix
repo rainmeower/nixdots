@@ -5,7 +5,7 @@
 }:{
   config = lib.mkIf (theme == "everforest_medium") {
 
-    programs.nixvim.colorschemes.everforest = {
+    nv.colorschemes.everforest = {
       enable = true;
       settings = {
         background = "medium";

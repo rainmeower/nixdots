@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.orgmode = {
+  nv.plugins.orgmode = {
     enable = true;
 
     lazyLoad.enable = true; # {{{

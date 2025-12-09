@@ -20,7 +20,7 @@
     "└"
   ]); # }}}
 in {
-  programs.nixvim.plugins.telescope = {
+  nv.plugins.telescope = {
     enable = true;
 
     lazyLoad.enable = true;

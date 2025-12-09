@@ -8,7 +8,7 @@
   col = import ../../../../../theme/kanso/colors.nix;
 in {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
-    programs.nixvim = {
+    nv = {
       extraPlugins = [ pkgs.vimPlugins.kanso-nvim ];
       extraConfigLua = ''
         -- Default options:

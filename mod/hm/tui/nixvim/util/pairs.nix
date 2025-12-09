@@ -1,5 +1,5 @@
 {
-  # programs.nixvim.plugins.nvim-autopairs = {
+  # nv.plugins.nvim-autopairs = {
   #   enable = true;
   #
   #   lazyLoad.enable = true;

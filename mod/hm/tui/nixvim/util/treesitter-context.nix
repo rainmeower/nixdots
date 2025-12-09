@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.treesitter-context = {
+  nv.plugins.treesitter-context = {
     enable = true;
 
     lazyLoad.enable = true;

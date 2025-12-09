@@ -2,7 +2,7 @@
   rounding,
   ...
 }:{
-  programs.nixvim = {
+  nv = {
     plugins.tiny-inline-diagnostic = {
     enable = true;
 

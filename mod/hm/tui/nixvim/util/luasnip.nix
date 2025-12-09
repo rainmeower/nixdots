@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.luasnip = {
+  nv.plugins.luasnip = {
     enable = true;
 
     lazyLoad.enable = true;

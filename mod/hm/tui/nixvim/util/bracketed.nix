@@ -1,6 +1,6 @@
 # TODO ]z for jum to fold?
 {
-  programs.nixvim.plugins.mini-bracketed = {
+  nv.plugins.mini-bracketed = {
     enable = true;
 
     lazyLoad.enable = true; # {{{

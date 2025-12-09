@@ -2,7 +2,7 @@
   pkgs,
   ...
 }:{
-  programs.nixvim = {
+  nv = {
     extraPlugins = [ pkgs.vimPlugins.vim-matchup ];
     extraConfigLua = ''
     require('match-up').setup({

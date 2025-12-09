@@ -1,3 +1,3 @@
 {
-  programs.nixvim.plugins.repeat.enable = true;
+  nv.plugins.repeat.enable = true;
 }

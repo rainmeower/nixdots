@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.yanky = {
+  nv.plugins.yanky = {
     enable = true;
 
     lazyLoad.enable = true; # {{{

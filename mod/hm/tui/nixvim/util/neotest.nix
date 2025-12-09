@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.neotest = {
+  nv.plugins.neotest = {
     enable = true;
 
     lazyLoad.enable = true; # {{{
