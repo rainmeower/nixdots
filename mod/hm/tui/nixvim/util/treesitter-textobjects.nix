@@ -2,10 +2,10 @@
   nv.plugins.treesitter-textobjects = {
     enable = true;
 
-    lazyLoad.enable = true; # {{{
-    lazyLoad.settings.event = [
-      "BufRead"
-    ]; # }}}
+    # lazyLoad.enable = true; # {{{
+    # lazyLoad.settings.event = [
+    #   "LspAttach"
+    # ]; # }}}
 
     settings = {
       lookahead = true;

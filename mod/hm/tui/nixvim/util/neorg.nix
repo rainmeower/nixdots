@@ -7,9 +7,10 @@
 
     lazyLoad.enable = true; # {{{
     lazyLoad.settings = {
-      event = [ "BufEnter" ];
-      pattern = "*.norg";
-    };
+      event = [ "UIEnter" ];
+      # event = [ "BufEnter" ];
+      # pattern = "*.norg";
+    }; # }}}
 
     telescopeIntegration.enable = true;
 
