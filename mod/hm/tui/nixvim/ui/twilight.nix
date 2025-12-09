@@ -10,7 +10,7 @@
           __unkeyed-1 = "<leader>bb"; # tt toggle twilight
           __unkeyed-3 = ":Twilight<CR>";
           desc = "toggle color highlighting";
-          options.silent = true;
+          silent = true;
         }
       ];
     }; # }}}
