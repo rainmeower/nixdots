@@ -24,6 +24,8 @@
 
           "org.freedesktop.impl.portal.Inhibit" = [];
           "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+
+          "org.freedesktop.Notifications" = [];
         };
         mango = {
           default = [ "gtk" "termfilechooser" ];
@@ -33,6 +35,8 @@
 
           "org.freedesktop.impl.portal.Inhibit" = [];
           "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+
+          "org.freedesktop.Notifications" = [];
         };
       };
 
