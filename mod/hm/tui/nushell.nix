@@ -12,7 +12,11 @@
   wm_launch_command =
     if wm == "hyprland" then "Hyprland"
     else if wm == "niri" then "niri-session"
-    else if wm == "mango" then "uwsm start mango"
+    else if wm == "mango" then ''
+      if uwsm check may-start; then
+        exec uwsm start mango
+      fi
+    ''
     else "echo 'cannot launch wm: config.wm is set incorrectly'";
 in {
   programs.nushell = {
