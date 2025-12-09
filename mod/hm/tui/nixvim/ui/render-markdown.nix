@@ -2,12 +2,12 @@
   nv.plugins.render-markdown = {
     enable = true;
 
+# FIXME
     lazyLoad.enable = true; # {{{
     lazyLoad.settings = {
       event = [ "BufEnter" ];
       pattern = "*.md";
-    };
-    # }}}
+    }; # }}}
 
     settings = {
       debounce = 50;

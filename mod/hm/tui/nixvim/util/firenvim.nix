@@ -1,5 +1,5 @@
 {
   nv.plugins.firenvim = {
-    enable = true;
+    enable = false;
   };
 }

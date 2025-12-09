@@ -7,7 +7,7 @@
 
     lazyLoad.enable = true;
     lazyLoad.settings.event = [
-      "BufRead"
+      "UIEnter"
     ];
 
     settings = {

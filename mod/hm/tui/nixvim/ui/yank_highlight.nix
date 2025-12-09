@@ -1,10 +1,10 @@
 {
   nv.plugins.yanky = {
-    enable = true;
+    enable = false;
 
     lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [
-      "BufEnter"
+      "VimEnter"
     ]; # }}}
 
     settings = {
