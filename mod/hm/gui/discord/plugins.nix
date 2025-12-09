@@ -66,7 +66,7 @@
     };
 
     cleanChannelName.enable = true;
-    clearURLs.enable = true;
+    clearUrLs.enable = true;
 
     commandPalette = {
       enable = true;
@@ -199,7 +199,7 @@
     # };
 
     noTypingAnimation.enable = true;
-    onePingPerDM.enable = true;
+    onePingPerDm.enable = true;
     plainFolderIcon.enable = true;
 
     platformIndicators = {
@@ -264,7 +264,7 @@
 
     userVoiceShow.enable = true;
     userPfp.enable = true;
-    USRBG.enable = true;
+    usrbg.enable = true;
     validReply.enable = true;
     validUser.enable = true;
     viewIcons.enable = true;
