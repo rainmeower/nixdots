@@ -1,5 +1,6 @@
 {
   font_name,
+  prompt_sym,
   ...
 }:{
   # programs.tofi = {
@@ -16,7 +17,7 @@
   #     # padding-top = "35%";
   #     width = "20%";
   #
-  #     prompt-text = "󰘧 ";
+  #     prompt-text = prompt_sym + " ";
   #     result-spacing = 0;
   #
   #     padding-top = 8;

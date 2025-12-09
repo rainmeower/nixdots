@@ -1,6 +1,7 @@
 {
   lib,
   theme,
+  prompt_sym,
   ...
 }: let
   col = import ../colors.nix;
@@ -9,8 +10,8 @@ in {
     programs.starship = {
       settings = {
         character = {
-          success_symbol = "[󰘧](${col.accent})";
-          error_symbol = "[󰘧](red)";
+          success_symbol = "[${prompt_sym}](${col.accent})";
+          error_symbol = "[${prompt_sym}](red)";
         };
 
         directory = {

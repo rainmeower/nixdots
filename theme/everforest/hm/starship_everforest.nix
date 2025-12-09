@@ -1,6 +1,7 @@
 {
   lib,
   theme,
+  prompt_sym,
   ...
 }:{
   config = lib.mkIf (theme == "everforest_hard" || theme == "everforest_medium" || theme == "everforest_soft") {
@@ -8,8 +9,8 @@
     programs.starship = {
       settings = {
         character = {
-          success_symbol = "[󰘧](#9DA9A0)";
-          error_symbol = "[󰘧](red)";
+          success_symbol = "[${prompt_sym}](#9DA9A0)";
+          error_symbol = "[${prompt_sym}](red)";
         };
 
         nix_shell = {

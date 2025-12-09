@@ -1,14 +1,15 @@
 {
   lib,
   theme,
+  prompt_sym,
   ...
 }:{
   config = lib.mkIf (theme == "lix") {
     programs.starship = {
       settings = {
         character = {
-          success_symbol = "[󰘧](purple)";
-          error_symbol = "[󰘧](red)";
+          success_symbol = "[${prompt_sym}](purple)";
+          error_symbol = "[${prompt_sym}](red)";
         };
 
         nix_shell = {

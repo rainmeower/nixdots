@@ -1,14 +1,15 @@
 {
   lib,
   theme,
+  prompt_sym,
   ...
 }:{
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
     programs.starship = {
       settings = {
         character = {
-          success_symbol = "[󰘧](blue)";
-          error_symbol = "[󰘧](red)";
+          success_symbol = "[${prompt_sym}](blue)";
+          error_symbol = "[${prompt_sym}](red)";
         };
 
         directory = {

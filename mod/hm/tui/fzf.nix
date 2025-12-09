@@ -3,6 +3,7 @@
   os_config,
   theme,
   self,
+  prompt_sym,
   ...
 }: let
   col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
@@ -32,7 +33,7 @@ in {
       "--border=none"
       "--info='hidden'"
       "--header=''"
-      "--prompt='󰘧 '"
+      "--prompt='${prompt_sym} '"
       "-i"
       "--no-bold"
       # "--bind='enter:execute(nvim {})'"

@@ -1,9 +1,12 @@
 {
+  prompt_sym,
+  ...
+}:{
   # programs.nixvim = {
   #   plugins.snacks.settings.picker = {
   #     enable = true;
   #     settings = {
-  #       prompt = "󰘧";
+  #       prompt = prompt_sym;
   #       focus = "input";
   #
   #       matcher = {

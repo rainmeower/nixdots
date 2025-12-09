@@ -1,5 +1,8 @@
 # TODO disable the popup thing next to the search
 {
+  prompt_sym,
+  ...
+}:{
   programs.nixvim.plugins = {
     noice = {
       enable = true;
@@ -15,7 +18,7 @@
           format = {
             cmdline = {
               pattern = "^:";
-              icon = "󰘧";
+              icon = prompt_sym;
               lang = "vim";
             };
             search_down = {
