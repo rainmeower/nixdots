@@ -31,7 +31,7 @@
 
     {
       key = "<bs>";
-      action = "\"_x";
+      action = "x";
       mode = "n";
     }
 
