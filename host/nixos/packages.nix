@@ -54,5 +54,8 @@
     xwayland
     meow
     libqalculate
+
+    signal-cli
+    gurk-rs
   ];
 }

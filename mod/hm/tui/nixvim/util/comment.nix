@@ -8,9 +8,7 @@
       #   "BufEnter"
       # ]; # }}}
 
-      settings = {
-        ignore_blank_line = true;
-      };
+      settings.ignore_blank_line = true;
 
       keymaps = {
         comment = "<bs>";
