@@ -31,6 +31,7 @@ in {
         theme
         rounding
         wm
+        term
         font_name
         font_path
         font_pkg
@@ -51,6 +52,8 @@ in {
     users.${username} = {
       home.stateVersion = "24.11";
       imports = [
+    (lib.mkAliasOptionModule [ "nv" ] [ "programs" "nixvim" ])
+
         ../../theme/blacchiato/hm
         ../../theme/everforest/hm
         ../../theme/lix/hm

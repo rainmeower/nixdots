@@ -7,6 +7,7 @@
   theme,
   pkgs,
   userDirs,
+  term,
 	...
 }: let
   col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);

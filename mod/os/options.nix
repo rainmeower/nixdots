@@ -38,6 +38,13 @@ in {
       ];
     };
 
+    term = mkOption {
+      type = enum [
+        "foot"
+        "ghostty"
+      ];
+    };
+
     font = mkOption {
       type = enum [
         "mononoki"
