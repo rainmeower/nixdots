@@ -5,12 +5,6 @@
 }:{
   config = lib.mkIf (theme == "macchiato") {
     programs.mpv.config = {
-      background-color = "#24273a";
-      osd-back-color = "#181926";
-      osd-border-color = "#181926";
-      osd-color = "#cad3f5";
-      osd-shadow-color = "#24273a";
-
       script-opts-append = [
         "stats-border_color=30201e"
           "stats-font_color=f5d3ca"

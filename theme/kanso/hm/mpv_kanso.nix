@@ -8,12 +8,6 @@ let
 in {
   config = lib.mkIf (lib.hasPrefix "kanso" theme) {
     programs.mpv.config = {
-      background-color = col.bg;
-      osd-back-color = col.bg;
-      osd-border-color = col.bg;
-      osd-color = col.fg;
-      osd-shadow-color = col.bg;
-
       script-opts-append = [ # TODO col without # symbol
         "stats-border_color=30201e"
         "stats-font_color=f5d3ca"

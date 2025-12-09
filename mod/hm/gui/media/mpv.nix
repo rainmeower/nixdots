@@ -1,9 +1,13 @@
 {
   pkgs,
   config,
+  self,
   font_name,
+  theme,
   ...
-}:{
+}: let
+  col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
+in {
   programs.mpv = {
     enable = true;
     bindings = {
@@ -23,6 +27,13 @@
       reset-on-next-file = "all";
       keep-open = true;
       osd-font = font_name;
+
+      background-color = col.bg;
+      osd-back-color = col.bg;
+      osd-border-color = col.bg;
+      osd-color = col.fg;
+      osd-shadow-color = col.bg;
+
     };
 
     scripts = with pkgs.mpvScripts; [
