@@ -30,9 +30,9 @@
     }
 
     {
-      key = "x"; # tw
-      action = "gc";
-      mode = [ "n" "x" "o" ];
+      key = "<bs>";
+      action = "\"_x";
+      mode = "n";
     }
 
     # toggles {{{
