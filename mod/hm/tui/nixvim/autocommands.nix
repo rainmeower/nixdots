@@ -14,7 +14,7 @@
       "BufWinEnter"
     ];
     pattern = "*.nix";
-    command = "map J J:s/ = { /.";
+    command = "map <buffer> <silent> J J:s/ = { /.<cr>";
   }
   ];
 }
