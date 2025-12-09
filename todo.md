@@ -1,5 +1,8 @@
 uwsm for mango
 
+
+- declaratively disable js?
+
 ./mod/os/services/disk.nix 5
 
 

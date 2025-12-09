@@ -3,6 +3,7 @@
   ...
 }:{
   systemd.user.targets.nixos-fake-graphical-session = lib.mkForce {};
+
   programs.uwsm = {
     enable = true;
     waylandCompositors.mango = {
