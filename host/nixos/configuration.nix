@@ -22,34 +22,5 @@
     ];
   };
 
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = with pkgs; [
-    xdg-desktop-portal
-    xdg-desktop-portal-wlr
-    xdg-desktop-portal-termfilechooser
-    xdg-desktop-portal-gtk
-  ];
-
-  xdg.portal = {
-    config = {
-      common = {
-        default = ["termfilechooser"];
-        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
-      };
-      niri = {
-        default = ["termfilechooser"];
-        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
-      };
-      mango = {
-        default = ["termfilechooser"];
-        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
-      };
-      mangowc = {
-        default = ["termfilechooser"];
-        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
-      };
-    };
-  };
-
   system.stateVersion = "24.11";
 }

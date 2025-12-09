@@ -26,8 +26,6 @@ env=TERMCMD=foot --app-id="foot.yazi.filechooser"
   '';
 
   xdg.portal = {
-    enable = true;
-
     config = {
       common = {
         default = ["termfilechooser"];
@@ -47,8 +45,8 @@ env=TERMCMD=foot --app-id="foot.yazi.filechooser"
       };
     };
 
-    extraPortals = [
-      pkgs.xdg-desktop-portal-termfilechooser
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-termfilechooser
     ];
   };
 }

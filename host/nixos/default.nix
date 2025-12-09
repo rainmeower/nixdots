@@ -37,6 +37,7 @@
     ../../mod/os/services/ssh.nix
     ../../mod/os/gaming/nix-gaming.nix
     ../../mod/os/shared.nix
+    ../../mod/os/portals/mango.nix
     ../../mod/os/steam.nix
     ../../mod/os/services/disk.nix
     ../../mod/os/wine.nix

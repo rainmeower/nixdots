@@ -13,14 +13,6 @@
   col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
   gaps = 10;
   h = lib.removePrefix "#";
-  portals = with pkgs; [
-    xdg-desktop-portal
-    xdg-desktop-portal-wlr
-    xdg-desktop-portal-termfilechooser
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-gnome
-    xdg-desktop-portal-luminous
-  ];
 in {
   imports = [
     inputs.mango.hmModules.mango
@@ -33,9 +25,13 @@ in {
       wayshot
     ];
 
-    xdg.portal.configPackages = portals;
-    xdg.portal.extraPortals = portals;
-
+    xdg.portal.enable = true;
+    xdg.portal.extraPortals = with pkgs; [
+      xdg-desktop-portal
+      xdg-desktop-portal-wlr
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-termfilechooser
+    ];
 
     wayland.windowManager.mango = {
       enable = true;

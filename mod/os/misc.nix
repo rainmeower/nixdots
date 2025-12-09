@@ -1,7 +1,4 @@
 {
-  # xdg.portal.config.common.default = "*";
-  xdg.portal.enable = true;
-
   time.timeZone = "Australia/Brisbane";
   i18n.defaultLocale = "en_AU.UTF-8";
   i18n.extraLocaleSettings = {
