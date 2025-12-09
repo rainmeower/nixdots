@@ -49,9 +49,8 @@ in {
       };
 
       pickers = {
-        colorscheme = {
-          enable_preview = true;
-        };
+        colorscheme.enable_preview = true;
+
         git_commits = {
           preview_width = 0.5;
           preview_cutoff = 1;
