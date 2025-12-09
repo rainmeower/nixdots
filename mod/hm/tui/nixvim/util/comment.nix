@@ -3,10 +3,10 @@
     plugins.mini.modules.comment = {
       enable = true;
 
-      lazyLoad.enable = true; # {{{
-      lazyLoad.settings.event = [
-        "BufEnter"
-      ]; # }}}
+      # lazyLoad.enable = true; # {{{
+      # lazyLoad.settings.event = [
+      #   "BufEnter"
+      # ]; # }}}
 
       settings = {
         ignore_blank_line = true;
