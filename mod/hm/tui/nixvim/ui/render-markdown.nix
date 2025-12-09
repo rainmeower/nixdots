@@ -4,7 +4,7 @@
 
     lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [
-      "VimEnter" # TODO only on markdown files
+      "UIEnter" # TODO only on markdown files
     ]; # }}}
 
     settings = {
