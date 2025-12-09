@@ -1,11 +1,10 @@
 # TODO
 {
-  lib,
-  theme,
+  if_theme,
   ...
 }: let
   col = import ../colors.nix;
-in lib.mkIf (lib.hasPrefix "kanso" theme) {
+in if_theme "kanso" {
   home.file.".config/btop/themes/btop.theme".text = /* ini */ ''
 
     # Main background, empty for terminal default, need to be empty if you want transparent background

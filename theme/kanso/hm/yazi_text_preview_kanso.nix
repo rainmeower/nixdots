@@ -1,15 +1,13 @@
 {
-  lib,
-  theme,
+  if_theme,
   userDirs,
   ...
 }: let
   col = import ../colors.nix;
-in {
-  config = lib.mkIf (lib.hasPrefix "kan" theme) {
-    programs.yazi.theme.mgr.syntect_theme = userDirs.extraConfig.XDG_CONFIG_HOME + "/tmthemes/kanso.tmTheme";
+in if_theme "kanso" {
+  programs.yazi.theme.mgr.syntect_theme = userDirs.extraConfig.XDG_CONFIG_HOME + "/tmthemes/kanso.tmTheme";
 
-    xdg.configFile."tmthemes/kanso.tmTheme".text = /* xml */ ''
+  xdg.configFile."tmthemes/kanso.tmTheme".text = /* xml */ ''
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -2013,6 +2011,5 @@ in {
     </array>
   </dict>
 </plist>
-    '';
-  };
+  '';
 }

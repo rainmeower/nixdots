@@ -45,7 +45,7 @@ in {
         userDirs;
       home = config.home-manager.users.${username}.home.homeDirectory;
 
-      theme_config = t: lib.mkIf (t == (builtins.elemAt (builtins.split "_" config.theme) 0));
+      if_theme = t: lib.mkIf (t == (builtins.elemAt (builtins.split "_" config.theme) 0));
 
       # FIXME
       # col = import (builtins.toPath "${flake_dir}/theme/${theme_trimmed}/colors.nix");

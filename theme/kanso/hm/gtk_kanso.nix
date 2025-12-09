@@ -2,9 +2,9 @@
   lib,
   theme,
   pkgs,
-  theme_config,
+  if_theme,
   ...
-}: theme_config "kanso" {
+}: if_theme "kanso" {
 
   gtk = {
     enable = true;

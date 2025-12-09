@@ -1,10 +1,9 @@
 {
-  lib,
-  theme,
+  if_theme,
   username,
   wm,
   ...
-}: lib.mkIf (lib.hasPrefix "kan" theme) {
+}: if_theme "kanso" {
   programs.fastfetch = {
     enable = true;
 

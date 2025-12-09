@@ -1,24 +1,22 @@
 {
-  lib,
-  theme,
+  if_theme,
   ...
 }: let
   col = import ../colors.nix;
-in {
-  config = lib.mkIf (lib.hasPrefix "kanso" theme) {
-    programs.kitty.settings = {
-      background_opacity = 0.8;
+in if_theme "kanso" {
+  programs.kitty.settings = {
+    background_opacity = 0.8;
 
-      foreground = col.fg;
-      background = col.bg;
-      selection_foreground = col.bg;
-      selection_background = col.blue;
+    foreground = col.fg;
+    background = col.bg;
+    selection_foreground = col.bg;
+    selection_background = col.blue;
 
-      cursor = col.fg;
-      cursor_text_color = col.bg;
+    cursor = col.fg;
+    cursor_text_color = col.bg;
 
-      # url underline 
-      url_color = col.blue_sat;
+    # url underline 
+    url_color = col.blue_sat;
 
 # # Kitty window border colors
 #       active_border_color     #000000
@@ -47,36 +45,35 @@ in {
 # The 16 terminal colors
 
 # black
-      color0 = col.bg;
-      color8 = col.bg;
+    color0 = col.bg;
+    color8 = col.bg;
 
 # red
-      color1 = col.red;
-      color9 = col.red;
+    color1 = col.red;
+    color9 = col.red;
 
 # green
-      color2  = col.green;
-      color10 = col.green;
+    color2  = col.green;
+    color10 = col.green;
 
 # yellow
-      color3  = col.yellow;
-      color11 = col.yellow;
+    color3  = col.yellow;
+    color11 = col.yellow;
 
 # blue
-      color4  = col.blue;
-      color12 = col.blue;
+    color4  = col.blue;
+    color12 = col.blue;
 
 # magenta
-      color5  = col.violet;
-      color13 = col.violet;
+    color5  = col.violet;
+    color13 = col.violet;
 
 # cyan
-      color6  = col.blue4;
-      color14 = col.blue4;
+    color6  = col.blue4;
+    color14 = col.blue4;
 
 # white
-      color7  = col.fg2;
-      color15 = col.fg2;
-    };
+    color7  = col.fg2;
+    color15 = col.fg2;
   };
 }
