@@ -33,7 +33,7 @@
     # ./ui/indentscope.nix
     # ./ui/smear-cursor.nix
     # ./ui/tiny-glimmer.nix
-    # ./ui/yank_highlight.nix
+    ./ui/yank_highlight.nix
     ./ui/ccc.nix
     ./ui/diagnostic.nix
     ./ui/lualine.nix

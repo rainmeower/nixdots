@@ -1,6 +1,6 @@
 {
   nv.plugins.smear-cursor = {
-    enable = true;
+    enable = false;
 
     lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [

@@ -1,6 +1,6 @@
 {
   nv.plugins.treesitter-context = {
-    enable = true;
+    enable = false;
 
     lazyLoad.enable = true;
     lazyLoad.settings.event = [
