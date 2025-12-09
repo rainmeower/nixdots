@@ -6,18 +6,10 @@
     plugins.yazi = {
       enable = true;
 
-    lazyLoad.enable = true; # {{{
-    lazyLoad.settings = {
-      cmd = "Yazi";
-      keys = [
-      {
-        __unkeyed-1 = "<leader>y"; # tc toggle color
-        __unkeyed-3 = ":Yazi<CR>";
-        desc = "open yazi";
-        options.silent = true;
-      }
-      ];
-    }; # }}}
+      lazyLoad.enable = true; # {{{
+      lazyLoad.settings.event = [
+        "UIEnter"
+      ]; # }}}
 
       settings = {
         yazi_floating_window_border = 
@@ -26,5 +18,13 @@
         highlight_hovered_buffers_in_same_directory = false;
       };
     };
+
+    keymaps = [
+    {
+      key = "<leader>y";
+      mode = [ "n" "v" ];
+      action = "<cmd>Yazi<cr>";
+    }
+    ];
   };
 }
