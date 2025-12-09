@@ -5,7 +5,7 @@
     # starts one row up for a sec when not lazy loaded
     lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [
-      "DeferredUIEnter"
+      "VimEnter"
     ]; # }}}
 
     settings = {

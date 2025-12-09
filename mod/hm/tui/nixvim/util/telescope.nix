@@ -19,13 +19,21 @@
     "┘"
     "└"
   ]); # }}}
+
+  file_ignore_patterns = [
+    "secret"
+    "^/nix/store/" # nix store
+    "^/tmp/.*nu$" # <C-o> in nushell
+    "^/tmp/tmp_.*txt$" # tridactyl
+    "^/tmp/yazi-1000/bulk" # yazi bulk rename
+  ];
 in {
   nv.plugins.telescope = {
     enable = true;
 
     lazyLoad.enable = true;
     lazyLoad.settings.event = [
-      "DeferredUIEnter"
+      "UIEnter"
     ];
 
     settings = {
@@ -34,14 +42,10 @@ in {
         entry_prefix = " ";
         prompt_prefix = " ${prompt_sym} ";
 
-        inherit borderchars;
-        file_ignore_patterns = [
-          "secret"
-          "^/nix/store/" # nix store
-          "^/tmp/.*nu$" # <C-o> in nushell
-          "^/tmp/tmp_.*txt$" # tridactyl
-          "^/tmp/yazi-1000/bulk" # yazi bulk rename
-        ];
+        inherit
+          borderchars
+          file_ignore_patterns
+        ;
       };
 
       pickers = {
