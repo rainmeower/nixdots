@@ -4,30 +4,25 @@
       enable = true;
 
       lazyLoad.enable = true; # {{{
-      # lazyLoad.settings.event = [
-      #   "UIEnter"
-      # ]; # }}}
-
-      lazyLoad.settings = {
-      cmd.__raw = "function() require('flash').jump() end";
-    keymaps = [
-    {
-      __unkeyed-1 = "<cr>";
-      __unkeyed-3.__raw = "function() require('flash').jump() end";
-      mode = [ "n" "v" "x" "o" ];
-      desc = "jump with flash";
-    }
-    ];
-      };
+      lazyLoad.settings.event = [
+        "UIEnter"
+      ]; # }}}
 
       settings = {
         label.uppercase = false;
         labels = "nisetachr";
         prompt = {
           win_config.col = 1000;
-          prefix = null;
+          prefix = [ "" ];
         };
       };
     };
+    keymaps = [
+    {
+      key = "<cr>";
+      action.__raw = "function() require('flash').jump() end";
+      mode = [ "n" "v" "x" "o" ];
+    }
+    ];
   };
 }
