@@ -2,19 +2,21 @@
   pkgs,
   ...
 }:{
-  nv = {
-    extraPlugins = [ pkgs.vimPlugins.vim-matchup ];
-    extraConfigLua = ''
-    require('match-up').setup({
-      treesitter = {
-        stopline = 500
-      }
-    })
-    '';
+  nv.plugins.vim-matchup = {
+    enable = true;
 
-    extraConfigVim = ''
-      let g:matchup_matchparen_singleton = 0
-      let g:matchup_matchparen_offscreen = {'method': 'popup'}
-    '';
+    settings = {
+      mouse_enabled = false;
+      matchparen_offscreen.method = "popup"; # popup, status
+      delim_noskips = 2; # ignore things in comments and strings
+
+      matchparen_enabled = true;
+      matchparen_singleton = false; # highlight known words with no match
+      motion_enabled = true;
+      text_obj_enabled = true;
+      surround_enabled = true; # s% textobject
+
+      transmute_enabled = true;
+    };
   };
 }

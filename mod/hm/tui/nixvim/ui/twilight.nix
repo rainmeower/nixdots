@@ -6,12 +6,12 @@
     lazyLoad.settings = {
       cmd = "Twilight";
       keys = [
-        {
-          __unkeyed-1 = "<leader>bb"; # tt toggle twilight
-          __unkeyed-3 = ":Twilight<CR>";
-          desc = "toggle color highlighting";
-          silent = true;
-        }
+      {
+        __unkeyed-1 = "<leader>bb"; # tt toggle twilight
+        __unkeyed-3 = ":Twilight<CR>";
+        desc = "toggle color highlighting";
+        silent = true;
+      }
       ];
     }; # }}}
 

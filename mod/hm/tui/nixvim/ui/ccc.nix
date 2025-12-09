@@ -10,6 +10,7 @@
         __unkeyed-1 = "<leader>bw"; # tc toggle color
         __unkeyed-3 = ":CccHighlighterEnable<CR>";
         desc = "toggle color highlighting";
+        silent = true;
       }
       ];
     }; # }}}
