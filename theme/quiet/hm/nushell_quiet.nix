@@ -4,9 +4,7 @@
   ...
 }: let
   col = import ../colors.nix;
-in {
-  config = lib.mkIf (theme == "quiet") {
-
+in lib.mkIf (theme == "quiet") {
   programs.nushell.extraConfig = /* nu */ ''
     let color_scheme = {
       hints: "${col.grey}"
@@ -25,6 +23,5 @@ in {
     $env.config = {
       color_config: $color_scheme
     }
-    '';
-  };
+  '';
 }

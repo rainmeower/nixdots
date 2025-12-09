@@ -5,9 +5,7 @@
   ...
 }: let
   col = import ../colors.nix;
-in {
-  config = lib.mkIf (lib.hasPrefix "kanso" theme) {
-
+in lib.mkIf (lib.hasPrefix "kanso" theme) {
   home.file.".config/btop/themes/btop.theme".text = /* ini */ ''
 
     # Main background, empty for terminal default, need to be empty if you want transparent background
@@ -101,5 +99,4 @@ in {
     theme[process_end]="${col.gray5}"
 
   '';
-  };
 }
