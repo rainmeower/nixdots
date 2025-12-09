@@ -3,9 +3,11 @@
     enable = true;
 
     lazyLoad.enable = true; # {{{
-    lazyLoad.settings.event = [
-      "UIEnter" # TODO only on markdown files
-    ]; # }}}
+    lazyLoad.settings = {
+      event = [ "BufEnter" ];
+      pattern = "*.md";
+    };
+    # }}}
 
     settings = {
       debounce = 50;

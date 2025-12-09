@@ -2,10 +2,10 @@
   nv.plugins.lualine = {
     enable = true;
 
-    # lazyLoad.enable = true; # {{{
-    # lazyLoad.settings.event = [
-    #   "VimEnter"
-    # ]; # }}}
+    lazyLoad.enable = true; # {{{
+    lazyLoad.settings.event = [
+      "VimEnter"
+    ]; # }}}
 
     settings = {
       icons_enabled = true;
