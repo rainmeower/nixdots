@@ -46,8 +46,8 @@ mods:
 (defsrc
 )
 
-(defseq float (f))
-(defvirtualkeys float (cmd mmsg -d togglefloating))
+;; (defseq float (f))
+;; (defvirtualkeys float (cmd mmsg -d togglefloating))
 
 (defalias ;; {{{
 
@@ -1015,11 +1015,10 @@ f19 lsft
 ) ;; }}}
 
 (deflayermap sup ;; {{{
-g sldr
+;; g sldr
 
 lctl lctl
 rsft rsft
-
 
 ;; FIXME
 ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held fn) (esc) ())
@@ -1043,7 +1042,7 @@ y y
 , ,
 . .
 k k
-;; g g
+g g
 v v
 ' '
 l l
