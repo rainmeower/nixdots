@@ -14,6 +14,7 @@
         __unkeyed-1 = "<leader>y"; # tc toggle color
         __unkeyed-3 = ":Yazi<CR>";
         desc = "open yazi";
+        options.silent = true;
       }
       ];
     }; # }}}
