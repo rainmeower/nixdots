@@ -1,5 +1,5 @@
 {
-  programs.nixvim.autoCmd = [
+  nv.autoCmd = [
   {
     event = [
       "BufEnter"

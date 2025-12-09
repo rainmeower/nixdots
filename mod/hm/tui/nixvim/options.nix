@@ -3,7 +3,7 @@
   flake_dir,
   ...
 }:{
-  programs.nixvim.opts = {
+  nv.opts = {
     termguicolors = true;
 
     winborder = if rounding then "rounded" else "single";
