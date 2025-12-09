@@ -1,22 +1,22 @@
-# {{{
-# base:
-#   : b f d w p   / l o u . _
-#   = n s t c y   m h a e i 
-#   q , v k g -   j 󰣏 ( ) ; z
-#     alt 󱊷 r 󰣎   󰌑 󱁐 󰁮 󰌒
-#
-# sym:
-#     , , , ,
-#     1 2 3 4       7 8 9 0
-#     0 9 8 5       6 3 2 1
-#           .       󱁐
-#
-# mods:    
-#     󰾆 󰓅 󰳾 󰳽        󱕐 󱕑 
-#                   ← ↓ ↑ →
-#                   󰞗 󰞖 󰞙 󰞘
-#           .       󱁐
-# }}}
+/* {{{
+base:
+  : b f d w p   / l o u . _
+  = n s t c y   m h a e i 
+  q , v k g -   j 󰣏 ( ) ; z
+    alt 󱊷 r 󰣎   󰌑 󱁐 󰁮 󰌒
+
+sym:
+    , , , ,
+    1 2 3 4       7 8 9 0
+    0 9 8 5       6 3 2 1
+          .       󱁐
+
+mods:    
+    󰾆 󰓅 󰳾 󰳽        󱕐 󱕑 
+                  ← ↓ ↑ →
+                  󰞗 󰞖 󰞙 󰞘
+          .       󱁐
+}}} */
 
 {
   pkgs,
@@ -46,8 +46,8 @@
 (defsrc
 )
 
-;; (defseq float (f))
-;; (defvirtualkeys float (cmd mmsg -d togglefloating))
+(defseq float (f))
+(defvirtualkeys float (cmd mmsg -d togglefloating))
 
 (defalias ;; {{{
 
@@ -1015,7 +1015,7 @@ f19 lsft
 ) ;; }}}
 
 (deflayermap sup ;; {{{
-;; g sldr
+g sldr
 
 lctl lctl
 rsft rsft
@@ -1043,7 +1043,7 @@ y y
 , ,
 . .
 k k
-g g
+;; g g
 v v
 ' '
 l l
