@@ -17,6 +17,7 @@
     xdg-desktop-portal-wlr
     xdg-desktop-portal-termfilechooser
     xdg-desktop-portal-gtk
+    xdg-desktop-portal-gnome
     xdg-desktop-portal-luminous
   ];
 in {
