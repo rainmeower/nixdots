@@ -2,6 +2,10 @@
   pkgs,
     ...
 }:{
+  home.packages = with pkgs; [
+    discordo
+  ];
+
   xdg.configFile."discordo/config.toml".source = (pkgs.formats.toml {}).generate "config.toml" {
     mouse = false;
     editor = "default";
