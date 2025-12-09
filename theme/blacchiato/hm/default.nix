@@ -7,7 +7,6 @@
     ../../macchiato/hm/nushell_macchiato.nix
     ./foot_blacchiato.nix
     ./gtk_blacchiato.nix
-    ./walker_blacchiato.nix
     ./hyprland_blacchiato.nix
     # ./hyprpaper_blacchiato.nix
   ];

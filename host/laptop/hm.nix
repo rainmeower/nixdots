@@ -30,7 +30,6 @@
         ../../modules/home-manager/tui/nixvim/default.nix
 
 
-        ../../modules/home-manager/gui/walker.nix
 
         # ./hyprland.nix
         ../../modules/home-manager/gui/dunst.nix

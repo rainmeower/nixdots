@@ -57,14 +57,7 @@
 
         exec-once = [
           "foot --server"
-            "clipse -listen"
-            "udiskie -a"
-            "dunst"
-            "hyprpaper"
-            "walker --gapplication-service"
             "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
-            "steam -silent"
-            "systemctl --user start hyprpolkitagent"
         ];
 
         monitor = [

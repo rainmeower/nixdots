@@ -219,7 +219,6 @@ in {
             "SUPER+SHIFT,z,spawn,zen -p media"
 
 # exit
-            "SUPER+ALT,q,quit"
             "SUPER,o,killclient,"
 
 # switch window focus
@@ -275,7 +274,7 @@ in {
             "SUPER+SHIFT,v,tagsilent,9,0"
 
             # toggle windows from tag
-            "SUPER,bracketleft,spawn,mmsg -s -t 1^"
+            "SUPER,bracketleft, spawn,mmsg -s -t 1^"
             "SUPER,f1,          spawn,mmsg -s -t 2^"
             "SUPER,f2,          spawn,mmsg -s -t 3^"
             "SUPER,f3,          spawn,mmsg -s -t 4^"
