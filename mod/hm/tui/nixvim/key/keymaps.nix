@@ -31,8 +31,13 @@
 
     {
       key = "<bs>";
-      action = "x";
+      action = "\"_x";
       mode = "n";
+    }
+    {
+      key = "<bs>";
+      action = "x";
+      mode = "o";
     }
 
     # toggles {{{
