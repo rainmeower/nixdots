@@ -1,6 +1,6 @@
 {
   nv.plugins.mini-indentscope = {
-    enable = true;
+    enable = false;
 
     lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [

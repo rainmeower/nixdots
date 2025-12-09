@@ -8,7 +8,7 @@
 
     lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [
-      "BufEnter"
+      "LspAttach"
     ]; # }}}
 
     settings = {

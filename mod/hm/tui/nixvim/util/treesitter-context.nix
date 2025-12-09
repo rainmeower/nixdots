@@ -2,10 +2,10 @@
   nv.plugins.treesitter-context = {
     enable = false;
 
-    lazyLoad.enable = true;
+    lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [
-      "BufRead"
-    ];
+      "LspAttach"
+    ]; # }}}
 
     settings = {
       line_numbers = true;

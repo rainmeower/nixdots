@@ -5,7 +5,7 @@
 
     lazyLoad.enable = true;
     lazyLoad.settings.event = [
-      "BufRead"
+      "LspAttach"
     ];
 
 # grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
