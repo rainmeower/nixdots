@@ -17,20 +17,13 @@ in {
   imports = [
     inputs.mango.hmModules.mango
   ];
+
   config = lib.mkIf (wm == "mango") {
     home.packages = with pkgs; [
       wlr-randr
       slurp
       # grim # broken?
       wayshot
-    ];
-
-    xdg.portal.enable = true;
-    xdg.portal.extraPortals = with pkgs; [
-      xdg-desktop-portal
-      xdg-desktop-portal-wlr
-      xdg-desktop-portal-gtk
-      xdg-desktop-portal-termfilechooser
     ];
 
     wayland.windowManager.mango = {
