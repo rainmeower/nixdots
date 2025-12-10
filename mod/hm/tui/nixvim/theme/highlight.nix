@@ -20,7 +20,7 @@
     #   bold = true;
     # };
 
-    "@neorg..markup.bold" = {
+    "@neorg.markup.bold" = {
       fg = p.bg;
       bg = p.accent;
     };
