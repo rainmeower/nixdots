@@ -1120,8 +1120,8 @@ c f8
 k f11
 g f12
 
-1 dynamic-macro-record-stop
-2 (dynamic-macro-record 0)
+1 (dynamic-macro-record 0)
+2 dynamic-macro-record-stop
 3 (dynamic-macro-play 0)
 
 ;; q (switch
