@@ -11,8 +11,7 @@
       prettyName = "mango";
       comment = "mangowc managed by uwsm";
       # binPath = "/run/current-system/sw/bin/mango"; # doesnt exist?
-      binPath = lib.getExe pkgs.mangowc;
-      # binPath = "/usr/bin/env mango";
+      binPath = "/usr/bin/env mango";
     };
   };
 }
