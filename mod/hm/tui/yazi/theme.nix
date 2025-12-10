@@ -1,18 +1,13 @@
 {
-  config,
-  lib,
-  theme,
+  p,
   ...
-}: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../theme/${theme_trimmed}/colors.nix;
-in {
+}:{
   programs.yazi.theme = {
     which = {
       mask.hidden = true;
-      cand.fg = col.accent;
-      rest.fg = col.accent;
-      desc.fg = col.comment;
+      cand.fg = p.accent;
+      rest.fg = p.accent;
+      desc.fg = p.comment;
       separator = " ";
     };
     mgr = {
@@ -20,17 +15,17 @@ in {
       hovered.reversed = true;
       preview_hovered.reversed = true;
 
-      cwd.fg = col.fg;
+      cwd.fg = p.fg;
 
       find_keyword  = {
-        fg = col.purple;
+        fg = p.purple;
         bold = true;
         italic = false;
         underline = false;
       };
 
       find_position = {
-        fg = col.purple;
+        fg = p.purple;
         bg = "reset";
         bold = true;
         italic = true;
@@ -38,56 +33,56 @@ in {
 
       # TODO can i use ▌ for the symbol
       marker_copied = {
-        fg = col.green;
+        fg = p.green;
         bold = true;
-        # bg = col.green;
+        # bg = p.green;
       };
 
       marker_cut = {
-        fg = col.red;
+        fg = p.red;
         bold = true;
-        # bg = col.red;
+        # bg = p.red;
       };
 
       # visual mode
       marker_marked = {
-        fg = col.purple;
+        fg = p.purple;
         bold = true;
-        # bg = col.purple;
+        # bg = p.purple;
       };
 
       # individual select
       marker_selected = {
-        fg = col.blue;
+        fg = p.blue;
         bold = true;
-        # bg = col.blue;
+        # bg = p.blue;
       };
 
 
       count_copied = {
-        fg = col.bg;
-        bg = col.green;
+        fg = p.bg;
+        bg = p.green;
       };
 
       count_cut = {
-        fg = col.bg;
-        bg = col.red;
+        fg = p.bg;
+        bg = p.red;
       };
 
       count_selected = {
-        fg = col.bg;
-        bg = col.blue;
+        fg = p.bg;
+        bg = p.blue;
       };
     };
 
     tabs = {
       active = {
-        bg = col.accent;
-        fg = col.bg;
+        bg = p.accent;
+        fg = p.bg;
       };
       inactive = {
-        bg = col.bg;
-        fg = col.accent;
+        bg = p.bg;
+        fg = p.accent;
       };
 
       sep_inner = {
@@ -101,31 +96,31 @@ in {
     };
 
     spot = {
-      title.fg = col.accent;
+      title.fg = p.accent;
       tbl_cell = {
-        fg = col.bg;
-        bg = col.accent;
+        fg = p.bg;
+        bg = p.accent;
       };
     };
     filetype.rules = [
     {
       mime = "image/*";
-      fg = col.yellow;
+      fg = p.yellow;
     }
 
     {
       mime = "{audio,video}/*";
-      fg = col.violet;
+      fg = p.violet;
     }
 
     {
       mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}";
-      fg = col.red;
+      fg = p.red;
     }
 
     {
       mime = "application/{pdf,doc;rtf}";
-      fg = col.blue;
+      fg = p.blue;
     }
 
 # { mime = "inode/empty" fg = "red" }
@@ -133,36 +128,36 @@ in {
     {
       name = "*";
       is = "orphan";
-      bg = col.red;
+      bg = p.red;
     }
 
     {
       name = "*";
       is = "exec";
-      fg = col.green;
+      fg = p.green;
     }
 
     {
       name = "*";
       is = "dummy";
-      bg = col.red;
-      fg = col.bg;
+      bg = p.red;
+      fg = p.bg;
     }
     {
       name = "*/";
       is = "dummy";
-      bg = col.red;
-      fg = col.bg;
+      bg = p.red;
+      fg = p.bg;
     }
 
     # fallback
     {
       name = "*";
-      fg = col.fg;
+      fg = p.fg;
     }
     {
       name = "*/";
-      fg = col.accent;
+      fg = p.accent;
     }
     ];
   };

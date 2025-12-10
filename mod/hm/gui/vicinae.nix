@@ -3,13 +3,11 @@
   pkgs,
   config,
   lib,
-  theme,
+  p,
   rounding,
   font_name,
   ...
 }: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../theme/${theme_trimmed}/colors.nix;
   radius = if rounding then 10 else 0;
   inherit (config.lib.vicinae) mkRayCastExtension;
 in {
@@ -187,14 +185,14 @@ pkgs.vicinae-extension-nix
     };
     colors = {
       core = {
-        background = "#cc" + (lib.removePrefix "#" col.bg); # opacity at the start for some reason
-        inherit (col)
+        background = "#cc" + (lib.removePrefix "#" p.bg); # opacity at the start for some reason
+        inherit (p)
           foreground
           accent;
       };
 
       accents = {
-        inherit (col)
+        inherit (p)
           red
           orange
           yellow
@@ -202,17 +200,17 @@ pkgs.vicinae-extension-nix
           cyan
           blue
           purple;
-        magenta = col.pink;
+        magenta = p.pink;
       };
 
 			list.item = {
 				selection = {
-					background = col.button;
+					background = p.button;
 					secondary_background = "#ff0000";
 				};
 
 				hover = {
-					background = col.button;
+					background = p.button;
 				};
 			};
     };

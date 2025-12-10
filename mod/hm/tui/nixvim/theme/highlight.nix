@@ -1,73 +1,68 @@
 {
-  pkgs,
-  lib,
-  theme,
+  p,
   ...
-}: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../../theme/${theme_trimmed}/colors.nix;
-in {
+}:{
   nv.highlightOverride = {
     CursorLine.bg = null;
-    CursorLineNr.fg = col.accent;
-    LineNr.fg = col.selection;
+    CursorLineNr.fg = p.accent;
+    LineNr.fg = p.selection;
 
     MatchParen.reverse = true;
     # FIXME doesnt do anything
     # MatchParen = {
-    #   fg = col.bg;
-    #   bg = col.accent;
+    #   fg = p.bg;
+    #   bg = p.accent;
     #   bold = true;
     # };
     # MatchParenCur = {
-    #   fg = col.bg;
-    #   bg = col.accent;
+    #   fg = p.bg;
+    #   bg = p.accent;
     #   bold = true;
     # };
 
 
 
     # telescope {{{
-    TelescopeBorder.fg = col.accent;
-    TelescopeTitle.fg = col.accent;
-    TelescopeSelection.fg = col.accent;
-    TelescopeSelectionCaret.fg = col.accent;
-    TelescopePromptPrefix.fg = col.accent;
+    TelescopeBorder.fg = p.accent;
+    TelescopeTitle.fg = p.accent;
+    TelescopeSelection.fg = p.accent;
+    TelescopeSelectionCaret.fg = p.accent;
+    TelescopePromptPrefix.fg = p.accent;
     TelescopePromptCounter.fg = null;
-    TelescopePreviewBorder.fg = col.accent;
-    TelescopeResultsBorder.fg = col.accent;
+    TelescopePreviewBorder.fg = p.accent;
+    TelescopeResultsBorder.fg = p.accent;
     # }}}
 
     # noice {{{
-    NoiceCmdlinePopupTitle.fg = col.accent;
-    NoiceCmdlinePopupTitleCalculator.fg = col.accent;
-    NoiceCmdlinePopupTitleCmdline.fg = col.accent;
-    NoiceCmdlinePopupTitleFilter.fg = col.accent;
-    NoiceCmdlinePopupTitleHelp.fg = col.accent;
-    NoiceCmdlinePopupTitleInput.fg = col.accent;
-    NoiceCmdlinePopupTitleLua.fg = col.accent;
+    NoiceCmdlinePopupTitle.fg = p.accent;
+    NoiceCmdlinePopupTitleCalculator.fg = p.accent;
+    NoiceCmdlinePopupTitleCmdline.fg = p.accent;
+    NoiceCmdlinePopupTitleFilter.fg = p.accent;
+    NoiceCmdlinePopupTitleHelp.fg = p.accent;
+    NoiceCmdlinePopupTitleInput.fg = p.accent;
+    NoiceCmdlinePopupTitleLua.fg = p.accent;
 
-    NoiceCmdlinePopupBorder.fg = col.accent;
-    NoiceCmdlinePopupBorderCalculator.fg = col.accent;
-    NoiceCmdlinePopupBorderCmdline.fg = col.accent;
-    NoiceCmdlinePopupBorderFilter.fg = col.accent;
-    NoiceCmdlinePopupBorderHelp.fg = col.accent;
-    NoiceCmdlinePopupBorderInput.fg = col.accent;
-    NoiceCmdlinePopupBorderLua.fg = col.accent;
+    NoiceCmdlinePopupBorder.fg = p.accent;
+    NoiceCmdlinePopupBorderCalculator.fg = p.accent;
+    NoiceCmdlinePopupBorderCmdline.fg = p.accent;
+    NoiceCmdlinePopupBorderFilter.fg = p.accent;
+    NoiceCmdlinePopupBorderHelp.fg = p.accent;
+    NoiceCmdlinePopupBorderInput.fg = p.accent;
+    NoiceCmdlinePopupBorderLua.fg = p.accent;
 
-    NoiceCmdlineIcon.fg = col.accent;
-    NoiceCmdlineIconCalculator.fg = col.accent;
-    NoiceCmdlineIconCmdline.fg = col.accent;
-    NoiceCmdlineIconFilter.fg = col.accent;
-    NoiceCmdlineIconHelp.fg = col.accent;
-    NoiceCmdlineIconInput.fg = col.accent;
-    NoiceCmdlineIconLua.fg = col.accent;
+    NoiceCmdlineIcon.fg = p.accent;
+    NoiceCmdlineIconCalculator.fg = p.accent;
+    NoiceCmdlineIconCmdline.fg = p.accent;
+    NoiceCmdlineIconFilter.fg = p.accent;
+    NoiceCmdlineIconHelp.fg = p.accent;
+    NoiceCmdlineIconInput.fg = p.accent;
+    NoiceCmdlineIconLua.fg = p.accent;
 
-    NoiceConfirmBorder.fg = col.accent;
+    NoiceConfirmBorder.fg = p.accent;
     # }}}
 
 
-    MiniIndentscopeSymbol.fg = col.accent;
-    IndentLine.fg = col.accent;
+    MiniIndentscopeSymbol.fg = p.accent;
+    IndentLine.fg = p.accent;
   };
 }

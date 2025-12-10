@@ -3,14 +3,11 @@
 	lib,
   flake_dir,
   wm,
-  self,
-  theme,
+  p,
   pkgs,
   userDirs,
-  term,
 	...
 }: let
-  col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
   gaps = 10;
   h = lib.removePrefix "#";
 in {
@@ -169,9 +166,9 @@ in {
         # TODO function for these
         rootcolor = "0xff0000ff";
         bordercolor = "0x00000000";
-        focuscolor = "0x" + h col.accent + "ff";
-        maximizescreencolor = "0x" + h col.pink + "ff";
-        urgentcolor = "0x" + h col.red + "ff";
+        focuscolor = "0x" + h p.accent + "ff";
+        maximizescreencolor = "0x" + h p.pink + "ff";
+        urgentcolor = "0x" + h p.red + "ff";
         scratchpadcolor = "0x85b5baff";
         globalcolor = "0xaca1cfff";
         overlaycolor = "0x90b99fff";

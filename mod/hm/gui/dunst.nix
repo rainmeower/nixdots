@@ -1,6 +1,6 @@
 {
   self,
-  theme,
+  p,
   font_name,
   pkgs,
   ...
@@ -124,10 +124,9 @@
   #     };
   #
   #     urgency_normal = let
-  #       col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
   #     in {
-  #       frame_color = col.accent;
-  #       inherit (col)
+  #       frame_color = p.accent;
+  #       inherit (p)
   #         background
   #         foreground
   #       ;

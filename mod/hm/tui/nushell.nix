@@ -1,14 +1,12 @@
 {
   flake_dir,
-  self,
+  p,
   host,
   wm,
   userDirs,
-  theme,
   prompt_sym,
   ...
 }: let
-  col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
   wm_launch_command =
     if wm == "hyprland" then "Hyprland"
     else if wm == "niri" then "niri-session"
@@ -332,7 +330,7 @@ in {
       NIXOS_OZONE_WL = "1"; # tell things to use wayland
       NIXPKGS_ALLOW_UNFREE = "1";
 
-      FZF_DEFAULT_OPTS = "--color=fg:${col.fg},hl:${col.accent},fg+:${col.bg},bg+:${col.accent},hl+:${col.bg},info:#ffff00,prompt:${col.accent},spinner:-1,pointer:-1,gutter:-1,info:${col.comment},border:-1 --border='none' --info='hidden' --header='' --prompt='${prompt_sym} ' --no-bold -i --pointer=''";
+      FZF_DEFAULT_OPTS = "--color=fg:${p.fg},hl:${p.accent},fg+:${p.bg},bg+:${p.accent},hl+:${p.bg},info:#ffff00,prompt:${p.accent},spinner:-1,pointer:-1,gutter:-1,info:${p.comment},border:-1 --border='none' --info='hidden' --header='' --prompt='${prompt_sym} ' --no-bold -i --pointer=''";
     }; # }}}
   };
 }

@@ -45,16 +45,9 @@
       # https://github.com/lytedev/slippi-nix/issues/10
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # nuhxboard.url = "github:justDeeevin/NuhxBoard";
-    # pollymc.url = "github:fn2006/PollyMC";
     vicinae.url = "github:vicinaehq/vicinae";
 
-    # moonlight.url = "github:moonlight-mod/moonlight";
-
     ytsub.url = "github:/sarowish/ytsub";
-
-    # ags.url = "github:aylur/ags";
-    # meow-shell.url = "github:nyxmeowmeow/shell";
 
     tmodloader.url = "github:andOrlando/nix-tmodloader";
   }; # }}}

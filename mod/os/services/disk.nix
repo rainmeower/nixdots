@@ -2,15 +2,11 @@
   pkgs,
   ...
 }:{
-  # TODO do i actually need these
-  services.gvfs.enable = false;
-  services.udisks2.enable = false;
-  systemd.services.udiskie.enable = false;
+  # services.gvfs.enable = true;
+  # services.udisks2.enable = true;
+  # systemd.services.udiskie.enable = true;
 
   environment.systemPackages = with pkgs; [
-    # udiskie
-    # udisks2
-    # gvfs
     cryptsetup
   ];
 

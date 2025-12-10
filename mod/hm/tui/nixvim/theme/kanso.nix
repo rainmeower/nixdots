@@ -3,50 +3,48 @@
   pkgs,
   lib,
   theme,
+  p,
+  if_theme,
   ...
-}: let
-  col = import ../../../../../theme/kanso/colors.nix;
-in {
-  config = lib.mkIf (lib.hasPrefix "kan" theme) {
-    nv = {
-      extraPlugins = [ pkgs.vimPlugins.kanso-nvim ];
-      extraConfigLua = ''
-        -- Default options:
-        require('kanso').setup({
-            bold = true,                 -- enable bold fonts
-            italics = false,             -- enable italics
-            compile = true,             -- enable compiling the colorscheme
-            undercurl = false,            -- enable undercurls
-            commentStyle = { italic = true },
-            functionStyle = {},
-            keywordStyle = { italic = false},
-            statementStyle = {},
-            typeStyle = {},
-            transparent = true,         -- do not set background color
-            dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
-            terminalColors = true,       -- define vim.g.terminal_color_{0,17}
-            colors = {                   -- add/modify theme and palette colors
-            palette = {},
-            theme = { zen = {}, pearl = {}, ink = {}, all = {} },
-            },
-            overrides = function(colors)
-            return {
+}: if_theme "kanso" {
+  nv = {
+    extraPlugins = [ pkgs.vimPlugins.kanso-nvim ];
+    extraConfigLua = ''
+      -- Default options:
+      require('kanso').setup({
+          bold = true,                 -- enable bold fonts
+          italics = false,             -- enable italics
+          compile = true,             -- enable compiling the colorscheme
+          undercurl = false,            -- enable undercurls
+          commentStyle = { italic = true },
+          functionStyle = {},
+          keywordStyle = { italic = false},
+          statementStyle = {},
+          typeStyle = {},
+          transparent = true,         -- do not set background color
+          dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
+          terminalColors = true,       -- define vim.g.terminal_color_{0,17}
+          colors = {                   -- add/modify theme and palette colors
+          palette = {},
+          theme = { zen = {}, pearl = {}, ink = {}, all = {} },
+          },
+          overrides = function(colors)
+          return {
 
-            RenderMarkdownH1Bg = { fg = "#090E13", bg = "#f2f1ef" },
-            RenderMarkdownH2Bg = { fg = "#090E13", bg = "#C5C9C7" },
+          RenderMarkdownH1Bg = { fg = "#090E13", bg = "#f2f1ef" },
+          RenderMarkdownH2Bg = { fg = "#090E13", bg = "#C5C9C7" },
 
-            }
-            end,
-            theme = ${lib.strings.removePrefix "kanso_" theme},              -- Load "zen" theme
-              -- background = {               -- map the value of 'background' option to a theme
-                --     dark = "ink",           -- try "ink" !
-                  --     light = "pearl"         -- try "mist" !
-                  -- },
-        })
+          }
+          end,
+          theme = ${lib.strings.removePrefix "kanso_" theme},              -- Load "zen" theme
+            -- background = {               -- map the value of 'background' option to a theme
+              --     dark = "ink",           -- try "ink" !
+                --     light = "pearl"         -- try "mist" !
+                -- },
+      })
 
-      -- setup must be called before loading
-        vim.cmd("colorscheme kanso")
-        '';
-      };
-    };
-  }
+    -- setup must be called before loading
+      vim.cmd("colorscheme kanso")
+    '';
+  };
+}

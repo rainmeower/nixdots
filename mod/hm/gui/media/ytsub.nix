@@ -1,15 +1,10 @@
 {
   inputs,
-  lib,
-  theme,
-  username,
+  p,
   flake_dir,
   userDirs,
   ...
-}: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../theme/${theme_trimmed}/colors.nix;
-in {
+}:{
   home.packages = [
     inputs.ytsub.packages."x86_64-linux".default
   ];
@@ -71,15 +66,15 @@ fg = "Blue"
 fg = "Cyan"
 # Selected item in inactive block
 [selected]
-fg = "${col.bg}"
+fg = "${p.bg}"
 bg = "Blue"
 # Selected item in active block
 [focused]
-fg = "${col.bg}"
+fg = "${p.bg}"
 bg = "Blue"
 # Watched videos
 [watched]
-fg = "${col.grey}"
+fg = "${p.grey}"
 # Selected watched video in inactive block
 # Overrides the modifiers of [selected]. If fg and bg are set, they are patched to [selected]
 [selected_watched]
