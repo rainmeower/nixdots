@@ -22,5 +22,7 @@
     ];
   };
 
+  environment.pathsToLink = [ "/share/applications" "/share/xdg-desktop-portal" ];
+
   system.stateVersion = "24.11";
 }

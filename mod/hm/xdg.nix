@@ -1,5 +1,6 @@
 {
   config,
+  lib,
   ...
 }: let
   h = config.home.homeDirectory;

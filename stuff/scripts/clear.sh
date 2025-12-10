@@ -7,17 +7,17 @@ vicinae vicinae://extensions/vicinae/clipboard/clear &
 rm -r ~/.cache/thumbnails/* &
 rm /tmp/yazi-1000/* &
 rm ~/.local/share/recently-used.xbel &
-find ~/.cache/zen -iname "*.png" | xargs rm
-find ~/.cache/mozilla/firefox  -iname "*.png" | xargs rm
+find ~/.cache/zen -iname "*.png" | xargs rm &
+find ~/.cache/mozilla/firefox  -iname "*.png" | xargs rm &
 
 # remove stuff from shell history
-grep -v "^rm " ~/.config/nushell/history.txt > /tmp/nushell_history
-cat /tmp/nushell_history > ~/.config/nushell/history.txt
-grep -v " rm$" ~/.config/nushell/history.txt > /tmp/nushell_history
-cat /tmp/nushell_history > ~/.config/nushell/history.txt
-grep -v "reboot" ~/.config/nushell/history.txt > /tmp/nushell_history
-cat /tmp/nushell_history > ~/.config/nushell/history.txt
-grep -v "shutdown" ~/.config/nushell/history.txt > /tmp/nushell_history
-cat /tmp/nushell_history > ~/.config/nushell/history.txt
-rm -f /tmp/nushell_history
-# TODO
+sed -i \
+-e 's/^rm .*//' \
+-e 's/.* rm$//' \
+-e 's/.*shred.*//' \
+-e 's/.*reboot.*//' \
+-e 's/.*shutdown.*//' \
+-e 's/.*poweroff.*//' \
+~/.config/nushell/history.txt \
+~/.bash_history \
+~/.config/.bash_history

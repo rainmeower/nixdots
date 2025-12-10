@@ -1,12 +1,8 @@
-uwsm for mango
+- uwsm for mango
 
 
 - declaratively disable js?
 
-./mod/os/services/disk.nix 5
-
-
-- kanata dynamic macros
 
 - custom iosevka
 

@@ -5,9 +5,10 @@
   lib,
   ...
 }: let
+# {{{
   games_dir = config.xdg.userDirs.extraConfig.XDG_GAMES_DIR;
   icon_dir = flake_dir + "/stuff/icons";
-in {
+in { 
 
   xdg.desktopEntries = {
     # games {{{
