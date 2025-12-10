@@ -1,10 +1,9 @@
 {
   if_theme,
   userDirs,
+  p,
   ...
-}: let
-  col = import ../colors.nix;
-in if_theme "kanso" {
+}: if_theme "kanso" {
   programs.yazi.theme.mgr.syntect_theme = userDirs.extraConfig.XDG_CONFIG_HOME + "/tmthemes/kanso.tmTheme";
 
   xdg.configFile."tmthemes/kanso.tmTheme".text = /* xml */ ''
@@ -28,25 +27,25 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>background</key>
-          <string>${col.bg}</string>
+          <string>${p.bg}</string>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
           <key>caret</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
           <key>lineHighlight</key>
-          <string>${col.grey}</string>
+          <string>${p.grey}</string>
           <key>misspelling</key>
-          <string>${col.red}</string>
+          <string>${p.red}</string>
           <key>accent</key>
-          <string>${col.accent}</string>
+          <string>${p.accent}</string>
           <key>selection</key>
-          <string>${col.selection}</string>
+          <string>${p.selection}</string>
           <key>activeGuide</key>
           <string>#494d64</string>
           <key>findHighlight</key>
           <string>#455c6d</string>
           <key>gutterForeground</key>
-          <string>${col.comment}</string>
+          <string>${p.comment}</string>
         </dict>
       </dict>
       <dict>
@@ -57,7 +56,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -68,7 +67,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.punc}</string>
+          <string>${p.punc}</string>
         </dict>
       </dict>
       <dict>
@@ -79,7 +78,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.comment}</string>
+          <string>${p.comment}</string>
         </dict>
       </dict>
       <dict>
@@ -88,7 +87,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.string}</string>
+          <string>${p.string}</string>
         </dict>
       </dict>
       <dict>
@@ -97,7 +96,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${p.pink}</string>
         </dict>
       </dict>
       <dict>
@@ -108,7 +107,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.const}</string>
+          <string>${p.const}</string>
         </dict>
       </dict>
       <dict>
@@ -117,7 +116,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${p.violet}</string>
         </dict>
       </dict>
       <dict>
@@ -126,7 +125,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${p.violet}</string>
         </dict>
       </dict>
       <dict>
@@ -137,7 +136,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.punc}</string>
+          <string>${p.punc}</string>
         </dict>
       </dict>
       <dict>
@@ -146,7 +145,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -157,7 +156,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -168,7 +167,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -179,7 +178,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.const}</string>
+          <string>${p.const}</string>
         </dict>
       </dict>
       <dict>
@@ -201,7 +200,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -232,7 +231,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.red}</string>
+          <string>${p.red}</string>
         </dict>
       </dict>
       <dict>
@@ -241,7 +240,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.red}</string>
+          <string>${p.red}</string>
         </dict>
       </dict>
       <dict>
@@ -252,7 +251,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -274,7 +273,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -285,7 +284,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.keyword}</string>
+          <string>${p.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -296,7 +295,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.red}</string>
+          <string>${p.red}</string>
         </dict>
       </dict>
       <dict>
@@ -318,7 +317,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${p.violet}</string>
         </dict>
       </dict>
       <dict>
@@ -329,7 +328,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -362,7 +361,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -373,7 +372,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -384,7 +383,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -395,7 +394,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.punc}</string>
+          <string>${p.punc}</string>
         </dict>
       </dict>
       <dict>
@@ -424,7 +423,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.string}</string>
+          <string>${p.string}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -459,7 +458,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -481,7 +480,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.string}</string>
+          <string>${p.string}</string>
         </dict>
       </dict>
       <dict>
@@ -492,7 +491,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.keyword}</string>
+          <string>${p.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -503,7 +502,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.const}</string>
+          <string>${p.const}</string>
         </dict>
       </dict>
       <dict>
@@ -514,7 +513,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -527,7 +526,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -538,7 +537,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${p.pink}</string>
         </dict>
       </dict>
       <dict>
@@ -549,7 +548,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${p.pink}</string>
         </dict>
       </dict>
       <dict>
@@ -560,7 +559,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${p.pink}</string>
         </dict>
       </dict>
       <dict>
@@ -571,7 +570,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.yellow}</string>
+          <string>${p.yellow}</string>
         </dict>
       </dict>
       <dict>
@@ -582,7 +581,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -593,7 +592,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.green}</string>
+          <string>${p.green}</string>
         </dict>
       </dict>
       <dict>
@@ -604,7 +603,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.red}</string>
+          <string>${p.red}</string>
         </dict>
       </dict>
       <dict>
@@ -615,7 +614,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -626,7 +625,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -637,7 +636,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.func}</string>
+          <string>${p.func}</string>
         </dict>
       </dict>
       <dict>
@@ -648,7 +647,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.const}</string>
+          <string>${p.const}</string>
         </dict>
       </dict>
       <dict>
@@ -681,7 +680,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.const}</string>
+          <string>${p.const}</string>
         </dict>
       </dict>
       <dict>
@@ -692,7 +691,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -736,7 +735,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.keyword}</string>
+          <string>${p.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -747,7 +746,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -760,7 +759,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.red}</string>
+          <string>${p.red}</string>
         </dict>
       </dict>
       <dict>
@@ -771,7 +770,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -782,7 +781,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${p.pink}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -806,7 +805,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.const}</string>
+          <string>${p.const}</string>
         </dict>
       </dict>
       <dict>
@@ -817,7 +816,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -850,7 +849,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -883,7 +882,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -894,7 +893,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${p.violet}</string>
         </dict>
       </dict>
       <dict>
@@ -905,7 +904,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.keyword}</string>
+          <string>${p.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -916,7 +915,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -925,7 +924,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -936,7 +935,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.punc}</string>
+          <string>${p.punc}</string>
         </dict>
       </dict>
       <dict>
@@ -947,7 +946,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -958,7 +957,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${p.violet}</string>
         </dict>
       </dict>
       <dict>
@@ -1035,7 +1034,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${p.violet}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -1048,7 +1047,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -1057,9 +1056,9 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>background</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
           <key>foreground</key>
-          <string>${col.bg}</string>
+          <string>${p.bg}</string>
         </dict>
       </dict>
       <dict>
@@ -1077,7 +1076,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1086,7 +1085,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.string}</string>
+          <string>${p.string}</string>
         </dict>
       </dict>
       <dict>
@@ -1095,7 +1094,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1104,7 +1103,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${p.violet}</string>
         </dict>
       </dict>
       <dict>
@@ -1142,7 +1141,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1153,7 +1152,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1164,7 +1163,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.string}</string>
+          <string>${p.string}</string>
         </dict>
       </dict>
       <dict>
@@ -1175,9 +1174,9 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>background</key>
-          <string>${col.button}</string>
+          <string>${p.button}</string>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -1188,7 +1187,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.comment}</string>
+          <string>${p.comment}</string>
         </dict>
       </dict>
       <dict>
@@ -1199,7 +1198,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${p.pink}</string>
         </dict>
       </dict>
       <dict>
@@ -1210,7 +1209,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -1221,7 +1220,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -1232,7 +1231,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1243,7 +1242,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -1269,7 +1268,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.yellow}</string>
+          <string>${p.yellow}</string>
         </dict>
       </dict>
       <dict>
@@ -1280,7 +1279,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1302,7 +1301,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${p.violet}</string>
         </dict>
       </dict>
       <dict>
@@ -1335,7 +1334,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -1357,7 +1356,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.red}</string>
+          <string>${p.red}</string>
         </dict>
       </dict>
       <dict>
@@ -1368,7 +1367,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.keyword}</string>
+          <string>${p.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -1379,7 +1378,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${p.violet}</string>
         </dict>
       </dict>
       <dict>
@@ -1401,7 +1400,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1423,7 +1422,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${p.pink}</string>
         </dict>
       </dict>
       <dict>
@@ -1456,7 +1455,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.bool}</string>
+          <string>${p.bool}</string>
         </dict>
       </dict>
       <dict>
@@ -1478,7 +1477,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.string}</string>
+          <string>${p.string}</string>
         </dict>
       </dict>
       <dict>
@@ -1500,7 +1499,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${p.pink}</string>
         </dict>
       </dict>
       <dict>
@@ -1511,7 +1510,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${p.violet}</string>
         </dict>
       </dict>
       <dict>
@@ -1522,7 +1521,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -1533,7 +1532,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.string}</string>
+          <string>${p.string}</string>
         </dict>
       </dict>
       <dict>
@@ -1544,7 +1543,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1555,7 +1554,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${p.pink}</string>
         </dict>
       </dict>
       <dict>
@@ -1599,7 +1598,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1610,7 +1609,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1621,7 +1620,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.green}</string>
+          <string>${p.green}</string>
         </dict>
       </dict>
       <dict>
@@ -1632,7 +1631,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.keyword}</string>
+          <string>${p.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -1643,7 +1642,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.yellow}</string>
+          <string>${p.yellow}</string>
           <key>fontStyle</key>
           <string/>
         </dict>
@@ -1656,7 +1655,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1667,7 +1666,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1689,7 +1688,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1700,7 +1699,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1711,7 +1710,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
       <dict>
@@ -1722,7 +1721,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.const}</string>
+          <string>${p.const}</string>
         </dict>
       </dict>
       <dict>
@@ -1733,7 +1732,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1744,7 +1743,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1755,7 +1754,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${p.pink}</string>
         </dict>
       </dict>
       <dict>
@@ -1766,7 +1765,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -1777,7 +1776,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1788,7 +1787,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.punc}</string>
+          <string>${p.punc}</string>
         </dict>
       </dict>
       <dict>
@@ -1799,7 +1798,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.const}</string>
+          <string>${p.const}</string>
         </dict>
       </dict>
       <dict>
@@ -1810,7 +1809,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.gray3}</string>
+          <string>${p.gray3}</string>
         </dict>
       </dict>
       <dict>
@@ -1821,7 +1820,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -1832,7 +1831,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.keyword}</string>
+          <string>${p.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -1843,7 +1842,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${p.pink}</string>
         </dict>
       </dict>
       <dict>
@@ -1854,7 +1853,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${p.pink}</string>
         </dict>
       </dict>
       <dict>
@@ -1876,7 +1875,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.red}</string>
+          <string>${p.red}</string>
         </dict>
       </dict>
       <dict>
@@ -1896,7 +1895,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.punc}</string>
+          <string>${p.punc}</string>
         </dict>
       </dict>
       <dict>
@@ -1907,7 +1906,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${p.violet}</string>
         </dict>
       </dict>
       <dict>
@@ -1918,7 +1917,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.fg}</string>
+          <string>${p.fg}</string>
         </dict>
       </dict>
       <dict>
@@ -1929,7 +1928,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.keyword}</string>
+          <string>${p.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -1940,7 +1939,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.keyword}</string>
+          <string>${p.keyword}</string>
         </dict>
       </dict>
       <dict>
@@ -1949,7 +1948,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.violet}</string>
+          <string>${p.violet}</string>
         </dict>
       </dict>
       <dict>
@@ -1958,7 +1957,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.blue}</string>
+          <string>${p.blue}</string>
         </dict>
       </dict>
       <dict>
@@ -1967,7 +1966,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.pink}</string>
+          <string>${p.pink}</string>
         </dict>
       </dict>
       <dict>
@@ -1987,7 +1986,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.red}</string>
+          <string>${p.red}</string>
         </dict>
       </dict>
       <dict>
@@ -2005,7 +2004,7 @@ in if_theme "kanso" {
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>${col.type}</string>
+          <string>${p.type}</string>
         </dict>
       </dict>
     </array>

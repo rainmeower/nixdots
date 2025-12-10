@@ -1,22 +1,21 @@
 {
   if_theme,
+  p,
   ...
-}: let
-  col = import ../colors.nix;
-in if_theme "kanso" {
+}: if_theme "kanso" {
   programs.kitty.settings = {
     background_opacity = 0.8;
 
-    foreground = col.fg;
-    background = col.bg;
-    selection_foreground = col.bg;
-    selection_background = col.blue;
+    foreground = p.fg;
+    background = p.bg;
+    selection_foreground = p.bg;
+    selection_background = p.blue;
 
-    cursor = col.fg;
-    cursor_text_color = col.bg;
+    cursor = p.fg;
+    cursor_text_color = p.bg;
 
     # url underline 
-    url_color = col.blue_sat;
+    url_color = p.blue_sat;
 
 # # Kitty window border colors
 #       active_border_color     #000000
@@ -35,45 +34,45 @@ in if_theme "kanso" {
 #         tab_bar_background      #181926
 #
 # # Colors for marks (marked text in the terminal)
-#         mark1_foreground ${col.bg}
-#       mark1_background ${col.blue}
-#       mark2_foreground ${col.bg}
-#       mark2_background ${col.purple}
-#       mark3_foreground ${col.bg}
-#       mark3_background ${col.yellow}
+#         mark1_foreground ${p.bg}
+#       mark1_background ${p.blue}
+#       mark2_foreground ${p.bg}
+#       mark2_background ${p.purple}
+#       mark3_foreground ${p.bg}
+#       mark3_background ${p.yellow}
 
 # The 16 terminal colors
 
 # black
-    color0 = col.bg;
-    color8 = col.bg;
+    color0 = p.bg;
+    color8 = p.bg;
 
 # red
-    color1 = col.red;
-    color9 = col.red;
+    color1 = p.red;
+    color9 = p.red;
 
 # green
-    color2  = col.green;
-    color10 = col.green;
+    color2  = p.green;
+    color10 = p.green;
 
 # yellow
-    color3  = col.yellow;
-    color11 = col.yellow;
+    color3  = p.yellow;
+    color11 = p.yellow;
 
 # blue
-    color4  = col.blue;
-    color12 = col.blue;
+    color4  = p.blue;
+    color12 = p.blue;
 
 # magenta
-    color5  = col.violet;
-    color13 = col.violet;
+    color5  = p.violet;
+    color13 = p.violet;
 
 # cyan
-    color6  = col.blue4;
-    color14 = col.blue4;
+    color6  = p.blue4;
+    color14 = p.blue4;
 
 # white
-    color7  = col.fg2;
-    color15 = col.fg2;
+    color7  = p.fg2;
+    color15 = p.fg2;
   };
 }

@@ -1,9 +1,7 @@
 {
   if_theme,
   ...
-}: let
-  col = import ../colors.nix;
-in if_theme "kanso" {
+}: if_theme "kanso" {
   programs.mpv.config = {
     script-opts-append = [ # TODO col without # symbol
       "stats-border_color=30201e"
