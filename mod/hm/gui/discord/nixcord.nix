@@ -6,7 +6,7 @@
   imports = [
     inputs.nixcord.homeModules.nixcord
     ./plugins.nix
-        ./system24.nix
+    ./system24.nix
   ];
 
   programs.nixcord = {

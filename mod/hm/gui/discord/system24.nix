@@ -1,14 +1,11 @@
 {
-  self,
-  theme,
+  p,
   font_name,
   rounding,
   ...
 }: let
-  col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
   unrounding = if rounding then "off" else "on";
-in
-{
+in {
 # {{{
   home.file.".config/vesktop/themes/system24_1.css".text = /* css */ ''
 /* main.css */
@@ -670,36 +667,36 @@ body {
 /* color options */
 :root {
 
-    --text-muted: ${col.grey};
-    --chat-text-muted: ${col.grey};
+    --text-muted: ${p.grey};
+    --chat-text-muted: ${p.grey};
 
     --colors: on; /* off: discord default colors, on: midnight custom colors */
 
     /* text colors */
     --text-0: var(--bg-4); /* text on colored elements */
-    --text-1: ${col.fg}; /* other normally white text */
-    --text-2: ${col.fg}; /* headings and important text */
-    --text-3: ${col.fg}; /* normal text */
-    --text-4: ${col.grey}; /* icon buttons and channels */
-    --text-5: ${col.grey}; /* muted channels/chats and timestamps */
+    --text-1: ${p.fg}; /* other normally white text */
+    --text-2: ${p.fg}; /* headings and important text */
+    --text-3: ${p.fg}; /* normal text */
+    --text-4: ${p.grey}; /* icon buttons and channels */
+    --text-5: ${p.grey}; /* muted channels/chats and timestamps */
 
     /* background and dark colors */
-    --bg-1: ${col.bgtrans}; /* dark buttons when clicked */
-    --bg-2: ${col.button_trans}; /* dark buttons */
-    --bg-3: ${col.button_trans}; /* spacing, secondary elements */
-    --bg-4: ${col.bgtrans}; /* main background color */
+    --bg-1: ${p.bgtrans}; /* dark buttons when clicked */
+    --bg-2: ${p.button_trans}; /* dark buttons */
+    --bg-3: ${p.button_trans}; /* spacing, secondary elements */
+    --bg-4: ${p.bgtrans}; /* main background color */
     --hover: transparent; /* channels and buttons when hovered */
     --active: transparent; /* channels and buttons when clicked or selected */
-    --active-2: ${col.button_trans}; /* extra state for transparent buttons */
+    --active-2: ${p.button_trans}; /* extra state for transparent buttons */
     --message-hover: var(--hover); /* messages when hovered */
 
     /* accent colors */
-    --accent-1: ${col.accent}; /* links and other accent text */
-    --accent-2: ${col.accent}; /* small accent elements */
-    --accent-3: ${col.accent}; /* accent buttons */
-    --accent-4: ${col.accent}; /* accent buttons when hovered */
-    --accent-5: ${col.accent}; /* accent buttons when clicked */
-    --accent-new: ${col.red}; /* stuff that's normally red like mute/deafen buttons */
+    --accent-1: ${p.accent}; /* links and other accent text */
+    --accent-2: ${p.accent}; /* small accent elements */
+    --accent-3: ${p.accent}; /* accent buttons */
+    --accent-4: ${p.accent}; /* accent buttons when hovered */
+    --accent-5: ${p.accent}; /* accent buttons when clicked */
+    --accent-new: ${p.red}; /* stuff that's normally red like mute/deafen buttons */
     --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
     --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
     --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */
@@ -719,17 +716,17 @@ body {
     --button-border: transparent; /* neutral border color of buttons */
 
     /* base colors */
-    --red-1: ${col.red};
-    --red-2: ${col.red};
-    --red-3: ${col.red};
-    --red-4: ${col.red};
-    --red-5: ${col.red};
+    --red-1: ${p.red};
+    --red-2: ${p.red};
+    --red-3: ${p.red};
+    --red-4: ${p.red};
+    --red-5: ${p.red};
 
-    --green-1: ${col.green};
-    --green-2: ${col.green};
-    --green-3: ${col.green};
-    --green-4: ${col.green};
-    --green-5: ${col.green};
+    --green-1: ${p.green};
+    --green-2: ${p.green};
+    --green-3: ${p.green};
+    --green-4: ${p.green};
+    --green-5: ${p.green};
 
     --blue-1: oklch(75% 0.11 215);
     --blue-2: oklch(70% 0.11 215);
@@ -737,11 +734,11 @@ body {
     --blue-4: oklch(60% 0.11 215);
     --blue-5: oklch(55% 0.11 215);
 
-    --yellow-1: ${col.yellow};
-    --yellow-2: ${col.yellow};
-    --yellow-3: ${col.yellow};
-    --yellow-4: ${col.yellow};
-    --yellow-5: ${col.yellow};
+    --yellow-1: ${p.yellow};
+    --yellow-2: ${p.yellow};
+    --yellow-3: ${p.yellow};
+    --yellow-4: ${p.yellow};
+    --yellow-5: ${p.yellow};
 
     --purple-1: oklch(75% 0.12 310);
     --purple-2: oklch(70% 0.12 310);

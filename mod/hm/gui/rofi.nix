@@ -1,11 +1,8 @@
 {
-  theme,
-  lib,
+  p,
   rounding,
   ...
 }: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../theme/${theme_trimmed}/colors.nix;
   radius = if rounding then "10px" else "0px";
 in {
   home.file.".config/rofi/bgselector.rasi".text = /* rasi */ ''
@@ -30,7 +27,7 @@ configuration {
 
 // Window
 window {
-    background-color: ${col.bgtrans};
+    background-color: ${p.bgtrans};
     fullscreen: true;    
 }
 
@@ -53,7 +50,7 @@ element {
 }
 element.selected {
     border: 3px;
-    border-color: ${col.accent};
+    border-color: ${p.accent};
 }
 element-icon {
     size: 229px 720px;

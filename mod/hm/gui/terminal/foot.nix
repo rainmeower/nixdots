@@ -1,12 +1,9 @@
 {
   font_name,
   lib,
-  theme,
+  p,
   ...
-}: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../theme/${theme_trimmed}/colors.nix;
-in {
+}:{
   programs.foot = {
     enable = true;
     settings = {
@@ -37,32 +34,32 @@ in {
       colors = let # {{{
         rh = lib.strings.removePrefix "#"; # remove hash
       in lib.mkDefault {
-        alpha = col.bg_opacity;
+        alpha = p.bg_opacity;
 
-        cursor = rh col.bg + " " + rh col.fg;
+        cursor = rh p.bg + " " + rh p.fg;
 
-        background = rh col.bg;
-        foreground = rh col.fg;
+        background = rh p.bg;
+        foreground = rh p.fg;
 
         # 0-7
-        regular0 = rh col.black; # black
-        regular1 = rh col.red; # red
-        regular2 = rh col.green; # green
-        regular3 = rh col.yellow; # yellow
-        regular4 = rh col.blue; # blue
-        regular5 = rh col.magenta; # magenta
-        regular6 = rh col.cyan; # cyan
-        regular7 = rh col.white; # white
+        regular0 = rh p.black; # black
+        regular1 = rh p.red; # red
+        regular2 = rh p.green; # green
+        regular3 = rh p.yellow; # yellow
+        regular4 = rh p.blue; # blue
+        regular5 = rh p.magenta; # magenta
+        regular6 = rh p.cyan; # cyan
+        regular7 = rh p.white; # white
 
         # 8-15
-        bright0 = rh col.black; # black
-        bright1 = rh col.red; # red
-        bright2 = rh col.green; # green
-        bright3 = rh col.yellow; # yellow
-        bright4 = rh col.blue; # blue
-        bright5 = rh col.magenta; # magenta
-        bright6 = rh col.cyan; # cyan
-        bright7 = rh col.white; # white
+        bright0 = rh p.black; # black
+        bright1 = rh p.red; # red
+        bright2 = rh p.green; # green
+        bright3 = rh p.yellow; # yellow
+        bright4 = rh p.blue; # blue
+        bright5 = rh p.magenta; # magenta
+        bright6 = rh p.cyan; # cyan
+        bright7 = rh p.white; # white
       }; # }}}
     };
   };

@@ -1,14 +1,9 @@
 {
-  lib,
-  theme,
+  p,
   font_name,
   rounding,
   ...
-}:
-let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../theme/${theme_trimmed}/colors.nix;
-in {
+}:{
 
   programs.zen-browser.profiles."meow".userChrome = /* css */ ''
 * {
@@ -39,12 +34,12 @@ in {
       background: transparent !important;
 }
 #main-window {
-  background: ${col.bgtrans} !important;
+  background: ${p.bgtrans} !important;
 }
 
 
 :root {
-  --toolbar-field-color: ${col.fg} !important;
+  --toolbar-field-color: ${p.fg} !important;
 
   --zen-primary-color: transparent !important;
   /* --zen-border-radius: 8px; */
@@ -60,13 +55,13 @@ in {
 
 
 .tab-content {
-  color: ${col.fg} !important;
+  color: ${p.fg} !important;
 }
 
 .tab-content {
   &:is([selected], [multiselected]) {
-    color: ${col.bg} !important;
-    background: ${col.accent} !important;
+    color: ${p.bg} !important;
+    background: ${p.accent} !important;
   }
 }
 

@@ -30,6 +30,7 @@ in {
       inherit (config)
         theme
         rounding
+        animations
         wm
         term
         font_name
