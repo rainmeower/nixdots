@@ -1,5 +1,6 @@
 {
   p,
+  lib,
   ...
 }:{
   nv.highlightOverride = {
@@ -20,9 +21,9 @@
     #   bold = true;
     # };
 
-    "@neorg.markup.bold" = {
-      fg = p.bg;
-      bg = p.accent;
+    "@neorg.markup.bold" = lib.mkForce {
+      fg = lib.mkForce p.bg;
+      bg = lib.mkForce p.accent;
     };
 
 
