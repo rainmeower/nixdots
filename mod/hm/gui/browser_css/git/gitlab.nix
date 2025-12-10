@@ -1,13 +1,9 @@
 {
   font_name,
-  lib,
-  theme,
+  p,
   rounding,
   ...
-}: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../../theme/${theme_trimmed}/colors.nix;
-in {
+}:{
   home.file.".config/usercontent/gitlab.css".text = /* css */ ''
 @-moz-document domain("gitlab.com") {
   * {

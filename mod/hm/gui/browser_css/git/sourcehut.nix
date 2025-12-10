@@ -1,19 +1,15 @@
 {
   font_name,
-  os_config,
-  lib,
-  theme,
+  rounding,
+  p,
   ...
-}: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../../theme/${theme_trimmed}/colors.nix;
-in {
+}:{
   home.file.".config/usercontent/sourcehut.css".text = /* css */ ''
 @-moz-document domain("sr.ht") {
 
 * {
   font-family: ${font_name} !important;
-  ${if !os_config.rounding then "border-radius: 0px !important;" else null}
+  ${if !rounding then "border-radius: 0px !important;" else null}
 }
 
 body {
@@ -24,10 +20,10 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     background: transparent !important;
-    color: ${col.fg} !important;
+    color: ${p.fg} !important;
   }
   a {
-    color: ${col.blue} !important;
+    color: ${p.blue} !important;
   }
 }
 }

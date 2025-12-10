@@ -1,13 +1,9 @@
 {
   font_name,
-  lib,
-  theme,
-  username,
+  p,
   userDirs,
   ...
 }: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../theme/${theme_trimmed}/colors.nix;
   dir = userDirs.extraConfig.XDG_CONFIG_HOME + "/usercontent";
 in {
   home.file.".zen/meow/chrome/userContent.css".text = /* css */ ''
@@ -26,22 +22,22 @@ in {
 *{ scrollbar-width: none; }
 
 :root {
-  --tridactyl-bg: ${col.bg} !important;
-  --tridactyl-fg: ${col.fg} !important;
-  --tridactyl-cmdl-bg: ${col.bg} !important;
-  --tridactyl-photon-colours-warning-background-color: ${col.accent} !important;
-  --tridactyl-photon-colours-theme-highlight-lightorange: ${col.bg} !important;
-  --tridactyl-url-fg: ${col.accent} !important;
-  --tridactyl-photon-colours-accent-1: ${col.accent} !important;
-  --tridactyl-of-fg: ${col.bg} !important;
+  --tridactyl-bg: ${p.bg} !important;
+  --tridactyl-fg: ${p.fg} !important;
+  --tridactyl-cmdl-bg: ${p.bg} !important;
+  --tridactyl-photon-colours-warning-background-color: ${p.accent} !important;
+  --tridactyl-photon-colours-theme-highlight-lightorange: ${p.bg} !important;
+  --tridactyl-url-fg: ${p.accent} !important;
+  --tridactyl-photon-colours-accent-1: ${p.accent} !important;
+  --tridactyl-of-fg: ${p.bg} !important;
   --tridactyl-hintspan-fg: transparent !important;
   --tridactyl-photon-colours-cm-cursor: transparent !important;
 
 }
 
 body {
-  --ShinigamiEyesTFriendly: ${col.green} !important;
-  --ShinigamiEyesTransphobic: ${col.red} !important;
+  --ShinigamiEyesTFriendly: ${p.green} !important;
+  --ShinigamiEyesTransphobic: ${p.red} !important;
 }
 
 :root #cmdline_iframe {
@@ -82,7 +78,7 @@ span.TridactylHint {
   font-family: ${font_name} !important;
   font-weight: bold !important;
   color: var(--tridactyl-bg) !important;
-  background-color: ${col.accent} !important;
+  background-color: ${p.accent} !important;
   border-color: none !important;
   border-width: none !important;
   border-radius: 3px !important;

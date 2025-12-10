@@ -1,27 +1,21 @@
 {
-  font_name,
-  os_config,
-  theme,
-  self,
   prompt_sym,
-  col,
+  p,
   ...
-}: let
-  # col = import (self + /theme/${builtins.elemAt (builtins.split "_" theme) 0}/colors.nix);
-in {
+}:{
   programs.fzf = {
     enable = true;
     # TODO nushell
     enableBashIntegration = true;
 
     colors = {
-      fg = col.fg;
-      hl = col.accent;
-      "fg+" = col.bg;
-      "bg+" = col.accent;
-      "hl+" = col.bg;
+      fg = p.fg;
+      hl = p.accent;
+      "fg+" = p.bg;
+      "bg+" = p.accent;
+      "hl+" = p.bg;
       info = "#ff0000";
-      prompt = col.accent;
+      prompt = p.accent;
       spinner = "-1";
       pointer = "-1";
       gutter = "-1";

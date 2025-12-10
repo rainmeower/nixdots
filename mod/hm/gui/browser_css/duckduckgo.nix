@@ -1,18 +1,14 @@
 {
   font_name,
-  os_config,
-  lib,
-  theme,
+  rounding,
+  p,
   ...
-}: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../theme/${theme_trimmed}/colors.nix;
-in {
+}:{
   home.file.".config/usercontent/duckduckgo.css".text = /* css */ ''
 @-moz-document domain("duckduckgo.com") {
 * {
   font-family: ${font_name} !important;
-  ${if !os_config.rounding then "border-radius: 0px !important;" else null}
+  ${if !rounding then "border-radius: 0px !important;" else null}
 }
 
 html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--carousel__image-wrapper, .result__image, .vertical--map__sidebar, .vertical--map__sidebar__header, .page-chrome_newtab, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded .metabar:not(.is-stuck), .is-link-style-exp .header-wrap  {
@@ -21,19 +17,19 @@ html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--car
 
 :root {
   --font: ${font_name} !important;
-  --theme-col-txt-snippet: ${col.fg} !important;
-  --theme-col-txt-title-visited: ${col.purple} !important;
-  --theme-col-txt-title: ${col.blue} !important;
+  --theme-col-txt-snippet: ${p.fg} !important;
+  --theme-col-txt-title-visited: ${p.purple} !important;
+  --theme-col-txt-title: ${p.blue} !important;
 
-  --sds-color-background-accent-01: ${col.accent} !important;
+  --sds-color-background-accent-01: ${p.accent} !important;
 
-  --sds-color-text-accent-01: ${col.blue} !important;
-  --sds-color-text-background-01: ${col.gray} !important;
-  --sds-color-text-link-02-hover: ${col.gray} !important;
-  --sds-color-background-01: ${col.button_trans} !important;
-  --sds-color-text-on-color: ${col.button} !important;
+  --sds-color-text-accent-01: ${p.blue} !important;
+  --sds-color-text-background-01: ${p.gray} !important;
+  --sds-color-text-link-02-hover: ${p.gray} !important;
+  --sds-color-background-01: ${p.button_trans} !important;
+  --sds-color-text-on-color: ${p.button} !important;
 
-  --theme-col-txt-card-body: ${col.gray} !important;
+  --theme-col-txt-card-body: ${p.gray} !important;
 
 }
 
@@ -65,7 +61,7 @@ html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--car
 
 /* "more images" line */
 .HHJGgzrZRmw9obWw1QS1::after, .HHJGgzrZRmw9obWw1QS1::before {
-  border-top: 1px solid ${col.button} !important;
+  border-top: 1px solid ${p.button} !important;
 }
 /* "more images" button */
 .HHJGgzrZRmw9obWw1QS1 > :first-child {

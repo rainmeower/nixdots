@@ -1,12 +1,8 @@
 {
   font_name,
-  lib,
-  theme,
+  p,
   ...
-}: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../../theme/${theme_trimmed}/colors.nix;
-in {
+}:{
   home.file.".config/usercontent/codeberg.css".text = /* css */ ''
 @-moz-document domain("codeberg.org") {
 * {
@@ -15,19 +11,19 @@ in {
 }
 
 :root {
-  --color-text: ${col.fg} !important;
+  --color-text: ${p.fg} !important;
   --color-body: transparent !important;
   --color-secondary-nav-bg: transparent !important;
-  --color-text-light-2: ${col.grey} !important;
-  --color-button: ${col.button} !important;
+  --color-text-light-2: ${p.grey} !important;
+  --color-button: ${p.button} !important;
   --color-box-body: transparent !important;
-  --color-input-background: ${col.button} !important;
+  --color-input-background: ${p.button} !important;
   --color-secondary-light-1: transparent !important;
   --color-box-header: transparent !important;
-  --color-hover: ${col.button_hover} !important;
+  --color-hover: ${p.button_hover} !important;
   --color-secondary-dark-1: transparent !important;
-  --color-primary-hover: ${col.accent} !important;
-  --color-primary: ${col.accent} !important;
+  --color-primary-hover: ${p.accent} !important;
+  --color-primary: ${p.accent} !important;
 }
 
 #navbar,

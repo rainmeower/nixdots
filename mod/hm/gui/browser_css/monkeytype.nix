@@ -1,13 +1,9 @@
 {
   font_name,
   rounding,
-  lib,
-  theme,
+  p,
   ...
-}: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../theme/${theme_trimmed}/colors.nix;
-in {
+}:{
   home.file.".config/usercontent/monkeytype.css".text = /* css */ ''
 @-moz-document domain("monkeytype.com") {
 * {
@@ -20,26 +16,26 @@ html {
   --font: ${font_name} !important;
   --bg-color: transparent !important;
   --sub-alt-color: transparent !important;
-  --correct-letter-color: ${col.grey} !important;
-  --untyped-letter-color: ${col.fg} !important;
-  --caret-color: ${col.fg} !important;
-  --sub-color: ${col.grey} !important;
+  --correct-letter-color: ${p.grey} !important;
+  --untyped-letter-color: ${p.fg} !important;
+  --caret-color: ${p.fg} !important;
+  --sub-color: ${p.grey} !important;
   --sub-alt-color: transparent !important;
-  --error-color: ${col.red} !important;
-  --error-extra-color: ${col.red} !important;
+  --error-color: ${p.red} !important;
+  --error-extra-color: ${p.red} !important;
 }
 :root {
-  --untyped-letter-color: ${col.fg} !important;
+  --untyped-letter-color: ${p.fg} !important;
 }
 
 body {
   background: transparent !important;
   font-family: ${font_name} !important;
-  --untyped-letter-color: ${col.fg} !important;
+  --untyped-letter-color: ${p.fg} !important;
 }
 
 #words .word letter {
-  --untyped-letter-color: ${col.fg} !important;
+  --untyped-letter-color: ${p.fg} !important;
 }
 
 #restartTestButton {

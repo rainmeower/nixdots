@@ -1,18 +1,14 @@
 {
   font_name,
-  os_config,
-  lib,
-  theme,
+  rounding,
+  p,
   ...
-}: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../../theme/${theme_trimmed}/colors.nix;
-in {
+}:{
   home.file.".config/usercontent/github.css".text = /* css */ ''
 @-moz-document domain("github.com") {
 * {
   font-family: ${font_name} !important;
-  ${if !os_config.rounding then "border-radius: 0px !important;" else null}
+  ${if !rounding then "border-radius: 0px !important;" else null}
 }
 
 .markdown-body {
@@ -20,35 +16,35 @@ in {
   font-size: 20px !important;
 }
 :root {
-  --fgColor-default: ${col.fg} !important;
-  --color-fg-default: ${col.fg} !important;
+  --fgColor-default: ${p.fg} !important;
+  --color-fg-default: ${p.fg} !important;
   --bgColor-default: transparent !important;
   --bgColor-disabled: transparent !important;
   --bgColor-inset: transparent !important;
 
-  --bgColor-muted: ${col.button_trans} !important;
+  --bgColor-muted: ${p.button_trans} !important;
 
-  --button-primary-bgColor-active: ${col.green} !important;
-  --button-primary-bgColor-disabled: ${col.green} !important;
-  --button-primary-bgColor-hover: ${col.green} !important;
-  --button-primary-borderColor-disabled: ${col.green} !important;
-  --bgColor-open-emphasis: ${col.green} !important;
-  --fgColor-success: ${col.green} !important;
-  --borderColor-success-emphasis: ${col.green} !important;
-  --borderColor-accent-emphasis: ${col.green} !important;
+  --button-primary-bgColor-active: ${p.green} !important;
+  --button-primary-bgColor-disabled: ${p.green} !important;
+  --button-primary-bgColor-hover: ${p.green} !important;
+  --button-primary-borderColor-disabled: ${p.green} !important;
+  --bgColor-open-emphasis: ${p.green} !important;
+  --fgColor-success: ${p.green} !important;
+  --borderColor-success-emphasis: ${p.green} !important;
+  --borderColor-accent-emphasis: ${p.green} !important;
 
   /* links */
-  --fgColor-accent: ${col.blue} !important;
+  --fgColor-accent: ${p.blue} !important;
 
-  --button-primary-bgColor-rest: ${col.green} !important;
-  --button-primary-fgColor-rest: ${col.bg} !important;
+  --button-primary-bgColor-rest: ${p.green} !important;
+  --button-primary-fgColor-rest: ${p.bg} !important;
 
   /* closed issue/pr */
-  --bgColor-done-emphasis: ${col.purple} !important;
+  --bgColor-done-emphasis: ${p.purple} !important;
 }
 
 .search-suggestions {
-  background: ${col.bgtrans} !important;
+  background: ${p.bgtrans} !important;
 }
 /* hide gross smelly ai buttons */
 .CopilotAgentModeButton-module__buttonGroup--ReOsn,
@@ -67,23 +63,23 @@ in {
 
 /* file icons */
 .medium-red::before {
-  color: ${col.red} !important;
+  color: ${p.red} !important;
 }
 .medium-cyan::before {
-  color: ${col.cyan} !important;
+  color: ${p.cyan} !important;
 }
 .medium-purple::before {
-  color: ${col.purple} !important;
+  color: ${p.purple} !important;
 }
 .medium-blue::before {
-  color: ${col.blue} !important;
+  color: ${p.blue} !important;
 }
 .medium-yellow::before {
-  color: ${col.yellow} !important;
+  color: ${p.yellow} !important;
 }
 .config-icon::before,
 .react-directory-filename-column .icon-directory {
-  color: ${col.fg} !important;
+  color: ${p.fg} !important;
 }
 
 '';

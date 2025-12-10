@@ -1,13 +1,9 @@
 {
   font_name,
   rounding,
-  lib,
-  theme,
+  p,
   ...
-}: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../theme/${theme_trimmed}/colors.nix;
-in {
+}:{
   home.file.".config/usercontent/wikipedia.css".text = /* css */ ''
 @-moz-document domain("wikipedia.org") {
 * {
@@ -34,17 +30,17 @@ body {
   };
 
   a:where(:not([role="button"])) {
-    color: ${col.blue} !important;
+    color: ${p.blue} !important;
   }
 
   html.skin-theme-clientpref-night {
     color-scheme: dark;
     --background-color-base: transparent !important;
-    --color-base: ${col.fg} !important;
-    --color-base--hover:${col.fg} !important;
-    --color-emphasized:${col.fg} !important;
+    --color-base: ${p.fg} !important;
+    --color-base--hover:${p.fg} !important;
+    --color-emphasized:${p.fg} !important;
     --color-inverted: transparent !important;
-    --background-color-interactive-subtle: ${col.button_trans} !important;
+    --background-color-interactive-subtle: ${p.button_trans} !important;
   }
 
   .mw-parser-output a.external {

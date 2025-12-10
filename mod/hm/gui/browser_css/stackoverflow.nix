@@ -1,13 +1,9 @@
+# TODO font
 {
-  config,
-  os_config,
-  lib,
-  theme,
+  rounding,
+  p,
   ...
-}: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../../theme/${theme_trimmed}/colors.nix;
-in {
+}:{
   home.file.".config/usercontent/stackoverflow.css".text = /* css */ ''
 @-moz-document domain("stackoverflow.com") {
 .left-sidebar,
@@ -16,22 +12,22 @@ in {
 }
 
 body {
-    --theme-body-font-color: ${col.fg} !important;
-    --black-600: ${col.fg} !important;
-    --black: ${col.fg} !important;
+    --theme-body-font-color: ${p.fg} !important;
+    --black-600: ${p.fg} !important;
+    --black: ${p.fg} !important;
     --white: transparent !important;
-    --highlight-bg: ${col.button_trans} !important;
-    --theme-link-color: ${col.blue} !important;
-    --theme-secondary-400: ${col.blue} !important;
-    --_an-a-fc: ${col.grey} !important;
+    --highlight-bg: ${p.button_trans} !important;
+    --theme-link-color: ${p.blue} !important;
+    --theme-secondary-400: ${p.blue} !important;
+    --_an-a-fc: ${p.grey} !important;
     
 
 }
 
 .s-prose :not(.s-code-block) > code {
-  color: ${col.fg} !important;
-  background-color: ${col.button} !important;
-  border-radius: ${if os_config.rounding then "3px" else "none"} !important;
+  color: ${p.fg} !important;
+  background-color: ${p.button} !important;
+  border-radius: ${if rounding then "3px" else "none"} !important;
 }
 }
 '';
