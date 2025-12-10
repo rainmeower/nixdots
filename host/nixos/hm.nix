@@ -4,12 +4,9 @@
   inputs,
   config,
   lib,
-  theme,
   self,
   ...
-}: let
-  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-in {
+}:{
   imports = [
     inputs.home-manager.nixosModules.home-manager
     {

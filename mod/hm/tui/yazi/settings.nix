@@ -18,7 +18,9 @@
       title_format = "yazi: {cwd}";
 
       # use same scrolloff as nvim
-      scrolloff = config.programs.nixvim.opts.scrolloff;
+      inherit (config.nv.opts)
+        scrolloff
+      ;
     };
 
     preview = {
