@@ -1102,7 +1102,7 @@ lmet (switch
 ) ;; }}}
 
 (deflayermap fn ;; {{{
-tab [
+;; tab [
 p ]
 
 b f1
@@ -1120,11 +1120,11 @@ c f8
 k f11
 g f12
 
+tab dynamic-macro-record-stop
 
 q (switch
-  ((and
-    (or (key-history lalt 1) (key-history ralt 1))
-  )) (dynamic-macro-record 0) break
+  ((or (key-history lalt 1) (key-history ralt 1)))
+    (dynamic-macro-record 0) break
 
   () (dynamic-macro-play 0) break
 )
