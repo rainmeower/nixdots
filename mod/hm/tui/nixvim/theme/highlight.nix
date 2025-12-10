@@ -1,9 +1,7 @@
 {
   p,
   ...
-}: let 
-  acc = map (n: { n.fg = p.accent; });
-in {
+}:{
   nv.highlightOverride = {
     CursorLine.bg = null;
     CursorLineNr.fg = p.accent;
@@ -21,6 +19,11 @@ in {
     #   bg = p.accent;
     #   bold = true;
     # };
+
+    "@neorg..markup.bold" = {
+      fg = p.bg;
+      bg = p.accent;
+    };
 
 
 
