@@ -1120,14 +1120,16 @@ c f8
 k f11
 g f12
 
-tab dynamic-macro-record-stop
+1 dynamic-macro-record-stop
+2 (dynamic-macro-record 0)
+3 (dynamic-macro-play 0)
 
-q (switch
-  ((or (key-history lalt 1) (key-history ralt 1)))
-    (dynamic-macro-record 0) break
-
-  () (dynamic-macro-play 0) break
-)
+;; q (switch
+;;   ((or (key-history lalt 1) (key-history ralt 1)))
+;;     (dynamic-macro-record 0) break
+;;
+;;   () (dynamic-macro-play 0) break
+;; )
 
 
 
