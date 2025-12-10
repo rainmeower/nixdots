@@ -1,7 +1,7 @@
 {
   config = {
     theme = "kanso_zen";
-    wm = "niri"; #temp
+    wm = "mango";
     term = "foot";
     font = "iosevka";
     font_size = "small";
