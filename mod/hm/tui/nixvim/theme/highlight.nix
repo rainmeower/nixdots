@@ -1,7 +1,9 @@
 {
   p,
   ...
-}:{
+}: let 
+  acc = map (n: { n.fg = p.accent; });
+in {
   nv.highlightOverride = {
     CursorLine.bg = null;
     CursorLineNr.fg = p.accent;
@@ -34,7 +36,9 @@
     # }}}
 
     # noice {{{
-    NoiceCmdlinePopupTitle.fg = p.accent;
+
+
+    # NoiceCmdlinePopupTitle.fg = p.accent;
     NoiceCmdlinePopupTitleCalculator.fg = p.accent;
     NoiceCmdlinePopupTitleCmdline.fg = p.accent;
     NoiceCmdlinePopupTitleFilter.fg = p.accent;

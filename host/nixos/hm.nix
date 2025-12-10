@@ -39,6 +39,7 @@ in {
         monitor
         prompt_sym
       ;
+
       host = config.networking.hostName;
       os_config = config;
 

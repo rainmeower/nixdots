@@ -72,7 +72,7 @@
         type = "command";
         key = "  term:";
         keyColor = "blue";
-        text = "echo '\"ghostty\",'";
+        text = "echo '\"foot\",'";
       }
 # {
 #   type = "shell";

@@ -27,7 +27,6 @@
 
     ./key/keymaps.nix
     ./key/langmap.nix
-    ./key/no_yank_del.nix
 
     # ./ui/colorizer.nix
     # ./ui/indentscope.nix

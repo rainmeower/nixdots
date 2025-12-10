@@ -3,6 +3,8 @@
   flake_dir,
   inputs,
   config,
+  lib,
+  self,
   ...
 }:{
   home-manager = {
@@ -13,6 +15,9 @@
       inherit username flake_dir inputs;
       inherit (config) theme wm;
       host = config.networking.hostName;
+
+      if_theme = t: lib.mkIf (t == (builtins.elemAt (builtins.split "_" config.theme) 0));
+      p = import (self + /theme/${builtins.elemAt (builtins.split "_" config.theme) 0}/colors.nix);
     };
 
     users.${username} = {
