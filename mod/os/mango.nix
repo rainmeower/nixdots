@@ -1,6 +1,7 @@
 {
   lib,
   pkgs,
+  config,
   ...
 }:{
   # systemd.user.targets.nixos-fake-graphical-session = lib.mkForce {};
@@ -11,7 +12,8 @@
       prettyName = "mango";
       comment = "mangowc managed by uwsm";
       # binPath = "/run/current-system/sw/bin/mango"; # doesnt exist?
-      binPath = "/usr/bin/env mango";
+      # binPath = "/usr/bin/env mango";
+      binPath = "${config.programs.mango.package}/bin/mango";
     };
   };
 }
