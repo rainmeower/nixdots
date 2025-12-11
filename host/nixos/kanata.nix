@@ -1013,6 +1013,43 @@ f19 lsft
 
 ) ;; }}}
 
+
+(deflayermap hammer ;; {{{
+
+f19 lsft
+
+j /
+/ j
+x S--
+f15 @magic_2
+
+
+
+;; TODO not in nixpkgs yet
+;; first list does tap if theyre pressed
+;; second list does tap if theyre pressed and then released
+t (tap-hold-release-tap-keys-release 120 120 t lsft (bspc f15 f16 f17 f18 ; spc) ())
+a (tap-hold-release-tap-keys-release 120 120 a rsft (bspc f15 f16 f17 f18 ; spc) ())
+
+
+f16 S-9
+f17 @rp
+
+lmet (multi (tap-hold-release-tap-keys-release 120 120 esc lmet () ()) (layer-while-held sup))
+;; rsft (tap-hold-press 120 120 bspc rctl)
+rsft bspc
+ralt (tap-hold-press 120 120 tab (layer-while-held fn))
+f18 S-;
+lctrl @eqsft
+bspc @rpeat
+ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held mods) (esc) ())
+
+
+, (tap-hold-press 120 120 , (layer-while-held syms))
+; @;
+
+) ;; }}}
+
 (deflayermap sup ;; {{{
 ;; g sldr
 

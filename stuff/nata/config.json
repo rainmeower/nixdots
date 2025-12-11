@@ -9,7 +9,7 @@
 
     {
       "title": "^Hammer*",
-      "layer": "over"
+      "layer": "hammer"
     },
 
     {
