@@ -5,7 +5,7 @@
   programs.ncmpcpp.settings = {
     colors_enabled = "yes";
     empty_tag_color = "cyan";
-    header_window_color = "default";
+    header_window_color = "#ff0000";
     volume_color = "default";
     state_line_color = "default";
     state_flags_color = "default:b";

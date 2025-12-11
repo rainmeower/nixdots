@@ -206,7 +206,7 @@ pkgs.vicinae-extension-nix
 			list.item = {
 				selection = {
 					background = p.button;
-					secondary_background = "#ff0000";
+					secondary_background = p.button;
 				};
 
 				hover = {

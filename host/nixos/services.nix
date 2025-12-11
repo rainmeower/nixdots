@@ -3,21 +3,14 @@
   username,
   ...
 }:{
-  virtualisation.docker.enable = false;
-
   services = {
-    flatpak.enable = false;
-
     xserver = {
       videoDrivers = [
         "amdgpu"
       ];
       displayManager.lightdm.enable = false; # enabled by default for some reason??
     };
-
-
     dbus.enable = true;
-
     printing.enable = false; # cups
   };
 
