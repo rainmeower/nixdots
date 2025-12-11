@@ -7,7 +7,7 @@
     ./boot.nix
     ./options.nix
     ./config.nix
-    ./configuration.nix
+    ./nixos.nix
     ./hardware-configuration.nix
     ./kanata.nix
     ./packages.nix

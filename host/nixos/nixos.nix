@@ -3,8 +3,6 @@
   username,
   ...
 }:{
-  networking.hostName = "nixos";
-
   users.users.${username} = {
     isNormalUser = true;
     description = "colon three";

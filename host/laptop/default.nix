@@ -10,7 +10,7 @@
     ../../mod/os/font.nix
     ../../mod/os/shared.nix
     ./boot.nix
-    ./configuration.nix
+    ./laptop.nix
     ./hardware-configuration.nix
 
 
