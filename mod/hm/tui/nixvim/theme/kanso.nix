@@ -34,6 +34,7 @@
           RenderMarkdownH1Bg = { fg = "#090E13", bg = "#f2f1ef" },
           RenderMarkdownH2Bg = { fg = "#090E13", bg = "#C5C9C7" },
           MatchParen = { fg = "#090E13", bg = "#8ba4b0" },
+          ['@neorg.markup.bold'] = { fg = "#090E13", bg = "#8ba4b0" },
 
           }
           end,
