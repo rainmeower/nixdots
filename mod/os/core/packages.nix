@@ -17,6 +17,7 @@
     unzip
     rar
     unrar
+    _7zz
 
     git
 

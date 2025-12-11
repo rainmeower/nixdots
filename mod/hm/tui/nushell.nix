@@ -70,12 +70,7 @@ in {
       }
 
       def recordvirt [] { # simple screen record without obs
-        mmsg -d create_virtual_output
-        wlr-randr --output HEADLESS-1 --pos 320,10
-        cd ${userDirs.videos}
-        let date = date now | format date "%Y-%m-%d %H:%M:%S"
-        wf-recorder -r 60 -o HEADLESS-1 -f $"(date now | format date '%Y-%m-%d %H:%M:%S').mkv"
-        mmsg -d destroy_all_virtual_output
+        # TODO wf-recorder -g
       }
 
       # convert .mp4 file to .mov for davinci resolve
