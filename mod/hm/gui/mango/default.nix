@@ -7,10 +7,12 @@
   p,
   pkgs,
   userDirs,
+  rounding,
 	...
 }: let
   gaps = 10;
   h = lib.removePrefix "#";
+  corners = if rounding then 10 else 0;
 in {
   imports = [
     inputs.mango.hmModules.mango
@@ -54,52 +56,54 @@ in {
             toString value;
           in "${key}=${value'}";
       } {globalSection = {
-        allow_tearing = true;
+        allow_tearing = true; # gayming latent sea
         xwayland_persistence = false;
         exchange_cross_monitor = true;
 
         exec-once = "~/.config/mango/autostart.sh";
+
         blur = true;
         blur_layer = true;
-        blur_optimized = true;
+        blur_optimized = true; # xray blur
         blur_params_num_passes = 2;
-        blur_params_radius = 4;
-        blur_params_noise = 0;
+        blur_params_radius     = 4;
+        blur_params_noise      = 0;
         blur_params_brightness = 1;
-        blur_params_contrast = 0.8;
+        blur_params_contrast   = 0.8;
         blur_params_saturation = 0.7;
 
         shadows = false;
 
-        border_radius = 0;
+        border_radius = corners;
+
         no_radius_when_single = false;
-        focused_opacity = 1.0;
+        focused_opacity   = 1.0;
         unfocused_opacity = 1.0;
 
         # Animation Configuration(support type:zoom,slide)
         # tag_animation_direction: 0-horizontal,1-vertical
-        animations = os_config.animations;
+        animations       = os_config.animations;
         layer_animations = os_config.animations;
-        animation_type_open = "zoom";
+        animation_type_open  = "zoom";
         animation_type_close = "zoom";
-        animation_fade_in = 1;
+        animation_fade_in  = 1;
         animation_fade_out = 1;
-        tag_animation_direction = 0;
+        tag_animation_direction = 0; # 0-horizontal,1-vertical
         zoom_initial_ratio = 0.3;
-        zoom_end_ratio = 0.3;
-        fadein_begin_opacity = 1.0;
+        zoom_end_ratio     = 0.3;
+        fadein_begin_opacity  = 1.0;
         fadeout_begin_opacity = 0.8;
 
-        animation_duration_move = 250;
-        animation_duration_open = 320;
+        animation_duration_move  = 250;
+        animation_duration_open  = 320;
         animation_duration_close = 450;
-        animation_duration_tag = 0;
+        animation_duration_tag   = 0;
         animation_duration_focus = 0;
-        animation_curve_move = "0.46,1.0,0.29,1";
-        animation_curve_open = "0.46,1.0,0.29,1";
-        animation_curve_close = "0.22, 0.94, 0.23, 1 ";
-        animation_curve_tag = "0.46,1.0,0.29,1";
-        animation_curve_focus = "0.46,1.0,0.29,1";
+        animation_curve_move  = "0.46, 1.0,  0.29, 1";
+        animation_curve_open  = "0.46, 1.0,  0.29, 1";
+        animation_curve_close = "0.22, 0.94, 1,    0.62";
+        animation_curve_tag   = "0.46, 1.0,  0.29, 1";
+        animation_curve_focus = "0.46, 1.0,  0.29, 1";
 
         # Scroller Layout Setting
         scroller_structs = gaps;
@@ -112,12 +116,12 @@ in {
 
         # Master-Stack Layout Setting
         new_is_master = false;
-        default_mfact = 0.5;
+        default_mfact = 0.5; # how big the master window is
         default_nmaster = 1;
         smartgaps = false;
 
         # Overview Setting
-        hotarea_size = 10;
+        hotarea_size = 0;
         enable_hotarea = false;
         ov_tab_mode = 0; # TODO
         overviewgappi = 5; # inner gaps
