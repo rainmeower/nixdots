@@ -321,6 +321,8 @@ in {
           "appid:foot.yazi.isterm,isterm:1"
           "appid:foot.quit_prompt,isfloating:1,width:300,height:150"
 
+          "title:ghostty_term,tags:9,isopensilent:1"
+
           "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1"
           "appid:swayimg,isnoanimation:1"
           "appid:equibop,appid:vesktop,tags:2,isopensilent:1"
