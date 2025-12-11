@@ -69,6 +69,12 @@ in {
         wf-recorder -r 60 -o DP-1 -f $"(date now | format date '%Y-%m-%d %H:%M:%S').mkv"
       }
 
+      def recordvirt [] { # simple screen record without obs
+        cd ${userDirs.videos}
+        let date = date now | format date "%Y-%m-%d %H:%M:%S"
+        wf-recorder -r 60 -o HEADLESS-1 -f $"(date now | format date '%Y-%m-%d %H:%M:%S').mkv"
+      }
+
       # convert .mp4 file to .mov for davinci resolve
       def movify [msg: string] {
           let input = $msg

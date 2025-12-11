@@ -1,5 +1,5 @@
 {
-  font_path,
+  font_name,
   animations,
   lib,
   p,
@@ -10,7 +10,7 @@ in {
   programs.ghostty = {
     enable = true;
     settings = {
-      font-family = font_path;
+      font-family = font_name;
       font-size = 22;
       gtk-single-instance = true;
 
