@@ -203,9 +203,9 @@ in {
 
 # menu and terminal
             # "SUPER,space,spawn,vicinae toggle"
-            "SUPER,s,spawn,uwsm app -- foot nvim"
-            "SUPER,t,spawn,uwsm app -- foot"
-            "SUPER,c,spawn,uwsm app -- foot -a 'foot.yazi.isterm' yazi"
+            "SUPER,s,spawn,foot nvim"
+            "SUPER,t,spawn,foot"
+            "SUPER,c,spawn,foot -a 'foot.yazi.isterm' yazi"
             # goto most recent download
             ''SUPER+SHIFT,c,spawn_shell, footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/(\$f)"''
 
