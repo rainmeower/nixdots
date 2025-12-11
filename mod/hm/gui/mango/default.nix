@@ -164,7 +164,7 @@ in {
           scratchpad_height_ratio = 0.9;
         borderpx = 3;
         # TODO function for these
-        rootcolor = "0xff0000ff";
+        rootcolor = "0xff000000"; # behind the wallpaper
         bordercolor = "0x00000000";
         focuscolor = "0x" + h p.accent + "ff";
         maximizescreencolor = "0x" + h p.pink + "ff";
