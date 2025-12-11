@@ -87,7 +87,7 @@ in {
         zoom_initial_ratio = 0.3;
         zoom_end_ratio = 0.3;
         fadein_begin_opacity = 1.0;
-        fadeout_begin_opacity = 0.1;
+        fadeout_begin_opacity = 0.8;
         animation_duration_move = 250;
         animation_duration_open = 320;
         animation_duration_tag = 0;
