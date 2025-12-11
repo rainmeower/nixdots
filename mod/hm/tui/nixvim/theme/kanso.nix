@@ -36,6 +36,11 @@
           MatchParen = { fg = "#090E13", bg = "#8ba4b0" },
           ['@neorg.markup.bold'] = { fg = "#090E13", bg = "#8ba4b0" },
 
+
+          CursorLine = { bg = "None" },
+          CursorLineNr = { fg = "#8ba4b0" },
+          LineNr = { fg = "#393B44" }
+
           }
           end,
           theme = ${lib.strings.removePrefix "kanso_" theme},
