@@ -87,17 +87,17 @@ in {
         zoom_initial_ratio = 0.3;
         zoom_end_ratio = 0.3;
         fadein_begin_opacity = 1.0;
-        fadeout_begin_opacity = 0.1;
+        fadeout_begin_opacity = 0.8;
 
         animation_duration_move = 250;
         animation_duration_open = 320;
         animation_duration_tag = 0;
-        animation_duration_close = 600;
+        animation_duration_close = 450;
         animation_duration_focus = 0;
         animation_curve_open = "0.46,1.0,0.29,1";
         animation_curve_move = "0.46,1.0,0.29,1";
         animation_curve_tag = "0.46,1.0,0.29,1";
-        animation_curve_close = "0.14,0.92,0,1";
+        animation_curve_close = "0.2,0.92,0,1";
         animation_curve_focus = "0.46,1.0,0.29,1";
 
 # Scroller Layout Setting
