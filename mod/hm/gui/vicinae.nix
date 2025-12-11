@@ -49,7 +49,7 @@ inputs.vicinae.homeManagerModules.default
 
 services.vicinae = {
 enable = true;
-autoStart = false;
+autoStart = true;
 # FIXME
 settings = {
 faviconService = "twenty"; # twenty | google | none
