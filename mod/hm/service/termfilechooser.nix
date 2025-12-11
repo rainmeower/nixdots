@@ -1,7 +1,6 @@
 # FIXME stopped working for no reason
 {
   pkgs,
-  lib,
   ...
 }:{
   systemd.user.services.xdg-desktop-portal-termfilechooser = {
@@ -19,30 +18,12 @@
     };
   };
 
-
-home.file.".config/xdg-desktop-portal-termfilechooser/config".text = lib.generators.toINI {
-    listsAsDuplicateKeys = true;
-} {
-    filechooser = {
-        cmd = "yazi-wrapper.sh";
-        default_dir = "$HOME";
-        env = [
-            ''TERMCMD="wezterm start --always-new-process --class wezterm.yazi.filechooser"''
-        ];
-      };
-    };
-  home.packages = with pkgs; [
-    wezterm
-  ];
-
-
-
-#   xdg.configFile."xdg-desktop-portal-termfilechooser/config".text = /* ini */ ''
-# [filechooser]
-# cmd=${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
-# default_dir=$HOME
-# env=TERMCMD='foot --app-id="foot.yazi.filechooser'"
-#   '';
+  xdg.configFile."xdg-desktop-portal-termfilechooser/config".text = /* ini */ ''
+[filechooser]
+cmd=${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
+default_dir=$HOME
+env=TERMCMD='foot --app-id="foot.yazi.filechooser'"
+  '';
 
   xdg.portal = {
     config = {
