@@ -5,7 +5,7 @@
   lib,
   p,
   rounding,
-  font_name,
+  font_path,
   ...
 }: let
   radius = if rounding then 10 else 0;
@@ -54,7 +54,7 @@ autoStart = true;
 settings = {
 faviconService = "twenty"; # twenty | google | none
 font = {
-normal = font_name;
+normal = font_path;
 size = 12;
 };
 popToRootOnClose = false;

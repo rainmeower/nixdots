@@ -32,6 +32,7 @@
         term
         font_name
         font_path
+        font_path_bold
         font_pkg
         monitor
         prompt_sym
