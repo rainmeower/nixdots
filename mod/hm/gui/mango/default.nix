@@ -318,9 +318,10 @@ in {
         windowrule = [
           "appid:foot.yazi.filechooser,width:1080,height:1080,isnoborder:1,isfloating:1"
           "appid:foot.ncmpcpp,foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1"
-          "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1"
           "appid:foot.yazi.isterm,isterm:1"
           "appid:foot.quit_prompt,isfloating:1,width:300,height:150"
+
+          "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1"
           "appid:swayimg,isnoanimation:1"
           "appid:equibop,appid:vesktop,tags:2,isopensilent:1"
           # TODO `isterm` + emacs/yazi?
