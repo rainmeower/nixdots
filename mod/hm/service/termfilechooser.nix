@@ -27,10 +27,13 @@ home.file.".config/xdg-desktop-portal-termfilechooser/config".text = lib.generat
         cmd = "yazi-wrapper.sh";
         default_dir = "$HOME";
         env = [
-            ''TERMCMD="foot"''
+            ''TERMCMD="wezterm start --always-new-process --class wezterm.yazi.filechooser"''
         ];
+      };
     };
-};
+  home.packages = with pkgs; [
+    wezterm
+  ];
 
 
 
