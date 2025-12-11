@@ -6,7 +6,7 @@
     font = "iosevka";
     font_size = "small";
     rounding = false;
-    animations = false;
+    animations = true;
 
     prompt_sym = "󰘧";
   };

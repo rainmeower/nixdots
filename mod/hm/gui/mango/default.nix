@@ -1,5 +1,6 @@
 {
 	inputs,
+  os_config,
 	lib,
   flake_dir,
   wm,
@@ -77,8 +78,8 @@ in {
 
 # Animation Configuration(support type:zoom,slide)
 # tag_animation_direction: 0-horizontal,1-vertical
-        animations = true;
-        layer_animations = true;
+        animations = os_config.animations;
+        layer_animations = os_config.animations;
         animation_type_open = "zoom";
         animation_type_close = "zoom";
         animation_fade_in = 1;
@@ -91,14 +92,15 @@ in {
 
         animation_duration_move = 250;
         animation_duration_open = 320;
-        animation_duration_tag = 0;
         animation_duration_close = 450;
+        animation_duration_tag = 0;
         animation_duration_focus = 0;
-        animation_curve_open = "0.46,1.0,0.29,1";
         animation_curve_move = "0.46,1.0,0.29,1";
+        animation_curve_open = "0.46,1.0,0.29,1";
+        animation_curve_close = "0.17,0.81,0.07,0.82";
         animation_curve_tag = "0.46,1.0,0.29,1";
-        animation_curve_close = "0.2,0.92,0,1";
         animation_curve_focus = "0.46,1.0,0.29,1";
+
 
 # Scroller Layout Setting
         scroller_structs = gaps;
