@@ -23,7 +23,8 @@
     config = {
       useQuickCss = false;
       themeLinks = [
-        (config.home.homeDirectory + ".config/vesktop/themes/system24_2.css")
+        (config.home.homeDirectory + "/.config/vesktop/themes/system24_1.css")
+        (config.home.homeDirectory + "/.config/vesktop/themes/system24_2.css")
       ];
 
       frameless = true;
