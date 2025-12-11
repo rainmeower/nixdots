@@ -32,18 +32,13 @@
           return {
 
           RenderMarkdownH1Bg = { fg = "#090E13", bg = "#f2f1ef" },
+          MatchParen = { reverse = true },
           RenderMarkdownH2Bg = { fg = "#090E13", bg = "#C5C9C7" },
 
           }
           end,
-          theme = ${lib.strings.removePrefix "kanso_" theme},              -- Load "zen" theme
-            -- background = {               -- map the value of 'background' option to a theme
-              --     dark = "ink",           -- try "ink" !
-                --     light = "pearl"         -- try "mist" !
-                -- },
+          theme = ${lib.strings.removePrefix "kanso_" theme},
       })
-
-    -- setup must be called before loading
       vim.cmd("colorscheme kanso")
     '';
   };
