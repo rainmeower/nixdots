@@ -21,7 +21,7 @@ menu:
     desc: quit
     cmd: ${if (wm == "hyprland") then "hyprctl dispatch exit"
            else if (wm == "niri") then "niri msg action quit"
-           else if (wm == "mango") then "mmsg -q"
+           else if (wm == "mango") then "uwsm stop"
            else err
           }
 
