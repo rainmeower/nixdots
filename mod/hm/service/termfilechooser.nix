@@ -22,7 +22,7 @@
 [filechooser]
 cmd=${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
 default_dir=$HOME
-env=TERMCMD='foot --app-id="foot.yazi.filechooser"'
+env=TERMCMD='foot --app-id=foot.yazi.filechooser'
   '';
 
   xdg.portal = {
