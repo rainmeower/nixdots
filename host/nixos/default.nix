@@ -16,6 +16,8 @@
     ./hm.nix
     (lib.mkAliasOptionModule [ "hm" ] [ "home-manager" "users" username ])
 
+    ../../mod/shared/misc.nix
+
     ../../mod/os/services/audio.nix
     ../../mod/os/cleanup.nix
     ../../mod/os/clipse.nix

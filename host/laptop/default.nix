@@ -13,6 +13,9 @@
     ./configuration.nix
     ./hardware-configuration.nix
 
+
+    ../../mod/shared/misc.nix
+
     ./hm.nix
     (lib.mkAliasOptionModule [ "hm" ] [ "home-manager" "users" username ])
 
