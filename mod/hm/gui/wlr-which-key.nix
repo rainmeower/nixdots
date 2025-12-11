@@ -21,7 +21,7 @@ menu:
     desc: quit
     cmd: ${if (wm == "hyprland") then "hyprctl dispatch exit"
            else if (wm == "niri") then "niri msg action quit"
-           else if (wm == "mango") then "${flake_dir}/stuff/scripts/keys/quit.sh mango"
+           else if (wm == "mango") then "foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit.sh mango"
            else err
           }
 
