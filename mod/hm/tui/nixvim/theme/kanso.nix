@@ -32,8 +32,8 @@
           return {
 
           RenderMarkdownH1Bg = { fg = "#090E13", bg = "#f2f1ef" },
-          MatchParen = { reverse = true },
           RenderMarkdownH2Bg = { fg = "#090E13", bg = "#C5C9C7" },
+          MatchParen = { fg = "#090E13", bg = "#8ba4b0" },
 
           }
           end,

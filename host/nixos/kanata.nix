@@ -17,7 +17,6 @@ mods:
                   󰞗 󰞖 󰞙 󰞘
           .       󱁐
 }}} */
-
 {
   pkgs,
   lib,
@@ -1155,19 +1154,19 @@ g f12
   (q z) (macro q S-;) 20 all-released (over sup melee fn)
 
 
-  (b f    ) S-/ 20 all-released (over sup melee fn)
+  (b f    ) \ 20 all-released (over sup melee fn)
   (  f d  ) S-7 15 all-released (over sup melee fn)
   (  f   w) `   20 all-released (over sup melee fn)
-  (    d w) S-8 15 all-released (over sup melee fn)
+  (    d w) S-7 15 all-released (over sup melee fn)
   
-  ;; (l o    ) S-' 14 all-released (over sup melee fn mods)
+  (l o    ) S-\ 14 all-released (over sup melee fn mods)
   (  o u  ) S-1 13 all-released (over sup melee fn mods)
   (    u .) S-6 15 all-released (over sup melee fn mods)
 
-  ;; (n s    ) S-, 14 all-released (over sup melee fn)
+  (n s    ) S-/ 14 all-released (over sup melee fn)
   (  s t  ) '   13 all-released (over sup melee fn)
   (  s   c) S-` 16 all-released (over sup melee fn)
-  ;; (    t c) [   14 all-released (over sup melee fn)
+  (    t c) S-8   14 all-released (over sup melee fn)
 
   (h a    ) S-' 14 all-released (over sup melee fn)
   (h   e  ) del 15 all-released (over sup melee fn)
@@ -1182,8 +1181,6 @@ g f12
   ;; (f15     f17  ) S-5 20 all-released (over sup melee fn)
   (    f16 f17  ) x 15 all-released (over sup melee fn)
   (        f17 ;) S-2 15 all-released (over sup melee fn)
-
-  ;; (h spc) \ 15 all-released (over sup melee fn)
 
 ) ;; }}}
 
