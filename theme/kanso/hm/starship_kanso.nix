@@ -10,9 +10,8 @@
         error_symbol = "[${prompt_sym}](red)";
       };
 
-      directory = {
-        style = "bold blue";
-      };
+      directory.style = "bold blue";
+
       git_metrics.disabled = false;
       git_status = {
         format = "(\[$all_status$ahead_behind\]($style) )";

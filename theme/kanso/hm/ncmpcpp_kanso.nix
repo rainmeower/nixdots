@@ -12,7 +12,7 @@
     main_window_color = "blue";
     color1 = "blue";
     color2 = "green";
-    progressbar_color = "black:b";
+    progressbar_color = "bright_black:b";
     progressbar_elapsed_color = "blue:b";
     statusbar_color = "blue";
     statusbar_time_color = "blue:b";

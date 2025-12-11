@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# this is just shitty systemd lmao
 
 attempt=1
 delay=5

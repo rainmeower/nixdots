@@ -1,3 +1,5 @@
+#!/usr/bin/env dash
+
 ydotool type -d 5 yy # TODO press escape
 foot &
 sleep 0.1
