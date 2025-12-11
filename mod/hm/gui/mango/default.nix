@@ -76,8 +76,8 @@ in {
         focused_opacity = 1.0;
         unfocused_opacity = 1.0;
 
-# Animation Configuration(support type:zoom,slide)
-# tag_animation_direction: 0-horizontal,1-vertical
+        # Animation Configuration(support type:zoom,slide)
+        # tag_animation_direction: 0-horizontal,1-vertical
         animations = os_config.animations;
         layer_animations = os_config.animations;
         animation_type_open = "zoom";
@@ -97,12 +97,11 @@ in {
         animation_duration_focus = 0;
         animation_curve_move = "0.46,1.0,0.29,1";
         animation_curve_open = "0.46,1.0,0.29,1";
-        animation_curve_close = "0.17,0.81,0.07,0.82";
+        animation_curve_close = "0.19, 0.81, 0.03, 0.38";
         animation_curve_tag = "0.46,1.0,0.29,1";
         animation_curve_focus = "0.46,1.0,0.29,1";
 
-
-# Scroller Layout Setting
+        # Scroller Layout Setting
         scroller_structs = gaps;
         scroller_default_proportion = 0.5;
         scroller_default_proportion_single = 0.5;
@@ -111,20 +110,20 @@ in {
         scroller_prefer_center = false;
         edge_scroller_pointer_focus = true; # TODO
 
-# Master-Stack Layout Setting
+        # Master-Stack Layout Setting
         new_is_master = false;
         default_mfact = 0.5;
         default_nmaster = 1;
         smartgaps = false;
 
-# Overview Setting
+        # Overview Setting
         hotarea_size = 10;
         enable_hotarea = false;
         ov_tab_mode = 0; # TODO
         overviewgappi = 5; # inner gaps
         overviewgappo = 30; # outer gaps
 
-# Misc
+        # Misc
         allow_shortcuts_inhibit = true;
         no_border_when_single = true;
         axis_bind_apply_timeout = 10;
@@ -142,41 +141,41 @@ in {
         cursor_theme = "Bibata Modern Classic";
         cursor_hide_timeout = 1;
 
-# keyboard
+        # keyboard
         repeat_rate = 25;
         repeat_delay = 300;
         numlockon = false;
         xkb_rules_layout = "us";
 
-# Trackpad
-# need relogin to make it apply
+        # Trackpad
+        # need relogin to make it apply
         disable_trackpad = true;
 
-# mouse
-# need relogin to make it apply
+        # mouse
+        # need relogin to make it apply
         mouse_natural_scrolling = false;
         accel_profile = 0;
         accel_speed = 0.0;
 
-# Appearance
+        # Appearance
         gappih = gaps;
         gappiv = gaps;
         gappoh = gaps;
         gappov = gaps;
         scratchpad_width_ratio = 0.67; # i swear its just rounding 0.66...
-          scratchpad_height_ratio = 0.9;
+        scratchpad_height_ratio = 0.9;
         borderpx = 3;
         # TODO function for these
-        rootcolor = "0xff000000"; # behind the wallpaper
-        bordercolor = "0x00000000";
-        focuscolor = "0x" + h p.accent + "ff";
-        maximizescreencolor = "0x" + h p.pink + "ff";
-        urgentcolor = "0x" + h p.red + "ff";
-        scratchpadcolor = "0x85b5baff";
-        globalcolor = "0xaca1cfff";
+        rootcolor    = "0xff000000"; # behind the wallpaper
+        bordercolor  = "0x00000000";
+        focuscolor   = "0x${h p.accent}ff";
+        urgentcolor  = "0x${h p.red}ff";
+        globalcolor  = "0xaca1cfff";
         overlaycolor = "0x90b99fff";
+        scratchpadcolor     = "0x85b5baff";
+        maximizescreencolor = "0x${h p.pink}ff";
 
-# center_tile deck grid monocle right_tile scroller tile vertical_deck vertical_grid vertical_scroller vertical_spiral vertical_tile
+        # center_tile deck grid monocle right_tile scroller tile vertical_deck vertical_grid vertical_scroller vertical_spiral vertical_tile
         tagrule = [
           "id:1,layout_name:tile"
           "id:2,layout_name:grid"
@@ -189,9 +188,9 @@ in {
           "id:9,layout_name:vertical_tile"
         ];
 
-# Key Bindings
-# key name refer to `xev` or `wev` command output,
-# mod keys name: super,ctrl,alt,shift,none
+        # Key Bindings
+        # key name refer to `xev` or `wev` command output,
+        # mod keys name: super,ctrl,alt,shift,none
         bind = [
 
           "NONE,XF86AudioRaiseVolume,spawn_shell,wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
@@ -201,10 +200,10 @@ in {
           "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
           "SUPER+SHIFT,L,spawn,wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml"
 
-# reload config
+            # reload config
             "SUPER+ALT,r,reload_config"
 
-# menu and terminal
+            # menu and terminal
             "SUPER,space,spawn,vicinae toggle"
             "SUPER,s,spawn,foot nvim"
             "SUPER,t,spawn,foot"
@@ -218,39 +217,39 @@ in {
             "SUPER,z,spawn,zen -p meow"
             "SUPER+SHIFT,z,spawn,zen -p media"
 
-# exit
+            # exit
             "SUPER,o,killclient,"
 
-# switch window focus
-# "ALT,Tab,focusstack,next"
+            # switch window focus
+            # "ALT,Tab,focusstack,next"
             "SUPER,h,focusdir,left"
             "SUPER,i,focusdir,right"
             "SUPER,e,focusdir,up"
             "SUPER,a,focusdir,down"
 
-# swap window
+            # swap window
             "SUPER+SHIFT,h,exchange_client,left"
             "SUPER+SHIFT,i,exchange_client,right"
             "SUPER+SHIFT,h,exchange_client,up"
             "SUPER+SHIFT,a,exchange_client,down"
 
-# switch window status
+            # switch window status
             "SUPER,Period,toggleglobal,"
             "SUPER,Return,toggleoverview,"
-# "SUPER,f,togglefloating,"
+            # "SUPER,f,togglefloating,"
             "SUPER,m,togglemaximizescreen,"
             "SUPER+SHIFT,m,togglefullscreen,"
-# "SUPER+CTRL,m,togglefakefullscreen,"
+            # "SUPER+CTRL,m,togglefakefullscreen,"
             "SUPER+SHIFT,Return,toggleoverlay,"
-#"SUPER,i,minimized,"
-#"SUPER+SHIFT,I,restore_minimized"
-#"ALT,z,toggle_scratchpad"
+            #"SUPER,i,minimized,"
+            #"SUPER+SHIFT,I,restore_minimized"
+            #"ALT,z,toggle_scratchpad"
 
-# scroller layout
-# "SUPER,m,set_proportion,1.0"
+            # scroller layout
+            # "SUPER,m,set_proportion,1.0"
             "SUPER,9,switch_proportion_preset,"
 
-# switch layout
+            # switch layout
             "SUPER,semicolon,switch_layout"
 
             "SUPER,Tab,  view,1,0"
