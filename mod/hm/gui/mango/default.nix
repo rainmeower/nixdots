@@ -29,16 +29,16 @@ in {
       autostart_sh = # {{{
       /* bash */ ''
         set +e
-        swww-daemon &
-        ${flake_dir}/stuff/scripts/swww.sh &
-
-        # wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
-        foot --server &
-        equibop >/dev/null 2>/dev/null &
-        dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
-
-        ps -ef | rg "nata.sh" | sed -e "s/$(whoami)      //" | sed -e "s/ .*//" | xargs kill # clean up previous nata processes
-        ${flake_dir}/stuff/nata/nata.sh -c ${flake_dir}/stuff/nata/config.json >/dev/null 2>/dev/null &
+        # swww-daemon &
+        # ${flake_dir}/stuff/scripts/swww.sh &
+        #
+        # # wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
+        # foot --server &
+        # equibop >/dev/null 2>/dev/null &
+        # dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
+        #
+        # ps -ef | rg "nata.sh" | sed -e "s/$(whoami)      //" | sed -e "s/ .*//" | xargs kill # clean up previous nata processes
+        # ${flake_dir}/stuff/nata/nata.sh -c ${flake_dir}/stuff/nata/config.json >/dev/null 2>/dev/null &
 
       ''; # }}}
 
@@ -202,10 +202,10 @@ in {
             "SUPER+ALT,r,reload_config"
 
 # menu and terminal
-            "SUPER,space,spawn,vicinae toggle"
-            "SUPER,s,spawn,foot nvim"
-            "SUPER,t,spawn,foot"
-            "SUPER,c,spawn,foot -a 'foot.yazi.isterm' yazi"
+            # "SUPER,space,spawn,vicinae toggle"
+            "SUPER,s,spawn,uwsm app -- foot nvim"
+            "SUPER,t,spawn,uwsm app -- foot"
+            "SUPER,c,spawn,uwsm app -- foot -a 'foot.yazi.isterm' yazi"
             # goto most recent download
             ''SUPER+SHIFT,c,spawn_shell, footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/(\$f)"''
 

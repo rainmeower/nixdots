@@ -9,18 +9,20 @@
     LineNr.fg = p.selection;
 
     MatchParen.reverse = true;
-    # FIXME doesnt do anything
-    # MatchParen = {
-    #   fg = p.bg;
-    #   bg = p.accent;
-    #   bold = true;
-    # };
-    # MatchParenCur = {
-    #   fg = p.bg;
-    #   bg = p.accent;
-    #   bold = true;
-    # };
 
+    # FIXME doesnt do anything
+    MatchParen = {
+      fg = p.bg;
+      bg = p.accent;
+      bold = true;
+    };
+    MatchParenCur = {
+      fg = p.bg;
+      bg = p.accent;
+      bold = true;
+    };
+
+    # FIXME does nothing
     "@neorg.markup.bold" = lib.mkForce {
       fg = lib.mkForce p.bg;
       bg = lib.mkForce p.accent;
