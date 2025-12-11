@@ -97,7 +97,7 @@ in {
         animation_duration_focus = 0;
         animation_curve_move = "0.46,1.0,0.29,1";
         animation_curve_open = "0.46,1.0,0.29,1";
-        animation_curve_close = "0.19, 0.81, 0.03, 0.38";
+        animation_curve_close = "0.22, 0.94, 0.23, 1 ";
         animation_curve_tag = "0.46,1.0,0.29,1";
         animation_curve_focus = "0.46,1.0,0.29,1";
 
