@@ -58,7 +58,7 @@ in {
       } {globalSection = {
         allow_tearing = true; # gayming latent sea
         xwayland_persistence = false;
-        exchange_cross_monitor = true;
+        exchange_cross_monitor = false;
 
         exec-once = "~/.config/mango/autostart.sh";
 
@@ -112,7 +112,7 @@ in {
         scroller_default_proportion = 0.5;
         scroller_default_proportion_single = 0.5;
         scroller_proportion_preset = "0.333,0.5,0.667";
-        scroller_focus_center = false; # TODO
+        scroller_focus_center = false;
         scroller_prefer_center = false;
         edge_scroller_pointer_focus = true; # TODO
 
@@ -208,6 +208,8 @@ in {
 
             # reload config
             "SUPER+ALT,r,reload_config"
+
+            "SUPER,n,focusmon"
 
             # menu and terminal
             "SUPER,space,spawn,vicinae toggle"

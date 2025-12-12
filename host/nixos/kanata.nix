@@ -1193,7 +1193,7 @@ g f12
 
 
   (b f    ) \ 20 all-released (over sup melee fn)
-  (  f d  ) S-7 15 all-released (over sup melee fn)
+  ;; (  f d  ) S-7 15 all-released (over sup melee fn)
   (  f   w) `   20 all-released (over sup melee fn)
   (    d w) S-7 15 all-released (over sup melee fn)
   

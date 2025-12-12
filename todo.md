@@ -1,4 +1,4 @@
-- uwsm for mango
+- `mmsg -d setoption` repeat delay
 
 
 - declaratively disable js?
