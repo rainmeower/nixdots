@@ -389,6 +389,7 @@ mods:
 
     ;; code {{{
 
+    ;; FIXME
     ;; ..
     ((and
       (not (key-history lsft 2))
@@ -1236,7 +1237,7 @@ g f12
 
 
   (b f    ) \ 20 all-released (over sup melee fn game)
-  ;; (  f d  ) S-7 15 all-released (over sup melee fn game)
+  ;; (  f d  )  15 all-released (over sup melee fn game)
   (  f   w) `   20 all-released (over sup melee fn game)
   (    d w) S-7 15 all-released (over sup melee fn game)
   
@@ -1252,10 +1253,10 @@ g f12
   (h a    ) S-' 14 all-released (over sup melee fn)
   (h   e  ) del 15 all-released (over sup melee fn)
   (  a e  ) +   14 all-released (over sup melee fn)
-  ;; (    e i) S-. 14 all-released (over sup melee fn)
+  ;; (    e i) 14 all-released (over sup melee fn)
 
   (, v    ) \   20 all-released (over sup melee fn game)
-  (  v k  ) S-\ 20 all-released (over sup melee fn game)
+  ;; (  v k  )  20 all-released (over sup melee fn game)
   (    k g) S-4 20 all-released (over sup melee fn game)
 
   (f15 f16      ) S-3 20 all-released (over sup melee fn)

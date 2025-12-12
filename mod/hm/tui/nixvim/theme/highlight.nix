@@ -45,7 +45,7 @@
     # noice {{{
 
 
-    # NoiceCmdlinePopupTitle.fg = p.accent;
+    NoiceCmdlinePopupTitle.fg = p.accent;
     NoiceCmdlinePopupTitleCalculator.fg = p.accent;
     NoiceCmdlinePopupTitleCmdline.fg = p.accent;
     NoiceCmdlinePopupTitleFilter.fg = p.accent;

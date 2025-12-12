@@ -37,6 +37,34 @@
           ['@neorg.markup.bold'] = { fg = "#090E13", bg = "#8ba4b0" },
 
 
+
+    NoiceCmdlinePopupTitle = { fg = "None" },
+    NoiceCmdlinePopupTitleCalculator = { fg = "None" },
+    NoiceCmdlinePopupTitleCmdline = { fg = "None" },
+    NoiceCmdlinePopupTitleFilter = { fg = "None" },
+    NoiceCmdlinePopupTitleHelp = { fg = "None" },
+    NoiceCmdlinePopupTitleInput = { fg = "None" },
+    NoiceCmdlinePopupTitleLua = { fg = "None" },
+
+    NoiceCmdlinePopupBorder = { fg = "None" },
+    NoiceCmdlinePopupBorderCalculator = { fg = "None" },
+    NoiceCmdlinePopupBorderCmdline = { fg = "None" },
+    NoiceCmdlinePopupBorderFilter = { fg = "None" },
+    NoiceCmdlinePopupBorderHelp = { fg = "None" },
+    NoiceCmdlinePopupBorderInput = { fg = "None" },
+    NoiceCmdlinePopupBorderLua = { fg = "None" },
+
+    NoiceCmdlineIcon = { fg = "None" },
+    NoiceCmdlineIconCalculator = { fg = "None" },
+    NoiceCmdlineIconCmdline = { fg = "None" },
+    NoiceCmdlineIconFilter = { fg = "None" },
+    NoiceCmdlineIconHelp = { fg = "None" },
+    NoiceCmdlineIconInput = { fg = "None" },
+    NoiceCmdlineIconLua = { fg = "None" },
+
+    NoiceConfirmBorder = { fg = "None" },
+
+
           CursorLine = { bg = "None" },
           CursorLineNr = { fg = "#8ba4b0" },
           LineNr = { fg = "#393B44" }
