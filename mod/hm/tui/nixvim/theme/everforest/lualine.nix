@@ -1,37 +1,31 @@
 {
-  lib, 
-  theme, 
+  p,
+  if_theme,
   ... 
-}: 
-let
-  col = import ../../../../../../../theme/everforest/soft/colors.nix;
-in {
-  config = lib.mkIf (theme == "everforest_soft") {
-
-    nv.plugins.lualine.settings.options = {
-      theme = {
+}: if_theme "everforest" {
+  nv.plugins.lualine.settings.options = {
+    theme = {
       # FIXME
-        normal.a = { 
-          fg = col.bg;
-          bg = col.gray1;
-        }; 
-        insert.a = { 
-          fg = col.bg;
-          bg = col.fg;
-        }; 
-        visual.a = { 
-          fg = col.bg;
-          bg = col.fg;
-        }; 
-        replace.a = { 
-          fg = col.bg;
-          bg = col.fg;
-        }; 
-        inactive.a = {
-          fg = col.gray1;
-          bg = col.bg;
-        }; 
-      };
+      normal.a = { 
+        fg = p.bg;
+        bg = p.gray1;
+      }; 
+      insert.a = { 
+        fg = p.bg;
+        bg = p.fg;
+      }; 
+      visual.a = { 
+        fg = p.bg;
+        bg = p.fg;
+      }; 
+      replace.a = { 
+        fg = p.bg;
+        bg = p.fg;
+      }; 
+      inactive.a = {
+        fg = p.gray1;
+        bg = p.bg;
+      }; 
     };
   };
 }

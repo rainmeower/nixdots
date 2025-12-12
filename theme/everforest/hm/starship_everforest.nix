@@ -1,33 +1,22 @@
 {
-  lib,
-  theme,
+  p,
+  if_theme,
   prompt_sym,
   ...
-}:{
-  config = lib.mkIf (theme == "everforest_hard" || theme == "everforest_medium" || theme == "everforest_soft") {
+}: if_theme "everforest" {
+  programs.starship = {
+    settings = {
+      character = {
+        success_symbol = "[${prompt_sym}](${p.fg})";
+        error_symbol = "[${prompt_sym}](red)";
+      };
 
-    programs.starship = {
-      settings = {
-        character = {
-          success_symbol = "[${prompt_sym}](#9DA9A0)";
-          error_symbol = "[${prompt_sym}](red)";
-        };
+      nix_shell = {
+        symbol = "";
+      };
 
-        nix_shell = {
-          symbol = "";
-        };
-
-        directory = {
-          style = "bold #9DA9A0";
-        };
-
-        git_metrics.disabled = false;
-        git_status = {
-          format = "(\[$all_status$ahead_behind\]($style) )";
-          ahead = "\${count}";
-          behind = "\${count}";
-          diverged = "\${ahead_count}\${behind_count}";
-        };
+      directory = {
+        style = "bold " + p.fg;
       };
     };
   };

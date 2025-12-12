@@ -2,7 +2,7 @@
   if_theme,
   p,
   ...
-}: if_theme "everforest_soft" {
+}: if_theme "everforest" {
   # TODO change visual bg to gray1 or something
 
   nv = {
@@ -18,7 +18,7 @@
           #   lualine_a_normal = { fg = p.bg; bg = p.gray1; };
           #   lualine_a_insert = { fg = p.bg; bg = p.fg; };
           #   lualine_a_inactive.fg = p.gray1;
-          LineNr.fg = p.gray2;
+          LineNr.fg = p.gray0;
         };
 
         colors_override = {
