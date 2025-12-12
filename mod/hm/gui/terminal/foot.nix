@@ -1,5 +1,6 @@
 {
   font_name,
+  font_pkg,
   lib,
   p,
   ...
@@ -9,7 +10,7 @@
     settings = {
       main = {
         term = "foot";
-        font = "${font_name}:size=22";
+        font = "${font_pkg}:size=22";
         dpi-aware = false;
         shell = "nu";
         pad = "12x6";
