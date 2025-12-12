@@ -209,7 +209,7 @@ in {
             # reload config
             "SUPER+ALT,r,reload_config"
 
-            "SUPER,n,focusmon,u"
+            "SUPER,n,spawn,mmsg -d focusmon u"
 
             # menu and terminal
             "SUPER,space,spawn,vicinae toggle"
