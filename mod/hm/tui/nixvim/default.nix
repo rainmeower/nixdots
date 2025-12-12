@@ -11,14 +11,8 @@
     ./nixvim.nix
     ./options.nix
 
-    ./theme/everforest/hard/hard.nix
-    ./theme/everforest/medium/medium.nix
-    ./theme/everforest/soft/soft.nix
-    ./theme/everforest/soft/lualine.nix
-    ./theme/everforest/medium/medium.nix
-    ./theme/everforest/medium/lualine.nix
-    ./theme/everforest/hard/hard.nix
-    ./theme/everforest/hard/lualine.nix
+    ./theme/everforest/everforest.nix
+    ./theme/everforest/lualine.nix
     ./theme/blacchiato.nix
     ./theme/lix.nix
     ./theme/macchiato.nix
