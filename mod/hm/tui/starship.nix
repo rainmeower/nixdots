@@ -1,4 +1,8 @@
 {
+  lib,
+  prompt_sym,
+  ...
+}:{
   programs.starship = {
     enable = true;
     enableBashIntegration = true;
@@ -13,6 +17,7 @@
       add_newline = true;
       continuation_prompt = "  ";
 
+      character.error_symbol = lib.mkDefault "[${prompt_sym}](red)";
 
       directory = {
         read_only = " ";

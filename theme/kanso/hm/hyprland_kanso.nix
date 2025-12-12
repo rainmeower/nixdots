@@ -3,7 +3,6 @@
   ...
 }: if_theme "kanso" {
   wayland.windowManager.hyprland = {
-
     settings = {
       general = {
         gaps_in = 4;

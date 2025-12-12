@@ -331,7 +331,10 @@ in {
 
           "title:ghostty_term,tags:9,isopensilent:1"
 
-          "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1"
+          "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1,tags:3"
+          # momentum mod
+          "appid:steam_app_1802710,force_tearing:1,isfullscreen:0,noblur:1,isfloating:0,width:2560,height:1080"
+
           "appid:swayimg,isnoanimation:1"
           "appid:equibop,appid:vesktop,tags:2,isopensilent:1"
           # TODO `isterm` + emacs/yazi?
