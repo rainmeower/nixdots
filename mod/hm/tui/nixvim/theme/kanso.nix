@@ -37,6 +37,14 @@
           ['@neorg.markup.bold'] = { fg = "#090E13", bg = "#8ba4b0" },
 
 
+            TelescopeBorder = { fg = "#22262D" },
+            TelescopeTitle = { fg = "#22262D" },
+            -- TelescopeSelection = { fg = "#22262D" },
+            -- TelescopeSelectionCaret = { fg = "#22262D" },
+            -- TelescopePromptPrefix = { fg = "#22262D" },
+            TelescopePromptCounter = { fg = "#22262D" },
+            TelescopePreviewBorder = { fg = "#22262D" },
+            TelescopeResultsBorder = { fg = "#22262D" },
 
             NoiceCmdlinePopupTitle = { fg = "#22262D" },
             NoiceCmdlinePopupTitleCalculator = { fg = "#22262D" },
@@ -54,13 +62,13 @@
             NoiceCmdlinePopupBorderInput = { fg = "#22262D" },
             NoiceCmdlinePopupBorderLua = { fg = "#22262D" },
 
-            NoiceCmdlineIcon = { fg = "#22262D" },
-            NoiceCmdlineIconCalculator = { fg = "#22262D" },
-            NoiceCmdlineIconCmdline = { fg = "#22262D" },
-            NoiceCmdlineIconFilter = { fg = "#22262D" },
-            NoiceCmdlineIconHelp = { fg = "#22262D" },
-            NoiceCmdlineIconInput = { fg = "#22262D" },
-            NoiceCmdlineIconLua = { fg = "#22262D" },
+            -- NoiceCmdlineIcon = { fg = "#22262D" },
+            -- NoiceCmdlineIconCalculator = { fg = "#22262D" },
+            -- NoiceCmdlineIconCmdline = { fg = "#22262D" },
+            -- NoiceCmdlineIconFilter = { fg = "#22262D" },
+            -- NoiceCmdlineIconHelp = { fg = "#22262D" },
+            -- NoiceCmdlineIconInput = { fg = "#22262D" },
+            -- NoiceCmdlineIconLua = { fg = "#22262D" },
 
             NoiceConfirmBorder = { fg = "#22262D" },
 
