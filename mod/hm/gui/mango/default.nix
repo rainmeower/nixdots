@@ -96,7 +96,7 @@ in {
 
         animation_duration_move  = 250;
         animation_duration_open  = 320;
-        animation_duration_close = 450;
+        animation_duration_close = 600;
         animation_duration_tag   = 0;
         animation_duration_focus = 0;
         animation_curve_move  = "0.46, 1.0,  0.29, 1";
