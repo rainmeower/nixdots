@@ -3,14 +3,14 @@
   ...
 }:{
   environment.systemPackages = with pkgs; [
-    osu-lazer
+    # osu-lazer
     # luanti
-    mindustry
+    # mindustry
 
     /* terminal */
     # tt
     # ttyper
-    vitetris
-    cl-wordle
+    # vitetris
+    # cl-wordle
   ];
 }

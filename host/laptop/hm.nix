@@ -28,7 +28,6 @@
         ../../theme/macchiato/home-manager
         ../../theme/kanso/home-manager
         ../../modules/home-manager/desktop.nix
-        ../../modules/home-manager/home.nix
 
         inputs.home-manager.nixosModules.home-manager
         inputs.nixvim.homeModules.nixvim

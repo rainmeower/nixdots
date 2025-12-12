@@ -4,10 +4,8 @@
   config,
   ...
 }:{
-  # FIXME doesnt do anything :(
   systemd.user.targets.nixos-fake-graphical-session = lib.mkForce {};
 
-  # FIXME `A compositor or graphical-session* target is already active!`
   programs.uwsm = {
     enable = true;
     waylandCompositors.mango = {
