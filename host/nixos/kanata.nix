@@ -1045,6 +1045,8 @@ ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held mods) (esc)
 
 (deflayermap sup ;; {{{
 ;; g sldr
+spc (multi (release-key lmet) (layer-switch action))
+
 
 lctl lctl
 rsft rsft
@@ -1084,6 +1086,12 @@ h h
 a a
 e e
 i i
+
+) ;; }}}
+
+(deflayermap action ;; {{{
+f (multi (layer-switch base)
+  (cmd mmsg -d togglefloating))
 
 ) ;; }}}
 
