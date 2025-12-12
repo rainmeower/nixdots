@@ -209,10 +209,10 @@ in {
             "SUPER+ALT,r,reload_config"
 
             # "SUPER,n,spawn,mmsg -d focusmon u"
-            "SUPER,left,spawn,mmsg -d focusmon DP-3"
-            "SUPER,right,spawn,mmsg -d focusmon DP-1"
-            "SUPER+SHIFT,left,spawn,mmsg -d tagmon DP-3,0"
-            "SUPER+SHIFT,right,spawn,mmsg -d tagmon DP-1,0"
+            # "SUPER,left,spawn,mmsg -d focusmon DP-3"
+            # "SUPER,right,spawn,mmsg -d focusmon DP-1"
+            # "SUPER+SHIFT,left,spawn,mmsg -d tagmon DP-3,0"
+            # "SUPER+SHIFT,right,spawn,mmsg -d tagmon DP-1,0"
 
 
             /* menu and terminal */
