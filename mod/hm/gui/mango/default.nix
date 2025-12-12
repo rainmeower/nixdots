@@ -215,7 +215,7 @@ in {
             "SUPER,space,spawn,vicinae toggle"
             "SUPER,s,spawn,footclient nvim"
             "SUPER,t,spawn,footclient"
-            "SUPER,c,spawn,footclient 'foot_yazi_isterm' yazi" # BUG cant be footclient
+            "SUPER,c,spawn,footclient -a 'foot_yazi_isterm' yazi" # BUG cant be footclient
             # goto most recent download
             ''SUPER+SHIFT,c,spawn_shell, footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/(\$f)"''
 
