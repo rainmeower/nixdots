@@ -104,6 +104,9 @@ in {
         animation_curve_close = "0.22, 0.94, 0.23, 1";
         animation_curve_tag   = "0.46, 1.0,  0.29, 1";
         animation_curve_focus = "0.46, 1.0,  0.29, 1";
+        # TODO
+        # animation_curve_opafadein  = 
+        # animation_curve_opafadeout = 
 
         # Scroller Layout Setting
         scroller_structs = gaps;
