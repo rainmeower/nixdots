@@ -1041,6 +1041,16 @@
       }
 
       {
+        on = "<C-a>";
+        run = "move -999";
+      }
+
+      {
+        on = "<C-e>";
+        run = "move 999";
+      }
+
+      {
         on = "t";
         run = "backward";
       }
