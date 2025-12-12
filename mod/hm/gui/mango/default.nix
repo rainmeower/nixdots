@@ -219,7 +219,7 @@ in {
             "SUPER,space,spawn,vicinae toggle"
             "SUPER,s,spawn,footclient nvim"
             "SUPER,t,spawn,footclient"
-            "SUPER,c,spawn,footclient -a 'foot.yazi.isterm' yazi"
+            "SUPER,c,spawn,foot -a 'foot.yazi.isterm' yazi"
 
             /* goto most recent download */
             ''SUPER+SHIFT,c,spawn_shell, footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/(\$f)"''
@@ -334,7 +334,7 @@ in {
           "appid:foot.yazi.filechooser,width:1080,height:1080,isnoborder:1,isfloating:1"
           "appid:foot.ncmpcpp,foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1"
 
-          "appid:foot.yazi.isterm,isterm:1,noswallow:1"
+          "appid:foot.yazi.isterm,isterm:1"
 
 
           "appid:foot.quit_prompt,isfloating:1,width:300,height:150"

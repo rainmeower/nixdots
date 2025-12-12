@@ -12,9 +12,7 @@ in {
         "blacchiato"
         "lix"
         "everforest"
-        "kanso_mist"
-        "kanso_ink"
-        "kanso_zen"
+        "kanso"
         "kantsi"
         "quiet"
       ];

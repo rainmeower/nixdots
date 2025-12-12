@@ -1,6 +1,6 @@
 {
   config = {
-    theme = "everforest";
+    theme = "kanso";
     wm = "mango";
     term = "foot";
     font = "iosevka";
