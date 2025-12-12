@@ -89,12 +89,14 @@ menu:
     cmd: niri msg action move-column-right
 
   - key: [ "a", "Mod4+a" ]
-    desc: first col
-    cmd: niri msg action focus-column-first
+    desc: vol down
+    cmd: wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-
+    keep_open: true
 
   - key: [ "e", "Mod4+e" ]
-    desc: last col
-    cmd: niri msg action focus-column-last
+    desc: vol up
+    cmd: wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+
+    keep_open: true
 
   - key: [ "t", "Mod4+t" ]
     desc: last col

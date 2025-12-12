@@ -176,8 +176,6 @@
 #"SUPER SHIFT, s, exec, footclient nvim -c 'lua require('persistence').load()'"
             "SUPER CTRL,  s, exec, $scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
             "SUPER,       g, exec, emacs"
-            "SUPER,   space, exec, walker -s 3 -m applications"
-            "SUPER SHIFT, y, exec, walker -s 3 -m catppuccin"
 
 
 # ", XF86AudioMute,        exec, $scrPath/volumecontrol.sh -o m"
@@ -408,8 +406,6 @@
 
             ];
         layerrule = [
-          "blur, walker"
-            "ignorezero, walker"
             "blur,notifications"
             "ignorezero,notifications"
         ];
