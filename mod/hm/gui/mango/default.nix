@@ -206,17 +206,22 @@ in {
           "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
           "SUPER+SHIFT,L,spawn,wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml"
 
-            # reload config
             "SUPER+ALT,r,reload_config"
 
-            "SUPER,n,spawn,mmsg -d focusmon u"
+            # "SUPER,n,spawn,mmsg -d focusmon u"
+            "SUPER,left,spawn,mmsg -d focusmon DP-3"
+            "SUPER,right,spawn,mmsg -d focusmon DP-1"
+            "SUPER+SHIFT,left,spawn,mmsg -d tagmon DP-3,0"
+            "SUPER+SHIFT,right,spawn,mmsg -d tagmon DP-1,0"
 
-            # menu and terminal
+
+            /* menu and terminal */
             "SUPER,space,spawn,vicinae toggle"
             "SUPER,s,spawn,footclient nvim"
             "SUPER,t,spawn,footclient"
             "SUPER,c,spawn,foot -a 'foot.yazi.isterm' yazi" # BUG cant be footclient
-            # goto most recent download
+
+            /* goto most recent download */
             ''SUPER+SHIFT,c,spawn_shell, footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/(\$f)"''
 
 

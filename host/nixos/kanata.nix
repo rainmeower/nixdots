@@ -487,9 +487,6 @@ mods:
       (key-history t 1)
     )) d break
 
-    ;; |&   closures with references
-    ((key-history \ 1)) (macro S-7) break
-
     ;; !(   rust macros
     ((key-history 1 1)) (macro S-9) break
 
@@ -1053,6 +1050,10 @@ rsft rsft
 
 ;; FIXME
 ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held fn) (esc) ())
+
+
+3 left
+8 right
 
 f18 tab
 f15 -
