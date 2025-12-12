@@ -1,3 +1,5 @@
+https://github.com/jtroo/kanata/discussions/1573
+
 - `mmsg -d setoption` repeat delay
 
 

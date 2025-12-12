@@ -388,6 +388,14 @@ mods:
     ;; }}}
 
     ;; code {{{
+
+    ;; ..
+    ((and
+      (not (key-history lsft 2))
+      (not (key-history rsft 2))
+      (key-history . 1)
+    )) . break
+
     ;; FIXME
     ;; Box
     ((and
@@ -492,8 +500,8 @@ mods:
 
     ;; >>
     ((and
-      (not (key-history lsft 2))
-      (not (key-history rsft 2))
+      (key-history lsft 2)
+      (key-history rsft 2)
       (key-history . 1)
     )) (macro S-.) break
 
@@ -1213,42 +1221,42 @@ g f12
   (l o u) (macro S-z S-z) 18 all-released (over sup melee fn mods) ;; vim save and quit
   (h a e) (macro C-S-x) 18 all-released (over sup melee fn) ;; vim save
   (f15 a) @cw 16 all-released (over sup melee fn)
-  (t g) caps 16 all-released (over sup melee fn)
+  (t g) caps 16 all-released (over sup melee fn game)
   (u i) (macro S-[ S-; S-/ S-]) 16 all-released (over sup melee fn)
   (a f17) S-5 15 all-released (over sup melee fn)
 
 
-  (t d) [ 20 all-released (over sup melee fn)
+  (t d) [ 20 all-released (over sup melee fn game)
   (a o) ] 20 all-released (over sup melee fn)
-  (c w) S-, 20 all-released (over sup melee fn)
+  (c w) S-, 20 all-released (over sup melee fn game)
   (h l) S-. 20 all-released (over sup melee fn)
 
-  (, ;) (macro S-; q) 20 all-released (over sup melee fn)
-  (q z) (macro q S-;) 20 all-released (over sup melee fn)
+  (, ;) (macro S-; q) 20 all-released (over sup melee fn game)
+  (q z) (macro q S-;) 20 all-released (over sup melee fn game)
 
 
-  (b f    ) \ 20 all-released (over sup melee fn)
-  ;; (  f d  ) S-7 15 all-released (over sup melee fn)
-  (  f   w) `   20 all-released (over sup melee fn)
-  (    d w) S-7 15 all-released (over sup melee fn)
+  (b f    ) \ 20 all-released (over sup melee fn game)
+  ;; (  f d  ) S-7 15 all-released (over sup melee fn game)
+  (  f   w) `   20 all-released (over sup melee fn game)
+  (    d w) S-7 15 all-released (over sup melee fn game)
   
   (l o    ) S-\ 14 all-released (over sup melee fn mods)
   (  o u  ) S-1 13 all-released (over sup melee fn mods)
   (    u .) S-6 15 all-released (over sup melee fn mods)
 
-  (n s    ) S-/ 14 all-released (over sup melee fn)
-  (  s t  ) '   13 all-released (over sup melee fn)
-  (  s   c) S-` 16 all-released (over sup melee fn)
-  (    t c) S-8   14 all-released (over sup melee fn)
+  (n s    ) S-/ 14 all-released (over sup melee fn game)
+  (  s t  ) '   13 all-released (over sup melee fn game)
+  (  s   c) S-` 16 all-released (over sup melee fn game)
+  (    t c) S-8   14 all-released (over sup melee fn game)
 
   (h a    ) S-' 14 all-released (over sup melee fn)
   (h   e  ) del 15 all-released (over sup melee fn)
   (  a e  ) +   14 all-released (over sup melee fn)
   ;; (    e i) S-. 14 all-released (over sup melee fn)
 
-  (, v    ) \   20 all-released (over sup melee fn)
-  (  v k  ) S-\ 20 all-released (over sup melee fn)
-  (    k g) S-4 20 all-released (over sup melee fn)
+  (, v    ) \   20 all-released (over sup melee fn game)
+  (  v k  ) S-\ 20 all-released (over sup melee fn game)
+  (    k g) S-4 20 all-released (over sup melee fn game)
 
   (f15 f16      ) S-3 20 all-released (over sup melee fn)
   ;; (f15     f17  ) S-5 20 all-released (over sup melee fn)

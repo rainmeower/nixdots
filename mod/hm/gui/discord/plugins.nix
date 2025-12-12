@@ -144,8 +144,8 @@
       nearestNeighbour = true;
       square = false; # handled by unrounding
 
-      zoom = 2.0;
-      size = 100.0;
+      zoom = 2.5;
+      size = 200.0;
       zoomSpeed = 0.5;
     };
 
