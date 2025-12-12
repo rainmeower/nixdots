@@ -1091,7 +1091,7 @@ i i
 
 (deflayermap action ;; {{{
 f (multi (layer-switch base)
-  (cmd mmsg -d togglefloating))
+  (cmd XDG_RUNTIME_DIR=/run/user/1000 mmsg -d togglefloating))
 
 ) ;; }}}
 
