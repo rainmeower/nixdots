@@ -10,6 +10,7 @@
       enable = true;
       settings = {
         background = "soft";
+        transparent_background = 2;
         disable_italic_comments = true;
         show_eob = 0; # ~ at end of buffer
 
