@@ -209,7 +209,7 @@ in {
             # reload config
             "SUPER+ALT,r,reload_config"
 
-            "SUPER,n,focusmon"
+            "SUPER,n,focusmon l"
 
             # menu and terminal
             "SUPER,space,spawn,vicinae toggle"
