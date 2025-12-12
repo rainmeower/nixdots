@@ -209,13 +209,13 @@ in {
             # reload config
             "SUPER+ALT,r,reload_config"
 
-            "SUPER,n,focusmon DPa"
+            "SUPER,n,focusmon u"
 
             # menu and terminal
             "SUPER,space,spawn,vicinae toggle"
             "SUPER,s,spawn,footclient nvim"
             "SUPER,t,spawn,footclient"
-            "SUPER,c,spawn,foot -a 'foot.yazi.isterm' yazi" # BUG cant be footclient
+            "SUPER,c,spawn,footclient yazi" # BUG cant be footclient
             # goto most recent download
             ''SUPER+SHIFT,c,spawn_shell, footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/(\$f)"''
 
@@ -328,7 +328,8 @@ in {
         windowrule = [
           "appid:foot.yazi.filechooser,width:1080,height:1080,isnoborder:1,isfloating:1"
           "appid:foot.ncmpcpp,foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1"
-          "appid:foot.yazi.isterm,isterm:1"
+          # "appid:foot.yazi.isterm,isterm:1"
+          "appid:footclient,isterm:1"
           "appid:foot.quit_prompt,isfloating:1,width:300,height:150"
 
           "title:ghostty_term,tags:9,isopensilent:1"
