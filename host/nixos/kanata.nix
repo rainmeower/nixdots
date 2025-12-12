@@ -997,6 +997,8 @@ f16 9
 f17 0
 f19 lsft
 
+lmet (multi (tap-hold-release-tap-keys-release 120 120 esc lmet () ()) (layer-while-held sup))
+
 ) ;; }}}
 
 (deflayermap melee ;; {{{
