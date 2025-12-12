@@ -1,5 +1,6 @@
 {
   p,
+  lib,
   ...
 }:{
   programs.yazi.theme = {
@@ -77,12 +78,12 @@
 
     tabs = {
       active = {
-        bg = p.accent;
+        bg = lib.mkDefault p.accent;
         fg = p.bg;
       };
       inactive = {
         bg = p.bg;
-        fg = p.accent;
+        fg = lib.mkDefault p.accent;
       };
 
       sep_inner = {
@@ -157,7 +158,7 @@
     }
     {
       name = "*/";
-      fg = p.accent;
+      fg = lib.mkDefault p.accent;
     }
     ];
   };
