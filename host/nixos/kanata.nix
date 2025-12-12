@@ -990,6 +990,38 @@ r spc
 spc r
 ) ;; }}}
 
+
+(deflayermap game ;; {{{
+j /
+/ j
+
+x S--
+f15 @magic_2
+
+
+
+a (tap-hold-release-tap-keys-release 120 120 a rsft (bspc f15 f16 f17 f18 ; spc) ())
+h (tap-hold-release-tap-keys-release 120 120 h rctl (bspc f15 f16 f17 f18 ; spc) ())
+
+
+
+
+f16 S-9
+f17 @rp
+lmet (multi (tap-hold-release-tap-keys-release 120 120 esc lmet () ()) (layer-while-held sup))
+f19 lsft
+;; rsft (tap-hold-press 120 120 bspc rctl)
+rsft bspc
+ralt (tap-hold-press 120 120 tab (layer-while-held fn))
+lctrl lctrl
+bspc @rpeat
+
+;; ent (tap-hold-press 120 120 ent (layer-while-held mods))
+ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held mods) (esc) ())
+
+) ;; }}}
+
+
 (deflayermap over ;; {{{
 f18 tab
 f15 8
