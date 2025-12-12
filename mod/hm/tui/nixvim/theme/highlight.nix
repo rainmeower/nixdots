@@ -45,31 +45,31 @@
     # noice {{{
 
 
-    NoiceCmdlinePopupTitle.fg = p.accent;
-    NoiceCmdlinePopupTitleCalculator.fg = p.accent;
-    NoiceCmdlinePopupTitleCmdline.fg = p.accent;
-    NoiceCmdlinePopupTitleFilter.fg = p.accent;
-    NoiceCmdlinePopupTitleHelp.fg = p.accent;
-    NoiceCmdlinePopupTitleInput.fg = p.accent;
-    NoiceCmdlinePopupTitleLua.fg = p.accent;
+    NoiceCmdlinePopupTitle.fg = lib.mkDefault p.accent;
+    NoiceCmdlinePopupTitleCalculator.fg = lib.mkDefault p.accent;
+    NoiceCmdlinePopupTitleCmdline.fg = lib.mkDefault p.accent;
+    NoiceCmdlinePopupTitleFilter.fg = lib.mkDefault p.accent;
+    NoiceCmdlinePopupTitleHelp.fg = lib.mkDefault p.accent;
+    NoiceCmdlinePopupTitleInput.fg = lib.mkDefault p.accent;
+    NoiceCmdlinePopupTitleLua.fg = lib.mkDefault p.accent;
 
-    NoiceCmdlinePopupBorder.fg = p.accent;
-    NoiceCmdlinePopupBorderCalculator.fg = p.accent;
-    NoiceCmdlinePopupBorderCmdline.fg = p.accent;
-    NoiceCmdlinePopupBorderFilter.fg = p.accent;
-    NoiceCmdlinePopupBorderHelp.fg = p.accent;
-    NoiceCmdlinePopupBorderInput.fg = p.accent;
-    NoiceCmdlinePopupBorderLua.fg = p.accent;
+    NoiceCmdlinePopupBorder.fg = lib.mkDefault p.accent;
+    NoiceCmdlinePopupBorderCalculator.fg = lib.mkDefault p.accent;
+    NoiceCmdlinePopupBorderCmdline.fg = lib.mkDefault p.accent;
+    NoiceCmdlinePopupBorderFilter.fg = lib.mkDefault p.accent;
+    NoiceCmdlinePopupBorderHelp.fg = lib.mkDefault p.accent;
+    NoiceCmdlinePopupBorderInput.fg = lib.mkDefault p.accent;
+    NoiceCmdlinePopupBorderLua.fg = lib.mkDefault p.accent;
 
-    NoiceCmdlineIcon.fg = p.accent;
-    NoiceCmdlineIconCalculator.fg = p.accent;
-    NoiceCmdlineIconCmdline.fg = p.accent;
-    NoiceCmdlineIconFilter.fg = p.accent;
-    NoiceCmdlineIconHelp.fg = p.accent;
-    NoiceCmdlineIconInput.fg = p.accent;
-    NoiceCmdlineIconLua.fg = p.accent;
+    NoiceCmdlineIcon.fg = lib.mkDefault p.accent; # files icon i think?
+    NoiceCmdlineIconCalculator.fg = lib.mkDefault p.accent;
+    NoiceCmdlineIconCmdline.fg = lib.mkDefault p.accent;
+    NoiceCmdlineIconFilter.fg = lib.mkDefault p.accent;
+    NoiceCmdlineIconHelp.fg = lib.mkDefault p.accent;
+    NoiceCmdlineIconInput.fg = lib.mkDefault p.accent;
+    NoiceCmdlineIconLua.fg = lib.mkDefault p.accent;
 
-    NoiceConfirmBorder.fg = p.accent;
+    NoiceConfirmBorder.fg = lib.mkDefault p.accent;
     # }}}
 
 
