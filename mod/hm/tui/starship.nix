@@ -57,9 +57,6 @@
         "\${custom.yazi}"
         "$character"
       ];
-      right_format = lib.concatStrings [
-        "$all"
-      ];
       };
 
     };
