@@ -13,6 +13,12 @@
   gaps = 10;
   h = lib.removePrefix "#";
   corners = if rounding then 10 else 0;
+  action = key: action: ''
+bind=NONE,${key},${action}
+bind=SUPER,${key},${action}
+bind=NONE,${key},setkeymode,default
+bind=SUPER,${key},setkeymode,default
+    '';
 in {
   imports = [
     inputs.mango.hmModules.mango
@@ -375,9 +381,11 @@ in {
 bind=SUPER,space,setkeymode,action
 
 keymode=action
-bind=NONE,f,togglefloating
-bind=SUPER,f,togglefloating
-bind=NONE,f,setkeymode,default
+${action "f" "togglefloating"}
+# bind=NONE,f,togglefloating
+# bind=SUPER,f,togglefloating
+# bind=NONE,f,setkeymode,default
+# bind=SUPER,f,setkeymode,default
           '';
     };
   };
