@@ -7,5 +7,6 @@
     CARGO_PROFILE_RELEASE_STRIP = "symbols";
     CARGO_PROFILE_RELEASE_DEBUG = false;
     RUSTFLAGS = "-C target-cpu=native -Z threads=16";
+    # TODO https://nnethercote.github.io/perf-book/build-configuration.html#alternative-allocators
   };
 })

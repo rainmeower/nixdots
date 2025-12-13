@@ -71,7 +71,6 @@ in {
         # settings {{{
         allow_tearing = true; # gayming latent sea
         xwayland_persistence = false;
-        exchange_cross_monitor = false;
 
         exec-once = "~/.config/mango/autostart.sh";
 
@@ -150,7 +149,8 @@ in {
         inhibit_regardless_of_visibility = false;
         sloppyfocus = false;
         warpcursor = true;
-        focus_cross_monitor = true;
+        exchange_cross_monitor = false;
+        focus_cross_monitor = false;
         focus_cross_tag = false;
         enable_floating_snap = false;
         snap_distance = 30;
