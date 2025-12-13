@@ -1,1 +1,1 @@
-pkill ncmpcpp || foot -a "foot.ncmpcpp" ncmpcpp
+pkill ncmpcpp || footclient -a "foot.ncmpcpp" ncmpcpp
