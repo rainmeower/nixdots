@@ -45,11 +45,6 @@
         desc = "open rofi here";
       }
       {
-        on = [ "g" "<C-Space>" ];
-        run = "shell '${flake_dir}/stuff/rofi/s-img-rec'";
-        desc = "open rofi here (rec)";
-      }
-      {
         on = [ "g" "<Enter>" ];
         run = "plugin open-with-cmd --args=block";
         desc = "open with command";
