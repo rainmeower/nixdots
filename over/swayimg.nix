@@ -1,3 +1,4 @@
+# TODO ignores and uses binary cache
 (final: prev: {
   swayimg = prev.swayimg.overrideAttrs {
     mesonBuildFlags = [

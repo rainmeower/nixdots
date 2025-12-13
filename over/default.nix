@@ -15,6 +15,7 @@
   (import ./nvim.nix)
   (import ./yazi.nix)
   (import ./mpv.nix)
+  # (import ./systemd.nix)
   (import ./swayimg.nix)
   (import ./ripgrep.nix)
 

@@ -1,3 +1,3 @@
 (final: prev: {
- keyb0xx = final.callPackage ../pkgs/keyb0xx {};
+  keyb0xx = final.callPackage ../pkgs/keyb0xx {};
 })
