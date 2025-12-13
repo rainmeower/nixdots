@@ -216,7 +216,7 @@ in {
 
 
             /* menu and terminal */
-            "SUPER,space,spawn,vicinae toggle"
+            # "SUPER,space,spawn,vicinae toggle"
             "SUPER,s,spawn,footclient nvim"
             "SUPER,t,spawn,footclient"
             "SUPER,c,spawn,foot -a 'foot.yazi.isterm' yazi"
@@ -371,7 +371,12 @@ in {
         #   # "XDG_CURRENT_DESKTOP=mango"
         #   # "XDG_SESSION_DESKTOP=mango"
         # ];
-      };} + "meow";
+      };} + ''
+bind=Super,space,setkeymode,action
+
+keymode=action
+bind=NONE,f,togglefloating
+          '';
     };
   };
 }
