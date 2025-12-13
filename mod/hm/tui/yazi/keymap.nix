@@ -46,7 +46,7 @@
       }
       {
         on = [ "g" "<S-Space>" ];
-        run = "shell '${flake_dir}/stuff/rofi/s-img 10'";
+        run = "shell '${flake_dir}/stuff/rofi/s-img-rec'";
         desc = "open rofi here (rec)";
       }
       {
