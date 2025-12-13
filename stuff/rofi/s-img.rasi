@@ -1,0 +1,124 @@
+// # z0mbi3 -  https://github.com/gh0stzk/dotfiles
+
+configuration {
+    modi:                "drun";
+    show-icons:          true;
+    drun-display-format: "{name}";
+}
+
+window {
+    enabled:          true;
+    fullscreen:       false;
+    width:            80%;
+    height:           65%;
+    transparency:     "real";
+    cursor:           "default";
+    spacing:          0px;
+    padding:          10px;
+    border:           3px;
+    border-radius:    0px;
+    border-color:     #ffffff;
+    background-color: transparent;
+}
+
+mainbox {
+    enabled:          true;
+    children:         [ "inputbar", "listview" ];
+    background-color: #000000cc;
+}
+
+inputbar {
+    enabled:          true;
+    spacing:          10px;
+    margin:           0px;
+    padding:          0px 0px 0px 0px;
+    border:           0px 0px 0px 0px;
+    border-radius:    0px;
+    border-color:     #ffffff;
+    background-color: transparent;
+    text-color:       #ffffff;
+    children:         [ "entry", "prompt" ];
+}
+
+prompt {
+    enabled:          true;
+    padding:          15px 15px 15px 15px;
+    border:           0px 0px 0px 1px;
+    border-color:     #ffffff;
+    background-color: transparent;
+    text-color:       inherit;
+}
+textbox-prompt-colon {
+    enabled:           true;
+    expand:            false;
+    str:               "::";
+    background-color:  inherit;
+    text-color:        inherit;
+}
+entry {
+    enabled:           true;
+    border-radius:     0px;
+    padding:           15px;
+    background-color:  #000000cc;
+    text-color:        inherit;
+    cursor:            text;
+    placeholder:       "search...";
+    placeholder-color: inherit;
+}
+
+listview {
+    enabled:          true;
+    columns:          8;
+    lines:            5;
+    spacing:          0px;
+    padding:          0px 0px;
+    cycle:            true;
+    dynamic:          false;
+    scrollbar:        false;
+    /**layout:           vertical; */
+    flow:             horizontal;
+    reverse:          false;
+    fixed-height:     true;
+    fixed-columns:    true;
+    cursor:           "default";
+    background-color: transparent;
+    text-color:       #ffffff;
+}
+
+element {
+    enabled:          true;
+    orientation:      vertical;
+    spacing:          0px;
+    padding:          3px;
+    cursor:           pointer;
+    background-color: transparent;
+    text-color:       #ffffff;
+}
+
+@media(max-aspect-ratio: 1.8) {
+    element {
+        orientation: vertical;
+    }
+}
+
+element selected.normal {
+    background-color: #ffffff11;
+    text-color:       #000000;
+}
+
+element-icon {
+  	border-radius:	  0px;
+    size:             150px;
+    cursor:           inherit;
+    background-color: transparent;
+    text-color:       inherit;
+}
+
+element-text {
+    vertical-align:   0.5;
+    horizontal-align: 0.5;
+    padding:          0px;
+    cursor:           inherit;
+    background-color: transparent;
+    text-color:       inherit;
+}

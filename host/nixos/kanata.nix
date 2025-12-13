@@ -1043,6 +1043,7 @@ lmet (multi (tap-hold-release-tap-keys-release 120 120 esc lmet () ()) (layer-wh
 ) ;; }}}
 
 (deflayermap melee ;; {{{
+8 right
 
 f18 tab
 f15 8

@@ -34,10 +34,15 @@
   
       # }}}
 
+      # {
+      #   on = [ "g" "<Space>" ];
+      #   run = "plugin file-actions -- --around ";
+      #   desc = "perform action on selected files";
+      # }
       {
         on = [ "g" "<Space>" ];
-        run = "plugin file-actions -- --around ";
-        desc = "perform action on selected files";
+        run = "shell '${flake_dir}/stuff/rofi/s-img'";
+        desc = "open rofi here";
       }
       {
         on = [ "g" "<Enter>" ];
