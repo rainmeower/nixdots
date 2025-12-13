@@ -371,7 +371,7 @@ in {
         #   # "XDG_CURRENT_DESKTOP=mango"
         #   # "XDG_SESSION_DESKTOP=mango"
         # ];
-      };};
+      };} + "meow";
     };
   };
 }
