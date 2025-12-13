@@ -1086,7 +1086,7 @@ ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held mods) (esc)
 
 (deflayermap sup ;; {{{
 ;; g sldr
-spc (multi (release-key lmet) (layer-switch action))
+;; spc (multi (release-key lmet) (layer-switch action))
 
 
 lctl lctl
@@ -1134,13 +1134,12 @@ i i
 
 ) ;; }}}
 
-(deflayermap action ;; {{{
-f (multi (layer-switch base)
-  ;; (cmd /etc/profiles/per-user/meow/bin/mmsg -d togglefloating))
-  ;; (cmd bash -c 'XDG_RUNTIME_DIR=/run/user/1000 /etc/profiles/per-user/meow/bin/mmsg -d togglefloating'))
-  (cmd sudo -u meow foot))
-
-) ;; }}}
+;; (deflayermap action ;; {{{
+;; f (multi (layer-switch base)
+;;   (cmd /etc/profiles/per-user/meow/bin/mmsg -d togglefloating))
+;;   ;; (cmd bash -c 'XDG_RUNTIME_DIR=/run/user/1000 /etc/profiles/per-user/meow/bin/mmsg -d togglefloating'))
+;;
+;; ) ;; }}}
 
 (deflayermap syms ;; {{{
 
