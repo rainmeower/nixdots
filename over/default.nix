@@ -14,6 +14,7 @@
   (import ./nushell.nix)
   (import ./nvim.nix)
   (import ./yazi.nix)
+  (import ./mpv.nix)
   (import ./ripgrep.nix)
 
   (import ./vicinae-extension-nix.nix)
