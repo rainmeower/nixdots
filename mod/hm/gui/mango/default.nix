@@ -19,6 +19,10 @@ bind=SUPER,${key},${action}
 bind=NONE,${key},setkeymode,default
 bind=SUPER,${key},setkeymode,default
     '';
+  action_stay = key: action: ''
+bind=NONE,${key},${action}
+bind=SUPER,${key},${action}
+    '';
 in {
   imports = [
     inputs.mango.hmModules.mango
@@ -381,11 +385,12 @@ in {
 bind=SUPER,space,setkeymode,action
 
 keymode=action
+${action "escape" "spawn,echo"} # goto default keymode
 ${action "f" "togglefloating"}
-# bind=NONE,f,togglefloating
-# bind=SUPER,f,togglefloating
-# bind=NONE,f,setkeymode,default
-# bind=SUPER,f,setkeymode,default
+${action "c" "centerwin"}
+${action "m" "togglefakefullscreen"}
+${action_stay "a" "spawn,wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"}
+${action_stay "e" "spawn,wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"}
           '';
     };
   };
