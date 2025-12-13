@@ -41,8 +41,8 @@
       current_item_suffix = "$/r$(end)";
       current_item_inactive_column_prefix = "$(blue)$r";
       current_item_inactive_column_suffix = "$/r$(end)";
-      now_playing_prefix = "$b";
-      now_playing_suffix = "$/b";
+      now_playing_prefix = "";
+      now_playing_suffix = "";
       browser_playlist_prefix = "'$2playlist$9 '";
       selected_item_prefix = "$6";
       selected_item_suffix = "$9";
@@ -70,8 +70,8 @@
       connected_message_on_startup = false;
       titles_visibility = false;
       header_text_scrolling = true;
-      cyclic_scrolling = false;
-      lyrics_fetchers = "tags, genius, tekstowo, plyrics, justsomelyrics, jahlyrics, zeneszoveg, internet";
+      cyclic_scrolling = true;
+      lyrics_fetchers = "tags";
       follow_now_playing_lyrics = false;
       fetch_lyrics_for_current_song_in_background = false;
       store_lyrics_in_song_dir = false;
