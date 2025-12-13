@@ -322,10 +322,12 @@ in {
         layerrule = [
           "animation_type_open:zoom,animation_type_close:zoom,layer_name:vicinae"
           # "animation_type_open:zoom,animation_type_close:zoom,layer_name:rofi"
-          # "noblur:1,layer_name:slurp"
+          "noblur:1,layer_name:selection" # slurp
         ];
 
         windowrule = [
+            # TODO let swayimg set its own height
+
           "appid:foot.yazi.filechooser,width:1080,height:1080,isnoborder:1,isfloating:1"
           "appid:foot.ncmpcpp,foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1"
 
