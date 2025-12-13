@@ -7,12 +7,12 @@ images=$(find "$current_location" -maxdepth 1 -type f \( -iname "*.jpg" -o -inam
 selected_image=$(for img in $images; do
     relative_path="${img#$current_location/}"
     echo -en "$relative_path\0icon\x1f$img\n"
-done | rofi -dmenu -i -p "$current_location" -theme ~/nix/stuff/rofi/s-img.rasi)
+done | rofi -dmenu -i -p "$current_location" -theme $XDG_CONFIG_HOME/rofi/s-img.rasi)
 
 if [[ -n $selected_image ]]; then
     full_path="$current_location/$selected_image"
     
-    action=$(echo -e "yazi\nopen\nyank\nyank path\nrename" | rofi -dmenu -i -p "" -theme ~/nix/stuff/rofi/launcher3.rasi)
+    action=$(echo -e "yazi\nopen\nyank\nyank path\nrename" | rofi -dmenu -i -p "" -theme $XDG_CONFIG_HOME/rofi/launcher3.rasi)
     
     case $action in
         "yazi")

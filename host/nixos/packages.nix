@@ -4,8 +4,6 @@
   ...
 }:{
   environment.systemPackages = with pkgs; [
-    rofi
-
     godot
 
     bmm
