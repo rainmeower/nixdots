@@ -372,10 +372,11 @@ in {
         #   # "XDG_SESSION_DESKTOP=mango"
         # ];
       };} + ''
-bind=Super,space,setkeymode,action
+bind=SUPER,space,setkeymode,action
 
 keymode=action
 bind=NONE,f,togglefloating
+bind=SUPER,f,togglefloating
 bind=NONE,f,setkeymode,default
           '';
     };
