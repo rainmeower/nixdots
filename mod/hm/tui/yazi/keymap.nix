@@ -41,12 +41,12 @@
       # }
       {
         on = [ "g" "<Space>" ];
-        run = "shell '${flake_dir}/stuff/rofi/s-img 1'";
+        run = "shell '${flake_dir}/stuff/rofi/s-img'";
         desc = "open rofi here";
       }
       {
         on = [ "g" "<C-Space>" ];
-        run = "shell '${flake_dir}/stuff/rofi/s-img 10'";
+        run = "shell '${flake_dir}/stuff/rofi/s-img-rec'";
         desc = "open rofi here (rec)";
       }
       {
