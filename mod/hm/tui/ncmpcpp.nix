@@ -1,5 +1,5 @@
 {
-  config,
+  os_config,
   rounding,
   userDirs,
   ...
@@ -24,7 +24,8 @@
       ncmpcpp_directory =
         userDirs.extraConfig.XDG_CONFIG_HOME + "/ncmpcpp";
       lyrics_directory =
-        userDirs.extraConfig.XDG_DATA_HOME + "/mpd/lyrics";
+        os_config.services.mpd.dataDir + "/lyrics";
+
       mpd_music_dir =
         userDirs.music;
 
@@ -54,7 +55,7 @@
 
 
       ## Available values: classic, alternative.
-      user_interface = "classic";
+      user_interface = "alternative";
       data_fetching_delay = true;
       ## Available values: artist, album_artist, date, genre, composer, performer.
       media_library_primary_tag = "artist";
