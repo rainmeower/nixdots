@@ -90,12 +90,12 @@ menu:
 
   - key: [ "a", "Mod4+a" ]
     desc: vol down
-    cmd: wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-
+    cmd: wpctl set-volume -l 0.5 @DEFAULT_AUDIO_SINK@ 2%-
     keep_open: true
 
   - key: [ "e", "Mod4+e" ]
     desc: vol up
-    cmd: wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+
+    cmd: wpctl set-volume -l 0.5 @DEFAULT_AUDIO_SINK@ 2%+
     keep_open: true
 
   - key: [ "t", "Mod4+t" ]

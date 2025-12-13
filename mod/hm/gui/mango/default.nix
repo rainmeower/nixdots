@@ -10,6 +10,7 @@
   rounding,
 	...
 }: let
+# {{{
   gaps = 10;
   h = lib.removePrefix "#";
   corners = if rounding then 10 else 0;
@@ -23,6 +24,7 @@ bind=SUPER,${key},setkeymode,default
 bind=NONE,${key},${action}
 bind=SUPER,${key},${action}
     '';
+# }}}
 in {
   imports = [
     inputs.mango.hmModules.mango
@@ -66,6 +68,7 @@ in {
             toString value;
           in "${key}=${value'}";
       } {globalSection = {
+        # settings {{{
         allow_tearing = true; # gayming latent sea
         xwayland_persistence = false;
         exchange_cross_monitor = false;
@@ -190,9 +193,10 @@ in {
         overlaycolor = "0x90b99fff";
         scratchpadcolor     = "0x85b5baff";
         maximizescreencolor = "0x${h p.pink}ff";
+        # }}}
 
         # center_tile deck grid monocle right_tile scroller tile vertical_deck vertical_grid vertical_scroller vertical_spiral vertical_tile
-        tagrule = [
+        tagrule = [ # {{{
           "id:1,layout_name:tile"
           "id:2,layout_name:grid"
           "id:3,layout_name:scroller" # vertical scroller?
@@ -202,16 +206,12 @@ in {
           "id:7,layout_name:vertical_scroller,monitor_name:DP-3"
           "id:8,layout_name:monocle"
           "id:9,layout_name:vertical_tile"
-        ];
+        ]; # }}}
 
         # Key Bindings
         # key name refer to `xev` or `wev` command output,
         # mod keys name: super,ctrl,alt,shift,none
-        bind = [
-
-          "NONE,XF86AudioRaiseVolume,spawn_shell,wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
-          "NONE,XF86AudioLowerVolume,spawn_shell,wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"
-
+        bind = [ # {{{
           "SUPER,G,spawn,wlr-which-key"
           "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
           "SUPER+SHIFT,L,spawn,wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml"
@@ -322,7 +322,7 @@ in {
 #"CTRL+ALT,Down,resizewin,+0,+50"
 #"CTRL+ALT,Left,resizewin,-50,+0"
 #"CTRL+ALT,Right,resizewin,+50,+0"
-            ];
+            ]; # }}}
 
         mousebind = [
           "SUPER,btn_left,moveresize,curmove"
@@ -335,7 +335,7 @@ in {
           "noblur:1,layer_name:selection" # slurp
         ];
 
-        windowrule = [
+        windowrule = [ # {{{
             # TODO let swayimg set its own height
 
           "appid:foot.yazi.filechooser,width:1080,height:1080,isnoborder:1,isfloating:1"
@@ -355,7 +355,7 @@ in {
           "appid:swayimg,isnoanimation:1"
           "appid:equibop,appid:vesktop,tags:2,isopensilent:1"
           # TODO `isterm` + emacs/yazi?
-        ];
+        ]; # }}}
 
 
         monitorrule = [
@@ -363,7 +363,7 @@ in {
           "DP-3, 0.5, 1, vertical_scroller, 3, 1, 0, 0, 2560, 1440, 74.971001"
         ];
 
-        # env = [
+        # env = [ # {{{
         #   "ELECTRON_OZONE_PLATFORM_HINT=auto"
         #   "_JAVA_AWT_WM_NONREPARENTING=1"
         #
@@ -380,7 +380,7 @@ in {
         #   # mango or mangowc?
         #   # "XDG_CURRENT_DESKTOP=mango"
         #   # "XDG_SESSION_DESKTOP=mango"
-        # ];
+        # ]; # }}}
       };} + ''
 bind=SUPER,space,setkeymode,action
 
@@ -389,8 +389,11 @@ ${action "escape" "spawn,echo"} # goto default keymode
 ${action "f" "togglefloating"}
 ${action "c" "centerwin"}
 ${action "m" "togglefakefullscreen"}
-${action_stay "a" "spawn,wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"}
-${action_stay "e" "spawn,wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"}
+${action_stay "a" "spawn,wpctl set-volume -l 0.5 @DEFAULT_AUDIO_SINK@ 2%-"}
+${action_stay "e" "spawn,wpctl set-volume -l 0.5 @DEFAULT_AUDIO_SINK@ 2%+"}
+${action "z" "${flake_dir}/stuff/scripts/eep.sh"}
+${action "x" "${flake_dir}/stuff/scripts/clear.sh"}
+${action "underscore" "${flake_dir}/stuff/scripts/clear.sh"}
           '';
     };
   };
