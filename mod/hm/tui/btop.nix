@@ -158,18 +158,17 @@
 #* Example: "/mnt/media:100 /:20 /boot:1".
       io_graph_speeds = "";
 
-#* Set fixed values for network graphs in Mebibits. Is only used if net_auto is also set to false.
+      # fixed values for network graphs in MiB.
+      # only used if net_auto is also set to false
       net_download = 100;
-
       net_upload = 100;
 
-#* Use network graphs auto rescaling mode, ignores any values set above and rescales down to 10 Kibibytes at the lowest.
+      # auto rescaling
       net_auto = true;
 
-#* Sync the auto scaling for download and upload to whichever currently has the highest scale.
+      # sync the auto scaling whichever currently has the highest scale
       net_sync = true;
 
-#* Starts with the Network Interface specified here.
       net_iface = "";
 
       show_battery = true;

@@ -55,51 +55,51 @@
 
       ## Available values: classic, alternative.
       user_interface = "classic";
-      data_fetching_delay = "yes";
+      data_fetching_delay = true;
       ## Available values: artist, album_artist, date, genre, composer, performer.
       media_library_primary_tag = "artist";
-      media_library_albums_split_by_date = "yes";
-      media_library_hide_album_dates = "no";
+      media_library_albums_split_by_date = true;
+      media_library_hide_album_dates = false;
       ## Available values: wrapped, normal.
       default_find_mode = "wrapped";
       default_tag_editor_pattern = "%n - %t";
-      header_visibility = "yes";
-      statusbar_visibility = "yes";
+      header_visibility = true;
+      statusbar_visibility = true;
 
       # Show the "Connected to ..." message on startup
-      connected_message_on_startup = "no";
-      titles_visibility = "yes";
-      header_text_scrolling = "yes";
-      cyclic_scrolling = "no";
+      connected_message_on_startup = false;
+      titles_visibility = false;
+      header_text_scrolling = true;
+      cyclic_scrolling = false;
       lyrics_fetchers = "tags, genius, tekstowo, plyrics, justsomelyrics, jahlyrics, zeneszoveg, internet";
-      follow_now_playing_lyrics = "no";
-      fetch_lyrics_for_current_song_in_background = "no";
-      store_lyrics_in_song_dir = "no";
+      follow_now_playing_lyrics = false;
+      fetch_lyrics_for_current_song_in_background = false;
+      store_lyrics_in_song_dir = false;
       generate_win32_compatible_filenames = false;
-      allow_for_physical_item_deletion = "no";
+      allow_for_physical_item_deletion = false;
 
       screen_switcher_mode = "playlist, browser";
       startup_screen = "browser";
       startup_slave_screen = "";
 
-      startup_slave_screen_focus = "no";
+      startup_slave_screen_focus = false;
       locked_screen_width_part = "50";
 
-      ask_for_locked_screen_width_part = "yes";
+      ask_for_locked_screen_width_part = true;
       media_library_column_width_ratio_two = "1:1";
       media_library_column_width_ratio_three = "1:1:1";
       playlist_editor_column_width_ratio = "1:2";
-      jump_to_now_playing_song_at_start = "yes";
-      ask_before_clearing_playlists = "yes";
-      clock_display_seconds = "no";
-      display_volume_level = "no";
-      display_bitrate = "no";
-      display_remaining_time = "no";
+      jump_to_now_playing_song_at_start = true;
+      ask_before_clearing_playlists = true;
+      clock_display_seconds = false;
+      display_volume_level = false;
+      display_bitrate = false;
+      display_remaining_time = false;
       regular_expressions = "perl";
-      ignore_leading_the = "no";
+      ignore_leading_the = false;
 
       external_editor = "nvim";
-      use_console_editor = "yes";
+      use_console_editor = true;
     };
   };
 }

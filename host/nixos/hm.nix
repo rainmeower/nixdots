@@ -83,7 +83,6 @@
         ../../mod/hm/gui/terminal/foot.nix
         ../../mod/hm/gui/terminal/ghostty.nix
         ../../mod/hm/gui/terminal/kitty.nix
-        ../../mod/hm/gui/textfox.nix
         ../../mod/hm/gui/tofi.nix
         # ../../mod/hm/gui/discord/vesktop.nix
         ../../mod/hm/gui/discord/nixcord.nix
