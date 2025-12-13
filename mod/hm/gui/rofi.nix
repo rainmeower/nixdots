@@ -25,19 +25,16 @@ configuration {
     background-color: transparent;
 }
 
-// Window
 window {
     background-color: ${p.bgtrans};
     fullscreen: true;    
 }
 
-// Main Box
 mainbox {
     children: [listview];
     padding: 25% 0%;
 }
 
-// Listview
 listview {
     padding: 0px 10px;
     spacing: 10px;

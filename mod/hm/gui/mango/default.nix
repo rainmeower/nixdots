@@ -321,7 +321,7 @@ in {
 
         layerrule = [
           "animation_type_open:zoom,animation_type_close:zoom,layer_name:vicinae"
-          "animation_type_open:zoom,animation_type_close:zoom,layer_name:rofi"
+          # "animation_type_open:zoom,animation_type_close:zoom,layer_name:rofi"
           # "noblur:1,layer_name:slurp"
         ];
 
