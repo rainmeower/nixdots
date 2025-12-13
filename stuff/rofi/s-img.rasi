@@ -17,26 +17,22 @@ window {
     padding:          10px;
     border:           3px;
     border-radius:    0px;
-    border-color:     #ffffff;
-    background-color: transparent;
+    border-color:     #8ba4b0;
+    background-color: #090e13cc;
 }
 
 mainbox {
     enabled:          true;
     children:         [ "inputbar", "listview" ];
-    background-color: #000000cc;
+    background-color: transparent;
 }
 
 inputbar {
     enabled:          true;
     spacing:          10px;
-    margin:           0px;
-    padding:          0px 0px 0px 0px;
-    border:           0px 0px 0px 0px;
-    border-radius:    0px;
-    border-color:     #ffffff;
+    border-color:     #c5c9c7;
     background-color: transparent;
-    text-color:       #ffffff;
+    text-color:       #c5c9c7;
     children:         [ "entry", "prompt" ];
 }
 
@@ -44,10 +40,11 @@ prompt {
     enabled:          true;
     padding:          15px 15px 15px 15px;
     border:           0px 0px 0px 1px;
-    border-color:     #ffffff;
+    border-color:     #c5c9c7;
     background-color: transparent;
     text-color:       inherit;
 }
+
 textbox-prompt-colon {
     enabled:           true;
     expand:            false;
@@ -55,44 +52,43 @@ textbox-prompt-colon {
     background-color:  inherit;
     text-color:        inherit;
 }
+
 entry {
     enabled:           true;
     border-radius:     0px;
     padding:           15px;
-    background-color:  #000000cc;
+    background-color:  transparent;
     text-color:        inherit;
     cursor:            text;
-    placeholder:       "search...";
     placeholder-color: inherit;
 }
 
 listview {
-    enabled:          true;
-    columns:          8;
-    lines:            5;
-    spacing:          0px;
-    padding:          0px 0px;
-    cycle:            true;
-    dynamic:          false;
-    scrollbar:        false;
-    /**layout:           vertical; */
-    flow:             horizontal;
-    reverse:          false;
+    enabled:   true;
+    columns:   10;
+    lines:     4;
+    spacing:   0px;
+    padding:   0px 0px;
+    cycle:     true;
+    dynamic:   false;
+    scrollbar: false;
+    flow:      horizontal;
+    reverse:   false;
     fixed-height:     true;
     fixed-columns:    true;
     cursor:           "default";
     background-color: transparent;
-    text-color:       #ffffff;
+    text-color:       #c5c9c7;
 }
 
 element {
     enabled:          true;
     orientation:      vertical;
     spacing:          0px;
-    padding:          3px;
+    padding:          0px 0px 10px 0px;
     cursor:           pointer;
     background-color: transparent;
-    text-color:       #ffffff;
+    text-color:       #c5c9c7;
 }
 
 @media(max-aspect-ratio: 1.8) {
@@ -102,16 +98,17 @@ element {
 }
 
 element selected.normal {
-    background-color: #ffffff11;
-    text-color:       #000000;
+    background-color: #c5c9c711;
+    text-color:       #8ba4b0;
 }
 
 element-icon {
   	border-radius:	  0px;
-    size:             150px;
+    size:             180px;
     cursor:           inherit;
     background-color: transparent;
     text-color:       inherit;
+    padding:          0px 0px 4px 0px;
 }
 
 element-text {
