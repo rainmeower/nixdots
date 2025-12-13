@@ -1,4 +1,4 @@
-!/usr/bin/env dash
+#!/usr/bin/env dash
 
 # foot ~/nix/stuff/scripts/hydrate.sh &
 # foot ~/nix/stuff/scripts/retry.sh &

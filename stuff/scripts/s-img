@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
+# TODO find out why dash turns it into 5 columns instead of 8
 
 # TODO s/\/home\/meow/~
 

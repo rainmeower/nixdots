@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 themeline="$(cat ~/nix/mod/os/config.nix | grep 'theme = ')"
 
 for name in {kanso,kantsi,macchiato,blacchiato,lix,everforest,quiet}; do

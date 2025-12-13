@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 wall_dir="$HOME/nix/stuff/wallpapers"
 cache_dir="$HOME/.cache/bgselector"
