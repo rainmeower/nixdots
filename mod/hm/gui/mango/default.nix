@@ -394,6 +394,10 @@ ${action_stay "e" "spawn,wpctl set-volume -l 0.5 @DEFAULT_AUDIO_SINK@ 2%+"}
 ${action "z" "${flake_dir}/stuff/scripts/eep.sh"}
 ${action "x" "${flake_dir}/stuff/scripts/clear.sh"}
 ${action "underscore" "${flake_dir}/stuff/scripts/clear.sh"}
+${action "w" "${flake_dir}/stuff/scripts/bgselector"}
+${action "p" "hyprpicker | wl-copy"}
+${action "s" "${flake_dir}/stuff/scripts/keys/screenshot.sh"}
+${action "q" "foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit.sh mango"}
           '';
     };
   };
