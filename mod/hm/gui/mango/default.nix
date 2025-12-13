@@ -212,7 +212,6 @@ in {
         # key name refer to `xev` or `wev` command output,
         # mod keys name: super,ctrl,alt,shift,none
         bind = [ # {{{
-          "SUPER,G,spawn,wlr-which-key"
           "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
           "SUPER+SHIFT,L,spawn,wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml"
 
