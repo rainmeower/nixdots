@@ -319,14 +319,9 @@ in {
             "SUPER,btn_right,moveresize,curresize"
         ];
 
-        axisbind = [
-          "SUPER,UP,viewtoleft_have_client"
-            "SUPER,DOWN,viewtoright_have_client"
-        ];
-
         layerrule = [
-          "animation_type_open:zoom,layer_name:vicinae"
-          "animation_type_close:zoom,layer_name:vicinae"
+          "animation_type_open:zoom,animation_type_close:zoom,layer_name:vicinae"
+          "animation_type_open:zoom,animation_type_close:zoom,layer_name:rofi"
           # "noblur:1,layer_name:slurp"
         ];
 
