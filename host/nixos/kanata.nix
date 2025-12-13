@@ -1137,7 +1137,8 @@ i i
 (deflayermap action ;; {{{
 f (multi (layer-switch base)
   ;; (cmd /etc/profiles/per-user/meow/bin/mmsg -d togglefloating))
-  (cmd bash -c 'XDG_RUNTIME_DIR=/run/user/1000 /etc/profiles/per-user/meow/bin/mmsg -d togglefloating'))
+  ;; (cmd bash -c 'XDG_RUNTIME_DIR=/run/user/1000 /etc/profiles/per-user/meow/bin/mmsg -d togglefloating'))
+  (cmd sudo -u meow foot))
 
 ) ;; }}}
 
