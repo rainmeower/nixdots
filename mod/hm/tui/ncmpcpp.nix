@@ -55,7 +55,7 @@
 
 
       ## Available values: classic, alternative.
-      user_interface = "alternative";
+      user_interface = "classic";
       data_fetching_delay = true;
       ## Available values: artist, album_artist, date, genre, composer, performer.
       media_library_primary_tag = "artist";
