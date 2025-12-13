@@ -52,6 +52,9 @@
         "\${custom.yazi}"
         "$character"
       ];
+      right_format = lib.concatStrings [
+        "$all"
+      ];
       custom.yazi = {
         description = "Indicate when the shell was launched by `yazi`";
         symbol = "󰇥 ";
