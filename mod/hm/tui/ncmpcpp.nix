@@ -63,7 +63,7 @@
       ## Available values: wrapped, normal.
       default_find_mode = "wrapped";
       default_tag_editor_pattern = "%n - %t";
-      header_visibility = true;
+      header_visibility = false;
       statusbar_visibility = true;
 
       # Show the "Connected to ..." message on startup
@@ -71,7 +71,7 @@
       titles_visibility = false;
       header_text_scrolling = true;
       cyclic_scrolling = true;
-      lyrics_fetchers = "tags";
+      # lyrics_fetchers = "tags";
       follow_now_playing_lyrics = false;
       fetch_lyrics_for_current_song_in_background = false;
       store_lyrics_in_song_dir = false;
