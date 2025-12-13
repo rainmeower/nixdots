@@ -1136,7 +1136,7 @@ i i
 
 (deflayermap action ;; {{{
 f (multi (layer-switch base)
-  (cmd /etc/profiles/per-user/${username}/bin/mmsg -d togglefloating))
+  (cmd /etc/profiles/per-user/meow/bin/mmsg -d togglefloating))
 
 ) ;; }}}
 
