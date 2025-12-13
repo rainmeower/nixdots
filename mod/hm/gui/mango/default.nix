@@ -376,6 +376,7 @@ bind=Super,space,setkeymode,action
 
 keymode=action
 bind=NONE,f,togglefloating
+bind=NONE,f,setkeymode,default
           '';
     };
   };
