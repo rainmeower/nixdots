@@ -391,13 +391,13 @@ ${action "c" "centerwin"}
 ${action "m" "togglefakefullscreen"}
 ${action_stay "a" "spawn,wpctl set-volume -l 0.5 @DEFAULT_AUDIO_SINK@ 2%-"}
 ${action_stay "e" "spawn,wpctl set-volume -l 0.5 @DEFAULT_AUDIO_SINK@ 2%+"}
-${action "z" "${flake_dir}/stuff/scripts/eep.sh"}
-${action "x" "${flake_dir}/stuff/scripts/clear.sh"}
-${action "underscore" "${flake_dir}/stuff/scripts/clear.sh"}
-${action "w" "${flake_dir}/stuff/scripts/bgselector"}
-${action "p" "hyprpicker | wl-copy"}
-${action "s" "${flake_dir}/stuff/scripts/keys/screenshot.sh"}
-${action "q" "foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit.sh mango"}
+${action "z" "spawn,${flake_dir}/stuff/scripts/eep.sh"}
+${action "x" "spawn,${flake_dir}/stuff/scripts/clear.sh"}
+${action "underscore" "spawn,${flake_dir}/stuff/scripts/clear.sh"}
+${action "w" "spawn,${flake_dir}/stuff/scripts/bgselector"}
+${action "p" "spawn,hyprpicker | wl-copy"}
+${action "s" "spawn,${flake_dir}/stuff/scripts/keys/screenshot.sh"}
+${action "q" "spawn,foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit.sh mango"}
           '';
     };
   };
