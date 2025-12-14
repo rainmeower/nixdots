@@ -5,7 +5,7 @@
   inherit (lib) mkOption;
   inherit (lib.types) enum bool str int anything;
 in {
-  options = {
+  options = rec {
     theme = mkOption {
       type = enum [
         "macchiato"
@@ -24,6 +24,11 @@ in {
 
     border_width = mkOption {
       type = int;
+    };
+
+    border_width_css = mkOption {
+      type = str;
+      default = "${border_width}px";
     };
 
     animations = mkOption {
