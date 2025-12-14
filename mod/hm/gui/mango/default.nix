@@ -41,6 +41,12 @@ in {
     wayland.windowManager.mango = {
       enable = true;
 
+      package = inputs.mango.packages."x86_64-linux".mango.overrideAttrs {
+    mesonBuildFlags = [
+      "-Dc_args=-O3 -march=native -pipe"
+    ];
+      };
+
       autostart_sh = # {{{
       /* bash */ ''
         set +e
