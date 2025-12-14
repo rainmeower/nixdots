@@ -24,6 +24,8 @@ in {
     opacity = {
       desktop = p.bg_opacity;
       terminal = p.bg_opacity;
+      popups = p.bg_opacity;
+      applications = p.bg_opacity;
     };
 
     base16Scheme = {
@@ -38,8 +40,8 @@ in {
         base02 = rh p.bg;
         base03 = rh p.bg;
         base04 = rh p.grey;
-        base05 = rh p.muted;
-        base06 = rh p.comment;
+        base05 = rh p.comment;
+        base06 = rh p.fg;
         base07 = rh p.fg;
 
         base08 = rh p.red;
