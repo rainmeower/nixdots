@@ -4,6 +4,8 @@
   ...
 }:{
   environment.systemPackages = with pkgs; [
+    uutils-coreutils-noprefix
+
     godot
 
     bmm
@@ -54,4 +56,5 @@
     libqalculate
 
   ];
+
 }
