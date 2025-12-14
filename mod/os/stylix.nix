@@ -2,9 +2,11 @@
   inputs,
   self,
   config,
+  lib,
   ...
 }: let
   p = import (self + /theme/${builtins.elemAt (builtins.split "_" config.theme) 0}/colors.nix);
+  rh = lib.removePrefix "#";
 in {
   imports = [
     inputs.stylix.nixosModules.stylix
@@ -17,25 +19,33 @@ in {
       qt.enable = true;
     };
 
-    base16Scheme = {
-      
-      base00 = p.black;
-      base01 = p.red;
-      base02 = p.green;
-      base03 = p.yellow;
-      base04 = p.blue;
-      base05 = p.violet;
-      base06 = p.blue;
-      base07= p.white;
 
-      base08 = p.bg;
-      base09 = p.red_sat;
-      base0A = p.green_sat;
-      base0B = p.yellow_sat;
-      base0C = p.blue_sat;
-      base0D = p.violet_sat;
-      base0E = p.blue_sat;
-      base0F = p.white;
+
+    base16Scheme = {
+      system = "base16";
+      name = "meow";
+      author = "nyx";
+      variant = "dark";
+
+      palette = {
+        base00 = rh p.bg;
+        base01 = rh p.bg;
+        base02 = rh p.bg;
+        base03 = rh p.bg;
+        base04 = rh p.grey;
+        base05 = rh p.muted;
+        base06 = rh p.comment;
+        base07 = rh p.fg;
+
+        base08 = rh p.red;
+        base09 = rh p.orange;
+        base0A = rh p.yellow;
+        base0B = rh p.green;
+        base0C = rh p.cyan;
+        base0D = rh p.blue;
+        base0E = rh p.purple;
+        base0F = rh p.pink;
+      };
     };
   };
 }
