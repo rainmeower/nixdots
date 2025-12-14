@@ -13,6 +13,7 @@
   # (import ./shell/dash.nix)
   (import ./nvim.nix)
   (import ./yazi.nix)
+  (import ./uutils.nix)
   (import ./mpv.nix)
   # (import ./systemd.nix)
   (import ./swayimg.nix)
