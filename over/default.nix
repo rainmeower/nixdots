@@ -1,5 +1,5 @@
 [
-  # (import ./foot.nix)
+  (import ./foot.nix)
 
   # (import ./obs.nix)
   # (import ./rofi.nix)
