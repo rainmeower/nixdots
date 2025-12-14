@@ -65,7 +65,7 @@
     initExtra = ''
     source ${pkgs.bash-completion}/etc/bash_completion.d/000_bash_completion_compat.bash
     '';
-    bashrcExtra = lib.mkOrder 99999 ''
+    bashrcExtra = lib.mkOrder 0 ''
 [ -x /usr/bin/nu ] && [ -z "$IN_NIX_SHELL" ] && SHELL=/usr/bin/nu exec nu
       '';
   };
