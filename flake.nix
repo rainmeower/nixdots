@@ -21,6 +21,10 @@
     };
 
     nix-gaming.url = "github:fufexan/nix-gaming";
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
 
     niri.url = "github:sodiboo/niri-flake";

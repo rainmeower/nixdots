@@ -4,7 +4,6 @@
 
     ./btop_kanso.nix
     ./mpv_kanso.nix
-    ./gtk_kanso.nix
     ./kitty_kanso.nix
     ./fastfetch_kanso.nix
     ./foot_kanso_ink.nix

@@ -4,7 +4,6 @@
 
     ./btop_quiet.nix
     ./mpv_quiet.nix
-    ./gtk_quiet.nix
     ./ghostty_quiet.nix
     ./fastfetch_quiet.nix
     ./foot_quiet.nix

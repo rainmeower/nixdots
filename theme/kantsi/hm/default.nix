@@ -1,7 +1,6 @@
 {
   imports = [
     ./mpv_kantsi.nix
-    ./gtk_kantsi.nix
     ./foot_kantsi.nix
     # ./hyprpaper_kantsi.nix
     ../../kanso/hm/btop_kanso.nix

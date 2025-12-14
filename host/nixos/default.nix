@@ -29,6 +29,7 @@
     ../../mod/os/gaming/terraria.nix
     ../../mod/os/gaming/misc.nix
     ../../mod/os/gaming/celeste.nix
+    ../../mod/os/stylix.nix
     ../../mod/os/gaming/games.nix
     ../../mod/os/font.nix
     ../../mod/os/mango.nix
