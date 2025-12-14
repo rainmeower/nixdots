@@ -10,6 +10,8 @@
     # '';
   };
 
+  systemd.services.polkit.wantedBy = [ "graphical.target" ];
+
   security.soteria = {
     enable = true;
   };
