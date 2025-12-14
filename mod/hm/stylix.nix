@@ -9,13 +9,15 @@
   rh = lib.removePrefix "#";
 in {
   imports = [
-    inputs.stylix.nixosModules.stylix
+    inputs.stylix.homeModules.stylix
   ];
 
   stylix = {
     autoEnable = false;
     targets = {
       gtk.enable = true;
+      gtk.colors.enable = true;
+      gtk.extraCss = "window.background { border-radius: 0; }";
       qt.enable = true;
     };
 
