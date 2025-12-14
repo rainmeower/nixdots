@@ -18,35 +18,24 @@ in {
     };
 
     base16Scheme = {
-      rosewater = "#f4dbd6";
-      flamingo = "#f0c6c6";
-      pink = "#f5bde6";
-      mauve = "#c6a0f6";
-      red = "#ed8796";
-      maroon = "#ee99a0";
-      peach = "#f5a97f";
-      yellow = "#eed49f";
-      green = "#a6da95";
-      teal = "#8bd5ca";
-      sky = "#91d7e3";
-      sapphire = "#7dc4e4";
-      blue = "#8aadf4";
-      lavender = "#b7bdf8";
-      text = "#cad3f5";
-      subtext1 = "#b8c0e0";
-      subtext0 = "#a5adcb";
-      subtext = "#a5adcb";
-      overlay2 = "#939ab7";
-      overlay1 = "#8087a2";
-      overlay0 = "#6e738d";
-      overlay = "#6e738d";
-      surface2 = "#5b6078";
-      surface1 = "#494d64";
-      surface0 = "#363a4f";
-      surface = "#363a4f";
-      base = "#24273a";
-      mantle = "#1e2030";
-      crust = "#181926";
+      
+      base00 = p.black;
+      base01 = p.red;
+      base02 = p.green;
+      base03 = p.yellow;
+      base04 = p.blue;
+      base05 = p.violet;
+      base06 = p.blue;
+      base07= p.white;
+
+      base08 = p.bg;
+      base09 = p.red_sat;
+      base0A = p.green_sat;
+      base0B = p.yellow_sat;
+      base0C = p.blue_sat;
+      base0D = p.violet_sat;
+      base0E = p.blue_sat;
+      base0F = p.white;
     };
   };
 }
