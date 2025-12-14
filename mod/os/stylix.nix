@@ -13,11 +13,12 @@ in {
   ];
 
   stylix = {
-    autoEnable = true;
-    # targets = {
-    #   gtk.enable = true;
-    #   qt.enable = true;
-    # };
+    autoEnable = false;
+    targets = {
+      gtk.enable = true;
+      qt.enable = true;
+    };
+    image = ./a;
 
 
     opacity = {
