@@ -13,13 +13,17 @@ in {
   ];
 
   stylix = {
-    autoEnable = false;
-    targets = {
-      gtk.enable = true;
-      qt.enable = true;
+    autoEnable = true;
+    # targets = {
+    #   gtk.enable = true;
+    #   qt.enable = true;
+    # };
+
+
+    opacity = {
+      desktop = p.bg_opacity;
+      terminal = p.bg_opacity;
     };
-
-
 
     base16Scheme = {
       system = "base16";
