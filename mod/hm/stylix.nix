@@ -1,11 +1,9 @@
 {
   inputs,
-  self,
-  config,
+  p,
   lib,
   ...
 }: let
-  p = import (self + /theme/${builtins.elemAt (builtins.split "_" config.theme) 0}/colors.nix);
   rh = lib.removePrefix "#";
 in {
   imports = [

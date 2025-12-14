@@ -27,6 +27,8 @@
       inherit (config)
         theme
         rounding
+        border_width
+        border_width_css
         animations
         wm
         term

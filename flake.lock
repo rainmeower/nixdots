@@ -485,11 +485,11 @@
         "scenefx": "scenefx"
       },
       "locked": {
-        "lastModified": 1765525286,
-        "narHash": "sha256-WkB4ek6K07hpJIKJHopqvecoj129gZAQ/L/be08zNzA=",
+        "lastModified": 1765722498,
+        "narHash": "sha256-nTr6Q491FbleOE0j2eikUWovgqUZXHst1ds/CWDUQtg=",
         "owner": "DreamMaoMao",
         "repo": "mango",
-        "rev": "fa4eb322b6dc84633ece83b100e4e496bff373be",
+        "rev": "acb3fc2a2aedda31ea47c9a3639d2eb29fe05764",
         "type": "github"
       },
       "original": {
