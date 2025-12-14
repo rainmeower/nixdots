@@ -3,7 +3,7 @@
   ...
 }: let
   inherit (lib) mkOption;
-  inherit (lib.types) enum bool str anything;
+  inherit (lib.types) enum bool str int anything;
 in {
   options = {
     theme = mkOption {
@@ -20,6 +20,10 @@ in {
 
     rounding = mkOption {
       type = bool;
+    };
+
+    border_width = mkOption {
+      type = int;
     };
 
     animations = mkOption {
