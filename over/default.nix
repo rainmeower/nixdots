@@ -16,6 +16,7 @@
   (import ./uutils.nix)
   (import ./mango.nix)
   (import ./mpv.nix)
+  (import ./mpd.nix)
   # (import ./systemd.nix)
   (import ./swayimg.nix)
   (import ./ripgrep.nix)
