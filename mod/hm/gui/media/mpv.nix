@@ -13,10 +13,10 @@
       a = "add volume -5";
       e = "add volume 5";
 
-      htasease = "sponsorblock/set_segment";
-      enen = "sponsorblock/submit_segment";
-      ses = "sponsorblock/upvote_segment";
-      ataese = "sponsorblock/downvote_segment";
+      # htasease = "sponsorblock/set_segment";
+      # enen = "sponsorblock/submit_segment";
+      # ses = "sponsorblock/upvote_segment";
+      # ataese = "sponsorblock/downvote_segment";
       s = "ignore";
     };
 

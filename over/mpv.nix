@@ -1,4 +1,4 @@
-# TODO ignores and uses binary cache
+# FIXME ignores and uses binary cache
 (final: prev: {
   mpv = prev.mpv.overrideAttrs {
     mesonBuildFlags = [
