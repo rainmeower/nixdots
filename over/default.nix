@@ -14,6 +14,7 @@
   (import ./nvim.nix)
   (import ./yazi.nix)
   (import ./uutils.nix)
+  (import ./mango.nix)
   (import ./mpv.nix)
   # (import ./systemd.nix)
   (import ./swayimg.nix)
