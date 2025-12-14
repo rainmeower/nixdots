@@ -39,8 +39,8 @@ in {
         base01 = rh p.bg;
         base02 = rh p.bg;
         base03 = rh p.bg;
-        base04 = rh p.grey;
-        base05 = rh p.comment;
+        base04 = rh p.fg;
+        base05 = rh p.fg;
         base06 = rh p.fg;
         base07 = rh p.fg;
 
