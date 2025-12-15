@@ -2,8 +2,7 @@
 (final: prev: {
   mpv = prev.mpv.overrideAttrs {
     mesonBuildFlags = [
-      # "-Dc_args=-O3 -march=native -pipe"
-      "-Dc_args=-Ofast -march=native -pipe" # TODO
+      "-Dc_args=-O3 -march=native -pipe"
     ];
   };
 })
