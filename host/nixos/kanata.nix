@@ -1239,18 +1239,18 @@ g f12
 
 
   ;; (b f    ) \ 20 all-released (over sup melee fn game)
-  ;; (  f d  )  15 all-released (over sup melee fn game)
+  (  f d  ) S-1 15 all-released (over sup melee fn game)
   (  f   w) `   20 all-released (over sup melee fn game)
-  (    d w) S-7 15 all-released (over sup melee fn game)
+  (    d w) S-\ 15 all-released (over sup melee fn game)
   
-  (l o    ) S-\ 14 all-released (over sup melee fn mods)
-  (  o u  ) S-1 13 all-released (over sup melee fn mods)
+  (l o    ) S-8 14 all-released (over sup melee fn mods)
+  ;; (  o u  ) S-1 13 all-released (over sup melee fn mods)
   (    u .) S-6 15 all-released (over sup melee fn mods)
 
   (n s    ) S-/ 14 all-released (over sup melee fn game)
-  (  s t  ) '   13 all-released (over sup melee fn game)
+  (  s t  ) '   13 all-released (over sup melee fn game hammer)
   (  s   c) S-` 16 all-released (over sup melee fn game)
-  (    t c) S-8   14 all-released (over sup melee fn game)
+  (    t c) S-7   14 all-released (over sup melee fn game hammer)
 
   (h a    ) S-' 14 all-released (over sup melee fn)
   (h   e  ) del 15 all-released (over sup melee fn)
