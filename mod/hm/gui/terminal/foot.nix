@@ -19,6 +19,7 @@
         box-drawings-uses-font-glyphs = false;
       };
 
+      scrollback.lines = 16384;
 
       cursor = {
         style = "beam";
