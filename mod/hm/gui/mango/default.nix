@@ -53,7 +53,7 @@ in {
 
       package = inputs.mango.packages."x86_64-linux".mango.overrideAttrs {
         mesonBuildFlags = [
-          "-Dc_args=-Ofast -march=native -pipe" # TODO
+          "-Dc_args=-O3 -march=native -pipe" # TODO
         ];
       };
 
