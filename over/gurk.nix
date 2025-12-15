@@ -6,7 +6,7 @@
       ""
       substituteInPlace src/ui/draw.rs --replace-fail \
       '.title("Messages")' \
-      '.title("")'
+      ""
       substituteInPlace src/ui/draw.rs --replace-fail \
       '=> "Input"' \
       '=> ""'
