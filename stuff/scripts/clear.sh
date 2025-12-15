@@ -18,6 +18,13 @@ sed -i \
 -e 's/.*reboot.*//' \
 -e 's/.*shutdown.*//' \
 -e 's/.*poweroff.*//' \
+-e 's/.*secret.*//' \
+-e 's/.*token.*//' \
+-e 's/.*Secret.*//' \
+-e 's/.*Token.*//' \
+-e 's/.*SECRET.*//' \
+-e 's/.*TOKEN.*//' \
 ~/.config/nushell/history.txt \
+~/.config/zsh/.zsh_history \
 ~/.bash_history \
 ~/.config/.bash_history
