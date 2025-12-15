@@ -14,6 +14,8 @@ in {
       font-size = 22;
       gtk-single-instance = true;
 
+      bell-features = "audio";
+
       foreground = def p.fg;
       background = def p.bg;
       background-opacity = def 0.8;
