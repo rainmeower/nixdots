@@ -53,7 +53,7 @@ in {
 
       package = inputs.mango.packages."x86_64-linux".mango.overrideAttrs {
         mesonBuildFlags = [
-          "-Dc_args=-O3 -march=native -pipe"
+          "-Dc_args=-Ofast -march=native -pipe" # TODO
         ];
       };
 
@@ -268,7 +268,7 @@ in {
             # swap window
             "SUPER+SHIFT,h,exchange_client,left"
             "SUPER+SHIFT,i,exchange_client,right"
-            "SUPER+SHIFT,h,exchange_client,up"
+            "SUPER+SHIFT,e,exchange_client,up"
             "SUPER+SHIFT,a,exchange_client,down"
 
             # switch window status
