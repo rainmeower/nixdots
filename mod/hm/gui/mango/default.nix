@@ -231,7 +231,7 @@ in {
 
 
             /* menu and terminal */
-            # "SUPER,space,spawn,vicinae toggle"
+            "SUPER,return,spawn,vicinae toggle"
             "SUPER,s,spawn,footclient nvim"
             "SUPER,t,spawn,footclient"
             "SUPER,c,spawn,foot -a 'foot.yazi.isterm' yazi"
@@ -263,12 +263,11 @@ in {
 
             # switch window status
             "SUPER,Period,toggleglobal,"
-            "SUPER,Return,toggleoverview,"
-            # "SUPER,f,togglefloating,"
+            "SUPER,g,toggleoverview,"
             "SUPER,m,togglemaximizescreen,"
             "SUPER+SHIFT,m,togglefullscreen,"
             # "SUPER+CTRL,m,togglefakefullscreen,"
-            "SUPER+SHIFT,Return,toggleoverlay,"
+            "SUPER+SHIFT,g,toggleoverlay,"
             #"SUPER,i,minimized,"
             #"SUPER+SHIFT,I,restore_minimized"
             #"ALT,z,toggle_scratchpad"
