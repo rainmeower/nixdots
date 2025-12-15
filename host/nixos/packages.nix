@@ -14,7 +14,7 @@
     xdg-utils
 
 
-    rqbit
+    # rqbit
 
     /* image */
     # gimp

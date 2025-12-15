@@ -387,6 +387,8 @@ in {
         # ]; # }}}
       };} + ''
 bind=SUPER,space,setkeymode,action
+bind=SUPER,space,spawn,echo
+
 
 keymode=action
 ${action "escape" "spawn,echo"} # goto default keymode
