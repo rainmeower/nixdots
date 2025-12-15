@@ -7,6 +7,9 @@
       substituteInPlace src/status.cpp --replace-fail \
       'Playing:' \
       "pl:"
+      substituteInPlace src/helpers.cpp --replace-fail \
+      'Added to playlist:' \
+      "added:"
     '';
   }).override {
     outputsSupport = false;
