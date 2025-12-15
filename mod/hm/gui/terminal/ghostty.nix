@@ -15,7 +15,7 @@ in {
       font-size = 22;
       gtk-single-instance = true;
 
-      bell-features = "system, audio, no-attention";
+      bell-features = "system, audio, no-attention, border";
       bell-audio-path = flake_dir + "stuff/ComputerShort.wav"; # ksp sound
 
       foreground = def p.fg;
