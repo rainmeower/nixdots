@@ -3,6 +3,7 @@
   animations,
   lib,
   p,
+  flake_dir,
   ...
 }: let
   def = lib.mkDefault;
@@ -14,7 +15,8 @@ in {
       font-size = 22;
       gtk-single-instance = true;
 
-      bell-features = "audio";
+      bell-features = "audio, no-attention";
+      bell-audio-path = flake_dir + "stuff/ComputerShort.wav"; # ksp sound
 
       foreground = def p.fg;
       background = def p.bg;
