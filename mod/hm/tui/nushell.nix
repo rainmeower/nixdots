@@ -29,11 +29,6 @@ in {
       #   niri msg action consume-or-expel-window-left
       # }
 
-      # go back
-      def - [] {
-        cd -
-      }
-
       # git add commit push
       def gacp [] {
         git add --all
@@ -270,6 +265,7 @@ in {
       ":x" = "exit";
 
       # k = "pkill";
+      # "-" = "cd -"; # FIXME
       fg = "job unfreeze";
       jobs = "job list";
 

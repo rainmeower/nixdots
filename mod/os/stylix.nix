@@ -6,7 +6,6 @@
   ...
 }: let
   p = import (self + /theme/${builtins.elemAt (builtins.split "_" config.theme) 0}/colors.nix);
-  rh = lib.removePrefix "#";
 in {
   # imports = [
   #   inputs.stylix.nixosModules.stylix
@@ -32,7 +31,9 @@ in {
   #     author = "nyx";
   #     variant = "dark";
   #
-  #     palette = {
+  #     palette = let
+  #       rh = lib.removePrefix "#";
+  #     in {
   #       base00 = rh p.bg;
   #       base01 = rh p.bg;
   #       base02 = rh p.bg;

@@ -1,6 +1,5 @@
 {
   pkgs,
-  inputs,
   ...
 }:{
   environment.systemPackages = with pkgs; [
@@ -54,7 +53,6 @@
     xwayland
     meow
     libqalculate
-
+    wlr-which-key
   ];
-
 }

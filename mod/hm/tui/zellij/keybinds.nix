@@ -1,6 +1,5 @@
 {
   programs.zellij = {
-    enable = true;
     settings = {
       keybinds.pane._children = [
       # {

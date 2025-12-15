@@ -8,6 +8,7 @@
     keyboards = {
       lily58 = {
         port = 10000;
+        extraArgs = "--nodelay";
 
         extraDefCfg = ''
           process-unmapped-keys yes

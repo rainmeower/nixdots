@@ -80,7 +80,6 @@
         ../../mod/hm/gui/media/ytsub.nix
         ../../mod/hm/gui/niri
         ../../mod/hm/gui/rofi
-        ../../mod/hm/gui/shell.nix
         ../../mod/hm/gui/slippi.nix
         ../../mod/hm/gui/terminal/foot.nix
         ../../mod/hm/gui/terminal/ghostty.nix
