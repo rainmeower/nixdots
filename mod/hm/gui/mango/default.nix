@@ -231,7 +231,7 @@ in {
 
 
             /* menu and terminal */
-            "SUPER,return,spawn,vicinae toggle"
+            "SUPER,Return,spawn,vicinae toggle"
             "SUPER,s,spawn,footclient nvim"
             "SUPER,t,spawn,footclient"
             "SUPER,c,spawn,foot -a 'foot.yazi.isterm' yazi"
