@@ -534,9 +534,6 @@ mods:
     ;; =>
     ((input-history real lctl 2)) (macro (unmod =) S-.) break
 
-    ;; ->
-    ((key-history - 1)) (macro S-.) break
-
     ;; Vec<_>
     ((and
       (key-history v 3)
@@ -847,7 +844,7 @@ mods:
       (not (key-history lsft 2))
       (not (key-history rsft 2))
       (key-history - 1)
-    )) rpt break
+    )) (macro S-.) break
 
     ;; override the "box"
     ((and
