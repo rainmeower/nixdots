@@ -13,8 +13,10 @@
         dpi-aware = false;
         shell = "nu";
         pad = "12x6";
+        workers = 64;
         box-drawings-uses-font-glyphs = false;
       };
+
 
       cursor = {
         style = "beam";
