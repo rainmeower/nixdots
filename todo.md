@@ -1,5 +1,7 @@
 https://github.com/jtroo/kanata/discussions/1573
 
+symlink fzf to skim?
+
 - `mmsg -d setoption` repeat delay
 
 

@@ -102,6 +102,7 @@
         ../../mod/hm/tui/signal.nix
         ../../mod/hm/tui/clipse.nix
         ../../mod/hm/tui/fzf.nix
+        ../../mod/hm/tui/skim.nix
         ../../mod/hm/tui/git.nix
         ../../mod/hm/tui/iamb.nix
         ../../mod/hm/tui/navi.nix
