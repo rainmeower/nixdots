@@ -15,6 +15,7 @@
   (import ./yazi.nix)
   (import ./uutils.nix)
   (import ./mango.nix)
+  (import ./gurk.nix)
   (import ./mpv.nix)
   (import ./mpd.nix)
   # (import ./systemd.nix)
