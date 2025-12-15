@@ -616,6 +616,14 @@ mods:
 
 
     ;; sfb {{{
+    ((key-history / 1))
+    S-8 break
+
+    ((and
+      (or (key-history lsft 2) (key-history rsft 2))
+      (key-history 8 1)
+    )) / break
+
     ((input-history real f16 2))
     (macro S-') break
 

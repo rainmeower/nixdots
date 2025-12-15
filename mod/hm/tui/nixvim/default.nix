@@ -10,6 +10,7 @@
     ./misc.nix
     ./nixvim.nix
     ./options.nix
+    ./highlight.nix
 
     ./theme/everforest/everforest.nix
     ./theme/everforest/lualine.nix
@@ -17,7 +18,6 @@
     ./theme/lix.nix
     ./theme/macchiato.nix
     ./theme/kanso.nix
-    ./theme/highlight.nix
 
     ./key/keymaps.nix
     ./key/langmap.nix

@@ -31,12 +31,9 @@
     wf-recorder
 
     /* misc terminal stuff */
-    termdown
-    # tty-clock
     fastfetch
     # zellij
     # expect
-    yt-dlp
     tldr
 
     /* audio */
