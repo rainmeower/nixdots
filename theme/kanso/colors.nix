@@ -62,7 +62,7 @@ rec {
   altBlue2 = "#2D4F67";
 
 
-# main colors
+  # main colors {{{
   red     = "#c4746e";
   red2    = "#E46876";
   red3    = "#C34043";
@@ -84,10 +84,9 @@ rec {
   pink    = "#a292a3";
   orange  = "#b6927b";
   orange2 = "#b98d7b";
+  # }}}
 
-
-
-# saturated variants (20% more saturation)
+  # saturated variants (20% more saturation) {{{
   red_sat     = "#CA675F";
   red2_sat    = "#ED5965";
   red3_sat    = "#C93134";
@@ -110,10 +109,10 @@ rec {
   orange_sat  = "#BC8A6C";
   orange2_sat = "#BF856B";
   aqua_sat    = "#81AAA9";
+  # }}}
 
 
-
-# syntax highlighting
+  # syntax highlighting {{{
   keyword = violet2;
   method  = yellow;
   var     = fg;
@@ -127,5 +126,5 @@ rec {
   comment = gray4;
   punc    = gray3;
   sel     = zen_bg3;
-  selection = sel;
+  # }}}
 }

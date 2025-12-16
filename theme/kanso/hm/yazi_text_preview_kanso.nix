@@ -39,7 +39,7 @@
           <key>accent</key>
           <string>${p.accent}</string>
           <key>selection</key>
-          <string>${p.selection}</string>
+          <string>${p.sel}</string>
           <key>activeGuide</key>
           <string>#494d64</string>
           <key>findHighlight</key>

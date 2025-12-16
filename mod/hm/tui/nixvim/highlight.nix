@@ -6,7 +6,7 @@
   nv.highlightOverride = {
     CursorLine.bg = null;
     CursorLineNr.fg = p.accent;
-    LineNr.fg = p.selection;
+    LineNr.fg = p.sel;
 
 
     # MatchParen.reverse = true;
