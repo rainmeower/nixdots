@@ -398,21 +398,6 @@ in {
 bind=SUPER,space,setkeymode,action
 bind=SUPER,l,setkeymode,media
 
-keymode=action
-${reset_keymode "Escape"}
-${action "f" "togglefloating"}
-${action "c" "centerwin"}
-${action "m" "togglefakefullscreen"}
-${action_stay "a" "spawn,wpctl set-volume -l 0.5 @DEFAULT_AUDIO_SINK@ 2%-"}
-${action_stay "e" "spawn,wpctl set-volume -l 0.5 @DEFAULT_AUDIO_SINK@ 2%+"}
-${action "z" "spawn,${flake_dir}/stuff/scripts/eep.sh"}
-${action "x" "spawn,${flake_dir}/stuff/scripts/clear.sh"}
-${action "underscore" "spawn,${flake_dir}/stuff/scripts/clear.sh"}
-${action "w" "spawn,${flake_dir}/stuff/scripts/bgselector"}
-${action "p" "spawn,hyprpicker | wl-copy"}
-${action "s" "spawn,${flake_dir}/stuff/scripts/keys/screenshot.sh"}
-${action "q" "spawn,foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit.sh mango"}
-
 
 keymode=media
 ${reset_keymode "Escape"}
@@ -435,6 +420,25 @@ ${media_stay "e" "mpc -p 6669 volume +5"} # vol up
 
 ${action "o" "spawn, mpc -p 6669 clear"} # clear playlist
 ${action "u" "spawn, mpc -p 6669 crop"} # clear all but current song
+
+
+
+keymode=action
+${reset_keymode "Escape"}
+${action "f" "togglefloating"}
+${action "c" "centerwin"}
+${action "m" "togglefakefullscreen"}
+${action_stay "a" "spawn,wpctl set-volume -l 0.5 @DEFAULT_AUDIO_SINK@ 2%-"}
+${action_stay "e" "spawn,wpctl set-volume -l 0.5 @DEFAULT_AUDIO_SINK@ 2%+"}
+${action "z" "spawn,${flake_dir}/stuff/scripts/eep.sh"}
+${action "x" "spawn,${flake_dir}/stuff/scripts/clear.sh"}
+${action "underscore" "spawn,${flake_dir}/stuff/scripts/clear.sh"}
+${action "w" "spawn,${flake_dir}/stuff/scripts/bgselector"}
+${action "p" "spawn,hyprpicker | wl-copy"}
+${action "s" "spawn,${flake_dir}/stuff/scripts/keys/screenshot.sh"}
+${action "q" "spawn,foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit.sh mango"}
+
+
 
           '';
     };
