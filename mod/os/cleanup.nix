@@ -15,7 +15,8 @@
     "d /home/${username}/.cache/thumbnails - - - 1d"
     "d /tmp/yazi-1000 - - - 1d"
 
-    "d /tmp/.*.png - - - 1d"
+    # FIXME cant use globs?
+    # "d /tmp/*.png - - - 1d"
 
     "d /home/${username}/.local/share/com.rqbit.session - - - 3d"
   ];
