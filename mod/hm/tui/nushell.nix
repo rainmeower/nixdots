@@ -29,6 +29,17 @@ in {
       #   niri msg action consume-or-expel-window-left
       # }
 
+      # git open
+      def go [] {
+        git remote get-url origin | \
+        sed -e 's/git@/https:\/\//' \
+        -e 's/:/\//' \
+        -e 's/:/\//' \
+        -e 's/\//:/' \
+        -e 's/\.git//' | \
+        xargs xdg-open
+      }
+
       # git add commit push
       def gacp [] {
         git add --all
@@ -66,7 +77,8 @@ in {
       def record [] { # simple screen record without obs
         cd ${userDirs.videos}
         let date = date now | format date "%Y-%m-%d %H:%M:%S"
-        wf-recorder -r 60 -o DP-1 -f $"(date now | format date '%Y-%m-%d %H:%M:%S').mkv"
+        wf-recorder -r 60 -o DP-1 -f \
+        $"(date now | format date '%Y-%m-%d %H:%M:%S').mkv"
       }
 
       def recordvirt [] { # simple screen record without obs
