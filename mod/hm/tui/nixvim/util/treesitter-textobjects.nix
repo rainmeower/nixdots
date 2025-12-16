@@ -28,12 +28,12 @@
           il   = "@loop.inner";
           af   = "@call.outer";
           "if" = "@call.inner";
-          ah   = "@function.outer"; # d for definition
-          ih   = "@function.inner";
+          ad   = "@function.outer"; # d for definition
+          id   = "@function.inner";
           ax   = "@class.outer";
           ix   = "@class.inner";
-          ar   = "@block.outer";
-          ir   = "@block.inner";
+          "a " = "@block.outer";
+          "i " = "@block.inner";
         };
       };
     };

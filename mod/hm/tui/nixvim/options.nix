@@ -27,6 +27,8 @@
     ignorecase = true;
     smartcase = true;
 
+    tildeop = true; # treat ~ like an operator
+
     autochdir = true; # auto cd into current buffers dir
 
     autoindent = true;
