@@ -416,6 +416,14 @@ ${action "q" "spawn,foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/
 
 keymode=media
 ${reset_keymode "Escape"}
+
+
+
+${action "f" "togglefloating"}
+${action "z" "spawn,${flake_dir}/stuff/scripts/eep.sh"}
+
+
+
 ${action "s" "spawn, mpc -p 6669 prev && mpc -p 6669 next"} # restart song
 ${action "t" "spawn, playerctl play-pause"} # toggle player
 ${action "c" "spawn, mpc -p 6669 seek -1 && sleep 0.01 && mpc -p 6669 toggle"} # toggle music
