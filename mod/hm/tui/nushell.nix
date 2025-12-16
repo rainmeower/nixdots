@@ -165,9 +165,9 @@ in {
       }
 
       # copy file path
-      def wf [...msg: string] {
-        realpath ...$msg | str trim | wl-copy
-        let path = realpath ...$msg
+      def wf [msg: string] {
+        realpath $msg | str trim | wl-copy
+        let path = realpath $msg
         echo $"copied ($path)"
       }
 
@@ -179,11 +179,21 @@ in {
         echo $"copied ($rel)"
       }
 
+      # copy file path
+      def wf [msg: string] {
+        let root = (git rev-parse --show-toplevel | str trim)
+        let rel = (realpath . | path relative-to $root)
+        let path = $"($rel)/($msg)"
+        wl-copy $path
+        echo $"copied ($path)"
+      }
+
       # goto git root
-# FIXME
+      # FIXME
       def gr [] {
         cd (git rev-parse --show-toplevel)
       }
+
 
       #  clear clipboard
       def cl [] {
