@@ -45,6 +45,9 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    neovim-nightly = {
+      url = "github:nix-community/neovim-nightly-overlay";
+    };
 
     slippi = {
       url = "github:lytedev/slippi-nix";

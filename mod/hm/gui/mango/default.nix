@@ -365,6 +365,10 @@ in {
           # momentum mod
           "appid:steam_app_1802710,force_tearing:1,isfullscreen:0,noblur:1,isfloating:0,width:2560,height:1080"
 
+
+          "appid:pickpic,animation_type_open:none,animation_type_close:none"
+
+
           "appid:swayimg,animation_type_open:none,animation_type_close:none"
           "appid:equibop,appid:vesktop,tags:2,isopensilent:1"
           # TODO `isterm` + emacs/yazi?
@@ -415,6 +419,7 @@ ${action "q" "spawn,foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/
 
 
 keymode=media
+${reset_keymode "Escape"}
 
 ${action "f" "togglefloating"}
 ${action "z" "spawn,${flake_dir}/stuff/scripts/eep.sh"}
