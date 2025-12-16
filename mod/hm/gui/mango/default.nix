@@ -30,10 +30,8 @@ bind=NONE,${key},${action}
 bind=SUPER,${key},${action}
   '';
   media = key: action: ''
-bind=NONE,${key},spawn,${action}
-bind=SUPER,${key},spawn,${action}
-bind=NONE,${key},setkeymode,default
-bind=SUPER,${key},setkeymode,default
+bind=NONE,${key},spawn,${action} && mmsg -d setkeymode default
+bind=SUPER,${key},spawn,${action} && mmsg -d setkeymode default
   '';
   media_stay = key: action: ''
 bind=NONE,${key},spawn,${action}
