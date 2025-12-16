@@ -1,3 +1,4 @@
+# TODO nerd font symbol for nix shell
 {
   lib,
   prompt_sym,

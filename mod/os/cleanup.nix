@@ -15,12 +15,7 @@
     "d /home/${username}/.cache/thumbnails - - - 1d"
     "d /tmp/yazi-1000 - - - 1d"
 
-    "d /tmp/*.png - - - 1d"
-    "d /tmp/*.jpg - - - 1d"
-    "d /tmp/*.jpeg - - - 1d"
-    "d /tmp/*.webp - - - 1d"
-    "d /tmp/*.mp4 - - - 1d"
-    "d /tmp/*.mkv - - - 1d"
+    "d /tmp/.*.png - - - 1d"
 
     "d /home/${username}/.local/share/com.rqbit.session - - - 3d"
   ];
