@@ -61,5 +61,4 @@ rec {
   comment = a;
   punc    = a;
   sel     = a;
-  selection = a;
 }
