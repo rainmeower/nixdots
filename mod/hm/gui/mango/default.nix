@@ -29,12 +29,6 @@ bind=SUPER,${key},setkeymode,default
 bind=NONE,${key},${action}
 bind=SUPER,${key},${action}
   '';
-  media = key: action: ''
-bind=NONE,${key},spawn,${action}
-bind=SUPER,${key},spawn,${action}
-bind=NONE,${key},setkeymode,default
-bind=SUPER,${key},setkeymode,default
-  '';
   media_stay = key: action: ''
 bind=NONE,${key},spawn,${action}
 bind=SUPER,${key},spawn,${action}
@@ -422,17 +416,17 @@ ${action "q" "spawn,foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/
 
 keymode=media
 ${reset_keymode "Escape"}
-${media "s" "mpc -p 6669 prev && mpc -p 6669 next"} # restart song
-${media "t" "playerctl play-pause"} # toggle player
-${media "c" "mpc -p 6669 seek -1 && sleep 0.01 && mpc -p 6669 toggle"} # toggle music
+${action "s" "spawn, mpc -p 6669 prev && mpc -p 6669 next"} # restart song
+${action "t" "spawn, playerctl play-pause"} # toggle player
+${action "c" "spawn, mpc -p 6669 seek -1 && sleep 0.01 && mpc -p 6669 toggle"} # toggle music
 
-${media "h" "mpc -p 6669 prev"} # prev song
-${media "i" "mpc -p 6669 next"} # next song
+${action "h" "spawn, mpc -p 6669 prev"} # prev song
+${action "i" "spawn, mpc -p 6669 next"} # next song
 ${media_stay "a" "mpc -p 6669 volume -5"} # vol down
 ${media_stay "e" "mpc -p 6669 volume +5"} # vol up
 
-${media "o" "mpc -p 6669 clear"} # clear playlist
-${media "u" "mpc -p 6669 crop"} # clear all but current song
+${action "o" "spawn, mpc -p 6669 clear"} # clear playlist
+${action "u" "spawn, mpc -p 6669 crop"} # clear all but current song
 
           '';
     };
