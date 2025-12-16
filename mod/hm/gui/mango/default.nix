@@ -350,12 +350,12 @@ in {
         ];
 
         windowrule = [ # {{{
-            # TODO let swayimg set its own height
+          "appid:foot.yazi.filechooser,width:1080,height:1080,isnoborder:1,isfloating:1,noswallow:1"
+          "appid:foot.ncmpcpp,foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:,noswallow:11"
 
-          "appid:foot.yazi.filechooser,width:1080,height:1080,isnoborder:1,isfloating:1"
-          "appid:foot.ncmpcpp,foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1"
-
-          "appid:foot.yazi.isterm,isterm:1"
+          "appid:foot.yazi.isterm,isterm:1,noswallow:1"
+          "appid:footclient,isterm:1,noswallow:1"
+          "appid:foot,isterm:1,noswallow:1"
 
 
           "appid:foot.quit_prompt,isfloating:1,width:300,height:150"
@@ -366,7 +366,7 @@ in {
           # momentum mod
           "appid:steam_app_1802710,force_tearing:1,isfullscreen:0,noblur:1,isfloating:0,width:2560,height:1080"
 
-          "appid:swayimg,isnoanimation:1"
+          "appid:swayimg,appid:mpv,animation_type_open:none,animation_type_clone:none"
           "appid:equibop,appid:vesktop,tags:2,isopensilent:1"
           # TODO `isterm` + emacs/yazi?
         ]; # }}}
