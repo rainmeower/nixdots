@@ -352,9 +352,9 @@ in {
           "appid:foot.yazi.filechooser,width:1080,height:1080,isnoborder:1,isfloating:1,noswallow:1"
           "appid:foot.ncmpcpp,foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1,noswallow:1"
 
-          # "appid:foot.yazi.isterm,isterm:1,noswallow:1"
-          "appid:footclient,noswallow:1"
-          "appid:foot,noswallow:1"
+          "appid:foot.yazi.isterm,isterm:1,noswallow:1"
+          # "appid:footclient,noswallow:1"
+          # "appid:foot,noswallow:1"
 
 
           "appid:foot.quit_prompt,isfloating:1,width:300,height:150"
