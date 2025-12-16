@@ -496,8 +496,8 @@ mods:
       (key-history t 1)
     )) d break
 
-    ;; !(   rust macros
-    ((key-history 1 1)) (macro S-9) break
+    ;; ![   rust macros
+    ((key-history 1 1)) [ break
 
     ;; >>
     ((and
