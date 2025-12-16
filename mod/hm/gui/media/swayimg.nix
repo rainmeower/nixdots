@@ -12,8 +12,8 @@
       "info.viewer" = {
         top_left = "none";
         top_right = "none";
-        bottom-left = "none";
-        bottom-right = "none";
+        bot-left = "none";
+        bot-right = "none";
       };
 
       "keys.viewer" = {
