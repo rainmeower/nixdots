@@ -3,6 +3,7 @@
     # ../palette.nix
 
     ./btop_kanso.nix
+    ./nvim_kanso.nix
     ./mpv_kanso.nix
     ./kitty_kanso.nix
     ./fastfetch_kanso.nix
