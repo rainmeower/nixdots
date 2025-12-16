@@ -403,7 +403,6 @@ in {
       };} + /* sh */ ''
 bind=SUPER,space,setkeymode,action
 bind=SUPER,l,setkeymode,media
-${reset_keymode "Escape"}
 
 keymode=action
 ${action "f" "togglefloating"}
@@ -433,6 +432,8 @@ ${media_stay "e" "mpc -p 6669 volume +5"} # vol up
 ${media "o" "mpc -p 6669 clear"} # clear playlist
 ${media "u" "mpc -p 6669 crop"} # clear all but current song
 
+keymode=common
+${reset_keymode "Escape"}
           '';
     };
   };
