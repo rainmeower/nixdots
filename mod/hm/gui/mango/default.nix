@@ -14,26 +14,31 @@
   gaps = 10;
   h = lib.removePrefix "#";
   corners = if rounding then 10 else 0;
+
+  reset_keymode = key: ''
+bind=NONE,${key},setkeymode,default
+bind=SUPER,${key},setkeymode,default
+  '';
   action = key: action: ''
 bind=NONE,${key},${action}
 bind=SUPER,${key},${action}
 bind=NONE,${key},setkeymode,default
 bind=SUPER,${key},setkeymode,default
-    '';
+  '';
   action_stay = key: action: ''
 bind=NONE,${key},${action}
 bind=SUPER,${key},${action}
-    '';
+  '';
   media = key: action: ''
 bind=NONE,${key},spawn,${action}
 bind=SUPER,${key},spawn,${action}
 bind=NONE,${key},setkeymode,default
 bind=SUPER,${key},setkeymode,default
-    '';
+  '';
   media_stay = key: action: ''
 bind=NONE,${key},spawn,${action}
 bind=SUPER,${key},spawn,${action}
-    '';
+  '';
 # }}}
 in {
   imports = [
@@ -398,10 +403,9 @@ in {
       };} + /* sh */ ''
 bind=SUPER,space,setkeymode,action
 bind=SUPER,l,setkeymode,media
-
+${reset_keymode "Escape"}
 
 keymode=action
-${action "escape" "spawn,echo"} # goto default keymode
 ${action "f" "togglefloating"}
 ${action "c" "centerwin"}
 ${action "m" "togglefakefullscreen"}
