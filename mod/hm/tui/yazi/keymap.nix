@@ -264,7 +264,7 @@
       }
 
       {
-        on = "y";
+        on = "w";
         run = [ "shell -- for path in \"$@\"; do echo \"file://$path\"; done | wl-copy -t text/uri-list" "yank" ];
         desc = "yank";
       }
@@ -429,32 +429,32 @@
 
       # yank {{{
       {
-        on = [ "Y" "f" ];
+        on = [ "W" "f" ];
         run = "copy path";
         desc = "Copy the file path";
       }
 
       {
-        on = [ "Y" "d" ];
+        on = [ "W" "d" ];
         run = "copy dirname";
         desc = "Copy the directory path";
       }
 
       {
-        on = [ "Y" "n" ];
+        on = [ "W" "n" ];
         run = "copy filename";
         desc = "Copy the filename";
       }
 
       {
-        on = [ "Y" "N" ];
+        on = [ "W" "N" ];
         run = "copy name_without_ext";
         desc = "Copy the filename without extension";
       }
 
       # FIXME
       # {
-      #   on = [ "Y" "g" ];
+      #   on = [ "W" "g" ];
       #   run = "shell -- ${flake_dir}/stuff/scripts/jg.sh";
       #   desc = "Copy file path from git root";
       # }

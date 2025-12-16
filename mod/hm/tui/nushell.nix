@@ -74,7 +74,7 @@ in {
         wf-recorder -r 60 -o DP-1 -f $"(date now | format date '%Y-%m-%d %H:%M:%S').mkv"
       }
 
-      def recordvirt [] { # simple screen record without obs
+      def recordsmall [] { # simple screen record without obs
         # TODO wf-recorder -g
       }
 
@@ -159,20 +159,20 @@ in {
       }
 
       # copy path
-      def yj [] {
-        let path = pwd | str trim | wl-copy
+      def ww [] {
+        pwd | str trim | wl-copy
         echo $"copied (pwd)"
       }
 
       # copy file path
-      def yf [...msg: string] {
+      def wf [...msg: string] {
         realpath ...$msg | str trim | wl-copy
         let path = realpath ...$msg
         echo $"copied ($path)"
       }
 
       # copy pwd relative to git root
-      def yg [] {
+      def wr [] {
         let root = (git rev-parse --show-toplevel | str trim)
         let rel = (realpath . | path relative-to $root)
         $rel | wl-copy
@@ -182,7 +182,7 @@ in {
       # goto git root
 # FIXME
       def gr [] {
-        cd $"(git rev-parse --show-toplevel)"
+        cd (git rev-parse --show-toplevel)
       }
 
       #  clear clipboard
