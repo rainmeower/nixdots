@@ -353,8 +353,8 @@ in {
           "appid:foot.ncmpcpp,foot.yazi.filechooser,width:720,height:1080,isnoborder:1,isfloating:1,noswallow:1"
 
           "appid:foot.yazi.isterm,isterm:1,noswallow:1"
-          "appid:footclient,isterm:1,noswallow:1"
-          "appid:foot,isterm:1,noswallow:1"
+          "appid:footclient,noswallow:1"
+          "appid:foot,noswallow:1"
 
 
           "appid:foot.quit_prompt,isfloating:1,width:300,height:150"
@@ -366,7 +366,7 @@ in {
           "appid:steam_app_1802710,force_tearing:1,isfullscreen:0,noblur:1,isfloating:0,width:2560,height:1080"
 
 
-          "appid:pickpic,animation_type_open:none,animation_type_close:none"
+          "appid:pickpic,animation_type_open:none,animation_type_close:none,noblur:1"
 
 
           "appid:swayimg,animation_type_open:none,animation_type_close:none"
