@@ -12,12 +12,6 @@
     ./options.nix
     ./highlight.nix
 
-    ./theme/everforest/everforest.nix
-    ./theme/everforest/lualine.nix
-    ./theme/blacchiato.nix
-    ./theme/lix.nix
-    ./theme/macchiato.nix
-
     ./key/keymaps.nix
     ./key/langmap.nix
 

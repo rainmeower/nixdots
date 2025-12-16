@@ -2,6 +2,7 @@
   imports = [
     ./btop_macchiato.nix
     ./mpv_macchiato.nix
+    ./nvim_macchiato.nix
     ./fastfetch_macchiato.nix
     ./hyprland_macchiato.nix
     ./foot_macchiato.nix
