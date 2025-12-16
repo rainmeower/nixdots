@@ -366,8 +366,7 @@ in {
           # momentum mod
           "appid:steam_app_1802710,force_tearing:1,isfullscreen:0,noblur:1,isfloating:0,width:2560,height:1080"
 
-          "appid:swayimg,animation_type_open:none,animation_type_clone:none"
-          "appid:mpv,animation_type_open:none,animation_type_clone:none"
+          "appid:swayimg,animation_type_open:none,animation_type_close:none"
           "appid:equibop,appid:vesktop,tags:2,isopensilent:1"
           # TODO `isterm` + emacs/yazi?
         ]; # }}}
