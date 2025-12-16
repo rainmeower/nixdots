@@ -405,6 +405,7 @@ bind=SUPER,space,setkeymode,action
 bind=SUPER,l,setkeymode,media
 
 keymode=action
+${reset_keymode "Escape"}
 ${action "f" "togglefloating"}
 ${action "c" "centerwin"}
 ${action "m" "togglefakefullscreen"}
@@ -420,6 +421,7 @@ ${action "q" "spawn,foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/
 
 
 keymode=media
+${reset_keymode "Escape"}
 ${media "s" "mpc -p 6669 prev && mpc -p 6669 next"} # restart song
 ${media "t" "playerctl play-pause"} # toggle player
 ${media "c" "mpc -p 6669 seek -1 && sleep 0.01 && mpc -p 6669 toggle"} # toggle music
@@ -432,8 +434,6 @@ ${media_stay "e" "mpc -p 6669 volume +5"} # vol up
 ${media "o" "mpc -p 6669 clear"} # clear playlist
 ${media "u" "mpc -p 6669 crop"} # clear all but current song
 
-keymode=common
-${reset_keymode "Escape"}
           '';
     };
   };
