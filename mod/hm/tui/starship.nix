@@ -40,8 +40,12 @@
       # rust.symbol = " ";
       rust.disabled = true;
 
+      package.symbol = " ";
+
+      c.symbol = "";
+
       nix_shell = {
-        symbol = " 󱄅";
+        symbol = "󱄅";
         pure_msg = "";
         impure_msg = "";
       };
