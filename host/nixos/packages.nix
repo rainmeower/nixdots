@@ -1,7 +1,11 @@
 {
   pkgs,
+  lib,
   ...
 }:{
+  # remove perl, rsync, and strace
+  environment.defaultPackages = lib.mkForce [];
+
   environment.systemPackages = with pkgs; [
     uutils-coreutils-noprefix
 
