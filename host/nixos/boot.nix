@@ -25,14 +25,16 @@
     kernelModules = [ "amdgpu" ];
     blacklistedKernelModules = [
 
+
+
       # "battery"
 
       /* ps2 */
-      # "vivaldi_fmap"
-      # "atkbd"
-      # "libps2"
-      # "serio"
-      # "i8042"
+      "vivaldi_fmap"
+      "atkbd"
+      "libps2"
+      "serio"
+      "i8042"
 
       /* bluetooth */
       "bluetooth"
