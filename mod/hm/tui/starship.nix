@@ -40,7 +40,11 @@
       # rust.symbol = " ";
       rust.disabled = true;
 
-      nix.symbol = " 󱄅";
+      nix_shell = {
+        symbol = " 󱄅";
+        pure_msg = "";
+        impure_msg = "";
+      };
 
 
       git_branch.symbol = "";
