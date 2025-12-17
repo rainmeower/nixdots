@@ -37,10 +37,10 @@
         format = "[$ssh_symbol $hostname]($style) at ";
       };
 
-      # rust.symbol = " ";
-      rust.disabled = true;
+      rust.symbol = "";
+      # rust.disabled = true;
 
-      package.symbol = " ";
+      package.symbol = " ";
 
       c.symbol = "";
 
