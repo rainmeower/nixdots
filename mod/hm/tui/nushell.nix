@@ -172,15 +172,15 @@ in {
       }
 
       # copy pwd relative to git root
-      def wr [] {
+      def wg [] {
         let root = (git rev-parse --show-toplevel | str trim)
         let rel = (realpath . | path relative-to $root)
         $rel | wl-copy
         echo $"copied ($rel)"
       }
 
-      # copy file path
-      def wf [msg: string] {
+      # copy file path relative to git root
+      def wgf [msg: string] {
         let root = (git rev-parse --show-toplevel | str trim)
         let rel = (realpath . | path relative-to $root)
         let path = $"($rel)/($msg)"
@@ -266,6 +266,8 @@ in {
       "....." = "cd ../../../..";
       "......" = "cd ../../../../..";
       "......." = "cd ../../../../../..";
+
+      co = "wl-copy";
 
       ffmpreg = "ffmpeg";
 
