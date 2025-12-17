@@ -227,7 +227,7 @@ in {
         # key name refer to `xev` or `wev` command output,
         # mod keys name: super,ctrl,alt,shift,none
         bind = [ # {{{
-          # "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
+          "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
           "SUPER+SHIFT,L,spawn,wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml"
 
             "SUPER+ALT,r,reload_config"
@@ -404,7 +404,7 @@ in {
         # ]; # }}}
       };} + /* sh */ ''
 bind=SUPER,space,setkeymode,action
-bind=SUPER,l,setkeymode,media
+# bind=SUPER,l,setkeymode,media # TODO
 
 keymode=action
 ${reset_keymode "Escape"}
