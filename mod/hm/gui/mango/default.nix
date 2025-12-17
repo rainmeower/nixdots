@@ -227,10 +227,14 @@ in {
         # key name refer to `xev` or `wev` command output,
         # mod keys name: super,ctrl,alt,shift,none
         bind = [ # {{{
-          "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
+          # "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
           "SUPER+SHIFT,L,spawn,wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml"
 
             "SUPER+ALT,r,reload_config"
+
+            "SUPER,j,spawn,mpc toggle"
+
+
 
             # "SUPER,n,spawn,mmsg -d focusmon u"
             # "SUPER,left,spawn,mmsg -d focusmon DP-3"
@@ -426,17 +430,17 @@ ${action "z" "spawn,${flake_dir}/stuff/scripts/eep.sh"}
 
 
 
-${action "s" "spawn, mpc -p 6669 prev && mpc -p 6669 next"} # restart song
+${action "s" "spawn, mpc prev && mpc next"} # restart song
 ${action "t" "spawn, playerctl play-pause"} # toggle player
-${action "c" "spawn, mpc -p 6669 seek -1 && sleep 0.01 && mpc -p 6669 toggle"} # toggle music
+${action "c" "spawn, mpc seek -1 && sleep 0.01 && mpc toggle"} # toggle music
 
-${action "h" "spawn, mpc -p 6669 prev"} # prev song
-${action "i" "spawn, mpc -p 6669 next"} # next song
-${media_stay "a" "mpc -p 6669 volume -5"} # vol down
-${media_stay "e" "mpc -p 6669 volume +5"} # vol up
+${action "h" "spawn, mpc prev"} # prev song
+${action "i" "spawn, mpc next"} # next song
+${media_stay "a" "mpc volume -5"} # vol down
+${media_stay "e" "mpc volume +5"} # vol up
 
-${action "o" "spawn, mpc -p 6669 clear"} # clear playlist
-${action "u" "spawn, mpc -p 6669 crop"} # clear all but current song
+${action "o" "spawn, mpc clear"} # clear playlist
+${action "u" "spawn, mpc crop"} # clear all but current song
 
           '';
     };

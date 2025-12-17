@@ -14,7 +14,6 @@ in {
 
     dataDir = userDirs.extraConfig.XDG_DATA_HOME + "/mpd";
     extraConfig = ''
-      port "6669"
       audio_output {
         type "pipewire"
         name "meowwire"

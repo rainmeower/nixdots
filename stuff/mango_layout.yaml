@@ -30,7 +30,7 @@ menu:
 
   - key: [ "s", "Mod4+s" ]
     desc: restart song
-    cmd: mpc -p 6669 prev && mpc -p 6669 next
+    cmd: mpc prev && mpc next
 
 
   - key: [ "l", "Mod4+l", "space", "Mod4+space" ]

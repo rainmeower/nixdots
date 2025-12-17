@@ -27,7 +27,7 @@ menu:
 
   - key: [ "s", "Mod4+s" ]
     desc: restart song
-    cmd: mpc -p 6669 prev && mpc -p 6669 next
+    cmd: mpc prev && mpc next
 
   - key: [ "t", "Mod4+t" ]
     desc: toggle player
@@ -35,33 +35,33 @@ menu:
 
   - key: [ "c", "Mod4+c" ]
     desc: toggle music
-    cmd: mpc -p 6669 seek -1 && sleep 0.01 && mpc -p 6669 toggle
+    cmd: mpc seek -1 && sleep 0.01 && mpc toggle
 
   - key: [ "h", "Mod4+h" ]
     desc: prev song
-    cmd: mpc -p 6669 prev
+    cmd: mpc prev
 
   - key: [ "i", "Mod4+i" ]
     desc: next song
-    cmd: mpc -p 6669 next
+    cmd: mpc next
 
   - key: [ "a", "Mod4+a" ]
     desc: mpd -vol
-    cmd: mpc -p 6669 volume -5
+    cmd: mpc volume -5
     keep_open: true
 
   - key: [ "e", "Mod4+e" ]
     desc: mpd +vol
-    cmd: mpc -p 6669 volume +5
+    cmd: mpc volume +5
     keep_open: true
 
   - key: [ "o", "Mod4+o" ]
     desc: clear playlist
-    cmd: mpc -p 6669 clear
+    cmd: mpc clear
 
   - key: [ "u", "Mod4+u" ]
     desc: clear all but current song
-    cmd: mpc -p 6669 crop
+    cmd: mpc crop
 
 
   - key: [ "l" ]

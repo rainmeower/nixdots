@@ -30,7 +30,7 @@
         userDirs.music;
 
       mpd_host = "localhost";
-      mpd_port = "6669";
+      # mpd_port = "6669";
 
 
       song_list_format = "{%t - }{%a}|{$5%f$9}$R{$5%l$9}";
