@@ -2,6 +2,7 @@
 {
   lib,
   prompt_sym,
+  p,
   ...
 }:{
   programs.starship = {
@@ -29,6 +30,7 @@
       cmd_duration = {
         min_time = 60;
         format = "[$duration]($style) ";
+        style = "bold " + p.yellow;
       };
 
       hostname = {
@@ -37,12 +39,16 @@
         format = "[$ssh_symbol $hostname]($style) at ";
       };
 
-      rust.symbol = "";
-      # rust.disabled = true;
 
       package.symbol = " ";
+      package.style = "bold " + p.yellow;
 
-      c.symbol = "";
+      # rust.symbol = "";
+      rust.disabled = true;
+
+
+      # c.symbol = "";
+      c.disabled = true;
 
       nix_shell = {
         symbol = "󱄅";
@@ -51,8 +57,8 @@
       };
 
 
-      git_branch.symbol = "";
       git_metrics.disabled = false;
+      git_branch.symbol = "";
       git_status = {
         format = "(\[$all_status$ahead_behind\]($style) )";
         ahead = "\${count}";
