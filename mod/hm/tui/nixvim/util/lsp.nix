@@ -18,11 +18,11 @@
 
     keymaps = [
     {
-      key = "gt";
+      key = "gd";
       lspBufAction = "definition";
     }
     {
-      key = "gT";
+      key = "gD";
       lspBufAction = "declaration";
     }
     {

@@ -40,6 +40,9 @@
       # rust.symbol = " ";
       rust.disabled = true;
 
+      nix.symbol = " 󱄅";
+
+
       git_branch.symbol = "";
       git_metrics.disabled = false;
       git_status = {

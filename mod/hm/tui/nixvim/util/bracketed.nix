@@ -1,4 +1,3 @@
-# TODO ]z for jum to fold?
 {
   nv.plugins.mini-bracketed = {
     enable = true;

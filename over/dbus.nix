@@ -1,5 +1,6 @@
 (final: prev: {
   dbus = prev.dbus.override {
-    x11Support = false;
+    # x11Support = false;
+    # systemdMinimal = self.systemd;
   };
 })

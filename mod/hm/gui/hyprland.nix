@@ -15,9 +15,9 @@
       enable = true;
       settings = {
         binds = {
-          workspace_back_and_forth = true; # switch to prev workspace when pressing bind to switch to current workspace
-# hide_special_on_workspace_change = true;
-            workspace_center_on = true;
+          workspace_back_and_forth = true;
+          # hide_special_on_workspace_change = true;
+          workspace_center_on = true;
         };
 
         misc = {
@@ -33,9 +33,9 @@
 
         group = {
           groupbar = {
-# gradients = true;
-# font_size = 10;
-# rounding = 4;
+            # gradients = true;
+            # font_size = 10;
+            # rounding = 4;
             render_titles = true;
             text_color = "rgba(24273aff)";
             "col.active" = "rgba(b7bdf8ff)";
@@ -52,7 +52,7 @@
         "$moveactivewindow" = "grep -q 'true' <<< $(hyprctl activewindow -j | jq -r .floating) && hyprctl dispatch moveactive";
 
 
-# exec = [
+        # exec = [
 # ];
 
         exec-once = [
@@ -154,9 +154,7 @@
             "SUPER CTRL,  2, exec, notify-send $(hyprctl cursorpos)"
             "SUPER,       4, exec, $scripts/hextoimg.sh"  # hyprpicker
 
-# TODO: doesnt work using $scripts
             "SUPER,       3, exec, $scrPath/screenshot.sh s"  # screenshot capture
-# TODO: doesnt work using $scripts
             "SUPER CTRL,  3, exec, $scrPath/screenshot.sh sf"  # screenshot capture (frozen screen)
 
             "SUPER SHIFT, x, exec, hyprctl dispatch togglegroup"

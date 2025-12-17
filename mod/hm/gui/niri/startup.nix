@@ -16,7 +16,7 @@
     # { command = [ "hyprpaper" ]; }
     { command = [ "vesktop" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland" ]; }
     # { command = [ "steam" "-silent" ]; }
-    { command = [ "swww-daemon" ]; } # TODO
+    { command = [ "swww-daemon" ]; }
   ];
   };
 }

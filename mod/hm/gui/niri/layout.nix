@@ -1,6 +1,7 @@
 {
   lib,
   wm,
+  border_width,
   ...
 }:{
   config = lib.mkIf (wm == "niri") {
@@ -15,7 +16,7 @@
 
       focus-ring = {
         enable = true;
-        width = 3;
+        width = border_width;
       };
       tab-indicator = {
         enable = true;

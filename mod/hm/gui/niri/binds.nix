@@ -8,7 +8,7 @@
   config = lib.mkIf (wm == "niri") {
     programs.niri.settings.binds = with config.lib.niri.actions; 
     let
-      sh = spawn "dash" "-c"; # TODO change back to sh if something breaks
+      sh = spawn "dash" "-c";
       nu = spawn "nu" "-c";
       move = "niri msg action move-window-to-workspace --focus=false "; # NOTE space at the end
     in {
@@ -31,8 +31,7 @@
         "Mod+X".action = sh "niri msg action expand-column-to-available-width";
 
 
-        # "Mod+J".action = sh "pkill tty-clock || footclient tty-clock -cC 4 -f \"%a,\ %d\ %b\ %Y\""; # TODO per-theme colour
-        "Mod+U".action = sh "pkill btop || foot btop"; # TODO window rule for size
+        "Mod+U".action = sh "pkill btop || foot btop"; # TODO window rule for size depending on current font
         "Mod+K".action = sh "pkill ncmpcpp || foot ncmpcpp";
 
 

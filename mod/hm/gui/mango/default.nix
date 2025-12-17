@@ -8,6 +8,7 @@
   pkgs,
   userDirs,
   rounding,
+  border_width,
 	...
 }: let
 # {{{
@@ -52,7 +53,7 @@ in {
 
       package = inputs.mango.packages."x86_64-linux".mango.overrideAttrs {
         mesonBuildFlags = [
-          "-Dc_args=-O3 -march=native -pipe" # TODO
+          "-Dc_args=-O3 -march=native -pipe"
         ];
       };
 
@@ -141,7 +142,7 @@ in {
         scroller_proportion_preset = "0.333,0.5,0.667";
         scroller_focus_center = false;
         scroller_prefer_center = false;
-        edge_scroller_pointer_focus = true; # TODO
+        edge_scroller_pointer_focus = true;
 
         # Master-Stack Layout Setting
         new_is_master = false;
@@ -152,7 +153,7 @@ in {
         # Overview Setting
         hotarea_size = 0;
         enable_hotarea = false;
-        ov_tab_mode = 0; # TODO
+        ov_tab_mode = 0;
         overviewgappi = 5; # inner gaps
         overviewgappo = 30; # outer gaps
 
@@ -198,7 +199,7 @@ in {
         gappov = gaps;
         scratchpad_width_ratio = 0.67; # i swear its just rounding 0.66...
         scratchpad_height_ratio = 0.9;
-        borderpx = 3;
+        borderpx = border_width;
         # TODO function for these
         rootcolor    = "0xff000000"; # behind the wallpaper
         bordercolor  = "0x00000000";
@@ -375,7 +376,6 @@ in {
 
           "appid:swayimg,animation_type_open:none,animation_type_close:none"
           "appid:equibop,appid:vesktop,tags:2,isopensilent:1"
-          # TODO `isterm` + emacs/yazi?
         ]; # }}}
 
 
