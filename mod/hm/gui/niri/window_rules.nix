@@ -9,120 +9,120 @@ let
   radius = if rounding then 10.0 else 0.0;
   inherit (monitor) DP-1 DP-3;
 in lib.mkIf wm.niri {
-  programs.niri.settings.window-rules = [
-    {
-      draw-border-with-background = false;
-      clip-to-geometry = true;
-      geometry-corner-radius = {
-        top-left = radius;
-        top-right = radius;
-        bottom-left = radius;
-        bottom-right = radius;
-      };
-    }
+    programs.niri.settings.window-rules = [
+      {
+        draw-border-with-background = false;
+        clip-to-geometry = true;
+        geometry-corner-radius = {
+          top-left = radius;
+          top-right = radius;
+          bottom-left = radius;
+          bottom-right = radius;
+        };
+      }
 
 
-    {
-      matches = [ { app-id = "^steam_app_default$"; } ];
-      open-on-workspace = "one";
-      open-fullscreen = true;
-    }
+      {
+        matches = [ { app-id = "^steam_app_default$"; } ];
+        open-on-workspace = "one";
+        open-fullscreen = true;
+      }
 
-    {
-      matches = [ { title = "^ghostty_nvim$"; } ];
-      open-on-workspace = "ghostty_nvim";
-      open-focused = false;
-    }
-    {
-      matches = [ { title = "^ghostty_term$"; } ];
-      open-on-workspace = "ghostty_term";
-      open-focused = false;
-    }
-    {
-      matches = [ { title = "^ghostty_yazi$"; } ];
-      open-on-workspace = "ghostty_yazi";
-      open-focused = false;
-    }
+      {
+        matches = [ { title = "^ghostty_nvim$"; } ];
+        open-on-workspace = "ghostty_nvim";
+        open-focused = false;
+      }
+      {
+        matches = [ { title = "^ghostty_term$"; } ];
+        open-on-workspace = "ghostty_term";
+        open-focused = false;
+      }
+      {
+        matches = [ { title = "^ghostty_yazi$"; } ];
+        open-on-workspace = "ghostty_yazi";
+        open-focused = false;
+      }
 
-    {
-      matches = [ { app-id = "^vesktop$"; } ];
-      block-out-from = "screencast";
-      open-on-workspace = "discord";
-    }
+      {
+        matches = [ { app-id = "^vesktop$"; } ];
+        block-out-from = "screencast";
+        open-on-workspace = "discord";
+      }
 
-    {
-      matches = [ { title = "^Dolphin$"; } ];
-      block-out-from = "screencast";
-      open-on-workspace = "one";
-      open-fullscreen = true;
-    }
+      {
+        matches = [ { title = "^Dolphin$"; } ];
+        block-out-from = "screencast";
+        open-on-workspace = "one";
+        open-fullscreen = true;
+      }
 
-    {
-      matches = [ { 
-        app-id = "steam_app_1802710";
-      } ];
-      open-on-workspace = "one";
-      min-width = DP-1.width;
-      max-width = DP-1.width;
-      min-height = 1080;
-      max-height = 1080;
-      geometry-corner-radius = {
-        top-left = 0.0;
-        top-right = 0.0;
-        bottom-left = 0.0;
-        bottom-right = 0.0;
-      };
-      variable-refresh-rate = false;
-      open-floating = false;
-    }
+      {
+        matches = [ { 
+          app-id = "steam_app_1802710";
+        } ];
+        open-on-workspace = "one";
+        min-width = DP-1.width;
+        max-width = DP-1.width;
+        min-height = 1080;
+        max-height = 1080;
+        geometry-corner-radius = {
+          top-left = 0.0;
+          top-right = 0.0;
+          bottom-left = 0.0;
+          bottom-right = 0.0;
+        };
+        variable-refresh-rate = false;
+        open-floating = false;
+      }
 
-    {
-      matches = [ { 
-        app-id = "steam_app_2225070";
-        title = "Trackmania";
-      } ];
-      open-on-workspace = "one";
-      min-width = DP-1.width;
-      max-width = DP-1.width;
-      min-height = 1080;
-      max-height = 1080;
-      geometry-corner-radius = {
-        top-left = 0.0;
-        top-right = 0.0;
-        bottom-left = 0.0;
-        bottom-right = 0.0;
-      };
-      variable-refresh-rate = false;
-      open-floating = false;
-    }
+      {
+        matches = [ { 
+          app-id = "steam_app_2225070";
+          title = "Trackmania";
+        } ];
+        open-on-workspace = "one";
+        min-width = DP-1.width;
+        max-width = DP-1.width;
+        min-height = 1080;
+        max-height = 1080;
+        geometry-corner-radius = {
+          top-left = 0.0;
+          top-right = 0.0;
+          bottom-left = 0.0;
+          bottom-right = 0.0;
+        };
+        variable-refresh-rate = false;
+        open-floating = false;
+      }
 
-    { # ubisoft connect little white window
-      matches = [ { 
-        title = "^$";
-        app-id = "steam_app_2225070";
-      } ];
-      opacity = 0.0;
-    }
+      { # ubisoft connect little white window
+        matches = [ { 
+          title = "^$";
+          app-id = "steam_app_2225070";
+        } ];
+        opacity = 0.0;
+      }
 
-    {
-      matches = [ { 
-        title = "Krita";
-        app-id = "krita";
-      } ];
-      open-maximized = true;
-    }
+      {
+        matches = [ { 
+          title = "Krita";
+          app-id = "krita";
+        } ];
+        open-maximized = true;
+      }
 
-    {
-      matches = [ { title = "mail"; } ];
-      block-out-from = "screen-capture";
-    }
-    {
-      matches = [ { title = "itwarden"; } ];
-      block-out-from = "screen-capture";
-    }
-    {
-      matches = [ { title = "assword"; } ];
-      block-out-from = "screen-capture";
-    }
-  ];
-}
+      {
+        matches = [ { title = "mail"; } ];
+        block-out-from = "screen-capture";
+      }
+      {
+        matches = [ { title = "itwarden"; } ];
+        block-out-from = "screen-capture";
+      }
+      {
+        matches = [ { title = "assword"; } ];
+        block-out-from = "screen-capture";
+      }
+    ];
+  }

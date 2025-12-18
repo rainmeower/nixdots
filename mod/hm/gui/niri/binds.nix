@@ -5,124 +5,124 @@
   userDirs,
   ...
 }: lib.mkIf wm.niri {
-    programs.niri.settings.binds = with config.lib.niri.actions; 
+  programs.niri.settings.binds = with config.lib.niri.actions; 
     let
       sh = spawn "dash" "-c";
       nu = spawn "nu" "-c";
       move = "niri msg action move-window-to-workspace --focus=false "; # NOTE space at the end
     in {
-        "Mod+G".action = spawn "wlr-which-key";
-        "Mod+L".action = sh "wlr-which-key ~/.config/wlr-which-key/mpc.yaml";
-        "Mod+minus".action = sh "wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml";
+      "Mod+G".action = spawn "wlr-which-key";
+      "Mod+L".action = sh "wlr-which-key ~/.config/wlr-which-key/mpc.yaml";
+      "Mod+minus".action = sh "wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml";
 
-# "Mod+T".action = spawn "kitty" "-1";
-# "Mod+C".action = spawn "kitty" "-1" "yazi";
-# "Mod+S".action = spawn "kitty" "-1" "nvim";
+      # "Mod+T".action = spawn "kitty" "-1";
+      # "Mod+C".action = spawn "kitty" "-1" "yazi";
+      # "Mod+S".action = spawn "kitty" "-1" "nvim";
 
-        # "Mod+T".action = spawn "footclient";
-        # "Mod+Shift+T".action = spawn "foot";
-        # "Mod+C".action = spawn "footclient" "yazi";
-        # "Mod+S".action = spawn "footclient" "nvim";
-        # "Mod+T".action = spawn "kitty" "-1";
-        # "Mod+C".action = spawn "kitty" "-1" "yazi";
-        # "Mod+S".action = spawn "kitty" "-1" "nvim";
+      # "Mod+T".action = spawn "footclient";
+      # "Mod+Shift+T".action = spawn "foot";
+      # "Mod+C".action = spawn "footclient" "yazi";
+      # "Mod+S".action = spawn "footclient" "nvim";
+      # "Mod+T".action = spawn "kitty" "-1";
+      # "Mod+C".action = spawn "kitty" "-1" "yazi";
+      # "Mod+S".action = spawn "kitty" "-1" "nvim";
 
-        "Mod+X".action = sh "niri msg action expand-column-to-available-width";
-
-
-        "Mod+U".action = sh "pkill btop || foot btop"; # TODO window rule for size depending on current font
-        "Mod+K".action = sh "pkill ncmpcpp || foot ncmpcpp";
+      "Mod+X".action = sh "niri msg action expand-column-to-available-width";
 
 
-        "XF86AudioRaiseVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+";
-        "XF86AudioLowerVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-";
-
-        "Mod+N".action = focus-monitor-next;
-# "Mod+3".action = screenshot;
-# "Mod+4".action = sh "hex=$(niri msg pick-color | grep -o '#.*') && echo -n \"$hex\" | wl-copy && notify-send \"$hex\"";
-        "Mod+O".action = close-window;
-        "Mod+Return".action = toggle-overview;
-
-        # "Mod+Space".action = spawn "fuzzel";
-        "Mod+Space".action = sh "vicinae vicinae://toggle";
-
-        "Mod+Z".action = sh "zen -p meow";
-        "Mod+Shift+Z".action = sh "zen -p media";
-
-        "Mod+comma".action = focus-workspace "left";
-        "Mod+period".action = focus-workspace "right";
-        "Mod+Tab".action = focus-workspace "media";
-        "Mod+B".action = focus-workspace "discord";
-        "Mod+F".action = focus-workspace "one";
-        "Mod+D".action = focus-workspace "two";
-        "Mod+W".action = focus-workspace "three";
-        "Mod+P".action = focus-workspace "four";
-
-        "Mod+2".action = focus-workspace "ghostty_nvim";
-        "Mod+1".action = focus-workspace "ghostty_term";
-        "Mod+4".action = focus-workspace "ghostty_yazi";
-
-        # FIXME
-        # "Mod+S".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty_nvim && ghostty --title=\"ghostty_nvim\" -e nvim";
-        # "Mod+T".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty_term && ghostty --title=\"ghostty_term\"";
-        # "Mod+C".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty_yazi && ghostty --title=\"ghostty_yazi\" -e yazi";
-        "Mod+S".action = sh "footclient nvim";
-        "Mod+T".action = sh "footclient";
-        "Mod+C".action = sh "footclient nu -e yazi";
-
-        # goto most recent download
-        "Mod+Shift+C".action = nu ''footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/($f)"'';
-
-        # idk why these need parens
-        "Mod+Shift+comma".action  = sh (move + "left");
-        "Mod+Shift+period".action = sh (move + "right");
-        "Mod+Shift+Tab".action    = sh (move + "media");
-        "Mod+Shift+B".action = sh (move + "discord");
-        "Mod+Shift+F".action = sh (move + "one");
-        "Mod+Shift+D".action = sh (move + "two");
-        "Mod+Shift+W".action = sh (move + "three");
-        "Mod+Shift+P".action = sh (move + "four");
-        "Mod+Shift+N".action = sh (move + "alt");
-
-        "Mod+H".action = focus-column-left;
-        "Mod+I".action = focus-column-right;
-        "Mod+A".action = focus-window-down-or-top;
-        "Mod+E".action = focus-window-up-or-bottom;
-
-        "Mod+Shift+H".action = consume-or-expel-window-left;
-        "Mod+Shift+I".action = consume-or-expel-window-right;
-        "Mod+Shift+A".action = move-window-down;
-        "Mod+Shift+E".action = move-window-up;
-
-        "Alt+H".action = swap-window-left;
-        "Alt+I".action = swap-window-right;
-        "Alt+A".action = move-window-down;
-        "Alt+E".action = move-window-up;
-
-        "Mod+9".action = switch-preset-window-width;
-        "Mod+0".action = switch-preset-window-height;
-        "Mod+Shift+9".action = switch-preset-window-width-back;
-        "Mod+Shift+0".action = switch-preset-window-height-back;
-
-        "Mod+M".action = maximize-column;
-        "Mod+Shift+M".action = fullscreen-window;
-        "Mod+Ctrl+M".action = fullscreen-window;
-        # "Mod+minus".action = toggle-column-tabbed-display;
+      "Mod+U".action = sh "pkill btop || foot btop"; # TODO window rule for size depending on current font
+      "Mod+K".action = sh "pkill ncmpcpp || foot ncmpcpp";
 
 
+      "XF86AudioRaiseVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+";
+      "XF86AudioLowerVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-";
 
-# expand-column-to-available-width
-# focus-window-previous
-# move-column-left
-# move-column-right
-# center-column
-# set-window-width
-# set-window-height
-# switch-preset-window-width
-# switch-preset-window-height
-# reset-window-height
-# maximize-column
+      "Mod+N".action = focus-monitor-next;
+      # "Mod+3".action = screenshot;
+      # "Mod+4".action = sh "hex=$(niri msg pick-color | grep -o '#.*') && echo -n \"$hex\" | wl-copy && notify-send \"$hex\"";
+      "Mod+O".action = close-window;
+      "Mod+Return".action = toggle-overview;
+
+      # "Mod+Space".action = spawn "fuzzel";
+      "Mod+Space".action = sh "vicinae vicinae://toggle";
+
+      "Mod+Z".action = sh "zen -p meow";
+      "Mod+Shift+Z".action = sh "zen -p media";
+
+      "Mod+comma".action = focus-workspace "left";
+      "Mod+period".action = focus-workspace "right";
+      "Mod+Tab".action = focus-workspace "media";
+      "Mod+B".action = focus-workspace "discord";
+      "Mod+F".action = focus-workspace "one";
+      "Mod+D".action = focus-workspace "two";
+      "Mod+W".action = focus-workspace "three";
+      "Mod+P".action = focus-workspace "four";
+
+      "Mod+2".action = focus-workspace "ghostty_nvim";
+      "Mod+1".action = focus-workspace "ghostty_term";
+      "Mod+4".action = focus-workspace "ghostty_yazi";
+
+      # FIXME
+      # "Mod+S".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty_nvim && ghostty --title=\"ghostty_nvim\" -e nvim";
+      # "Mod+T".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty_term && ghostty --title=\"ghostty_term\"";
+      # "Mod+C".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty_yazi && ghostty --title=\"ghostty_yazi\" -e yazi";
+      "Mod+S".action = sh "footclient nvim";
+      "Mod+T".action = sh "footclient";
+      "Mod+C".action = sh "footclient nu -e yazi";
+
+      # goto most recent download
+      "Mod+Shift+C".action = nu ''footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/($f)"'';
+
+      # idk why these need parens
+      "Mod+Shift+comma".action  = sh (move + "left");
+      "Mod+Shift+period".action = sh (move + "right");
+      "Mod+Shift+Tab".action    = sh (move + "media");
+      "Mod+Shift+B".action = sh (move + "discord");
+      "Mod+Shift+F".action = sh (move + "one");
+      "Mod+Shift+D".action = sh (move + "two");
+      "Mod+Shift+W".action = sh (move + "three");
+      "Mod+Shift+P".action = sh (move + "four");
+      "Mod+Shift+N".action = sh (move + "alt");
+
+      "Mod+H".action = focus-column-left;
+      "Mod+I".action = focus-column-right;
+      "Mod+A".action = focus-window-down-or-top;
+      "Mod+E".action = focus-window-up-or-bottom;
+
+      "Mod+Shift+H".action = consume-or-expel-window-left;
+      "Mod+Shift+I".action = consume-or-expel-window-right;
+      "Mod+Shift+A".action = move-window-down;
+      "Mod+Shift+E".action = move-window-up;
+
+      "Alt+H".action = swap-window-left;
+      "Alt+I".action = swap-window-right;
+      "Alt+A".action = move-window-down;
+      "Alt+E".action = move-window-up;
+
+      "Mod+9".action = switch-preset-window-width;
+      "Mod+0".action = switch-preset-window-height;
+      "Mod+Shift+9".action = switch-preset-window-width-back;
+      "Mod+Shift+0".action = switch-preset-window-height-back;
+
+      "Mod+M".action = maximize-column;
+      "Mod+Shift+M".action = fullscreen-window;
+      "Mod+Ctrl+M".action = fullscreen-window;
+      # "Mod+minus".action = toggle-column-tabbed-display;
 
 
-      };
+
+      # expand-column-to-available-width
+      # focus-window-previous
+      # move-column-left
+      # move-column-right
+      # center-column
+      # set-window-width
+      # set-window-height
+      # switch-preset-window-width
+      # switch-preset-window-height
+      # reset-window-height
+      # maximize-column
+
+
+    };
 }
