@@ -3,7 +3,7 @@
   pkgs,
   config,
   ...
-}:{
+}: lib.mkIf config.wm.mango {
   systemd.user.targets.nixos-fake-graphical-session = lib.mkForce {};
 
   programs.uwsm = {

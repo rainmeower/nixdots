@@ -3,8 +3,7 @@
   lib,
   wm,
   ...
-}:{
-  config = lib.mkIf wm.niri {
+}: lib.mkIf wm.niri {
   programs.niri.settings.spawn-at-startup = [
     { command = [ "${flake_dir}/stuff/scripts/startup.sh" ]; }
     { command = [ "${flake_dir}/stuff/scripts/swww.sh" ]; }
@@ -18,5 +17,4 @@
     # { command = [ "steam" "-silent" ]; }
     { command = [ "swww-daemon" ]; }
   ];
-  };
 }

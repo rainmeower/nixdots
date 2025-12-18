@@ -4,8 +4,7 @@
   wm,
   userDirs,
   ...
-}:{
-  config = lib.mkIf wm.niri {
+}: lib.mkIf wm.niri {
     programs.niri.settings.binds = with config.lib.niri.actions; 
     let
       sh = spawn "dash" "-c";
@@ -126,5 +125,4 @@
 
 
       };
-  };
 }

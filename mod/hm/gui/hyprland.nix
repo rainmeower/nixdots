@@ -11,7 +11,7 @@
     ];
 
     wayland.windowManager.hyprland = {
-      enable = true;
+      enable = wm.hyprland;
       settings = {
         binds = {
           workspace_back_and_forth = true;
