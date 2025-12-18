@@ -24,7 +24,7 @@ in {
     ./layer_rules.nix
   ];
 
-  config = lib.mkIf (wm == "niri") {
+  config = lib.mkIf wm.niri {
 
     home.packages = with pkgs; [
       xwayland-satellite
@@ -34,7 +34,7 @@ in {
     xdg.portal.configPackages = portals;
     xdg.portal.extraPortals = portals;
 
-    programs.niri.enable = if wm == "niri" then true else false;
+    programs.niri.enable = wm.niri;
     programs.niri.package = pkgs.niri;
   };
 }

@@ -238,7 +238,7 @@
 
     # image {{{
     { name = "gif"; text = ""; fg = p.yellow; }
-    { name = "svg"; text = "󰜡"; fg = p.yellow; }
+    { name = "svg"; text = "󰜡"; fg = p.yellow; } # 󰕙
     { name = "svgz"; text = "󰜡"; fg = p.yellow; }
 
     { name = "webp"; text = ""; fg = p.yellow; }

@@ -9,7 +9,7 @@ let
   radius = if rounding then 10.0 else 0.0;
   inherit (monitor) DP-1 DP-3;
 in {
-  config = lib.mkIf (wm == "niri") {
+  config = lib.mkIf wm.niri {
     programs.niri.settings.window-rules = [
     {
       draw-border-with-background = false;

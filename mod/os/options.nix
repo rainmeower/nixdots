@@ -35,12 +35,17 @@ in {
       type = bool;
     };
 
-    wm = mkOption {
-      type = enum [
-        "hyprland"
-        "niri"
-        "mango"
-      ];
+    wm.hyprland = mkOption {
+      type = bool;
+      default = false;
+    };
+    wm.niri = mkOption {
+      type = bool;
+      default = false;
+    };
+    wm.mango = mkOption {
+      type = bool;
+      default = false;
     };
 
     term = mkOption {

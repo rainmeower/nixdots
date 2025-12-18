@@ -3,7 +3,7 @@
   theme,
   wm,
   ...
-}: lib.mkIf (theme == "quiet" && wm == "hyprland") {
+}: lib.mkIf (theme == "quiet" && wm.hyprland) {
 
 
   wayland.windowManager.hyprland = {

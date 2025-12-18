@@ -19,16 +19,16 @@ inhibit_compositor_keyboard_shortcuts: true
 menu:
   - key: [ "q", "Mod4+q" ]
     desc: quit
-    cmd: ${if (wm == "hyprland") then "hyprctl dispatch exit"
-           else if (wm == "niri") then "niri msg action quit"
-           else if (wm == "mango") then "foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit.sh mango"
+    cmd: ${if wm.hyprland then "hyprctl dispatch exit"
+           else if wm.niri then "niri msg action quit"
+           else if wm.mango then "foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit.sh mango"
            else err
           }
 
   - key: [ "s", "Mod4+s" ]
     desc: screenshot
-    cmd: ${if (wm == "hyprland" || wm == "mango") then "${flake_dir}/stuff/scripts/keys/screenshot.sh"
-           else if (wm == "niri") then "niri msg action screenshot -p false"
+    cmd: ${if (wm.hyprland || wm.mango) then "${flake_dir}/stuff/scripts/keys/screenshot.sh"
+           else if wm.niri then "niri msg action screenshot -p false"
            else err
           }
 
@@ -50,17 +50,17 @@ menu:
 
   - key: [ "f", "Mod4+f" ]
     desc: float active
-    cmd: ${if (wm == "hyprland") then "notify-send TODO"
-           else if (wm == "niri") then "niri msg action toggle-window-floating"
-           else if (wm == "mango") then "mmsg -d togglefloating"
+    cmd: ${if wm.hyprland then "notify-send TODO"
+           else if wm.niri then "niri msg action toggle-window-floating"
+           else if wm.mango then "mmsg -d togglefloating"
            else err
           }
 
   - key: [ "c", "Mod4+c" ]
     desc: center window
-    cmd: ${if (wm == "hyprland") then "notify-send TODO"
-           else if (wm == "niri") then "niri msg action center-column"
-           else if (wm == "mango") then "mmsg -d centerwin"
+    cmd: ${if wm.hyprland then "notify-send TODO"
+           else if wm.niri then "niri msg action center-column"
+           else if wm.mango then "mmsg -d centerwin"
            else err
           }
 
@@ -74,9 +74,9 @@ menu:
 
   - key: [ "m", "Mod4+m" ]
     desc: fullscreen-like action
-    cmd: ${if (wm == "hyprland") then "notify-send TODO"
-           else if (wm == "niri") then "niri msg action maximize-column"
-           else if (wm == "mango") then "mmsg -d togglefakefullscreen"
+    cmd: ${if wm.hyprland then "notify-send TODO"
+           else if wm.niri then "niri msg action maximize-column"
+           else if wm.mango then "mmsg -d togglefakefullscreen"
            else err
           }
 

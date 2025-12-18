@@ -3,7 +3,7 @@
   wm,
   ...
 }:{
-  config = lib.mkIf (wm == "niri") {
+  config = lib.mkIf wm.niri {
     programs.niri.settings = {
       environment = {
         NIRI_DISABLE_SYSTEM_MANAGER_NOTIFY = "1";

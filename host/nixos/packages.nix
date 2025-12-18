@@ -61,7 +61,7 @@
     #   withX11 = false;
     #   withPipewire = false;
     #   withPam = false;
-    #   withHyprland = if wm == "hyprland" then true else false;
+    #   withHyprland = wm.hyprland;
     #   withI3 = false;
     #   # TODO niri, mango
     # })

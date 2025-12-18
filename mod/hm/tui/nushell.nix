@@ -8,9 +8,9 @@
   ...
 }: let
   wm_launch_command =
-    if wm == "hyprland" then "Hyprland"
-    else if wm == "niri" then "niri-session"
-    else if wm == "mango" then "uwsm start mango-uwsm.desktop"
+    if wm.hyprland then "Hyprland"
+    else if wm.niri then "niri-session"
+    else if wm.mango then "uwsm start mango-uwsm.desktop"
     else "echo 'cannot launch wm: config.wm is set incorrectly'";
 in {
   programs.nushell = {
@@ -103,11 +103,9 @@ in {
 
 
       def nr [...msg: string] {
-        sudo echo # get password prompt immediately
-        # sudo nixos-rebuild switch --flake ${flake_dir}#nixos
         cd ${flake_dir}
         git add -A
-        nh os switch -R ${flake_dir} -H ${host}
+        sudo nh os switch -R ${flake_dir} -H ${host}
         let timestamp = (date now | format date '%d/%m %H:%M:%S')
         let full_msg = if ($msg | is-empty) {
           $timestamp
@@ -294,8 +292,6 @@ in {
       mv = "mv -i"; # prompt every time
       ln = "ln -i"; # prompt every time
 
-      banish = "shred -u"; # shred and delete
-
       logout = "hyprctl dispatch exit 0";
       # l = "eza -lh  --icons=auto"; # long list
       ls = "eza -a1   --icons=auto"; # short list
@@ -307,7 +303,7 @@ in {
 
 
 
-      ga = "git add .";
+      ga = "git add --all";
       # gl = "git log --oneline | lines | fzf";
       gcl = "git clone";
       gd = "git diff HEAD^";

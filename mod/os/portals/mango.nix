@@ -9,7 +9,7 @@
     inputs.mango.nixosModules.mango
   ];
 
-  config = lib.mkIf (config.wm == "mango") {
+  config = lib.mkIf config.wm.mango {
     xdg.portal = {
       enable = true;
 

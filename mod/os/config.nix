@@ -1,7 +1,7 @@
 {
   config = {
     theme = "kanso";
-    wm = "mango";
+    wm.mango = true;
     term = "foot";
     font = "iosevka";
     font_size = "small";

@@ -39,7 +39,7 @@ in {
   imports = [
     inputs.mango.hmModules.mango
   ];
-  config = lib.mkIf (wm == "mango") {
+  config = lib.mkIf wm.mango {
 
     home.packages = with pkgs; [
       wlr-randr

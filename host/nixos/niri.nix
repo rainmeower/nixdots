@@ -4,7 +4,7 @@
   wm,
   ...
 }:{
-  config = lib.mkIf (wm == "niri") {
+  config = lib.mkIf wm.niri {
     programs.niri.settings.outputs = {
       "DP-1" = {
         enable = true;

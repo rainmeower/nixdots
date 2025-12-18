@@ -5,8 +5,7 @@
   font_name,
   os_config,
   ...
-}:{
-  config = lib.mkIf (wm == "hyprland") {
+}: lib.mkIf wm.hyprland {
     home.packages = with pkgs; [
       hyprprop
     ];
@@ -409,5 +408,4 @@
         ];
       };
     };
-  };
 }

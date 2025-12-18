@@ -3,7 +3,7 @@
   wm,
   ...
 }:{
-  config = lib.mkIf (wm == "niri") {
+  config = lib.mkIf wm.niri {
     programs.niri.settings.layer-rules = [
     {
       matches = [ { namespace = "^quickshell$"; } ];

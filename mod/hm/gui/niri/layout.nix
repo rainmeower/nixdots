@@ -4,7 +4,7 @@
   border_width,
   ...
 }:{
-  config = lib.mkIf (wm == "niri") {
+  config = lib.mkIf wm.niri {
     programs.niri.settings.layout = {
       gaps = 10;
       center-focused-column = "never";
