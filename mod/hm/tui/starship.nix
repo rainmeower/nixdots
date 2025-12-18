@@ -28,7 +28,7 @@
       };
 
       cmd_duration = {
-        min_time = 60;
+        min_time = 10000; # 10 sec
         format = "[$duration]($style) ";
         style = "bold " + p.yellow;
       };
