@@ -3,10 +3,11 @@
   lib,
   ...
 }:{
-  # remove perl(?), rsync, and strace
-  environment.defaultPackages = lib.mkForce [];
+  # remove rsync, and strace
+  environment.defaultPackages = lib.mkForce [ pkgs.perl ];
 
   environment.systemPackages = with pkgs; [
+    # replace gnu coreutils with uutils
     uutils-coreutils-noprefix
 
     godot
@@ -25,7 +26,6 @@
     krita
     # inkscape
     # aseprite
-    # qview
     # pastel
     imagemagick
 
@@ -50,10 +50,20 @@
     libevdev
     # qemu_kvm
     hyprpicker
-    # quickshell
     xwayland
-    meow
     libqalculate
     wlr-which-key
+
+    # (inputs.quickshell.packages.${pkgs.system}.default.override {
+    #   withJemalloc = true;
+    #   withQtSvg = true;
+    #   withWayland = true;
+    #   withX11 = false;
+    #   withPipewire = false;
+    #   withPam = false;
+    #   withHyprland = if wm == "hyprland" then true else false;
+    #   withI3 = false;
+    #   # TODO niri, mango
+    # })
   ];
 }

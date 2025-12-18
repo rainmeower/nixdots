@@ -32,5 +32,8 @@
 
     dbus
     kanata
+
+    # CRITICAL; do not remove
+    meow
   ];
 }

@@ -27,6 +27,8 @@
 
 
 
+      "mac_hid" # macintosh mouse button 2+3 emulation
+
       # "battery"
 
       /* ps2 */

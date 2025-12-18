@@ -9,6 +9,7 @@
   (import ./luajit.nix)
   (import ./fastfetch.nix)
   (import ./ncmpcpp.nix)
+  # (import ./ffmpeg.nix)
   (import ./shell/nushell.nix)
   # (import ./shell/dash.nix)
   (import ./nvim.nix)

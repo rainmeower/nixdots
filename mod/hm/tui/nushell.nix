@@ -103,10 +103,11 @@ in {
 
 
       def nr [...msg: string] {
+        sudo echo # get password prompt immediately
         # sudo nixos-rebuild switch --flake ${flake_dir}#nixos
         cd ${flake_dir}
         git add -A
-        sudo nh os switch -R ${flake_dir} -H ${host}
+        nh os switch -R ${flake_dir} -H ${host}
         let timestamp = (date now | format date '%d/%m %H:%M:%S')
         let full_msg = if ($msg | is-empty) {
           $timestamp
