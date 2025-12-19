@@ -1227,7 +1227,7 @@ g f12
   ;; (r spc) rsft 18 first-release (over sup melee)
 
   (l o u) (macro S-z S-z) 18 all-released (over sup melee fn mods) ;; vim save and quit
-  (l o u .) (macro S-z S-z C-d) 22 all-released (over sup melee fn mods) ;; vim save and quit
+  (l o u .) (macro S-z S-z 10 C-d) 22 all-released (over sup melee fn mods) ;; vim save and quit
   (h a e) (macro C-S-x) 18 all-released (over sup melee fn) ;; vim save
   (f15 a) @cw 16 all-released (over sup melee fn)
   (t g) caps 16 all-released (over sup melee fn game)
