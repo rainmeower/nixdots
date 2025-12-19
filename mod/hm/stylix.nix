@@ -19,6 +19,8 @@ in {
       gtk.colors.enable = true;
       gtk.extraCss = "window.background { border-radius: 0; }";
       qt.enable = true;
+
+      nixcord.enable = true;
     };
 
     opacity = {
