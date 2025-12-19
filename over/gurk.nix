@@ -10,6 +10,8 @@
       substituteInPlace src/ui/draw.rs --replace-fail \
       '=> "Input"' \
       '=> ""'
+
+      # TODO change writing... to typing...
     '';
   };
 })

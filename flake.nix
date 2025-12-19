@@ -98,10 +98,9 @@
 
           lix-module.nixosModules.default
           nur.modules.nixos.default
-          {
-            nixpkgs.overlays = import ./over;
-
-          }
+					{
+						nixpkgs.overlays = import ./over;
+					}
         ];
       }; # }}}
 

@@ -72,7 +72,6 @@
         ../../mod/hm/gui/cursor.nix
         ../../mod/hm/gui/dunst.nix
         ../../mod/hm/gui/emacs/emacs.nix
-        ../../mod/hm/gui/firefox/firefox.nix
         ../../mod/hm/gui/mango
         ../../mod/hm/gui/media/mpv.nix
         ../../mod/hm/gui/media/obs.nix

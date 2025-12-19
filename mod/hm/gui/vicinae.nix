@@ -62,7 +62,7 @@ rootSearch.searchFiles = false;
 
 window = {
 csd = false;
-opacity = 0.8;
+opacity = lib.mkForce 0.8;
 rounding = radius;
 };
 

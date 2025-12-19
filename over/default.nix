@@ -10,8 +10,6 @@
   (import ./fastfetch.nix)
   (import ./ncmpcpp.nix)
   # (import ./ffmpeg.nix)
-  (import ./shell/nushell.nix)
-  # (import ./shell/dash.nix)
   (import ./nvim.nix)
   (import ./yazi.nix)
   (import ./uutils.nix)
@@ -21,6 +19,11 @@
   # (import ./systemd.nix)
   (import ./swayimg.nix)
   (import ./ripgrep.nix)
+
+  (import ./shell/nushell.nix)
+  # rebuilds like 3000 packages?
+  # (import ./shell/bash.nix)
+  # (import ./shell/dash.nix)
 
   (import ./vicinae-extension-nix.nix)
   (import ./keyb0xx.nix)

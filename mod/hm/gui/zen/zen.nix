@@ -48,6 +48,7 @@
       "browser.urlbar.untrimOnUserInteraction.featureGate" = true;
       "browser.search.separatePrivateDefault.ui.enabled" = true;
       "browser.search.suggest.enabled" = false;
+      "browser.urlbar.suggest.searches" = false;
       # "browser.urlbar.quicksuggest.enabled" = false;
       # "browser.urlbar.groupLabels.enabled" = false;
       "browser.formfill.enable" = false;
