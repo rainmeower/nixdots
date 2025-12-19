@@ -56,13 +56,6 @@ in {
     };
     # }}}
 
-    wallpapers = {
-      name = "wallpapers";
-      comment = "rofi wallpaper switcher";
-      exec = flake_dir + "/stuff/scripts/bgselector";
-      icon = icon_dir + "/wallpaper.svg";
-    };
-
     hammer = {
       name = "hammer";
       comment = "hammer with bottles";

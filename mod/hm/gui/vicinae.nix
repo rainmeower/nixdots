@@ -61,7 +61,7 @@ popToRootOnClose = false;
 rootSearch.searchFiles = false;
 
 window = {
-csd = false;
+csd = true;
 opacity = lib.mkForce 0.8;
 rounding = radius;
 };
@@ -185,7 +185,7 @@ pkgs.vicinae-extension-nix
     };
     colors = {
       core = {
-        background = "#cc" + (lib.removePrefix "#" p.bg); # opacity at the start for some reason
+        background = p.bg;
         inherit (p)
           foreground
           accent;
