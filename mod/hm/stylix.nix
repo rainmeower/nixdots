@@ -24,10 +24,10 @@ in {
     };
 
     opacity = {
-      desktop = p.bg_opacity;
-      terminal = p.bg_opacity;
-      popups = p.bg_opacity;
-      applications = p.bg_opacity;
+      desktop = lib.mkForce p.bg_opacity;
+      terminal = lib.mkForce p.bg_opacity;
+      popups = lib.mkForce p.bg_opacity;
+      applications = lib.mkForce p.bg_opacity;
     };
 
     base16Scheme = {
