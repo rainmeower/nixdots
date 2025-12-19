@@ -183,10 +183,11 @@ pkgs.vicinae-extension-nix
       description = "default nix theme";
       variant = "dark";
     };
+
     colors = {
       core = {
         background = p.bg;
-        border = p.button_trans;
+        border = "#00000000";
         inherit (p)
           foreground
           accent;
