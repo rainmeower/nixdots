@@ -207,12 +207,12 @@ pkgs.vicinae-extension-nix
 
 			list.item = {
 				selection = {
-					background = p.button;
-					secondary_background = p.button;
+					background = "#cc" + (lib.removePrefix "#" p.button);
+					secondary_background = "#cc" + (lib.removePrefix "#" p.button);
 				};
 
 				hover = {
-					background = p.button;
+					background = "#cc" + (lib.removePrefix "#" p.button);
 				};
 			};
     };
