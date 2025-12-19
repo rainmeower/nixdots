@@ -186,6 +186,7 @@ pkgs.vicinae-extension-nix
     colors = {
       core = {
         background = p.bg;
+        border = p.button_trans;
         inherit (p)
           foreground
           accent;
