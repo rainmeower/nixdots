@@ -214,7 +214,7 @@ in {
         # center_tile deck grid monocle right_tile scroller tile vertical_deck vertical_grid vertical_scroller vertical_spiral vertical_tile
         tagrule = [ # {{{
           "id:1,layout_name:tile"
-          "id:2,layout_name:grid"
+          "id:2,layout_name:vertical_grid"
           "id:3,layout_name:scroller" # vertical scroller?
           "id:4,layout_name:tgmix" # deck maybe?
           "id:5,layout_name:vertical_spiral"
