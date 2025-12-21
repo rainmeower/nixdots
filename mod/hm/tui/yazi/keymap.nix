@@ -628,15 +628,9 @@
       }
 
       {
-        on = [ "<Space>" "f" ];
-        run = "cd ~/.config";
-        desc = "~/.config";
-      }
-
-      {
         on = [ "<Space>" "g" "d" "s" ];
         run = "cd ~/.local/share/Steam/steamapps/compatdata/322170/pfx/drive_c/users/steamuser/AppData/Local/GeometryDash/";
-        desc = "GD songs";
+        desc = "GD songs (steam)";
       }
       {
         on = [ "<Space>" "g" "d" "<Space>" ];

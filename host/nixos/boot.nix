@@ -19,6 +19,9 @@
     in [
       "video=DP-1:${s DP-1.width}x${s DP-1.height}@${s DP-1.refresh}"
       "video=DP-3:${s DP-3.width}x${s DP-3.height}@${s DP-3.refresh}"
+
+    "quiet"
+    "splash"
     ];
 
     # initrd.kernelModules = [];
