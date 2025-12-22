@@ -1,5 +1,7 @@
 {
   inputs,
+  lib,
+  p,
   ...
 }:{
   imports = [
@@ -9,17 +11,16 @@
   programs.zarumet = {
     enable = true;
     settings = {
-      mpd = {
-        address = "localhost:6600";
-      };
+      mpd.address = "localhost:6600";
       colors = {
-        album = "#fae280";
-        artist = "#fae280";
-        border = "#fae280";
-        status = "#fae280";
-        title = "#fae280";
+        album = p.fg;
+        artist = p.fg;
+        border = p.accent;
+        status = p.fg;
+        title = p.fg;
       };
-      pipewire.bit_perfect_enabled = false;
+      # do not touch
+      pipewire.bit_perfect_enabled = lib.mkForce false;
     };
   };
 }

@@ -15,12 +15,13 @@
 html {
   --font: ${font_name} !important;
   --bg-color: transparent !important;
-  --sub-alt-color: transparent !important;
+  --sub-color: ${p.grey} !important;
+  /* --sub-alt-color: transparent !important; */
+
+  --caret-color: ${p.fg} !important;
+
   --correct-letter-color: ${p.grey} !important;
   --untyped-letter-color: ${p.fg} !important;
-  --caret-color: ${p.fg} !important;
-  --sub-color: ${p.grey} !important;
-  --sub-alt-color: transparent !important;
   --error-color: ${p.red} !important;
   --error-extra-color: ${p.red} !important;
 }
