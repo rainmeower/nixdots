@@ -1,4 +1,11 @@
 {
+  inputs,
+  ...
+}:{
+  imports = [
+    inputs.zarumet.homeModules.default
+  ];
+
   programs.zarumet = {
     enable = true;
     settings = {
@@ -12,9 +19,7 @@
         status = "#fae280";
         title = "#fae280";
       };
-      pipewire = {
-        bit_perfect_enabled = true;
-      };
+      pipewire.bit_perfect_enabled = false;
     };
   };
 }

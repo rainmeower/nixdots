@@ -942,6 +942,7 @@
         "tmodloader": "tmodloader",
         "vicinae": "vicinae",
         "ytsub": "ytsub",
+        "zarumet": "zarumet",
         "zen-browser": "zen-browser"
       }
     },
@@ -958,6 +959,27 @@
         "owner": "oxalica",
         "repo": "rust-overlay",
         "rev": "6ac961b02d4235572692241e333d0470637f5492",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_2": {
+      "inputs": {
+        "nixpkgs": [
+          "zarumet",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1765334520,
+        "narHash": "sha256-jTof2+ir9UPmv4lWksYO6WbaXCC0nsDExrB9KZj7Dz4=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "db61f666aea93b28f644861fbddd37f235cc5983",
         "type": "github"
       },
       "original": {
@@ -1287,6 +1309,27 @@
       "original": {
         "owner": "sarowish",
         "repo": "ytsub",
+        "type": "github"
+      }
+    },
+    "zarumet": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay_2"
+      },
+      "locked": {
+        "lastModified": 1766368661,
+        "narHash": "sha256-5g9g0zE43/kpGc0QeXJG+bTcMdqp81/OWga81v27ZdI=",
+        "owner": "Immelancholy",
+        "repo": "zarumet",
+        "rev": "67129e86d117e0a694f3eb7d79f309af45f96939",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Immelancholy",
+        "repo": "zarumet",
         "type": "github"
       }
     },
