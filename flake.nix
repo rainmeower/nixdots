@@ -49,16 +49,20 @@
       url = "github:nix-community/neovim-nightly-overlay";
     };
 
+    tmodloader.url = "github:andOrlando/nix-tmodloader";
     slippi = {
       url = "github:lytedev/slippi-nix";
       # https://github.com/lytedev/slippi-nix/issues/10
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     vicinae.url = "github:vicinaehq/vicinae";
 
     ytsub.url = "github:/sarowish/ytsub";
-
-    tmodloader.url = "github:andOrlando/nix-tmodloader";
+    zarumet = {
+      url = "github:Immelancholy/zarumet";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   }; # }}}
 
   outputs = inputs @ {
