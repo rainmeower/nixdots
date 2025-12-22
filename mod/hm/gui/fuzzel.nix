@@ -30,15 +30,16 @@ in {
       colors = let
         rh = lib.removePrefix "#";
       in {
+        # NOTE cannot omit alpha
         background = rh p.bg_trans;
-        text = rh p.fg;
-        input = rh p.fg;
-        prompt = rh p.accent;
-        border = rh p.accent;
-        selection = rh p.accent;
-        selection-text= rh p.bg;
-        match = rh p.accent;
-        selection-match = rh p.bg;
+        text = rh p.fg + "ff";
+        input = rh p.fg + "ff";
+        prompt = rh p.accent + "ff";
+        border = rh p.accent + "ff";
+        selection = rh p.accent + "ff";
+        selection-text= rh p.bg + "ff";
+        match = rh p.accent + "ff";
+        selection-match = rh p.bg + "ff";
       };
 
       border = {
