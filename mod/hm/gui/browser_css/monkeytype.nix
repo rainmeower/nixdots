@@ -16,8 +16,8 @@ html {
   --font: ${font_name} !important;
   --bg-color: transparent !important;
   --sub-color: ${p.grey} !important;
+  /* goes magenta if transparent */
   /* --sub-alt-color: transparent !important; */
-  --sub-alt-color: ${p.button_trans} !important;
 
   --caret-color: ${p.fg} !important;
 
