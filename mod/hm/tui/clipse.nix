@@ -5,8 +5,40 @@
 }:{
   services.clipse = {
     # package = pkgs.my-clipse;
+
+    # maxHistory = 50;
+    # allowDuplicates = false;
+    # historyFile = "clipboard_history.json";
+    # # themeFile = "custom_theme.json";
+    # tempDir = "tmp_files";
+
     imageDisplay = {
       type = "sixel";
+    };
+
+    keyBindings = {
+      choose = "enter";
+
+      nextPage = "i";
+      prevPage = "h";
+      down = "a";
+      up = "e";
+
+
+      clearSelected = "R";
+      end = "end";
+      filter = "/";
+      home = "home";
+      more = "?";
+      preview = " ";
+      quit = "q";
+      remove = "delete";
+      selectDown = "ctrl+down";
+      selectSingle = "r";
+      selectUp = "ctrl+up";
+      togglePin = "p";
+      togglePinned = "tab";
+      yankFilter = "ctrl+r";
     };
 
     theme = {
