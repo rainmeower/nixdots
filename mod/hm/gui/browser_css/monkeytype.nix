@@ -17,6 +17,7 @@ html {
   --bg-color: transparent !important;
   --sub-color: ${p.grey} !important;
   /* --sub-alt-color: transparent !important; */
+  --sub-alt-color: ${p.button_trans} !important;
 
   --caret-color: ${p.fg} !important;
 
