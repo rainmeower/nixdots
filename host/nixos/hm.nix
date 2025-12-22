@@ -69,6 +69,7 @@
         ../../mod/hm/env.nix
         ../../mod/hm/gui/browser_css
         ../../mod/hm/gui/reaper.nix
+        ../../mod/hm/gui/fuzzel.nix
         ../../mod/hm/gui/cursor.nix
         ../../mod/hm/gui/dunst.nix
         ../../mod/hm/gui/emacs/emacs.nix
