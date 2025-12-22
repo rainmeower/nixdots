@@ -25,7 +25,7 @@
   # (import ./shell/bash.nix)
   # (import ./shell/dash.nix)
 
-  (import ./vicinae-extension-nix.nix)
+  # (import ./vicinae-extension-nix.nix)
   (import ./keyb0xx.nix)
 
 ]
