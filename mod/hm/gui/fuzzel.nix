@@ -2,6 +2,7 @@
   pkgs,
   p,
   font_path,
+  font_name,
   prompt_sym,
   border_width,
   ...
@@ -12,7 +13,7 @@
     settings = {
       main = {
         # font = font_path + ":size=22";
-        font = "/home/meow/itim.ttf:size=22";
+        font = font_name + ":size=22";
         terminal = "${pkgs.foot}/bin/foot";
         layer = "overlay";
         prompt = prompt_sym;

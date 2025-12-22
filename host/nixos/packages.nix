@@ -8,8 +8,6 @@
 
   environment.systemPackages = with pkgs; [
 
-    zoom-us
-
 
     # replace gnu coreutils with uutils
     uutils-coreutils-noprefix
