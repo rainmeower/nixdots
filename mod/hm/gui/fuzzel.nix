@@ -18,7 +18,6 @@ in {
       main = {
         # font = font_path + ":size=22";
         font = font_name + ":size=22";
-        pad = "12x6";
         terminal = "${pkgs.foot}/bin/foot";
         layer = "overlay";
         prompt = ''"${prompt_sym} "'';

@@ -904,7 +904,9 @@ mods:
 (deflayermap (base) ;; {{{
 j /
 / j
-x S--
+- S--
+
+x -
 f15 @magic_2
 
 
