@@ -1,8 +1,8 @@
 /* {{{
 base:
-  : b f d w p   / l o u . _
+  : b f d w p   / l o u . -
   = n s t c y   m h a e i 
-  q , v k g -   j 󰣏 ( ) ; z
+  q , v k g _   j 󰣏 ( ) ; z
     alt 󱊷 r 󰣎   󰌑 󱁐 󰁮 󰌒
 
 sym:

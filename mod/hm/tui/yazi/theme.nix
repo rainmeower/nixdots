@@ -108,6 +108,10 @@
       mime = "image/*";
       fg = p.yellow;
     }
+    {
+      name = "*.kra";
+      fg = p.yellow;
+    }
 
     {
       mime = "{audio,video}/*";
