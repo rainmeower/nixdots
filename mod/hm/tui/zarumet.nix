@@ -2,6 +2,7 @@
   inputs,
   lib,
   p,
+  os_config,
   ...
 }:{
   imports = [
@@ -12,6 +13,7 @@
     enable = true;
     settings = {
       mpd.address = "localhost:6600";
+
       colors = {
         album = p.fg;
         artist = p.fg;

@@ -25,9 +25,11 @@ in {
     mpc
   ];
 
+  # dont waste boot time starting earlier than needed
   systemd.services.mpd.wantedBy = [ "graphical.target" ];
+
   systemd.services.mpd.environment = {
     # https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/609
-    XDG_RUNTIME_DIR = "/run/user/1000"; # only worked when i manually specified 1000
+    XDG_RUNTIME_DIR = "/run/user/1000";
   };
 }

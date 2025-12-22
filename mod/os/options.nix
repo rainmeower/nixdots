@@ -18,6 +18,10 @@ in {
       ];
     };
 
+    # TODO
+    # border.rounding (bool)
+    # border.width (int)
+    # border.radius (int) (default to 0 if !border.rounding)
     rounding = mkOption {
       type = bool;
     };
