@@ -11,7 +11,8 @@
 
     settings = {
       main = {
-        font = font_path + ":size=22";
+        # font = font_path + ":size=22";
+        font = "/home/meow/itim.ttf:size=22";
         terminal = "${pkgs.foot}/bin/foot";
         layer = "overlay";
         prompt = prompt_sym;
