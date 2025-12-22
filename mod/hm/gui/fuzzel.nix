@@ -20,12 +20,11 @@ in {
         font = font_name + ":size=22";
         terminal = "${pkgs.foot}/bin/foot";
         layer = "overlay";
-        prompt = prompt_sym + " ";
+        prompt = ''"${prompt_sym} "'';
         hide-before-typing = true;
         lines = 5;
         dpi-aware = false;
       };
-
 
       colors = let
         rh = lib.removePrefix "#";

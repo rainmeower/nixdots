@@ -8,6 +8,7 @@
 
   environment.systemPackages = with pkgs; [
 
+    pastel
 
     # replace gnu coreutils with uutils
     uutils-coreutils-noprefix
