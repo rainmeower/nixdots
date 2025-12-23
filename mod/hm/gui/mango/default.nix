@@ -60,8 +60,8 @@ in {
       autostart_sh = # {{{
       /* bash */ ''
         set +e
-        uwsm app -- swww-daemon &
-        ${flake_dir}/stuff/scripts/swww.sh &
+        uwsm app -- awww-daemon &
+        ${flake_dir}/stuff/scripts/awww.sh &
 
         # wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
         uwsm app -- foot --server &

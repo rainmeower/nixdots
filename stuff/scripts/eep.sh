@@ -10,10 +10,10 @@ for name in {kanso,kantsi,macchiato,blacchiato,lix,everforest}; do
 done
 
 
-if mode=$(swww query | grep "000000") ; then
-  swww img ~/nix/stuff/wallpapers/$wallnamestripped -t grow --transition-duration 1 --transition-fps 165
+if mode=$(awww query | grep "000000") ; then
+  awww img ~/nix/stuff/wallpapers/$wallnamestripped -t grow --transition-duration 1 --transition-fps 165
 else
-  swww clear
+  awww clear
 fi
 
 

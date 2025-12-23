@@ -1,5 +1,6 @@
 {
   pkgs,
+  inputs,
   lib,
   ...
 }:{
@@ -10,6 +11,8 @@
 
     signal-cli
     gurk-rs
+
+    inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
 
     pastel
 

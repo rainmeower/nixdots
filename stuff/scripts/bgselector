@@ -29,7 +29,7 @@ done
 
 # set wallpaper and update wallpaper.json
 if [ -n "$wall_selection" ]; then
-	swww img "$wall_dir/$wall_selection" -t grow --transition-duration 1 --transition-fps 165
+	awww img "$wall_dir/$wall_selection" -t grow --transition-duration 1 --transition-fps 165
   cd $HOME/nix/theme
   echo $(cat wallpaper.json | jq ".$theme = \"$wall_selection\"") > wallpaper.json
 	exit 0
