@@ -48,6 +48,10 @@
     neovim-nightly = {
       url = "github:nix-community/neovim-nightly-overlay";
     };
+    tiny-code-action = {
+      url = "github:rachartier/tiny-code-action.nvim";
+      flake = false;
+    };
 
     tmodloader.url = "github:andOrlando/nix-tmodloader";
     slippi = {

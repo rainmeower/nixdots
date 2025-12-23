@@ -939,6 +939,7 @@
         "nur": "nur",
         "slippi": "slippi",
         "stylix": "stylix",
+        "tiny-code-action": "tiny-code-action",
         "tmodloader": "tmodloader",
         "vicinae": "vicinae",
         "ytsub": "ytsub",
@@ -1218,6 +1219,22 @@
       "original": {
         "owner": "tinted-theming",
         "repo": "base16-zed",
+        "type": "github"
+      }
+    },
+    "tiny-code-action": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1766332198,
+        "narHash": "sha256-1hvRJldK230txOK/J6EOioZP3CN0jJfREhlBr6+j6Jw=",
+        "owner": "rachartier",
+        "repo": "tiny-code-action.nvim",
+        "rev": "85b3ae30dedb08154d8ec6302820d4076b2e0eb1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rachartier",
+        "repo": "tiny-code-action.nvim",
         "type": "github"
       }
     },

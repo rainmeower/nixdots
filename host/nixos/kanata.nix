@@ -37,7 +37,7 @@ mods:
         extraDefCfg = ''
           process-unmapped-keys yes
           concurrent-tap-hold yes
-          chords-v2-min-idle 40
+          ;; chords-v2-min-idle 40
           danger-enable-cmd yes
         '';
 
@@ -1251,7 +1251,7 @@ g f12
   (  f   w) `   20 all-released (over sup melee fn game)
   (    d w) S-\ 15 all-released (over sup melee fn game)
   
-  (l o    ) S-8 14 all-released (over sup melee fn mods)
+  (l o    ) (macro-release-cancel-and-cancel-on-press 40 S-8) 14 all-released (over sup melee fn mods)
   ;; (  o u  ) S-1 13 all-released (over sup melee fn mods)
   (    u .) S-6 15 all-released (over sup melee fn mods)
 
