@@ -6,6 +6,7 @@
   # (import ./gtk.nix)
 
   (import ./foot.nix)
+  (import ./fuzzel.nix)
   (import ./luajit.nix)
   (import ./fastfetch.nix)
   (import ./ncmpcpp.nix)
