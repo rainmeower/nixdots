@@ -657,7 +657,7 @@ mods:
     ((key-history z 1)) i break
     ((key-history i 1)) z break
     ((key-history g 1)) y break
-    ((key-history c 1)) y break
+    ((key-history c 1)) p break
     ((key-history p 1)) y break
     ((key-history y 1)) p break
     ((key-history j 1)) u break ;; big stretch
@@ -873,6 +873,7 @@ mods:
       (key-history o 1)
     )) a break
 
+    ((key-history c 1)) y break
     ;; n
     ((key-history n 1)) rpt break
 
