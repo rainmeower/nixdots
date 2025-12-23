@@ -404,6 +404,15 @@ mods:
       (key-history b 1)
     )) (unmod o) break
 
+    ;; intmax
+    ((and
+      (key-history i 5)
+      (key-history n 4)
+      (key-history t 3)
+      (key-history m 2)
+      (key-history a 1)
+    )) x break
+
     ;; enum
     ((and
       (key-history e 2)

@@ -125,7 +125,7 @@
 
     {
       mime = "application/{pdf,doc;rtf}";
-      fg = p.blue;
+      fg = p.pink;
     }
 
 # { mime = "inode/empty" fg = "red" }
