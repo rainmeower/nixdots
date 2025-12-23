@@ -1254,10 +1254,10 @@ g f12
   (l o u) (macro S-z S-z) 18 all-released (over sup melee fn mods) ;; vim save and quit
   (l o u .) (macro S-z S-z 10 C-d) 22 all-released (over sup melee fn mods) ;; vim save and quit
   (h a e) (macro C-S-x) 18 all-released (over sup melee fn) ;; vim save
-  (f15 a) @cw 16 all-released (over sup melee fn)
-  (t g) caps 16 all-released (over sup melee fn game)
   (u i) (macro S-[ S-; S-/ S-]) 16 all-released (over sup melee fn)
   (a f17) S-5 15 all-released (over sup melee fn)
+  (f15 a) caps 16 all-released (over sup melee fn game)
+  (h o) @cw 16 all-released (over sup melee fn)
 
 
   (t d) [ 20 all-released (over sup melee fn game)
