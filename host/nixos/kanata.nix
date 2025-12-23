@@ -385,6 +385,13 @@ mods:
 
     ;; code {{{
 
+    ;; keyword
+    ((and
+      (key-history k 3)
+      (key-history e 2)
+      (key-history y 1)
+    )) w break
+
     ;; FIXME
     ;; ..
     ((and

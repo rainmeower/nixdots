@@ -133,6 +133,12 @@
       mode = [ "n" "i" "x" ];
     }
 
+    { # avoid sfb for yy
+      key = "yr";
+      action = "yy";
+      mode = "n";
+    }
+
     { # avoid sfb/lsb for dd
       key = "dc";
       action = "dd";

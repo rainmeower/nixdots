@@ -12,7 +12,6 @@
     signal-cli
     gurk-rs
 
-    inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
 
     pastel
 
@@ -74,5 +73,8 @@
     #   withI3 = false;
     #   # TODO niri, mango
     # })
+
+
+    inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
   ];
 }
