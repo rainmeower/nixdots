@@ -16,6 +16,7 @@
   (import ./tui/yazi.nix)
   (import ./tui/skim.nix)
   (import ./tui/uutils.nix)
+  (import ./tui/fd.nix)
   (import ./tui/gurk.nix)
   (import ./gui/mpv.nix)
   (import ./service/mpd.nix)
