@@ -8,6 +8,9 @@
 
   environment.systemPackages = with pkgs; [
 
+    signal-cli
+    gurk-rs
+
     pastel
 
     # replace gnu coreutils with uutils

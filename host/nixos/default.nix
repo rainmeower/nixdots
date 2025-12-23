@@ -15,6 +15,7 @@
 
     ./hm.nix
     (lib.mkAliasOptionModule [ "hm" ] [ "home-manager" "users" username ])
+    (lib.mkAliasOptionModule [ "hm_alt" ] [ "home-manager" "users" "alt" ])
 
     ../../mod/shared/misc.nix
 

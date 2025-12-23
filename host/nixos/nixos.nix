@@ -27,13 +27,6 @@
     extraGroups = [
       "networkmanager"
       # "wheel"
-      # "storage"
-      # "plugdev"
-      # "video"
-      # "audio"
-      # "input"
-      # "uinput"
-      # "ssh"
     ];
   };
 

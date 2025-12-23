@@ -99,7 +99,6 @@
         ../../mod/hm/tui/bash.nix
         ../../mod/hm/tui/discordo.nix
         ../../mod/hm/tui/btop.nix
-        ../../mod/hm/tui/signal.nix
         ../../mod/hm/tui/clipse.nix
         ../../mod/hm/tui/fzf.nix
         ../../mod/hm/tui/skim.nix
