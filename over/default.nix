@@ -25,6 +25,7 @@
   # rebuilds like 3000 packages?
   # (import ./tui/shell/bash.nix)
   # (import ./tui/shell/dash.nix)
+  (import ./tui/shell/starship.nix)
 
   # (import ./gui/vicinae-extension-nix.nix)
   (import ./tui/keyb0xx.nix)
