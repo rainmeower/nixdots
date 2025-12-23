@@ -27,7 +27,6 @@
     wget
     fd
     eza
-    fzf
     zoxide
 
     dbus
