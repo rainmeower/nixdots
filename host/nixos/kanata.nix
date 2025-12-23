@@ -1,3 +1,5 @@
+# TODO alt tap-hold on bspc?
+
 /* {{{
 base:
   : b f d w p   / l o u . -
@@ -242,6 +244,16 @@ mods:
 
 
     ;; code {{{
+
+    ;; .h>
+    ((and
+      (not (key-history lsft 3))
+      (not (key-history rsft 3))
+      (key-history . 2)
+      (key-history h 1)
+    )) S-. break
+
+
 
     ;; keyword
     ((and
