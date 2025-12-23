@@ -240,148 +240,6 @@ mods:
       (key-history e 1)
     )) m break
 
-    ;; monkeytype {{{
-    ;; box
-    ((and
-      (key-history b 2)
-      (key-history o 1)
-    )) x break
-
-    ;; much
-    ((and
-      (key-history m 3)
-      (key-history u 2)
-      (key-history c 1)
-    )) h break
-
-    ;; might
-    ((and
-      (key-history m 3)
-      (key-history i 2)
-      (key-history g 1)
-    )) h break
-
-    ;; these
-    ((and
-      (key-history t 4)
-      (key-history h 3)
-      (key-history e 2)
-      (key-history s 1)
-    )) e break
-
-    ;; play (sfs+1)
-    ((and
-      (key-history p 3)
-      (key-history l 2)
-      (key-history a 1)
-    )) y break
-
-    ;; small
-    ((and
-      (key-history s 3)
-      (key-history m 2)
-      (key-history a 1)
-    )) l break
-
-    ;; home
-    ((and
-      (key-history h 2)
-      (key-history o 1)
-    )) m break
-
-    ;; school FIXME
-    ((and
-      (key-history s 5)
-      (key-history c 4)
-      (key-history h 3)
-      (key-history o 2)
-      (key-history o 1)
-    )) l break
-
-    ;; leave
-    ((and
-      (key-history l 4)
-      (key-history e 3)
-      (key-history a 2)
-      (key-history v 1)
-    )) (macro e) break
-
-    ;; should
-    ((and
-      (key-history s 4)
-      (key-history h 3)
-      (key-history o 2)
-      (key-history u 1)
-    )) l break
-
-    ;; problem
-    ((and
-      (key-history p 6)
-      (key-history r 5)
-      (key-history o 4)
-      (key-history b 3)
-      (key-history l 2)
-      (key-history e 1)
-    )) m break
-
-    ;; use
-    ((and
-      (key-history u 2)
-      (key-history s 1)
-    )) e break
-
-    ;; child
-    ((and
-      (key-history c 3)
-      (key-history h 2)
-      (key-history i 1)
-    )) l break
-
-    ;; also
-    ((and
-      (key-history a 3)
-      (key-history l 2)
-      (key-history s 1)
-    )) o break
-
-    ;; state
-    ((and
-      (key-history s 3)
-      (key-history t 2)
-      (key-history a 1)
-    )) (multi (release-key t) (macro t)) break
-
-    ;; ((and(key-history e 2) (key-history s 1))) (macro e) break
-    ((and
-      (key-history e 2)
-      (key-history y 1)
-    )) (multi (release-key e) (macro e)) break
-
-    ((and
-      (key-history e 2)
-      (key-history v 1)
-    )) (multi (release-key e) (macro e)) break
-
-    ;; system
-    ((and
-      (key-history s 2)
-      (key-history y 1)
-    )) (multi (release-key s) (macro s)) break
-
-    ;; while (sfs)
-    ((and
-      (key-history w 3)
-      (key-history h 2)
-      (key-history i 1)
-    )) l break
-
-    ;; all
-    ((and
-      (key-history a 2)
-      (key-history l 1)
-    )) rpt break
-
-    ;; }}}
 
     ;; code {{{
 
@@ -552,6 +410,149 @@ mods:
       (key-history e 2)
       (key-history c 1)
     )) S-, break
+
+    ;; }}}
+
+    ;; monkeytype {{{
+    ;; box
+    ((and
+      (key-history b 2)
+      (key-history o 1)
+    )) x break
+
+    ;; much
+    ((and
+      (key-history m 3)
+      (key-history u 2)
+      (key-history c 1)
+    )) h break
+
+    ;; might
+    ((and
+      (key-history m 3)
+      (key-history i 2)
+      (key-history g 1)
+    )) h break
+
+    ;; these
+    ((and
+      (key-history t 4)
+      (key-history h 3)
+      (key-history e 2)
+      (key-history s 1)
+    )) e break
+
+    ;; play (sfs+1)
+    ((and
+      (key-history p 3)
+      (key-history l 2)
+      (key-history a 1)
+    )) y break
+
+    ;; small
+    ((and
+      (key-history s 3)
+      (key-history m 2)
+      (key-history a 1)
+    )) l break
+
+    ;; home
+    ((and
+      (key-history h 2)
+      (key-history o 1)
+    )) m break
+
+    ;; school FIXME
+    ((and
+      (key-history s 5)
+      (key-history c 4)
+      (key-history h 3)
+      (key-history o 2)
+      (key-history o 1)
+    )) l break
+
+    ;; leave
+    ((and
+      (key-history l 4)
+      (key-history e 3)
+      (key-history a 2)
+      (key-history v 1)
+    )) (macro e) break
+
+    ;; should
+    ((and
+      (key-history s 4)
+      (key-history h 3)
+      (key-history o 2)
+      (key-history u 1)
+    )) l break
+
+    ;; problem
+    ((and
+      (key-history p 6)
+      (key-history r 5)
+      (key-history o 4)
+      (key-history b 3)
+      (key-history l 2)
+      (key-history e 1)
+    )) m break
+
+    ;; use
+    ((and
+      (key-history u 2)
+      (key-history s 1)
+    )) e break
+
+    ;; child
+    ((and
+      (key-history c 3)
+      (key-history h 2)
+      (key-history i 1)
+    )) l break
+
+    ;; also
+    ((and
+      (key-history a 3)
+      (key-history l 2)
+      (key-history s 1)
+    )) o break
+
+    ;; state
+    ((and
+      (key-history s 3)
+      (key-history t 2)
+      (key-history a 1)
+    )) (multi (release-key t) (macro t)) break
+
+    ;; ((and(key-history e 2) (key-history s 1))) (macro e) break
+    ((and
+      (key-history e 2)
+      (key-history y 1)
+    )) (multi (release-key e) (macro e)) break
+
+    ((and
+      (key-history e 2)
+      (key-history v 1)
+    )) (multi (release-key e) (macro e)) break
+
+    ;; system
+    ((and
+      (key-history s 2)
+      (key-history y 1)
+    )) (multi (release-key s) (macro s)) break
+
+    ;; while (sfs)
+    ((and
+      (key-history w 3)
+      (key-history h 2)
+      (key-history i 1)
+    )) l break
+
+    ;; all
+    ((and
+      (key-history a 2)
+      (key-history l 1)
+    )) rpt break
 
     ;; }}}
 
