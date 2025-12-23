@@ -10,7 +10,8 @@
 
     number = true;
     relativenumber = false;
-    signcolumn = "number";
+    # signcolumn = "number";
+    signcolumn = "auto:3";
 
 
     updatetime = 1000; # ms before swap file is written to disk
