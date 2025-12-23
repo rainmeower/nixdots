@@ -23,7 +23,12 @@
 
     shiftwidth = 2;
     tabstop = 2;
+    softtabstop = 2;
     expandtab = true;
+    autoindent = true;
+    smartindent = true;
+    smarttab = true;
+
 
     ignorecase = true;
     smartcase = true;
@@ -31,10 +36,6 @@
     tildeop = true; # treat ~ like an operator
 
     autochdir = true; # auto cd into current buffers dir
-
-    autoindent = true;
-    smartindent = true;
-    smarttab = true;
 
     hlsearch = false;
 
