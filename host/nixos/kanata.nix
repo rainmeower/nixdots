@@ -19,7 +19,6 @@ mods:
 }}} */
 {
   pkgs,
-  lib,
   username,
   ...
 }:{
@@ -44,9 +43,6 @@ mods:
         config = /* scheme */ ''
 (defsrc
 )
-
-;; (defseq float (f))
-;; (defvirtualkeys float (cmd mmsg -d togglefloating))
 
 (defalias ;; {{{
 
@@ -1015,7 +1011,6 @@ r spc
 spc r
 ) ;; }}}
 
-
 (deflayermap game ;; {{{
 j /
 / j
@@ -1046,7 +1041,6 @@ ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held mods) (esc)
 
 ) ;; }}}
 
-
 (deflayermap over ;; {{{
 f18 tab
 f15 8
@@ -1068,7 +1062,6 @@ f17 0
 f19 lsft
 
 ) ;; }}}
-
 
 (deflayermap hammer ;; {{{
 
@@ -1287,7 +1280,6 @@ g f12
 
         '';
       };
-
     };
   };
 

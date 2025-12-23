@@ -26,6 +26,8 @@ symlink fzf to skim?
 - reduce usage of `* {` in css
 
 - clean up themes/ with universal color names
+
+- system-wide feature flags? like 3d.enable for blender and the f3d-preview yazi plugin
 ## yazi
 - change keybinds for input vim mode
 - make text preview syntax highlighting match nvim

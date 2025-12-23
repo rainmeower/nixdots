@@ -20,6 +20,23 @@
     ];
   };
 
+  users.users.alt = {
+    isNormalUser = true;
+    description = "alternate user";
+    shell = pkgs.nushell;
+    extraGroups = [
+      "networkmanager"
+      # "wheel"
+      # "storage"
+      # "plugdev"
+      # "video"
+      # "audio"
+      # "input"
+      # "uinput"
+      # "ssh"
+    ];
+  };
+
   environment.binsh = "${pkgs.dash}/bin/dash"; # TODO
 
   environment.pathsToLink = [ "/share/applications" "/share/xdg-desktop-portal" ];
