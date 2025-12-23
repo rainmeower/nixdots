@@ -13,6 +13,7 @@
   # (import ./tui/ffmpeg.nix)
   (import ./tui/nvim.nix)
   (import ./tui/yazi.nix)
+  (import ./tui/skim.nix)
   (import ./tui/uutils.nix)
   (import ./tui/gurk.nix)
   (import ./gui/mpv.nix)
