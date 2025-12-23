@@ -26,6 +26,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    awww.url = "git+https://codeberg.org/LGFae/awww";
+
     niri.url = "github:sodiboo/niri-flake";
     mango = {
       url = "github:DreamMaoMao/mango";
