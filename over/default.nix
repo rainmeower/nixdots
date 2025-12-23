@@ -6,6 +6,7 @@
   # (import ./gui/gtk.nix)
 
   (import ./gui/foot.nix)
+  (import ./gui/awww.nix)
   (import ./gui/fuzzel.nix)
   (import ./tui/luajit.nix)
   (import ./tui/fastfetch.nix)
