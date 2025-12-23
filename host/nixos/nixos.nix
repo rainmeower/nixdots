@@ -23,7 +23,7 @@
   users.users.alt = {
     isNormalUser = true;
     description = "alternate user";
-    shell = pkgs.nushell;
+    shell = pkgs.bash;
     extraGroups = [
       "networkmanager"
       # "wheel"
