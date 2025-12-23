@@ -24,6 +24,7 @@
     ./ui/ccc.nix
     ./ui/diagnostic.nix
     ./ui/lualine.nix
+    ./ui/gitsigns.nix
     ./ui/noice.nix
     ./ui/render-markdown.nix
     ./ui/yazi.nix
