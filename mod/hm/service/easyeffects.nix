@@ -7,8 +7,8 @@
 # systemd.user.services.easyeffects.Service.ExecStartPost = [
 #   "${config.services.easyeffects.package}/bin/easyeffects --load-preset ${config.services.easyeffects.preset}"
 # ];
-  services.easyeffects = {
-    enable = true;
+  # services.easyeffects = {
+  #   enable = true;
     # preset = "normal";
     # extraPresets = {
     #   autoeq = { # hyperx cloud ii autoeq
@@ -500,5 +500,5 @@
     #     };
     #   };
     # };
-  };
+  # };
 }

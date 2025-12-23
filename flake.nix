@@ -26,7 +26,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-
     niri.url = "github:sodiboo/niri-flake";
     mango = {
       url = "github:DreamMaoMao/mango";
@@ -48,25 +47,21 @@
     neovim-nightly = {
       url = "github:nix-community/neovim-nightly-overlay";
     };
-    tiny-code-action = {
-      url = "github:rachartier/tiny-code-action.nvim";
-      flake = false;
-    };
 
-    tmodloader.url = "github:andOrlando/nix-tmodloader";
+    # tmodloader.url = "github:andOrlando/nix-tmodloader";
     slippi = {
       url = "github:lytedev/slippi-nix";
       # https://github.com/lytedev/slippi-nix/issues/10
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    vicinae.url = "github:vicinaehq/vicinae";
+    # vicinae.url = "github:vicinaehq/vicinae";
 
-    ytsub.url = "github:/sarowish/ytsub";
-    zarumet = {
-      url = "github:Immelancholy/zarumet";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # ytsub.url = "github:/sarowish/ytsub";
+    # zarumet = {
+    #   url = "github:Immelancholy/zarumet";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   }; # }}}
 
   outputs = inputs @ {

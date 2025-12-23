@@ -1,278 +1,283 @@
 {
-  programs.nixcord.config.plugins = {
-    ignoreActivities = {
-      enable = true;
-      ignorePlaying = true;
-      ignoreWatching = true;
-      # ignoredActivities = [ "someActivity" ];
-    };
-    allCallTimers = {
-      enable = true;
-      showWithoutHover = false;
-      showRoleColor = false;
-      trackSelf = true;
-      showSeconds = false;
-      watchLargeGuilds = false;
-    };
-    alwaysTrust = {
-      enable = true;
-      domain = true;
-      file = true;
-      noDeleteSafety = false;
-      confirmModal = true;
-    };
-    # amITyping.enable = true; # jumpscared me
-    # animalese.enable = true;
+  # TODO wtf is going on with these plugin names
 
-    anammox = {
-      enable = true;
-      dms = true;
-      serverBoost = true;
-      billing = true;
-      gift = true;
-      emojiList = true;
-    };
 
-    betterAudioPlayer = {
-      enable = true;
-      oscilloscope = true;
-      spectrograph = true;
-      # oscilloscopeSolidColor = true;
-      # oscilloscopeColor = TODO (rgb format)
-      # spectrographSolidColor = true;
-      # spectrographColor = TODO (rgb format)
-      forceMoveBelow = true;
-    };
 
-    # autoZipper = {
-    #   enable = true;
-    #   extensions = ".psd,.blend,.exe,.dmg,.app,.apk,.iso";
-    # };
 
-    betterCommands = {
-      enable = true;
-      allowNewlinesInCommands = true;
-    };
-
-    betterPlusReacts.enable = true;
-    betterUploadButton.enable = true;
-
-    channelTabs = {
-      enable = true;
-      # onStartup = "Remember tabs from last session";
-      # showStatusIndicators = true;
-      # showBookmarkBar = true;
-      # bookmarkNotificationDot = true;
-    };
-
-    cleanChannelName.enable = true;
-    clearUrLs.enable = true;
-
-    commandPalette = {
-      enable = true;
-      visualStyle = "classic";
-      showTags = true;
-      enableTagFilter = true;
-      # TODO custom commands
-    };
-
-    copyFileContents.enable = true;
-
-    crashHandler = {
-      enable = true;
-      attemptToPreventCrashes = true;
-    };
-
-    # CustomFolderIcons = {
-
-    disableCallIdle.enable = true;
-    disableCameras.enable = true;
-
-    equicordToolbox.enable = true;
-
-    fakeNitro = {
-      enable = true;
-      enableEmojiBypass = true;
-      emojiSize = 48.0;
-      transformEmojis = true;
-
-      enableStickerBypass = true;
-      stickerSize = 160.0;
-      transformStickers = true;
-
-      useStickerHyperLinks = true;
-      useEmojiHyperLinks = true;
-
-      hyperLinkText = "{{NAME}}";
-    };
-
-    # fakeProfileThemes = 
-
-    findReply.enable = true;
-
-    favoriteGifSearch.enable = true;
-
-    favoriteEmojiFirst.enable = true;
-
-    fixCodeblockGap.enable = true;
-
-    fixImagesQuality.enable = true;
-
-    frequentQuickSwitcher.enable = true;
-
-    friendsSince.enable = true;
-
-    # gifCollections TODO
-
-    gitHubRepos = {
-      enable = true;
-      showStars = true;
-      showLanguage = true;
-      showInMiniProfile = true;
-    };
-
-    greetStickerPicker.enable = true;
-    guildPickerDumper.enable = true; # download servers emojis and stickers
-    holyNotes.enable = true;
-    ignoreTerms.enable = true;
-    imageFilename.enable = true;
-
-    imageZoom = {
-      enable = true;
-      saveZoomValues = false;
-      invertScroll = false;
-      nearestNeighbour = true;
-      square = false; # handled by unrounding
-
-      zoom = 2.5;
-      size = 200.0;
-      zoomSpeed = 0.5;
-    };
-
-    # ircColors.enable = true;
-    # ingtonator.enable = true; # funny  TODO probably disable this
-    jumpTo.enable = true;
-
-    limitMiddleClickPaste.enable = true;
-
-    # keywordNotify.enable = true;
-
-    # keyboardNavigation = {
-
-    loadingQuotes = {
-      enable = true;
-      enablePluginPresetQuotes = false;
-      enableDiscordPresetQuotes = false;
-    };
-
-    messageColors = {
-      enable = true;
-      # renderType = "background color";
-      # enableShortHexCodes = true;
-    };
-
-    messageLinkEmbeds.enable = true;
-    messageLoggerEnhanced = {
-      enable = true;
-      # saveImages = true;
-    };
-
-    # moreCommands = {
-    #   enable = true;
-    #   uwuEveryMessage = true;
-    # };
-
-    mutualGroupDMs.enable = true;
-    neverPausePreviews.enable = true;
-    noBulletPoints.enable = true;
-    noDevtoolsWarning.enable = true;
-    noF1.enable = true;
-    noMaskedUrlPaste.enable = true;
-    noModalAnimation.enable = true;
-    noNitroUpsell.enable = true;
-    noOnboardingDelay.enable = true;
-    noProfileThemes.enable = true;
-
-    # notificationVolume = {
-    #   enable = true;
-    #   notificationVolume = 50.0; # percent
-    # };
-
-    noTypingAnimation.enable = true;
-    onePingPerDm.enable = true;
-    plainFolderIcon.enable = true;
-
-    platformIndicators = {
-      enable = true;
-      list = false;
-      profiles = true;
-      messages = false;
-      colorMobileIndicator = true;
-      showBots = false;
-    };
-
-    replyPingControl = {
-      enable = true;
-      alwaysPingOnReply = true;
-    };
-
-    saveFavoriteGiFs.enable = true; # why is the i lowercase?
-    serverSearch.enable = true;
-    showHiddenChannels = {
-      enable = true;
-      channelStyle = 1; # muted
-    };
-
-    sidebarChat.enable = true;
-
-    silentTyping = {
-      enable = true;
-      chatIcon = false;
-    };
-
-    spotifyCrack.enable = true;
-
-    splitLargeMessages.enable = true;
-
-    themeAttributes.enable = true;
-
-    tidalEmbeds.enable = true;
-
-    timezones = {
-      enable = true;
-      showOwnTimezone = false;
-      _24hTime = true;
-      showTimezoneInfo = false;
-      showMessageHeaderTime = false;
-      showProfileTime = true;
-    };
-
-    typingIndicator.enable = true;
-    unitConverter = {
-      enable = true;
-      myUnits = "metric";
-    };
-    typingTweaks.enable = true;
-
-    unlockedAvatarZoom.enable = true;
-
-    userMessagesPronouns = {
-      enable = true;
-      showSelf = false;
-      pronounsFormat = "LOWERCASE";
-    };
-
-    userVoiceShow.enable = true;
-    userPfp.enable = true;
-    usrbg.enable = true;
-    validReply.enable = true;
-    validUser.enable = true;
-    viewIcons.enable = true;
-    viewRawVariant.enable = true;
-
-    volumeBooster.enable = true;
-    whosWatching.enable = true;
-    # wigglyText.enable = true;
-    youtubeAdblock.enable = true;
-  };
+  # programs.nixcord.config.plugins = {
+  #   IgnoreActivities = {
+  #     enable = true;
+  #     ignorePlaying = true;
+  #     ignoreWatching = true;
+  #     # ignoredActivities = [ "someActivity" ];
+  #   };
+  #   AllCallTimers = {
+  #     enable = true;
+  #     showWithoutHover = false;
+  #     showRoleColor = false;
+  #     trackSelf = true;
+  #     showSeconds = false;
+  #     watchLargeGuilds = false;
+  #   };
+  #   AlwaysTrust = {
+  #     enable = true;
+  #     domain = true;
+  #     file = true;
+  #     noDeleteSafety = false;
+  #     confirmModal = true;
+  #   };
+  #   # amITyping.enable = true; # jumpscared me
+  #   # animalese.enable = true;
+  #
+  #   Anammox = {
+  #     enable = true;
+  #     dms = true;
+  #     serverBoost = true;
+  #     billing = true;
+  #     gift = true;
+  #     emojiList = true;
+  #   };
+  #
+  #   BetterAudioPlayer = {
+  #     enable = true;
+  #     oscilloscope = true;
+  #     spectrograph = true;
+  #     # oscilloscopeSolidColor = true;
+  #     # oscilloscopeColor = TODO (rgb format)
+  #     # spectrographSolidColor = true;
+  #     # spectrographColor = TODO (rgb format)
+  #     forceMoveBelow = true;
+  #   };
+  #
+  #   # AutoZipper = {
+  #   #   enable = true;
+  #   #   extensions = ".psd,.blend,.exe,.dmg,.app,.apk,.iso";
+  #   # };
+  #
+  #   BetterCommands = {
+  #     enable = true;
+  #     allowNewlinesInCommands = true;
+  #   };
+  #
+  #   BetterPlusReacts.enable = true;
+  #   BetterUploadButton.enable = true;
+  #
+  #   ChannelTabs = {
+  #     enable = true;
+  #     # onStartup = "Remember tabs from last session";
+  #     # showStatusIndicators = true;
+  #     # showBookmarkBar = true;
+  #     # bookmarkNotificationDot = true;
+  #   };
+  #
+  #   CleanChannelName.enable = true;
+  #   ClearURLs.enable = true;
+  #
+  #   CommandPalette = {
+  #     enable = true;
+  #     visualStyle = "classic";
+  #     showTags = true;
+  #     enableTagFilter = true;
+  #     # TODO custom commands
+  #   };
+  #
+  #   CopyFileContents.enable = true;
+  #
+  #   CrashHandler = {
+  #     enable = true;
+  #     attemptToPreventCrashes = true;
+  #   };
+  #
+  #   # CustomFolderIcons = {
+  #
+  #   DisableCallIdle.enable = true;
+  #   DisableCameras.enable = true;
+  #
+  #   EquicordToolbox.enable = true;
+  #
+  #   FakeNitro = {
+  #     enable = true;
+  #     enableEmojiBypass = true;
+  #     emojiSize = 48.0;
+  #     transformEmojis = true;
+  #
+  #     enableStickerBypass = true;
+  #     stickerSize = 160.0;
+  #     transformStickers = true;
+  #
+  #     useStickerHyperLinks = true;
+  #     useEmojiHyperLinks = true;
+  #
+  #     hyperLinkText = "{{NAME}}";
+  #   };
+  #
+  #   # fakeProfileThemes = 
+  #
+  #   FindReply.enable = true;
+  #
+  #   FavoriteGifSearch.enable = true;
+  #
+  #   FavoriteEmojiFirst.enable = true;
+  #
+  #   FixCodeblockGap.enable = true;
+  #
+  #   FixImagesQuality.enable = true;
+  #
+  #   FrequentQuickSwitcher.enable = true;
+  #
+  #   FriendsSince.enable = true;
+  #
+  #   # gifCollections TODO
+  #
+  #   GitHubRepos = {
+  #     enable = true;
+  #     showStars = true;
+  #     showLanguage = true;
+  #     showInMiniProfile = true;
+  #   };
+  #
+  #   GreetStickerPicker.enable = true;
+  #   GuildPickerDumper.enable = true; # download servers emojis and stickers
+  #   HolyNotes.enable = true;
+  #   IgnoreTerms.enable = true;
+  #   ImageFilename.enable = true;
+  #
+  #   ImageZoom = {
+  #     enable = true;
+  #     saveZoomValues = false;
+  #     invertScroll = false;
+  #     nearestNeighbour = true;
+  #     square = false; # handled by unrounding
+  #
+  #     zoom = 2.5;
+  #     size = 200.0;
+  #     zoomSpeed = 0.5;
+  #   };
+  #
+  #   # IrcColors.enable = true;
+  #   # Ingtonator.enable = true; # funny  TODO probably disable this
+  #   JumpTo.enable = true;
+  #
+  #   LimitMiddleClickPaste.enable = true;
+  #
+  #   # KeywordNotify.enable = true;
+  #
+  #   # KeyboardNavigation = {
+  #
+  #   LoadingQuotes = {
+  #     enable = true;
+  #     enablePluginPresetQuotes = false;
+  #     enableDiscordPresetQuotes = false;
+  #   };
+  #
+  #   MessageColors = {
+  #     enable = true;
+  #     # renderType = "background color";
+  #     # enableShortHexCodes = true;
+  #   };
+  #
+  #   MessageLinkEmbeds.enable = true;
+  #   MessageLoggerEnhanced = {
+  #     enable = true;
+  #     # saveImages = true;
+  #   };
+  #
+  #   # MoreCommands = {
+  #   #   enable = true;
+  #   #   uwuEveryMessage = true;
+  #   # };
+  #
+  #   MutualGroupDMs.enable = true;
+  #   NeverPausePreviews.enable = true;
+  #   NoBulletPoints.enable = true;
+  #   NoDevtoolsWarning.enable = true;
+  #   NoF1.enable = true;
+  #   NoMaskedUrlPaste.enable = true;
+  #   NoModalAnimation.enable = true;
+  #   NoNitroUpsell.enable = true;
+  #   NoOnboardingDelay.enable = true;
+  #   NoProfileThemes.enable = true;
+  #
+  #   # NotificationVolume = {
+  #   #   enable = true;
+  #   #   notificationVolume = 50.0; # percent
+  #   # };
+  #
+  #   NoTypingAnimation.enable = true;
+  #   OnePingPerDm.enable = true;
+  #   PlainFolderIcon.enable = true;
+  #
+  #   PlatformIndicators = {
+  #     enable = true;
+  #     list = false;
+  #     profiles = true;
+  #     messages = false;
+  #     colorMobileIndicator = true;
+  #     showBots = false;
+  #   };
+  #
+  #   ReplyPingControl = {
+  #     enable = true;
+  #     alwaysPingOnReply = true;
+  #   };
+  #
+  #   SaveFavoriteGiFs.enable = true; # why is the i lowercase?
+  #   ServerSearch.enable = true;
+  #   ShowHiddenChannels = {
+  #     enable = true;
+  #     channelStyle = 1; # muted
+  #   };
+  #
+  #   SidebarChat.enable = true;
+  #
+  #   SilentTyping = {
+  #     enable = true;
+  #     chatIcon = false;
+  #   };
+  #
+  #   SpotifyCrack.enable = true;
+  #
+  #   SplitLargeMessages.enable = true;
+  #
+  #   ThemeAttributes.enable = true;
+  #
+  #   TidalEmbeds.enable = true;
+  #
+  #   Timezones = {
+  #     enable = true;
+  #     showOwnTimezone = false;
+  #     _24hTime = true;
+  #     showTimezoneInfo = false;
+  #     showMessageHeaderTime = false;
+  #     showProfileTime = true;
+  #   };
+  #
+  #   TypingIndicator.enable = true;
+  #   UnitConverter = {
+  #     enable = true;
+  #     myUnits = "metric";
+  #   };
+  #   TypingTweaks.enable = true;
+  #
+  #   UnlockedAvatarZoom.enable = true;
+  #
+  #   UserMessagesPronouns = {
+  #     enable = true;
+  #     showSelf = false;
+  #     pronounsFormat = "LOWERCASE";
+  #   };
+  #
+  #   UserVoiceShow.enable = true;
+  #   UserPfp.enable = true;
+  #   Usrbg.enable = true;
+  #   ValidReply.enable = true;
+  #   ValidUser.enable = true;
+  #   ViewIcons.enable = true;
+  #   ViewRawVariant.enable = true;
+  #
+  #   VolumeBooster.enable = true;
+  #   WhosWatching.enable = true;
+  #   # WigglyText.enable = true;
+  #   YoutubeAdblock.enable = true;
+  # };
 }
