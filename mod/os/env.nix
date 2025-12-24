@@ -26,7 +26,7 @@ in {
     NIXPKGS_ALLOW_UNFREE = "1";
     WLR_DRM_NO_ATOMIC = "1"; # mango
 
-    _ZO_EXCLUDE_DIRS = "/mnt";
+    _ZO_EXCLUDE_DIRS = "*secret*";
 
     inherit
       XDG_CONFIG_HOME
