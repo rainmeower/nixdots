@@ -2,7 +2,7 @@
   programs.zoxide = {
     enable = true;
     enableBashIntegration = true;
-    enableNushellIntegration = false;
+    enableNushellIntegration = true;
     options = [
       "--cmd c"
     ];
