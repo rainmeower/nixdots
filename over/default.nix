@@ -10,6 +10,7 @@
   (import ./gui/foot.nix)
   (import ./gui/fuzzel.nix)
   (import ./gui/mpv.nix)
+  # (import ./misc/pango.nix)
   (import ./gui/swayimg.nix)
   (import ./service/kanata.nix)
   (import ./service/mpd.nix)
@@ -32,5 +33,5 @@
   (import ./tui/shell/starship.nix)
 
   # (import ./gui/vicinae-extension-nix.nix)
-  (import ./tui/keyb0xx.nix)
+  (import ./misc/keyb0xx.nix)
 ]
