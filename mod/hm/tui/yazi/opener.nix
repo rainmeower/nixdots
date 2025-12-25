@@ -19,7 +19,7 @@
 
     sc = [
     {
-      run = "sc-im";
+      run = "sc-im \"$1\"";
       for = "unix";
       block = true;
     }
