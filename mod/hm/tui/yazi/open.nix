@@ -76,7 +76,6 @@
         use = [ "sc" ];
       }
 
-
       # empty file
       {
         mime = "inode/empty";

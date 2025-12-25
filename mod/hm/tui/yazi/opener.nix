@@ -17,6 +17,13 @@
     }
     ];
 
+    sc = [
+    {
+      run = "sc-im";
+      for = "unix";
+    }
+    ];
+
     reveal = [
     {
       run = "xdg-open '$(dirname \"$1\")'";
