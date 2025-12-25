@@ -253,7 +253,12 @@ mods:
       (key-history h 1)
     )) S-. break
 
-
+    ;; else
+    ((and
+      (key-history e 3)
+      (key-history l 2)
+      (key-history s 1)
+    )) e break
 
     ;; keyword
     ((and

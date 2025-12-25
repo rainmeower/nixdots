@@ -2,7 +2,7 @@
   pkgs,
   ...
 }:{
-  hm_alt.home.packages = with pkgs; [
+  home.packages = with pkgs; [
     signal-cli
     gurk-rs
   ];

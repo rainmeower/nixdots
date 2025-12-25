@@ -1,5 +1,7 @@
 https://github.com/jtroo/kanata/discussions/1573
 
+- find out if i can change the sc-im keybinds or if i need to fork it
+
 symlink fzf to skim?
 
 - `mmsg -d setoption` repeat delay
