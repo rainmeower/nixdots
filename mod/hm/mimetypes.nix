@@ -13,6 +13,7 @@
     defaultApplications = {
       "application/json" = [ "nvim" ];
       "application/toml" = [ "nvim" ];
+      "application/sc" = [ "sc" ];
       "text/plain" = [ "nvim" ];
       "image/*"   = [ "swayimg" "krita" "aseprite" "inkscape" ];
       "image/gif" = [ "mpv" "swayimg" "krita" "aseprite" ];

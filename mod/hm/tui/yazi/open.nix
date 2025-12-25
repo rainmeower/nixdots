@@ -71,6 +71,12 @@
         use = [ "edit" "reveal" ];
       }
 
+      {
+        name = "*.sc";
+        use = [ "sc" ];
+      }
+
+
       # empty file
       {
         mime = "inode/empty";
