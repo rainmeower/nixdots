@@ -2,10 +2,10 @@
   pkgs,
   ...
 }:{
-  # hm_alt.home.packages = with pkgs; [
-  #   signal-cli
-  #   gurk-rs
-  # ];
+  hm_alt.home.packages = with pkgs; [
+    signal-cli
+    gurk-rs
+  ];
 
   # programs.gurk-rs = {
   #   enable = true;

@@ -1,5 +1,5 @@
 (final: prev: {
-  kanata = prev.kanata.overrideAttrs (old: {
+  kanata-with-cmd = prev.kanata-with-cmd.overrideAttrs (old: {
     CARGO_PROFILE_RELEASE_LTO = "fat";
     CARGO_PROFILE_RELEASE_OPT_LEVEL = "3";
     CARGO_PROFILE_RELEASE_CODEGEN_UNITS = "1";

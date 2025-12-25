@@ -280,8 +280,9 @@ in {
       ":q" = "exit";
       ":x" = "exit";
 
-      # k = "pkill";
       # "-" = "cd -"; # FIXME
+
+      /* make it like bash */
       fg = "job unfreeze";
       jobs = "job list";
 
@@ -292,7 +293,6 @@ in {
       mv = "mv -i"; # prompt every time
       ln = "ln -i"; # prompt every time
 
-      logout = "hyprctl dispatch exit 0";
       # l = "eza -lh  --icons=auto"; # long list
       ls = "eza -a1   --icons=auto"; # short list
       lsl = "eza -lha --icons=auto --sort=name --group-directories-first"; # long list all
@@ -301,6 +301,7 @@ in {
       # ff = "fastfetch --logo nixos_small --logo-color-2 magenta";
       meowfetch = "fastfetch -l ${flake_dir}/stuff/kitty_yarn";
 
+      sc = "sc-im";
 
 
       ga = "git add --all";
@@ -323,19 +324,22 @@ in {
       n = "nvim";
       y = "yazi";
 
+      /* typos */
       "n," = "nvim";
       "bn" = "nvim";
       "nb" = "nvim";
-      "t!ch" = "touch";
       mkidr = "mkdir";
       chomd = "chmod";
       dc = "cd";
       sl = "ls";
       igt = "git";
       gti = "git";
+      botp = "btop";
+      bOP = "btop";
 
 
-      # h = "!! --help";
+      h = "!! --help";
+
       np = "${flake_dir}/stuff/scripts/nixpkgs.sh";
 
     }; # }}}

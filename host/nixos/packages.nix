@@ -4,14 +4,11 @@
   lib,
   ...
 }:{
-  # remove rsync, and strace
+  # remove rsync and strace
   environment.defaultPackages = lib.mkForce [ pkgs.perl ];
 
   environment.systemPackages = with pkgs; [
-
-    signal-cli
-    gurk-rs
-
+    sc-im
 
     pastel
 

@@ -26,6 +26,7 @@ in {
     NIXPKGS_ALLOW_UNFREE = "1";
     WLR_DRM_NO_ATOMIC = "1"; # mango
 
+    # FIXME
     _ZO_EXCLUDE_DIRS = "*secret*";
 
     inherit

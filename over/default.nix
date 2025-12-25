@@ -13,6 +13,7 @@
   # (import ./misc/pango.nix)
   (import ./gui/swayimg.nix)
   (import ./service/kanata.nix)
+  # (import ./service/pipewire.nix)
   (import ./service/mpd.nix)
   (import ./tui/eza.nix)
   (import ./tui/fastfetch.nix)
