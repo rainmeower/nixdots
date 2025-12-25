@@ -21,6 +21,7 @@
     {
       run = "sc-im";
       for = "unix";
+      block = true;
     }
     ];
 
