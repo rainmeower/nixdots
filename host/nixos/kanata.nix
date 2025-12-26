@@ -33,7 +33,7 @@ mods:
           "/dev/input/by-id/usb-liliums_Lily58-event-if02"
         ];
 
-        extraDefCfg = ''
+        extraDefCfg = /* nix */ ''
           process-unmapped-keys true
           concurrent-tap-hold true
           chords-v2-min-idle 40

@@ -91,6 +91,7 @@
         ../../mod/hm/gui/vicinae.nix
         ../../mod/hm/gui/wlr-which-key.nix
         ../../mod/hm/gui/zen/zen.nix
+        ../../mod/hm/gui/hyprlock.nix
         ../../mod/hm/mimetypes.nix
         ../../mod/hm/service/easyeffects.nix
         ../../mod/hm/service/hyprkan.nix
