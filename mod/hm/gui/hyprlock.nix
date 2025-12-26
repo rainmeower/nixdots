@@ -1,6 +1,6 @@
 {
   config,
-  font_path,
+  font_name,
   rounding,
   flake_dir,
   p,
@@ -53,7 +53,7 @@
             inner_color = "rgba(255, 255, 255, 0.1)";
             font_color = "rgb(200, 200, 200)";
             fade_on_empty = "false";
-            font_family = font_path;
+            font_family = font_name;
             placeholder_text = 
               "<i><span foreground=\"##ffffff99\"> ${if rounding then "" else ""} </span></i>";
             hide_input = false;
@@ -76,8 +76,8 @@
             text = "cmd[update:1000] echo \"<span>$(date +\"%I:%M\")</span>\"";
             color = p.fg;
             font_size = 60;
-            font_family = font_path;
-            position = [ 0 60 ];
+            font_family = font_name;
+            position = [ 0 "-60" ];
             halign = "center";
             valign = "center";
           }
@@ -86,7 +86,7 @@
             text = "cmd[update:1000] echo -e \"$(date +\"%A, %B %d\")\"";
             color = p.fg;
             font_size = 18;
-            font_family = font_path;
+            font_family = font_name;
             position = [ 0 0 ];
             halign = "center";
             valign = "center";
