@@ -23,11 +23,34 @@
       filter_mode = "host"; # TODO search.filters
       workspaces = true;
 
-      inline_height_shell_up_key_binding = 10;
+      inline_height_shell_up_key_binding = 9;
+
+## possible values: emacs, subl
+# word_jump_mode = "emacs"
+
+## characters that count as a part of a word
+# word_chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+
+      # default history list format - can also be specified with the --format arg
+      history_format = "{time}\t{command}";
+
+
+      history_filter = [
+        "token"
+        "secret"
+        "^rm"
+        "rm$"
+        " rm"
+        "^shred"
+        "shred$"
+        " shred"
+      ];
 
       cwd_filter = [
         "secret"
       ];
+
 
       stats = {
         ignored_commands = [
