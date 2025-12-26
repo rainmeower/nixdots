@@ -12,16 +12,20 @@
     ];
 
     settings = {
+      show_help = false;
+      style = "compact";
+      dialect = "uk"; # anywhere except america = british lmao
+
       auto_sync = false;
       keymap_mode = "vim-insert";
 
-      style = "compact";
-      dialect = "uk"; # anywhere except america = british lmao
+      enter_accept = false;
+
       update_check = lib.mkForce false;
       search_mode = "fuzzy";
 
       filter_mode = "host"; # TODO search.filters
-      workspaces = true;
+      workspaces = true; # TODO
 
       inline_height_shell_up_key_binding = 9;
 
@@ -37,28 +41,24 @@
 
 
       history_filter = [
-        "token"
-        "secret"
-        "^rm"
-        "rm$"
-        " rm"
-        "^shred"
-        "shred$"
-        " shred"
+        "token" "TOKEN" "Token"
+        "secret" "SECRET" "Secret"
+        "^rm " "rm$" " rm"
+        "shred"
+        "^dd "
       ];
 
       cwd_filter = [
         "secret"
       ];
 
-
       stats = {
         ignored_commands = [
           "cd"
           "ls"
-          "y"
-          "yazi"
+          "y" "yazi"
           "nr"
+          "date"
         ];
 
         common_subcommands = [
