@@ -23,7 +23,7 @@
     # };
 
     wireplumber.extraConfig = {
-      "rename-devices" = { # {{{
+      "rename-nodes" = { # {{{
         "monitor.alsa.rules" = [
           {
             matches = [ { "node.name" = "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo"; } ];
@@ -50,7 +50,7 @@
       "disable-devices" = { # {{{
         "monitor.alsa.rules" = [
           {
-            matches = [ { "node.name" = "alsa_output.pci-0000_0c_00.1.hdmi-stereo"; } ];
+            matches = [ { "device.name" = "alsa_card.pci-0000_0c_00.1"; } ];
             actions = {
               update-props = {
                 "device.disabled" = true;
