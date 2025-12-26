@@ -12,6 +12,19 @@
 	...
 }: let
 # {{{
+  # no magic numbers for tags
+  tag = {
+    media   = "1";
+    chat    = "2";
+    game    = "3";
+    browser = "4";
+    misc    = "5";
+    center  = "6";
+    vert    = "7";
+    monocle = "8";
+    vtile   = "9";
+  };
+
   gaps = 10;
   h = lib.removePrefix "#";
   corners = if rounding then 10 else 0;
@@ -108,10 +121,11 @@ in {
         focused_opacity   = 1.0;
         unfocused_opacity = 1.0;
 
-        # Animation Configuration(support type:zoom,slide)
+        # animations {{{
         # tag_animation_direction: 0-horizontal,1-vertical
         animations       = os_config.animations;
         layer_animations = os_config.animations;
+        # zoom, slide
         animation_type_open  = "zoom";
         animation_type_close = "zoom";
         animation_fade_in  = 1;
@@ -134,6 +148,7 @@ in {
         animation_curve_focus = "0.46, 1.0,  0.29, 1";
         # animation_curve_opafadein  = 
         animation_curve_opafadeout = "0.24, 1, 0.01, 1";
+        # }}}
 
         # Scroller Layout Setting
         scroller_structs = gaps;
@@ -176,23 +191,20 @@ in {
         cursor_theme = "Bibata Modern Classic";
         cursor_hide_timeout = 1;
 
-        # keyboard
+        # input {{{
         repeat_rate = 25;
-        repeat_delay = 300;
+        repeat_delay = 200;
         numlockon = false;
         xkb_rules_layout = "us";
 
-        # Trackpad
-        # need relogin to make it apply
         disable_trackpad = true;
 
-        # mouse
-        # need relogin to make it apply
         mouse_natural_scrolling = false;
         accel_profile = 0;
         accel_speed = 0.0;
+        # }}}
 
-        # Appearance
+        # appearance {{{
         gappih = gaps;
         gappiv = gaps;
         gappoh = gaps;
@@ -205,23 +217,24 @@ in {
         bordercolor  = "0x00000000";
         focuscolor   = "0x${h p.accent}ff";
         urgentcolor  = "0x${h p.red}ff";
-        globalcolor  = "0xaca1cfff";
-        overlaycolor = "0x90b99fff";
-        scratchpadcolor     = "0x85b5baff";
+        globalcolor  = "0xaca1cfff"; # TODO
+        overlaycolor = "0x${h p.green}ff";
+        scratchpadcolor     = "0x85b5baff"; # TODO
         maximizescreencolor = "0x${h p.pink}ff";
+        # }}}
         # }}}
 
         # center_tile deck grid monocle right_tile scroller tile vertical_deck vertical_grid vertical_scroller vertical_spiral vertical_tile
         tagrule = [ # {{{
-          "id:1,layout_name:tile"
-          "id:2,layout_name:vertical_grid"
-          "id:3,layout_name:scroller" # vertical scroller?
-          "id:4,layout_name:tgmix" # deck maybe?
-          "id:5,layout_name:vertical_spiral"
-          "id:6,layout_name:center_tile"
-          "id:7,layout_name:vertical_scroller,monitor_name:DP-3"
-          "id:8,layout_name:monocle"
-          "id:9,layout_name:vertical_tile"
+          "id:${tag.media}  ,layout_name:tile"
+          "id:${tag.chat}   ,layout_name:vertical_grid"
+          "id:${tag.game}   ,layout_name:scroller" # vertical scroller?
+          "id:${tag.browser},layout_name:tgmix" # deck maybe?
+          "id:${tag.misc}   ,layout_name:scroller"
+          "id:${tag.center} ,layout_name:center_tile"
+          "id:${tag.vert}   ,layout_name:vertical_scroller,monitor_name:DP-3"
+          "id:${tag.monocle},layout_name:monocle"
+          "id:${tag.vtile}  ,layout_name:vertical_tile"
         ]; # }}}
 
         # Key Bindings
@@ -294,36 +307,35 @@ in {
             # switch layout
             "SUPER,semicolon,switch_layout"
 
-            "SUPER,Tab,  view,1,0"
-            "SUPER,b,    view,2,0"
-            "SUPER,f,    view,3,0"
-            "SUPER,d,    view,4,0"
-            "SUPER,w,    view,5,0"
-            "SUPER,p,    view,6,0"
-            "SUPER,y,    view,7,0"
-            "SUPER,comma,view,8,0"
-            "SUPER,v,    view,9,0"
+            "SUPER,Tab,  view,${tag.media},0"
+            "SUPER,b,    view,${tag.chat},0"
+            "SUPER,f,    view,${tag.game},0"
+            "SUPER,d,    view,${tag.browser},0"
+            "SUPER,w,    view,${tag.misc},0"
+            "SUPER,p,    view,${tag.center},0"
+            "SUPER,y,    view,${tag.vert},0"
+            "SUPER,comma,view,${tag.monocle},0"
+            "SUPER,v,    view,${tag.vtile},0"
 
-            "SUPER+SHIFT,Tab,tagsilent,1,0"
-            "SUPER+SHIFT,b,tagsilent,2,0"
-            "SUPER+SHIFT,f,tagsilent,3,0"
-            "SUPER+SHIFT,d,tagsilent,4,0"
-            "SUPER+SHIFT,w,tagsilent,5,0"
-            "SUPER+SHIFT,p,tagsilent,6,0"
-            "SUPER+SHIFT,y,tagsilent,7,0"
-            "SUPER,less,   tagsilent,8,0"
-            "SUPER+SHIFT,v,tagsilent,9,0"
+            "SUPER+SHIFT,Tab,tagsilent,${tag.media},0"
+            "SUPER+SHIFT,b,  tagsilent,${tag.chat},0"
+            "SUPER+SHIFT,f,  tagsilent,${tag.game},0"
+            "SUPER+SHIFT,d,  tagsilent,${tag.browser},0"
+            "SUPER+SHIFT,w,  tagsilent,${tag.misc},0"
+            "SUPER+SHIFT,p,  tagsilent,${tag.center},0"
+            "SUPER+SHIFT,y,  tagsilent,${tag.vert},0"
+            "SUPER,less,     tagsilent,${tag.monocle},0"
+            "SUPER+SHIFT,v,  tagsilent,${tag.vtile},0"
 
             # toggle windows from tag
-            "SUPER,bracketleft, spawn,mmsg -s -t 1^"
-            "SUPER,f1,          spawn,mmsg -s -t 2^"
-            "SUPER,f2,          spawn,mmsg -s -t 3^"
-            "SUPER,f3,          spawn,mmsg -s -t 4^"
-            "SUPER,f4,          spawn,mmsg -s -t 5^"
-            "SUPER,bracketright,spawn,mmsg -s -t 6^"
-            # "SUPER,f6,view,7,0"
-            "SUPER,f9,          spawn,mmsg -s -t 8^"
-            "SUPER,f10,         spawn,mmsg -s -t 9^"
+            "SUPER,bracketleft, spawn,mmsg -s -t ${tag.media}^"
+            "SUPER,f1,          spawn,mmsg -s -t ${tag.chat}^"
+            "SUPER,f2,          spawn,mmsg -s -t ${tag.game}^"
+            "SUPER,f3,          spawn,mmsg -s -t ${tag.browser}^"
+            "SUPER,f4,          spawn,mmsg -s -t ${tag.misc}^"
+            "SUPER,bracketright,spawn,mmsg -s -t ${tag.center}^"
+            "SUPER,f9,          spawn,mmsg -s -t ${tag.monocle}^"
+            "SUPER,f10,         spawn,mmsg -s -t ${tag.vtile}^"
 
 # gaps
 #"ALT+SHIFT,X,incgaps,1"
@@ -345,7 +357,7 @@ in {
 
         mousebind = [
           "SUPER,btn_left,moveresize,curmove"
-            "SUPER,btn_right,moveresize,curresize"
+          "SUPER,btn_right,moveresize,curresize"
         ];
 
         layerrule = [
@@ -365,9 +377,7 @@ in {
 
           "appid:foot.quit_prompt,isfloating:1,width:300,height:150"
 
-          "title:ghostty_term,tags:9,isopensilent:1"
-
-          "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1,tags:3"
+          "appid:steam_app_*,force_tearing:1,isfullscreen:1,noblur:1,tags:${tag.game}"
           # momentum mod
           "appid:steam_app_1802710,force_tearing:1,isfullscreen:0,noblur:1,isfloating:0,width:2560,height:1080"
 
@@ -376,7 +386,7 @@ in {
 
 
           "appid:swayimg,animation_type_open:none,animation_type_close:none"
-          "appid:equibop,appid:vesktop,tags:2,isopensilent:1"
+          "appid:equibop,appid:vesktop,tags:${tag.chat},isopensilent:1"
         ]; # }}}
 
 
