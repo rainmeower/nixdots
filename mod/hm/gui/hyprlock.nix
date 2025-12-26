@@ -55,10 +55,9 @@
             font_color = "rgb(200, 200, 200)";
             fade_on_empty = "false";
             font_family = font_name;
-            placeholder_text = 
-              "<i><span foreground=\"##ffffff99\"> ${if rounding then "" else ""} </span></i>";
+            placeholder_text = "<i><span foreground=\"##ffffff99\"> ${if rounding then "" else ""} </span></i>";
             hide_input = false;
-            position = "0, -90";
+            position = "0, -30";
             halign = "center";
             valign = "center";
 
