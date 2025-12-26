@@ -1,5 +1,10 @@
 {
+  lib,
+  pkgs,
+  ...
+}:{
   nv = {
+    plugins.dap-virtual-text.enable = true;
     plugins.dap = {
       enable = true;
 
@@ -7,6 +12,18 @@
       lazyLoad.settings.event = [
         "LspAttach"
       ]; # }}}
+
+      configurations = {
+        rust = [
+          {
+            type = "rust";
+            request = "launch";
+            name = "rust debug";
+            program = "$${file}";
+            rustPath = lib.getExe pkgs.rustc;
+          }
+        ];
+      };
 
       settings = {
       };

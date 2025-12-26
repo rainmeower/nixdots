@@ -38,10 +38,6 @@
             blur_passes = 2;
             blur_radius = 4;
 
-            contrast = 1.0;
-            brightness = 0.85;
-            vibrancy = 0.4;
-
             # contrast = "0.8916";
             # brightness = "0.8916";
             # vibrancy = "0.8916";
