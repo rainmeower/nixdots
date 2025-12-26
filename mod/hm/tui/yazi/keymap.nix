@@ -304,11 +304,11 @@
         desc = "hardlink";
       }
 
-      {
-        on = "<Esc>";
-        run = "unyank";
-        desc = "cancel the yank status";
-      }
+      # {
+      #   on = "X";
+      #   run = "unyank";
+      #   desc = "cancel the yank status";
+      # }
 
       {
         on = "o";
@@ -325,7 +325,6 @@
       {
         on = "s";
         run = "rename --cursor=before_ext";
-        desc = "rename";
       }
 
       {
@@ -339,7 +338,6 @@
       {
         on = ".";
         run = "hidden toggle";
-        desc = "toggle hidden visibility";
       }
 
       {
