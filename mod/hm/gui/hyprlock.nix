@@ -57,7 +57,7 @@
             font_family = font_name;
             placeholder_text = "<i><span foreground=\"##ffffff99\"> ${if rounding then "" else ""} </span></i>";
             hide_input = false;
-            position = "0, -30";
+            position = "0, -60";
             halign = "center";
             valign = "center";
 
