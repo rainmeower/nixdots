@@ -241,11 +241,16 @@ in {
         # Key Bindings
         # key name refer to `xev` or `wev` command output,
         # mod keys name: super,ctrl,alt,shift,none
-        bind = [ # {{{
+
+        # media controls still active when screen locked
+        bindl = [
           "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
           "SUPER+ALT,L,spawn,wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml"
+        ];
 
-            "SUPER+ALT,r,reload_config"
+        bind = [ # {{{
+
+            "SUPER,Left,reload_config"
 
             "SUPER,j,spawn,mpc toggle"
 
