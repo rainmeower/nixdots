@@ -109,6 +109,7 @@
         ../../mod/hm/tui/nh.nix
         ../../mod/hm/tui/nixvim
         ../../mod/hm/tui/nushell.nix
+        ../../mod/hm/tui/atuin.nix
         ../../mod/hm/tui/sc.nix
         ../../mod/hm/tui/zarumet.nix
         ../../mod/hm/tui/rust-fmt.nix

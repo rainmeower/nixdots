@@ -5,6 +5,7 @@
   home.packages = with pkgs; [
     sc-im
   ];
+
   xdg.configFile."sc-im/scimrc".text = ''
 color "type=STRG fg=GREEN bg=DEFAULT_COLOR bold=0 dim=0"
 color "type=NUMB fg=MAGENTA bg=DEFAULT_COLOR bold=0 dim=0"
