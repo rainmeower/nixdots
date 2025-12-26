@@ -3,6 +3,7 @@
   font_path,
   rounding,
   flake_dir,
+  p,
   ...
 }:{
   programs.hyprlock = {
@@ -73,18 +74,18 @@
           {
             monitor = "";
             text = "cmd[update:1000] echo \"<span>$(date +\"%I:%M\")</span>\"";
-            color = "rgba(216, 222, 233, 0.80)";
-            font_size = "60";
+            color = p.fg;
+            font_size = 60;
             font_family = font_path;
-            position = "0, 60";
+            position = [ 0 60 ];
             halign = "center";
             valign = "center";
           }
           {
             monitor = "";
             text = "cmd[update:1000] echo -e \"$(date +\"%A, %B %d\")\"";
-            color = "rgba(216, 222, 233, .80)";
-            font_size = 22;
+            color = p.fg;
+            font_size = 18;
             font_family = font_path;
             position = [ 0 0 ];
             halign = "center";
