@@ -86,18 +86,9 @@
             color = "rgba(216, 222, 233, .80)";
             font_size = 22;
             font_family = font_path;
-            position = "0, 0";
+            position = [ 0 0 ];
             halign = "center";
             valign = "center";
-          }
-          {
-            monitor = "";
-            text = " 󰐥  󰜉  󰤄 ";
-            color = "rgba(255, 255, 255, 0.6)";
-            font_size = "50";
-            position = "0, 100";
-            halign = "center";
-            valign = "bottom";
           }
         ];
       };
