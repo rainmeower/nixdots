@@ -77,7 +77,7 @@
             color = p.fg;
             font_size = 60;
             font_family = font_name;
-            position = [ 0 "-60" ];
+            position = "0, -60";
             halign = "center";
             valign = "center";
           }

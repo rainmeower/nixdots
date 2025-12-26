@@ -432,7 +432,7 @@ ${action "w" "spawn,${flake_dir}/stuff/scripts/bgselector"}
 ${action "p" "spawn,hyprpicker | wl-copy"}
 ${action "s" "spawn,${flake_dir}/stuff/scripts/keys/screenshot.sh"}
 ${action "q" "spawn,foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit.sh mango"}
-
+${action "l" "spawn,hyprlock"}
 
 keymode=media
 ${reset_keymode "Escape"}
