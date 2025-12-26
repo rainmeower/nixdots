@@ -2,6 +2,7 @@
   config,
   font_path,
   rounding,
+  flake_dir,
   ...
 }:{
   programs.hyprlock = {
@@ -27,7 +28,11 @@
         background = [
           {
             monitor = "";
-            path = "${config.home.homeDirectory}/snowcrate/assets/hypr/hyprlock.png";
+            # path = # TODO symlink in the wallpaper set script?
+            path = flake_dir + "/stuff/wallpapers/clouds.jpg";
+
+
+
             blur_passes = "2";
             # contrast = "0.8916";
             # brightness = "0.8916";
