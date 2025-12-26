@@ -576,8 +576,9 @@ mods:
     ;; expand {{{ 
     ;; TODO add more
 
+    ;; gitlab, codeberg, ...
+
     ;; https://github.com/
-    ;; TODO gitlab, codeberg, ...
     ((and
       (key-history g 4)
       (key-history h 3)
@@ -588,7 +589,38 @@ mods:
       (release-key h)
       (release-key lsft)
       (release-key rsft)
+      (release-key ;)
       (macro bspc bspc bspc h t t p s S-; / / g i t h u b . c o m /)
+    ) break
+
+    ;; https://gitlab.com/
+    ((and
+      (key-history g 4)
+      (key-history l 3)
+      (or (key-history lsft 2) (key-history rsft 2))
+      (key-history ; 1)
+    )) (multi
+      (release-key g)
+      (release-key l)
+      (release-key lsft)
+      (release-key rsft)
+      (release-key ;)
+      (macro bspc bspc bspc h t t p s S-; / / g i t l a b . c o m /)
+    ) break
+
+    ;; https://codeberg.org
+    ((and
+      (key-history c 4)
+      (key-history b 3)
+      (or (key-history lsft 2) (key-history rsft 2))
+      (key-history ; 1)
+    )) (multi
+      (release-key c)
+      (release-key b)
+      (release-key lsft)
+      (release-key rsft)
+      (release-key ;)
+      (macro bspc bspc bspc h t t p s S-; / / c o d e b e r g . o r g /)
     ) break
 
     ;; https://
