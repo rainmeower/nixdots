@@ -13,14 +13,19 @@
         "LspAttach"
       ]; # }}}
 
+      adapters = {
+        executables = {
+          rust-analyzer = { command = lib.getExe pkgs.rust-analyzer; };
+        };
+      };
+
       configurations = {
         rust = [
           {
             type = "rust";
             request = "launch";
             name = "rust debug";
-            program = "$${file}";
-            rustPath = lib.getExe pkgs.rustc;
+            program = "rust-analyzer";
           }
         ];
       };
