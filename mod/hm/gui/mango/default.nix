@@ -242,7 +242,7 @@ in {
         # mod keys name: super,ctrl,alt,shift,none
         bind = [ # {{{
           "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
-          "SUPER+SHIFT,L,spawn,wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml"
+          "SUPER+ALT,L,spawn,wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml"
 
             "SUPER+ALT,r,reload_config"
 
@@ -253,8 +253,8 @@ in {
             # "SUPER,n,spawn,mmsg -d focusmon u"
             # "SUPER,left,spawn,mmsg -d focusmon DP-3"
             # "SUPER,right,spawn,mmsg -d focusmon DP-1"
-            # "SUPER+SHIFT,left,spawn,mmsg -d tagmon DP-3,0"
-            # "SUPER+SHIFT,right,spawn,mmsg -d tagmon DP-1,0"
+            # "SUPER+ALT,left,spawn,mmsg -d tagmon DP-3,0"
+            # "SUPER+ALT,right,spawn,mmsg -d tagmon DP-1,0"
 
 
             /* menu and terminal */
@@ -265,13 +265,13 @@ in {
             "SUPER,c,spawn,footclient -a 'foot.yazi.isterm' yazi"
 
             /* goto most recent download */
-            ''SUPER+SHIFT,c,spawn_shell, footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/(\$f)"''
+            ''SUPER+ALT,c,spawn_shell, footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/(\$f)"''
 
 
             "SUPER,k,spawn,${flake_dir}/stuff/scripts/keys/ncmpcpp.sh"
 
             "SUPER,z,spawn,zen -p meow"
-            "SUPER+SHIFT,z,spawn,zen -p media"
+            "SUPER+ALT,z,spawn,zen -p media"
 
             # exit
             "SUPER,o,killclient,"
@@ -284,20 +284,20 @@ in {
             "SUPER,a,focusdir,down"
 
             # swap window
-            "SUPER+SHIFT,h,exchange_client,left"
-            "SUPER+SHIFT,i,exchange_client,right"
-            "SUPER+SHIFT,e,exchange_client,up"
-            "SUPER+SHIFT,a,exchange_client,down"
+            "SUPER+ALT,h,exchange_client,left"
+            "SUPER+ALT,i,exchange_client,right"
+            "SUPER+ALT,e,exchange_client,up"
+            "SUPER+ALT,a,exchange_client,down"
 
             # switch window status
             "SUPER,Period,toggleglobal,"
             "SUPER,g,toggleoverview,"
             "SUPER,m,togglemaximizescreen,"
-            "SUPER+SHIFT,m,togglefullscreen,"
+            "SUPER+ALT,m,togglefullscreen,"
             # "SUPER+CTRL,m,togglefakefullscreen,"
-            "SUPER+SHIFT,g,toggleoverlay,"
+            "SUPER+ALT,g,toggleoverlay,"
             #"SUPER,i,minimized,"
-            #"SUPER+SHIFT,I,restore_minimized"
+            #"SUPER+ALT,I,restore_minimized"
             #"ALT,z,toggle_scratchpad"
 
             # scroller layout
@@ -317,15 +317,15 @@ in {
             "SUPER,comma,view,${tag.monocle},0"
             "SUPER,v,    view,${tag.vtile},0"
 
-            "SUPER+SHIFT,Tab,tagsilent,${tag.media},0"
-            "SUPER+SHIFT,b,  tagsilent,${tag.chat},0"
-            "SUPER+SHIFT,f,  tagsilent,${tag.game},0"
-            "SUPER+SHIFT,d,  tagsilent,${tag.browser},0"
-            "SUPER+SHIFT,w,  tagsilent,${tag.misc},0"
-            "SUPER+SHIFT,p,  tagsilent,${tag.center},0"
-            "SUPER+SHIFT,y,  tagsilent,${tag.vert},0"
+            "SUPER+ALT,Tab,tagsilent,${tag.media},0"
+            "SUPER+ALT,b,  tagsilent,${tag.chat},0"
+            "SUPER+ALT,f,  tagsilent,${tag.game},0"
+            "SUPER+ALT,d,  tagsilent,${tag.browser},0"
+            "SUPER+ALT,w,  tagsilent,${tag.misc},0"
+            "SUPER+ALT,p,  tagsilent,${tag.center},0"
+            "SUPER+ALT,y,  tagsilent,${tag.vert},0"
             "SUPER,less,     tagsilent,${tag.monocle},0"
-            "SUPER+SHIFT,v,  tagsilent,${tag.vtile},0"
+            "SUPER+ALT,v,  tagsilent,${tag.vtile},0"
 
             # toggle windows from tag
             "SUPER,bracketleft, spawn,mmsg -s -t ${tag.media}^"
@@ -338,15 +338,15 @@ in {
             "SUPER,f10,         spawn,mmsg -s -t ${tag.vtile}^"
 
 # gaps
-#"ALT+SHIFT,X,incgaps,1"
-#"ALT+SHIFT,Z,incgaps,-1"
-#"ALT+SHIFT,R,togglegaps"
+#"ALT+ALT,X,incgaps,1"
+#"ALT+ALT,Z,incgaps,-1"
+#"ALT+ALT,R,togglegaps"
 
 # movewin
-#"CTRL+SHIFT,Up,movewin,+0,-50"
-#"CTRL+SHIFT,Down,movewin,+0,+50"
-#"CTRL+SHIFT,Left,movewin,-50,+0"
-#"CTRL+SHIFT,Right,movewin,+50,+0"
+#"CTRL+ALT,Up,movewin,+0,-50"
+#"CTRL+ALT,Down,movewin,+0,+50"
+#"CTRL+ALT,Left,movewin,-50,+0"
+#"CTRL+ALT,Right,movewin,+50,+0"
 
 # resizewin
 #"CTRL+ALT,Up,resizewin,+0,-50"
