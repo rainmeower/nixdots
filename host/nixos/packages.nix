@@ -8,7 +8,6 @@
   environment.defaultPackages = lib.mkForce [ pkgs.perl ];
 
   environment.systemPackages = with pkgs; [
-    sc-im
 
     pastel
 
