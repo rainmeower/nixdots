@@ -15,10 +15,7 @@
       auto_sync = false;
       keymap_mode = "vim-insert";
 
-      cwd_filter = [
-        "secret"
-      ];
-
+      style = "compact";
       dialect = "uk"; # anywhere except america = british lmao
       update_check = lib.mkForce false;
       search_mode = "fuzzy";
@@ -27,6 +24,10 @@
       workspaces = true;
 
       inline_height_shell_up_key_binding = 10;
+
+      cwd_filter = [
+        "secret"
+      ];
 
       stats = {
         ignored_commands = [
