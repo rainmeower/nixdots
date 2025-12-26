@@ -29,11 +29,32 @@
             matches = [ { "node.name" = "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo"; } ];
             actions = {
               update-props = {
-                "node.nick" = "hyperx cloud ii";
-                "node.description" = "hyperx cloud ii";
+                "node.nick" = "hyperx headphones";
+                "node.description" = "hyperx headphones";
               };
             };
           }
+
+          {
+            matches = [ { "node.name" = "alsa_output.pci-0000_0e_00.4.iec958-stereo"; } ];
+            actions = {
+              update-props = {
+                "node.nick" = "headphone jack";
+                "node.description" = "headphone jack";
+              };
+            };
+          }
+
+          {
+            matches = [ { "node.name" = "alsa_output.pci-0000_0c_00.1.hdmi-stereo"; } ];
+            actions = {
+              update-props = {
+                "node.nick" = "monitor speakers";
+                "node.description" = "monitor speakers";
+              };
+            };
+          }
+
         ];
       };
     };
