@@ -270,7 +270,6 @@
       {
         on = "l";
         run = "paste";
-        desc = "paste";
       }
 
 # { on = "f"         run = "paste --force";               desc = "Paste yanked files (overwrite if the destination exists)"; }
@@ -306,7 +305,7 @@
       }
 
       {
-        on = "X";
+        on = "<Esc>";
         run = "unyank";
         desc = "cancel the yank status";
       }
