@@ -1,5 +1,3 @@
-# TODO alt tap-hold on bspc?
-
 /* {{{
 base:
   : b f d w p   / l o u . -
@@ -36,10 +34,10 @@ mods:
         ];
 
         extraDefCfg = ''
-          process-unmapped-keys yes
-          concurrent-tap-hold yes
+          process-unmapped-keys true
+          concurrent-tap-hold true
           chords-v2-min-idle 40
-          danger-enable-cmd yes
+          danger-enable-cmd true
         '';
 
         config = /* scheme */ ''
