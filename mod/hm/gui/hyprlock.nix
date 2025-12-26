@@ -85,7 +85,7 @@
 
           {
             monitor = monitor.primary.name;
-            text = "cmd[update:1000] echo -e \"$(date +\"%A, %B %d\")\"";
+            text = "cmd[update:1000] echo \"$(date +\"%A, %B %d\")\"";
             color = p.fg;
             font_size = 16;
             font_family = font_name;
