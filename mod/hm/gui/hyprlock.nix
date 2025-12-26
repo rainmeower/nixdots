@@ -18,11 +18,11 @@
         auth.fingerprint.enabled = false;
 
         animations = {
-          enabled = "true";
-          bezier = "linear, 1, 1, 0, 0";
-          animation = [
-            "fade, 1, 10, linear"
-          ];
+          enabled = false;
+          # bezier = "linear, 1, 1, 0, 0";
+          # animation = [
+          #   "fade, 1, 10, linear"
+          # ];
         };
 
         background = [
@@ -33,7 +33,7 @@
 
 
 
-            blur_passes = "2";
+            blur_passes = "0";
             # contrast = "0.8916";
             # brightness = "0.8916";
             # vibrancy = "0.8916";
@@ -59,6 +59,14 @@
             position = "0, -90";
             halign = "center";
             valign = "center";
+
+
+            blur_passes = 2;
+            blur_radius = 4;
+            # contrast = "0.8916";
+            # brightness = "0.8916";
+            # vibrancy = "0.8916";
+            # vibrancy_darkness = "0.0";
           }
         ];
         label = [
