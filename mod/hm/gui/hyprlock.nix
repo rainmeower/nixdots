@@ -51,7 +51,7 @@
             dots_center = "true";
             outer_color = "rgba(255, 255, 255, 0)";
             inner_color = "rgba(255, 255, 255, 0.1)";
-            font_color = p.fg;
+            font_color = "rgb(200, 200, 200)";
             fade_on_empty = "false";
             font_family = font_name;
             placeholder_text = 
@@ -81,6 +81,7 @@
             halign = "center";
             valign = "center";
           }
+
           {
             monitor = "";
             text = "cmd[update:1000] echo -e \"$(date +\"%A, %B %d\")\"";
