@@ -13,11 +13,11 @@
         variable-refresh-rate = false;
 
         mode = {
-          inherit (monitor.DP-1)
+          inherit (monitor.primary)
             width
             height
             ;
-          refresh = monitor.DP-1.refresh_f; # TODO better way to do this?
+          refresh = monitor.primary.refresh_f; # TODO better way to do this?
         };
       };
 
@@ -30,11 +30,11 @@
         transform.rotation = 270;
 
         mode = {
-          inherit (monitor.DP-3)
+          inherit (monitor.secondary)
             width
             height
             ;
-          refresh = monitor.DP-3.refresh_f; # TODO better way to do this?
+          refresh = monitor.secondary.refresh_f; # TODO better way to do this?
         };
 
 # dont move the mouse to the other monitor

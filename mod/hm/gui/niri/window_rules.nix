@@ -7,7 +7,6 @@
 }:
 let
   radius = if rounding then 10.0 else 0.0;
-  inherit (monitor) DP-1 DP-3;
 in lib.mkIf wm.niri {
     programs.niri.settings.window-rules = [
       {
@@ -62,8 +61,8 @@ in lib.mkIf wm.niri {
           app-id = "steam_app_1802710";
         } ];
         open-on-workspace = "one";
-        min-width = DP-1.width;
-        max-width = DP-1.width;
+        min-width = monitor.primary.width;
+        max-width = monitor.primary.width;
         min-height = 1080;
         max-height = 1080;
         geometry-corner-radius = {
@@ -82,8 +81,8 @@ in lib.mkIf wm.niri {
           title = "Trackmania";
         } ];
         open-on-workspace = "one";
-        min-width = DP-1.width;
-        max-width = DP-1.width;
+        min-width = monitor.primary.width;
+        max-width = monitor.primary.width;
         min-height = 1080;
         max-height = 1080;
         geometry-corner-radius = {

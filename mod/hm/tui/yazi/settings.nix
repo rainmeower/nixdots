@@ -1,6 +1,7 @@
 {
   config,
   os_config,
+  monitor,
   ...
 }:{
   programs.yazi.settings = {
@@ -25,8 +26,8 @@
 
     preview = {
       tab_size = 2;
-      max_width = os_config.monitor.DP-1.width;
-      max_height = os_config.monitor.DP-1.width;
+      max_width = monitor.primary.width;
+      max_height = monitor.primary.width;
       cache_dir = "";
       image_delay = 0;
       image_filter = "triangle";

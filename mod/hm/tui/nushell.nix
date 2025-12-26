@@ -5,6 +5,7 @@
   wm,
   userDirs,
   prompt_sym,
+  monitor,
   ...
 }: let
   wm_launch_command =
@@ -71,7 +72,7 @@ in {
       def record [] { # simple screen record without obs
         cd ${userDirs.videos}
         let date = date now | format date "%Y-%m-%d %H:%M:%S"
-        wf-recorder -r 60 -o DP-1 -f $"(date now | format date '%Y-%m-%d %H:%M:%S').mkv"
+        wf-recorder -r 60 -o ${monitor.primary.name} -f $"(date now | format date '%Y-%m-%d %H:%M:%S').mkv"
       }
 
       def recordsmall [] { # simple screen record without obs

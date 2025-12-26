@@ -6,7 +6,10 @@
   inherit (lib.types) enum bool str anything int float;
 in {
   options = {
-    monitor.DP-1 = {
+    monitor.primary = {
+      name = mkOption {
+        type = str;
+      };
       height = mkOption {
         type = int;
       };
@@ -21,7 +24,10 @@ in {
       };
     };
 
-    monitor.DP-3 = {
+    monitor.secondary = {
+      name = mkOption {
+        type = str;
+      };
       height = mkOption {
         type = int;
       };

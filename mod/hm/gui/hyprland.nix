@@ -4,6 +4,7 @@
   wm,
   font_name,
   os_config,
+  monitor,
   ...
 }: lib.mkIf wm.hyprland {
     home.packages = with pkgs; [
@@ -60,8 +61,17 @@
         ];
 
         monitor = [
-          "DP-1, 2560x1440@165.08, 0x0, 1"
-          "DP-3, 2560x1440@75, -2880x486, 1, transform, 3"
+        (
+          monitor.primary.name + ", " +
+          monitor.primary.width + "x" +
+          monitor.primary.height + "@165.08, 0x0, 1"
+        )
+
+        (
+          monitor.secondary.name + ", " +
+          monitor.secondary.width + "x" +
+          monitor.secondary.height + "@75, -2880x486, 1, transform, 3"
+        )
         ];
 
         env = [
@@ -126,15 +136,15 @@
         animations.enabled = os_config.animations;
 
         workspace = [
-          "1, monitor:DP-1"
-          "2, monitor:DP-1"
-          "3, monitor:DP-1"
-          "4, monitor:DP-1"
-          "5, monitor:DP-1"
-          "6, monitor:DP-1"
-          "7, monitor:DP-1"
-          "8, monitor:DP-1"
-          "9, monitor:DP-3"
+          ("1, monitor:" + monitor.primary)
+          ("2, monitor:" + monitor.primary)
+          ("3, monitor:" + monitor.primary)
+          ("4, monitor:" + monitor.primary)
+          ("5, monitor:" + monitor.primary)
+          ("6, monitor:" + monitor.primary)
+          ("7, monitor:" + monitor.primary)
+          ("8, monitor:" + monitor.primary)
+          ("9, monitor:" + monitor.secondary)
         ];
 
         bind = [

@@ -1,5 +1,6 @@
 {
   lib,
+  monitor,
   wm,
   ...
 }: lib.mkIf wm.niri {
@@ -17,7 +18,7 @@
       # FIXME no worky
       # tablet = {
       #   enable = true;
-      #   map-to-output = "DP-1";
+      #   map-to-output = monitor.primary.name;
       # };
       keyboard = {
         repeat-delay = 300;

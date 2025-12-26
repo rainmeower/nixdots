@@ -3,6 +3,7 @@
   os_config,
 	lib,
   flake_dir,
+  monitor,
   wm,
   p,
   pkgs,
@@ -232,7 +233,7 @@ in {
           "id:${tag.browser},layout_name:tgmix" # deck maybe?
           "id:${tag.misc}   ,layout_name:scroller"
           "id:${tag.center} ,layout_name:center_tile"
-          "id:${tag.vert}   ,layout_name:vertical_scroller,monitor_name:DP-3"
+          "id:${tag.vert}   ,layout_name:vertical_scroller,monitor_name:${monitor.secondary.name}"
           "id:${tag.monocle},layout_name:monocle"
           "id:${tag.vtile}  ,layout_name:vertical_tile"
         ]; # }}}
@@ -391,8 +392,8 @@ in {
 
 
         monitorrule = [
-          "DP-1, 0.5, 1, scroller, 0, 1, 1440, 0, 2560, 1440, 165.080002"
-          "DP-3, 0.5, 1, vertical_scroller, 3, 1, 0, 0, 2560, 1440, 74.971001"
+          "${monitor.primary.name}, 0.5, 1, scroller, 0, 1, 1440, 0, 2560, 1440, 165.080002"
+          "${monitor.secondary.name}, 0.5, 1, vertical_scroller, 3, 1, 0, 0, 2560, 1440, 74.971001"
         ];
 
         # env = [ # {{{

@@ -14,11 +14,11 @@
 
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     kernelParams = let
-      inherit (config.monitor) DP-1 DP-3;
+      inherit (config.monitor) primary secondary;
       s = toString;
     in [
-      "video=DP-1:${s DP-1.width}x${s DP-1.height}@${s DP-1.refresh}"
-      "video=DP-3:${s DP-3.width}x${s DP-3.height}@${s DP-3.refresh}"
+      "video=${primary.name}:${s primary.width}x${s primary.height}@${s primary.refresh}"
+      "video=${secondary.name}:${s secondary.width}x${s secondary.height}@${s secondary.refresh}"
     ];
 
     # initrd.kernelModules = [];
