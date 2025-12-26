@@ -1,6 +1,6 @@
 {
   nv.plugins.yanky = {
-    enable = false;
+    enable = true;
 
     lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [

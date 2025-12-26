@@ -19,7 +19,8 @@
     # ./ui/indentscope.nix
     # ./ui/smear-cursor.nix
     # ./ui/tiny-glimmer.nix
-    ./ui/yank_highlight.nix
+    ./ui/yanky.nix
+    ./ui/highlight-undo.nix
     ./ui/twilight.nix
     ./ui/ccc.nix
     ./ui/diagnostic.nix
