@@ -242,13 +242,10 @@ in {
         # key name refer to `xev` or `wev` command output,
         # mod keys name: super,ctrl,alt,shift,none
 
-        # media controls still active when screen locked
-        bindl = [
-          "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
-          "SUPER+ALT,L,spawn,wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml"
-        ];
 
         bind = [ # {{{
+          "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
+          "SUPER+ALT,L,spawn,wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml"
 
             "SUPER,Left,reload_config"
 
@@ -421,7 +418,11 @@ in {
         # ]; # }}}
       };} + /* sh */ ''
 bind=SUPER,space,setkeymode,action
-# bind=SUPER,l,setkeymode,media # TODO
+
+
+# TODO
+# media controls still active when screen locked
+# bindl=SUPER,l,setkeymode,media
 
 keymode=action
 ${reset_keymode "Escape"}
