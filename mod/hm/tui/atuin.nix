@@ -26,6 +26,8 @@
       filter_mode = "host"; # TODO search.filters
       workspaces = true;
 
+      inline_height_shell_up_key_binding = 10;
+
       stats = {
         ignored_commands = [
           "cd"
