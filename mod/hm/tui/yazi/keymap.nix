@@ -167,11 +167,6 @@
       }
 
       {
-        on = "I";
-        run = "enter enter enter";
-      }
-
-      {
         on = "a";
         run = "arrow next";
       }
@@ -184,13 +179,11 @@
       {
         on = "<C-c>";
         run = "back";
-        desc = "Go back to the previous directory";
       }
 
       {
         on = "<C-t>";
         run = "forward";
-        desc = "Go forward to the next directory";
       }
 
       # selection {{{
@@ -234,38 +227,31 @@
       {
         on = "p";
         run = "plugin restore";
-        desc = "restore files";
       }
 
 # Seeking
       {
         on = "A";
         run = "seek 5";
-        desc = "down in preview";
       }
 
       {
         on = "E";
         run = "seek -5";
-        desc = "up in preview";
       }
 
       {
         on = "<Tab>";
         run = "spot";
-        desc = "spot";
       }
-
 
       {
         on = "<Enter>";
         run = "open";
-        desc = "open";
       }
       {
         on = "<S-Enter>";
         run = "open --interactive";
-        desc = "open interactively";
       }
 
       {
@@ -276,7 +262,8 @@
 
       {
         on = "u";
-        run = "yank --cut";
+        # run = "yank --cut";
+        run = [ "shell -- for path in \"$@\"; do echo \"file://$path\"; done | wl-copy -t text/uri-list" "yank --cut" ];
         desc = "cut";
       }
 
