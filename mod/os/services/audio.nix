@@ -30,6 +30,7 @@
             actions = {
               update-props = {
                 "node.nick" = "hyperx cloud ii";
+                "node.description" = "hyperx cloud ii";
               };
             };
           }
