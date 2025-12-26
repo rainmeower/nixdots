@@ -31,10 +31,6 @@
               update-props = {
                 "node.nick" = "hyperx headphones";
                 "node.description" = "hyperx headphones";
-
-                # default: 1000
-                "priority.driver" = 100;
-                "priority.session" = 100;
               };
             };
           }
