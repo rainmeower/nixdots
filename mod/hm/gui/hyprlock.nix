@@ -44,14 +44,14 @@
         input-field = [
           {
             monitor = "";
-            size = "320, 55";
+            size = "240, 55";
             outline_thickness = "0";
             dots_size = "0.2";
             dots_spacing = "0.2";
             dots_center = "true";
             outer_color = "rgba(255, 255, 255, 0)";
             inner_color = "rgba(255, 255, 255, 0.1)";
-            font_color = "rgb(200, 200, 200)";
+            font_color = p.fg;
             fade_on_empty = "false";
             font_family = font_name;
             placeholder_text = 
@@ -77,7 +77,7 @@
             color = p.fg;
             font_size = 60;
             font_family = font_name;
-            position = "0, -60";
+            position = "0, 60";
             halign = "center";
             valign = "center";
           }
@@ -87,7 +87,7 @@
             color = p.fg;
             font_size = 18;
             font_family = font_name;
-            position = [ 0 0 ];
+            position = "0, 0";
             halign = "center";
             valign = "center";
           }
