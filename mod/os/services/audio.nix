@@ -23,7 +23,7 @@
     # };
 
     wireplumber.extraConfig = {
-      "rename-nodes" = { # {{{
+      "configure-nodes" = { # {{{
         "monitor.alsa.rules" = [
           {
             matches = [ { "node.name" = "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo"; } ];
@@ -31,6 +31,8 @@
               update-props = {
                 "node.nick" = "hyperx headphones";
                 "node.description" = "hyperx headphones";
+                "priority.driver" = 100;
+                "priority.session" = 100;
               };
             };
           }
