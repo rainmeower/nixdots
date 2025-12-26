@@ -1,18 +1,40 @@
 {
+  lib,
+  ...
+}:{
   programs.atuin = {
     enable = true;
 
     enableNushellIntegration = true;
 
     flags = [
-      "--disable-up-arrow"
+      # "--disable-up-arrow" # TODO compact
     ];
 
     settings = {
       auto_sync = false;
+      keymap_mode = "vim-insert";
+
+      cwd_filter = [
+        "secret"
+      ];
+
+      dialect = "uk"; # anywhere except america = british lmao
+      update_check = lib.mkForce false;
+      search_mode = "fuzzy";
+
+      filter_mode = "host"; # TODO search.filters
+      workspaces = true;
 
       stats = {
-        # Set commands where we should consider the subcommand for statistics. Eg kubectl get vs just kubectl
+        ignored_commands = [
+          "cd"
+          "ls"
+          "y"
+          "yazi"
+          "nr"
+        ];
+
         common_subcommands = [
           "cargo"
           "composer"
