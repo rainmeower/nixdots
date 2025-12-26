@@ -11,7 +11,7 @@
       theme_background = false;
       truecolor = true;
       force_tty = false;
-      vim_keys = false; # TODO fork and change keybinds?
+      vim_keys = true; # TODO fork and change keybinds?
       rounded_corners = rounding;
 
       # default braille block tty

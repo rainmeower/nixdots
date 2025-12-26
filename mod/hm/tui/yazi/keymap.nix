@@ -167,6 +167,11 @@
       }
 
       {
+        on = "I";
+        run = "enter enter enter";
+      }
+
+      {
         on = "a";
         run = "arrow next";
       }

@@ -16,7 +16,7 @@
     theme[title]="${p.blue}"
 
     # Highlight color for keyboard shortcuts
-    theme[hi_fg]="${p.green}"
+    theme[hi_fg]="${p.purple}"
 
     # Background color of selected item in processes box
     theme[selected_bg]="${p.blue}"
