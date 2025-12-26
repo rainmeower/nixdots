@@ -5,7 +5,7 @@
   services.pipewire = {
     enable = true;
     alsa.enable = true;
-    alsa.support32Bit = lib.mkForce false;
+    alsa.support32Bit = lib.mkForce false; # dont need it
     pulse.enable = true;
     jack.enable = true;
 
@@ -15,15 +15,15 @@
       quantum = 64;
       rate = 48000;
     };
+
     # extraConfig.pipewire-pulse = {
     #   "pulse.properties" = {
     #     "min.quantum" = "256/48000 # 2.7ms";
     #   };
     # };
 
-
     wireplumber.extraConfig = {
-      "headphones-rename" = {
+      "rename-devices" = { # {{{
         "monitor.alsa.rules" = [
           {
             matches = [ { "node.name" = "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo"; } ];
@@ -44,22 +44,23 @@
               };
             };
           }
+        ];
+      }; # }}}
 
+      "disable-devices" = { # {{{
+        "monitor.alsa.rules" = [
           {
             matches = [ { "node.name" = "alsa_output.pci-0000_0c_00.1.hdmi-stereo"; } ];
             actions = {
               update-props = {
-                "node.nick" = "monitor speakers";
-                "node.description" = "monitor speakers";
+                "device.disabled" = true;
               };
             };
           }
-
         ];
-      };
+      }; # }}}
     };
   };
-
 
   # make pipewire realtime-capable
   security.rtkit.enable = true;
