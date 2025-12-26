@@ -47,6 +47,7 @@
     ./util/gx.nix
     ./util/lsp.nix
     ./util/lspconfig.nix
+    ./util/dap.nix
     ./util/matchup.nix
     ./util/neotest.nix
     ./util/repeat.nix

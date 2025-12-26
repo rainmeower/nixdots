@@ -14,6 +14,12 @@
         "git@github.com:" = {
           insteadOf = "gh:";
         };
+        "git@gitlab.com:" = {
+          insteadOf = "gl:";
+        };
+        "git@codeberg.org:" = {
+          insteadOf = "cb:";
+        };
         "git@github.com:nyxmeowmeow/" = {
           insteadOf = "megh:";
         };
