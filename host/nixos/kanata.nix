@@ -957,9 +957,9 @@ h (tap-hold-release-tap-keys-release 120 120 h rctl (bspc f15 f16 f17 f18 ; spc)
 f16 S-9
 f17 @rp
 lmet (multi (tap-hold-release-tap-keys-release 120 120 esc lmet () ()) (layer-while-held sup))
+rsft (tap-hold-release-tap-keys-release 120 120 bspc ralt () ())
 f19 @magic
 ;; rsft (tap-hold-press 120 120 bspc rctl)
-rsft bspc
 ralt (tap-hold-press 120 120 tab (layer-while-held fn))
 f18 S-;
 lctrl @eqsft
@@ -1124,8 +1124,8 @@ ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held mods) (esc)
 ;; spc (multi (release-key lmet) (layer-switch action))
 
 
-lctl lctl
-rsft rsft
+lctl =
+rsft ralt
 
 ;; FIXME
 ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held fn) (esc) ())
@@ -1140,6 +1140,12 @@ f16 9
 f17 0
 f19 lsft
 
+
+t (tap-hold-release-tap-keys-release 120 120 t lsft (bspc f15 f16 f17 f18 ; spc) ())
+a (tap-hold-release-tap-keys-release 120 120 a rsft (bspc f15 f16 f17 f18 ; spc) ())
+c (tap-hold-release-tap-keys-release 120 120 c lctl (bspc f15 f16 f17 f18 ; spc) ())
+h (tap-hold-release-tap-keys-release 120 120 h rctl (bspc f15 f16 f17 f18 ; spc) ())
+
 b b
 f f
 d d
@@ -1147,8 +1153,6 @@ w w
 p p
 n n
 s s
-t t
-c c
 y y
 , ,
 . .
@@ -1162,8 +1166,6 @@ u u
 j j
 x x
 m m
-h h
-a a
 e e
 i i
 
@@ -1254,6 +1256,8 @@ g f12
 ) ;; }}}
 
 (defchordsv2 ;; {{{
+  ;; TODO sup layer chords
+
   ;; (r spc) rsft 18 first-release (over sup melee)
 
   (l o u) (macro S-z S-z) 18 all-released (over sup melee fn mods) ;; vim save and quit
