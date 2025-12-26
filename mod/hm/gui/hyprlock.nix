@@ -1,6 +1,7 @@
 {
   config,
   font_name,
+  monitor,
   rounding,
   flake_dir,
   p,
@@ -43,7 +44,7 @@
         ];
         input-field = [
           {
-            monitor = "";
+            monitor = monitor.primary.name;
             size = "240, 55";
             outline_thickness = "0";
             dots_size = "0.2";
@@ -72,7 +73,7 @@
         ];
         label = [
           {
-            monitor = "";
+            monitor = monitor.primary.name;
             text = "cmd[update:1000] echo \"<span>$(date +\"%I:%M\")</span>\"";
             color = p.fg;
             font_size = 60;
@@ -83,7 +84,7 @@
           }
 
           {
-            monitor = "";
+            monitor = monitor.primary.name;
             text = "cmd[update:1000] echo -e \"$(date +\"%A, %B %d\")\"";
             color = p.fg;
             font_size = 18;
