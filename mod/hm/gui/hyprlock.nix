@@ -35,7 +35,13 @@
 
 
 
-            blur_passes = "0";
+            blur_passes = 2;
+            blur_radius = 4;
+
+            contrast = 0.8;
+            brightness = 0.9;
+            vibrancy = 0.8;
+
             # contrast = "0.8916";
             # brightness = "0.8916";
             # vibrancy = "0.8916";
