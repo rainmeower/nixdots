@@ -35,7 +35,7 @@
       # directory
       {
         name = "*/";
-        use = [ "edit" "open" "reveal" ];
+        use = [];
       }
 
       {
@@ -73,7 +73,11 @@
 
       {
         name = "*.sc";
-        use = [ "sc" ];
+        use = [ "sc" "nvim" ];
+      }
+      {
+        name = "*.csv";
+        use = [ "sc" "nvim" ];
       }
 
       # empty file

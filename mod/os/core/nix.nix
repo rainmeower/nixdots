@@ -11,10 +11,10 @@
       use-xdg-base-directories = true; # dont put stuff in home
 
       substituters = [
-        "https://vicinae.cachix.org"
+        # "https://vicinae.cachix.org"
       ];
       trusted-public-keys = [
-        "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
+        # "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
       ];
     };
 
