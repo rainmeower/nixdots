@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 should_quit="$(echo "yes
-no" | tac | tofi --placeholder="quit $1?")"
+no" | tofi --placeholder="quit $1?")"
 
 if [[ $should_quit == "yes" || $should_quit == "quit"* ]]; then 
   uwsm stop || pkill mango

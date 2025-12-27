@@ -79,7 +79,7 @@
       horizontal = true;
       min-input-width = 80;
 
-      # width = 2534;
+      # 2534
       width = monitor.primary.width - margin-top * 2 - border_width * 2;
       height = 80;
 

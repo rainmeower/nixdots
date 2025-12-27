@@ -437,7 +437,7 @@ ${action "underscore" "spawn,${flake_dir}/stuff/scripts/clear"}
 ${action "w" "spawn,${flake_dir}/stuff/scripts/bgselector"}
 ${action "p" "spawn,hyprpicker | wl-copy"}
 ${action "s" "spawn,${flake_dir}/stuff/scripts/keys/screenshot"}
-${action "q" "spawn,foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit mango"}
+${action "q" "spawn,${flake_dir}/stuff/scripts/keys/quit mango"}
 ${action "l" "spawn,hyprlock"}
 
 keymode=media
