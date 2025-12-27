@@ -48,7 +48,6 @@ in {
         width = border_width;
         inherit radius; # TODO
       };
-
     };
   };
 }

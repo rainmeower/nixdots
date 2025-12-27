@@ -46,6 +46,7 @@
         "^rm " "rm$" " rm"
         "shred"
         "^dd "
+        "^[A$"
       ];
 
       cwd_filter = [
