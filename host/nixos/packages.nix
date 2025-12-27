@@ -8,6 +8,7 @@
   environment.defaultPackages = lib.mkForce [ pkgs.perl ];
 
   environment.systemPackages = with pkgs; [
+    wlrctl
 
     pastel
 

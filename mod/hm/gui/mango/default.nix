@@ -456,6 +456,7 @@ ${action "p" "spawn,hyprpicker | wl-copy"}
 ${action "s" "spawn,${flake_dir}/stuff/scripts/keys/screenshot"}
 ${action "q" "spawn,${flake_dir}/stuff/scripts/keys/quit mango"}
 ${action "l" "spawn,hyprlock"}
+# TODO check which browser is open
 ${action "t" "spawn,${flake_dir}/stuff/tabflow/native/tabselect"}
 
 
