@@ -41,6 +41,7 @@ in {
         prompt = selection;
         match = selection;
         selection-match = rh p.bg + "ff";
+        placeholder = rh p.comment + "ff";
       };
 
       border = {
