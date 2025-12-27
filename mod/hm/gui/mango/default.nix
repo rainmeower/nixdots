@@ -262,7 +262,8 @@ in {
 
             /* menu and terminal */
             # "SUPER,Return,spawn,vicinae toggle"
-            "SUPER,Return,spawn,fuzzel --hide-before-typing"
+            # "SUPER,Return,spawn,fuzzel --hide-before-typing"
+            "SUPER,Return,spawn,tofi-drun"
             "SUPER,s,spawn,footclient nvim"
             "SUPER,t,spawn,footclient"
             "SUPER,c,spawn,footclient -a 'foot.yazi.isterm' yazi"
