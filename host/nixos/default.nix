@@ -48,7 +48,7 @@
     ../../mod/os/gui/steam.nix
     ../../mod/os/services/disk.nix
     ../../mod/os/gui/wine.nix
-    ../../mod/os/ydotool.nix
+    # ../../mod/os/ydotool.nix
     ../../mod/os/gui/appimage.nix
 
     ../../theme/blacchiato/os

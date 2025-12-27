@@ -35,7 +35,7 @@ for tab in tabs:
         choices = choices + tab[0] + "\t" + tab[1] + "\t" + tab[2] + "\n"
 
 choice = os.popen(
-    f'echo -n "{choices}" | tofi').readline()
+    f'echo -n "{choices}" | tofi && wlrctl window focus zen-twilight').readline()
 choice = choice.strip('\n')
 choice = choice.split('\t')
 

@@ -65,7 +65,7 @@
       text-cursor-thickness = 2;
 
       # Prompt to display.
-      prompt-text = prompt_sym + " ";
+      prompt-text = "\"${prompt_sym} \"";
 
       # Extra horizontal padding between prompt and input.
       prompt-padding = 0;
