@@ -76,7 +76,7 @@
 ### Text layout
 #
 	# Prompt to display.
-	prompt-text = "󰘧 ";
+  prompt-text = prompt_sym + " ";
 
 	# Extra horizontal padding between prompt and input.
 	prompt-padding = 0;
