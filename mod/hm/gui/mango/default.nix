@@ -328,18 +328,19 @@ in {
             "SUPER+ALT,w,  tagsilent,${tag.misc},0"
             "SUPER+ALT,p,  tagsilent,${tag.center},0"
             "SUPER+ALT,y,  tagsilent,${tag.vert},0"
-            "SUPER,less,     tagsilent,${tag.monocle},0"
+            # "SUPER,less,     tagsilent,${tag.monocle},0"
             "SUPER+ALT,v,  tagsilent,${tag.vtile},0"
 
             # toggle windows from tag
-            "SUPER,bracketleft, spawn,mmsg -s -t ${tag.media}^"
-            "SUPER,f1,          spawn,mmsg -s -t ${tag.chat}^"
-            "SUPER,f2,          spawn,mmsg -s -t ${tag.game}^"
-            "SUPER,f3,          spawn,mmsg -s -t ${tag.browser}^"
-            "SUPER,f4,          spawn,mmsg -s -t ${tag.misc}^"
-            "SUPER,bracketright,spawn,mmsg -s -t ${tag.center}^"
-            "SUPER,f9,          spawn,mmsg -s -t ${tag.monocle}^"
-            "SUPER,f10,         spawn,mmsg -s -t ${tag.vtile}^"
+            "SUPER+CTRL,Tab, spawn,mmsg -s -t ${tag.media}^"
+            "SUPER+CTRL,b,   spawn,mmsg -s -t ${tag.chat}^"
+            "SUPER+CTRL,f,   spawn,mmsg -s -t ${tag.game}^"
+            "SUPER+CTRL,d,   spawn,mmsg -s -t ${tag.browser}^"
+            "SUPER+CTRL,w,   spawn,mmsg -s -t ${tag.misc}^"
+            "SUPER+CTRL,p,   spawn,mmsg -s -t ${tag.center}^"
+            "SUPER+CTRL,y,   spawn,mmsg -s -t ${tag.vert}^"
+            # "SUPER+CTRL,     less,          spawn,mmsg -s -t ${tag.monocle}^"
+            "SUPER+CTRL,v,   spawn,mmsg -s -t ${tag.vtile}^"
 
 # gaps
 #"ALT+ALT,X,incgaps,1"
