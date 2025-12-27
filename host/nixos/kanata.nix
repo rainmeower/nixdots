@@ -176,6 +176,7 @@ mods:
     () ent break
   )
 
+  ;; FIXME
   cw (caps-word-custom
     2000 ;; time before it cancels after no keypresses
     (a b c d e f g h i j k l m n o p q r s t u v w x y z) ;; words that get shifted
@@ -280,11 +281,8 @@ mods:
       (key-history b 1)
     )) (unmod o) break
 
-    ;; intmax
+    ;; max
     ((and
-      (key-history i 5)
-      (key-history n 4)
-      (key-history t 3)
       (key-history m 2)
       (key-history a 1)
     )) x break
