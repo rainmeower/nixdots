@@ -56,6 +56,8 @@
         impure_msg = "";
       };
 
+      jobs.disabled = true; # ✦ thing from atuin
+
 
       git_metrics.disabled = false;
       git_branch.symbol = "";

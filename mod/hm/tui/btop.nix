@@ -5,7 +5,6 @@
 }:{
   programs.btop = {
     enable = true;
-    package = pkgs.btop-rocm; # btop with gpu support
     settings = {
       color_theme = "btop.theme";
       theme_background = false;

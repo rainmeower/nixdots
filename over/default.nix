@@ -25,6 +25,7 @@
   (import ./tui/ripgrep.nix)
   (import ./tui/skim.nix)
   (import ./tui/uutils.nix)
+  # (import ./tui/btop.nix)
   (import ./tui/yazi.nix)
 
   (import ./tui/shell/nushell.nix)

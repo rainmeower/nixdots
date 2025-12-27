@@ -1318,7 +1318,7 @@ g f12
   (    d w) S-\ 15 all-released (over sup melee fn game)
   
   (l o    ) S-8 14 all-released (over sup melee fn mods)
-  ;; (  o u  ) S-1 13 all-released (over sup melee fn mods)
+  (  o u  ) x   13 all-released (over sup melee fn mods)
   (    u .) S-6 15 all-released (over sup melee fn mods)
 
   (n s    ) S-/ 14 all-released (over sup melee fn game)
@@ -1337,7 +1337,7 @@ g f12
 
   (f15 f16      ) S-3 20 all-released (over sup melee fn)
   ;; (f15     f17  ) S-5 20 all-released (over sup melee fn)
-  (    f16 f17  ) x 15 all-released (over sup melee fn)
+  ;;(    f16 f17  )  15 all-released (over sup melee fn)
   (        f17 ;) S-2 15 all-released (over sup melee fn)
 
 ) ;; }}}
