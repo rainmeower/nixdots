@@ -17,6 +17,8 @@ mods:
                   󰞗 󰞖 󰞙 󰞘
           .       󱁐
 }}} */
+
+# TODO rot13 layer?
 {
   pkgs,
   username,

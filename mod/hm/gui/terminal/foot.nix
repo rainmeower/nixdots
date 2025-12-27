@@ -34,6 +34,10 @@
         scrollback-down-half-page = "Page_Down";
         scrollback-home = "Home";
         scrollback-end = "End";
+        show-urls-copy = "Alt+w";
+        show-urls-launch = "Alt+u";
+        # pipe-command-output = ''[sh -c "f=$(mktemp); cat - > $f; footclient emacsclient -nw $f; rm $f"] Control+Shift+g'';
+        pipe-command-output = ''[sh -c "f=$(mktemp); nvim $f; rm $f"] Control+Shift+e'';
       };
 
       colors = let # {{{

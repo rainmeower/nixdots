@@ -55,7 +55,6 @@
 
       stats = {
         ignored_commands = [
-          "cd"
           "ls"
           "y" "yazi"
           "nr"
