@@ -1,4 +1,6 @@
 # TODO better way to format this stuff
+
+# TODO .xpi .sc
 {
   p,
   ...
