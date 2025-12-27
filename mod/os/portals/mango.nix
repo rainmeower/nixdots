@@ -17,7 +17,7 @@
 
       config = {
         common = {
-          default = [ "gtk" "termfilechooser" ];
+          default = [ "gtk" "termfilechooser" "wlr" ];
           # "org.freedesktop.impl.portal.Secret" = [ "gnome-keyring" ];
           "org.freedesktop.impl.portal.ScreenCast" = [ "wlr" ];
           "org.freedesktop.impl.portal.ScreenShot" = [ "wlr" ];
@@ -28,7 +28,7 @@
           "org.freedesktop.Notifications" = [];
         };
         mango = {
-          default = [ "gtk" "termfilechooser" ];
+          default = [ "gtk" "termfilechooser" "wlr" ];
           # "org.freedesktop.impl.portal.Secret" = [ "gnome-keyring" ];
           "org.freedesktop.impl.portal.ScreenCast" = [ "wlr" ];
           "org.freedesktop.impl.portal.ScreenShot" = [ "wlr" ];

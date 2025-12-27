@@ -44,6 +44,7 @@
     ../../mod/os/gaming/nix-gaming.nix
     ../../mod/os/shared.nix
     ../../mod/os/portals/mango.nix
+    ../../mod/os/portals/wlr.nix
     ../../mod/os/gui/steam.nix
     ../../mod/os/services/disk.nix
     ../../mod/os/gui/wine.nix
