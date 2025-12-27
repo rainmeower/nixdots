@@ -44,6 +44,18 @@ bind=SUPER,${key},setkeymode,default
 bind=NONE,${key},${action}
 bind=SUPER,${key},${action}
   '';
+  layout = key: l: ''
+bind=NONE,${key},setlayout,${l}
+bind=SUPER,${key},setlayout,${l}
+bind=NONE,${key},setkeymode,default
+bind=SUPER,${key},setkeymode,default
+  '';
+  layout_s = key: l: ''
+bind=SHIFT,${key},setlayout,${l}
+bind=SUPER+SHIFT,${key},setlayout,${l}
+bind=SHIFT,${key},setkeymode,default
+bind=SUPER+SHIFT,${key},setkeymode,default
+  '';
   media_stay = key: action: ''
 bind=NONE,${key},spawn,${action}
 bind=SUPER,${key},spawn,${action}
@@ -247,118 +259,121 @@ in {
           "SUPER,L,spawn,wlr-which-key ~/.config/wlr-which-key/mpc.yaml"
           "SUPER+ALT,L,spawn,wlr-which-key -k l ${userDirs.extraConfig.XDG_CONFIG_HOME}/wlr-which-key/mpc.yaml"
 
-            "SUPER,Left,reload_config"
+          "SUPER,Left,reload_config"
 
-            "SUPER,j,spawn,mpc toggle"
-
-
-
-            # "SUPER,n,spawn,mmsg -d focusmon u"
-            # "SUPER,left,spawn,mmsg -d focusmon DP-3"
-            # "SUPER,right,spawn,mmsg -d focusmon DP-1"
-            # "SUPER+ALT,left,spawn,mmsg -d tagmon DP-3,0"
-            # "SUPER+ALT,right,spawn,mmsg -d tagmon DP-1,0"
+          "SUPER,j,spawn,mpc toggle"
 
 
-            /* menu and terminal */
-            # "SUPER,Return,spawn,vicinae toggle"
-            # "SUPER,Return,spawn,fuzzel --hide-before-typing"
-            "SUPER,Return,spawn,tofi-drun"
-            "SUPER,s,spawn,footclient nvim"
-            "SUPER,t,spawn,footclient"
-            "SUPER,c,spawn,footclient -a 'foot.yazi.isterm' yazi"
 
-            /* goto most recent download */
-            ''SUPER+ALT,c,spawn_shell, footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/(\$f)"''
+          # "SUPER,n,spawn,mmsg -d focusmon u"
+          # "SUPER,left,spawn,mmsg -d focusmon DP-3"
+          # "SUPER,right,spawn,mmsg -d focusmon DP-1"
+          # "SUPER+ALT,left,spawn,mmsg -d tagmon DP-3,0"
+          # "SUPER+ALT,right,spawn,mmsg -d tagmon DP-1,0"
 
 
-            "SUPER,k,spawn,${flake_dir}/stuff/scripts/keys/ncmpcpp"
+          /* menu and terminal */
+          # "SUPER,Return,spawn,vicinae toggle"
+          # "SUPER,Return,spawn,fuzzel --hide-before-typing"
+          "SUPER,Return,spawn,tofi-drun"
+          "SUPER,s,spawn,footclient nvim"
+          "SUPER,t,spawn,footclient"
+          "SUPER,c,spawn,footclient -a 'foot.yazi.isterm' yazi"
 
-            "SUPER,z,spawn,zen -p meow"
-            "SUPER+ALT,z,spawn,zen -p media"
+          /* goto most recent download */
+          ''SUPER+ALT,c,spawn_shell, footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/(\$f)"''
 
-            # exit
-            "SUPER,o,killclient,"
 
-            # switch window focus
-            # "ALT,Tab,focusstack,next"
-            "SUPER,h,focusdir,left"
-            "SUPER,i,focusdir,right"
-            "SUPER,e,focusdir,up"
-            "SUPER,a,focusdir,down"
+          "SUPER,k,spawn,${flake_dir}/stuff/scripts/keys/ncmpcpp"
 
-            # swap window
-            "SUPER+ALT,h,exchange_client,left"
-            "SUPER+ALT,i,exchange_client,right"
-            "SUPER+ALT,e,exchange_client,up"
-            "SUPER+ALT,a,exchange_client,down"
+          "SUPER,z,spawn,zen -p meow"
+          "SUPER+ALT,z,spawn,zen -p media"
 
-            # switch window status
-            "SUPER,Period,toggleglobal,"
-            "SUPER,g,toggleoverview,"
-            "SUPER,m,togglemaximizescreen,"
-            "SUPER+ALT,m,togglefullscreen,"
-            # "SUPER+CTRL,m,togglefakefullscreen,"
-            "SUPER+ALT,g,toggleoverlay,"
-            #"SUPER,i,minimized,"
-            #"SUPER+ALT,I,restore_minimized"
-            #"ALT,z,toggle_scratchpad"
+          # exit
+          "SUPER,o,killclient,"
 
-            # scroller layout
-            # "SUPER,m,set_proportion,1.0"
-            "SUPER,9,switch_proportion_preset,"
+          # switch window focus
+          # "ALT,Tab,focusstack,next"
+          "SUPER,h,focusdir,left"
+          "SUPER,i,focusdir,right"
+          "SUPER,e,focusdir,up"
+          "SUPER,a,focusdir,down"
 
-            # switch layout
-            "SUPER,semicolon,switch_layout"
+          # swap window
+          "SUPER+ALT,h,exchange_client,left"
+          "SUPER+ALT,i,exchange_client,right"
+          "SUPER+ALT,e,exchange_client,up"
+          "SUPER+ALT,a,exchange_client,down"
 
-            "SUPER,Tab,  view,${tag.media},0"
-            "SUPER,b,    view,${tag.chat},0"
-            "SUPER,f,    view,${tag.game},0"
-            "SUPER,d,    view,${tag.browser},0"
-            "SUPER,w,    view,${tag.misc},0"
-            "SUPER,p,    view,${tag.center},0"
-            "SUPER,y,    view,${tag.vert},0"
-            "SUPER,comma,view,${tag.monocle},0"
-            "SUPER,v,    view,${tag.vtile},0"
+          # switch window status
+          "SUPER,Period,toggleglobal,"
+          "SUPER,g,toggleoverview,"
+          "SUPER,m,togglemaximizescreen,"
+          "SUPER+ALT,m,togglefullscreen,"
+          # "SUPER+CTRL,m,togglefakefullscreen,"
+          "SUPER+ALT,g,toggleoverlay,"
+          #"SUPER,i,minimized,"
+          #"SUPER+ALT,I,restore_minimized"
+          #"ALT,z,toggle_scratchpad"
 
-            "SUPER+ALT,Tab,tagsilent,${tag.media},0"
-            "SUPER+ALT,b,  tagsilent,${tag.chat},0"
-            "SUPER+ALT,f,  tagsilent,${tag.game},0"
-            "SUPER+ALT,d,  tagsilent,${tag.browser},0"
-            "SUPER+ALT,w,  tagsilent,${tag.misc},0"
-            "SUPER+ALT,p,  tagsilent,${tag.center},0"
-            "SUPER+ALT,y,  tagsilent,${tag.vert},0"
-            # "SUPER,less,     tagsilent,${tag.monocle},0"
-            "SUPER+ALT,v,  tagsilent,${tag.vtile},0"
+          # scroller layout
+          # "SUPER,m,set_proportion,1.0"
+          "SUPER,9,switch_proportion_preset,"
 
-            # toggle windows from tag
-            "SUPER+CTRL,Tab, spawn,mmsg -s -t ${tag.media}^"
-            "SUPER+CTRL,b,   spawn,mmsg -s -t ${tag.chat}^"
-            "SUPER+CTRL,f,   spawn,mmsg -s -t ${tag.game}^"
-            "SUPER+CTRL,d,   spawn,mmsg -s -t ${tag.browser}^"
-            "SUPER+CTRL,w,   spawn,mmsg -s -t ${tag.misc}^"
-            "SUPER+CTRL,p,   spawn,mmsg -s -t ${tag.center}^"
-            "SUPER+CTRL,y,   spawn,mmsg -s -t ${tag.vert}^"
-            # "SUPER+CTRL,     less,          spawn,mmsg -s -t ${tag.monocle}^"
-            "SUPER+CTRL,v,   spawn,mmsg -s -t ${tag.vtile}^"
+          # switch layout
+          # "SUPER,semicolon,switch_layout"
+          "SUPER,semicolon,setkeymode,layout"
 
-# gaps
-#"ALT+ALT,X,incgaps,1"
-#"ALT+ALT,Z,incgaps,-1"
-#"ALT+ALT,R,togglegaps"
+          # goto tag
+          "SUPER,Tab,  view,${tag.media},0"
+          "SUPER,b,    view,${tag.chat},0"
+          "SUPER,f,    view,${tag.game},0"
+          "SUPER,d,    view,${tag.browser},0"
+          "SUPER,w,    view,${tag.misc},0"
+          "SUPER,p,    view,${tag.center},0"
+          "SUPER,y,    view,${tag.vert},0"
+          "SUPER,comma,view,${tag.monocle},0"
+          "SUPER,v,    view,${tag.vtile},0"
 
-# movewin
-#"CTRL+ALT,Up,movewin,+0,-50"
-#"CTRL+ALT,Down,movewin,+0,+50"
-#"CTRL+ALT,Left,movewin,-50,+0"
-#"CTRL+ALT,Right,movewin,+50,+0"
+          # move to tag silently
+          "SUPER+ALT,Tab,  tagsilent,${tag.media},0"
+          "SUPER+ALT,b,    tagsilent,${tag.chat},0"
+          "SUPER+ALT,f,    tagsilent,${tag.game},0"
+          "SUPER+ALT,d,    tagsilent,${tag.browser},0"
+          "SUPER+ALT,w,    tagsilent,${tag.misc},0"
+          "SUPER+ALT,p,    tagsilent,${tag.center},0"
+          "SUPER+ALT,y,    tagsilent,${tag.vert},0"
+          "SUPER+ALT,comma,tagsilent,${tag.monocle},0"
+          "SUPER+ALT,v,    tagsilent,${tag.vtile},0"
 
-# resizewin
-#"CTRL+ALT,Up,resizewin,+0,-50"
-#"CTRL+ALT,Down,resizewin,+0,+50"
-#"CTRL+ALT,Left,resizewin,-50,+0"
-#"CTRL+ALT,Right,resizewin,+50,+0"
-            ]; # }}}
+          # toggle windows from tag
+          "SUPER+CTRL,Tab,  spawn,mmsg -s -t ${tag.media}^"
+          "SUPER+CTRL,b,    spawn,mmsg -s -t ${tag.chat}^"
+          "SUPER+CTRL,f,    spawn,mmsg -s -t ${tag.game}^"
+          "SUPER+CTRL,d,    spawn,mmsg -s -t ${tag.browser}^"
+          "SUPER+CTRL,w,    spawn,mmsg -s -t ${tag.misc}^"
+          "SUPER+CTRL,p,    spawn,mmsg -s -t ${tag.center}^"
+          "SUPER+CTRL,y,    spawn,mmsg -s -t ${tag.vert}^"
+          "SUPER+CTRL,comma,spawn,mmsg -s -t ${tag.monocle}^"
+          "SUPER+CTRL,v,    spawn,mmsg -s -t ${tag.vtile}^"
+
+          # gaps
+          #"ALT+ALT,X,incgaps,1"
+          #"ALT+ALT,Z,incgaps,-1"
+          #"ALT+ALT,R,togglegaps"
+          
+          # movewin
+          #"CTRL+ALT,Up,movewin,+0,-50"
+          #"CTRL+ALT,Down,movewin,+0,+50"
+          #"CTRL+ALT,Left,movewin,-50,+0"
+          #"CTRL+ALT,Right,movewin,+50,+0"
+          
+          # resizewin
+          #"CTRL+ALT,Up,resizewin,+0,-50"
+          #"CTRL+ALT,Down,resizewin,+0,+50"
+          #"CTRL+ALT,Left,resizewin,-50,+0"
+          #"CTRL+ALT,Right,resizewin,+50,+0"
+        ]; # }}}
 
         mousebind = [
           "SUPER,btn_left,moveresize,curmove"
@@ -441,6 +456,26 @@ ${action "p" "spawn,hyprpicker | wl-copy"}
 ${action "s" "spawn,${flake_dir}/stuff/scripts/keys/screenshot"}
 ${action "q" "spawn,${flake_dir}/stuff/scripts/keys/quit mango"}
 ${action "l" "spawn,hyprlock"}
+
+
+
+
+keymode=layout
+${reset_keymode "Escape"}
+${layout "t" "tile"}
+${layout "s" "scroller"}
+${layout "y" "monocle"}
+${layout "g" "grid"}
+${layout "d" "deck"}
+${layout "c" "center_tile"}
+${layout "r" "right_tile"}
+${layout_s "t" "vertical_tile"}
+${layout_s "s" "vertical_scroller"}
+${layout_s "g" "vertical_grid"}
+${layout_s "s" "vertical_spiral"}
+${layout_s "d" "vertical_deck"}
+${layout "i" "tgmix"}
+
 
 keymode=media
 ${reset_keymode "Escape"}
