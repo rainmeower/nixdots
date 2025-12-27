@@ -21,7 +21,7 @@ in {
         terminal = "${pkgs.foot}/bin/foot";
         layer = "overlay";
         prompt = ''"${prompt_sym} "'';
-        hide-before-typing = true;
+        hide-before-typing = false; # no way to disable this with a flag
         lines = 5;
         dpi-aware = false;
         # gross
