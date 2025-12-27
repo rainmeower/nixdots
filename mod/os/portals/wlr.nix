@@ -1,10 +1,4 @@
 {
-  config,
-  lib,
-  namespace,
-  pkgs,
-  ...
-}:{
   xdg.portal = {
     config = {
       common = {
@@ -17,8 +11,9 @@
       enable = true;
       settings = {
         screencast = {
+          # FIXME
           chooser_type = "dmenu"; # simple, dmenu
-          chooser_cmd = "fuzzel -d"; # Optional: use slurp for region selection
+          chooser_cmd = "fuzzel -d";
         };
       };
     };

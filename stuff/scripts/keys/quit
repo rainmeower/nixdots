@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-should_quit="$(echo "quit $1?
-yes
-no" | fzf --no-input +s --style=minimal --tac)"
+should_quit="$(echo "yes
+no" | tac | fuzzel --placeholder="quit $1?" -d)"
 
 if [[ $should_quit == "yes" || $should_quit == "quit"* ]]; then 
   uwsm stop || pkill mango
