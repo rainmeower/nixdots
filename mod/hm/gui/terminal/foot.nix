@@ -36,7 +36,7 @@
         scrollback-end = "End";
         show-urls-copy = "Alt+w";
         show-urls-launch = "Alt+u";
-        # pipe-command-output = ''[sh -c "f=$(mktemp); cat - > $f; footclient emacsclient -nw $f; rm $f"] Control+Shift+g'';
+        # open output of prev command in new foot nvim window
         pipe-command-output = ''[sh -c "f=$(mktemp -p /tmp); cat - > $f; footclient nvim $f; rm $f"] Control+Shift+e'';
       };
 

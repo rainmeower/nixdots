@@ -140,7 +140,7 @@
 
       print-index = false;
 
-      drun-launch = false;
+      drun-launch = true;
 
       terminal = lib.getExe pkgs.foot;
 
