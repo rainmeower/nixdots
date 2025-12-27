@@ -6,6 +6,7 @@
   monitor,
   prompt_sym,
   border_width,
+  rounding,
   ...
 }:{
   programs.tofi = {
@@ -49,18 +50,13 @@
       selection-color = p.bg;
       selection-background = p.accent;
       selection-background-padding = 4;
-      selection-background-corner-radius = 0;
+      selection-background-corner-radius = if rounding then 10 else 0;
       selection-match-color = "#00000000";
 
 
-      # Window background color
       background-color = p.bg_trans;
 
-
-      # Border outline color
       outline-color = "#00000000";
-
-      # Border color
       border-color = "#00000000";
       # }}}
 
@@ -83,9 +79,8 @@
       horizontal = true;
       min-input-width = 80;
 
-      width = 2534;
-      # FIXME
-      # width = monitor.primary.width - padding-left * 2 - border_width * 2;
+      # width = 2534;
+      width = monitor.primary.width - margin-top * 2 - border_width * 2;
       height = 80;
 
       # Width of the border outlines in pixels.
@@ -97,7 +92,7 @@
 
 
       # Radius of window corners in pixels.
-      corner-radius = 0;
+      corner-radius = if rounding then 10 else 0;
 
       # Padding between borders and text. Can be pixels or a percentage.
       padding-top = 14;
