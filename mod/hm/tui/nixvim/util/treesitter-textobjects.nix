@@ -16,8 +16,8 @@
         keymaps = {
           "a=" = "@assignment.outer";
           "i=" = "@assignment.inner";
-          "[=" = "@assignment.lhs";
-          "]=" = "@assignment.rhs";
+          "=b" = "@assignment.lhs";
+          "=w" = "@assignment.rhs";
           aa   = "@parameter.outer";
           ia   = "@parameter.inner";
           ac   = "@conditional.outer";
