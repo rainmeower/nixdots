@@ -197,7 +197,7 @@ in {
 
       #  clear clipboard
       def cl [] {
-        ${flake_dir}/stuff/scripts/clear.sh
+        ${flake_dir}/stuff/scripts/clear
       }
 
 
@@ -341,7 +341,7 @@ in {
 
       h = "!! --help";
 
-      np = "${flake_dir}/stuff/scripts/nixpkgs.sh";
+      np = "${flake_dir}/stuff/scripts/nixpkgs";
 
     }; # }}}
 

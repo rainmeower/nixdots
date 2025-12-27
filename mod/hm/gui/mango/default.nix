@@ -75,7 +75,7 @@ in {
       /* bash */ ''
         set +e
         uwsm app -- awww-daemon &
-        ${flake_dir}/stuff/scripts/awww.sh &
+        ${flake_dir}/stuff/scripts/awww &
 
         # wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
         uwsm app -- foot --server &
@@ -271,7 +271,7 @@ in {
             ''SUPER+ALT,c,spawn_shell, footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/(\$f)"''
 
 
-            "SUPER,k,spawn,${flake_dir}/stuff/scripts/keys/ncmpcpp.sh"
+            "SUPER,k,spawn,${flake_dir}/stuff/scripts/keys/ncmpcpp"
 
             "SUPER,z,spawn,zen -p meow"
             "SUPER+ALT,z,spawn,zen -p media"
@@ -431,13 +431,13 @@ ${action "c" "centerwin"}
 ${action "m" "togglefakefullscreen"}
 ${action_stay "a" "spawn,wpctl set-volume -l 0.5 @DEFAULT_AUDIO_SINK@ 2%-"}
 ${action_stay "e" "spawn,wpctl set-volume -l 0.5 @DEFAULT_AUDIO_SINK@ 2%+"}
-${action "z" "spawn,${flake_dir}/stuff/scripts/eep.sh"}
-${action "x" "spawn,${flake_dir}/stuff/scripts/clear.sh"}
-${action "underscore" "spawn,${flake_dir}/stuff/scripts/clear.sh"}
+${action "z" "spawn,${flake_dir}/stuff/scripts/eep"}
+${action "x" "spawn,${flake_dir}/stuff/scripts/clear"}
+${action "underscore" "spawn,${flake_dir}/stuff/scripts/clear"}
 ${action "w" "spawn,${flake_dir}/stuff/scripts/bgselector"}
 ${action "p" "spawn,hyprpicker | wl-copy"}
-${action "s" "spawn,${flake_dir}/stuff/scripts/keys/screenshot.sh"}
-${action "q" "spawn,foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit.sh mango"}
+${action "s" "spawn,${flake_dir}/stuff/scripts/keys/screenshot"}
+${action "q" "spawn,foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit mango"}
 ${action "l" "spawn,hyprlock"}
 
 keymode=media

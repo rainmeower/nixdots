@@ -1,7 +1,7 @@
 #!/usr/bin/env dash
 
-# foot ~/nix/stuff/scripts/hydrate.sh &
-# foot ~/nix/stuff/scripts/retry.sh &
+# foot ~/nix/stuff/scripts/hydrate &
+# foot ~/nix/stuff/scripts/retry &
 # foot foot --server &
 # foot kitty -1 &
 ghostty --title="ghostty_term" &

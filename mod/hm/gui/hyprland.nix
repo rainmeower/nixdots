@@ -48,7 +48,7 @@
         "$scrPath" = "~/.local/share/bin";
         "$scripts" = "~/nix/stuff/scripts";
         "$hyperkey" = "SUPER SHIFT CTRL ALT";
-        "$song" = "~/nix/stuff/scripts/mpc.sh";
+        "$song" = "~/nix/stuff/scripts/mpc";
         "$moveactivewindow" = "grep -q 'true' <<< $(hyprctl activewindow -j | jq -r .floating) && hyprctl dispatch moveactive";
 
 
@@ -153,7 +153,7 @@
             "SUPER,       o, exec, $scripts/dontkillsteam.sh"
             "SUPER CTRL,  o, exec, hyprctl kill"
             "SUPER CTRL SHIFT, o, exec, hyprctl dispatch killactive ''"  # bypass dontkillsteam exceptions"
-            "SUPER,       n, exec, $scripts/swap.sh"
+            "SUPER,       n, exec, $scripts/swap"
 #"SUPER,       slash, togglesplit"
 #"SUPER,       m, togglefloating"
             "SUPER SHIFT, m, exec, hyprctl dispatch centerwindow"
@@ -163,8 +163,8 @@
             "SUPER CTRL,  2, exec, notify-send $(hyprctl cursorpos)"
             "SUPER,       4, exec, $scripts/hextoimg.sh"  # hyprpicker
 
-            "SUPER,       3, exec, $scrPath/screenshot.sh s"  # screenshot capture
-            "SUPER CTRL,  3, exec, $scrPath/screenshot.sh sf"  # screenshot capture (frozen screen)
+            "SUPER,       3, exec, $scrPath/screenshot s"  # screenshot capture
+            "SUPER CTRL,  3, exec, $scrPath/screenshot sf"  # screenshot capture (frozen screen)
 
             "SUPER SHIFT, x, exec, hyprctl dispatch togglegroup"
             "SUPER,       x, exec, hyprctl dispatch changegroupactive"
@@ -303,7 +303,6 @@
             "noblur,class:^(vesktop)$"
 # "noblur,class:^(zen-beta)$"
 
-            "workspace special:2,title:(keyb0xx.sh)$"
             "workspace special:2,class:^(Slippi Launcher)$"
             "workspace special:2 silent,class:^(Apprun)$"
             "workspace 3,title:^(Dolphin)$"

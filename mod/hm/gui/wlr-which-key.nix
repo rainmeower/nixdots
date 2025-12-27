@@ -21,13 +21,13 @@ menu:
     desc: quit
     cmd: ${if wm.hyprland then "hyprctl dispatch exit"
            else if wm.niri then "niri msg action quit"
-           else if wm.mango then "foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit.sh mango"
+           else if wm.mango then "foot --app-id='foot.quit_prompt' ${flake_dir}/stuff/scripts/keys/quit mango"
            else err
           }
 
   - key: [ "s", "Mod4+s" ]
     desc: screenshot
-    cmd: ${if (wm.hyprland || wm.mango) then "${flake_dir}/stuff/scripts/keys/screenshot.sh"
+    cmd: ${if (wm.hyprland || wm.mango) then "${flake_dir}/stuff/scripts/keys/screenshot"
            else if wm.niri then "niri msg action screenshot -p false"
            else err
           }
@@ -70,7 +70,7 @@ menu:
 
   - key: [ "x", "Mod4+x" ]
     desc: clear
-    cmd: ${flake_dir}/stuff/scripts/clear.sh
+    cmd: ${flake_dir}/stuff/scripts/clear
 
   - key: [ "m", "Mod4+m" ]
     desc: fullscreen-like action
@@ -104,7 +104,7 @@ menu:
 
   - key: [ "z", "Mod4+z" ]
     desc: eep
-    cmd: ${flake_dir}/stuff/scripts/eep.sh
+    cmd: ${flake_dir}/stuff/scripts/eep
 
   # - key: [ "<enter>", "Mod4+<enter>" ]
   #   desc: float active

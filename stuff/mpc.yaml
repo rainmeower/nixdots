@@ -74,23 +74,23 @@ menu:
 
           - key: [ "a", "Mod4+a", "A", "Mod4+A" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'abyss angel'
+            cmd: ~/nix/stuff/scripts/mpc 'abyss angel'
 
           - key: [ "b", "Mod4+b", "B", "Mod4+B" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'absolute in doubt'
+            cmd: ~/nix/stuff/scripts/mpc 'absolute in doubt'
 
           - key: [ "l", "Mod4+l", "L", "Mod4+L" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'alchemist'
+            cmd: ~/nix/stuff/scripts/mpc 'alchemist'
 
           - key: [ "s", "Mod4+s", "S", "Mod4+S" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'ascension to heaven'
+            cmd: ~/nix/stuff/scripts/mpc 'ascension to heaven'
 
           - key: [ "t", "Mod4+t", "T", "Mod4+T" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'atlas'
+            cmd: ~/nix/stuff/scripts/mpc 'atlas'
 
 
       - key: [ "b", "Mod4+b", "B", "Mod4+B" ]
@@ -99,11 +99,11 @@ menu:
 
           - key: [ "r", "Mod4+r", "R", "Mod4+R" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'break'
+            cmd: ~/nix/stuff/scripts/mpc 'break'
 
           - key: [ "u", "Mod4+u", "U", "Mod4+U" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'bubbly'
+            cmd: ~/nix/stuff/scripts/mpc 'bubbly'
 
 
       - key: [ "c", "Mod4+c", "C", "Mod4+C" ]
@@ -112,15 +112,15 @@ menu:
 
           - key: [ "i", "Mod4+i", "I", "Mod4+I" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'the cia'
+            cmd: ~/nix/stuff/scripts/mpc 'the cia'
 
           - key: [ "o", "Mod4+o", "O", "Mod4+O" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'commatose'
+            cmd: ~/nix/stuff/scripts/mpc 'commatose'
 
           - key: [ "w", "Mod4+w", "W", "Mod4+W" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'cold weather'
+            cmd: ~/nix/stuff/scripts/mpc 'cold weather'
 
 
       - key: [ "d", "Mod4+d", "D", "Mod4+D" ]
@@ -129,23 +129,23 @@ menu:
 
           - key: [ "a", "Mod4+a", "A", "Mod4+A" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'dallas'
+            cmd: ~/nix/stuff/scripts/mpc 'dallas'
 
           - key: [ "d", "Mod4+d", "D", "Mod4+D" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'daydreamer'
+            cmd: ~/nix/stuff/scripts/mpc 'daydreamer'
 
           - key: [ "o", "Mod4+o", "O", "Mod4+O" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'downfall'
+            cmd: ~/nix/stuff/scripts/mpc 'downfall'
 
           - key: [ "s", "Mod4+s", "S", "Mod4+S" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'darkside'
+            cmd: ~/nix/stuff/scripts/mpc 'darkside'
 
           - key: [ "u", "Mod4+u", "U", "Mod4+U" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'dumbest girl alive'
+            cmd: ~/nix/stuff/scripts/mpc 'dumbest girl alive'
 
 
       - key: [ "e", "Mod4+e", "E", "Mod4+E" ]
@@ -154,7 +154,7 @@ menu:
 
           - key: [ "v", "Mod4+v", "V", "Mod4+V" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'everything everything'
+            cmd: ~/nix/stuff/scripts/mpc 'everything everything'
 
 
       - key: [ "f", "Mod4+f", "F", "Mod4+F" ]
@@ -163,15 +163,15 @@ menu:
 
           - key: [ "r", "Mod4+r", "R", "Mod4+R" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'from the start'
+            cmd: ~/nix/stuff/scripts/mpc 'from the start'
 
           - key: [ "i", "Mod4+i", "I", "Mod4+I" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'first rate town'
+            cmd: ~/nix/stuff/scripts/mpc 'first rate town'
 
           - key: [ "o", "Mod4+o", "O", "Mod4+O" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh '(forever?'
+            cmd: ~/nix/stuff/scripts/mpc '(forever?'
 
 
       - key: [ "g", "Mod4+g", "G", "Mod4+G" ]
@@ -180,7 +180,7 @@ menu:
 
           - key: [ "b", "Mod4+b", "B", "Mod4+B" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'glass beach'
+            cmd: ~/nix/stuff/scripts/mpc 'glass beach'
 
 
       - key: [ "h", "Mod4+h", "H", "Mod4+H" ]
@@ -189,15 +189,15 @@ menu:
 
           - key: [ "s", "Mod4+s", "S", "Mod4+S" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'homeswitcher'
+            cmd: ~/nix/stuff/scripts/mpc 'homeswitcher'
 
           - key: [ "o", "Mod4+o", "O", "Mod4+O" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'how to save a life'
+            cmd: ~/nix/stuff/scripts/mpc 'how to save a life'
 
           - key: [ "a", "Mod4+a", "A", "Mod4+A" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'haunted'
+            cmd: ~/nix/stuff/scripts/mpc 'haunted'
 
 
       - key: [ "i", "Mod4+i", "I", "Mod4+I" ]
@@ -206,7 +206,7 @@ menu:
 
           - key: [ "h", "Mod4+h", "H", "Mod4+H" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'i hate everything about you'
+            cmd: ~/nix/stuff/scripts/mpc 'i hate everything about you'
 
 
       - key: [ "j", "Mod4+j", "J", "Mod4+J" ]
@@ -215,7 +215,7 @@ menu:
 
           - key: [ "d", "Mod4+d", "D", "Mod4+D" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'classic j dies and goes to hell part 1'
+            cmd: ~/nix/stuff/scripts/mpc 'classic j dies and goes to hell part 1'
 
 
       - key: [ "m", "Mod4+m", "M", "Mod4+M" ]
@@ -224,23 +224,23 @@ menu:
 
           - key: [ "i", "Mod4+i", "I", "Mod4+I" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 's delivery service'
+            cmd: ~/nix/stuff/scripts/mpc 's delivery service'
 
           - key: [ "k", "Mod4+k", "K", "Mod4+K" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'mr. kill myself'
+            cmd: ~/nix/stuff/scripts/mpc 'mr. kill myself'
 
           - key: [ "n", "Mod4+n", "N", "Mod4+N" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'midnight'
+            cmd: ~/nix/stuff/scripts/mpc 'midnight'
 
           - key: [ "o", "Mod4+o", "O", "Mod4+O" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'motions'
+            cmd: ~/nix/stuff/scripts/mpc 'motions'
 
           - key: [ "y", "Mod4+y", "Y", "Mod4+Y" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'miss you'
+            cmd: ~/nix/stuff/scripts/mpc 'miss you'
 
 
       - key: [ "n", "Mod4+n", "N", "Mod4+N" ]
@@ -249,15 +249,15 @@ menu:
 
           - key: [ "e", "Mod4+e", "E", "Mod4+E" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'neon glow'
+            cmd: ~/nix/stuff/scripts/mpc 'neon glow'
 
           - key: [ "l", "Mod4+l", "L", "Mod4+L" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'newlove'
+            cmd: ~/nix/stuff/scripts/mpc 'newlove'
 
           - key: [ "o", "Mod4+o", "O", "Mod4+O" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'nothing nothing nothing'
+            cmd: ~/nix/stuff/scripts/mpc 'nothing nothing nothing'
 
 
       - key: [ "o", "Mod4+o", "O", "Mod4+O" ]
@@ -266,7 +266,7 @@ menu:
 
           - key: [ "r", "Mod4+r", "R", "Mod4+R" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'orchids'
+            cmd: ~/nix/stuff/scripts/mpc 'orchids'
 
 
       - key: [ "p", "Mod4+p", "P", "Mod4+P" ]
@@ -275,19 +275,19 @@ menu:
 
           - key: [ "a", "Mod4+a", "A", "Mod4+A" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'patience'
+            cmd: ~/nix/stuff/scripts/mpc 'patience'
 
           - key: [ "h", "Mod4+h", "H", "Mod4+H" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'phoenix'
+            cmd: ~/nix/stuff/scripts/mpc 'phoenix'
 
           - key: [ "u", "Mod4+u", "U", "Mod4+U" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'puppy'
+            cmd: ~/nix/stuff/scripts/mpc 'puppy'
 
           - key: [ "r", "Mod4+r", "R", "Mod4+R" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'premier inn'
+            cmd: ~/nix/stuff/scripts/mpc 'premier inn'
 
 
       - key: [ "r", "Mod4+r", "R", "Mod4+R" ]
@@ -296,15 +296,15 @@ menu:
 
           - key: [ "a", "Mod4+a", "A", "Mod4+A" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'rat castle'
+            cmd: ~/nix/stuff/scripts/mpc 'rat castle'
 
           - key: [ "i", "Mod4+i", "I", "Mod4+I" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'r.i.p.'
+            cmd: ~/nix/stuff/scripts/mpc 'r.i.p.'
 
           - key: [ "o", "Mod4+o", "O", "Mod4+O" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'rose at nightfall'
+            cmd: ~/nix/stuff/scripts/mpc 'rose at nightfall'
 
 
       - key: [ "s", "Mod4+s", "S", "Mod4+S" ]
@@ -313,19 +313,19 @@ menu:
 
           - key: [ "a", "Mod4+a", "A", "Mod4+A" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'salt'
+            cmd: ~/nix/stuff/scripts/mpc 'salt'
 
           - key: [ "o", "Mod4+o", "O", "Mod4+O" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'so stressed!'
+            cmd: ~/nix/stuff/scripts/mpc 'so stressed!'
 
           - key: [ "u", "Mod4+u", "U", "Mod4+U" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'summer'
+            cmd: ~/nix/stuff/scripts/mpc 'summer'
 
           - key: [ "e", "Mod4+e", "E", "Mod4+E" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'sense of nostalgia'
+            cmd: ~/nix/stuff/scripts/mpc 'sense of nostalgia'
 
 
       - key: [ "t", "Mod4+t", "T", "Mod4+T" ]
@@ -334,15 +334,15 @@ menu:
 
           - key: [ "e", "Mod4+e", "E", "Mod4+E" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'tell me you know'
+            cmd: ~/nix/stuff/scripts/mpc 'tell me you know'
 
           - key: [ "h", "Mod4+h", "H", "Mod4+H" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'throne'
+            cmd: ~/nix/stuff/scripts/mpc 'throne'
 
           - key: [ "a", "Mod4+a", "A", "Mod4+A" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'ta1lsd004'
+            cmd: ~/nix/stuff/scripts/mpc 'ta1lsd004'
 
 
       - key: [ "w", "Mod4+w", "W", "Mod4+W" ]
@@ -351,11 +351,11 @@ menu:
 
           - key: [ "a", "Mod4+a", "A", "Mod4+A" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'wave goodbye'
+            cmd: ~/nix/stuff/scripts/mpc 'wave goodbye'
 
           - key: [ "i", "Mod4+i", "I", "Mod4+I" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'witches'
+            cmd: ~/nix/stuff/scripts/mpc 'witches'
 
 
       - key: [ "y", "Mod4+y", "Y", "Mod4+Y" ]
@@ -364,21 +364,21 @@ menu:
 
           - key: [ "o", "Mod4+o", "O", "Mod4+O" ]
             desc: 
-            cmd: ~/nix/stuff/scripts/mpc.sh 'yoshi'
+            cmd: ~/nix/stuff/scripts/mpc 'yoshi'
 
 
       - key: [ "l", "Mod4+l", "L", "Mod4+L" ]
         desc: 
-        cmd: ~/nix/stuff/scripts/mpc.sh 'lost'
+        cmd: ~/nix/stuff/scripts/mpc 'lost'
 
       - key: [ "v", "Mod4+v", "V", "Mod4+V" ]
         desc: 
-        cmd: ~/nix/stuff/scripts/mpc.sh 'violet'
+        cmd: ~/nix/stuff/scripts/mpc 'violet'
 
       - key: [ "z", "Mod4+z", "Z", "Mod4+Z" ]
         desc: 
-        cmd: ~/nix/stuff/scripts/mpc.sh 'zen garden'
+        cmd: ~/nix/stuff/scripts/mpc 'zen garden'
 
       - key: [ "3", "Mod4+3", "3", "Mod4+3" ]
         desc: 
-        cmd: ~/nix/stuff/scripts/mpc.sh '3 nights'
+        cmd: ~/nix/stuff/scripts/mpc '3 nights'

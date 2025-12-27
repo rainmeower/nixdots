@@ -5,8 +5,8 @@
   ...
 }: lib.mkIf wm.niri {
   programs.niri.settings.spawn-at-startup = [
-    { command = [ "${flake_dir}/stuff/scripts/startup.sh" ]; }
-    { command = [ "${flake_dir}/stuff/scripts/awww.sh" ]; }
+    { command = [ "${flake_dir}/stuff/scripts/startup" ]; }
+    { command = [ "${flake_dir}/stuff/scripts/awww" ]; }
     # { command = [ "clipse" "-listen" ]; }
     { command = [ "udiskie" "-a" ]; }
     # { command = [ "dunst" ]; }

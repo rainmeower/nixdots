@@ -15,7 +15,7 @@ in {
     melee = {
       name = "melee";
       comment = "melee bash script";
-      exec = "foot ${flake_dir}/stuff/scripts/melee.sh";
+      exec = "foot ${flake_dir}/stuff/scripts/melee";
       icon = icon_dir + "/slippi.svg";
       # terminal = true;
     };
