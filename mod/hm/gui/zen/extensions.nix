@@ -45,6 +45,18 @@ let
     # TODO alternate player for twitch
   ] ++ shared_extensions;
 
+  fastforward_config = {
+    navigationDelayToggle = true;
+    navigationDelay = 0; # instant
+
+    optionsTrackerBypass = true;
+    optionsInstantNavigationTrackers = true;
+
+    optionsBlockIPLoggers = true;
+
+    optionsCrowdBypass = true;
+  };
+
 in {
   programs.zen-browser.profiles."meow".extensions = {
     packages = meow_extensions;
@@ -54,6 +66,14 @@ in {
   programs.zen-browser.profiles."media".extensions = {
     packages = media_extensions;
     force = true;
+  };
+
+  programs.zen-browser.profiles."meow".extensions.settings = {
+    "addon@fastforward.team".settings = fastforward_config;
+  };
+
+  programs.zen-browser.profiles."media".extensions.settings = {
+    "addon@fastforward.team".settings = fastforward_config;
   };
 
   programs.zen-browser.policies = {
