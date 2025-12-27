@@ -37,7 +37,7 @@
         show-urls-copy = "Alt+w";
         show-urls-launch = "Alt+u";
         # pipe-command-output = ''[sh -c "f=$(mktemp); cat - > $f; footclient emacsclient -nw $f; rm $f"] Control+Shift+g'';
-        pipe-command-output = ''[sh -c "f=$(mktemp); nvim $f; rm $f"] Control+Shift+e'';
+        pipe-command-output = ''[sh -c "f=$(mktemp -p /tmp); foot nvim $f; rm $f"] Control+Shift+e'';
       };
 
       colors = let # {{{
