@@ -201,7 +201,8 @@ in {
       }
 
 
-      # $env.path ++= ["/xyz/meow"]
+      # add tabflow scripts to path
+      $env.path ++= ["/home/meow/nix/stuff/tabflow/native"]
 
       $env.config.edit_mode = 'vi'
       $env.config = {

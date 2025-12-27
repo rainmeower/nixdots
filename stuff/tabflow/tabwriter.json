@@ -1,0 +1,7 @@
+{
+	"name": "tabwriter",
+	"description": "Native app to write open tabs to disk",
+	"path": "/home/meow/nix/stuff/tabflow/native/tabwriter",
+	"type": "stdio",
+	"allowed_extensions": ["@tabflow"]
+}

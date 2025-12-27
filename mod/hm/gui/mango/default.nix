@@ -456,7 +456,7 @@ ${action "p" "spawn,hyprpicker | wl-copy"}
 ${action "s" "spawn,${flake_dir}/stuff/scripts/keys/screenshot"}
 ${action "q" "spawn,${flake_dir}/stuff/scripts/keys/quit mango"}
 ${action "l" "spawn,hyprlock"}
-
+${action "t" "spawn,${flake_dir}/stuff/tabflow/native/tabselect"}
 
 
 
@@ -464,7 +464,7 @@ keymode=layout
 ${reset_keymode "Escape"}
 ${layout "t" "tile"}
 ${layout "s" "scroller"}
-${layout "y" "monocle"}
+${layout "m" "monocle"}
 ${layout "g" "grid"}
 ${layout "d" "deck"}
 ${layout "c" "center_tile"}
