@@ -1,10 +1,11 @@
+# TODO highlight group
 {
   nv.plugins.yanky = {
     enable = true;
 
     lazyLoad.enable = true; # {{{
     lazyLoad.settings.event = [
-      "VimEnter"
+      "UIEnter"
     ]; # }}}
 
     settings = {

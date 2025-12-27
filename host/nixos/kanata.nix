@@ -429,6 +429,12 @@ mods:
     ;; }}}
 
     ;; monkeytype {{{
+    ;; way/why
+    ((and
+      (key-history w 2)
+      (or (key-history a 1) (key-history h 1))
+    )) y break
+
     ;; box
     ((and
       (key-history b 2)
