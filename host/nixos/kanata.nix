@@ -397,7 +397,10 @@ mods:
     ((key-history ] 1)) ; break
 
     ;; auto ; for {}
-    ((key-history { 1)) (macro S-] ; left left) break
+    ((and
+      (or (key-history lsft 2) (key-history rsft 2))
+      (key-history { 1)
+    )) (macro S-] ; left left) break
 
     ;; ).
     ((key-history 0 1)) . break
