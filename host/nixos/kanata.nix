@@ -736,6 +736,12 @@ mods:
       (key-history e 1)
     )) S-- break
 
+    ;; free
+    ((and
+      (key-history f 3)
+      (key-history r 2)
+      (key-history e 1)
+    )) rpt break
 
     ;; FIXME
     ;; Box
