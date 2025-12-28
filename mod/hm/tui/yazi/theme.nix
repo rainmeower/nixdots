@@ -82,7 +82,7 @@
         fg = p.bg;
       };
       inactive = {
-        bg = p.bg;
+        bg = "reset";
         fg = lib.mkDefault p.accent;
       };
 

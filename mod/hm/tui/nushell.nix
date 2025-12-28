@@ -324,7 +324,7 @@ in {
       ns = "nix-shell -p";
 
       n = "nvim";
-      y = "yazi";
+      # y = "yazi";
 
       /* typos */
       "n," = "nvim";
