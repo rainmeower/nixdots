@@ -30,7 +30,7 @@
 
       background = "color";
 			# background-color = p.bg_trans; # FIXME
-			background-color = "#000000cc";
+			background-color = "#000000ff";
       background-blur-radius = 0;
 
       save-position-on-quit = true;
