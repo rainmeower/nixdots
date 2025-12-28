@@ -30,7 +30,7 @@
 
       background = "color";
 			# background-color = p.bg_trans; # FIXME
-			background-color = "#00000000";
+			background-color = "#000000cc";
 
       # background-color = p.bg;
       osd-back-color = p.bg;
