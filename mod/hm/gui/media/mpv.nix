@@ -29,7 +29,7 @@
       force-window = "immediate";
 
       background = "color";
-			background-color = p.bgtrans;
+			background-color = "#090e13cc";
 
       # background-color = p.bg;
       osd-back-color = p.bg;
