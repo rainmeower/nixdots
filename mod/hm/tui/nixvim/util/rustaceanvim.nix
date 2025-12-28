@@ -13,7 +13,7 @@
           "nightly"
           "rust-analyzer"
         ];
-        default_settings = {
+        settings = {
           rust-analyzer = {
             check = {
               command = "clippy";

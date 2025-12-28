@@ -25,7 +25,6 @@
   (import ./tui/nvim.nix)
   (import ./tui/ripgrep.nix)
   (import ./tui/skim.nix)
-  (import ./tui/ytsub.nix)
   (import ./tui/uutils.nix)
   # (import ./tui/btop.nix)
   (import ./tui/yazi.nix)
