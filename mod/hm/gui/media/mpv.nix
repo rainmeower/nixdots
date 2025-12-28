@@ -1,5 +1,6 @@
 {
   pkgs,
+  lib,
   config,
   p,
   font_name,
@@ -30,7 +31,8 @@
 
       background = "color";
 			# background-color = p.bg_trans; # FIXME
-			background-color = "#000000";
+			background-color = "#cc" + lib.removePrefix "#" p.bg; # FIXME
+			# background-color = "#000000";
       background-blur-radius = 0;
 
       save-position-on-quit = true;
