@@ -13,7 +13,7 @@
         screencast = {
           # FIXME
           chooser_type = "dmenu"; # simple, dmenu
-          chooser_cmd = "fuzzel -d";
+          chooser_cmd = "tofi";
         };
       };
     };
