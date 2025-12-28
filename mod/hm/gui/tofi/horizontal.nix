@@ -12,6 +12,22 @@
   programs.tofi = {
     enable = true;
     settings = rec {
+      module-math = true;
+
+      # Enable the Search module. A result will be appended to the suggestions
+      # prefixed with "?". Executing this result will open a browser window
+      # and do a search with the given prompt.
+      module-search = true;
+
+      # changes the prefix of the url which will be opend to customize searchengines.
+      module-search-engine = "duckduckgo.com/";
+
+      # changes the command which will be used to open the url.
+      module-search-browser = "zen -p meow --new-tab";
+
+
+
+
       font = font_path;
 
       # Point size of text.
