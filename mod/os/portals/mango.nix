@@ -17,7 +17,7 @@
 
       config = {
         common = {
-          default = [ "gtk" "termfilechooser" "wlr" ];
+          default = [ "termfilechooser" "wlr" ];
           # "org.freedesktop.impl.portal.Secret" = [ "gnome-keyring" ];
           "org.freedesktop.impl.portal.ScreenCast" = [ "wlr" ];
           "org.freedesktop.impl.portal.ScreenShot" = [ "wlr" ];
@@ -28,7 +28,7 @@
           "org.freedesktop.Notifications" = [];
         };
         mango = {
-          default = [ "gtk" "termfilechooser" "wlr" ];
+          default = [ "termfilechooser" "wlr" ];
           # "org.freedesktop.impl.portal.Secret" = [ "gnome-keyring" ];
           "org.freedesktop.impl.portal.ScreenCast" = [ "wlr" ];
           "org.freedesktop.impl.portal.ScreenShot" = [ "wlr" ];
@@ -43,7 +43,7 @@
       extraPortals = with pkgs; [
         xdg-desktop-portal
         xdg-desktop-portal-wlr
-        xdg-desktop-portal-gtk
+        # xdg-desktop-portal-gtk
         xdg-desktop-portal-termfilechooser
       ];
     };
