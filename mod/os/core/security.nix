@@ -3,7 +3,8 @@
     ...
 }:{
   security.rtkit.enable = true;
-  security.sudo = {
+  security.sudo-rs = {
+    enable = true;
     extraRules = [
     {
       users = [ username ];
