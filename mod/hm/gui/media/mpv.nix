@@ -31,6 +31,13 @@
       background = "color";
 			# background-color = p.bg_trans; # FIXME
 			background-color = "#000000cc";
+      background-blur-radius = 0;
+
+      save-position-on-quit = true;
+      resume-ploayback = true;
+
+
+      scale = "ewa_lanczos4sharpest";
 
       # background-color = p.bg;
       osd-back-color = p.bg;
