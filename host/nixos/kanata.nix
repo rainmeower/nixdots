@@ -680,8 +680,15 @@ mods:
     ;; }}}
 
 
-
     ;; sfb {{{
+
+    ;; [0  (sfb)
+    ((and
+      (not (key-history lsft 2))
+      (not (key-history rsft 2))
+      (key-history [ 1)
+    )) 0 break
+
     ((key-history / 1))
     S-8 break
 
