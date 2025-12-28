@@ -68,10 +68,9 @@ in {
       "<leader><leader>" = "buffers";
       "<leader>gw" = "git_commits";
       "<leader>ga" = "git_status";
-      # "<leader>f" = "live_grep { cwd = '${flake_dir}' }";
+      "<leader>o" = "fd";
+      "<leader>O" = "live_grep";
       "<leader>/" = "current_buffer_fuzzy_find";
-
-      # "<leader>i" = "oldfiles { cwd = '${flake_dir}' }";
     };
   };
 }
