@@ -45,6 +45,7 @@ let
     # TODO alternate player for twitch
   ] ++ shared_extensions;
 
+  # FIXME
   fastforward_config = {
     navigationDelayToggle = true;
     navigationDelay = 0; # instant

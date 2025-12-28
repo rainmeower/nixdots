@@ -1049,11 +1049,7 @@ a down
 e up
 i right
 
-;; l left
-;; o down
-;; u up
-;; j right
-
+j ins
 f15 home
 f16 pgdn
 f17 pgup
