@@ -31,7 +31,7 @@
       "...." = "cd ../../..";
       "....." = "cd ../../../..";
 
-      hist="history | fzf | read -l command; eval $command";
+      hist="history | sk | read -l command; eval $command";
 
       sudo = "sudo -k"; # prompt every time
       s = "sudo -k"; # prompt every time

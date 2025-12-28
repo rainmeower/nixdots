@@ -728,6 +728,15 @@ mods:
     ;;TODO order?
     ;;TODO back? scissor redirect
 
+    ;; size_t
+    ((and
+      (key-history s 4)
+      (key-history i 3)
+      (key-history z 2)
+      (key-history e 1)
+    )) S-- break
+
+
     ;; FIXME
     ;; Box
     ((and

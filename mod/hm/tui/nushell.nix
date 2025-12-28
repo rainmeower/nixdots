@@ -43,13 +43,13 @@ in {
       }
       # git log
       def gl [] {
-        let selection = (git log --oneline | lines | fzf)
+        let selection = (git log --oneline | lines | sk)
         let hash = ($selection | split row " " | get 0)
         wl-copy $hash
       }
       # git reflog
       def grl [] {
-        let selection = (git reflog | lines | fzf)
+        let selection = (git reflog | lines | sk)
         let hash = ($selection | split row " " | get 0)
         wl-copy $hash
       }
@@ -62,7 +62,7 @@ in {
 
 
       def hist [] {
-        let selected = (history | reverse | get command | uniq | fzf)
+        let selected = (history | reverse | get command | uniq | sk)
         if ($selected | is-empty) == false {
           do $selected
         }
@@ -99,7 +99,7 @@ in {
       # bookmark open
       def bo [...msg: string] {
         # TODO auto open if only one line
-        bmm search ...$msg | fzf | xargs xdg-open
+        bmm search ...$msg | sk | xargs xdg-open
       }
 
 
@@ -307,7 +307,6 @@ in {
 
 
       ga = "git add --all";
-      # gl = "git log --oneline | lines | fzf";
       gcl = "git clone";
       gd = "git diff HEAD^";
       gs = "git status";
