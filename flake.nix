@@ -59,7 +59,7 @@
 
     # vicinae.url = "github:vicinaehq/vicinae";
 
-    # ytsub.url = "github:/sarowish/ytsub";
+    ytsub.url = "github:/sarowish/ytsub";
     # zarumet = {
     #   url = "github:Immelancholy/zarumet";
     #   inputs.nixpkgs.follows = "nixpkgs";
