@@ -30,8 +30,8 @@
       force-window = "immediate";
 
       background = "color";
-			# background-color = p.bg_trans; # FIXME
-			background-color = "#cc" + lib.removePrefix "#" p.bg; # FIXME
+      # argb :frumbsdown:
+			background-color = "#cc" + lib.removePrefix "#" p.bg;
 			# background-color = "#000000";
       background-blur-radius = 0;
 
