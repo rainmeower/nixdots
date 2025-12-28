@@ -5,7 +5,7 @@
   environment.systemPackages = with pkgs; [
     # osu-lazer
     # luanti
-    # mindustry
+    # mindustry-wayland
 
     /* terminal */
     # tt

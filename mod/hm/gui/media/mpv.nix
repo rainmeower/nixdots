@@ -24,6 +24,9 @@
       reset-on-next-file = "all";
       keep-open = true;
       osd-font = font_name;
+      volume-max = 150;
+      media-controls = false;
+      force-window = "immediate";
 
       background-color = p.bg;
       osd-back-color = p.bg;
