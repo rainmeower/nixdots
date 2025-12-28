@@ -5,7 +5,6 @@
   ...
 }:{
   nv.enable = true;
-  nv.shellWrapperName = "n";
   # FIXME
   # nv.package = inputs.neovim-nightly.packages."x86_64-linux".default.overrideAttrs {
   #   cmakeFlags = [
