@@ -26,6 +26,7 @@
 
     plugins = {
       inherit (pkgs.yaziPlugins)
+        bookmarks
         chmod 
         compress
         dupes 

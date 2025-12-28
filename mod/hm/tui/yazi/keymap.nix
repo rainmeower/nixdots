@@ -56,6 +56,16 @@
       }
 
       {
+        on = "-";
+        run = "plugin bookmarks save";
+      }
+      {
+        on = "'";
+        run = "plugin bookmarks jump";
+      }
+
+
+      {
         on = "<Esc>";
         run = "escape";
         desc = "Exit visual mode, clear selected; or cancel search";

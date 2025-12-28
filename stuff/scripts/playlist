@@ -1,4 +1,4 @@
-#!/usr/bin/env dash
+#!/usr/bin/env sh
 
 current=$(mpc --format %title% current)
 mpc --format %title% playlist | while read -r line; do

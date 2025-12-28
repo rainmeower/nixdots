@@ -54,13 +54,13 @@
 
   # FIXME
   { # toggle inlay hints
-    key = "<Leader>bh"; # th
+    key = "<Leader>bd"; # th
     action = ":lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<cr>";
     mode = [ "n" "x" ];
     options.silent = true;
   }
   # { # toggle inlay hints for buffer
-  #   key = "<Leader>bH"; # th
+  #   key = "<Leader>bD"; # th
   #   action = ":lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<cr>";
   #   mode = [ "n" "x" ];
     # options.silent = true;
