@@ -323,7 +323,7 @@ in {
 
       ns = "nix-shell -p";
 
-      n = "nvim";
+      # n = "nvim";
       # y = "yazi";
 
       /* typos */
