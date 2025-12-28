@@ -23,7 +23,7 @@ in {
       test = "meow";
     };
 
-    xdg.configFile."tofi/config" = {
+    xdg.configFile."tofi/config_secondary" = {
       text =
         let
           renderedSettings = lib.generators.toINIWithGlobalSection { } {
