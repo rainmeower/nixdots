@@ -85,8 +85,7 @@
         ../../mod/hm/gui/terminal/ghostty.nix
         ../../mod/hm/stylix.nix
         ../../mod/hm/gui/terminal/kitty.nix
-        ../../mod/hm/gui/tofi/tofi.nix
-        ../../mod/hm/gui/tofi/tofi_secondary.nix
+        ../../mod/hm/gui/tofi
         # ../../mod/hm/gui/discord/vesktop.nix
         ../../mod/hm/gui/discord/nixcord.nix
         ../../mod/hm/gui/vicinae.nix
