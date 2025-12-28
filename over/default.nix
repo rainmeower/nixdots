@@ -10,6 +10,7 @@
   (import ./gui/foot.nix)
   (import ./gui/fuzzel.nix)
   (import ./gui/mpv.nix)
+  (import ./gui/tofi.nix)
   # (import ./misc/pango.nix)
   (import ./gui/swayimg.nix)
   (import ./service/kanata.nix)

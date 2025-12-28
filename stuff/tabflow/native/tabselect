@@ -36,7 +36,7 @@ for tab in tabs:
 
 choice = os.popen(
     # f'echo -n "{choices}" | tofi && wlrctl window focus zen-twilight').readline()
-    f'echo -n "{choices}" | tofi').readline()
+    f'echo -n "{choices}" | tofi -c ~/.config/tofi/meow').readline()
 choice = choice.strip('\n')
 choice = choice.split('\t')
 

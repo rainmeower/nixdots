@@ -1,6 +1,7 @@
 {
   lib,
   config,
+  pkgs,
   ...
 }:{
   imports = [
@@ -8,7 +9,12 @@
     ./vertical.nix
   ];
 
-  options.programs.tofi.settings_secondary = lib.mkOption {
+  config.programs.tofi = {
+    enable = true;
+    package = pkgs.tofi-modules;
+  };
+
+  options.programs.tofi.settings_secondary = lib.mkOption { # {{{
     type = with lib.types;
       let
         primitive = either (either str int) bool;
@@ -21,6 +27,6 @@
       renderedSettings = lib.generators.toINIWithGlobalSection { } {
         globalSection = config.programs.tofi.settings_secondary;
       };
-    in lib.removeSuffix "\n\n" ''${renderedSettings}'';
-  };
+    in lib.removeSuffix "\n\n" renderedSettings;
+  }; # }}}
 }
