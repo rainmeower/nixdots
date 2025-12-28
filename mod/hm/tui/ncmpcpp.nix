@@ -51,7 +51,8 @@
 
       # NOTE special non-space empty char
       # progressbar_look = if rounding then "⠀" else "⠀";
-      progressbar_look = "━━━";
+      # progressbar_look = "━━━";
+      progressbar_look = "━━─";
 
 
       ## Available values: classic, alternative.

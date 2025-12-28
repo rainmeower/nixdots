@@ -17,6 +17,8 @@
       # Enable the Search module. A result will be appended to the suggestions
       # prefixed with "?". Executing this result will open a browser window
       # and do a search with the given prompt.
+
+      # TODO fork it and put search option first if only letters are entered
       module-search = true;
 
       # changes the prefix of the url which will be opend to customize searchengines.
