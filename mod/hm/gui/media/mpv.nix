@@ -85,6 +85,20 @@
         # Render cache indicators for streaming content
         timeline_cache = true;
 
+				color = lib.strings.concatMapAttrsStringSep "," (name: value: "${name}=${value}") {
+					foreground = p.fg;
+					foreground_text = p.bg;
+					background = p.bg_trans;
+					background_text = p.fg;
+					curtain = p.bg;
+					success = p.green;
+					error = p.red;
+					match = p.accent;
+					heatmap = p.yellow;
+				};
+
+
+
 
         progress = "always"; # always show squished progress pill at the bottom
         progress_size = 2;
