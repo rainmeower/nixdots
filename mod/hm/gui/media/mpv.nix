@@ -28,7 +28,10 @@
       media-controls = false;
       force-window = "immediate";
 
-      background-color = p.bg;
+      background = "color";
+			background-color = p.bgtrans;
+
+      # background-color = p.bg;
       osd-back-color = p.bg;
       osd-border-color = p.bg;
       osd-color = p.fg;
