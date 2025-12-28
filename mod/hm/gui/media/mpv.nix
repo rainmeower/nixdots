@@ -29,7 +29,8 @@
       force-window = "immediate";
 
       background = "color";
-			background-color = "#090e13cc";
+			# background-color = p.bg_trans; # FIXME
+			background-color = "#00000000";
 
       # background-color = p.bg;
       osd-back-color = p.bg;
