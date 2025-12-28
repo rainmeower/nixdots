@@ -1128,10 +1128,11 @@ f19 lsft
 j /
 / j
 x S--
-f15 @magic_2
+f15 lsft
 
 
-
+t t
+c c
 
 f16 S-9
 f17 @rp
@@ -1141,7 +1142,7 @@ lmet (multi (tap-hold-release-tap-keys-release 120 120 esc lmet () ()) (layer-wh
 rsft bspc
 ralt (tap-hold-press 120 120 tab (layer-while-held fn))
 f18 S-;
-lctrl @eqsft
+lctl lctl
 bspc @rpeat
 ent (tap-hold-release-tap-keys-release 120 120 ent (layer-while-held mods) (esc) ())
 
