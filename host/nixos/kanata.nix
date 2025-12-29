@@ -746,6 +746,12 @@ mods:
       (key-history e 1)
     )) S-- break
 
+    ;; _t
+    ((and
+      (or (key-history lsft 2) (key-history rsft 2))
+      (key-history - 1)
+    )) t break
+
     ;; free
     ((and
       (key-history f 3)
