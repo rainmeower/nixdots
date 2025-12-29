@@ -473,7 +473,7 @@ ${layout "r" "right_tile"}
 ${layout_s "t" "vertical_tile"}
 ${layout_s "s" "vertical_scroller"}
 ${layout_s "g" "vertical_grid"}
-${layout_s "s" "vertical_spiral"}
+# ${layout_s "s" "vertical_spiral"}
 ${layout_s "d" "vertical_deck"}
 ${layout "i" "tgmix"}
 

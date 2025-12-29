@@ -97,6 +97,7 @@
         ../../mod/hm/service/hyprkan.nix
         ../../mod/hm/service/termfilechooser.nix
         ../../mod/hm/tui/bash.nix
+        ../../mod/hm/tui/carapace.nix
         ../../mod/hm/tui/discordo.nix
         ../../mod/hm/tui/signal.nix
         ../../mod/hm/tui/btop.nix

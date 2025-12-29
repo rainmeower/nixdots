@@ -4,15 +4,16 @@
   ...
 }:{
   services.clipse = {
-    # package = pkgs.my-clipse;
+    enable = true;
 
-    # maxHistory = 50;
-    # allowDuplicates = false;
+    historySize = 50;
+    allowDuplicates = false;
     # historyFile = "clipboard_history.json";
     # # themeFile = "custom_theme.json";
     # tempDir = "tmp_files";
 
     imageDisplay = {
+      # basic, kitty, sixel
       type = "sixel";
     };
 
@@ -23,6 +24,7 @@
       prevPage = "h";
       down = "a";
       up = "e";
+
 
 
       clearSelected = "R";
