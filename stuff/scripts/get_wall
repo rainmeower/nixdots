@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+theme="$(cat ~/nix/mod/os/config.nix | grep 'theme = ')"
+
+for name in {kanso,kantsi,macchiato,blacchiato,lix,everforest,quiet}; do
+  if [[ $theme == *"$name"* ]]; then 
+    echo ~/nix/stuff/wallpapers/$(cat ~/nix/theme/wallpaper.json | jq ".$name" | tr -d '"')
+  fi
+done

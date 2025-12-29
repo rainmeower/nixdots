@@ -1,19 +1,10 @@
-#!/usr/bin/env bash
+#!/usr/bin/env dash
 
-themeline="$(cat ~/nix/mod/os/config.nix | grep 'theme = ')"
-
-for name in {kanso,kantsi,macchiato,blacchiato,lix,everforest}; do
-  if [[ $themeline == *"$name"* ]]; then 
-    wallname=$(cat ~/nix/theme/wallpaper.json | jq ".$name")
-    wallnamestripped=$(echo "$wallname" | tr -d '"') 
-  fi
-done
-
-
-if mode=$(awww query | grep "000000") ; then
-  awww img ~/nix/stuff/wallpapers/$wallnamestripped -t grow --transition-duration 1 --transition-fps 165
+if $(awww query | grep "color: 000000"); then
+  awww img $(~/nix/stuff/scripts/get_wall) \
+    -t grow \
+    --transition-duration 0.8 \
+    --transition-fps 165
 else
   awww clear
 fi
-
-

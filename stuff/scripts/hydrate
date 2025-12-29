@@ -1,8 +1,11 @@
-#!/usr/bin/env bash
-echo "first reminder at $(date -d '1200 seconds' +'%H:%H:%S' )"
+#!/usr/bin/env dash
+# FIXME doesnt update the msg timestamp
+
+msg="reminder at $(date -d '1200 seconds' +'%H:%H:%S' )"
+echo "first $msg"
 
 while true; do
-    sleep 1200
-    notify-send -t 1500 "dirnk water"
-    echo "next reminder at $(date -d '1200 seconds' +'%H:%H:%S' )"
+  sleep 1200
+  notify-send -t 1500 "dirnk water"
+  echo "next $msg"
 done

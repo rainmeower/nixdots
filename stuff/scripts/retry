@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env dash
 # this is just shitty systemd lmao
 
 attempt=1

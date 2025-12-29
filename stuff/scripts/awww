@@ -1,10 +1,6 @@
-#!/usr/bin/env sh
-themeline="$(cat ~/nix/mod/os/config.nix | grep 'theme = ')"
+#!/usr/bin/env dash
 
-for name in {kanso,kantsi,macchiato,blacchiato,lix,everforest,quiet}; do
-  if [[ $themeline == *"$name"* ]]; then 
-    wallname=$(cat ~/nix/theme/wallpaper.json | jq ".$name")
-    wallnamestripped=$(echo "$wallname" | tr -d '"') 
-    awww img -t none ~/nix/stuff/wallpapers/$wallnamestripped
-  fi
-done
+awww img $(./get_wall) \
+  -t grow \
+  --transition-duration 0.8 \
+  --transition-fps 165

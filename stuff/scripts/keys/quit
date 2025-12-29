@@ -1,8 +1,12 @@
-#!/usr/bin/env bash
-should_quit="$(echo "yes
-no" | tofi --auto-accept-single=true --placeholder="quit $1?")"
+#!/usr/bin/env dash
+should_quit="$(
+  echo "yes
+  no" | tofi \
+    --auto-accept-single=true \
+    --placeholder="quit $1?"
+)"
 
-if [[ $should_quit == "yes" || $should_quit == "quit"* ]]; then 
+if [ $should_quit = "yes" ]; then 
   uwsm stop || pkill mango
 fi
 
