@@ -746,7 +746,7 @@ mods:
       (key-history e 1)
     )) S-- break
 
-    ;; _t
+    ;; _t  (lsb)
     ((and
       (or (key-history lsft 2) (key-history rsft 2))
       (key-history - 1)

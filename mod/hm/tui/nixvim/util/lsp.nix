@@ -1,7 +1,7 @@
 {
-flake_dir,
-host,
-...
+  flake_dir,
+  host,
+  ...
 }:{
   nv.lsp = {
     inlayHints.enable = false;
@@ -11,17 +11,17 @@ host,
         config.settings.nixd = {
           nixpkgs.expr = # nix
             "import (builtins.getFlake \"${flake_dir}\").inputs.nixpkgs {}";
-            options = {
-              nixos.expr = # nix
-                "(builtins.getFlake \"${flake_dir}\").nixosConfigurations.${host}.options";
-              home-manager.expr = # nix
-                "(builtins.getFlake \"${flake_dir}\").nixosConfigurations.${host}.options.home-manager.users.type.getSubOptions []";
+          options = {
+            nixos.expr = # nix
+              "(builtins.getFlake \"${flake_dir}\").nixosConfigurations.${host}.options";
+            home-manager.expr = # nix
+              "(builtins.getFlake \"${flake_dir}\").nixosConfigurations.${host}.options.home-manager.users.type.getSubOptions []";
           };
         };
       };
 
 
-      qmlls.enable = true;
+      # qmlls.enable = true;
       # hls = {
       #   enable = true;
       #   installGhc = false;
