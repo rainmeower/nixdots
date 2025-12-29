@@ -185,10 +185,7 @@ mods:
     (bspc del up down left right 0 1 2 3 4 5 6 7 8 9 lsft rsft -) ;; words that stop the shifting
   )
 
-  ;; TODO convert rust ints to c99 ints
-  ;; TODO ; -> . (for vim)
   magic (switch ;; {{{
-
 
     ;; flake.nix
     ((and
@@ -652,6 +649,38 @@ mods:
       (release-key w)
       (macro bspc t p s S-; / / w w w .)
     ) break
+
+    ;; }}}
+
+    ;; nvim [ ] repeat {{{
+
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history a 1))) (macro [ a) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history b 1))) (macro [ b) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history c 1))) (macro [ c) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history d 1))) (macro [ d) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history e 1))) (macro [ e) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history f 1))) (macro [ f) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history g 1))) (macro [ g) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history h 1))) (macro [ h) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history i 1))) (macro [ i) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history j 1))) (macro [ j) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history k 1))) (macro [ k) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history l 1))) (macro [ l) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history m 1))) (macro [ m) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history n 1))) (macro [ n) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history o 1))) (macro [ o) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history p 1))) (macro [ p) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history q 1))) (macro [ q) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history r 1))) (macro [ r) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history s 1))) (macro [ s) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history t 1))) (macro [ t) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history u 1))) (macro [ u) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history v 1))) (macro [ v) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history w 1))) (macro [ w) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history x 1))) (macro [ x) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history y 1))) (macro [ y) break
+    ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history z 1))) (macro [ z) break
+
 
     ;; }}}
 
