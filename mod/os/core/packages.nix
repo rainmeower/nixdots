@@ -19,14 +19,13 @@
     _7zz
 
     git
+    wget
 
     jq
     yq
 
     ripgrep
-    wget
     fd
-    eza
 
     dbus
     kanata

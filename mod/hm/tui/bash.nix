@@ -39,16 +39,6 @@
       mv = "mv -i"; # prompt every time
       ln = "ln -i"; # prompt every time
 
-        logout = "hyprctl dispatch exit 0";
-# l = "eza -lh  --icons=auto"; # long list
-      ls = "eza -a1   --icons=auto"; # short list
-# ll = "eza -lha --icons=auto --sort=name --group-directories-first"; # long list all
-# ld = "eza -lhD --icons=auto"; # long list dirs
-# lt = "eza --icons=auto --tree"; # list folder as tree
-      ff = "fastfetch --logo nixos_small --logo-color-2 magenta";
-
-
-
       ga = "git add .";
       gcl = "git clone";
       gd = "git diff HEAD^";

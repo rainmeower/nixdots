@@ -16,7 +16,7 @@
   (import ./service/kanata.nix)
   # (import ./service/pipewire.nix)
   (import ./service/mpd.nix)
-  (import ./tui/eza.nix)
+  # (import ./tui/eza.nix)
   (import ./tui/fastfetch.nix)
   (import ./tui/fd.nix)
   (import ./tui/gurk.nix)
