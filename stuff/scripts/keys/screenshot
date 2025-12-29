@@ -1,6 +1,6 @@
-#!/usr/bin/env nu
+#!/usr/bin/env dash
 # TODO screenshot window with mmsg -x
 
-let file = "/tmp/" + (uuidgen) + ".png"
-wayshot -s (slurp) -f $file
-wl-copy -t text/uri-list file://($file)
+file="/tmp/$(uuidgen).png"
+wayshot -s "$(slurp)" -f $file
+wl-copy -t text/uri-list "file://$file"  | tr -d '\n'
