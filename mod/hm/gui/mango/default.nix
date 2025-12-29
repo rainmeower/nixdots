@@ -91,7 +91,7 @@ in {
 
         # wlr-randr --output DP-1 --mode "2560x1440@165.080002" &
         uwsm app -- foot --server &
-        uwsm app -- equibop >/dev/null 2>/dev/null &
+        # uwsm app -- equibop >/dev/null 2>/dev/null &
         dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
 
         # ps -ef | rg "nata.sh" | sed -e "s/$(whoami)      //" | sed -e "s/ .*//" | xargs kill # clean up previous nata processes
