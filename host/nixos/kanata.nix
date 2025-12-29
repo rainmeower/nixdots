@@ -655,7 +655,11 @@ mods:
     ;; nvim [ ] repeat {{{
 
     ;; ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history a 1))) (macro [ a) break
-    ((and (key-history [ 2) (key-history a 1))) (macro [ a) break
+    ;; ((and (key-history [ 2) (key-history a 1))) (macro [ a) break
+    ((and 
+    (not (key-history lsft 3))
+    (not (key-history rsft 3))
+    (key-history [ 2) (key-history a 1))) (macro [ a) break
 
     ;; }}}
 
