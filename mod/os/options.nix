@@ -93,5 +93,17 @@ in {
     prompt_sym = mkOption {
       type = str;
     };
+
+
+    
+
+      dirs.downloads = mkOption { type = str; };
+      dirs.documents = mkOption { type = str; };
+      dirs.desktop   = mkOption { type = str; };
+      dirs.videos    = mkOption { type = str; };
+      dirs.pictures  = mkOption { type = str; };
+      dirs.music     = mkOption { type = str; };
+      dirs.misc      = mkOption { type = str; };
+      dirs.games     = mkOption { type = str; };
   };
 }

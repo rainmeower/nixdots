@@ -280,8 +280,8 @@ in {
           "SUPER,t,spawn,footclient"
           "SUPER,c,spawn,footclient -a 'foot.yazi.isterm' yazi"
 
-          /* goto most recent download */
-          ''SUPER+ALT,c,spawn_shell, footclient --hold nu -e "let f = ^ls ${userDirs.download} -At | head -n 1; yazi ${userDirs.download}/(\$f)"''
+          /* open yazi at most recent download */
+          "SUPER+ALT,c,spawn_shell, footclient --hold nu -e 'let f = ls ${userDirs.download} | sort-by modified | last | get name; yazi $f'"
 
 
           "SUPER,k,spawn,${flake_dir}/stuff/scripts/keys/ncmpcpp"

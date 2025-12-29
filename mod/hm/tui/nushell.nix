@@ -278,6 +278,8 @@ in {
 
       celeste = "Celeste"; # goated game
 
+
+      ZZ = "exit";
       q = "exit";
       ":q" = "exit";
       ":x" = "exit";
@@ -312,10 +314,7 @@ in {
 
       # meow = "echo :3"; # so silly
 
-      ns = "nix-shell -p";
-
       n = "nvim";
-      # y = "yazi";
 
       /* typos */
       "n," = "nvim";

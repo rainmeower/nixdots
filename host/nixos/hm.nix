@@ -38,6 +38,7 @@
         font_pkg
         monitor
         prompt_sym
+        dirs
       ;
 
       host = config.networking.hostName;

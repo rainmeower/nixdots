@@ -1,6 +1,6 @@
 {
   config,
-  lib,
+  dirs,
   ...
 }: let
   h = config.home.homeDirectory;
@@ -11,12 +11,13 @@ in {
     enable = true;
     createDirectories = true;
 
-    /* default names are too long and have yucky capitalism */
+    inherit (dirs)
+      documents
+      music
+      pictures
+      videos
+    ;
     download  = h + "/dl"; # why doesnt this have an s at the end??
-    documents = h + "/doc";
-    music     = h + "/music";
-    pictures  = h + "/pic";
-    videos    = h + "/vid";
 
     /* dont need */
     publicShare = null;
@@ -24,8 +25,8 @@ in {
     desktop     = null;
 
     extraConfig = {
-      XDG_GAMES_DIR = h + "/games";
-      XDG_MISC_DIR  = h + "/misc";
+      XDG_GAMES_DIR = dirs.games;
+      XDG_MISC_DIR  = dirs.misc;
 
       /* idk why im setting these when theyre all default */
       XDG_CONFIG_HOME = h + "/.config";
