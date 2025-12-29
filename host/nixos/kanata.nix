@@ -42,7 +42,16 @@ mods:
           danger-enable-cmd true
         '';
 
-        config = /* scheme */ ''
+        config = let
+          # FIXME
+          vbr = br: key: ''
+    ((and 
+      (not (key-history lsft 3))
+      (not (key-history rsft 3))
+      (key-history ${br} 2) (key-history ${key} 1)
+    )) (macro ${br} ${key}) break
+    '';
+        in /* scheme */ ''
 (defsrc
 )
 
@@ -649,17 +658,6 @@ mods:
       (release-key w)
       (macro bspc t p s S-; / / w w w .)
     ) break
-
-    ;; }}}
-
-    ;; nvim [ ] repeat {{{
-
-    ;; ((and (not (or (key-history lsft 3) (key-history rsft 3))) (key-history [ 2) (key-history a 1))) (macro [ a) break
-    ;; ((and (key-history [ 2) (key-history a 1))) (macro [ a) break
-    ((and 
-    (not (key-history lsft 3))
-    (not (key-history rsft 3))
-    (key-history [ 2) (key-history a 1))) (macro [ a) break
 
     ;; }}}
 
